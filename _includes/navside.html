@@ -1,0 +1,62 @@
+<div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 aside visible-md visible-lg">
+  <div class="row">
+    <div class="col-md-3 col-xs-3 aside1">
+      <br>
+      <a class="pjaxlink" href="/"><img src="{{ site.gavatar }}" class="img-rounded avatar"></a>
+      <br><br>
+      <ul class="nav nav-pills nav-stacked">
+        {% for category in site.categories %}
+          <li><a href="#{{ category | first }}" data-toggle="tab">{{ category[0] }}</a></li>
+        {% endfor %}
+        <li><a href="#tags" data-toggle="tab">{{ site.locals.tags }}</a></li>
+        <li><a class="pjaxlink" href="/pages/about.html">{{ site.locals.about }}</a></li>
+      </ul>
+      <div class="aside1_bottom">
+        <table class="table table-condensed">
+          <tr>
+            <td><a href="/pages/atom.xml" target="_blank"><i class="fa fa-rss fa-2x"></i></a></td>
+            <td><a href="mailto:{{ site.author.email }}"><i class="fa fa-envelope-o fa-2x"></i></a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="col-md-9 col-xs-9 aside2">
+      <div class="row">
+        <div class="tab-content">
+          {% for category in site.categories %} 
+            <div class="tab-pane" id="{{ category[0] }}">
+              <div class="list-group">
+                <h2 class="center">{{ category[0] }}</h2>
+                {% for post in category[1] %}
+                  <a href="{{ post.url }}" class="list-group-item pjaxlink">{{post.title}}</a>
+                {% endfor %}
+              </div>
+            </div>
+          {% endfor %}
+          <div class="tab-pane" id="tags">
+            <div class="panel-group" id="accordion">
+              <h2 class="center">{{ site.locals.tags }}</h2>
+              {% for tag in site.tags %} 
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#{{ tag[0] }}">{{ tag[0] }}</a>
+                      <span class="badge pull-right">{{ tag[1].size }}</span>
+                    </h4>
+                  </div>
+                  <div id="{{ tag[0] }}" class="panel-collapse collapse">
+                    {% for post in tag[1] %}
+                      <a  href='{{ post.url }}' class="list-group-item pjaxlink">
+                        {{post.title}}
+                      </a>
+                    {% endfor %}
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

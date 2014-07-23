@@ -1,0 +1,91 @@
+/* 页面配置 */
+.container {
+  width: 100%;
+  height: 100%;
+}
+body, html {
+  margin: 0px;
+  height: 100%;
+  overflow: hidden;
+  background-color: #1f2c39;
+}
+.row {
+  height: 100%;
+}
+/* 导航栏 + 目录栏 */
+.aside {
+  height: 100%;
+}
+/* 左侧导航栏 */
+.aside1 {
+  background-color: #99cccc;
+  height: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: center;
+}
+.aside1 > .nav > li > a {
+  padding-left: 0px;
+  padding-right: 0px;
+  border-radius: 0px;
+}
+.avatar {
+  width: 100px;
+  height: 100px;
+}
+.aside1_bottom {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.aside1_bottom > .table {
+  margin-bottom: 0px;
+}
+/* 中部目录栏 */
+.aside2 {
+  background-color: #fafaf6;
+  height: 100%;
+  border-right: 2px solid #18bc9c;
+  overflow-y: auto;
+}
+/* 右侧内容栏 */
+.aside3 {
+  height: 100%;
+  overflow-y: auto;
+  background-color: #fafaf6;
+}
+.aside3-title {
+  background-color: #99cccc;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  color: #FFF;
+}
+.aside3-content {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#content {
+  font-size: 18px;
+  line-height: 1.8;
+}
+#content h2, h3 {
+  line-height: 2;
+}
+blockquote p {
+  font-size: 20px;
+}
+/* 其他配置 */
+.center {
+  text-align: center;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+  color: #2a6496;
+  background-color: #fafaf6;
+}
+/* 显示评论按钮 */
+.show-commend {
+  width: 100%;
+  margin-bottom: 40px;
+}
