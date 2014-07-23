@@ -10,14 +10,14 @@ author:
   github: 
 
 # 站点信息
-title: PainterLin's blog 
+title: PainterLin 
 description: My personal blog
 url: 
 rss_url: /pages/atom.xml
 
 # gavatar头像及Favicon
-gavatar: /public/img/yellowdeer.jpg
-favicon: /public/img/yellowdeer.jpg
+gavatar: /public/img/deer2.png
+favicon: /public/img/deer2.png
 
 # google analytics 设置
 ga:
@@ -29,7 +29,7 @@ disqus:
   shortname: painterlin
 
 # 主题设置，自动激活某个标签
-active: 技术 
+active: 技术
 
 # 首页除了最新文章外显示分类
 cates: 
