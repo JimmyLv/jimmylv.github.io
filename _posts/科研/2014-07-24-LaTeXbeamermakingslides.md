@@ -9,7 +9,6 @@ description:
 
 用LaTex beamer制作幻灯片简洁优美，在需要很多数学公式的情况下很实用。这里我用自己使用LaTex beamer做的第一份幻灯片代码为例说明。学习使用任何一种语言编程时，最重要的是对整个代码框架，所以我只对框架进行说明：
 
-```ruby
 \documentclass{beamer}               %定义文件类型
 \begin{document}                     %开始编辑文件
 \begin{frame}                        %开始编辑第一张幻灯片
@@ -17,10 +16,10 @@ description:
 \begin{frame}                        %开始编辑第二张幻灯片
 \end{frame}                          %结束编辑第二张幻灯片，以此类推
 \end{document}                       %结束编辑文件
-```
+
 
 框架如同人类的骨骼，但血肉之躯不仅仅由骨骼构成。同理，要想使自己的幻灯片变得漂亮，还需要加入一些东西：
-```ruby
+
 \documentclass{beamer}               
 \usetheme{Copenhagen}                %使用主题，我比较喜欢Copenhagen这个
 \usecolortheme{wolverine}            %使用颜色主题，有很多其他选择
@@ -32,7 +31,7 @@ description:
 \begin{frame}                        
 \end{frame}                          
 \end{document}                       
-```
+
 
 当然根据不同具体的需求可以加入更多的包。然后就可以开始在每张幻灯片的编辑框架中写代码，具体命令可查询《LaTex2完全学习手册》。
     
