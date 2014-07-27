@@ -12,8 +12,8 @@ description:
 
 
 ###矩阵范数
->![matrix_norms](/public/img/matrix_norms.jpg)
+>![matrix_norms](/public/img/matrix_norms.JPG)
 
 
 ###矩阵乘积的迹
->![trace](/public/img/trace.jpg)
+>![trace](/public/img/trace.JPG)
