@@ -8,7 +8,7 @@ description:
 ---
 
 ###向量范数
->![vector_norms](/public/img/vector_norms.jpg)
+>![vector_norms](/public/img/vector_norms.JPG)
 
 
 ###矩阵范数
