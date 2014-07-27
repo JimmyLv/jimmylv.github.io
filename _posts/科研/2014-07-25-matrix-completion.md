@@ -2,7 +2,7 @@
 layout: post
 title: 低秩矩阵补全
 category: 科研
-tags: matrix completion
+tags: matrix_completion
 keywords: 矩阵补全，去中心
 description: 
 ---
