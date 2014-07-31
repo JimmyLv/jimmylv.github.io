@@ -12,17 +12,16 @@ description:
 beamer制作幻灯片的框架是：
 
 ```
-\documentclass[xcolor=dvipsnames]{beamer}
-\usetheme{Copenhagen}%Warsaw,Berkeley,AnnArbor,Berkeley好看,Pittsburgh好看,Luebeck,JuanLesPins,
-%Dresden,Marburg,Dresden,Antibes,Berlin,Ilmenau,Singapore,Copenhagen好看,Frankfurt,Madrid,Hannover,boxes,
-%Szeged,Montpellier,Goettingen,Boadilla,PaloAlto,Rochester好看
-\usecolortheme{wolverine}%crane黄,albatross全蓝,wolverine黄&橘黄,
-%\usefonttheme{serif}%字体
-\usepackage{utopia}%字体,times,helvet,bookman,chancery,euler,utopia,palatino,newcent
-\usepackage[timeinterval=1]{tdclock}
-%\beamersetaveragebackground{black!10}%设置背景色
-\usecolortheme[named=brown]{structure}
-\usepackage{CJK}
+\documentclass[xcolor=dvipsnames]{beamer}  %定义文件类型
+\usetheme{Copenhagen}                      %使用主题
+\usecolortheme{wolverine}                  %使用颜色主题
+\usepackage{utopia}                        %字体
+\usecolortheme[named=brown]{structure}     %改变主题内嵌结构的颜色
+\usepackage{CJK}                           %中文包，如果全部英文可以不用
+
+\begin{document}                           %总的开始
+
+\end{document}                             %总的结束
 ```
 
 你好
