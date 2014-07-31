@@ -11,7 +11,7 @@ description:
 
 ###代码框架理解
 
-beamer制作幻灯片的框架大致可分三级（其中for语句仅为便于理解，实际的LaTeX语句中并不会出现）如下：
+> beamer制作幻灯片的框架大致可分三级（其中for语句仅为便于理解，实际的LaTeX语句中并不会出现）如下：
 
 - 定义文件类型
 - 放入所有需要使用的主题和包
@@ -23,11 +23,11 @@ beamer制作幻灯片的框架大致可分三级（其中for语句仅为便于�
 	- end for
 - 总的结束
 
-###具体代码实现
+###一级结构代码
 
-具体从代码看，首先是一级结构：
+>具体从代码看，首先是一级结构：
 
-```tex
+>```tex
 \documentclass[xcolor=dvipsnames]{beamer}  %定义文件类型
 \usetheme{Copenhagen}                      %此句及以下是我使用的主题和包
 \usecolortheme{wolverine}                       %颜色主题
@@ -39,6 +39,8 @@ beamer制作幻灯片的框架大致可分三级（其中for语句仅为便于�
 
 \end{document}                             %总的结束
 ```
+
+###二级结构代码
 
 在`总的开始`与`总的结束`之间写入如下代码，是二级结构：
 
@@ -59,22 +61,24 @@ beamer制作幻灯片的框架大致可分三级（其中for语句仅为便于�
 
 ```
 
+###三级结构代码
+
 在`开始编辑第i张幻灯片`与`结束编辑第i张幻灯片`之间，写入第i张幻灯片的编辑代码，即三级结构。这里我以如下图所示的幻灯片的编辑代码为例说明一些基本的、常用的语法：
 >![slide_eg](/public/img/slide_eg.JPG)
 
 ```tex
-\begin{frame}{Decentralized low-rank matrix completion problem}
-\begin{columns}[onlytextwidth]
-\begin{column}{0.4\textwidth}
-\includegraphics[height=40mm]{networki2.jpg}
+\begin{frame}{Decentralized low-rank matrix completion problem}  %大括号中是这页幻灯片的标题
+\begin{columns}[onlytextwidth]                                   %将幻灯片分为两栏
+\begin{column}{0.4\textwidth}                                    %开始左边的一栏，该栏占宽比为40%
+\includegraphics[height=40mm]{networki2.jpg}                     %插入图片，图片大小可通过高度自定义
+\begin{itemize}                                                  %开始列出清单
+\footnotesize \item A network of $L$ agents\\                    %清单第一项。其中\footnotesize控制字体大小
+\item Each agent $i$ observes some entries of $\mathbf{W}_{i}$   %清单第二项
+\end{itemize}                                                    %结束列出清单
+\end{column}                                                     %结束左边的这栏
+\begin{column}{0.6\textwidth}                                    %开始右边的一栏，方法完全与左栏类似，只需要根据实际需要修改
 \begin{itemize}
-\footnotesize \item A network of $L$ agents\\
-\item Each agent $i$ observes some entries of $\mathbf{W}_{i}$
-\end{itemize}
-\end{column}
-\begin{column}{0.6\textwidth}
-\begin{itemize}
-\vbox{}
+\vbox{}                                                          %空一行
 \item Consider a low-rank matrix $\mathbf{W}$
 \scriptsize \begin{itemize}
                    \item $\mathbf{W} \in \mathbb{R}^{N \times M}$
@@ -92,9 +96,9 @@ beamer制作幻灯片的框架大致可分三级（其中for语句仅为便于�
                 \item $\mathbf{X}\in \mathbb{R}^{N \times r},\mathbf{Y} \in \mathbb{R}^{r \times M}$
               \end{itemize}
 \end{itemize}
-\normalsize \vbox{}
-\end{column}
-\end{columns}
+\normalsize \vbox{}                                             %\normalize使字体恢复正常大小
+\end{column}                                                    %结束右边栏
+\end{columns}                                                   %结束分栏
 \end{frame}
 ```
 
