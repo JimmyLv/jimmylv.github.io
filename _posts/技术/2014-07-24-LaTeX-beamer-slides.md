@@ -9,6 +9,8 @@ description:
 
 用LaTeX beamer制作幻灯片简洁优美，在需要很多数学公式的情况下很实用。这里我用我的第一份LaTeX beamer幻灯片代码为例说明。学习使用任何一种语言编程时，最重要的是对整个代码框架的理解。
 
+###代码框架理解
+
 beamer制作幻灯片的框架大致可分三级（其中for语句仅为便于理解，实际的LaTeX语句中并不会出现）如下：
 
 - 定义文件类型
@@ -21,7 +23,9 @@ beamer制作幻灯片的框架大致可分三级（其中for语句仅为便于�
 	- end for
 - 总的结束
 
-具体从代码看，首先是第一级结构：
+###具体代码实现
+
+具体从代码看，首先是一级结构：
 
 ```tex
 \documentclass[xcolor=dvipsnames]{beamer}  %定义文件类型
@@ -36,7 +40,7 @@ beamer制作幻灯片的框架大致可分三级（其中for语句仅为便于�
 \end{document}                             %总的结束
 ```
 
-在`总的开始`与`总的结束`之间写入如下代码，是为第二级结构：
+在`总的开始`与`总的结束`之间写入如下代码，是二级结构：
 
 ```tex
 \title[幻灯片缩略名]{幻灯片全名}           %以下是幻灯片首页的编辑
@@ -55,6 +59,42 @@ beamer制作幻灯片的框架大致可分三级（其中for语句仅为便于�
 
 ```
 
-在`开始编辑第i张幻灯片`与`结束编辑第i张幻灯片`之间，写入第i张幻灯片的编辑代码，即第三级结构。这里我以如下图所示的幻灯片的编辑代码为例说明一些基本的、常用的语法：
+在`开始编辑第i张幻灯片`与`结束编辑第i张幻灯片`之间，写入第i张幻灯片的编辑代码，即三级结构。这里我以如下图所示的幻灯片的编辑代码为例说明一些基本的、常用的语法：
+>![slide_eg](/public/img/slide_eg.JPG)
 
+```tex
+\begin{frame}{Decentralized low-rank matrix completion problem}
+\begin{columns}[onlytextwidth]
+\begin{column}{0.4\textwidth}
+\includegraphics[height=40mm]{networki2.jpg}
+\begin{itemize}
+\footnotesize \item A network of $L$ agents\\
+\item Each agent $i$ observes some entries of $\mathbf{W}_{i}$
+\end{itemize}
+\end{column}
+\begin{column}{0.6\textwidth}
+\begin{itemize}
+\vbox{}
+\item Consider a low-rank matrix $\mathbf{W}$
+\scriptsize \begin{itemize}
+                   \item $\mathbf{W} \in \mathbb{R}^{N \times M}$
+                   \item $rank(\mathbf{W})\le r$
+                   \item $\mathbf{W}_{n,m}$ is known for $(n,m) \in \Omega$
+                   \item $\mathbf{W} = [\mathbf{W}_{1}, \mathbf{W}_{2}, ...,
+\mathbf{W}_{L}] $
+                 \end{itemize}
+\normalsize \vbox{}
+\item An estimate matrix of $\mathbf{W}$: $\mathbf{Z}$
+\scriptsize \begin{itemize}
+                \item $\mathbf{Z} \in \mathbb{R}^{N \times M}$
+                \item $rank(\mathbf{Z})\le r$
+                \item $\mathbf{Z}=\mathbf{X}\mathbf{Y}= \mathbf{X} [\mathbf{Y}_{1}, \mathbf{Y}_{2}, ..., \mathbf{Y}_{L}]$
+                \item $\mathbf{X}\in \mathbb{R}^{N \times r},\mathbf{Y} \in \mathbb{R}^{r \times M}$
+              \end{itemize}
+\end{itemize}
+\normalsize \vbox{}
+\end{column}
+\end{columns}
+\end{frame}
+```
 
