@@ -19,8 +19,9 @@ beamer制作幻灯片的最大的框架是：
 >>>- 结束编辑第i张幻灯片
 >>- end for
 >- 总的结束
+从代码看具体的结构：
 
-```
+```tex
 \documentclass[xcolor=dvipsnames]{beamer}  %定义文件类型
 \usetheme{Copenhagen}                      %使用主题
 \usecolortheme{wolverine}                  %使用颜色主题
