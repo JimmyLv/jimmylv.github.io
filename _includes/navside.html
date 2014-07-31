@@ -2,13 +2,14 @@
   <div class="row">
     <div class="col-md-3 col-xs-3 aside1">
       <br>
-      <a class="pjaxlink" href="/"><img src="{{ site.gavatar }}" class="img-rounded avatar"></a>
+      <a class="pjaxlink" href="/"><img src="{{ site.gavatar }}" class="img-circle avatar"></a>
       <br><br>
       <ul class="nav nav-pills nav-stacked">
         {% for category in site.categories %}
           <li><a href="#{{ category | first }}" data-toggle="tab">{{ category[0] }}</a></li>
         {% endfor %}
         <li><a href="#tags" data-toggle="tab">{{ site.locals.tags }}</a></li>
+        <li><a class="pjaxlink" href="/pages/archive.html">{{ site.locals.archive }}</a></li>
         <li><a class="pjaxlink" href="/pages/about.html">{{ site.locals.about }}</a></li>
       </ul>
       <div class="aside1_bottom">
