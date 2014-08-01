@@ -7,5 +7,5 @@ keywords:
 description: 
 ---
 
-![1_1](/public/img/days/1_1.jpg)
+![1](/public/img/days/1.jpg)
 
