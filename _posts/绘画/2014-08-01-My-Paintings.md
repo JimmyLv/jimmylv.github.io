@@ -8,5 +8,5 @@ description:
 ---
 
 ####第一张：《与亚敏走在石像路》
-![1](/public/img/days/1.jpg)
+![1_1](/public/img/days/1_1.jpg)
 
