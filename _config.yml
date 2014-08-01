@@ -6,13 +6,14 @@ markdown: redcarpet
 author: 
   name: Anya Lin
   email: lay.1010@hotmail.com
-  link: 
+  link: http://painterlin.com
+  weibo: http://weibo.com/orangeissweet
   github: 
 
 # 站点信息
 title: 林安亚的博客
 description: My personal blog
-url: 
+url: http://painterlin.com
 rss_url: /pages/atom.xml
 
 # gavatar头像及Favicon
