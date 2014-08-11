@@ -19,7 +19,7 @@ body, html {
 /* 左侧导航栏 */
 .aside1 {
   background-color: #032f55;
-  background-image: url(/public/img/bg_grid.jpeg);
+  background-image: url(/public/img/bg_grid.jpg);
   height: 100%;
   padding-left: 0px;
   padding-right: 0px;
@@ -46,7 +46,7 @@ body, html {
 /* 中部目录栏 */
 .aside2 {
   background-color: #fafaf6;
-  background-image: url(/public/img/bg_lines.jpeg);
+  background-image: url(/public/img/bg_lines.jpg);
   height: 100%;
   border-right: 2px solid #e3007b;
   overflow-y: auto;
@@ -56,11 +56,11 @@ body, html {
   height: 100%;
   overflow-y: auto;
   background-color: #fafaf6;
-  background-image: url(/public/img/bg_lines.jpeg);
+  background-image: url(/public/img/bg_lines.jpg);
 }
 .aside3-title {
   background-color: #032f55;
-  background-image: url(/public/img/bg_grid.jpeg);
+  background-image: url(/public/img/bg_grid.jpg);
   padding-left: 30px;
   padding-right: 30px;
   text-align: center;
