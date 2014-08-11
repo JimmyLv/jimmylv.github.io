@@ -6,7 +6,7 @@
 body, html {
   margin: 0px;
   height: 100%;
-  overflow: hidden;
+  overflow: hidden; 
   background-color: #1f2c39;
 }
 .row {
@@ -19,6 +19,7 @@ body, html {
 /* 左侧导航栏 */
 .aside1 {
   background-color: #032f55;
+  background-image: url(/public/img/bg_grid.jpeg);
   height: 100%;
   padding-left: 0px;
   padding-right: 0px;
@@ -30,8 +31,8 @@ body, html {
   border-radius: 0px;
 }
 .avatar {
-  width: 90px;
-  height: 90px;
+  width: 68px;
+  height: 68px;
 }
 .aside1_bottom {
   width: 100%;
@@ -45,8 +46,9 @@ body, html {
 /* 中部目录栏 */
 .aside2 {
   background-color: #fafaf6;
+  background-image: url(/public/img/bg_lines.jpeg);
   height: 100%;
-  border-right: 2px solid #3399cc;
+  border-right: 2px solid #e3007b;
   overflow-y: auto;
 }
 /* 右侧内容栏 */
@@ -54,9 +56,11 @@ body, html {
   height: 100%;
   overflow-y: auto;
   background-color: #fafaf6;
+  background-image: url(/public/img/bg_lines.jpeg);
 }
 .aside3-title {
   background-color: #032f55;
+  background-image: url(/public/img/bg_grid.jpeg);
   padding-left: 30px;
   padding-right: 30px;
   text-align: center;
@@ -86,6 +90,7 @@ blockquote p {
 }
 /* 显示评论按钮 */
 .show-commend {
+  background-image: url(/public/img/body_bg1.jpg);
   width: 100%;
   margin-bottom: 40px;
 }
