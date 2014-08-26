@@ -46,7 +46,7 @@ body, html {
 /* 中部目录栏 */
 .aside2 {
   background-color: #fafaf6;
-  background-image: url(/public/img/bg_lines.jpg);
+  background-image: url(/public/img/bg_lines1.jpg);
   height: 100%;
   border-right: 2px solid #e3007b;
   overflow-y: auto;
@@ -56,7 +56,7 @@ body, html {
   height: 100%;
   overflow-y: auto;
   background-color: #fafaf6;
-  background-image: url(/public/img/bg_lines.jpg);
+  background-image: url(/public/img/bg_lines1.jpg);
 }
 .aside3-title {
   background-color: #032f55;
@@ -67,8 +67,8 @@ body, html {
   color: #FFF;
 }
 .aside3-content {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 #content {
   font-size: 18px;
@@ -90,7 +90,6 @@ blockquote p {
 }
 /* 显示评论按钮 */
 .show-commend {
-  background-image: url(/public/img/body_bg1.jpg);
   width: 100%;
   margin-bottom: 40px;
 }
