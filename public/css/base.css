@@ -18,7 +18,7 @@ body, html {
 }
 /* 左侧导航栏 */
 .aside1 {
-  background-color: #032f55;
+  background-color: #1f2c39;
   background-image: url(/public/img/bg_grid.jpg);
   height: 100%;
   padding-left: 0px;
@@ -31,8 +31,8 @@ body, html {
   border-radius: 0px;
 }
 .avatar {
-  width: 68px;
-  height: 68px;
+  width: 70px;
+  height: 70px;
 }
 .aside1_bottom {
   width: 100%;
@@ -48,7 +48,7 @@ body, html {
   background-color: #fafaf6;
   background-image: url(/public/img/bg_lines1.jpg);
   height: 100%;
-  border-right: 2px solid #e3007b;
+  border-right: 2px solid #84ccc9;
   overflow-y: auto;
 }
 /* 右侧内容栏 */
@@ -59,8 +59,9 @@ body, html {
   background-image: url(/public/img/bg_lines1.jpg);
 }
 .aside3-title {
-  background-color: #032f55;
+  background-color: #1f2c39;
   background-image: url(/public/img/bg_grid.jpg);
+  border-bottom: 1px solid #0075a9;
   padding-left: 30px;
   padding-right: 30px;
   text-align: center;
