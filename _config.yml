@@ -8,7 +8,7 @@ author:
   email: lay.1010@hotmail.com
   link: http://painterlin.com
   weibo: http://weibo.com/orangeissweet
-  github: 
+  github: http://github.com/lay1010
 
 # 站点信息
 title: 林安亚的博客
@@ -23,17 +23,19 @@ favicon: /public/img/shorthair1.jpg
 # google analytics 设置
 ga:
   id: 
-  url: 
+  url: painterlin.com
 
 # disqus 设置
 disqus:
   shortname: painterlin
 
 # 主题设置，自动激活某个标签
-active: 科研
+active: 读书
 
 # 首页除了最新文章外显示分类
 cates: 
+  - 矩阵补全
+  - LaTeX
 
 # 中文本地化
 locals:
