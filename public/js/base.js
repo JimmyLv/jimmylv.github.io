@@ -11,7 +11,7 @@ function nav_click(is_show) {
       .addClass('col-md-8 col-lg-8');
     /* 调整文字内容格式 */
     $('.aside3-content')
-      .removeClass('col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1')
+      .removeClass('col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2')
       .addClass('col-md-12');
     /* 变化按钮 */
     $('#nav_btn i')
@@ -29,7 +29,7 @@ function nav_click(is_show) {
     /* 修改文字排版 */
     $('.aside3-content')
       .removeClass('col-md-12')
-      .addClass('col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1');
+      .addClass('col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2');
     /* 变化按钮图标 */
     $('#nav_btn i').removeClass('fa-angle-left').addClass('fa-angle-right');  
   }  
