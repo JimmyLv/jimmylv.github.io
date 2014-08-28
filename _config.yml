@@ -22,7 +22,7 @@ favicon: /public/img/anyalin.png
 
 # google analytics 设置
 ga:
-  id: 
+  id: UA-54262064-1 
   url: painterlin.com
 
 # disqus 设置
