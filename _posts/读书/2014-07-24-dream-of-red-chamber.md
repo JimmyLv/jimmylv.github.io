@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 23岁读《红楼梦》
+title: 读《红楼梦》
 category: 读书
 tags: 红楼梦
 keywords: 
