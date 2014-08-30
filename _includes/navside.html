@@ -5,15 +5,15 @@
       <a class="pjaxlink" href="/"><img src="{{ site.gavatar }}" class="img-circle avatar"></a>
       <br><br>
       <ul class="nav nav-pills nav-stacked">
-        {% for category in site.categories %}
-          <li><a href="#{{ category | first }}" data-toggle="tab">{{ category[0] }}</a></li>
+        {% for category in site.categories %}     <!-- 这里是aside1的读书、生活、科研、技术、绘画-->
+         <li><a href="#{{ category | first }}" data-toggle="tab">{{ category[0] }}</a></li>
         {% endfor %}
-        <li><a href="#tags" data-toggle="tab"><i class="fa fa-tags fa-lg"></i></a></li>
-        <li><a class="pjaxlink" href="/pages/archive.html"><i class="fa fa-archive fa-lg"></i></a></li>
-        <li><a class="pjaxlink" href="/pages/about.html"><i class="fa fa-user fa-lg"></i></a></li>
         <!-- <li><a href="#tags" data-toggle="tab">{{ site.locals.tags }}</a></li>  
         <li><a class="pjaxlink" href="/pages/archive.html">{{ site.locals.archive }}</a></li>
         <li><a class="pjaxlink" href="/pages/about.html">{{ site.locals.about }}</a></li>  这是原来现实汉字的代码，我改为了图标 -->
+        <li><a href="#tags" data-toggle="tab"><i class="fa fa-tags fa-lg"></i></a></li>
+        <li><a class="pjaxlink" href="/pages/archive.html"><i class="fa fa-archive fa-lg"></i></a></li>
+        <li><a class="pjaxlink" href="/pages/about.html"><i class="fa fa-user fa-lg"></i></a></li>
       </ul>
       <div class="aside1_bottom">
         <table class="table table-condensed">
