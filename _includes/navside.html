@@ -18,8 +18,8 @@
       <div class="aside1_bottom">
         <table class="table table-condensed">
           <tr>
-            <td><a href="/pages/atom.xml" target="_blank"><i class="fa fa-rss fa-2x"></i></a></td>
-            <td><a href="mailto:{{ site.author.email }}"><i class="fa fa-envelope-o fa-2x"></i></a></td>
+            <td><a href="/pages/atom.xml" target="_blank"><i class="fa fa-rss fa-2x" style="color:#fff;"></i></a></td>
+            <td><a href="mailto:{{ site.author.email }}"><i class="fa fa-envelope-o fa-2x" style="color:#fff;"></i></a></td>
           </tr>
         </table>
       </div>
@@ -30,16 +30,16 @@
           {% for category in site.categories %} 
             <div class="tab-pane" id="{{ category[0] }}">
               <div class="list-group">
-                <h2 class="center">{{ category[0] }}</h2>
+                <!--<h2 class="center">{{ category[0] }}</h2>-->     <!--原来aside2上面的大标题-->
                 {% for post in category[1] %}
-                  <a href="{{ post.url }}" class="list-group-item pjaxlink">{{post.title}}</a>
+                  <a href="{{ post.url }}" class="list-group-item-lay pjaxlink">{{post.title}}</a>
                 {% endfor %}
               </div>
             </div>
           {% endfor %}      
           <div class="tab-pane" id="tags">
             <div class="panel-group" id="accordion">
-              <h2 class="center">{{ site.locals.tags }}</h2>
+              <!--<h2 class="center">{{ site.locals.tags }}</h2>-->
               {% for tag in site.tags %} 
                 <div class="panel panel-info">
                   <div class="panel-heading">
