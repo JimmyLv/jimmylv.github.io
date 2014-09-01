@@ -51,7 +51,7 @@ body, html {
 
 .avatar {
   width: 90px;
-  height: 90px;
+  /*height: 90px;*/
   border: 2px solid #fff;
 }
 .aside1_bottom {
