@@ -19,8 +19,8 @@ url: http://painterlin.com
 rss_url: /pages/atom.xml
 
 # gavatar头像及Favicon
-gavatar: /public/img/shorthair1.jpg
-favicon: /public/img/shorthair1.jpg
+gavatar: /public/img/anyalin.png
+favicon: /public/img/anyalin.png
 
 # google analytics 设置
 ga:
