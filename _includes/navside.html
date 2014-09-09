@@ -31,12 +31,6 @@
           {% for category in site.categories %} 
             <div class="tab-pane" id="{{ category[0] }}">
               <div class="list-group">
-                <form action="" id="search-form" class="form-inline list-group-item-lay pjaxlink">
-                  <input id="search-input" class="input-sm" style="width: 83%; border-width:0px; background-color: #303030; border-radius:20px;" type="text" placeholder="搜索..." onkeydown="return google_search_enter(event);">
-                  <button type="button" style="background-color: #303030; border-width: 0px; border-radius:20px;" class="btn btn-default btn-sm" onclick="return google_search();">
-                  <i class="fa fa-search fa-lg" style="color: #fff;"></i>     <!-- 修改显示评论按钮图标-->
-                  </button>
-                </form>
                 <!--<h2 class="center">{{ category[0] }}</h2>-->     <!--原来aside2上面的大标题-->
                 {% for post in category[1] %}
                   <a href="{{ post.url }}" class="list-group-item-lay pjaxlink">{{post.title}}</a>
