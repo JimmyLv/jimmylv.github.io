@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MATLAB小贴士
+title: MATLAB科研小贴士
 category: 科研
 tags: 矩阵补全 MATLAB
 keywords: 矩阵补全，MATLAB
@@ -11,6 +11,28 @@ description:
 
 这篇文章会陆续记录下自己使用MATLAB的体会，以及解决问题的一些技巧。
 
+### Clear
+运行一段代码前通常需要将工作空间里的已有数据清除掉。只需要在编辑有实际意义的代码之前写下如下代码：
+
+```matlab
+clc; clear; close all;
+```
+
+### Random Seed 
+为了保证程序在相同环境下运行以便测试某一个或几个改变对于算法的影响，在使用各种random命令时，需要设定固定种子。这样就不会因为每次随机产生的序列不同而影响程序运行结果。设置随机种子的代码如下：
+
+```matlab
+%% random seed
+%seed=round(5000*rand);       % use this line if you set a random seed
+seed=3302;    % use this line if you set a fixed seed. 3302 can be replaced by other numbers.
+fprintf('Seed = %d\n',seed);  % print the current seed 
+if exist('RandStream','file')
+   RandStream.setGlobalStream(RandStream('mt19937ar','seed',seed));
+else
+   rand('state',seed); 
+   randn('state',seed^2);
+end
+```
 
 ### NaN
 NaN是Not a Number的缩写。当某变量显示NaN时，表示该变量是不明确的数值结果。比如0/0、inf/inf等运算会出现NaN报错。遇到这种情况，首先判断NaN出现在哪一步：
