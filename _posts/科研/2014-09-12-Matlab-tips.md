@@ -12,7 +12,7 @@ description:
 这篇文章会陆续记录下自己使用MATLAB的体会，以及解决问题的一些技巧。
 
 
-#### **NaN**
+### NaN
 NaN是Not a Number的缩写。当某变量显示NaN时，表示该变量是不明确的数值结果。比如0/0、inf/inf等运算会出现NaN报错。遇到这种情况，首先判断NaN出现在哪一步：
 
 ```matlab
@@ -23,4 +23,19 @@ end
 再在命令窗里单独查看与该变量有关的其他变量，从而排除正常变量，获知究竟是哪个或哪几个变量出了问题，变为无穷大或无穷小。再检查与这些变量有关的算法。
 
 
-#### **未完待续**
+### SaveAs
+若需要比较各参数对算法性能的影响，通常是在程序中修改参数运行，得到算法收敛精度与迭代次数的曲线图。再根据曲线图反向思考修改哪些参数有效。这个过程需要保存产生的大量图片。可以使用`hold on`命令将所有虚线画在同一张图上，也可以使用`saveas`将所有图片自动保存。
+
+```matlab
+%% plot
+figure(1)
+semilogy(1:iter,y_axis(1:iter),'b-');  %b：蓝色。－：线段形状
+set(gca,'fontsize',12);
+grid on;
+xlabel('\fontsize{12}\it Iteration'); ylabel('\fontsize{12}\it Normalized residual');
+legend('\fontsize{12}\it text');       %text：这条蓝色代表什么
+hold on
+saveas(gcf,'filename','fig')           %filename：将图片保存为这个名字。fig：保存为fig格式
+```
+
+注意，在使用`hold on`命令时，应该保留上次程序运行后产生的各种数据。即不能在程序中写类似与`clear all`之类的清除语句，否则上次曲线图也将被删除。
