@@ -1,9 +1,9 @@
 ---
 layout: post
-title: MATLAB科研小贴士
+title: Matlab科研小贴士
 category: 科研
-tags: 矩阵补全 MATLAB
-keywords: 矩阵补全，MATLAB
+tags: 矩阵补全 Matlab
+keywords: 矩阵补全，Matlab
 description: 
 ---
 
