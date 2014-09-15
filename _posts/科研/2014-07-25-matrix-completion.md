@@ -6,10 +6,16 @@ tags: 矩阵补全
 keywords: 矩阵补全，去中心
 description: 
 ---
+<html>
+<head>
+<script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
+</head>
+<body>
+
 
 ###问题描述:
 
-如果有这样一个矩阵**W**:
+如果有这样一个矩阵<a href="http://www.codecogs.com/eqnedit.php?latex=\mathbf{W}" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\mathbf{W}" title="\mathbf{W}" /></a>**W**:
 
 
 - 矩阵中有部分元素缺失
@@ -57,6 +63,17 @@ description:
 
 - [《对于一致平均问题的理解》](http://painterlin.com/2014/08/22/Average-Consensus.html)
 - [《动态一致平均问题的4篇论文》](http://painterlin.com/2014/08/31/Papers-about-average-consensus.html)
+
+
+
+Here are my formulas
+<div lang="latex">1+sin(x)^2+3</div>
+<ul>
+<li lang="latex">x^2+y^2+z^2</li>
+<li>a^2+b^2</li>
+</ul>
+</body>
+</html>
 
 
 
