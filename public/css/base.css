@@ -50,9 +50,9 @@ body, html {
 }
 
 .avatar {
-  width: 90px;
+  width: 80px;
   /*height: 90px;*/
-  border: 2px solid #fff;
+  border: 0px solid #fff;
 }
 .aside1_bottom {
   width: 100%;
