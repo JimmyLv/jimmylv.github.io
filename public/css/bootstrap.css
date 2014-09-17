@@ -1249,7 +1249,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-    font-size: 24px
+    font-size: 26px
 }
 
 h4, .h4 {
@@ -5331,7 +5331,10 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     margin-bottom: -1px;
     color: #fff;
     background-color: #1abc9c;
-    border: 0px solid #ddd;
+    border: 1px solid #1abc9c;/*115449;*/
+    border-left: 0px;
+    border-right: 0px;
+    /*border: 0px solid #ddd;*/
     margin-right: 0px; margin-left: 35px; 
 }
 
