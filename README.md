@@ -1,7 +1,7 @@
-qing215.github.com
+liqing215.github.com
 ====================
 
-this is my first blog.
+This is my blog by Pelican.
 
 
 
