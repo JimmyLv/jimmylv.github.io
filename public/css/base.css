@@ -7,7 +7,7 @@ body, html {
   margin: 0px;
   height: 100%;
   overflow: hidden; 
-  background-color: #D1D4D7;
+  background-color: #EAEDEF;
 }
 .row {
   height: 100%;
@@ -113,7 +113,7 @@ blockquote p {
 }
 .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
   color: #fff;
-  background-color: #747778;
+  background-color: #EAEDEF;
 }
 /* 显示评论按钮 */
 .show-commend {
