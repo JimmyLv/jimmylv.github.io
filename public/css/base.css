@@ -7,7 +7,7 @@ body, html {
   margin: 0px;
   height: 100%;
   overflow: hidden; 
-  background-color: #303030;
+  background-color: #EAEDEF;
 }
 .row {
   height: 100%;
@@ -19,7 +19,7 @@ body, html {
 /* 左侧导航栏 */
 .aside1 {
   /*background-color: #1f2c39;*/
-  background-color: #1abc9c;
+  background-color: #2DBE60;
   /*background-image: url(/public/img/bg_grid.jpg);*/
   height: 100%;
   padding-left: 0px;
@@ -39,14 +39,14 @@ body, html {
 
 .aside1> .nav > li > a:hover {
   color:#fff;
-  background-color: #16a085;
+  background-color: #14AA57;
 }
 
 .aside1 > .nav-pills>li.active>a ,.nav-pills>li.active>a:hover,.nav-pills>li.active>a:focus {
   color: #fff;
   /*background-color: #fafaf6;*/
   /*background-image: url(/public/img/body_bg.jpg);*/
-  background-color: #303030;
+  background-color: #EAEDEF;
 }
 
 .avatar {
@@ -68,9 +68,9 @@ body, html {
   /*background-color: #fafaf6;*/
   /*background-image: url(/public/img/body_bg.jpg);*/
 
-  background-color: #303030;
+  background-color: #EAEDEF;
   height: 100%;
-  border-right: 2px solid #303030;
+  border-right: 2px solid #EAEDEF;
   overflow-y: auto;
   font-color: #fff;
   margin-top: 40px;
@@ -90,7 +90,7 @@ body, html {
   padding-left: 30px;
   padding-right: 30px;
   text-align: center;
-  color: #303030;
+  color: #EAEDEF;
 }
 .aside3-content {
   padding-left: 30px;
@@ -113,7 +113,7 @@ blockquote p {
 }
 .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
   color: #fff;
-  background-color: #303030;
+  background-color: #EAEDEF;
 }
 /* 显示评论按钮 */
 .show-commend {

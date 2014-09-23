@@ -4,40 +4,39 @@ markdown: redcarpet
 
 # 作者信息
 author: 
-  name: Anya Lin
-  email: lay.1010@hotmail.com
-  link: http://painterlin.com
-  weibo: http://weibo.com/orangeissweet
-  github: http://github.com/lay1010
-  music: http://site.douban.com/linanya
-  linkedin: https://www.linkedin.com/pub/anya-lin/81/91/232
+  name: 吕立青
+  email: lv460051518@gmail.com
+  link: http://www.llgreen.tk
+  weibo: http://weibo.com/liqing215
+  github: http://github.com/liqing215
+  zhihu: http://www.zhihu.com/people/lu-li-qing-90
 
 # 站点信息
-title: 林安亚的博客
-description: My personal blog
-url: http://painterlin.com
+title: 吕立青的博客
+description: My personal note-blog.
+url: http://www.goshare.tk
 rss_url: /pages/atom.xml
 
 # gavatar头像及Favicon
-gavatar: /public/img/LAY.png
-favicon: /public/img/LAY.png
+gavatar: /public/img/favicon.ico
+favicon: /public/img/favicon.ico
 
 # google analytics 设置
 ga:
-  id: UA-54262064-1 
-  url: painterlin.com
+  id: UA-55089304-1 
+  url: www.goshare.tk
 
 # disqus 设置
 disqus:
-  shortname: painterlin
+  shortname: goshare.tk
 
 # 主题设置，自动激活某个标签
 active: 读书
 
 # 首页除了最新文章外显示分类
 cates: 
-  - 矩阵补全
-  - LaTeX
+  - Python
+  - 摄影
 
 # 中文本地化
 locals:
