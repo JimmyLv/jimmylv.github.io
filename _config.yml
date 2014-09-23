@@ -18,7 +18,7 @@ url: http://www.goshare.tk
 rss_url: /pages/atom.xml
 
 # gavatar头像及Favicon
-gavatar: /public/img/favicon.ico
+gavatar: /public/img/gavatar.jpg
 favicon: /public/img/favicon.ico
 
 # google analytics 设置

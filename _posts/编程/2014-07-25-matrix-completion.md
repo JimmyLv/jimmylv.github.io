@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 低秩矩阵补全
-category: 科研
+category: 编程
 tags: 矩阵补全
 keywords: 矩阵补全，去中心
 description: 
