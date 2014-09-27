@@ -130,34 +130,73 @@ sudo gedit /home/文档/av&gv
 
 完成后按ctrl+x退出，按y保存，回车，OK
 
+###4. sed
 
-##程序安装与卸载
+> sed是一种非交互式的流编辑器，可动态编辑文件。所谓非交互式是说，sed和传统的文本编辑器不同，并非和使用者直接互动，sed处理的对象是文件的数据流（称为stream/流）。
 
-###1. 更新本地软件源文件
+> 特别注意：sed并不会更改文件内容。sed的工作方式是读取文件内容，经流编辑之后，把结果显示到标准输出。因此，如果想要存储sed的处理结果，得自行运用转向输出将结果存成其他文件。
 
-`sudo apt-get update`
-
-###2. 安装指定的程序
-
-```
-#安装输入法框架ibus#
-sudo apt-get install ibus 
+```sh
+#修改 RVM 的 Ruby 安装源到国内的 淘宝镜像服务器，能提高安装速度
+$ sed -i -e 's/ftp\.ruby-lang\.org\/pub\/ruby/ruby\.taobao\.org\/mirrors\/ruby/g' ~/.rvm/config/db
 ```
 
-###3. 卸载指定的程序
+##程序安装与卸载`apt-get`
 
-一般最好加上“–purge”执行清除式卸载；并在程序名称后添加*号
+###1. 添加PPA源
+
+> PPA，表示 Personal Package Archives，也就是个人软件包集。
+
+> 有很多软件因为种种原因，不能进入官方的 Ubuntu 软件仓库。 为了方便 Ubuntu 用户使用，launchpad.net 提供了 ppa，允许用户建立自己的软件仓库， 自由的上传软件。
+
+```sh
+#到[launchpad.net](https://launchpad.net/+search)搜索到ppa:user/ppa-name之后
+sudo add-apt-repository ppa:ubuntu-wine/ppa
+```
+
+###2. 更新软件以及软件源列表
+
+> 在修改`/etc/apt/sources.list`或者`/etc/apt/preferences`之后运行该命令，此外您需要定期运行`apt-get update`命令以确保您的软件包列表是最新的
+
+```sh
+#更新源
+sudo apt-get update 
+#更新已安装的包
+sudo apt-get upgrade 
+```
+
+###4. 安装指定的程序
+
+```sh
+#搜索包
+apt-cache search package 
+#获取包的相关信息，如说明、大小、版本等
+apt-cache show package 
+#安装包
+sudo apt-get install package 
+#重新安装包
+sudo apt-get install package - - reinstall 
+```
+
+###5. 卸载指定的程序
 
 ```
-#卸载nvidia的驱动及其配置文件#
-sudo apt-get remove –purge nvidia* 
+#卸载已安装的软件包
+apt-get remove packagename
+#卸载一个已安装的软件包（删除配置文件）
+apt-get --purge remove packagename
+#有些软件很难卸载，而且还阻止了别的软件的应用
+dpkg --force-all --purge packagename
 ```
- 
-###4. 更新引导
- 
-通常在更改驱动（特别是显卡）和内核后必要的操作，需要管理员权限
 
-`sudo update-grub`
+###6. 清理空间
+
+```sh
+#清除已经卸载的软件包的.deb文件
+sudo apt-get autoclean 
+#将已安装软件包的.deb文件一并删除
+sudo apt-get clean 
+```
 
 ##重要的热键
 
