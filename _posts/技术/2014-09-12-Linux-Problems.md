@@ -178,20 +178,43 @@ sudo apt-get remove –purge nvidia*
 
 举例：`sudo update-grub`
 
+##重要的热键
+
+###1. **桌面**
+
+ALT + F1: 聚焦到桌面左侧任务导航栏，可按上下键导航。
+ALT + F2: 运行命令
+ALT + F4: 关闭窗口
+ALT + TAB: 切换程序窗口
+ALT + 空格: 打开窗口菜单
+PRINT: 桌面截图
+ALT + PRINT：窗口截图
+
+###2. **Dash面板**
+
+在Dash面板中按CTRL + TAB: 切换到下一个子面板（可搜索不同类型项目，如程序、文件、音乐）
+
+WIN + A: 搜索或浏览程序（Application）
+WIN + F: 搜索或浏览文件（File）
+WIN + M: 搜索或浏览音乐文件（Music）
+
+###3. **Terminal终端**
+
+CTRL + ALT + T: 打开终端
+TAB: 自动补全命令或文件名
+CTRL + SHIFT + V: 粘贴（Linux中不需要复制的动作，文本被选择就自动被复制）
+CTRL + SHIFT + T: 新建标签页
+CTRL + D: 关闭标签页
+CTRL + L: 清楚屏幕
+CTRL + R + 文本: 在输入历史中搜索
+CTRL + A: 移动到行首
+CTRL + E: 移动到行末
+CTRL + C: 终止当前任务
+CTRL + Z: 把当前任务放到后台运行（相当于运行命令时后面加&）
 
 ##其他有用的种种
 
-###1. 重要的热键
-
-`Ctrl+Art+T`：打开命令行
-
-`Tab`：连按两次，具有“命令补全”和“文件补齐”的作用。
-
-`Ctrl+c`：中断目前程序。
-
-`Ctrl+d`：键盘输入结束；直接离开文字界面（相当于`exit`）。
-
-###2. 查询命令功能 `man page`
+###1. 查询命令功能 `man page`
 
 ```
 man command  #command是要查询的命令名称
@@ -201,7 +224,7 @@ man command  #command是要查询的命令名称
 
 在man page中，可以在任何时候输入`/keyword`来查询关键字，比如/date.
 
-###3. 正确的关机方法
+###2. 正确的关机方法
 
 惯用的关机命令：
 
