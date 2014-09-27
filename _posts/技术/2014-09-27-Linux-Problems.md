@@ -133,88 +133,69 @@ sudo gedit /home/文档/av&gv
 
 ##程序安装与卸载
 
-###1. `sudo`
+###1. 更新本地软件源文件
 
-作用：赋予当前命令行为管理员权限。
+`sudo apt-get update`
 
-举例：`sudo su` #切换到超级管理员权限模式#
-
-###2. `apt-get`
-
-作用：用于程序安装与卸载命令的标志，需要管理员权限。
-
-###3. `install`
-
-作用：安装指定的程序（程序名称即可，一般不用添加网络地址）
-
-举例：
+###2. 安装指定的程序
 
 ```
 #安装输入法框架ibus#
 sudo apt-get install ibus 
 ```
 
-###4. `remove`
+###3. 卸载指定的程序
 
-作用：卸载指定的程序（或单用删除文件），一般最好加上“–purge”执行清除式卸载；并在程序名称后添加*号
-
-举例：
+一般最好加上“–purge”执行清除式卸载；并在程序名称后添加*号
 
 ```
 #卸载nvidia的驱动及其配置文件#
 sudo apt-get remove –purge nvidia* 
 ```
-
-###5. `upate`
-
-作用：更新本地软件源文件，需管理员权限。
-
-举例：`sudo apt-get update`
-
  
-###6. `update-grub`
+###4. 更新引导
+ 
+通常在更改驱动（特别是显卡）和内核后必要的操作，需要管理员权限
 
-作用：更新引导，通常在更改驱动（特别是显卡）和内核后必要的操作，需要管理员权限
-
-举例：`sudo update-grub`
+`sudo update-grub`
 
 ##重要的热键
 
-###1. **桌面**
+###1. 桌面
 
-ALT + F1: 聚焦到桌面左侧任务导航栏，可按上下键导航。
-ALT + F2: 运行命令
-ALT + F4: 关闭窗口
-ALT + TAB: 切换程序窗口
-ALT + 空格: 打开窗口菜单
-PRINT: 桌面截图
-ALT + PRINT：窗口截图
+- ALT + F1: 聚焦到桌面左侧任务导航栏，可按上下键导航。
+- ALT + F2: 运行命令
+- ALT + F4: 关闭窗口
+- ALT + TAB: 切换程序窗口
+- ALT + 空格: 打开窗口菜单
+- PRINT: 桌面截图
+- ALT + PRINT：窗口截图
 
-###2. **Dash面板**
+###2. Dash面板
 
 在Dash面板中按CTRL + TAB: 切换到下一个子面板（可搜索不同类型项目，如程序、文件、音乐）
 
-WIN + A: 搜索或浏览程序（Application）
-WIN + F: 搜索或浏览文件（File）
-WIN + M: 搜索或浏览音乐文件（Music）
+- WIN + A: 搜索或浏览程序（Application）
+- WIN + F: 搜索或浏览文件（File）
+- WIN + M: 搜索或浏览音乐文件（Music）
 
-###3. **Terminal终端**
+###3. Terminal终端
 
-CTRL + ALT + T: 打开终端
-TAB: 自动补全命令或文件名
-CTRL + SHIFT + V: 粘贴（Linux中不需要复制的动作，文本被选择就自动被复制）
-CTRL + SHIFT + T: 新建标签页
-CTRL + D: 关闭标签页
-CTRL + L: 清楚屏幕
-CTRL + R + 文本: 在输入历史中搜索
-CTRL + A: 移动到行首
-CTRL + E: 移动到行末
-CTRL + C: 终止当前任务
-CTRL + Z: 把当前任务放到后台运行（相当于运行命令时后面加&）
+- CTRL + ALT + T: 打开终端
+- TAB: 自动补全命令或文件名
+- CTRL + SHIFT + V: 粘贴（Linux中不需要复制的动作，文本被选择就自动被复制）
+- CTRL + SHIFT + T: 新建标签页
+- CTRL + D: 关闭标签页
+- CTRL + L: 清楚屏幕
+- CTRL + R + 文本: 在输入历史中搜索
+- CTRL + A: 移动到行首
+- CTRL + E: 移动到行末
+- CTRL + C: 终止当前任务
+- CTRL + Z: 把当前任务放到后台运行（相当于运行命令时后面加&）
 
 ##其他有用的种种
 
-###1. 查询命令功能 `man page`
+###1. 查询命令功能 
 
 ```
 man command  #command是要查询的命令名称
