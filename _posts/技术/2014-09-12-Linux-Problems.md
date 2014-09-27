@@ -130,111 +130,91 @@ sudo gedit /home/文档/av&gv
 
 完成后按ctrl+x退出，按y保存，回车，OK
 
-###4. sed
 
-> sed是一种非交互式的流编辑器，可动态编辑文件。所谓非交互式是说，sed和传统的文本编辑器不同，并非和使用者直接互动，sed处理的对象是文件的数据流（称为stream/流）。
+##程序安装与卸载
 
-> 特别注意：sed并不会更改文件内容。sed的工作方式是读取文件内容，经流编辑之后，把结果显示到标准输出。因此，如果想要存储sed的处理结果，得自行运用转向输出将结果存成其他文件。
+###1. `sudo`
 
-```sh
-#修改 RVM 的 Ruby 安装源到国内的 淘宝镜像服务器，能提高安装速度
-$ sed -i -e 's/ftp\.ruby-lang\.org\/pub\/ruby/ruby\.taobao\.org\/mirrors\/ruby/g' ~/.rvm/config/db
+作用：赋予当前命令行为管理员权限。
+
+举例：`sudo su` #切换到超级管理员权限模式#
+
+###2. `apt-get`
+
+作用：用于程序安装与卸载命令的标志，需要管理员权限。
+
+###3. `install`
+
+作用：安装指定的程序（程序名称即可，一般不用添加网络地址）
+
+举例：
+
+```
+#安装输入法框架ibus#
+sudo apt-get install ibus 
 ```
 
-##程序安装与卸载`apt-get`
+###4. `remove`
 
-###1. 添加PPA源
+作用：卸载指定的程序（或单用删除文件），一般最好加上“–purge”执行清除式卸载；并在程序名称后添加*号
 
-> PPA，表示 Personal Package Archives，也就是个人软件包集。
+举例：
 
-> 有很多软件因为种种原因，不能进入官方的 Ubuntu 软件仓库。 为了方便 Ubuntu 用户使用，launchpad.net 提供了 ppa，允许用户建立自己的软件仓库， 自由的上传软件。
-
-```sh
-#到[launchpad.net](https://launchpad.net/+search)搜索到ppa:user/ppa-name之后
-sudo add-apt-repository ppa:ubuntu-wine/ppa
+```
+#卸载nvidia的驱动及其配置文件#
+sudo apt-get remove –purge nvidia* 
 ```
 
-###2. 更新软件以及软件源列表
+###5. `upate`
 
-> 在修改`/etc/apt/sources.list`或者`/etc/apt/preferences`之后运行该命令，此外您需要定期运行`apt-get update`命令以确保您的软件包列表是最新的
+作用：更新本地软件源文件，需管理员权限。
 
-```sh
-#更新源
-sudo apt-get update 
-#更新已安装的包
-sudo apt-get upgrade 
-```
+举例：`sudo apt-get update`
 
-###4. 安装指定的程序
+ 
+###6. `update-grub`
 
-```sh
-#搜索包
-apt-cache search package 
-#获取包的相关信息，如说明、大小、版本等
-apt-cache show package 
-#安装包
-sudo apt-get install package 
-#重新安装包
-sudo apt-get install package - - reinstall 
-```
+作用：更新引导，通常在更改驱动（特别是显卡）和内核后必要的操作，需要管理员权限
 
-###5. 卸载指定的程序
-
-```sh
-#卸载已安装的软件包
-apt-get remove packagename
-#卸载一个已安装的软件包（删除配置文件）
-apt-get --purge remove packagename
-#有些软件很难卸载，而且还阻止了别的软件的应用
-dpkg --force-all --purge packagename
-```
-
-###6. 清理空间
-
-```sh
-#清除已经卸载的软件包的.deb文件
-sudo apt-get autoclean 
-#将已安装软件包的.deb文件一并删除
-sudo apt-get clean 
-```
+举例：`sudo update-grub`
 
 ##重要的热键
 
-###1. 桌面
+###1. **桌面**
 
-- ALT + F1: 聚焦到桌面左侧任务导航栏，可按上下键导航。
-- ALT + F2: 运行命令
-- ALT + F4: 关闭窗口
-- ALT + TAB: 切换程序窗口
-- ALT + 空格: 打开窗口菜单
-- PRINT: 桌面截图
-- ALT + PRINT：窗口截图
+ALT + F1: 聚焦到桌面左侧任务导航栏，可按上下键导航。
+ALT + F2: 运行命令
+ALT + F4: 关闭窗口
+ALT + TAB: 切换程序窗口
+ALT + 空格: 打开窗口菜单
+PRINT: 桌面截图
+ALT + PRINT：窗口截图
 
-###2. Dash面板
+###2. **Dash面板**
 
 在Dash面板中按CTRL + TAB: 切换到下一个子面板（可搜索不同类型项目，如程序、文件、音乐）
 
-- WIN + A: 搜索或浏览程序（Application）
-- WIN + F: 搜索或浏览文件（File）
-- WIN + M: 搜索或浏览音乐文件（Music）
+WIN + A: 搜索或浏览程序（Application）
+WIN + F: 搜索或浏览文件（File）
+WIN + M: 搜索或浏览音乐文件（Music）
 
-###3. Terminal终端
+###3. **Terminal终端**
 
-- CTRL + ALT + T: 打开终端
-- TAB: 自动补全命令或文件名
-- CTRL + SHIFT + V: 粘贴（Linux中不需要复制的动作，文本被选择就自动被复制）
-- CTRL + SHIFT + T: 新建标签页
-- CTRL + D: 关闭标签页
-- CTRL + L: 清楚屏幕
-- CTRL + R + 文本: 在输入历史中搜索
-- CTRL + A: 移动到行首
-- CTRL + E: 移动到行末
-- CTRL + C: 终止当前任务
-- CTRL + Z: 把当前任务放到后台运行（相当于运行命令时后面加&）
+CTRL + ALT + T: 打开终端
+TAB: 自动补全命令或文件名
+CTRL + SHIFT + V: 粘贴（Linux中不需要复制的动作，文本被选择就自动被复制）
+CTRL + SHIFT + T: 新建标签页
+CTRL + D: 关闭标签页
+CTRL + L: 清楚屏幕
+CTRL + R + 文本: 在输入历史中搜索
+CTRL + A: 移动到行首
+CTRL + E: 移动到行末
+CTRL + C: 终止当前任务
+CTRL + Z: 把当前任务放到后台运行（相当于运行命令时后面加&）
 
 ##其他有用的种种
 
-###1. 查询命令功能 
+###1. 查询命令功能 `man page`
 
 ```
 man command  #command是要查询的命令名称
