@@ -11,7 +11,6 @@ description:
 - 关键词：**Git+github+jekyll+.tk+DNS.LA+markdown** 
 
 
-</br>
 ###前言：搭建博客的几大要素
 
 
@@ -21,8 +20,8 @@ description:
 
 >一个Blog生成工具（这里选用jekyll，类似WordPress）
 
-</br>
-<!--more-->
+
+
 第一部分：使用GitHub Pages快速生成博客 
 ---
 
@@ -57,7 +56,7 @@ git config --global user.email "your_email@example.com"# Sets the default email 
 ```
 
 更多关于Github的设置可以看[这里][2]
-<!--more-->
+
 ###三、建立一个“Blog”项目，用Github Pages生成博客 
 
 >**说明：**
