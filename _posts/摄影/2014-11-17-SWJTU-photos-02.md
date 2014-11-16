@@ -9,7 +9,7 @@ description:
 
 ![8](/public/img/photos/8.jpg)
 ![9](/public/img/photos/9.jpg)
-![10](/public/img/photos/10.jpg)
+![10](/public/img/photos/10.JPG)
 ![11](/public/img/photos/11.jpg)
-![12](/public/img/photos/12.jpg)
-![13](/public/img/photos/13.jpg)
+![12](/public/img/photos/12.JPG)
+![13](/public/img/photos/13.JPG)
