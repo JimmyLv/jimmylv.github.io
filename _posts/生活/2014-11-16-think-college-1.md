@@ -1,6 +1,6 @@
 ---
 layout: post
-title: think: 「反思我的大学」之科学与技术
+title: 「反思我的大学」之科学与技术
 category: 生活
 tags: 总结
 keywords: 大学
