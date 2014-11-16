@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Zen of Python
+title: Pythonic: The Zen of Python
 category: 编程
 tags: Python
 keywords: Python
@@ -8,7 +8,7 @@ description:
 published: true
 ---
 
-The Zen of Python, by Tim Peters
+##The Zen of Python, by Tim Peters
 
 Beautiful is better than ugly.
 
