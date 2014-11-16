@@ -5,7 +5,9 @@ category: 生活
 tags: 总结
 keywords: 工作
 description: 
+published: true
 ---
+
 Rap God - Eminem
 
 <embed src="http://www.xiami.com/widget/0_1772249933/singlePlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent"></embed>
