@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ubuntu开发之旅[8]：Linux系统程序安装与卸载
+title: Ubuntu开发之旅[7]：Linux系统程序安装与卸载
 category: 技术
 tags: Ubuntu
 keywords: Ubuntu

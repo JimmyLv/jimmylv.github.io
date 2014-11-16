@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ubuntu开发之旅[7]：Linux系统的几种命令行编辑器
+title: Ubuntu开发之旅[8]：Linux系统的几种命令行编辑器
 category: 技术
 tags: Ubuntu
 keywords: Ubuntu
