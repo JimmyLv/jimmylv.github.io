@@ -42,7 +42,7 @@ public class Hello{
 - `Hello`是这个class 的名字（名字取定以后保存的文件名一定要与这个class的名字相同）
 - `.java`表示这个文件是一个java类型的文件
 
-第2行`public static void main(String[ ] args)`，这是固定的用法：
+第2行`public static void main(String[] args)`，这是固定的用法：
 
 - main表示这是java程序的入口,编译器通过找到main来进入程序。
 
