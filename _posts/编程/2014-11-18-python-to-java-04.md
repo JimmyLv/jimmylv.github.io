@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Python基础如何学习Java[03]之面向对象
+title: Python基础如何学习Java[03]之面向对象编程 
 category: 编程
 tags: Java
 keywords: Java
