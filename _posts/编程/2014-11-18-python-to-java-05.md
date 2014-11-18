@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Python基础如何学习Java[04]之Java的基本语法
+title: Python基础如何学习Java[04]之Java的基本语法
 category: 编程
 tags: Python
 keywords: Python
