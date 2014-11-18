@@ -21,7 +21,7 @@ int a = 123; // a是整数类型变量
 a = "ABC"; // 错误：不能把字符串赋给整型变量
 ```
 
-##基本数据类型
+##Java基本数据类型
 
 Java定义了8个简单（或基本）的数据类型：字节型（byte），短整型（short），整型
 （int），长整型（long），字符型（char），浮点型（float），双精度型（double），布尔型（boolean），这些类型可分为4组： 
@@ -218,7 +218,6 @@ blue is 15
 
 ```ruby
 #!/usr/bin/ruby
-
 ary = [  "fred", 10, 3.14, "This is a string", "last element", ]
 ary.each do |i|
    puts i
@@ -239,7 +238,6 @@ last element
 
 ```ruby
 #!/usr/bin/ruby
-
 (10..15).each do |n| 
    print n, ' ' 
 end
