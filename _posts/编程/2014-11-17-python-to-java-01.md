@@ -61,14 +61,14 @@ Java系列的其他语言可以说都是在修正Java的一些问题，比如Sca
 ###熟悉IDE（[Intellij IDEA](https://www.jetbrains.com/idea/)）
 
 **1.快捷键**
+
 ![](http://img.my.csdn.net/uploads/201207/20/1342778131_9335.png)
 
 **2.集成功能的使用**
 
-GitHub
+[Quick Start](http://confluence.jetbrains.com/display/IntelliJIDEA/Quick+Start)
 
-Debug
+GitHub/Debug
 
-
-
+###Java最佳实践
 
