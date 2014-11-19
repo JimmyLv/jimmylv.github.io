@@ -271,6 +271,9 @@ class Box {
 } 
 ```
 
+
+
+
 ###this关键字
 
 this这个关键字可以在引用当前对象的所有方法内使用。也就是，this总是调用该方法对象的一个引用。你可以在当前类的类型所允许对象的任何地方将this作为一个引用。 
@@ -286,6 +289,69 @@ this这个关键字可以在引用当前对象的所有方法内使用。也就�
 		this.depth = depth; 
 	} 
 ```
+
+
+###垃圾回收( garbage collection)技术
+
+使用new运算符来为对象动态地分配内存，而当一个对象的引用不存在时，则该对象被认为是不再需要的，它所占用的内存就被释放掉。
+
+###对封装性的理解
+
+对象编程的最重要的好处之一是对数据和操作该数据的代码的封装。在Java中，就是通过类这样的机制来完成封装性。在创建一个类时，你正在创建一种新的数据类型，不但要定义数据的属性，也要定义操作数据的代码。进一步，方法定义了对该类数据相一致的控制接口。因此，你可以通过类的方法来使用类，而没有必要担心它的实现细节或在类的内部数据实际上是如何被管理的。
+
+一个叫做Stack的类，实现整数的堆栈：
+
+```
+// This class defines an integer stack that can hold 10 values. 
+class Stack { 
+	int stck[] = new int[10]; 
+	int tos; 
+	
+	// Initialize top-of-stack 
+	Stack() { 
+		tos = -1; 
+	} 
+	
+	// Push an item onto the stack 
+	void push(int item) { 
+		if(tos==9)  
+			System.out.println("Stack is full."); 
+		else  
+			stck[++tos] = item; 
+	} 
+	
+	// Pop an item from the stack 
+	int pop() { 
+		if(tos < 0) { 
+			System.out.println("Stack underflow."); 
+			return 0; 
+		} 
+		else  
+			return stck[tos--]; 
+	} 
+}
+
+class TestStack { 
+	public static void main(String args[]) { 
+		Stack mystack1 = new Stack(); 
+		Stack mystack2 = new Stack(); 
+		
+		// push some numbers onto the stack 
+		for(int i=0; i<10; i++) mystack1.push(i); 
+		for(int i=10; i<20; i++) mystack2.push(i); 
+		
+		// pop those numbers off the stack 
+		System.out.println("Stack in mystack1:"); 
+		for(int i=0; i<10; i++)  
+			System.out.println(mystack1.pop()); 
+		
+		System.out.println("Stack in mystack2:"); 
+		for(int i=0; i<10; i++)  
+			System.out.println(mystack2.pop()); 
+	} 
+}
+```
+
 
 ##对比Python中的类
 
@@ -353,7 +419,3 @@ end
 object = Sample. new
 object.hello
 ```
-
-###垃圾回收( garbage collection)技术
-
-使用new运算符来为对象动态地分配内存，而当一个对象的引用不存在时，则该对象被认为是不再需要的，它所占用的内存就被释放掉。
