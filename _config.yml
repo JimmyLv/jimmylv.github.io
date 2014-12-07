@@ -6,9 +6,9 @@ markdown: redcarpet
 author: 
   name: 吕立青
   email: lv460051518@gmail.com
-  link: http://www.llgreen.tk
+  link: http://www.goshare.tk
   weibo: http://weibo.com/liqing215
-  github: http://github.com/liqing215
+  github: http://github.com/lagreenTW
   zhihu: http://www.zhihu.com/people/lu-li-qing-90
 
 # 站点信息
@@ -31,7 +31,7 @@ disqus:
   shortname: goshare.tk
 
 # 主题设置，自动激活某个标签
-active: 技术
+active: 编程
 
 # 首页除了最新文章外显示分类
 cates: 
