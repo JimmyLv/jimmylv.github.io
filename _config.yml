@@ -28,7 +28,7 @@ ga:
 
 # disqus 设置
 disqus:
-  shortname: goshare.tk
+  shortname: gotoshare
 
 # 主题设置，自动激活某个标签
 active: 编程
