@@ -24,18 +24,21 @@ GitBook地址：[http://liqing215.gitbooks.io/python-guide-zh/content/](http://l
 > 这是我的第一份e2c翻译，借此熟悉整个Python最佳实践，也可以提高英语水平。
 
 > Information:
-- Author: Kenneth Reitz
+
+> - Author: Kenneth Reitz
 - Translator: 吕立青
 - Begin: 2015/01/17
 - End:
 
 > Collection：
-- 翻译途中的感想、技巧
+
+> - 翻译途中的感想、技巧
 - 对Python、编程的理解
 -
 
 > Contact me:
-- E-mail: 460051518@qq.com
+
+> - E-mail: 460051518@qq.com
 - WeiBo: @立青开根号
 - WeChat: liqing215
 
