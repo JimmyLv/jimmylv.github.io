@@ -9,7 +9,7 @@ description: null
 
 # The Hitchhiker’s Guide to Python! 中英对照译本
 
-GitBook地址：http://liqing215.gitbooks.io/python-guide-zh/content/
+GitBook地址：[http://liqing215.gitbooks.io/python-guide-zh/content/](http://liqing215.gitbooks.io/python-guide-zh/content/)
 
 ## 译本信息：
 
