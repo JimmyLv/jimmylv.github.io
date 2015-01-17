@@ -7,13 +7,12 @@ keywords: Python，翻译
 description: null
 ---
 
-# 
 ---
 layout: post
 title: The Hitchhiker’s Guide to Python! 中英对照译本
 category: 编程
-tags: Ubuntu
-keywords: Ubuntu
+tags: Python
+keywords: Python，翻译
 description: 
 ---
 
