@@ -7,7 +7,16 @@ keywords: Python，翻译
 description: null
 ---
 
-# The Hitchhiker’s Guide to Python! 中英对照译本
+# 
+---
+layout: post
+title: The Hitchhiker’s Guide to Python! 中英对照译本
+category: 编程
+tags: Ubuntu
+keywords: Ubuntu
+description: 
+---
+
 
 GitBook地址：[http://liqing215.gitbooks.io/python-guide-zh/content/](http://liqing215.gitbooks.io/python-guide-zh/content/)
 
