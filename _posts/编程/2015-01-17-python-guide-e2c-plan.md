@@ -14,6 +14,7 @@ category: 编程
 tags: Python
 keywords: Python，翻译
 description: 
+publish: true
 ---
 
 
@@ -34,7 +35,6 @@ GitBook地址：[http://liqing215.gitbooks.io/python-guide-zh/content/](http://l
 
 > - 翻译途中的感想、技巧
 - 对Python、编程的理解
--
 
 > Contact me:
 
