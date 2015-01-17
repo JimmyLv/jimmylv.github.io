@@ -1,6 +1,7 @@
 ---
 published: true
 layout: post
+title: "The Hitchhiker’s Guide to Python! 中英对照译本"
 category: 编程
 tags: Python
 keywords: Python，翻译
@@ -37,9 +38,10 @@ GitBook地址：[http://liqing215.gitbooks.io/python-guide-zh/content/](http://l
 
 欢迎来到Hitchhiker的Python指南。
 
-> **This guide is currently under heavy active development. **If you’d like to help, fork us on GitHub!
+> **This guide is currently under heavy active development. **If you’d like to help, [fork us on GitHub](https://github.com/kennethreitz/python-guide)!
 
-本指南目前正在积极开发。如果你想帮助，欢迎来Github上fork我们。
+本指南目前正在积极开发。如果你想帮助，欢迎来[Github](https://github.com/kennethreitz/python-guide)上fork我们。
+
 > This *opinionated* guide exists to provide both novice and expert Python developers a best-practice handbook to the installation, configuration, and usage of Python on a daily basis.
 
 这份自以为是的指南的目的是为了给Python初学者或者专业开发者提供一份关于Python安装、配置和日常使用基础的最佳实践手册。
