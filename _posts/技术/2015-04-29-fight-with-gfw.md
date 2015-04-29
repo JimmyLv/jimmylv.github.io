@@ -13,7 +13,7 @@ published: true
 
 ## 先决条件
 
-使用的先决条件就是是需要不同的账号，GoAgent需要自己去GAE上注册一个appid，这里有教程：[申请 Google App Engine 并创建 appid](https://github.com/goagent/goagent/blob/wiki/InstallGuide.md)。而SS需要自己去Linux系统的VPS上安装配置libev版本的服务端，在这里感谢一下Kim Leo给我的ShadowSocks账号。但是用起来的时候都是一样的，可以直接利用源码来修改自己的账号并且部署使用，再者也可以利用GUI客户端简化使用，直接输入相关账号信息就好了。
+使用的先决条件就是是需要不同的账号，GoAgent需要自己去GAE上注册一个appid，这里有教程：[申请 Google App Engine 并创建 appid](https://github.com/goagent/goagent/blob/wiki/InstallGuide.md)。而SS需要自己去Linux系统的VPS上安装配置libev版本的服务端，在这里感谢一下Kimmy给我的ShadowSocks账号。但是用起来的时候都是一样的，可以直接利用源码来修改自己的账号并且部署使用，再者也可以利用GUI客户端简化使用，直接输入相关账号信息就好了。
 
 在使用的时候涉及到一点墙外/墙内服务器与自家Mac/PC的通信知识，两台电脑都是通过IP地址和端口来交流信息的，当然其中会涉及到不同的通信协议/方式（比如HTTP、HTTPS、SOCKS等），所以我们用的时候就需要设置和墙外服务器交互的本机端口。
 
