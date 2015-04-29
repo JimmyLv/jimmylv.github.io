@@ -23,13 +23,13 @@ tags: []
 - 而一般的GUI客户端也都集成了PAC代理，自动解析当前访问网站是否需要代理，一般用这个也就够了。
 - 当然在浏览器插件里面也可以设置PAC，访问该PAC的本地端口即可，然后浏览器插件就是可以设置自动切换，根据Rule List用不同的代理从而使不同的本机端口走不同的路径到达不同的墙内/墙外服务器。我用的SwitchyOmega插件还可以自己添加一些Rule访问一些不能访问而官方List没有加入的网站。
 
-![image](/public/img/tech/fight-with-GFW/Auto-Switch.png)
+![image](/public/img/tech/fight-with-gfw/Auto-Switch.png)
 
 ## HTTPS错误
 
 然后这里有一个从根本上杜绝HTTPS请求错误的方法。原先，一边解决该问题的方法是用GoAgent里面的CA证书替换原有站点的证书，如果你没有导入根证书，你用打开twitter这类强制https的站点就会被浏览器阻止并收到警告。
 
-![image](/public/img/tech/fight-with-GFW/HTTPS-Error.png)
+![image](/public/img/tech/fight-with-gfw/HTTPS-Error.png)
 
 在实际使用中就算导入了证书有时候也还是会出现错误，而且我记得知乎上面有讨论过有人伪造了GoAgent证书，所以说还是有一定风险的。
 
@@ -37,7 +37,7 @@ tags: []
 
 所以我们设置一个名为GA&SS Mixed的混合代理，如下图：
 
-![image](/public/img/tech/fight-with-GFW/GA&SS-Mixed.png)
+![image](/public/img/tech/fight-with-gfw/GA&SS-Mixed.png)
 
 已知GoAgent使用本地端口8103，而Shadowsocks本地端口为1080。从而HTTP、FTP为未加密连接可填入GoAgent的代理端口配置，而在SOCKS代理中填入ShadowSocks的端口号，如此一来，HTTPS就会自动走ShadowSocks，未加密流量就会走GoAgent，从而不用导入GoAgent CA证书。不过使用此方法带来的问题就是HTTPS的降速，除非你有速度良好的国外VPS用来设置ShadowSocks，因为大部分国外服务器代理速度都拼不过GAE的，毕竟Google足够强大啊。
 
