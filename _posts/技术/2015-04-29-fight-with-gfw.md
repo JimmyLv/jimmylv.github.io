@@ -4,6 +4,7 @@ title: "关于不同翻墙软件：GoAgent和ShadowSocks"
 description: ""
 category: 技术
 tags: [翻墙]
+published: true
 ---
 
 ## 伟大的HTTPS
@@ -12,15 +13,18 @@ tags: [翻墙]
 
 ## 先决条件
 
-使用的先决条件就是是需要不同的账号，GoAgent需要自己去GAE上注册一个appid，这里有教程：[申请 Google App Engine 并创建 appid](https://github.com/goagent/goagent/blob/wiki/InstallGuide.md)。而SS需要自己去Linux系统的VPS上安装配置libev版本的服务端，在这里感谢一下Kim Leo给我的ShadowSocks账号。但是用起来的时候都是一样的，可以直接利用源码来修改自己的账号并且部署使用，再者也可以利用GUI客户端简化使用，直接输入相关账号信息就好了。
+使用的先决条件就是是需要不同的账号，GoAgent需要自己去GAE上注册一个appid，这里有教程：[申请 Google App Engine 并创建 appid](https://github.com/goagent/goagent/blob/wiki/InstallGuide.md)。而SS需要自己去Linux系统的VPS上安装配置libev版本的服务端，在这里感谢一下Kimmy给我的ShadowSocks账号。但是用起来的时候都是一样的，可以直接利用源码来修改自己的账号并且部署使用，再者也可以利用GUI客户端简化使用，直接输入相关账号信息就好了。
 
 在使用的时候涉及到一点墙外/墙内服务器与自家Mac/PC的通信知识，两台电脑都是通过IP地址和端口来交流信息的，当然其中会涉及到不同的通信协议/方式（比如HTTP、HTTPS、SOCKS等），所以我们用的时候就需要设置和墙外服务器交互的本机端口。
 
 ## 代理方式
 
 在代理的时候有全局/PAC/浏览器插件这么几种方式：
+
 - 全局就是全部使用代理去访问所有网站，可想而知访问一些国内网站会变慢或者根本打不开。
+
 - 而一般的GUI客户端也都集成了PAC代理，自动解析当前访问网站是否需要代理，一般用这个也就够了。
+
 - 当然在浏览器插件里面也可以设置PAC，访问该PAC的本地端口即可，然后浏览器插件就是可以设置自动切换，根据Rule List用不同的代理从而使不同的本机端口走不同的路径到达不同的墙内/墙外服务器。我用的SwitchyOmega插件还可以自己添加一些Rule访问一些不能访问而官方List没有加入的网站。
 
 ![image](/public/img/tech/fight-with-gfw/Auto-Switch.png)
