@@ -2,4 +2,4 @@ _site/
 _drafts/
 .DS_Store
 *.iml
-.idea
+.idea/
