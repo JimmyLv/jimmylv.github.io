@@ -10,6 +10,7 @@ CONFIG = {
   'themes' => File.join(SOURCE, "_includes", "themes"),
   'layouts' => File.join(SOURCE, "_layouts"),
   'posts' => File.join(SOURCE, "_posts"),
+  'imgs' => File.join(SOURCE, "public/img"),
   'post_ext' => "md",
   'theme_package_version' => "0.1.0"
 }
@@ -23,7 +24,8 @@ module JB
       :themes => "_includes/themes",
       :theme_assets => "assets/themes",
       :theme_packages => "_theme_packages",
-      :posts => "_posts"
+      :posts => "_posts",
+      :imgs => "public/img"
     }
     
     def self.base
@@ -62,9 +64,19 @@ task :post do
   if !File.directory?(filename)
     mkdir_p filename
   end
-  filename = File.join(CONFIG['posts'], "#{date}-#{slug}.#{CONFIG['post_ext']}")
+  filename = File.join(filename, "#{date}-#{slug}.#{CONFIG['post_ext']}")
   if File.exist?(filename)
     abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
+  end
+  # create category imgs dir
+  imgs_dir = File.join(CONFIG['imgs'], category)
+  if !File.directory?(imgs_dir)
+    mkdir_p imgs_dir
+  end
+  # create related post img dir
+  post_img_dir = File.join(imgs_dir, "#{slug}")
+  if !File.directory?(post_img_dir)
+    mkdir_p post_img_dir
   end
   # User confirm
   abort("rake aborted!") if ask("The post #{filename} will be created in category #{category}, are you sure?", ['y', 'n']) == 'n'

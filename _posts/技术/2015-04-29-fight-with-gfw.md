@@ -3,7 +3,7 @@ layout: post
 title: "关于不同翻墙软件：GoAgent和ShadowSocks"
 description: ""
 category: 技术
-tags: []
+tags: [翻墙]
 ---
 
 ## 伟大的HTTPS
