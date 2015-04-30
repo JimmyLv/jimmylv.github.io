@@ -8,7 +8,7 @@ keywords: Python，翻译
 description: null
 ---
 
-GitBook地址：[http://liqing215.gitbooks.io/python-guide-zh/content/](http://liqing215.gitbooks.io/python-guide-zh/content/)
+GitBook地址：[http://jimmylv.gitbooks.io/python-guide-zh/](http://jimmylv.gitbooks.io/python-guide-zh/)
 
 ## 译本信息：
 
