@@ -43,20 +43,18 @@ module JB
   end #Path
 end #JB
 
-# Usage: rake post title="A Title" [date="2012-02-09"] [tags=[tag1,tag2]] [category="category"] [description='description']
 desc "Begin a new post in #{CONFIG['posts']}"
 task :post do
   abort("rake aborted: '#{CONFIG['posts']}' directory not found.") unless FileTest.directory?(CONFIG['posts'])
-  title = ENV["title"] || "new-post"
-  tags = ENV["tags"] || "[]"
-  category = ENV["category"] || ""
+  title = ENV["title"] || "new－post"
+  category = ENV["category"] || "default"
   description = ENV["description"] || ""
-  category = "\"#{category.gsub(/-/,' ')}\"" if !category.empty?
+  tags = ENV["tags"] || "[]"
   slug = Hz2py.do(title, :join_with => '-', :to_simplified => true)
-  slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+  slug = slug.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
   begin
     date = (ENV['date'] ? Time.parse(ENV['date']) : Time.now).strftime('%Y-%m-%d')
-  rescue => e
+  rescue Exception => e
     puts "Error - date format must be YYYY-MM-DD, please check you typed it correctly!"
     exit -1
   end
@@ -78,17 +76,17 @@ task :post do
   if !File.directory?(post_img_dir)
     mkdir_p post_img_dir
   end
-  # User confirm
+  # User confirm 
   abort("rake aborted!") if ask("The post #{filename} will be created in category #{category}, are you sure?", ['y', 'n']) == 'n'
-  
+
   puts "Creating new post: #{filename}"
   open(filename, 'w') do |post|
     post.puts "---"
     post.puts "layout: post"
-    post.puts "title: \"#{title.gsub(/-/,' ')}\""
-    post.puts 'description: ""'
-    post.puts "category: #{category}"
-    post.puts "tags: #{tags}"
+    post.puts "title: \"#{title}\""
+    post.puts "description: \"#{description}\""
+    post.puts "category: \"#{category}\""
+    post.puts "tags: \"#{tags}\""
     post.puts "---"
   end
 end # task :post
