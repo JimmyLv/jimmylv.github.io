@@ -2,6 +2,7 @@ require "rubygems"
 require 'rake'
 require 'yaml'
 require 'time'
+require 'Hz2py'
 
 SOURCE = "."
 CONFIG = {
@@ -47,7 +48,9 @@ task :post do
   title = ENV["title"] || "new-post"
   tags = ENV["tags"] || "[]"
   category = ENV["category"] || ""
+  description = ENV["description"] || ""
   category = "\"#{category.gsub(/-/,' ')}\"" if !category.empty?
+  slug = Hz2py.do(title, :join_with => '-', :to_simplified => true)
   slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
   begin
     date = (ENV['date'] ? Time.parse(ENV['date']) : Time.now).strftime('%Y-%m-%d')
@@ -55,10 +58,16 @@ task :post do
     puts "Error - date format must be YYYY-MM-DD, please check you typed it correctly!"
     exit -1
   end
+  filename = File.join(CONFIG['posts'], category)
+  if !File.directory?(filename)
+    mkdir_p filename
+  end
   filename = File.join(CONFIG['posts'], "#{date}-#{slug}.#{CONFIG['post_ext']}")
   if File.exist?(filename)
     abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
   end
+  # User confirm
+  abort("rake aborted!") if ask("The post #{filename} will be created in category #{category}, are you sure?", ['y', 'n']) == 'n'
   
   puts "Creating new post: #{filename}"
   open(filename, 'w') do |post|
@@ -69,7 +78,6 @@ task :post do
     post.puts "category: #{category}"
     post.puts "tags: #{tags}"
     post.puts "---"
-    post.puts "{% include JB/setup %}"
   end
 end # task :post
 
