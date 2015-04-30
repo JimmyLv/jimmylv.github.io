@@ -6,15 +6,15 @@ markdown: redcarpet
 author: 
   name: 吕立青
   email: lv460051518@gmail.com
-  link: http://www.goshare.tk
+  link: http://www.jimmylv.info
   weibo: http://weibo.com/liqing215
-  github: http://github.com/lagreenTW
+  github: http://github.com/JimmyLv
   zhihu: http://www.zhihu.com/people/lu-li-qing-90
 
 # 站点信息
 title: 吕立青的博客
 description: My personal note-blog.
-url: http://www.goshare.tk
+url: http://jimmylv.info
 rss_url: /pages/atom.xml
 
 # gavatar头像及Favicon
