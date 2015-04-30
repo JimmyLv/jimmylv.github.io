@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a98f5ba-93ad-4955-9784-d9050c560f69" name="Default" comment="not include .idea file">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/default/2015-04-30-how-to-use-gitignore-to-ignore-idea-file.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="0a98f5ba-93ad-4955-9784-d9050c560f69" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/default/2015-04-30-how-to-use-gitignore-to-ignore-idea-file.md" afterPath="$PROJECT_DIR$/_posts/default/2015-04-30-how-to-use-gitignore-to-ignore-idea-file.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="note-blog.iws" />
@@ -40,24 +39,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.12096774" vertical-offset="0" max-vertical-offset="496">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
               <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2015-04-30-how-to-use-gitignore-to-ignore-idea-file.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="2015-04-30-how-to-use-gitignore-to-ignore-idea-file.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/default/2015-04-30-how-to-use-gitignore-to-ignore-idea-file.md">
           <provider editor-type-id="MarkdownPreviewEditor">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.5" vertical-offset="0" max-vertical-offset="195">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.32188842" vertical-offset="0" max-vertical-offset="466">
+              <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -90,6 +89,7 @@
         <option value="$PROJECT_DIR$/_posts/技术/2015-04-29-fight-with-gfw.md" />
         <option value="$PROJECT_DIR$/_posts/技术/2015-04-30-how-to-use-dns.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/_posts/default/2015-04-30-how-to-use-gitignore-to-ignore-idea-file.md" />
       </list>
     </option>
   </component>
@@ -170,65 +170,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="note-blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="note-blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="note-blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="note-blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="_posts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="note-blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="note-blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_posts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -518,7 +460,7 @@
       <workItem from="1430366006519" duration="21000" />
       <workItem from="1430366031059" duration="4000" />
       <workItem from="1430366067846" duration="126000" />
-      <workItem from="1430366209823" duration="255000" />
+      <workItem from="1430366209823" duration="320000" />
     </task>
     <task id="LOCAL-00001" summary="add new post fight-with-gfw">
       <created>1430283434677</created>
@@ -580,11 +522,17 @@
       <option name="project" value="LOCAL" />
       <updated>1430366372520</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add new post about gitignore.">
+      <created>1430366487103</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1430366487103</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5473000" />
+    <option name="totallyTimeSpent" value="5538000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -640,7 +588,8 @@
     <MESSAGE value="fix some function in Rakefile" />
     <MESSAGE value="not change theme.&#10;" />
     <MESSAGE value="not include .idea file" />
-    <option name="LAST_COMMIT_MESSAGE" value="not include .idea file" />
+    <MESSAGE value="add new post about gitignore." />
+    <option name="LAST_COMMIT_MESSAGE" value="add new post about gitignore." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -842,21 +791,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/default/2015-04-30-how-to-use-gitignore-to-ignore-idea-file.md">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.5" vertical-offset="0" max-vertical-offset="195">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12096774" vertical-offset="0" max-vertical-offset="496">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.32188842" vertical-offset="0" max-vertical-offset="466">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
           <folding />
         </state>
       </provider>

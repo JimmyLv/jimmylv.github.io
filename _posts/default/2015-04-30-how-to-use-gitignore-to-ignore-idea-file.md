@@ -5,3 +5,7 @@ description: ""
 category: "default"
 tags: "[]"
 ---
+
+- add more git command.
+
+- gitignore
