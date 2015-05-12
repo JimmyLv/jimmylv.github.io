@@ -1,5 +1,5 @@
 ---
-layout: 
+layout: post
 title: 单一入口的智能化
 categories: [思考]
 tags: []
