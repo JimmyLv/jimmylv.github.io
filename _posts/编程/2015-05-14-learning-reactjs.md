@@ -87,11 +87,19 @@ input相对于这个组件来说，是它的属性，并且没有嵌入动态的
 
 而实际上，有些属性可能是后续添加的，当需要拓展我们的属性的时候，定义个一个属性对象，并通过`{...props}`的方式引入，React会帮我们拷贝到组件的props属性中。
 
-需要覆盖的时候可以这样写：
+可以使用属性延伸覆盖原来的属性值：
 
 ```js
-var props = { foo: 'default' };
-var component = <Component {...props} foo={'override'} />;
+var Component = React.createClass({
+    render: function () {
+        return <div {...this.props} title="zzz">this is a div</div>
+    }
+});
+
+React.render(
+    <Component name="xxx" title="yyy"/>,
+    document.body
+);
 ```
 
 ### style属性
