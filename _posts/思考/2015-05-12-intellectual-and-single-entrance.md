@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 单一入口的智能化
+title: 由写作环境引起的反思：单一入口的智能化
 categories: [思考]
-tags: []
+tags: [写作, Sublime, Google, Evernote]
 published: True
 
 ---

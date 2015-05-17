@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Python基础如何学习Java[00]之如何开始学习一门新语言"
+title: "Python基础如何学习Java：如何开始学习一门新语言"
 category: 编程
 tags: Python
 keywords: Python

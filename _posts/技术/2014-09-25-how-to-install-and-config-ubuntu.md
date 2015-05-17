@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ubuntu开发之旅[1]：系统的安装与优化"
+title: "Ubuntu系统的安装与优化"
 category: 技术
 tags: Ubuntu
 keywords: Ubuntu

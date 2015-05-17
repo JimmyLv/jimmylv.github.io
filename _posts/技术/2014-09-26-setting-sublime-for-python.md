@@ -1,10 +1,8 @@
 ---
 layout: post
-title: "Ubuntu开发之旅[5]：配置Python开发环境和Sublime Text 3 for Python"
+title: "配置Python开发环境和Sublime Text 3编辑器"
 category: 技术
-tags: Ubuntu
-keywords: Ubuntu，Sublime，Python，Ruby
-description: null
+tags: [Ubuntu, Sublime, Python]
 published: true
 ---
 

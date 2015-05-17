@@ -1,10 +1,8 @@
 ---
 layout: post
-title: "Ubuntu开发之旅[3]：Ruby入门之环境的搭建与RubyMine的安装"
+title: "Ruby入门：环境的搭建与RubyMine的安装"
 category: 技术
-tags: Ubuntu
-keywords: Ubuntu，Ruby，IDE
-description: null
+tags: Ruby
 published: true
 ---
 

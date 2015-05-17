@@ -1,10 +1,8 @@
 ---
 layout: post
-title: "Ubuntu开发之旅[4]：写作环境的搭建（Jekyll+GitHub+Markdown）"
+title: "写作环境的搭建（Jekyll+GitHub+Markdown）"
 category: 技术
-tags: Ubuntu
-keywords: Ubuntu，Jekyll，GitHub，Markdown
-description: null
+tags: Jekyll Markdown
 published: true
 ---
 

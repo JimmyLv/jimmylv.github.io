@@ -1,7 +1,7 @@
 ---
 layout: post
-title: React.js 复习笔记
-categories: [编程]
+title: React.js 复习笔记：组件组合与复用
+categories: [技术]
 tags: []
 published: True
 

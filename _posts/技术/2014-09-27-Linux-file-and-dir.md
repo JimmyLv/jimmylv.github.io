@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ubuntu开发之旅[6]：Linux系统快捷键和文件处理命令
+title: Ubuntu系统快捷键和文件处理命令
 category: 技术
 tags: Ubuntu
-keywords: Ubuntu
-description: 
+published: true
 ---
 
 ##重要的快捷键

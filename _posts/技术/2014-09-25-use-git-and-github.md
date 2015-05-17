@@ -1,10 +1,8 @@
 ---
 layout: post
-title: "Ubuntu开发之旅[2]：Git安装与GitHub的远程连接"
+title: "Git安装笔记与如何连接GitHub远程仓库"
 category: 技术
 tags: Ubuntu
-keywords: Ubuntu
-description: null
 published: true
 ---
 
