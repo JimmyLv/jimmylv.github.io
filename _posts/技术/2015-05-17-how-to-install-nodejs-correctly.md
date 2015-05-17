@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Node.js的正确安装与相关工具
+title: Node.js的正确安装与相关工具（Mac OS X）
 categories: [技术]
 tags: [JavaScript]
 published: True
 
 ---
 
-# Node.js的安装与相关技术栈介绍
+# Node.js的安装与相关工具的使用
 
 ## 版本分裂
 
