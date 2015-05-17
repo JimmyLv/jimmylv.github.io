@@ -43,6 +43,8 @@ module JB
   end #Path
 end #JB
 
+# Usage: rake post title="A Title" [tags=[tag1,tag2]] [category="category"] [description="description"]
+# this will reate category_imgs and post_imgs directory for this post article
 desc "Begin a new post in #{CONFIG['posts']}"
 task :post do
   abort("rake aborted: '#{CONFIG['posts']}' directory not found.") unless FileTest.directory?(CONFIG['posts'])
