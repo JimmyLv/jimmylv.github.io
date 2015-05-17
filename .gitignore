@@ -1,3 +1,4 @@
 _site/
-_drafts/
 .DS_Store
+.idea/
+note-blog.iml
