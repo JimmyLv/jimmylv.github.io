@@ -64,9 +64,10 @@ brew install nvm
 
 在安装完毕之后需要根据terminal里的提示做一下操作：
 
-`mkdir ~/.nvm` #建立一个nvm版本库，之后安装的node版本都会在这里
-
-`cp $(brew --prefix nvm)/nvm-exec ~/.nvm/` #将安装在brew目录中的nvm-exec执行文件拷到刚刚新建的目录
+```bash
+mkdir ~/.nvm #建立一个nvm版本库，之后安装的node版本都会在这里
+cp $(brew --prefix nvm)/nvm-exec ~/.nvm/ #拷贝brew目录中的nvm-exec执行文件到新建的目录
+```
 
 然后把以下的内容添加到`~/.bashrc`和`~/.zshrc`中，这样就可以在终端中使用bash和zsh命令行工具啦，不然会显示`command not found`。
 
