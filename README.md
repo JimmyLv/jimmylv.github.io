@@ -1,7 +1,7 @@
 ## 使用Rakefile自动生成文章格式
 
 ```shell
-rake post title="A Title" [tags=[tag1,tag2]] [category="category"] [description="description"]
+rake post title="A Title" [category="category"] [tags=[tag1,tag2]] [description="description"]
 ```
 
 ps: this will reate category_imgs and post_imgs directory for this post article.
