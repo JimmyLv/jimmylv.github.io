@@ -1221,7 +1221,7 @@ h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small,
 }
 
 h1, .h1, h2, .h2, h3, .h3 {
-    margin-top: 23px;
+    margin-top: 0px;
     margin-bottom: 7px
 }
 
@@ -1411,9 +1411,11 @@ a.bg-danger:hover {
 }
 
 .page-header {
+/*
     padding-bottom: 9px;
     margin: 40px 0 20px;
     border-bottom: 1px solid #eee
+*/
 }
 
 ul, ol {
@@ -1621,6 +1623,7 @@ pre code {
 }
 
 .row {
+    margin-top: 80px;
     margin-left: -15px;
     margin-right: -15px;
 }
@@ -5550,7 +5553,6 @@ a.list-group-item-danger.active:focus {
 .panel {
     margin-bottom: 20px;
     background-color: #fff;
-    border: 1px solid transparent;
     border-radius: 4px;
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05)
@@ -5737,7 +5739,7 @@ a.list-group-item-danger.active:focus {
 }
 
 .panel-group .panel+.panel {
-    margin-top: 5px
+    margin-top: 4px
 }
 
 .panel-group .panel-heading {
@@ -5840,8 +5842,8 @@ a.list-group-item-danger.active:focus {
 }
 
 .panel-info>.panel-heading .badge {
-    color: #d9edf7;
-    background-color: #31708f
+    color: #fff;
+    background-color: #3BAFEE
 }
 
 .panel-info>.panel-footer+.panel-collapse>.panel-body {

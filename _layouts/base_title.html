@@ -1,22 +1,74 @@
 <!doctype html>
 <html>
-<head>
-  {% include header_title.html %}
-</head>
-<body>
-  <div class="container">
-    <div class="row">
-      {% include navside.html %}
-      <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12 aside3">
-        <div id="container">
-          <div id="pjax">
-            {{ content }}
-          </div>
+    <head>
+        {% include header_title.html %}
+    </head>
+    <body class="body-design">
+        <div class="container">
+            <div class="page-header">
+                <div class="page-header-bar">
+                    <div class="cont-wrap">
+                        <div class="grid_12">
+                            <a class="page-header-li page-header-li-home" href="https://breeswish.org/blog/">
+                                <div class="page-header-li-s">
+                                    <div class="page-header-li-si"></div>
+                                </div>
+                                <div class="page-header-li-t">主页</div>
+                                <div class="page-header-li-d">HOME</div>
+                            </a>
+                            <a class="page-header-li page-header-li-frontend" href="https://breeswish.org/blog/category/frontend/">
+                                <div class="page-header-li-s">
+                                    <div class="page-header-li-si"></div>
+                                </div>
+                                <div class="page-header-li-t">前端</div>
+                                <div class="page-header-li-d">FRONTEND</div>
+                            </a>
+                            <a class="page-header-li page-header-li-backend" href="https://breeswish.org/blog/category/backend/">
+                                <div class="page-header-li-s">
+                                    <div class="page-header-li-si"></div>
+                                </div>
+                                <div class="page-header-li-t">后端</div>
+                                <div class="page-header-li-d">BACKEND</div>
+                            </a>
+                            <a class="page-header-li page-header-li-design page-header-li-active" href="./Design - 风の愿_files/Design - 风の愿.html">
+                                <div class="page-header-li-s">
+                                    <div class="page-header-li-si"></div>
+                                </div>
+                                <div class="page-header-li-t">设计</div>
+                                <div class="page-header-li-d">DESIGN</div>
+                            </a>
+                            <a class="page-header-li page-header-li-sec" href="https://breeswish.org/blog/category/sec/">
+                                <div class="page-header-li-s">
+                                    <div class="page-header-li-si"></div>
+                                </div>
+                                <div class="page-header-li-t">信息安全</div>
+                                <div class="page-header-li-d">SEC</div>
+                            </a>
+                            <a class="page-header-li page-header-li-ops" href="https://breeswish.org/blog/category/ops/">
+                                <div class="page-header-li-s">
+                                    <div class="page-header-li-si"></div>
+                                </div>
+                                <div class="page-header-li-t">运维</div>
+                                <div class="page-header-li-d">OPS</div>
+                            </a>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                {% include navside.html %}
+                <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12 aside3">
+                    <div id="container">
+                        <div id="pjax">
+                            {{ content }}
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-  {% include footer.html %}
-  {% include googleanalytics.html %}
-</body>
+        {% include footer.html %}
+        {% include googleanalytics.html %}
+    </body>
 </html>

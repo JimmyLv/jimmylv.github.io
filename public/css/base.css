@@ -16,6 +16,9 @@ body, html {
 .aside {
   height: 100%;
 }
+.navside {
+  margin-top: 0px;
+}
 /* 左侧导航栏 */
 .aside1 {
   /*background-color: #1f2c39;*/
@@ -36,7 +39,6 @@ body, html {
   padding: 10px 10px;
 
 }
-
 .aside1> .nav > li > a:hover {
   color:#fff;
   background-color: #14AA57;
@@ -48,7 +50,9 @@ body, html {
   /*background-image: url(/public/img/body_bg.jpg);*/
   background-color: #D1D4D7;
 }
-
+ul.nav.nav-pills.nav-stacked {
+    margin: auto;
+}
 .avatar {
   width: 80px;
   /*height: 90px;*/
@@ -61,21 +65,23 @@ body, html {
   left: 0px;
 }
 .aside1_bottom > .table {
-  margin-bottom: 0px;
+  margin-bottom: 75px;
 }
 /* 中部目录栏 */
 .aside2 {
   /*background-color: #fafaf6;*/
-  /*background-image: url(/public/img/body_bg.jpg);*/
-
-  background-color: #EAEDEF;
+  background-image: url(/public/img/body_bg.jpg);
   height: 100%;
-  border-right: 2px solid #EAEDEF;
   overflow-y: auto;
   font-color: #fff;
-  margin-top: 40px;
+  padding-right: 30px;
 }
-
+.navside2 {
+  margin-top: 60px;
+}
+h4.panel-title {
+  color: white;
+}
 /* 右侧内容栏 */
 .aside3 {
   height: 100%;
@@ -84,18 +90,21 @@ body, html {
   /*background-image: url(/public/img/bg_lines1.jpg);*/
 }
 .aside3-title {
-  background-color: #f5f5f5;
-  /*background-image: url(/public/img/bg_grid.jpg);*/
-  border-bottom: 1px solid #f5f5f5;
+/*  background-color: #f5f5f5;*/
+  background-image: url(/public/img/body_bg.jpg);
   padding-left: 30px;
   padding-right: 30px;
   text-align: center;
   color: #747778;
 }
 .aside3-content {
+  margin-bottom: 60px;
   padding-left: 30px;
   padding-right: 30px;
   color: #656565;
+}
+#pjax .row {
+  margin-top: 0px;
 }
 #content {
   font-size: 18px;
