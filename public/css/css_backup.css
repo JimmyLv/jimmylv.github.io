@@ -476,8 +476,8 @@ body,button,input,select,textarea{
     font-family:"Open Sans",Tahoma,arial,"Hiragino Sans GB","Hiragino Sans GB W3",STHeiti,"Microsoft YaHei",sans-serif
 }
 p{
-    margin:1em 0;
-    line-height:1.2em
+/*    margin:1em 0;
+    line-height:1.2em*/
 }
 h1,h2,h3,h4,h5,h6{
     margin:0 0 20px;
