@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 在图书馆的所思所想
+title: 出走寝室：在图书馆的所思所想
 categories: [思考]
 tags: []
 published: True
