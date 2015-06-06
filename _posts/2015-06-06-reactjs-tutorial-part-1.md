@@ -1,3 +1,12 @@
+---
+layout: post
+title: React.js Tutorial Part 1
+categories: []
+tags: []
+published: True
+
+---
+
 # React.js Tutorial Part 1
 
 原文地址：[http://www.joshfinnie.com/blog/reactjs-tutorial-part-1/](http://www.joshfinnie.com/blog/reactjs-tutorial-part-1/)
@@ -16,7 +25,7 @@ The first thing we are going to do is set up a standard [express](http://express
 
 我们要做的第一件事就是搭建一个标准的[express](http://expressjs.com/)应用，使用`express-generator`能够轻松快速生成相应的文件目录（译者注：脚手架scaffold）。使用以下命令安装：
 
-```shell
+```bash
 $ npm install express-generator -g
 ```
 
@@ -24,7 +33,7 @@ Once installed, we are going to create a basic express app. To generate this exp
 
 安装好之后就可以构建一个基础的express应用了，使用以下命令：
 
-```shell
+```bash
 $ express jobs.nodedc.com
 
 create : jobs.nodedc.com
@@ -155,7 +164,7 @@ And run the `react-tools` package to compile our component with the following co
 
 使用`react-tools`编译：
 
-```shell
+```bash
 $ ./node_modules/react-tools/bin/jsx -x jsx public/javascripts/src/ public/javascripts/build/
 ```
 
