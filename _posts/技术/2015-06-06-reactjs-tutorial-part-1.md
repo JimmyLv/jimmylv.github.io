@@ -1,11 +1,13 @@
 ---
 layout: post
-title: React.js Tutorial Part 1
+title: React.js Tutorial Part 1（翻译）
 categories: [技术]
 tags: []
 published: True
 
 ---
+
+技术系列笔记均已迁移至GitBook，更多内容请到：[http://jimmylv.gitbooks.io/learning-react-js/content/reactjs_tutorial/reactjs_tutorial_part_1.html](http://jimmylv.gitbooks.io/learning-react-js/content/reactjs_tutorial/reactjs_tutorial_part_1.html)
 
 # React.js Tutorial Part 1
 
