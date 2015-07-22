@@ -1,7 +1,7 @@
 ---
 layout: post
 title: React.js Tutorial Part 1
-categories: []
+categories: [技术]
 tags: []
 published: True
 
