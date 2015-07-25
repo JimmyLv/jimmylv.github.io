@@ -20,8 +20,6 @@ description:
 
 >一个Blog生成工具（这里选用jekyll，类似WordPress）
 
-
-
 第一部分：使用GitHub Pages快速生成博客 
 ---
 

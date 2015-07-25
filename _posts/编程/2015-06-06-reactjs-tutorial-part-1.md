@@ -1,7 +1,7 @@
 ---
 layout: post
 title: React.js Tutorial Part 1（翻译）
-categories: [技术]
+categories: [编程]
 tags: []
 published: True
 
