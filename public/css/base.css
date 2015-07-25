@@ -114,7 +114,8 @@ h4.panel-title {
   line-height: 2;
 }
 blockquote p {
-  font-size: 20px;
+  color: #95a5a6;
+  /*font-size: 20px;*/
 }
 /* 其他配置 */
 .center {
