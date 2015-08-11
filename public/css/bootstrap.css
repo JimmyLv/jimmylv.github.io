@@ -2492,7 +2492,7 @@ th {
 .table {
     width: 100%;
     max-width: 100%;
-    margin-bottom: 20px
+    /*margin-bottom: 20px*/
 }
 
 .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td,
@@ -3201,8 +3201,8 @@ textarea.input-lg, select[multiple].input-lg {
 
 .btn-primary {
     color: #fff;
-    background-color: #14AA57;
-    border-color: #16a090;
+    background-color: #000;
+    /*border-color: #16a090;*/
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active,
@@ -5333,8 +5333,8 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     padding: 10px 15px;
     margin-bottom: -1px;
     color: #fff;
-    background-color: #2DBE60;
-    border: 1px solid #2DBE60;/*115449;*/
+    /*background-color: #2DBE60;*/
+    border: 1px solid #fff;/*115449;*/
     border-left: 0px;
     border-right: 0px;
     /*border: 0px solid #ddd;*/
@@ -5342,9 +5342,9 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 }
 
 a.list-group-item-lay:hover, a.list-group-item-lay:focus {
-    text-decoration: none;
-    color: #fff;
-    background-color: #14AA57;
+    /*text-decoration: none;*/
+    color: #000;
+    /*background-color: #14AA57;*/
 }
 
 .list-group-item-lay:first-child {
@@ -5367,7 +5367,7 @@ a.list-group-item-lay:hover, a.list-group-item-lay:focus {
 }
 
 a.list-group-item-lay {
-    color: #fff;
+    color: #000;
 }
 
 .list-group-item:first-child {
