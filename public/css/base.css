@@ -44,7 +44,6 @@ body, html {
   /*color:#fff;*/
   /*background-color: #14AA57;*/
   text-decoration: underline;
-  text-decoration: underline;
 
   /*background-color: #57CB80;*/
 
@@ -135,5 +134,5 @@ blockquote p {
 /* 显示评论按钮 */
 .show-commend {
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 8px;
 }
