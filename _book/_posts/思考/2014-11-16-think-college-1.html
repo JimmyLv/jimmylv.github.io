@@ -1,0 +1,299 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>「反思我的大学」之科学与技术 | 使用Rakefile自动生成文章格式</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    
+    <link rel="prev" href="../../_posts/思考/2014-11-01-why-i-am-so-serious.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../../gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="1.3" data-basepath="../.." data-revision="1439627822444">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         简介（Introduction）
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> [思考]</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.1" data-path="_posts/思考/2014-10-27-thoughtworks-speech.html">
+            
+                
+                    <a href="../../_posts/思考/2014-10-27-thoughtworks-speech.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                         ThoughtWorks面试演讲稿
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2" data-path="_posts/思考/2014-11-01-why-i-am-so-serious.html">
+            
+                
+                    <a href="../../_posts/思考/2014-11-01-why-i-am-so-serious.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                         突然明白自己的焦虑来自何处
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="1.3" data-path="_posts/思考/2014-11-16-think-college-1.html">
+            
+                
+                    <a href="../../_posts/思考/2014-11-16-think-college-1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                         「反思我的大学」之科学与技术
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> [技术]</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.1" data-path="_posts/技术/2013-10-02-blog-build-course.html">
+            
+                
+                    <a href="../../_posts/技术/2013-10-02-blog-build-course.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                         傻瓜式博客搭建教程之使用GitHub Pages快速生成博客
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >使用Rakefile自动生成文章格式</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_51">
+                    
+                        <p>layout: post
+title: 「反思我的大学」之科学与技术
+category: 思考
+tags: 总结
+keywords: 大学
+description:</p>
+<h2 id="published-true">published: true</h2>
+<p>think: 「反思我的大学」之科学与技术</p>
+<p>在当初进大学之前选专业的时候，我们就见过了太多的「科学与技术」，像什么计算机科学与技术，电子科学与技术，生命科学与技术等等一大堆。我想讲的就是需要将「科学」与「技术」进行区分，「科学」是指在某一领域探索知識的方法及其研究成果，而「技术」是指人類因應自身需要而發明的處理事務的有效方法和工具。（引自陳政宏教授的定义）</p>
+<p>就拿编程来说的话，除了学习编程语言之外需要掌握的知识可能涉及到计算机电路、操作系统、编译原理、计算机网络、数据库、数据结构等等各个方面，而在大学里面的学习其实都是比较注重基础理论这方面的考试的。我们在大学学习之后往往面临一个问题，那就是在学习了那么多课程之后却发现自己无法接手任何一个实际项目。可以说我们在大学里面只是学习了计算机「科学」的基础知识，而计算机「技术」却在与时俱进得飞速发展和改进中国，我们用课本上所学习到的方法和技术去实现某一个功能且不说难度巨大，更可能的情况是早有更好的方法和技术进行了替代。为什么我学了计算机专业，却还是做不出网站、软件、APP呢？这大概就是原因。</p>
+<p>但这样就可以说大学教育错了吗？我看未必。社会指责大学教育的原因可能就在于整个社会环境。大学毕业之后我们往往有工作和读研两种选择，现实情况是大学一毕业更多的人都走向了社会，当发现自身与职场存在能力差距的时候大概就会比较痛恨自己的大学四年白学了吧。虽然大学教育过多得去研究了「科学」，而没有去实践其中的「技术」，但是在怪罪大学所教的时候何不反思一下自身所学。对个人而言，大学课堂是只能够教给你相对应的基础知识，但是说到实验室的话你又是否花费足够多的时间去实践过呢？于此同时需要反思的也有很多要读研的小伙伴们，你是真的想去追寻「科学」的脚步吗？还是只想多学点「技术」去适应职场呢？那可能又要让你失望了吧。</p>
+<p>其实明白了这一点，我想说大学教育本没有错，之前我一直纳闷为什么欧美也会说他们的大学不好，那可是我们中国社会所认可的好大学呢，呵呵。与此同时，也正因为大学是为了同时培养「科学」人才和「技术」人才的，所以侧重点当然只能是最基本的基础知识。如果你只想快速掌握一门「技术」，出门右转，「山东蓝翔」和「北大青鸟」在等着你哟~</p>
+<p>而学习编程的目的是什么呢，我想回归到我的初心，当初的我就是想创造出一些美好的东西，要去做一些更有意义的事情。</p>
+<p>下一篇预告《「反思我的大学」之技术与能力》</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../_posts/思考/2014-11-01-why-i-am-so-serious.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 突然明白自己的焦虑来自何处"><i class="fa fa-angle-left"></i></a>
+        
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

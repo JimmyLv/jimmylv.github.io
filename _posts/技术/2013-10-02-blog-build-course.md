@@ -4,11 +4,11 @@ title: 傻瓜式博客搭建教程：使用GitHub Pages快速生成博客
 category: 技术
 tags: Github Jekyll
 keywords: markdown
-description: 
+description:
 ---
 
 
-- 关键词：**Git+github+jekyll+.tk+DNS.LA+markdown** 
+- 关键词：**Git+github+jekyll+.tk+DNS.LA+markdown**
 
 
 ###前言：搭建博客的几大要素
@@ -20,7 +20,7 @@ description:
 
 >一个Blog生成工具（这里选用jekyll，类似WordPress）
 
-第一部分：使用GitHub Pages快速生成博客 
+第一部分：使用GitHub Pages快速生成博客
 ---
 
 ###一、介绍Git和Github
@@ -34,19 +34,19 @@ Github则是一个基于Git的日益流行的开源项目托管库，也就是�
 ###二、Github的安装和配置
 
 1、注册，这个总会吧，官网（[https://github.com/](https://github.com/)）
- 
+
 2、下载安装（[https://help.github.com/articles/set-up-git](https://help.github.com/articles/set-up-git)）
- 
+
 3、安装完成后，桌面出现两个图标：
- 
+
  ![enter image description here][1]
- 
+
 4、GitHub是客户端，点击登陆，输入你先前注册的帐号密码
- 
+
 5、Git Shell是Git的命令行，类似于window下的CMD
- 
+
 6、在Shell里面配置本地信息，分别输入你的github帐号和邮箱：
- 
+
 ```
 git config --global user.name "Your Name Here"# Sets the default name for git to use when you commit
 
@@ -55,7 +55,7 @@ git config --global user.email "your_email@example.com"# Sets the default email 
 
 更多关于Github的设置可以看[这里][2]
 
-###三、建立一个“Blog”项目，用Github Pages生成博客 
+###三、建立一个“Blog”项目，用Github Pages生成博客
 
 >**说明：**
 
@@ -66,11 +66,11 @@ git config --global user.email "your_email@example.com"# Sets the default email 
 
 
 1、在[网站][3]上新建一个仓库（repository），网站右上角：
- 
+
 ![][4]
 
 2、输入库的名字，**注意：**一定要以这种形式**yourname.github.com**进行命名，比如我的用户名是liqing215，于是我的命名就是liqing215.github.com。
- 
+
 ![enter image description here][5]
 
 3、创建完成之后进入这个界面后点击右边的设置，
@@ -82,7 +82,7 @@ git config --global user.email "your_email@example.com"# Sets the default email 
 ![enter image description here][7]
 
 5、然后进入Github自带的markdown编辑器进行编辑，你可以随意修改写上几句自己的话。然后点击右下角的绿色按钮[Continue to Layouts]
-    
+
 6、然后你可以选择一个自己喜欢的主题，点击Publish就可以生成属于你自己的博客啦！
 
 7、试着在地址栏输入http://yourname.github.io/就可以进入你刚刚创建的博客，比如我的就是[http://liqing215.github.io/](http://liqing215.github.io/)
@@ -91,7 +91,7 @@ git config --global user.email "your_email@example.com"# Sets the default email 
 
 ###四、在本地上新建一个Github项目
  > 其实到以上为止我们已经创建好了一个属于自己的博客，接下来我们再新建一个其他项目，用来熟悉github的整个操作流程，你会发现它真的超好用。
- 
+
 **4.1、利用图形界面GitHub：**
 
 1、跟上面一样，在网站上新建一个repository，这里我们把名字命名为myBlog，（其实随意啦）
@@ -123,7 +123,7 @@ makdir ~/hello-world    //创建一个项目hello-world
 
 cd ~/hello-world       //打开这个项目
 
-git init             //初始化 
+git init             //初始化
 
 touch README //创建说明文件
 
