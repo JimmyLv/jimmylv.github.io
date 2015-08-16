@@ -7,11 +7,5 @@ def rm_space():
                 fn = os.path.join(root, fn)
                 n = os.path.join(root, n)
                 os.rename(fn, n)
-        for d in dirs: # remove space in directory names
-            if " " in d:
-                nd = d.replace(" ", "_")
-                d = os.path.join(root, d)
-                nd = os.path.join(root, nd)
-                os.rename(d, nd)
 
 rm_space()
