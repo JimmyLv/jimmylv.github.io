@@ -3,7 +3,6 @@ layout: post
 title: The Zen of Python：Python之禅
 category: 编程
 tags: Python
-keywords: Python
 description: 
 published: true
 ---

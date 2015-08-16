@@ -1,4 +1,5 @@
 _site/
+_book/
 .DS_Store
 *.iml
 .idea/

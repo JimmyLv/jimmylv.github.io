@@ -1038,7 +1038,7 @@ a.dark:focus,a.dark:hover{
 body{
     -webkit-transition:background-color .3s linear;
     transition:background-color .3s linear;
-    background:fixed url(../img/texture.png) top center
+    /*background:fixed url(../img/texture.png) top center*/
 }
 .body-home{
     background-color:#444
