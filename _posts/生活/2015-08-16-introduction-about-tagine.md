@@ -24,8 +24,6 @@ published: True
 
 ## 菜谱收集
 
-[懒人的福音——塔吉锅菜谱合辑](http://www.xiachufang.com/recipe_list/1470/)
-
-[我的塔吉锅](http://www.xiachufang.com/recipe_list/102059858/)
-
-[塔吉锅食谱](http://www.xiachufang.com/recipe_list/101579833/)
+- [懒人的福音——塔吉锅菜谱合辑](http://www.xiachufang.com/recipe_list/1470/)
+- [我的塔吉锅](http://www.xiachufang.com/recipe_list/102059858/)
+- [塔吉锅食谱](http://www.xiachufang.com/recipe_list/101579833/)
