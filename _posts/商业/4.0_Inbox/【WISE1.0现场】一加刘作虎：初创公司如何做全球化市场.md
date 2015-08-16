@@ -6,13 +6,13 @@ _2015/1/15 21:19_
 **来源：**
 _<http://iphone.myzaker.com/l.php?l=5450928d1bc8e0dd2d8b4568>_
 
-  
+
 
 # 【WISE 1.0现场】一加刘作虎：初创公司如何做全球化市场
 
 [36kr.com](http://36kr.com)
 
-  
+
 
 ![](【WISE 1.0现场】一加刘作虎：初创公司如何做全球化市场_files/Image.jpg)
 
