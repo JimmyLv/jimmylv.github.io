@@ -1,0 +1,24 @@
+{
+	"title": "JimmyLv's Note Book",
+	"links": {
+		"sharing": {
+			"all": null,
+			"facebook": null,
+			"google": null,
+			"twitter": null,
+			"weibo": null
+		},
+		"sidebar": {
+			"JimmyLv's Blog": "http://blog.jimmylv.info"
+		}
+	},
+	"styles": {
+        "website": "public/css/yue.css"
+    },
+	"plugins": ["disqus"],
+	"pluginsConfig": {
+		"disqus": {
+            "shortName": "test4jimmy"
+        }
+	}
+}
