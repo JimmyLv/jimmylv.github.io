@@ -79,6 +79,7 @@ ul.nav.nav-pills.nav-stacked {
   height: 100%;
   overflow-y: auto;
   font-color: #fff;
+  padding-top: 59px;
   /*padding-right: 30px;*/
 }
 .navside2 {
@@ -101,6 +102,7 @@ h4.panel-title {
   padding-right: 30px;
   text-align: center;
   color: #747778;
+  border-bottom: 1px solid #eee;
 }
 .aside3-date {
   padding-bottom: 10px
