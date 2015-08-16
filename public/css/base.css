@@ -79,7 +79,7 @@ ul.nav.nav-pills.nav-stacked {
   height: 100%;
   overflow-y: auto;
   font-color: #fff;
-  padding-right: 30px;
+  /*padding-right: 30px;*/
 }
 .navside2 {
   margin-top: 60px;
@@ -102,6 +102,9 @@ h4.panel-title {
   text-align: center;
   color: #747778;
 }
+.aside3-date {
+  padding-bottom: 10px
+}
 .aside3-content {
   /*margin-bottom: 60px;*/
   padding-left: 30px;
@@ -112,11 +115,11 @@ h4.panel-title {
   margin-top: 0px;
 }
 #content {
-  font-size: 18px;
-  line-height: 1.8;
+  /*font-size: 18px;*/
+  /*line-height: 1.8;*/
 }
 #content h2, h3 {
-  line-height: 2;
+  /*line-height: 2;*/
 }
 blockquote p {
   /*color: #95a5a6;*/
