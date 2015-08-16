@@ -5334,11 +5334,11 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     margin-bottom: -1px;
     color: #fff;
     /*background-color: #2DBE60;*/
-    border: 1px solid #fff;/*115449;*/
     border-left: 0px;
     border-right: 0px;
     /*border: 0px solid #ddd;*/
-    margin-right: 0px; margin-left: 35px; 
+    margin-right: 0px; 
+    margin-left: 30px; 
 }
 
 a.list-group-item-lay:hover, a.list-group-item-lay:focus {
