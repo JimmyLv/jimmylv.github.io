@@ -1,7 +1,7 @@
 ---
 layout: post
-title: React.js Tutorial Part 1（翻译）
-categories: [编程]
+title: React.js教程：第一部分
+categories: [翻译]
 tags: []
 published: True
 
@@ -150,7 +150,7 @@ Because we are using the `react-tools` node package, we want to add the compiled
 
 由于我们使用的`react-tools`包，所以我们将添加已经编译好的JavaScript代码。改变`views/layout.jade`文件：
 
-```jade
+```
 doctype html
 html
 head

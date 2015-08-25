@@ -1,10 +1,10 @@
 ---
-published: true
 layout: post
 title: "The Hitchhiker’s Guide to Python! 中英对照译本"
-category: 编程
+category: 翻译
 tags: Python 翻译
-description: null
+published: true
+
 ---
 
 GitBook地址：[http://jimmylv.gitbooks.io/python-guide-zh/](http://jimmylv.gitbooks.io/python-guide-zh/)
