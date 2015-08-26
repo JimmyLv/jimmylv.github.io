@@ -1,13 +1,13 @@
 ---
 layout: post
-title: React.js教程：第一部分
+title: React.js教程 第一部分：Hello World!
 categories: [翻译]
 tags: []
 published: True
 
 ---
 
-技术系列笔记均已迁移至GitBook，更多内容请到：[http://jimmylv.gitbooks.io/learning-react-js/content/reactjs_tutorial/reactjs_tutorial_part_1.html](http://jimmylv.gitbooks.io/learning-react-js/content/reactjs_tutorial/reactjs_tutorial_part_1.html)
+技术系列笔记均已迁移至GitBook，更多`React`的内容请到：[http://jimmylv.gitbooks.io/learning-react-js/content/reactjs_tutorial/reactjs_tutorial_part_1.html](http://jimmylv.gitbooks.io/learning-react-js/content/reactjs_tutorial/reactjs_tutorial_part_1.html)
 
 # React.js Tutorial Part 1
 

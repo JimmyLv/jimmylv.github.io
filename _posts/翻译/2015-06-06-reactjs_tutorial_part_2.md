@@ -1,13 +1,13 @@
 ---
 layout: post
-title: React.js教程：第二部分
+title: React.js教程 第二部分：使用Gulp自动化构建工具
 categories: [翻译]
 tags: []
 published: True
 
 ---
 
-技术系列笔记均已迁移至GitBook，更多内容请到：[http://jimmylv.gitbooks.io/learning-react-js/content/reactjs_tutorial/reactjs_tutorial_part_1.html](http://jimmylv.gitbooks.io/learning-react-js/content/reactjs_tutorial/reactjs_tutorial_part_1.html)
+技术系列笔记均已迁移至GitBook，更多`React`的内容请到：[http://jimmylv.gitbooks.io/learning-react-js/content/reactjs_tutorial/reactjs_tutorial_part_1.html](http://jimmylv.gitbooks.io/learning-react-js/content/reactjs_tutorial/reactjs_tutorial_part_1.html)
 
 # React.js Tutorial Part 2
 
@@ -19,7 +19,7 @@ Welcome to part 2 of my tutorial on how to get a website up and running using [R
 
 In this part of the tutorial, we are going to make our React.js/Express.js app more like a full-fledged web application with the addition of a build system called [Gulp.js](http://gulpjs.com/). Gulp.js is a build system (or task runner) that I have been using for a while. There are [many](http://gruntjs.com/), [many](https://github.com/broccolijs/broccoli), [many](http://webpack.github.io/) out there, but I find Gulp.js to be very sufficient for my needs.
 
-这一部分，我们将使用额外的[Gulp.js](http://gulpjs.com/)构建工具，搭建一个更加完善的React.js/Express.js应用。Gulp.js是一个我一直在使用的构建工具（任务管理），这里有很多类似的[gruntjs](http://gruntjs.com/), [broccoli](https://github.com/broccolijs/broccoli), [webpack](http://webpack.github.io/)等工具，但是最终发现Gulp.js最符合需求。
+这一部分，我们将使用额外的[Gulp.js](http://gulpjs.com/)构建工具，搭建一个更加完善的React.js/Express.js应用。Gulp.js是一个我一直在使用的构建工具（任务管理器），这里有很多类似的[gruntjs](http://gruntjs.com/), [broccoli](https://github.com/broccolijs/broccoli), [webpack](http://webpack.github.io/)等工具，但是最终发现Gulp.js最符合需求。
 
 ## Installing Gulp
 
