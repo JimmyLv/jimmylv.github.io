@@ -2,7 +2,7 @@
 layout: post
 title: 使用Spring Boot开发RESTful Web服务
 categories: [翻译]
-tags: [RESTful]
+tags: [RESTful, Spring]
 published: True
 
 ---

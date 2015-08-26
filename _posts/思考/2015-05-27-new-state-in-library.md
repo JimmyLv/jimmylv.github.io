@@ -2,7 +2,7 @@
 layout: post
 title: 出走寝室：在图书馆的所思所想
 categories: [思考]
-tags: []
+tags: [写作, 人性]
 published: True
 
 ---

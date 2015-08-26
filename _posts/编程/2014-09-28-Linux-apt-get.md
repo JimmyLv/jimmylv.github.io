@@ -2,7 +2,7 @@
 layout: post
 title: Ubuntu下的程序安装与卸载
 category: 编程
-tags: Ubuntu
+tags: Ubuntu 软件
 description: 
 ---
 

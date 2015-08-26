@@ -2,7 +2,7 @@
 layout: post
 title: React.js教程 第三部分：一个真实的React组件
 categories: [翻译]
-tags: []
+tags: [React]
 published: True
 
 ---

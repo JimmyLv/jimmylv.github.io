@@ -2,8 +2,7 @@
 layout: post
 title: 西南交大摄影集【一】
 category: 摄影
-tags: 摄影
-keywords: 校园
+tags: 摄影 大学
 description: 
 ---
 

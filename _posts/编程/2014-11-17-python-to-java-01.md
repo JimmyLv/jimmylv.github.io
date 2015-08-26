@@ -2,8 +2,7 @@
 layout: post
 title: "Python基础如何学习Java：如何开始学习一门新语言"
 category: 编程
-tags: Python
-description: null
+tags: Python Java 编程语言
 published: true
 ---
 

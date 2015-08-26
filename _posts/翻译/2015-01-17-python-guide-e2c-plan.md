@@ -2,7 +2,7 @@
 layout: post
 title: "The Hitchhiker’s Guide to Python! 中英对照译本"
 category: 翻译
-tags: Python 翻译
+tags: Python
 published: true
 
 ---
@@ -27,7 +27,8 @@ published: true
 
 ### Contact me:
 
-- E-mail: 460051518@qq.com
+- E-mail: jimmy.jinglv@gmail.com
+- ZhiHu: @吕立青
 - WeiBo: @立青开根号
 - WeChat: liqing215
 

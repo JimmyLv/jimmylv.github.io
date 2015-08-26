@@ -2,7 +2,7 @@
 layout: post
 title: React学习笔记：兼谈笔记与博客的区别
 categories: [编程]
-tags: []
+tags: [React, 写作]
 published: True
 
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: 记一次对话：自我与环境以及环境中的人
 categories: [思考]
-tags: [日记]
+tags: [学习, 工作, 人性]
 published: True
 
 ---

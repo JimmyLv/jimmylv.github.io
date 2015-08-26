@@ -2,7 +2,7 @@
 layout: post
 title: 吕立青拍的壁纸系列（二）
 categories: [摄影]
-tags: []
+tags: [摄影, 爱情]
 published: True
 
 ---

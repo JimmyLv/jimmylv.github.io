@@ -1,9 +1,8 @@
 ---
 layout: post
 title: "关于不同翻墙软件：GoAgent和ShadowSocks"
-description: ""
 category: 编程
-tags: [翻墙]
+tags: [GFW]
 published: true
 ---
 

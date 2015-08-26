@@ -2,7 +2,7 @@
 layout: post
 title: React.js教程 番外篇（二）：如何升级NPM依赖的版本
 categories: [翻译]
-tags: []
+tags: [NodeJS, React]
 published: True
 
 ---

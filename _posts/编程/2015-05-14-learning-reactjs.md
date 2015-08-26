@@ -2,7 +2,7 @@
 layout: post
 title: React.js 复习笔记：组件组合与复用
 categories: [编程]
-tags: []
+tags: [React, 前端]
 published: True
 
 ---

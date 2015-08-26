@@ -2,8 +2,7 @@
 layout: post
 title: 「反思我的大学」之科学与技术
 category: 思考
-tags: 总结
-keywords: 大学
+tags: 大学
 description:
 published: true
 ---

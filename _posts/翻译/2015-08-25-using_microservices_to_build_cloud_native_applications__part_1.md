@@ -2,7 +2,7 @@
 layout: post
 title: 使用微服务构建原生云端应用 - 第一部分
 categories: [翻译]
-tags: [Microservices]
+tags: [Microservices, Cloud]
 published: True
 
 ---
