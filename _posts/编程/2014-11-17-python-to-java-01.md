@@ -52,7 +52,7 @@ Java系列的其他语言可以说都是在修正Java的一些问题，比如Sca
 
 ###练习手速：
 
-[typing.io](typing.io)
+<https://typing.io>
 
 [Type Fu](https://chrome.google.com/webstore/detail/type-fu/pofoighmmpljaikjiidkkfhldjndfdbk)
 
@@ -70,3 +70,8 @@ GitHub/Debug
 
 ###Java最佳实践
 
+- TDD
+- Refactor
+- CleanCode
+- Desgin Pattern
+- Reflection
