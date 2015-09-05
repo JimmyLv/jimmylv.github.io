@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: photo
 title: 西南交大摄影集【二】
 category: 摄影
 tags: 摄影 大学

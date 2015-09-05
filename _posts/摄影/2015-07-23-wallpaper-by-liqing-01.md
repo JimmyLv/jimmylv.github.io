@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: photo
 title: 吕立青拍的壁纸系列（一）
 categories: [摄影]
 tags: [摄影, 爱情]

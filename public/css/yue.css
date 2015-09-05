@@ -108,6 +108,12 @@
   margin: 0.2em 0;
 }
 
+.photo img {
+  max-width: 49.5%;
+  height: auto;
+  margin: 0.2em 0;
+}
+
 .yue a img {
   /* Remove border on IE */
   border: none;
