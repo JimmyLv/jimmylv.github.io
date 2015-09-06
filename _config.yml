@@ -24,7 +24,7 @@ favicon: /public/img/favicon.ico
 # google analytics 设置
 ga:
   id: UA-55089304-1 
-  url: blog.jimmylv.info
+  url: http://blog.jimmylv.info
 
 # disqus 设置
 disqus:
@@ -35,8 +35,8 @@ active: 编程
 
 # 首页除了最新文章外显示分类
 cates: 
-  - Python
-  - 摄影
+  - JavaScript
+  - 思考
 
 # 中文本地化
 locals:
