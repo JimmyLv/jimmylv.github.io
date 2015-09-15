@@ -110,4 +110,8 @@ published: True
 
 ![](/public/img/photos/railsgirls/dahezhao2.jpg)
 
+此次Rails Girls CD圆满结束，期待下次有更多的TWer参与其中。再次感谢此次所有参与者和支持者为此做出的不断努力和付出。
 
+更多高清照片戳这里 -> 链接: <http://pan.baidu.com/s/1gdHEIgb> 密码: 3xcy
+
+更多全国Rails Girls内容可见 -> <http://railsgirlschina.org/topics/66#3>
