@@ -78,7 +78,7 @@ published: True
 
 ![](/public/img/photos/railsgirls/xuexi.jpg)
 
-都是非常得认真的说。
+每个人都是非常得认真的说。
 
 ![](/public/img/photos/railsgirls/xuexi2.jpg)
 
