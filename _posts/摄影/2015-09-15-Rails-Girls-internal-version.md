@@ -106,7 +106,7 @@ published: True
 
 持续了一整天的Rails Girls活动在最后抽奖环节的欢声笑语中就结束了，相信每个姑娘都对编程有了一个全新的体验和看法，期望更多的妹纸们参与到IT行业当中，你们也可以一样优秀！
 
-最后再来一张无敌大合照，Go Pro+自拍杆乃自拍神器：
+最后再来一张无敌大合照，Go Pro+自拍杆乃自拍神器超级组合：
 
 ![](/public/img/photos/railsgirls/dahezhao2.jpg)
 
