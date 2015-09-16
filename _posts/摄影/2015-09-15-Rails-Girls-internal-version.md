@@ -96,21 +96,21 @@ published: True
 
 ![](/public/img/photos/railsgirls/small/banjiang.jpg)
 
-拿到手里沉甸甸的，心理也一定很感动很欣慰吧。
+拿到手里沉甸甸的，心理也一定很感动很欣慰吧，还有教练享受到了妹纸们报答的特级待遇。
 
 ![](/public/img/photos/railsgirls/small/banjiang2.jpg)
-
-还有教练享受到了妹纸们报答的特级待遇。
 
 ![](/public/img/photos/railsgirls/small/daiyu.jpg)
 
 持续了一整天的Rails Girls活动在最后抽奖环节的欢声笑语中就结束了，相信每个姑娘都对编程有了一个全新的体验和看法，期望更多的妹纸们参与到IT行业当中，你们也可以一样优秀！
 
+此次Rails Girls CD圆满结束，期待下次有更多的TWer参与其中。再次感谢此次所有参与者和支持者为此做出的不断努力和付出。
+
+![](/public/img/photos/railsgirls/small/zhiyuanzhe.jpg)
+
 最后再来一张无敌大合照，Go Pro+自拍杆乃自拍神器超级组合：
 
 ![](/public/img/photos/railsgirls/small/dahezhao2.jpg)
-
-此次Rails Girls CD圆满结束，期待下次有更多的TWer参与其中。再次感谢此次所有参与者和支持者为此做出的不断努力和付出。
 
 更多高清照片戳这里 -> 链接: <http://pan.baidu.com/s/1gdHEIgb> 密码: 3xcy
 
