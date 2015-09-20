@@ -17,7 +17,7 @@ published: True
 
 其实说白了，就是由一帮程序猿教练带领编程零基础的女孩们在一天内做出一个非常酷炫的网站。
 
-早上八点半开始，就已经有学员到达公司开始签到，竟然有些Girls比工作人员来得还早，（说的就是我，(￣ε(#￣)☆╰╮）
+早上八点半开始，就已经有学员到达公司开始签到，竟然有些Girls比工作人员来得还早，（拖后腿的工作人员就是我，(￣ε(#￣)☆╰╮）
 
 ![](/public/img/photos/railsgirls/small/qiandao.jpg)
 
@@ -66,7 +66,7 @@ published: True
 
 ![](/public/img/photos/railsgirls/small/choujiang.jpg)
 
-看来这里的姑娘们都太单纯太可爱呀，然后就是纯洗脑级别的Ruby China维护者李华顺老师带来的的《Rails入门第一课》。
+看来这里的姑娘们都太单纯太可爱呀，然后就是Ruby China社区创始人李华顺老师带来的纯洗脑级别的激情万分的《Rails入门第一课》。
 
 ![](/public/img/photos/railsgirls/small/lihuashun.jpg)
 
