@@ -22,11 +22,13 @@ published: True
     + [如何入门 Python 爬虫？ - 知乎](http://www.zhihu.com/question/20899988)
     + 网页下载，[HTTP协议详解](http://www.cnblogs.com/TankXiao/archive/2012/02/13/2342672.html)，一个非常好用的Python库，[Requests for Humans ](http://cn.python-requests.org/zh_CN/latest/)
     + 数据解析，[深入浅出之正则表达式（一）](http://dragon.cnblogs.com/archive/2006/05/08/394078.html)，[regex可视化工具](http://regexper.com/)
+    + 超越正则表达式，[XPath](http://www.jikexueyuan.com/course/902.html)
     + 数据存储，Python自带轻量级数据库[SQLite](http://www.cnblogs.com/vamei/p/3794388.html)
 - 了解各种坑，模拟登陆，JS加载、点击动作，请求次数限制
     + [网络爬虫定向抓取漫谈](http://www.searchtb.com/2011/01/an-introduction-to-crawler.html)
     + [详解抓取网站，模拟登陆，抓取动态网页的原理和实现（Python，C#等）](http://www.crifan.com/files/doc/docbook/web_scrape_emulate_login/release/html/web_scrape_emulate_login.html)
     + [专栏：Python爬虫入门教程](http://blog.csdn.net/column/details/why-bug.html)
+    + [爬虫视频课程 - 极客学院](http://search.jikexueyuan.com/course/?q=%E7%88%AC%E8%99%AB)
 - 超级武器，上手Scrapy框架
     + 非常好用的大而全功能完备的[Scrapy框架](http://doc.scrapy.org/en/latest/index.html)
     + 这里有之前版本的中文翻译，[Scrapy 0.25 文档](http://scrapy-chs.readthedocs.org/zh_CN/latest/)。
