@@ -47,3 +47,4 @@ locals:
 
 gems:
   - jekyll-sitemap
+  - jekyll-paginate
