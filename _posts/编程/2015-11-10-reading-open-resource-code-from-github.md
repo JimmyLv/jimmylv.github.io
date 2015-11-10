@@ -69,13 +69,7 @@ time: 2 days
   });
 ```
 
-```html
-{% extends 'layouts/default.html' %}
-
-{% block content %}
-  <h2>404 - Not found</h2>
-{% endblock %}
-```
+![](http://7xjbdq.com1.z0.glb.clouddn.com/swig_404.png)
 
 当然可以再次分层，把具体的`res.render()`函数放到不同的地方。
 
