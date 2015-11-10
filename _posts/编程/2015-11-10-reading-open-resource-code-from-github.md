@@ -9,7 +9,7 @@ published: True
 
 # GitHub开源项目：getAwesomeness
 
-![](./getAwesome.png)
+![](http://7xjbdq.com1.z0.glb.clouddn.com/getAwesome.png)
 
 repo url: <https://github.com/panzhangwang/getawesomeness/>
 
