@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 关于前端的思考：Angular 2以及前后端边界
-categories: []
-tags: []
+categories: [编程]
+tags: [AngularJS, JavaScript]
 published: True
 
 ---
