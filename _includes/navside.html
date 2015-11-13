@@ -1,11 +1,11 @@
 <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 aside visible-md visible-lg">
-  <div class="row">
+  <div class="row navside">
     <div class="col-md-3 col-xs-3 aside1">
       <br>
       <a class="pjaxlink" href="/"><img src="{{ site.gavatar }}" class="img-circle avatar" style="border-width:2px; border-color:#000"></a>
       <br><br>
       <ul class="nav nav-pills nav-stacked">
-        {% for category in site.categories %}     <!-- 这里是aside1的读书、生活、科研、技术、绘画-->
+        {% for category in site.categories %}     <!-- 这里是aside1的读书、生活、编程、技术、摄影-->
          <li><a href="#{{ category | first }}" data-toggle="tab">{{ category[0] }}</a></li>
         {% endfor %}
         <li><a href="#tags" data-toggle="tab">{{ site.locals.tags }}</a></li>  
@@ -19,14 +19,14 @@
       <div class="aside1_bottom">
         <table class="table table-condensed">
           <tr>
-            <td><a href="/pages/atom.xml" target="_blank"><i class="fa fa-rss fa-2x" style="color:#fff;"></i></a></td>
-            <td><a href="mailto:{{ site.author.email }}"><i class="fa fa-envelope-o fa-2x" style="color:#fff;"></i></a></td>
+            <td><a href="/pages/atom.xml" target="_blank"><i class="fa fa-rss fa-2x" style="color:#000;"></i></a></td>
+            <td><a href="mailto:{{ site.author.email }}"><i class="fa fa-envelope-o fa-2x" style="color:#000;"></i></a></td>
           </tr>
         </table>
       </div>
     </div>
     <div class="col-md-9 col-xs-9 aside2">
-      <div class="row">
+      <div class="row navside2">
         <div class="tab-content"> 
           {% for category in site.categories %} 
             <div class="tab-pane" id="{{ category[0] }}">

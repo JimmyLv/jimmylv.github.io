@@ -1,18 +1,13 @@
 ---
 layout: base
 ---
-<div class="row">
+<div class="row yue">
   <div class="col-md-12 aside3-title">
-    <br>
-    <h2 id="#identifier">{{ page.title }}</h2>
-    {{ page.date | date:"%Y年%m月%d日" }}
+    <h1 id="#identifier">{{ page.title }}</h1>
+    <div class="aside3-date">{{ page.date | date:"%Y年%m月%d日" }}</div>
   </div>
   <div class="col-md-12 aside3-content">
-    <hr>
-    <div id="content">
-      {{ content }}
-    </div>
-    <hr>
+    <div id="content">{{ content }}</div>
     {% include disqus.html %}
   </div>
   <!-- 目录 -->
@@ -22,4 +17,3 @@ layout: base
     </div>
   </div>
 </div>
-

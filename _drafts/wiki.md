@@ -1,0 +1,418 @@
+- 《少的力量》
+  - 第一部 六大原则
+    - 原则1：设立限制
+      - 1）浏览网站，一开始上网是要查找某个技术文献，但最后视线被带到其它主题，很长时间后会忘了之前上网的目的。
+      - 2）看手机上的新闻，虽然用MobileRSS看新闻，只保留了一个八卦网站，但还是会浪费不少时间，这种东西只能当作完成重要工作后的奖赏。
+      - 3）经常检查邮件，邮箱有4个，虽然只有1个是用于工作的主要邮箱，但还是太多，每天登录几个邮箱去检查邮件还是浪费时间。
+      - 4）资料没有有效地归类，在查找时浪费了时间。办公室的柜子和抽屉需要好好整理一下了。
+    - 原则2：选择最重要的
+      - 你的价值观是什么？
+        - [COMPLETE] 
+      - 你一生的目标是什么？
+      - 你今年的目标是什么？
+      - 你爱做的是什么？
+      - 什么是最有影响力的？
+      - 什么能产生长远价值？
+      - 哪些是你真正必需的？
+      - 哪些是你额外想得到的？
+    - 原则3：简单化
+      - 去掉不重要的
+    - 原则4：全神贯注，实现高效率的重要手段
+      - 集中精力于一个目标；
+      - 集中精力于当前；
+      - 集中精力于手中的事；
+      - 集中精力于积极的事。察觉到自己的消极思想，想办法用积极的思想去代替。
+    - 原则5：养成习惯，实现长远进步
+      - 1）每个月只选定一个习惯；
+      - 2）把你的计划写下来，设定一个相对容易的目标；
+      - 3）把你的目标公示出来；
+      - 4）报告你每天的进展。
+      - ！12个关键的习惯：
+        - 1）每天早上，设定好你当天最重要的3件事。MIT=Most Important Thing。
+        - 2）一次只处理一个任务。
+        - 3）彻底地整理你的邮箱
+        - 4）每天检查2次你的电子邮件
+        - 5）每天锻炼5到10分钟。
+        - 6）在保持与外界没有联络的状情况下，毫不分心地工作
+        - 7）遵循早晨的日常安排
+        - 8）每日吃新鲜的水果和蔬菜。
+        - 9）保持你的办公桌整洁。
+        - 10）对自己重要事项列表之外的要求说“不”。
+        - 11）每天用15分钟清理你的房子。
+        - 12）坚持每封电子邮件的内容限制在5句之内。
+    - 原则6：从小处着手，确保成功
+      - 养成每天提升一点的习惯。
+  - 第二部 目标、项目、任务
+    - 07 在清单上选择三个最重要的计划
+      - 一个目标的制度，选择一个目标之后，要分解为小的目标，再分解为每周的目标，再落实到每天的行动中。
+      - 选择三个最重要的计划：
+        - 一个与长远目标相关，
+        - 一个与工作相关，
+        - 一个与生活相关。
+    - 08 每天的任务：三件最重要的事情
+      - 每天早晨开始做你最重要的事情；
+      - 限定自己只关注三件重要事情上；
+      - 确保三件事情至少有一件与你的目标相联系；
+      - 优先完成这三件最重要的事；
+      - 在完成这三件事之前，别去做其他的事；
+      - 每次只专注于一件事情。
+  - 第三部 时间管理、电子邮件、互联网
+    - 09 “流动状态“：提升你的生产力和幸福感
+      - “清楚下一步该做什么”就是Next Action，
+      - “成批处理”就是情境，把情境相同的事情一起处理。
+      - 简单的时间管理工具只有日历和记事本。
+    - 10 邮件管理：经济学中的二八定律
+      - 限制收件箱的个数；
+      - 减少查看邮件的次数；
+      - 查看邮件不是每天早上所做的第一件事情；
+      - 关闭邮件提醒功能；
+      - 利用过滤器处理垃圾邮件或把邮件分类；
+      - 在网站上发表声明，有些问题可以直接在网站上发贴，而不是发邮件；
+      - 从头到尾一次处理一封邮件；
+      - 大胆使用删除键；
+      - 少写，控制在5句之内。
+    - 11 拔掉网线，执行“下线一小时”的计划
+      - 学会在离线时工作，远离干扰，戒除网瘾！
+      - 具体实施
+  - 第四部 文件、办公地点、日常安排
+    - 12 整理文件：减少资料、立即归档、准备建档
+      - 使办公桌整洁的最高境界：只有电话、电脑和一个小笔记本。
+    - 13 减少承诺，把时间留给最重要的事情
+      - 你的责任范围对应了各种承诺。
+      - 一个人在工作、业余工作、家庭、孩子、公民、宗教、业余爱好、家务、志愿者等方面都承担着各种责任
+      - 可以用时区的办法将这些责任进行优先级排序，即某个阶段有不同的侧重。
+      - 将这些承诺限定在4-5条内是个好办法：
+        - 这件事能给我的人生带来价值吗？
+        - 对我有多重要？
+        - 和我人生的重点目标及价值观一致吗？
+        - 如果放弃它对我会有什么样的影响？
+        - 会拓展我的人生目标吗？
+      - 减少那些花时间精力多而收益少的事情，与你的价值观、生活重点及目标不相符的事情。
+      - 学会说不，态度要坚决，不要内疚！
+    - 14 慎重安排早晚：一天中最重要的时间段
+      - 早上的日常安排：
+        - 喝咖啡或茶
+        - 看日出
+        - 锻炼
+        - 淋浴
+        - 阅读
+        - 吃早餐
+        - 练瑜珈
+        - 打坐深思
+        - 到户外散步
+        - 准备午餐
+        - 写日记
+        - 选择当天最重要的三项任务
+        - 审核自己的目标
+        - 安排感恩的时间
+        - 晚上的日常安排：
+        - 吃晚饭
+        - 淋浴
+        - 刷牙或用牙签洁牙
+        - 写日记
+        - 写作
+        - 阅读
+        - 锻炼
+        - 准备第二天要空的衣物或准备第二天的午餐
+        - 打坐
+        - 记录当天的生活
+        - 回顾当天的工作
+        - 面部护理
+        - 给孩子讲故事
+        - 搞卫生
+        - 和爱人聊天
+    - 15 清理办公桌：腾出时间，一次性整理完成
+      - 动手把自己的办公桌清理干净
+  - 第五部 慢生活、健身
+    - 16 慢生活：慢节奏工作，享受慢餐
+      - 关注当下、慢节奏工作、慢慢地吃饭是一种享受。
+    - 17 养成运动和健康饮食的习惯
+      - 锻炼就是为了保持每天有旺盛的精力，有好的身体才能逐步实现人生目标。
+  - 第六部 关于动力
+    - 18 动力：让自已再度兴奋起来
+      - 努力过程中支持动力的二十种方法：
+        - 控制自己；
+        - 开始就好；
+        - 对承诺负责；
+        - 去掉消极的想法，接受积极的想法；
+        - 想想好处；
+        - 让自己再兴奋起来；
+        - 阅读相关材料；
+        - 找到志同道合的朋友；
+        - 阅读励志故事；
+        - 积累成功；
+        - 克服低谷期；
+        - 找到帮助；
+        - 将进展制成图表；
+        - 经常犒劳自己；
+        - 制定小目标；
+        - 找个教练或参加培训班；
+        - 绝不连续耽误两天；
+        - 想象成功的情形；
+        - 了解并克服自己想放弃的冲动；
+        - 重新找到快乐。
+- GTD
+  - Inbox
+    "@today #someboby"
+    - Sleep
+    - [COMPLETE] Read
+      "Jihh"
+      - program
+        - 
+      - wash cloth
+      - 
+  - Next Action
+    "@today #someboby "
+  - Someday/Maybe
+    - [COMPLETE] 整理《少的力量》
+- Git：是一款自由和开源的分布式版本控制系统
+  - 重要概念：
+    - 版本控制系统
+      - CVS及SVN都是集中式的版本控制系统，而Git是分布式版本控制系统。
+      - 集中式版本控制系统，版本库集中存放在中央服务器。
+      - 分布式版本控制系统根本没有“中央服务器”，每个人的电脑上都是一个完整的版本库。
+    - 工作区（Working Directory）：就是你在电脑里能看到的目录
+    - 版本库（Repository）：工作区有一个隐藏目录“.git”，这个不算工作区，而是Git的版本库
+      - stage：（或者叫index）的暂存区
+      - master：Git为我们自动创建的第一个分支
+      - HEAD：指向master的一个指针
+    - 往Git版本库里添加文件
+      - ！每次修改，如果不add到暂存区，那就不会加入到commit中。
+        - 第一步是用“git add”把文件添加进去，实际上就是把文件修改添加到暂存区；
+        - 第二步是用“git commit”提交更改，实际上就是把暂存区的所有内容提交到当前分支。
+        - 把两次修改合并后一块提交：第一次修改 -> add -> 第二次修改 -> add -> commit
+  - 操作命令：
+    - git config初始配置（自报家门）：
+    - --global参数表示你这台机器上所有的Git仓库都会使用这个配置
+      - $ git config --global user.name "Your Name"
+      - $ git config --global user.email "email@example.com"
+    - git init创建初始化仓库：
+      - $ mkdir learngit
+      - 创建一个空目录
+      - $ git init
+      - 把这个目录变成Git可以管理的仓库
+    - git add添加文件到仓库：
+      - $ git add readme.txt
+      - 可反复多次使用，添加多个文件
+    - git commit提交文件到仓库
+      - $ git commit -m "wrote a readme file"
+      - -m后面输入的是本次提交的说明，可以输入任意内容
+    - git status显示当前的状态
+    - 告诉我们工作区和版本库就不一致的情况
+      - $ git status
+      - # On branch master
+      - # Changes not staged for commit:
+      - # (use "git add/rm <file>..." to update what will be committed)
+      - # (use "git checkout -- <file>..." to discard changes in working directory)
+      - #
+      - # deleted: test.txt
+    - git diff查看difference
+    - 显示的格式正是Unix通用的diff格式
+      - $ git diff readme.txt
+    - git log显示从最近到最远的提交日志查看版本变更
+    - --pretty=oneline参数减少信息输出
+      - $ git log --pretty=oneline
+    - git reset回退到上一个版本
+      - $ git reset --hard HEAD^
+      - Git在内部有个指向当前版本的HEAD指针，HEAD指向的版本就是当前版本，上上一个版本就是HEAD^^，往上100个版本写成HEAD~100。
+      - $ git reset --hard 3628164
+      - 若git log命令显示commit id是“3628164...”，于是就可以根据指定回到过去/未来的某个版本
+    - git reflog用来记录你的每一次命令：
+    - 查看commit_id，Git允许我们在版本的历史之间穿梭，使用命令git reset --hard commit_id
+      - $ ea34578 HEAD@{0}: reset: moving to HEAD^
+      - $ 3628164 HEAD@{1}: commit: append GPL
+    - git checkout -- file可以丢弃工作区的修改
+    - -- file命令中的“--”很重要，没有“--”，就变成了“创建一个新分支”的命令（add之前）
+      - $ git checkout -- readme.txt
+    - git reset HEAD file可以把暂存区的修改撤销掉（unstage），重新放回工作区
+    - 既可以回退版本，也可以把暂存区的修改回退到工作区。（commit之前->add之前）
+      - $ git reset HEAD readme.txt
+    - git reset --hard HEAD^回退到上一个版本（已经在master中了）
+    - 还没有把自己的本地版本库推送到远程。（commit之后）
+      - $ git reset --hard HEAD^
+    - git rm从版本库中删除该文件
+      - $ git rm test.txt
+      - $ git commit -m "remove test.txt"
+    - git checkout原理是用版本库里的版本替换工作区的版本
+    - 无论工作区是修改还是删除，都可以“一键还原”。
+      - 解决工作区删除了/修改错了的问题
+      - 只能恢复文件到最新版本，你会丢失最近一次提交后你修改的内容（还未提交的修改）
+- 知识整理
+  "也可以是资源整理/资源管理?"
+  - 编程知识(coding/program)
+    "编程这个概念有多大？编程的意义是什么呢？"
+    - 开发基础/基本架构
+      "这里写的是对整个开发过程的概述（需要的到底有哪些？需要哪些工具？）"
+      - 开发环境
+        - 操作系统（Window/Ubuntu/Linux/Unix/Mac OS X）
+        - 数据库（MySQL/sqlite3）
+        - 服务器（SAE/GitHub）
+      - 开发工具
+        "为了提高开发效率和开发情绪"
+        - IDE/编辑器（Notepad++/Vim/PyCharm/IDLE）
+        - 版本管理（Git/SVN）
+          "团队协作/服务器-本地逻辑"
+      - 编程语言
+        - C/C++
+          "大学学习基础，单片机操作
+          另外就是学考试必考，数据结构基础"
+        - Java（Android）
+          "认真学过基础，面向对象的认识"
+        - Python
+          "脚本语言、解释性语言"
+        - PHP
+          "初步认识 $"
+        - HTML/CSS/JS
+          "前端，一定会有所涉及"
+      - 应用结构
+        - 前端样式/模版
+          "套模版/cp code->基础html修改->
+          框架原理->框架应用->自行修改各部分"
+        - 数据库存储
+        - 代码逻辑
+        - 算法/应用原理
+        - 服务器部署
+    - 编程语言基础
+      - 三个基本
+        - 变量
+        - 表达式
+        - 控制流
+      - 函数
+        - 传入参数
+        - 返回值
+      - 类/对象
+        - 方法
+        - 接口
+      - 数据结构
+  - 学习过程
+    - Python基础
+      - install (best pre_env)
+      - int str input print
+      - list tuple dict set
+      - if-else while break
+      - def class
+      - Import
+      - @ yield
+    - Python工具/框架
+      - Tool
+        - pip
+        - ipython
+          "-help -version"
+        - virtualenv
+      - Web
+        - Django
+          - 什么是MVC
+          - model
+          - view
+          - url
+        - Web.py
+        - web2py
+        - jinja2
+      - Crawler
+        - Scrapy
+          "url_start parse"
+        - Spynner
+          "wekit"
+        - Ghost.py
+          "ajax"
+      - Pelican
+      - NPLTK
+    - 前端技术
+      - HTML/CSS/JS
+      - 框架
+        - jQuery
+        - Bootstrap
+    - 数据库
+      - mysql 语句
+      - mysql安装/操作
+    - 服务器
+      - 基本概念
+      - 常用组件
+      - 云服务
+    - 操作系统
+      - 安装
+      - 快捷键
+      - cmd
+      - bash
+      - command
+  - 项目实战
+    - 游戏开发
+      - pygame
+    - 连接硬件
+      - pyserial
+    - GUI
+      - pyQt
+    - 微信后台
+      - 申请
+      - 逻辑原理
+      - web.py
+      - SAE
+      - 调试工具
+    - 搭建博客
+      - domain
+        - DNS
+        - IP
+      - post_article
+      - push
+      - Jekyll
+      - Pelican
+      - Zinnia（Django）
+    - 网站爬取
+      - 请求数据
+        - request
+        - urllib2
+      - 网站解析
+        - lxml
+        - xpath
+        - re
+      - 数据存储
+        - mysqldb
+  - 方法论
+    - Google>百度
+    - github
+    - zhihu
+    - stackoverflow
+    - best practice
+    - official document
+    - english book
+  - 效率工具
+    - type quickly
+      - Type Fu（chrome）
+    - markdown
+      - 马克飞象
+      - 
+    - chrome
+    - firebug
+    - evernote
+    - ditto
+    - wox
+    - workflowy
+  - 算法应用
+    - NPL
+    - DM（data mining）
+  - 快速生成产品的工具
+    - 
+    - blog
+      - postach.io
+      - Prose.io
+      - faxbox
+      - simple
+    - mobile
+  - Idea/Product
+    - 知乎
+    - Xmind
+  - Design/UE
+    - PPT/Prezi
+    - dribble
+  - company/people
+    - alibaba/马云
+    - 163/丁磊
+    - apple/jobs
+  - experience/method
+    - how to solve problem quickly
+    - how to get free e-book
+    - why you must read english resources
+    - how to collect material effectively
+    - how to expand your social circle
+    - how to spend your idea and knowledge widely
+- [COMPLETE] 

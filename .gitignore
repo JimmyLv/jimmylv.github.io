@@ -1,4 +1,8 @@
-_site/
 .DS_Store
 .idea/
-note-blog.iml
+*.iml
+
+_site/
+_theme/
+_book/
+node_modules/
