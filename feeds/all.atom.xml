@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>my_first_blog_by_pelican</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2014-10-21T00:00:00+02:00</updated><entry><title>test</title><link href="/test.html" rel="alternate"></link><updated>2014-10-21T00:00:00+02:00</updated><author><name>liqing</name></author><id>tag:,2014-10-21:test.html</id><summary type="html">&lt;p&gt;this is my first article.&lt;/p&gt;</summary></entry></feed>
