@@ -7,6 +7,8 @@ published: True
 
 ---
 
+更多内容请看我最近在写的[Microservice 最佳实践](https://jimmylv.gitbooks.io/learning-microservices/content/)
+
 ## What?
 
 > Wikipedia: 表征性状态传输（英文：Representational State Transfer，简称REST）是Roy Fielding博士于2000年在他的博士论文中提出来的一种软件架构风格。
