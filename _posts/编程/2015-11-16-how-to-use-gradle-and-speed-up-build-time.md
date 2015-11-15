@@ -35,7 +35,7 @@ published: True
 
 最后来一个完整的`build.gradle`示例：
 
-```gradle
+```groovy
 apply plugin: 'java'
 
 group = 'org.gradle.example'
@@ -127,7 +127,7 @@ Gradle的一大亮点就是FULLY PROGRAMMABLE BUILDS，你可以将以往的配�
 
 我们还可以定义Task的类型，除了输入和输出之后需要一个带有@TaskAction注解的方法，然后该任务就可以针对out of date的输入文件执行相应的操作，并且对于自上次操作已被删除的输入文件执行单独的动作，更多内容[戳这里](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.incremental.IncrementalTaskInputs.html)。
 
-```gradle
+```groovy
 class IncrementalReverseTask extends DefaultTask {
      @InputDirectory
      def File inputDir
