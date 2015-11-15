@@ -36,32 +36,32 @@ published: True
 最后来一个完整的`build.gradle`示例：
 
 ```gradle
-    apply plugin: 'java'
+apply plugin: 'java'
 
-    group = 'org.gradle.example'
-    version = '1.0.0'
-    sourceCompatibility = targetCompatibility = 1.7
+group = 'org.gradle.example'
+version = '1.0.0'
+sourceCompatibility = targetCompatibility = 1.7
 
-    repositories {
-        mavenCentral()
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.slf4j:slf4j-api:1.7.10'
+    runtime 'org.slf4j:slf4j-simple:1.7.10'
+    testCompile 'junit:junit:4.12'
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': "${project.group}.App"
     }
+}
 
-    dependencies {
-        compile 'org.slf4j:slf4j-api:1.7.10'
-        runtime 'org.slf4j:slf4j-simple:1.7.10'
-        testCompile 'junit:junit:4.12'
-    }
-
-    jar {
-        manifest {
-            attributes 'Main-Class': "${project.group}.App"
-        }
-    }
-
-    task sourceJar(type: Jar) {
-        classifier = 'sources'
-        from sourceSets.main.allSource
-    }
+task sourceJar(type: Jar) {
+    classifier = 'sources'
+    from sourceSets.main.allSource
+}
 ```
 
 ## 自定义Task
