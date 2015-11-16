@@ -17,11 +17,11 @@ published: True
 
 我们在Java项目根目录下会有一个`build.gradle`文件，Gradle的所有配置都可以放在这个文件里面。首先从最基本的Java插件说起，大部分的项目构建流程都是：编译Java源文件，运行单元测试，最终生成一个包含所有class文件的JAR包，而Gradle使用插件的形式来使整个过程自动化，只需要使用`apply plugin: 'java'`，然后就可以通过命令行使用与之相关的Task了：
 
-|Task name|Depends on|Type|Description|
+|Task名称|依赖于|Task类型|描述|
 |---------|----------|----|-----------|
-|assemble|    All archive tasks in the project, including jar. Some plugins add additional archive tasks to the project.  |Task |   Assembles all the archives in the project.|
-|check|   All verification tasks in the project, including test. Some plugins add additional verification tasks to the project.   |Task |   Performs all verification tasks in the project.|
-|build|   check and assemble  |Task |   Performs a full build of the project.|
+|assemble|所有用于项目归档打包的包括jar在内的Task，一些插件可以提供额外的Task。|Task |装配项目中所有已归档的文件。|
+|check|项目中包括test在内的所有验证任务，也有一些插件可以提供额外的Task。|Task|执行所有验证任务。|
+|build|check（验证检查）和assemble（装配打包）|Task |执行完整的项目构建任务。|
 
 上面的生命周期Tasks都会依赖于其他的基本Task：
 
