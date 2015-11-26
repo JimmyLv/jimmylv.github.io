@@ -1,10 +1,8 @@
 .DS_Store
+.idea/
+*.iml
 
 _site/
 _theme/
-
-*.iml
-.idea/
-
 _book/
 node_modules/
