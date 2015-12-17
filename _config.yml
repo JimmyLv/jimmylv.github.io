@@ -4,7 +4,7 @@ markdown: redcarpet
 
 # 作者信息
 author: 
-  name: 孙卫亮1
+  name: 孙卫亮
   email: sun_weiliang@126.com
   link: http://sunweiliang.github.io
   github: http://github.com/sunweiliang
@@ -29,19 +29,19 @@ disqus:
   shortname: gotoshare
 
 # 主题设置，自动激活某个标签
-active: 编程1
+active: 编程
 
 # 首页除了最新文章外显示分类
 cates: 
-  - React1
-  - 摄影1
+  - React
+  - 摄影
 
 # 中文本地化
 locals:
-  tags: 标签1
-  about: 关于1
-  newest: 最新文章1
-  archive: 归档1
+  tags: 标签
+  about: 关于
+  newest: 最新文章
+  archive: 归档
 
 gems:
   - jekyll-sitemap
