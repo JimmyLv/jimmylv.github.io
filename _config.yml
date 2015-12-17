@@ -4,17 +4,15 @@ markdown: redcarpet
 
 # 作者信息
 author: 
-  name: 吕立青
-  email: lv460051518@gmail.com
-  link: http://www.jimmylv.info
-  weibo: http://weibo.com/liqing215
-  github: http://github.com/JimmyLv
-  zhihu: http://www.zhihu.com/people/lu-li-qing-90
+  name: 孙卫亮
+  email: sun_weiliang@126.com
+  link: http://sunweiliang.github.io
+  github: http://github.com/sunweiliang
 
 # 站点信息
-title: 吕立青的博客
+title: 孙卫亮的博客
 description: My personal note-blog.
-url: http://jimmylv.info
+url: http://sunweiliang.github.io
 rss_url: /pages/atom.xml
 
 # gavatar头像及Favicon
