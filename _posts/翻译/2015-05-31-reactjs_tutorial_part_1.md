@@ -1,7 +1,7 @@
 ---
 layout: post
-title: React.js教程 第一部分：Hello World!
-categories: [翻译]
+title: 【译】React.js教程 第一部分：Hello World!
+categories: [编程]
 tags: [React, Express]
 published: True
 

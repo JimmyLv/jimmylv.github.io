@@ -1,7 +1,7 @@
 ---
 layout: post
-title: React.js教程 番外篇（一）：使用Bower包管理工具
-categories: [翻译]
+title: 【译】React.js教程 番外篇（一）：使用Bower包管理工具
+categories: [编程]
 tags: [React, Bower]
 published: True
 

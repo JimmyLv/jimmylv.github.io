@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 使用Spring Boot开发RESTful Web服务
-categories: [翻译]
+title: 【译】使用Spring Boot开发RESTful Web服务
+categories: [编程]
 tags: [RESTful, Spring]
 published: True
 
