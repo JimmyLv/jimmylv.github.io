@@ -1,10 +1,13 @@
 ---
-title: André Staltz - Unidirectional User Interface Architectures
-tags: []
-notebook: 0.0 Inbox
+layout: post
+title: 【译】Unidirectional User Interface Architectures
+categories: [编程]
+tags: [React]
+published: True
+
 ---
 
-# Unidirectional User Interface Architectures
+# Unidirectional User Interface Architectures | 单向用户界面架构
 
 原文地址：<http://staltz.com/unidirectional-user-interface-architectures.html>
     
@@ -12,19 +15,33 @@ notebook: 0.0 Inbox
 
 This post is a non-exhaustive quick overview of the so-called “unidirectional data flow” architectures. Not meant to be taken as a beginner tutorial, but rather as an overview of their differences and peculiarities. At the end, I’ll introduce a new architecture which deviates significantly from the others. This post assumes client-side Web UI frameworks only.
 
-## TERMINOLOGY
+这篇博文是一篇关于所谓「单向数据流」的[非详尽的]/[并非面面俱到的]快速综述。这并不意味着被当成一个新手教程，而是一份关于他们之间的不同点及其特点的概述。最后，我会介绍一种新的架构，它与其他架构有着明显的差异。这篇文章假设只针对于客户端的 Web UI 框架。
+
+## TERMINOLOGY | 术语
 
 It would be confusing to talk about these architectures without a common terminology, so let’s assume the following.
 
+若没有一种通用术语的话就来谈论这些架构，会使人感到非常困惑，所以让我们来假定以下内容。
+
 > **User events** are events coming from input devices directly manipulated by the user. Examples: mouse clicks, scrolls, keyboard presses, touches on a touchscreen, etc.
+
+> **用户事件**是一些直接来自于用户操作所控制的输入设备。比如：鼠标点击，滚动，键盘按压，触摸屏幕，等等。
 
 Architectures might use the term “View” with drastically different connotations. Instead, we use “rendering” to refer to the common understanding of “View”:
 
+不同架构使用的「视图」术语可能有着完全不同的隐含意义。而我们使用「渲染」来表明通常所理解的「视图」。
+
 > **User interface rendering** is the graphical output on the screen, commonly expressed as HTML or some comparable high-level declarative code such as JSX.
+
+> **用户界面渲染**是指屏幕上的图形输出，通常表现为 HTML 或者是类似 JSX 的更高抽象层次的代码。
 
 > A **User interface (UI) program** is any program which takes user events as input and outputs rendering, as an ongoing process rather than a one-time transformation.
 
+> 一个**用户界面（UI）程序**是任何可处理用户事件的程序指令，比如用户输入和渲染输出，是一个持续进行的过程，而不是一次性的转换。
+
 The DOM and other layers such as frameworks and libraries are assumed to exist between the user and the architecture.
+
+DOM 以及其它[层]比如框架和库假设都是存在于用户和架构之间的。
 
 **Ownership of inter-module arrow matters.** `A--> B` is different than `A -->B`. The former is Passive programming, while the latter is Reactive programming. Read more [here](http://cycle.js.org/observables.html#reactive-programming).
 
@@ -44,7 +61,8 @@ First compulsory mention goes to [Flux](https://github.com/facebook/flux/). It c
   * **View**: a hierarchical composition of React components
   * **Actions**: events created from user events that triggered on the View
   * **Dispatcher**: an event bus for all actions
-<en-media hash="dcf01a9766fe08a7b1b20d84376f9f37" style="box-sizing:border-box;border:0px;vertical-align:middle;width:100%;margin:2em 0px;" type="image/jpeg" alt="Flux diagram" width="570" height="427"/>
+
+![Flux diagram](http://staltz.com/img/flux-unidir-ui-arch.jpg)
 
 **Peculiarities:**
 
@@ -64,7 +82,8 @@ First compulsory mention goes to [Flux](https://github.com/facebook/flux/). It c
   * **Provider**: a subscriber to the Store which interfaces with some “View” framework like React or *Angular*
   * **Actions**: events created from user events that are created under the Provider
   * **Reducers**: pure functions from previous state and an action to new state
-<en-media hash="aeb4736026b0b70456b894985f0a3983" style="box-sizing:border-box;border:0px;vertical-align:middle;width:100%;margin:2em 0px;" type="image/jpeg" alt="Redux diagram" width="570" height="427"/>
+
+![Redux diagram](http://staltz.com/img/redux-unidir-ui-arch.jpg)
 
 **Peculiarities:**
 
@@ -84,7 +103,8 @@ The [Famous Framework](https://blog.famous.org/introducing-the-famous-framework/
   * **Tree**: a declarative hierarchical composition of components
   * **Event**: event listeners (on tree) that mutate state
   * **Behavior**: dynamic properties (of tree) dependent on the state
-<en-media hash="f9647256664ef03db622364cba42df2b" style="box-sizing:border-box;border:0px;vertical-align:middle;width:100%;margin:2em 0px;" type="image/jpeg" alt="BEST diagram" width="570" height="427"/>
+
+![BEST diagram](http://staltz.com/img/best-unidir-ui-arch.jpg)
 
 **Peculiarities:**
 
@@ -106,7 +126,8 @@ Also known as “[The Elm Architecture](https://github.com/evancz/elm-architectu
   * **View**: a pure function transforming state into rendering
   * **Actions**: a type defining user events sent through mailboxes
   * **Update**: a pure function from previous state and an action to new state
-<en-media hash="b77bb68ff2f9d8452d1407d3747afc9d" style="box-sizing:border-box;border:0px;vertical-align:middle;width:100%;margin:2em 0px;" type="image/jpeg" alt="Model-View-Update diagram" width="570" height="427"/>
+
+![Model-View-Update diagram](http://staltz.com/img/mvu-unidir-ui-arch.jpg)
 
 **Peculiarities:**
 
@@ -124,7 +145,8 @@ Introduced as a fully reactive unidirectional architecture based on [RxJS](https
   * **Model**: function from Observable of actions to Observable of state
   * **View**: function from Observable of state to Observable of rendering
   * **Custom element**: subsection of the rendering which is in itself a UI program. May be implemented as MVI, or as a Web Component. Is optional to use in a View.
-<en-media hash="1d290f871e392e8150ee7e90f7e8e251" style="box-sizing:border-box;border:0px;vertical-align:middle;width:100%;margin:2em 0px;" type="image/jpeg" alt="Model-View-Intent diagram" width="570" height="427"/>
+
+![Model-View-Intent diagram](http://staltz.com/img/mvi-unidir-ui-arch.jpg)
 
 **Peculiarities:**
 
@@ -141,17 +163,20 @@ A MVI tuple is a UI program. This architecture is fractal if and only if all cus
 This blog post introduces *Nested Dialogues* as a new unidirectional architecture meant for Cycle.js and any other approach based solely on Observables. It is an evolution of the Model-View-Intent architecture.
 
 Start from the fact that a Model-View-Intent sequence can be functionally composed as a single function, a “Dialogue”:
-<en-media hash="0e756d44fd11974bb46e3a87e5f806cb" style="box-sizing:border-box;border:0px;vertical-align:middle;width:100%;margin:2em 0px;" type="image/jpeg" alt="A Dialogue function equivalent to Model-View-Intent" width="570" height="427"/>
+
+![A Dialogue function equivalent to Model-View-Intent](http://staltz.com/img/dialogue-mvi-unidir-ui-arch.jpg)
 
 As the diagram suggests, a **Dialogue** is a function taking an Observable of user events as input (the input of Intent) and outputting an Observable of renderings (the output of View). Therefore a Dialogue is a UI program.
 
 We generalize the definition of a Dialogue to allow other targets beyond the user, with an input Observable and an output Observable for each target. For example, if a Dialogue interfaces with a user and a server over HTTP, the Dialogue would take two Observables as input: Observable of user events and Observable of HTTP responses. Then, it would output two Observables as output: Observable of renderings and Observable of HTTP requests. This is the concept of [Drivers](http://cycle.js.org/drivers.html) in Cycle.js.
 
 This is how Model-View-Intent restructured as a Dialogue looks like:
-<en-media hash="996a786dca794eb17e6b4af0b8feb470" style="box-sizing:border-box;border:0px;vertical-align:middle;width:100%;margin:2em 0px;" type="image/jpeg" alt="A Dialogue function as a UI program" width="570" height="427"/>
+
+![A Dialogue function as a UI program](http://staltz.com/img/single-dialogue-unidir-ui-arch.jpg)
 
 To reuse a Dialogue function as a subcomponent UI program in a larger program is a matter of nesting a Dialogue inside another one:
-<en-media hash="c36f37a6c2bfe94ebaecdc2de0a6bc68" style="box-sizing:border-box;border:0px;vertical-align:middle;width:100%;margin:2em 0px;" type="image/jpeg" alt="Nested Dialogues" width="570" height="427"/>
+
+![Nested Dialogues](http://staltz.com/img/nested-dialogues-unidir-ui-arch.jpg)
 
 The wiring of Observables between layers of Dialogues is a data flow graph. It is not necessarily an acyclic graph. There are cases such as dynamic lists of subcomponents where a cycle is needed in the data flow graph. Examples of such are beyond the scope of this blog post.
 
