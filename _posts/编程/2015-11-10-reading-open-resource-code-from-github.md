@@ -44,11 +44,11 @@ time: 2 days
 
 差不多就把整个项目架构以及实现弄清楚了，可以学到的东西也很多：
 
-### express
+### 0x01. Express.js
 
 - express配置app的过程
     + `var app = express();`
-    + `route` & `site`
+    + `routes` & `views`
     + `app.listen(3000)`
 - nodejs的模块：`module.exports`与`require('./config/express')`
 - `app.use([path,] function [, function...])` API
@@ -58,7 +58,7 @@ time: 2 days
 - `app.engine('html', swig.renderFile);`
 - `app.set('views', config.root + '/app/views');`
 
-### routes
+### 0x02. Routes路由
 
 ```js
   app.use(function (req, res, next) {
@@ -69,13 +69,9 @@ time: 2 days
   });
 ```
 
-```html
-{% extends 'layouts/default.html' %}
+![](http://7xjbdq.com1.z0.glb.clouddn.com/swig_404.png)
 
-{% block content %}
-  <h2>404 - Not found</h2>
-{% endblock %}
-```
+当然可以再次分层，把具体的`res.render()`函数放到不同的地方。
 
 ```js
 var sites = require('../app/sites');
@@ -83,7 +79,7 @@ app.get('/', sites.index);
 app.get('/get/:awe', sites.get);
 ```
 
-### sites
+### 0x03. Sites视图
 
     exports.index = function (req, res){
       res.render('index', {
@@ -92,7 +88,7 @@ app.get('/get/:awe', sites.get);
       });
     };
 
-所对应的 view 文件，`index.html`
+所对应的view文件，`index.html`
 
     <div class="row">
         {% for g in groups %}
@@ -109,9 +105,9 @@ app.get('/get/:awe', sites.get);
         {% endfor %}
     </div>
 
-### cookies
+### 0x04. Cookies
 
-使用 `req.cookies`：
+使用`req.cookies`
 
     exports.index = function (req, res){
         var aweCookie = req.cookies.aweCookie;
@@ -123,7 +119,7 @@ app.get('/get/:awe', sites.get);
       });
     };
 
-而如何 processCookie 呢？
+而如何processCookie呢？
 
     if (!aweCookie) {
         var arr = [];
@@ -131,7 +127,7 @@ app.get('/get/:awe', sites.get);
         res.cookie('aweCookie', JSON.stringify(arr), { maxAge: maxAge, httpOnly: true });
     }
 
-### lowdb 库
+### 0x05. lowdb库
 
 <https://github.com/typicode/lowdb>
 
@@ -140,7 +136,7 @@ app.get('/get/:awe', sites.get);
     var low = require('lowdb');
     var db = low('db.json');
     var found = db('defs').find({ key: awe });
-    
+
     groups: db('groups').where({})
 
 当然它还有其他非常易用好用的方法，only 8 methods and properties.
@@ -155,22 +151,22 @@ Database is automatically saved to db.json
       ]
     }
 
-### request 库
+### 0x06. request库
 
 <https://github.com/request/request>
 
     var mkFile = found.file ? found.file : "README.md";
     var url = 'https://raw.githubusercontent.com' + found.repo + '/master/' + mkFile;
 
-    request(url, function (error, response, body) {   
+    request(url, function (error, response, body) {
         if (!error && response.statusCode == 200) {
             cache.put(awe, body );
         }
     }
 
-### Swig Template Engine
+### 0x07. Swig模板引擎
 
-使用[ swig 模板引擎](http://paularmstrong.github.io/swig/docs/)，和 Express.js 搭配良好，可以传入函数这点很酷。
+使用[swig模板引擎](http://paularmstrong.github.io/swig/docs/)，和Express.js搭配良好，可以传入函数这点很酷。
 
 比如：
 
@@ -194,7 +190,7 @@ Use getAwesomeness() to retrieve all amazing awesomeness (README.md is markdown 
       return marked(text);
     }
 
-### Search 功能
+### 0x08. Search功能
 
     $.get('/json/list', function(data){
         $("#typeahead").typeahead({ source:data });
@@ -210,13 +206,13 @@ Use getAwesomeness() to retrieve all amazing awesomeness (README.md is markdown 
         }
     });
 
-### toTop 功能
+### 0x09. toTop功能
 
     <a href="#top" id="toTop" class="btn btn-lg btn-primary" title="Back to top">&uarr;</a>
 
     $("#toTop").scrollToTop();
 
-### TOC 功能
+### 0x10. TOC 功能
 
     <div class="col-md-3">
         <div id="sidebar">
