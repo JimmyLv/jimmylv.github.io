@@ -1,0 +1,21 @@
+---
+---
+{% assign skip_keys = "posts,pages,maruku,redcarpet,include,keep_files,redcloth,rdiscount,extensions,links,owner,prose,static_files,kramdown,html_pages,exclude" | split: "," %}
+{% assign array_keys = "tags,categories,exclude" | split: "," %}
+{
+{% for item in site %}
+    {% if skip_keys contains item[0] %}{% continue %}{% else %}
+        {% if array_keys contains item[0] %}
+            "{{ item[0] }}" : [
+            {% for value in item[1] %}
+                "{{ value[0] }}"
+                {% if forloop.last %}{% else %},{% endif %}
+            {% endfor %}
+            ]
+        {% else %}
+        "{{ item[0] }}" : "{{ item[1] | strip_newlines }}"
+        {% endif %}
+    {% endif %}
+    {% if forloop.last %}{% else %},{% endif %}
+{% endfor %}
+}

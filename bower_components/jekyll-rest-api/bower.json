@@ -1,0 +1,27 @@
+{
+  "name": "jekyll-rest-api",
+  "version": "0.0.1",
+  "authors": [
+    "Richard Kraaijenhagen <stdin+git@riichard.com>"
+  ],
+  "description": "A simple read-only REST API for Jekyll, showing all posts/settings in JSON formats.",
+  "main": "posts.json",
+  "keywords": [
+    "jekyll",
+    "json",
+    "spa",
+    "api",
+    "rest",
+    "feed",
+    "javascript"
+  ],
+  "license": "MIT",
+  "homepage": "http://github.com/riichard/jekyll-rest-api",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

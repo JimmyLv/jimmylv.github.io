@@ -314,7 +314,7 @@ GraphQL 和 Relay 相对而言属于新技术，在 RisingStack，目前我们�
 
 ------
 
-#### [Péter Márton](https://blog.risingstack.com/author/peter-marton/)
+#### 原作者: [Péter Márton](https://blog.risingstack.com/author/peter-marton/)
 
 CTO at RisingStack, brewing beer with Node.js
 
