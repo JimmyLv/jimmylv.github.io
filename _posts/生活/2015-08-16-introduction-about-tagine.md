@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 塔吉锅简介以及菜谱推荐
-categories: [生活]
+category: [生活]
 tags: [菜谱, 家居]
 published: True
 
