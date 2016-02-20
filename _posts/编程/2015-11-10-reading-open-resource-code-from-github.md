@@ -212,7 +212,7 @@ Use getAwesomeness() to retrieve all amazing awesomeness (README.md is markdown 
 
     $("#toTop").scrollToTop();
 
-### 0x10. TOC 功能
+### 0x0a. TOC 功能
 
     <div class="col-md-3">
         <div id="sidebar">
