@@ -6,9 +6,9 @@ tags: 摄影 大学
 description: 
 ---
 
-![8](/public/img/photos/8.jpg)
-![9](/public/img/photos/9.jpg)
-![10](/public/img/photos/10.JPG)
-![11](/public/img/photos/11.jpg)
-![12](/public/img/photos/12.JPG)
-![13](/public/img/photos/13.JPG)
+![8](http://7xjbdq.com1.z0.glb.clouddn.com/8.jpg)
+![9](http://7xjbdq.com1.z0.glb.clouddn.com/9.jpg)
+![10](http://7xjbdq.com1.z0.glb.clouddn.com/10.JPG)
+![11](http://7xjbdq.com1.z0.glb.clouddn.com/11.jpg)
+![12](http://7xjbdq.com1.z0.glb.clouddn.com/12.JPG)
+![13](http://7xjbdq.com1.z0.glb.clouddn.com/13.JPG)
