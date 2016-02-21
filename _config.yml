@@ -1,6 +1,7 @@
 permalink: /:year/:month/:day/:title.html
 paginate: 10
 markdown: redcarpet
+encoding: utf-8
 
 # 作者信息
 author: 
@@ -52,3 +53,6 @@ gems:
 
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "strikethrough", "superscript", "with_toc_data"]
+
+exclude:
+  - .idea/
