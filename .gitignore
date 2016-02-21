@@ -2,6 +2,8 @@
 .idea/
 *.iml
 
+.jekyll-metadata
+
 _site/
 _theme/
 _book/

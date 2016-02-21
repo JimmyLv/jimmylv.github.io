@@ -60,8 +60,8 @@ ul.nav.nav-pills.nav-stacked {
 }
 .avatar {
   width: 80px;
-  /*height: 90px;*/
-  border: 0px solid #fff;
+  border: 2px solid #000;
+  margin: 20px 0 20px 0;
 }
 .aside1_bottom {
   width: 100%;

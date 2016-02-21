@@ -1,5 +1,6 @@
 permalink: /:year/:month/:day/:title.html
 paginate: 10
+markdown: redcarpet
 
 # 作者信息
 author: 
@@ -47,7 +48,7 @@ locals:
 gems:
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-gist
 
-markdown: redcarpet
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "strikethrough", "superscript", "with_toc_data"]

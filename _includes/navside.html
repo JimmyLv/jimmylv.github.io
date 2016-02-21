@@ -1,20 +1,14 @@
 <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 aside visible-md visible-lg">
   <div class="row navside">
     <div class="col-md-3 col-xs-3 aside1">
-      <br>
-      <a class="pjaxlink" href="/"><img src="{{ site.gavatar }}" class="img-circle avatar" style="border-width:2px; border-color:#000"></a>
-      <br><br>
+      <a class="pjaxlink" href="/"><img src="{{ site.gavatar }}" class="img-circle avatar"></a>
       <ul class="nav nav-pills nav-stacked">
-        {% for category in site.categories %}     <!-- 这里是aside1的读书、生活、编程、技术、摄影-->
+        {% for category in site.categories %}
          <li><a href="#{{ category | first }}" data-toggle="tab">{{ category[0] }}</a></li>
         {% endfor %}
         <li><a href="#tags" data-toggle="tab">{{ site.locals.tags }}</a></li>  
         <li><a class="pjaxlink" href="/pages/archive.html">{{ site.locals.archive }}</a></li>
-        <li><a class="pjaxlink" href="/pages/about.html">{{ site.locals.about }}</a></li>  
-        <!-- <li><a href="#tags" data-toggle="tab"><i class="fa fa-tags fa-lg"></i></a></li>
-        <li><a class="pjaxlink" href="/pages/archive.html"><i class="fa fa-archive fa-lg"></i></a></li>
-        <li><a class="pjaxlink" href="/pages/about.html"><i class="fa fa-user fa-lg"></i></a></li>
-        这是原来现实汉字的代码，我改为了图标 -->
+        <li><a class="pjaxlink" href="/pages/about.html">{{ site.locals.about }}</a></li>
       </ul>
       <div class="aside1_bottom">
         <table class="table table-condensed">
@@ -31,7 +25,6 @@
           {% for category in site.categories %} 
             <div class="tab-pane" id="{{ category[0] }}">
               <div class="list-group">
-                <!--<h2 class="center">{{ category[0] }}</h2>-->     <!--原来aside2上面的大标题-->
                 {% for post in category[1] %}
                   <a href="{{ post.url }}" class="list-group-item-lay pjaxlink">{{post.title}}</a>
                 {% endfor %}
@@ -40,8 +33,7 @@
           {% endfor %}      
           <div class="tab-pane" id="tags">
             <div class="panel-group" id="accordion">
-              <!--<h2 class="center">{{ site.locals.tags }}</h2>-->
-              {% for tag in site.tags %} 
+              {% for tag in site.tags %}
                 <div class="panel panel-info">
                   <div class="panel-heading">
                     <h4 class="panel-title">
