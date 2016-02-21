@@ -3,29 +3,31 @@
 {
   "categories":[{% for category in site.categories %}
     {
-      "name": "{{ category[0] }}",
-      "posts": [
-      {% for post in category[1] %}
-        {
-          "id": "{{ post.id }}",
-          "title":"{{post.title}}",
-          "url":"{{ post.url }}"
-        }{% if forloop.last %}{% else %},{% endif %}
-      {% endfor %}]
+      "{{ category[0] }}": {
+        "posts": [
+        {% for post in category[1] %}
+          {
+            "id": "{{ post.id }}",
+            "title": "{{post.title}}",
+            "url": "{{ post.url }}"
+          }{% if forloop.last %}{% else %},{% endif %}
+        {% endfor %}]
+      }
     }{% if forloop.last %}{% else %},{% endif %}
   {% endfor %}],
   "tags": [{% for tag in site.tags %}
     {
-      "name":"{{ tag[0] }}",
-      "size":"{{ tag[1].size }}",
-      "posts": [
-        {% for post in tag[1] %}
-          {
-            "id": "{{ post.id }}",
-            "title":"{{post.title}}",
-            "url":"{{ post.url }}"
-          }{% if forloop.last %}{% else %},{% endif %}
-        {% endfor %}]
+      "{{ tag[0] }}": {
+        "size": "{{ tag[1].size }}",
+        "posts": [
+          {% for post in tag[1] %}
+            {
+              "id": "{{ post.id }}",
+              "title": "{{post.title}}",
+              "url": "{{ post.url }}"
+            }{% if forloop.last %}{% else %},{% endif %}
+          {% endfor %}]
+      }
     }{% if forloop.last %}{% else %},{% endif %}
   {% endfor %}],
   "paginator" : [
