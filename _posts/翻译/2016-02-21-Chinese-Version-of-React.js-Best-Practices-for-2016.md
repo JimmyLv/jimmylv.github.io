@@ -2,7 +2,7 @@
 layout: post
 title: 【译】展望2016，React.js 最佳实践
 categories: [编程]
-tags: [React, 总结]
+tags: [React, 总结, 最佳实践]
 published: True
 ---
 
