@@ -3,7 +3,7 @@
 {
   "categories":[{% for category in site.categories %}
     {
-      "name": "{{ category[0] }}"
+      "name": "{{ category[0] }}",
       "posts": [
       {% for post in category[1] %}
         {
@@ -16,7 +16,7 @@
   {% endfor %}],
   "tags": [{% for tag in site.tags %}
     {
-      "name": "{{ tag[0] }}"
+      "name": "{{ tag[0] }}",
       "size": "{{ tag[1].size }}",
       "posts": [
         {% for post in tag[1] %}
