@@ -10,7 +10,7 @@
           "id": "{{ post.id }}",
           "title": "{{ post.title }}",
           "url": "{{ post.url }}",
-          "shortdate"  : "{{ post.date | date : '%B %d, %Y' }}",
+          "shortdate"  : "{{ post.date | date : '%B %d, %Y' }}"
         }{% if forloop.last %}{% else %},{% endif %}
       {% endfor %}]
     }{% if forloop.last %}{% else %},{% endif %}
