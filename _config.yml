@@ -1,4 +1,4 @@
-permalink: /:year/:month/:day/:title.html
+permalink: /:year-:month-:day-:title
 paginate: 10
 markdown: redcarpet
 encoding: utf-8
