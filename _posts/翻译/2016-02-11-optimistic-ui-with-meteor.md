@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 【译】使用 Meteor 构建「乐观的用户界面」
-categories: [编程]
+categories: [翻译]
 tags: [Meteor, JavaScript]
 published: False
 

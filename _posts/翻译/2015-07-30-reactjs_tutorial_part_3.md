@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 【译】React.js教程 第三部分：一个真实的React组件
-categories: [编程]
+categories: [翻译]
 tags: [React]
 published: True
 

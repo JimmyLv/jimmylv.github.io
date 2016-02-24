@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 【译】React.js教程 第四部分：Express路由
-categories: [编程]
+categories: [翻译]
 tags: [React, Express]
 published: True
 

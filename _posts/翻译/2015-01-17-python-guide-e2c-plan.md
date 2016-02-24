@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 【译】The Hitchhiker’s Guide to Python! 中英对照译本
-category: [编程]
+category: [翻译]
 tags: [Python]
 published: true
 
