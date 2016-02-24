@@ -1,6 +1,6 @@
 permalink: /:year-:month-:day-:title
 paginate: 10
-markdown: redcarpet
+markdown: kramdown
 encoding: utf-8
 
 # 作者信息
