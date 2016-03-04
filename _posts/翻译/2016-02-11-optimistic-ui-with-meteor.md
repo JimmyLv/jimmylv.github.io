@@ -37,7 +37,7 @@ Your app should be able to respond to user inputs faster than it takes to make a
 
 When a user pushes a button in a website or a mobile app, they don't want to wait for a request to be sent all the way to the server to calculate the new state of the screen. Using the basic AJAX model of calculating the results on the server and then displaying them to the user will cause your app to feel laggy, and sometimes inconsistent with the user's input. Mobile developers especially need to worry about this because cellular networks can be unreliable, sometimes taking a second or more to deliver a result from your server.
 
-当用户点击了网站或者移动应用的按钮之后，他们并不想要等待一个请求发送至服务器进行计算后，再从屏幕看到新的状态。使用基本的 AJAX 模型，需要在服务器端进行计算后才能够显示给用户，这会导致你的应用感觉滞后，并且有时还会出现与用户输入不一致的情况。对移动开发者来说，尤其需要担心这种问题，因为移动网络的稳定性较差，所以从服务器端返回结果，有时需要花上一秒甚至更长时间。
+当用户点击了网站或者移动应用的按钮之后，他们并不想要等待一个请求发送至服务器进行计算后，再从屏幕上看到新的状态。使用基础的 AJAX 模型，需要在服务器端进行计算后才能够显示给用户，这会导致你的应用感觉滞后，并且有时还会出现与用户输入不一致的情况。对移动开发者来说，尤其需要担心这种问题，因为移动网络的稳定性较差，所以从服务器端返回结果，有时需要花上一秒甚至更长时间。
 
 There are four elements required to satisfy this expectation and requirement. Let's explore those.
 
@@ -65,19 +65,19 @@ So what's the solution - how do we keep all of our UI state de-duplicated and in
 
 If you want your UI to be consistent and avoid loading the same data sets over and over again, you need to render everything from the same data source. When you make some action on the page and update this global data source, that can trigger updates in all of the relevant UI elements on the page to keep everything consistent. It's almost like magic — you can update your whole UI before you even hit the server.
 
-如果你想要 UI 保持一致，并且避免相同数据集能够反复加载，则需要从同一数据源渲染所有东西。当你在页面上触发某些操作，更新全局的数据源，那么这些数据就会触发页面上所有的相关 UI 元素进行更新，从而使一切保持一致性。这就像魔法一样 —— 你可以在连接服务器之前就更新了整个 UI。
+如果你想要 UI 保持一致，并且避免相同数据集的反复加载，则需要从同一数据源渲染所有东西。当你在页面上触发某些操作，更新了全局的数据源，那么这些数据就会触发页面上所有的相关 UI 元素进行更新，从而使一切都保持一致性。这就像魔法一样 —— 你可以在连接服务器之前就更新了整个 UI。
 
 ### Minimongo is Meteor's single source of truth for the client | Minimongo 就是 Meteor 在客户端上单一数据源的真相
 
 Meteor is the only framework that includes a first-class solution for this problem, and it's called [Minimongo](https://www.meteor.com/mini-databases). The same way that your database is a single source of truth for your server, Minimongo is a single source of truth for the client. If you have two widgets that display overlapping data, you can render them both from a reactive query on this client-side database and they are guaranteed to be consistent.
 
-Meteor 是唯一一个对这种问题提供一流解决方案的框架，称之为 [Minimongo](https://www.meteor.com/mini-databases)。与此同时，数据库则是在服务器端的单一真实数据源，而 Minimongo 则是客户端的单一真实数据源。如果你有两个用于显示相同数据的部件，你可以在客户端数据库的响应式查询中同时渲染两部分，两者必然是一致的。
+Meteor 是唯一的框架对此问题提供了一流的解决方案，称之为 [Minimongo](https://www.meteor.com/mini-databases)。与此同时，数据库则是在服务器端的单一真实数据源，而 Minimongo 则是客户端的单一真实数据源。如果你有两个用于显示相同数据的部件，你可以从客户端数据库的响应式查询中同时渲染两部分，两者必然是一致的。
 
 ### Run the same queries on the client and server | 在客户端和服务器端执行相同的查询操作
 
 As you might be able to tell from the name, Minimongo uses a direct clone of MongoDB's query language to client-side *JavaScript*. This is nice because you can use the same code on the client and the server to get and update your data, making it even easier to write optimistic UI update code. Meteor has had this component since day one — it's a core part of how Meteor's magic works.
 
-可能你已经从名字中猜到，Minimongo 在客户端 *JavaScript* 中直接使用了与 MongoDB 相同的查询语言。这非常棒，因为你可以在客户端和服务器端使用同样的代码来获取和更新数据，这使得编写 「积极 UI 更新」的代码变得更加容易。Meteor 自打第一天开始就拥有了这个部件 —— 这是 Meteor 的魔法如何工作的一个核心部分。
+可能你已经从名字中猜到，Minimongo 在客户端 *JavaScript* 中直接使用了与 MongoDB 完全相同的查询语言。这非常棒，因为你可以在客户端和服务器端使用同样的代码来获取和更新数据，这使得编写 「积极 UI 更新」的代码变得更加容易。Meteor 自打第一天开始就拥有了这个部件 —— 这是 Meteor 魔法如何工作的一个核心部分。
 
 ## 3\. To populate your data cache, you need a protocol for data subscriptions | 为了实现数据缓存，需要数据订阅协议
 
@@ -107,25 +107,25 @@ Subscriptions and Minimongo also work together with Meteor methods, which are th
 
 When you are doing optimistic UI updates, the client tries to predict the outcome of some operation. Most of the time, this works great, but sometimes the client just doesn't have enough information to make an accurate prediction. Maybe it's missing some permissions data, maybe it doesn't know about some modification that a different client made, etc. Plus, as any experienced developer will know, you can't ever trust client code to do the right thing since users can modify the code running in their browser.
 
-当你在做「积极 UI 更新」的时候，客户端会尝试预测某些操作的结果。大部分的情况下效果很好，但也有时，客户端没有足够多的信息来保证预测正确无误。也许是无权访问某些数据，也许是不知道一些修改来自于不同客户端，等等。此外，任何有经验的开发者都知道，任何时候都不能相信客户端代码能做正确的事情，因为用户可以在自己的浏览器中修改正在运行的代码。
+当你在做「积极 UI 更新」的时候，客户端会尝试预测某些操作的结果。大部分的情况下效果很好，但也有时，客户端没有足够多的信息来保证预测正确无误。也许是因为无权访问某些数据，也许是不知道一些修改来自于不同客户端，等等。此外，任何有经验的开发者都知道，任何时候都不能相信客户端代码能做正确的事情，因为用户可以在自己的浏览器中修改正在运行的代码。
 
 At first, this sounds like an easy problem — of course, the server always wins, so can't you just use the result from the server? The answer is yes, but you need to make sure you have rolled back all of the operations done on the client as part of the optimistic UI update. It turns out it is actually really hard to do this when you have multiple user actions happening in parallel.
 
-首先，这听起来像是个简单的问题 —— 当然，服务器总是更胜一筹，所以说，难道就不可以只使用来自于服务器的结果？答案是肯定的，但是你需要确保，你已经将所有由客户端的「积极 UI 更新」这部分操作都进行了回滚。事实上，当你有多个用户同时进行操作的时候，这就会变得非常困难。
+首先，这听起来像是个简单的问题 —— 当然，服务器总是更胜一筹，所以说难道就不可以只使用来自于服务器的结果？答案是肯定的，但是你需要确保你已经将由客户端的「积极 UI 更新」的所有操作都进行了回滚。事实上，当你有多个用户同时进行操作的时候，这就会变得非常困难。
 
 To run an optimistic update and then roll back the changes to make room for the server result, you need the last piece of the Meteor data story: Methods.
 
-要实现「积极更新」然后回滚已完成的更改，从而为服务器结果腾出空间，你需要了解 Meteor 数据故事的最后一部分：Methods。
+要实现「积极更新」然后回滚已完成的更改，来为服务器结果腾出空间，你需要了解 Meteor 数据故事的最后一部分：Methods。
 
 Meteor methods are functions that run first on the client against Minimongo, then on the server, on the real MongoDB. Any modifications made during the simulation on the client are tracked, and then rolled back when the real modifications from the server are reported. You don't need to do anything about tracking changes on the client and rolling them back - you get automatic eventual consistency with the server, and it just works.
 
-Meteor 的方法，是依靠 Minimongo 优先运行在客户端中的函数，然后才会到达服务器数据库，也就是真正的 MongoDB。任何已经在客户端进行模拟的修改都会被追踪，当服务器端真正的修改上报的时候就会进行回滚。你无需在客户端做任何更改追踪和回滚的事情 —— 客户端将自动与服务器保持最终的一致，它就是非常好用。
+Meteor 的方法，是依托于 Minimongo 所优先运行在客户端中的函数，然后才会到达服务器数据库，也就是真正的 MongoDB。任何已经在客户端进行模拟的修改都会被追踪，当服务器端真正的修改上报的时候就会进行回滚。你无需在客户端做任何更改追踪和回滚的事情 —— 客户端将自动与服务器保持最终的一致，它就是这样好用。
 
 ## Meteor provides these benefits no matter which front-end framework you are using | 不论你使用何种前端框架，都能享受 Meteor 所提供的这些好处。
 
 As you may have noticed throughout this article, none of these features depend on your rendering framework. You can use Meteor's integrated rendering engine Blaze, the Meteor-*Angular* project, or one of several React integrations, and still get all of the benefits of Meteor's data caching and optimistic UI updates. If you are writing a native iOS app, you can also use the excellent [iOS-DDP](https://github.com/martijnwalraven/meteor-ios) project, which implements the same front-end logic but switches out Minimongo for iOS CoreData, letting you write your app in a completely native style.
 
-通过这篇文章，就像你可能已经注意到的那样，没有任何特性中会依赖于你的渲染框架。你可以使用 Meteor 已集成的渲染引擎 Blaze，也可以是 Meteor-*Angular* 项目，或者是某种 React 的集成方案，都依旧能够获得 Meteor 的数据缓存和「积极 UI 更新」所带来的好处。如果你正在编写原生 iOS 应用，你也可以使用非常棒的 [iOS-DDP](https://github.com/martijnwalraven/meteor-ios) 项目，这个项目实现了同样的前端逻辑，只是为了 iOS 将 Minimongo 换成了 CoreData，从而让你能够使用一种完全原生的方式编写应用。
+通过这篇文章，就像你可能已经注意到的那样，没有任何特性中会依赖于你的渲染框架。你可以使用 Meteor 已集成的渲染引擎 Blaze，也可以是 Meteor-*Angular* 项目，或者是某种 React 的集成方案，都依然能够获得 Meteor 的数据缓存和「积极 UI 更新」所带来的好处。如果你正在编写原生 iOS 应用，你也可以使用非常棒的 [iOS-DDP](https://github.com/martijnwalraven/meteor-ios) 项目，这个项目实现了同样的前端逻辑，只是为了 iOS 将 Minimongo 换成了 CoreData，从而让你能够使用一种完全原生的方式编写应用。
 
 ## Try it out for yourself | 为自己试一试吧！
 
@@ -135,4 +135,4 @@ If you're not convinced yet that Meteor will let you build a first-class user ex
 
 First, [complete the official Meteor tutorial](https://www.meteor.com/try). Then, try building the same app with all of the same features, including optimistic UI updates and data caching, without Meteor. Measure how long it takes and how many lines of code you had to write — I bet you'll find it will take a lot less time and code with Meteor. Let me know how it goes!
 
-首先，完成 Meteor 的[官方教程](https://www.meteor.com/try)。然后，尝试一下不使用 Meteor 来构建一个应用，要涵盖包含「积极 UI 更新」和数据缓存在内的所有相同的特性。估计一下总共会花多长时间，以及会写多少行不得已而为之的代码 —— 我打个赌，你会发现远不如使用 Meteor 所花的时间和代码少。请让我拭目以待吧！
+首先，完成 Meteor 的[官方教程](https://www.meteor.com/try)。然后，尝试一下不使用 Meteor 来构建一个应用，要求涵盖包含「积极 UI 更新」和数据缓存在内的所有相同的特性。估计一下总共会花多长时间，以及会写多少行不得已而为之的代码 —— 我打个赌，你会发现远不如使用 Meteor 所花的时间和代码少。请让我拭目以待吧！
