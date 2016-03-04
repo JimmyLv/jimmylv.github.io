@@ -111,7 +111,7 @@ When you are doing optimistic UI updates, the client tries to predict the outcom
 
 At first, this sounds like an easy problem — of course, the server always wins, so can't you just use the result from the server? The answer is yes, but you need to make sure you have rolled back all of the operations done on the client as part of the optimistic UI update. It turns out it is actually really hard to do this when you have multiple user actions happening in parallel.
 
-首先，这听起来像是个简单的问题 —— 当然，服务器总是更胜一筹，所以说难道就不可以只使用来自于服务器的结果？答案是肯定的，但是你需要确保你已经将由客户端的「积极 UI 更新」的所有操作都进行了回滚。事实上，当你有多个用户同时进行操作的时候，这就会变得非常困难。
+首先，这听起来像是个简单的问题 —— 当然，服务器总是更胜一筹，所以难道就不可以只使用来自于服务器的结果吗？答案是肯定的，但是你需要确保你已经将由客户端的「积极 UI 更新」的所有操作都进行了回滚。事实上，当你有多个用户同时进行操作的时候，这就会变得非常困难。
 
 To run an optimistic update and then roll back the changes to make room for the server result, you need the last piece of the Meteor data story: Methods.
 
