@@ -6,7 +6,7 @@ tags: Ubuntu Git
 published: true
 ---
 
-##1. 安装/设置Git
+## 1. 安装/设置Git
 
 ```bash
 #下载
@@ -21,7 +21,7 @@ git config --global alias.co checkout
 git config --global alias.st status
 ```
 
-##2. 初始化本地仓库
+## 2. 初始化本地仓库
 
 ```bash
 #第一次链接远程库，忘记初始化本地仓库了
@@ -35,7 +35,8 @@ $ git init
 Initialized empty Git repository in /home/llgreen/Documents/Git_repository/.git/
 ```
 
-##3. 连接/克隆远程仓库Github
+## 3. 连接/克隆远程仓库Github
+
 [Permission denied: 怎样生成SSH Keys?](https://help.github.com/articles/generating-ssh-keys)
 
 [如何添加SSH key到GitHub?](https://github.com/settings/ssh)
@@ -76,7 +77,7 @@ $ ssh -T git@github.com
 Hi liqing215! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
-##4. 修改/推送本地内容到远程库
+## 4. 修改/推送本地内容到远程库
 
 ```bash
 $ git clone git@github.com:liqing215/note-blog.git
@@ -104,6 +105,6 @@ $ git push -u origin gh-pages
 > - 提交默认的对应分支：
 `git push`
 
-##5. Git命令大全
+## 5. Git命令大全
 
 ![cheat-sheet-large01](/public/img/tech/cheat-sheet-large01.png)

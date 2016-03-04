@@ -6,9 +6,9 @@ tags: Ubuntu
 description: 
 ---
 
-##命令行编辑器
+## 命令行编辑器
 
-###1. vi
+### 1. vi
 
 `:w`：Vi保存当前编辑文件，但并不退出
 
@@ -27,20 +27,20 @@ description:
 
 `:x`：该命令的功能同命令模式下的`ZZ`命令功能相同，若当前编辑的文件曾被修改过，则Vi保存该文件后退出，返回到shell；若当前编辑的文件没被修改过，则Vi直接退出, 返回到shell。
 
-###2. gedit
+### 2. gedit
 
 ```sh
 #以gedit打开名为av&gv的文件
 sudo gedit /home/文档/av&gv 
 ```
 
-###3. nano 
+### 3. nano 
 
 `sudo nano /etc/hosts`
 
 完成后按ctrl+x退出，按y保存，回车，OK
 
-###4. sed
+### 4. sed
 
 > sed是一种非交互式的流编辑器，可动态编辑文件。所谓非交互式是说，sed和传统的文本编辑器不同，并非和使用者直接互动，sed处理的对象是文件的数据流（称为stream/流）。
 

@@ -6,15 +6,15 @@ tags: Jekyll 写作 Git
 published: true
 ---
 
-##搭建Jekyll环境
+## 搭建Jekyll环境
 
 [官方文档](http://jekyllcn.com/docs/installation/)
 
-###1. 安装RubyGems
+### 1. 安装RubyGems
 
 `apt-get install rubygems`
 
-###2. 安装[「Jekyll」](http://jekyllcn.com/)
+### 2. 安装[「Jekyll」](http://jekyllcn.com/)
 
 ```sh
 $ gem install jekyll
@@ -42,7 +42,7 @@ $ jekyll -v
 jekyll 2.4.0
 ```
 
-###3. 测试Jekyll
+### 3. 测试Jekyll
 
 ```sh
 $ jekyll new my-awesome-site
@@ -55,12 +55,12 @@ $ cd my-awesome-site
 ![3](/public/img/tech/0926-3.png)
 
 
-##使用[「JekyllBootstrap」](http://jekyllbootstrap.com/)
+## 使用[「JekyllBootstrap」](http://jekyllbootstrap.com/)
 
 > The Quickest Way to Blog on GitHub Pages.
 > Jekyll Generates Static Websites
 
-###1. 使用Jekyll + GitHub Pages快速生成博客
+### 1. 使用Jekyll + GitHub Pages快速生成博客
 
 - JekyllBootstrap提供了一个界面：[Host on GitHub in 3 Minutes](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
 
@@ -70,7 +70,7 @@ $ cd my-awesome-site
 
 > 3. Profit
 
-###2. 利用Jekyll进行本地调试
+### 2. 利用Jekyll进行本地调试
 
 - 直接下载jekyll-bootstrap模板
 
@@ -103,7 +103,7 @@ CNAME already taken: ......
 这个错误是因为CNAME文件的原因，是用来指定自定义域名的，和本地调试地址冲突。如果你没有自定义域名，那就不需要删除。
 
 
-###3. Markdown写作
+### 3. Markdown写作
 
 > [Markdown: Basics （快速入门）](http://wowubuntu.com/markdown/basic.html)
 
@@ -164,9 +164,9 @@ published: 表示发布与否
 ![5](/public/img/tech/0926-5.png)
 
 
-##其他的快速「博客」方案
+## 其他的快速「博客」方案
 
-###1. [Postach.io](http://postach.io)
+### 1. [Postach.io](http://postach.io)
 
 Collect and share content from your favourite apps.
 
@@ -174,16 +174,16 @@ Connect and post using Evernote, Dropbox and Pocket.
 
 > When you add or change an HTML, Markdown, or Image file in the folder for your Postach.io site in Dropbox, that change will be reflected on your Postach.io site after Dropbox is finished syncing. It’s that easy.
 
-###2. [Farbox](https://www.farbox.com/)
+### 2. [Farbox](https://www.farbox.com/)
 
 The Best Blog Platform on Cloud
  
 > Realtime and dynamic, Folder is a database, FarBox is a webserver. Simple is Everything. 
 
-###3. [Medium](https://medium.com/about/welcome-to-medium-9e53ca408c48)
+### 3. [Medium](https://medium.com/about/welcome-to-medium-9e53ca408c48)
 
 > Medium is a new place on the Internet where people share ideas and stories that are longer than 140 characters and not just for friends. 
 
-###4. [简书](http://www.jianshu.com/)
+### 4. [简书](http://www.jianshu.com/)
 
 > 找回文字的力量 在这里更好地写作和阅读

@@ -6,9 +6,9 @@ tags: [Ubuntu, Sublime, Python]
 published: true
 ---
 
-##配置Python环境
+## 配置Python环境
 
-###1. 安装pip
+### 1. 安装pip
  
 > pip 是 Python 的包管理工具，建议 Python 的包都用 pip 进行管理。
 
@@ -24,7 +24,7 @@ $ pip uninstall [ ]
 ```
 
 
-###2. 构建虚拟环境
+### 2. 构建虚拟环境
 
 > virtualenv用于创建独立的Python环境，多个Python相互独立，互不影响，它能够：
 
@@ -93,11 +93,11 @@ $ rmvirtualenv [虚拟环境名称]
 (testENV)llgreen@Work-PC:~$ deactivate
 ```
 
-##Sublime Text 3的安装与配置
+## Sublime Text 3的安装与配置
 
 [官网下载](http://www.sublimetext.com/3)
 
-###1. 安装插件
+### 1. 安装插件
 
 1) 首先安装[Package Control](https://sublime.wbond.net/installation#st3)，通过Package Control可以很方便安装其他插件
 
@@ -167,7 +167,7 @@ import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330
 }
 ```
 
-###2. 修改快捷键
+### 2. 修改快捷键
 
 > SublimeREPL安装之后没有快捷键，每次运行程序必须用鼠标去点工具栏，有些不爽。
 
@@ -215,13 +215,13 @@ Preferences => Key Boundings-User打开自定义快捷键文件，写入如下�
 ]
 ```
 
-###3. 修改视图
+### 3. 修改视图
 
 - 选择查看--布局--行：2 或者 Shift+Alt+8
 
 将Sublime分割为上下两部分，选择F5进行代码编译，编译信息将会显示在下面的编译区域。
 
-###4. 编辑器快捷键汇总
+### 4. 编辑器快捷键汇总
 
 Ctrl+Shift+P：打开命令面板
 

@@ -6,9 +6,9 @@ tags: Ubuntu 软件
 description: 
 ---
 
-##程序安装与卸载`apt-get`
+## 程序安装与卸载`apt-get`
 
-###1. 添加PPA源
+### 1. 添加PPA源
 
 > PPA，表示 Personal Package Archives，也就是个人软件包集。
 
@@ -22,7 +22,7 @@ sudo add-apt-repository ppa:ubuntu-wine/ppa
 
 ```
 
-###2. 更新软件以及软件源列表
+### 2. 更新软件以及软件源列表
 
 > 在修改`/etc/apt/sources.list`或者`/etc/apt/preferences`之后运行该命令，此外您需要定期运行`apt-get update`命令以确保您的软件包列表是最新的
 
@@ -38,7 +38,7 @@ sudo apt-get upgrade
 
 ```
 
-###4. 安装指定的程序
+### 4. 安装指定的程序
 
 ```sh
 
@@ -60,7 +60,7 @@ sudo apt-get install package - - reinstall
 
 ```
 
-###5. 卸载指定的程序
+### 5. 卸载指定的程序
 
 ```sh
 
@@ -78,7 +78,7 @@ dpkg --force-all --purge packagename
 
 ```
 
-###6. 清理空间
+### 6. 清理空间
 
 ```sh
 
