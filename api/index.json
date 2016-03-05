@@ -41,8 +41,6 @@
         "tags"       : "{{ post.tags | join: ', ' }}",
         "url"        : "{{ post.url }}",
         "path"       : "{{ post.path }}",
-        "next"       : "{{ post.next.url }}",
-        "previous"   : "{{ post.previous.url }}",
         "date"       : "{{ post.date }}",
         "shortdate"  : "{{ post.date | date : '%B %d, %Y' }}"
         } {% if forloop.last %}{% else %},{% endif %}
