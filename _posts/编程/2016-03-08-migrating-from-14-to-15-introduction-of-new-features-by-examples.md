@@ -8,7 +8,7 @@ published: True
 ---
 
 
-## 更新目的：帮助开发者向 Angular 2.0 过渡
+## 图谋不轨：~~勾引~~ 开发者过渡到 Angular 2.0
 
 私以为，本次更新最重要的两个部分就是 `angular.component()` 方法和支持了 Multi-slot 的 transclusion：
 
