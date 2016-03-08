@@ -112,9 +112,9 @@ AngularJS 在早些版本引入了 `controllerAs` 语法，相当于给 ViewMode
 
 - `scope: false` —— 定义指令时 `.directive()` 的默认设置，此时不会创建子 Scope，将会直接共享父 Scope，所以说没有理解的时候就可能出现莫名其妙改变了上一层 Scope 当中某个值的情况。
 - `scope: { ... }` —— 创建新的「独立」 Scope，但是不会继承父 Scope，当需要传入某些值的时候，只需要在花括号当中写入该变量名称以及绑定方式即可，1.5 新版本增加了单向绑定，所以共有四种方式：'@'、'<'、'='、'&'，而这在 `.component()` 创建组件的时候是默认的，Scope 永远都是隔离的，通过绑定变量和方法的方式定义组件的输入输出，这一点之后会提到。
-- `scope: true` —— 创建新的「独立」 Scope 并且继承自父 Scope，所以说能够在 Directive 当中访问到所有父 Scope 当中的值。其原理就需要大家去理解一下 JavaScript 的原型链，就能够明白 Angular 是如何一层层往上查找并获得该变量的值了。
+- `scope: true` —— 创建新的「独立」 Scope 并且继承自父 Scope，所以说能够在 Directive 当中访问到所有父 Scope 当中的值。其原理需要大家去理解一下 JavaScript 的原型链，就能够明白 Angular 是如何一层层往上查找并获得该变量的值了。
 
-### 组件树
+### （理想的）组件树
 
 理想情况下，整个 Web 应用就是一颗组件树，并且每个组件都有着非常的输入输出，数据流从根部扩散至每个部分，很少会出现双向绑定的情况。通过这种方式，就可以很容易预测数据的改变会如何影响到 UI 组件的状态改变。
 
@@ -163,10 +163,11 @@ AngularJS 在早些版本引入了 `controllerAs` 语法，相当于给 ViewMode
 
     myMod
     .controller('ExampleController', ['$scope', function($scope) {
-      $scope.title = 'Lorem Ipsum';
-      $scope.link = 'https://google.com';
-      $scope.text = 'Neque porro quisquam est qui dolorem ipsum quia dolor...';
-    }])
+        $scope.title = 'Lorem Ipsum';
+        $scope.link = 'https://google.com';
+        $scope.text = 'Neque porro quisquam est qui dolorem ipsum quia dolor...';
+      }]
+    )
     .directive('pane', function(){
         return {
           restrict: 'E',
@@ -192,13 +193,15 @@ AngularJS 在早些版本引入了 `controllerAs` 语法，相当于给 ViewMode
         </pane>
     </div>
 
-首先可以看到 `ng-transclude="footer"` 这一部分，我们可以通过 `'footer': '?paneFooter'` 当中问号的形式表示这个 transclusion 是可选的，在组件模板当中已经有了默认值。而其他两部分，通过自定义 HTML 的方式可以任意得传入我们想要填充的模板，并且带来的一个明显好处就是，不需要再把一些不必要的值都统统传进去了，比如说这里的`{{ ctrl.link }}`，我们在上一层进行计算过后就直接替换了 ng-transclusion 的位置。
+首先可以看到 `ng-transclude="footer"` 这一部分，我们可以通过 `'footer': '?paneFooter'` 当中的问号形式表明这个 transclusion 其实是可选的，在组件模板当中已经有了默认值。而其他两部分，通过自定义 HTML 的方式可以任意得传入我们想要填充的模板，这带来的一个明显好处就是，不需要再把一些不必要的值都统统传进去了，比如说这里的`{{ ctrl.link }}`，我们在上一层进行计算过后就直接替换了 ng-transclusion 的位置。
 
-而我们再来看看 component 结合不使用 Multi-slot transclusion 的方式，不但需要传入所有的值，而且更重要的是丧失了定义 HTML 模板的机会，而这种能力在定义不同形式的复杂组件时是非常重要的。
+而我们再来看看不使用 Multi-slot transclusion 定义 Component 的方式，不但需要传入所有的值，而且更重要的是丧失了定义 HTML 模板的机会，而这种能力在定义不同形式的复杂组件时是非常重要的。
 
     myMod.component('pane', function(){
         return {
-          templateUrl: 'pane.html'
+          template: '<div>{{ $ctrl.title}}</div>' + 
+                    '<p>{{ $ctrl.body}}</p>' + 
+                    '<div>{{ $ctrl.footer}}</div>',
           bindings: {
             'title': '<paneTitle',
             'body': '<paneBody',
@@ -206,12 +209,6 @@ AngularJS 在早些版本引入了 `controllerAs` 语法，相当于给 ViewMode
           }
         };
     })
-
-    <div>
-        <div>{{ $ctrl.title}}</div>
-        <p>{{ $ctrl.body}}</p>
-        <div>{{ $ctrl.footer}}</div>
-    </div>
 
     <div ng-controller="ExampleController as ctrl">
       <input ng-model="ctrl.title">
