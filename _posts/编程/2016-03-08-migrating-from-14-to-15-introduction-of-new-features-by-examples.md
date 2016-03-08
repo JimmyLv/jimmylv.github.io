@@ -102,7 +102,7 @@ AngularJS 在早些版本引入了 `controllerAs` 语法，相当于给 ViewMode
       controllerAs: 'ctrl'
     });
 
-当某一个变量需要双向绑定的时候，我们不得已重新使用只有挂载在 $scope 底下的 `$watch()` 方法来动态监测这个值在指令当中是否发生了改变，好不容易消失的 $scope 又出来丢人现眼了。也就是因为这个原因，Angular 又加入新的 `bindToController` 语法，从字面上的意义就很看懂，将这个变量直接绑定到指令自带的 Controller，从而也就不用 `$watch()` 方法了，至此，彻底摆脱了 $scope。
+当某一个变量需要双向绑定的时候，我们不得已重新使用只有挂载在 $scope 底下的 `$watch()` 方法来动态监测这个值在指令当中是否发生了改变，好不容易消失的 $scope 又出来丢人现眼了。也就是因为这个原因，Angular 又加入新的 `bindToController` 语法，从字面上就很容易看懂它的意思，即将这个变量直接绑定到指令自带的 Controller，从而也就不用 `$watch()` 方法了，至此，彻底摆脱了 $scope。
 
 ### 再论 Scope 黑魔法
 
