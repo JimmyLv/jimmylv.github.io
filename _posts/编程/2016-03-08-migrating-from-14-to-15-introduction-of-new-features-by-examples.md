@@ -8,7 +8,7 @@ published: True
 ---
 
 
-## 图谋不轨：~~勾引~~ 开发者过渡到 Angular 2.0
+## 图谋不轨：帮助（~~勾引~~）开发者过渡到 Angular 2.0
 
 私以为，本次更新最重要的两个部分就是 `angular.component()` 方法和支持了 Multi-slot 的 transclusion：
 
@@ -64,7 +64,7 @@ published: True
 
 ### ControllerAs 语法是什么鬼？
 
-AngularJS 在早些版本引入了 `controllerAs` 语法，相当于给 ViewModel 定义了一个命名空间，从而避免了不同层级 Scope 关系的混淆不清。并且，`controllerAs`语法也更加从语法层面上体现了 Controller 初始化 ViewModel 数据的单一职责，若把 `as` 看做面向对象编程当中的 `new`，其实就相当于将 Controller 这个 Function() 进行实例化，从而我们就拥有了 ViewModel 这么一个可以在模板当中直接使用的对象。而其实现原理，则是直接把这个对象再次挂在当前 Controller 所对应的 $scope 之上，试着在 `link` 方法里边儿判断一下 `$ctrl === $scope.vm`，其结果为 `true`。
+AngularJS 在早些版本引入了 `controllerAs` 语法，相当于给 ViewModel 定义了一个命名空间，从而避免了不同层级 Scope 关系的混淆不清。并且，`controllerAs`语法也更加从语法层面上体现了 Controller 初始化 ViewModel 数据的单一职责，若把 `as` 看做面向对象编程当中的 `new`，其实就相当于将 Controller 这个 Function() 进行实例化，从而我们就拥有了 ViewModel 这么一个可以在模板当中直接使用的对象。而其实现原理，则是直接把这个对象再次挂在当前 Controller 所对应的 $scope 之上，可以试着在 `link` 方法里边儿判断一下 `$ctrl === $scope.vm`，其结果为 `true`。
 
     <div ng-controller="MainCtrl as main">
         <my-component 
@@ -106,7 +106,7 @@ AngularJS 在早些版本引入了 `controllerAs` 语法，相当于给 ViewMode
 
 ### 再论 Scope 黑魔法
 
-在 AngularJS 当中，Scope 可以说是最难理解也是最强大的一部分，在没有理解其背后原理的时候感觉处处都是坑，理解过后又觉得 Angular 恰恰因此而获得了 JavaScript 原型继承的强大力量。首先，子 Scope 总是会自动继承自父 Scope，一切的源头就是所谓的 `$rootScope`，试着把它在 console 里面打印出来，可以看到其 $id 为 1，之后的所有子 Scope 依次增加。
+在 AngularJS 当中，Scope 可以说是最难理解也是最强大的一部分，在没有理解其背后原理的时候感觉处处都是坑，理解过后又觉得 Angular 恰恰因此而获得了 JavaScript 原型继承的强大力量。首先，子 Scope 总是会自动继承自父 Scope，一切的源头就是所谓的 `$rootScope`，试着把它在 console 里面打印出来，可以看到其 `$id` 为 1，之后的所有子 Scope `$id` 依次增加。
 
 回到正题，我们来看看指令当中的 Scope，对于指令来说会有三种情况：
 
@@ -139,7 +139,7 @@ AngularJS 在早些版本引入了 `controllerAs` 语法，相当于给 ViewMode
 
 ### ngRoute 路由的 `$resolve`
 
-我们都知道，Controller 应该保持初始化 ViewModel 的单一职责，不应该把数据获取的逻辑放入 Controller，所以说在进入 Controller 之前数据就应该已经准备好了。最通常的办法就是将数据在 Route 的时候就 Resolve 出来，而 ngRoute 也提供了非常方便的方式来获取 $resolve 当中的数据并将其传入组件。
+我们都知道，Controller 应该保持初始化 ViewModel 的单一职责，不应该把数据获取的逻辑放入 Controller，所以说在进入 Controller 之前数据就应该已经准备好了。最通常的办法就是将数据在 Route 的时候就 Resolve 出来，而 ngRoute 也提供了非常方便的方式来获取 `$resolve` 当中的数据并将其传入组件。
 
     var myMod = angular.module('myMod', ['ngRoute']);
     myMod.component('home', {
