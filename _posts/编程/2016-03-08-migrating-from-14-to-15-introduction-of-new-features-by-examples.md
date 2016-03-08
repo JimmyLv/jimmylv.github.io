@@ -16,17 +16,17 @@ published: True
 
 首先最大的一个变化就是引入了组件的概念，并新增了 `angular.component()` 方法。经过这么长时间的摸爬滚打，Angular 社区乃至整个前端领域也慢慢地总结出了符合实际项目开发的最佳实践，其中最大的一个共识就是组件化，在 Angular 1.x 中我们就已经可以通过元素指令的方式定义可复用的组件，而其实 Components 就是一种特别的元素指令，通过自定义的 HTML 元素将之激活。
 
-本次更新的 `.component()` 方法其实就是一种更加方便定义元素指令的方式，并自带默认配置使之符合最佳实践。而组件开发的方式也就使应用更加符合 [Angular 2.0](http://www.angular.io/) 的架构风格，所以说，Angular 1.5 就是为了方便开发者能够更加顺利地过渡到 Angular 2.0。为了 Angular 2.0 的未来 Google 也是迫不得已啊，要知道很多前端开发者在经历过 Angular 1.x 的「折磨」过后都转投了其他框架的怀抱。可以说前有 [React.js](https://github.com/facebook/react) 携着组件化，虚拟 DOM ，单向数据流等利器，给前端 UI 构建掀起了一波声势浩大的函数式新潮流；后有 [Vue.js](http://vuejs.org/) 等更轻便的 MVVM 框架穷追猛赶，可以说用过 Vue 的开发者都一致叫好。
+本次更新的 `.component()` 方法其实就是一种更加方便定义元素指令的方式，并自带默认配置使之符合最佳实践。而组件开发的方式也就使应用更加符合 [Angular 2.0](http://www.angular.io/) 的架构风格，所以说，Angular 1.5 就是为了方便开发者能够更加顺利地过渡到 Angular 2.0。为了 Angular 2.0 的未来 Google 也是迫不得已啊，要知道很多前端开发者在经历过 Angular 1.x 的「折磨」过后都转投了其他框架的怀抱。可以说前有 [React.js](https://github.com/facebook/react) 携着组件化，虚拟 DOM ，单向数据流等利器，给前端 UI 构建掀起了一波声势浩大的函数式新潮流；后有 [Vue.js](http://vuejs.org/) 等更轻便的 MVVM 框架穷追猛赶，据说用过 Vue 的开发者都一致叫好。
 
 ![](http://react-etc.net/files/2015-11/danguu.jpg)
 
 - 终于支持了 **Multi-slot transclusion**：
 
-在之前，我在使用 Directive 定义组件的时候老是感觉有点儿憋屈，我们的组件只有一个 transclusion 也就是说只能在一个地方被填充，这就完全限制乃至丧失了组件的模板自定义功能。在构建复杂组件元素的时候，也就需要更多类似于 `ng-if` 和 `ng-switch` 等方式辅助，从而导致组件模板的样板文件越来越多。而 **Multi-slot transclusion** 则可以把自定义的主动权交出去，我并不需要知道这个地方会变成什么样，我只需要告诉你这个地方能够被填充就好了。当然，新版本也支持了默认的 transclusion 内容，这也就让配置组件模板的成本进一步降低了。
+在之前，使用 Directive 定义组件的时候老是感觉有点儿憋屈，我们的组件只有一个 transclusion 也就是说只能在一个地方被填充，这就完全限制乃至丧失了组件的模板自定义功能。在构建复杂组件元素的时候，也就需要更多类似于 `ng-if` 和 `ng-switch` 等方式辅助，从而导致组件模板的样板文件越来越多。而 **Multi-slot transclusion** 则可以把自定义的主动权交出去，我并不需要知道这个地方会变成什么样，我只需要告诉你这个地方能够被填充就好了。当然，新版本也支持了默认的 transclusion 内容，这也就让配置组件模板的成本进一步降低了。
 
 ## 举个栗子：`angular.component()`
 
-需要说明的就是，没有什么事是 component 能做而 directive 不能够做的，下面就来看个对比的例子：
+需要说明的就是，没有什么事是 Component 能做而 Directive 不能够做的，下面就来看个对比的例子：
 
     <my-component first-name="'Alan'" last-name="'Rickman'"></my-component>
 
@@ -60,9 +60,11 @@ published: True
       controllerAs: 'ctrl'
     });
 
-通过 `.component()` 方法定义的组件默认就是一个元素组件，并且拥有自己的独立 Scope。与此同时使用 bindings 替代了 bindToController，并且可以通过 '<' 符号单向绑定一个变量，即只有父 Scope 的变化会影响子 Scope 的值，这样也就避免了一些 Scope 黑魔法所造成的误伤。还有比较重要的就是，组件有用默认的 controller 方法，并且不需要 controllerAs 语法就可以在模板中直接使用默认的 `$ctrl` 别名。更多详细对比请看[官方文档](https://docs.angularjs.org/guide/component)。
+通过 `.component()` 方法定义的组件默认就是一个元素组件，并且拥有自己的独立 Scope。与此同时使用 `bindings` 替代了 `bindToController`，并且可以通过 '<' 符号单向绑定一个变量，即只有父 Scope 的变化会影响子 Scope 的值，这样也就避免了一些 Scope 黑魔法所造成的误伤。还有比较重要的就是，组件拥有默认为空的 Controller 方法，并且不需要 `controllerAs` 语法就可以在模板中直接使用默认的 `$ctrl` 别名。更多详细对比请看[官方文档](https://docs.angularjs.org/guide/component)。
 
-AngularJS 在早些版本引入了 `controllerAs` 语法，相当于给 ViewModel 定义了一个命名空间，从而避免了不同层级 Scope 关系的混淆不清。并且，`controllerAs`语法也更加从语法层面上体现了 Controller 初始化 ViewModel 数据的单一职责，若把 `as` 看做面向对象编程当中的 `new`，其实就相当于将 Controller 这个 Function() 进行实例化，从而我们拥有了 ViewModel 这么一个可以在模板当中直接使用的对象。
+### ControllerAs 语法是什么鬼？
+
+AngularJS 在早些版本引入了 `controllerAs` 语法，相当于给 ViewModel 定义了一个命名空间，从而避免了不同层级 Scope 关系的混淆不清。并且，`controllerAs`语法也更加从语法层面上体现了 Controller 初始化 ViewModel 数据的单一职责，若把 `as` 看做面向对象编程当中的 `new`，其实就相当于将 Controller 这个 Function() 进行实例化，从而我们就拥有了 ViewModel 这么一个可以在模板当中直接使用的对象。而其实现原理，则是直接把这个对象再次挂在当前 Controller 所对应的 $scope 之上，试着在 `link` 方法里边儿判断一下 `$ctrl === $scope.vm`，其结果为 `true`。
 
     <div ng-controller="MainCtrl as main">
         <my-component 
@@ -118,7 +120,22 @@ AngularJS 在早些版本引入了 `controllerAs` 语法，相当于给 ViewMode
 
 - **组件只能控制自身的输入输出**：组件绝不应该修改不属于自身 Scope 的任何数据和 DOM。通常来说，Angular 通过 Scope 继承的方式提供了随时随处可修改数据的能力。但其实，当修改数据职责不清晰的时候就会导致问题，这也就是为什么组件指令要默认使用独立 Scope，从而避免了跨 Scope 操作的可能，
 
-- **组件应该拥有清晰的公共API - Inputs and Outputs**：隔离 Scope 的方式也难以避免 Angular 的双向绑定，如果你通过 `bindings: {item: '='}` 这种方式将一个对象传入组件，你依然可以改变父组件当中的属性。所以说，组件应该只能修改属于它自己的数据，这样的话就很容易控制什么时候要进行修改，以及为什么要修改。
+- **组件应该拥有清晰的公共API - Inputs 和 Outputs**：隔离 Scope 的方式也难以避免 Angular 的双向绑定，如果你通过 `bindings: {item: '='}` 这种方式将一个对象传入组件，你依然可以改变父组件当中的属性。所以说，组件应该只能修改属于它自己的数据，这样的话就很容易控制什么时候要进行修改，以及为什么要修改。所以说纯粹的组件 Inputs 应该只使用 '<' 和 '@' 单向数据绑定，而 Outputs 应当通过 '&' 进行函数方法的绑定，作为组件内事件的 callbacks。
+ 
+比如说一个删除操作，组件不再直接操作输入的数据，而是去调用正确的 Outputs 事件来改变数据，这就意味着组件不会删除数据本身，而是通过事件的形式将其返回到拥有该数据的组件当中。
+
+    <button ng-click="$ctrl.onDelete({hero: $ctrl.hero})">Delete</button>
+
+通过这种方式，父组件就可以根据这个事件再来决定最终的操作，比如说彻底删除该项数据，或者只是更新自己的属性而已。
+
+    ctrl.deleteHero(hero) {
+      $http.delete(...).then(function() {
+        var idx = ctrl.list.indexOf(hero);
+        if (idx >= 0) {
+          ctrl.list.splice(idx, 1);
+        }
+      });
+    }
 
 ### ngRoute 路由的 `$resolve`
 
@@ -207,7 +224,7 @@ AngularJS 在早些版本引入了 `controllerAs` 语法，相当于给 ViewMode
 ## Reference：重构实战手册
 
 - [Refactoring Angular Apps to Component Style](http://teropa.info/blog/2015/10/18/refactoring-angular-apps-to-components.html)
-- [Understanding Components](https://docs.angularjs.org/guide/component)
+- [Understanding Components - Developer Guide](https://docs.angularjs.org/guide/component)
 - [AngularJS Best Practices - Two Fucking Developers](http://twofuckingdevelopers.com/category/angularjs/)
 - [AngularJS Archives - AngularClass](https://angularclass.com/blog/)
 - [Angular articles by thoughtram Blog](http://blog.thoughtram.io/categories/angular/)
