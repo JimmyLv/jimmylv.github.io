@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AngularJS 1.5 正式发布：新特性的对比与升级
+title: 升级 AngularJS 1.5 正式版：新特性对比与最佳实践
 categories: [编程]
 tags: [AngularJS, JavaScript]
 published: True
@@ -222,6 +222,7 @@ AngularJS 在早些版本引入了 `controllerAs` 语法，相当于给 ViewMode
 
 - [Refactoring Angular Apps to Component Style](http://teropa.info/blog/2015/10/18/refactoring-angular-apps-to-components.html)
 - [Understanding Components - Developer Guide](https://docs.angularjs.org/guide/component)
+- [Angular Style Guide](https://github.com/johnpapa/angular-styleguide/blob/master/a1%2Fi18n%2Fzh-CN.md)
 - [AngularJS Best Practices - Two Fucking Developers](http://twofuckingdevelopers.com/category/angularjs/)
 - [AngularJS Archives - AngularClass](https://angularclass.com/blog/)
 - [Angular articles by thoughtram Blog](http://blog.thoughtram.io/categories/angular/)
