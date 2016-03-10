@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 搞定 Webpack：前端模块化实践
+title: 搞定 Webpack：前端模块化实践之路
 categories: [编程]
 tags: [Webpack, 重构, JavaScript]
 published: True
@@ -100,7 +100,7 @@ UMD 的实现其实很简单：
 
 1. 对 CommonJS 、 AMD 、ES6的语法做了兼容，以及特殊模块的 Shim 处理，也就是说基本可以无痛迁移旧项目。
 2. 对 JS、CSS、图片等资源文件都支持打包，配合 loader 加载器，也可以支持 sass，less 等 CSS 预处理器。
-3. 串联式模块加载器以及插件机制，让其具有更好的灵活性和扩展性，例如通过 babel-loader 就可以直接使用 ES6 的模块机制（当然 Webpack 2 将会直接支持 ES6 模块）。
+3. 串联式模块加载器以及插件机制，让其具有更好的灵活性和扩展性，例如通过 babel-loader 就可以直接使用 ES6 的模块机制（当然 [Webpack 2 将会直接支持 ES6 模块](https://gist.github.com/sokra/27b24881210b56bbaff7)）。
 4. 有独立的配置文件 `webpack.config.js`，配置好就可以一劳永逸了。
 5. 可以将代码切割成不同的chunk，实现按需加载，有效利用浏览器的缓存功能提升性能，从而降低了初始化时间，提高用户体验。
 6. 支持 SourceUrls 和 SourceMaps，即使打包在一起依旧方便调试。
