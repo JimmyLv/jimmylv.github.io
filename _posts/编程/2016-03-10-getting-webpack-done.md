@@ -41,7 +41,7 @@ CommonJS 和 AMD 就在在 JavaScript 还没有模块管理的情况下民间所
     //your code...
     module.export = anotherModule
 
-**但是**，随着 NPM 成为主流的 JavaScript 组件发布平台，越来越多的前端项目也依赖于npm上的项目，或者自身就会发布到 NPM 平台。因此，让前端项目**在浏览器中更方便地使用 NPM 上的资源**成为一大需求。
+**但是**，随着 NPM 成为主流的 JavaScript 组件发布平台，越来越多的前端项目也依赖于 NPM 上的项目，或者自身就会发布到 NPM 平台。因此，让前端项目**在浏览器中更方便地使用 NPM 上的资源**成为一大需求。
 
 而浏览器加载脚本的方式天生不支持同步的加载，无法通过文件 I/O 同步的方式 require 加载一个 JavaScript 脚本。所以就[从 CommonJS 中逐渐分裂出了 AMD](https://leohxj.gitbooks.io/front-end-database/content/javascript-modules/modules-tools-compare.html)，即 Asynchronous Module Definition，属于**异步加载**的模块机制。这个在浏览器环境有很好支持的 module 规范，其中最有代表性的实现则是 RequireJS。使用 Require.js 的写法大致如下：
 
@@ -84,7 +84,7 @@ UMD 的实现其实很简单：
 
 以上所提到的类似于 RequireJS 等模块化框架在工程方面都依旧存在缺点，其关键原因就在于[**「纯前端方式只能在运行时分析依赖关系」**](https://github.com/fouber/blog/issues/4)，不能同时满足**按需加载**，**请求合并**和**依赖管理**这三个需求。
 
-既然根本问题出在**运行时分析依赖**，那么新思路的策略就很简单了：不在运行时分析依赖。当然，这就要借构建工具来做线下分析了，其基本原理就是：利用构建工具**在线下进行模块依赖分析**，然后把依赖关系数据写入到构建结果中，并调用模块化框架的依赖关系声明接口，实现模块管理、请求合并以及按需加载等功能。
+既然根本问题出在运行时分析依赖，那么新思路的策略就很简单了：不在运行时分析依赖。当然，这就要借构建工具来做线下分析了，其基本原理就是：利用构建工具**在线下进行模块依赖分析**，然后把依赖关系数据写入到构建结果中，并调用模块化框架的依赖关系声明接口，实现模块管理、请求合并以及按需加载等功能。
 
 ## 资源模块化
 
@@ -99,16 +99,16 @@ UMD 的实现其实很简单：
 就像前面所提到的那样，Webpack 具有 RequireJS 和 Browserify 的功能，但仍有很多自己的新特性：
 
 1. 对 CommonJS 、 AMD 、ES6的语法做了兼容，以及特殊模块的 Shim 处理，也就是说基本可以无痛迁移旧项目。
-2. 对js、css、图片等资源文件都支持打包，配合loader加载器，也可以支持sass，less等CSS预处理器。
+2. 对 JS、CSS、图片等资源文件都支持打包，配合 loader 加载器，也可以支持 sass，less 等 CSS 预处理器。
 3. 串联式模块加载器以及插件机制，让其具有更好的灵活性和扩展性，例如通过 babel-loader 就可以直接使用 ES6 的模块机制（当然 Webpack 2 将会直接支持 ES6 模块）。
-4. 有独立的配置文件webpack.config.js，配置好就可以一劳永逸了。
+4. 有独立的配置文件 `webpack.config.js`，配置好就可以一劳永逸了。
 5. 可以将代码切割成不同的chunk，实现按需加载，有效利用浏览器的缓存功能提升性能，从而降低了初始化时间，提高用户体验。
 6. 支持 SourceUrls 和 SourceMaps，即使打包在一起依旧方便调试。
 7. 具有强大的Plugin接口，大多是内部插件，使用起来比较灵活。
-8. webpack 使用异步 IO 并具有多级缓存。这使得 webpack 很快且在增量编译上更加快。
+8. Webpack 使用异步 IO 并具有多级缓存。这使得 Webpack 很快且在增量编译上更加快。
 
 简单来说，Webpack 可以把你的应用代码分离成许多文件，如果你有许多页面在你的单页应用里面，用户只需要下载当前页面所需要的代码。如果你跳转到另一个页面，他们不需要重新加载通用的代码。
-与此同时也能替代grunt或者gulp大部分的功能，因为他可以构建和打包CSS，预处理CSS，编译JS和打包处理图片，甚至更多事情。
+与此同时也能替代 grunt 或者 gulp 大部分的功能，因为他可以构建和打包 CSS，预处理 CSS，编译 JS 和打包处理图片，甚至更多事情。
 
 ### 一个简单的 React 例子
 
@@ -174,11 +174,11 @@ UMD 的实现其实很简单：
     </body>
     </html>
 
-整个代码在[这里](https://github.com/dwqs/react_practice/tree/master/react-sample)，`git clone` 之后切换到 react-sample 目录下，在终端运行 `npm i && npm run build` 即可进行打包。更多有关 Webpack 的设置详情请参考原文章，[详解前端模块化工具-Webpack](https://segmentfault.com/a/1190000003970448)。
+整个代码在[这里](https://github.com/dwqs/react_practice/tree/master/react-sample)，`git clone` 之后切换到 react-sample 目录下，在终端运行 `npm i && npm run build` 即可进行打包。更多有关 Webpack 的详细设置请参考原文章，[详解前端模块化工具-Webpack](https://segmentfault.com/a/1190000003970448)。
 
 ## Reference：最佳实践
 
-Webpack 最酷的就是分「模块」预处理，最终按需打包，官方提供了很多很好用的 [loader](http://webpack.github.io/docs/list-of-loaders.html)，化繁为简，结合 NPM Script  就可以搞定全部的前端构建需求了，从而大幅度提升了开发体验。
+Webpack 最酷的就是按「模块」预处理，最终按需打包，官方提供了很多很好用的 [loader](http://webpack.github.io/docs/list-of-loaders.html)。化繁为简，结合 NPM Script 及其庞大的生态圈就可以搞定几乎全部的前端构建需求了，从而大幅度提升了开发体验。前端也在工程化的道路上越走越远，刀耕火种的时代正在慢慢改善，能够见证并参与其中享受着创造的乐趣，真是一件幸事。
 
 - [Getting Started - Webpack](http://webpack.github.io/docs/tutorials/getting-started/)
 - [如何使用webpack —— webpack-howto](http://qiutc.me/post/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8webpack%E2%80%94webpack-howto.html)
