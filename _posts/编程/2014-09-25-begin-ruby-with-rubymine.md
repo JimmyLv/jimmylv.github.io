@@ -2,7 +2,7 @@
 layout: post
 title: "Ruby入门：环境的搭建与RubyMine的安装"
 category: 编程
-tags: Ruby
+tags: [Ruby]
 published: true
 ---
 

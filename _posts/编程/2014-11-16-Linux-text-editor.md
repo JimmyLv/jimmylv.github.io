@@ -2,7 +2,7 @@
 layout: post
 title: Ubuntu下的几种命令行编辑器介绍
 category: 编程
-tags: Ubuntu
+tags: [Ubuntu]
 description: 
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: ThoughtWorks面试演讲稿
 category: 思考
-tags: 演讲 工作
+tags: [演讲, 工作]
 description:
 published: true
 ---
