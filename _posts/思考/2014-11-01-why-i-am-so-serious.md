@@ -7,9 +7,9 @@ description:
 published: true
 ---
 
-Rap God - Eminem
+> via Eminem:
 
-<embed src="http://www.xiami.com/widget/0_1772249933/singlePlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent"></embed>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=2&id=27853227&auto=1&height=66"></iframe>
 
 突然明白自己的焦虑来自何处。
 
