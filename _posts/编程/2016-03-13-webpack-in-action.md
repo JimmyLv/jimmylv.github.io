@@ -166,3 +166,13 @@ Webpack 最棒的一点就是将 JavaScript、CSS、 字体、图片等资源文
       },
 
 想起了 Vue 的组件化代码组织就是将三种类型的代码放在同一个 `.vue` 文件当中，实乃明智之举啊，开发体验一定很棒，我已经厌倦了每次修改一个组件却要频繁辗转于 3 个以上的文件了。
+
+## Reference
+
+我司一位前辈谈 CI/CD 的时候有言：「越痛苦的事情要越要早做」。在我做个人项目的时候，虽然听说了 Yoman，Gulp，Webpack 等前端构建神器，但迟迟都没有行动起来去真正用起来，还是在使用 HTML 标签的方式引入 JavaScript 和 CSS，而且每次修改文件之后还习惯性得 `Cmd + R` 手动刷新，现在看来真是一个大写的「傻~~逼~~」。「越痛苦的事情要越要早做」，虽然折腾了很久的 Webpack 终于是把开发的基础设施搭好了，但是一旦配置完成就可以一劳永逸享受着源源不断的开发快感，真是太棒！
+
+- [Webpack & Angular: Part 1 - Part 3](http://www.shmck.com/webpack-angular-part-1/)
+- [dmachat/angular-webpack-cookbook](https://github.com/dmachat/angular-webpack-cookbook/wiki)
+- [Using Angular 1.x With ES6 and Webpack](http://angular-tips.com/blog/2015/06/using-angular-1-dot-x-with-es6-and-webpack/)
+- [AngularClass/NG6-starter](https://github.com/AngularClass/NG6-starter/blob/master/webpack.config.js)
+
