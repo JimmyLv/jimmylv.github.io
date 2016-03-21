@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 搞定 Webpack (2)：实战 Webpack，大幅提升前端开发体验
+title: 搞定 Webpack (2)：使用 Webpack 大幅提升前端开发体验
 categories: [编程]
 tags: [Webpack, Angular, 前端, 重构, 工程化]
 published: True
@@ -166,6 +166,8 @@ Webpack 最棒的一点就是将 JavaScript、CSS、 字体、图片等资源文
       },
 
 想起了 Vue 组件化的代码组织就是将三种类型的代码放在同一个 `.vue` 文件当中，实乃明智之举啊，开发体验一定很棒，我已经厌倦了每次修改一个组件却要频繁辗转于 3 个以上的文件了。
+
+最后，整个 `webpack.config.js` 配置文件在[这里](https://github.com/JimmyLv/nobackend.website/blob/gh-pages/webpack.config.js)，欢迎围观 [nobackend.website](https://github.com/JimmyLv/nobackend.website) 这个项目。
 
 ## Reference
 
