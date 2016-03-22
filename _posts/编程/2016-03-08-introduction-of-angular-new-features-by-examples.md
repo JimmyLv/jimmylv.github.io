@@ -62,6 +62,27 @@ published: True
 
 通过 `.component()` 方法定义的组件默认就是一个元素组件，并且拥有自己的独立 Scope。与此同时使用 `bindings` 替代了 `bindToController`，并且可以通过 '<' 符号单向绑定一个变量，即只有父 Scope 的变化会影响子 Scope 的值，这样也就避免了一些 Scope 黑魔法所造成的误伤。还有比较重要的就是，组件拥有默认为空的 Controller 方法，并且不需要 `controllerAs` 语法就可以在模板中直接使用默认的 `$ctrl` 别名。更多详细对比请看[官方文档](https://docs.angularjs.org/guide/component)。
 
+### 新的 `$onInit()` 生命周期
+
+Angular 组件新的 `$onInit()` 方法其实就类似 React 当中的 `componentDidMount` 方法，在组件 Controller 初始化的时候在统一的地方加载数据。其实这种方式在之前的版本当中已经被约定俗成作为一种最佳实践了，可以参考 [johnpapa/angular-styleguide](https://github.com/johnpapa/angular-styleguide) 当中的 [`activate()` 方法](https://github.com/johnpapa/angular-styleguide/blob/master/a1%2Fi18n%2Fzh-CN.md#controller-activation-promises)。只不过 AngularJS 1.5 进一步提供了官方的支持，`$onInit()` 方法会在组件及其所有绑定初始化之后被 compiler 调用，从而我们就有了一个清晰的地方统一存放数据初始化的逻辑。
+
+  controller: function ($location, githubService) {
+    'ngInject';
+
+    var vm = this;
+
+    vm.$onInit = function () {
+      githubService.getConfig().then(res =>
+        vm.config = res.data
+      );
+      githubService.getIndex().then(res =>
+        vm.posts = res.data.paginator
+      );
+    };
+  }
+
+当然，这也更加方便于用户向  Angular 2.0 迁移，如果你对 Angular 2.0 的[生命周期](https://angular.io/docs/ts/latest/guide/lifecycle-hooks.html)有所了解的话，这里的 `$onInit()` 其实就等同于 `ngOnInit` 函数。
+
 ### ControllerAs 语法是什么鬼？
 
 AngularJS 在早些版本引入了 `controllerAs` 语法，相当于给 ViewModel 定义了一个命名空间，从而避免了不同层级 Scope 关系的混淆不清。并且，`controllerAs`语法也更加从语法层面上体现了 Controller 初始化 ViewModel 数据的单一职责，若把 `as` 看做面向对象编程当中的 `new`，其实就相当于将 Controller 这个 Function() 进行实例化，从而我们就拥有了 ViewModel 这么一个可以在模板当中直接使用的对象。而其实现原理，则是直接把这个对象再次挂在当前 Controller 所对应的 $scope 之上，可以试着在 `link` 方法里边儿判断一下 `$ctrl === $scope.vm`，其结果为 `true`。
