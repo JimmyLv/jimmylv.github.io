@@ -64,24 +64,24 @@ published: True
 
 ### 新的 `$onInit()` 生命周期
 
-Angular 组件新的 `$onInit()` 方法其实就类似 React 当中的 `componentDidMount` 方法，在组件 Controller 初始化的时候在统一的地方加载数据。其实这种方式在之前的版本当中已经被约定俗成作为一种最佳实践了，可以参考 [johnpapa/angular-styleguide](https://github.com/johnpapa/angular-styleguide) 当中的 [`activate()` 方法](https://github.com/johnpapa/angular-styleguide/blob/master/a1%2Fi18n%2Fzh-CN.md#controller-activation-promises)。只不过 AngularJS 1.5 进一步提供了官方的支持，`$onInit()` 方法会在组件及其所有绑定初始化之后被 compiler 调用，从而我们就有了一个清晰的地方统一存放数据初始化的逻辑。
+新加入 AngularJS 豪华午餐的 `$onInit()` 方法，其实就 相当于 React 组件的 [`componentDidMount()`](https://facebook.github.io/react/docs/component-specs.html#lifecycle-methods) 方法，在组件内 Controller 初始化的时候统一加载数据。其实这种方式在之前的版本当中，已经被约定俗成作为一种最佳实践了，可以参考 [johnpapa/angular-styleguide](https://github.com/johnpapa/angular-styleguide) 中所提到的 [`activate()`](https://github.com/johnpapa/angular-styleguide/blob/master/a1%2Fi18n%2Fzh-CN.md#controller-activation-promises) 方法。只不过 AngularJS 1.5 进一步提供了官方的支持，`$onInit()` 方法会在组件及其所有 binding 初始化之后被 compiler 调用，从而我们就有了一个清晰的地方统一存放数据初始化的逻辑。
 
-  controller: function ($location, githubService) {
-    'ngInject';
+    controller: function ($location, githubService) {
+      'ngInject';
 
-    var vm = this;
+      var vm = this;
+      
+      vm.$onInit = function () {
+        githubService.getConfig().then(res =>
+          vm.config = res.data
+        );
+        githubService.getIndex().then(res =>
+          vm.posts = res.data.paginator
+        );
+      };
+    }
 
-    vm.$onInit = function () {
-      githubService.getConfig().then(res =>
-        vm.config = res.data
-      );
-      githubService.getIndex().then(res =>
-        vm.posts = res.data.paginator
-      );
-    };
-  }
-
-当然，这也更加方便于用户向  Angular 2.0 迁移，如果你对 Angular 2.0 的[生命周期](https://angular.io/docs/ts/latest/guide/lifecycle-hooks.html)有所了解的话，这里的 `$onInit()` 其实就等同于 `ngOnInit` 函数。
+当然，这也更加便于用户向  Angular 2.0 迁移，如果你对 Angular 2.0 的[生命周期](https://angular.io/docs/ts/latest/guide/lifecycle-hooks.html)有所了解的话，这里的 `$onInit()` 其实就等同于 `ngOnInit` 函数。
 
 ### ControllerAs 语法是什么鬼？
 
