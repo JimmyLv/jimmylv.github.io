@@ -3,15 +3,12 @@ layout: post
 title: 工作效率与生活压力：兼谈OS X下的MissionControl
 categories: [思考]
 tags: [写作, 效率, OS X]
+music: 26199445
 published: True
 
 ---
 
 ## 卧槽，这歌好Hi~
-
-> The Phoenix - Fall Out Boy
-
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=2&id=26199445&auto=1&height=66"></iframe>
 
 脑袋是很受情绪影响的，但是情绪又是可以由身体变化影响的。比如，听嗨歌可以带动身体，而身体跳动起来也是可以带动情绪的。不开心的时候，强行把嘴角上扬，也是可以让心情好那么一些的。
 
