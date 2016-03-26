@@ -48,11 +48,11 @@ published: True
 
 > There are a lot of resources out there about "Restful" API structure, but [Tuts+](http://code.tutsplus.com/tutorials/a-beginners-guide-to-http-and-rest--net-16340) does a pretty good job and I don't want to dedicate too much time to it; this part of the tutorial does not really need a lot of REST endpoints.
 
-这儿有很多关于"Restful" API架构的资源，而[Tuts+](http://code.tutsplus.com/tutorials/a-beginners-guide-to-http-and-rest--net-16340)就是一个非常棒的教程，我不想再花费太多时间去解释它了。本教程的这部分其实也不需要非常多的REST端点。
+这儿有很多关于"Restful" API架构的资源，而[Tuts+](http://code.tutsplus.com/tutorials/a-beginners-guide-to-http-and-rest--net-16340)就是一个非常棒的教程，我不想再花费太多时间去解释它了。本教程的这部分其实也不需要非常多的REST端口。
 
 > But let's write our first `GET` endpoint which will list out all the jobs we have available. First, we want to steal the `jobs` object from our *React*.js code and move it into `routes/api.js` then we want an endpoint that will return that object is `json` form. This is done by the following code:
 
-但是让我们来写第一个`GET`端点，用于列举已有的所有工作信息。首先，我们想要从*React*.js代码中把`jobs`对象拿出来，然后放到`routes/api.js`里，从而我们就需要一个端点可以返回`json`形式的对象。通过以下代码可以实现：
+但是让我们来写第一个`GET`端口，用于列举已有的所有工作信息。首先，我们想要从*React*.js代码中把`jobs`对象拿出来，然后放到`routes/api.js`里，从而我们就需要一个端口可以返回`json`形式的对象。通过以下代码可以实现：
     
     var express = require('express');
     var router = express.Router();
@@ -91,11 +91,11 @@ published: True
 
 > The object is almost a direct copy that we had hardcoded within our *React*.js app, with a few modifications. Most importantly, we added the `job_id` variable. This will allow us to use our REST endpoints to return only one job posting, if we want to... which of course we do.
 
-这个对象几乎就是一个直接拷贝，在*React*.js应用进行硬编码的基础之上带有一点儿修改。最重要的是，我们添加了`job_id`变量。这可以让我们使用REST端点，只返回唯一的工作岗位，如果我们想要……当然我们也做了。
+这个对象几乎就是一个直接拷贝，在*React*.js应用进行硬编码的基础之上带有一点儿修改。最重要的是，我们添加了`job_id`变量。这可以让我们使用REST端口，只返回唯一的工作岗位，如果我们想要……当然我们也做了。
 
 > To do that, it's actually pretty simple. Using Express.js's ability to know what URL parameters hit each endpoint, we can add an endpoint that looks like `/api/jobs/1` and our router will know that we want the job with `job_id == 1`. To do this, add the following to `routes/api.js`:
 
-做到这样实际上非常简单。使用Express.js可以知道每个端点中含有哪些URL参数，我们可以添加一个像`/api/jobs/1`这样的端点，然后我们的路由就会知道我们想要`job_id == 1`的这个工作信息。为此，可以给`routes/api.js`添加以下代码：
+做到这样实际上非常简单。使用Express.js可以知道每个端口中含有哪些URL参数，我们可以添加一个像`/api/jobs/1`这样的端口，然后我们的路由就会知道我们想要`job_id == 1`的这个工作信息。为此，可以给`routes/api.js`添加以下代码：
 
     router.get('/jobs/:job_id', function(req, res) {
         var job_id = req.params.job_id;
@@ -113,7 +113,7 @@ published: True
 
 > With these two routes, we should be able to `curl` these two endpoints and get the following results:
 
-通过这两个路由，我们就应该可以使用`curl`来访问这两个端点，得到以下结果：
+通过这两个路由，我们就应该可以使用`curl`来访问这两个端口，得到以下结果：
     
     $ curl localhost:3000/api/jobs
     {"data":{"jobs":[{"job_id":1,"company":"TrackMaven","position":"Software Maven","local":"Washington, DC, USA","lookingFor":"*Angular*.js, Django, ElasticSearch","postedDate":"4 April 2015","description":"","category":"Engineering"},{"job_id":2,"company":"TrackMaven","position":"Junior Software Maven","local":"Washington, DC, USA","lookingFor":"Javascript, Python","postedDate":"4 April 2015","description":"","category":"Engineering"}]}}

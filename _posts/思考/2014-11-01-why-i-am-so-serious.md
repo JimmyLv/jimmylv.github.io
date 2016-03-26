@@ -3,13 +3,10 @@ layout: post
 title: 突然明白自己的焦虑来自何处
 category: 思考
 tags: [工作]
+music: 27853227
 description:
 published: true
 ---
-
-> via Eminem:
-
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=2&id=27853227&auto=1&height=66"></iframe>
 
 突然明白自己的焦虑来自何处。
 
