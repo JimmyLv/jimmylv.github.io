@@ -50,7 +50,7 @@ CommonJS 和 AMD 就在在 JavaScript 还没有模块管理的情况下民间所
         return anotherModule
     })
 
-其实我们单比较写法，就知道 CommonJS 是更为优秀的。它是一种同步的写法，对 Human 友好，而且代码也不会繁琐臃肿。而 Browserify 工具的出现，其实就满足了在浏览器当中直接使用 `require()` 的同步语法加载npm模块的需求。
+其实我们单比较写法，就知道 CommonJS 是更为优秀的。它是一种同步的写法，对 Human 友好，而且代码也不会繁琐臃肿。而 Browserify 工具的出现，则满足了在浏览器当中直接使用 `require()` 的同步语法加载 NPM 模块的需求。
 
 既然 CommonJS 和 AMD 风格非常流行，似乎就缺少了一个统一的规范。所以人们产生了这样的需求，希望能够同时支持两种风格的「通用」模式，而 UMD (Universal Module Definition) 即通用模块规范的出现，就是希望提供一个前后端跨平台的解决方案(支持 AMD 与 CommonJS 模块方式)。
 
@@ -76,9 +76,9 @@ CommonJS 和 AMD 就在在 JavaScript 还没有模块管理的情况下民间所
 
 UMD 的实现其实很简单：
 
-- 先判断是否支持Node.js模块格式（exports是否存在），存在则使用Node.js模块格式。
-- 再判断是否支持AMD（define是否存在），存在则使用AMD方式加载模块。
-- 前两个都不存在，则将模块公开到全局（window或global）。
+- 先判断是否支持 AMD（`define` 是否存在），存在则使用 AMD 方式加载模块。
+- 再判断是否支持 Node.js 模块格式（`exports` 是否存在），存在则使用 Node.js 模块格式。
+- 前两个都不存在，则将模块公开到全局（window 或 global）。
 
 ### 只能在运行时分析依赖？
 
@@ -90,25 +90,25 @@ UMD 的实现其实很简单：
 
 ### Webpack 的特性介绍
 
-长久以来，Web 开发者都是把所需 Javascript、CSS 文件一股脑放进 HTML 里面，对于庞大的项目来说管理起来非常麻烦，也无法满足前端在模块管理、资源加载等方面的工程需求。
+长久以来，Web 开发者都是把所需的 Javascript、CSS 等文件一股脑放进 HTML 里边儿，这对于庞大的项目来说管理起来非常麻烦，也无法满足前端在模块管理、资源加载等方面的工程需求。
 
-而在 Webpack 当中，直接就将Web开发中常用的如 JavaScript、CSS 以及图片、字体等各种静态文件统称为模块。Webpack 对它们进行统一的模块加载，预处理以及打包发布，让开发过程更加高效。**任何静态资源都可以视作模块，然后模块之间也可以相互依赖**，通过 Webpack 对模块进行处理后，可以打包成我们想要的静态资源。其官方主页用下面这张图来说明 Webpack 的作用：
+而在 Webpack 当中，最酷的一点就是将 Web 开发中常用的如 JavaScript、CSS 以及图片、字体等各种静态文件统称为模块，并对它们进行统一的模块化加载，预处理以及打包发布，从而让开发过程变得更为高效。而且，**任何静态资源都可以视作模块，然后模块之间还可以相互依赖**，通过 Webpack 对模块进行处理后，就可以打包成我们想要的静态资源。其官方主页用下面这张图来说明 Webpack 的作用：
 
 ![](https://webpack.github.io/assets/what-is-webpack.png)
 
-就像前面所提到的那样，Webpack 具有 RequireJS 和 Browserify 的功能，但仍有很多自己的新特性：
+就像前面所提到的那样，Webpack 具有和 RequireJS， Browserify 等模块化工具相类似的功能，但还有更多独有的新特性：
 
 1. 对 CommonJS 、 AMD 、ES6的语法做了兼容，以及特殊模块的 Shim 处理，也就是说基本可以无痛迁移旧项目。
-2. 对 JS、CSS、图片等资源文件都支持打包，配合 loader 加载器，也可以支持 sass，less 等 CSS 预处理器。
+2. 对 JS、CSS、图片等资源文件都支持打包，配合 loader 加载器，也可以支持 Sass，Less 等 CSS 预处理器。
 3. 串联式模块加载器以及插件机制，让其具有更好的灵活性和扩展性，例如通过 babel-loader 就可以直接使用 ES6 的模块机制（当然 [Webpack 2 将会直接支持 ES6 模块](https://gist.github.com/sokra/27b24881210b56bbaff7)）。
-4. 有独立的配置文件 `webpack.config.js`，配置好就可以一劳永逸了。
-5. 可以将代码切割成不同的chunk，实现按需加载，有效利用浏览器的缓存功能提升性能，从而降低了初始化时间，提高用户体验。
+4. 有独立的配置文件 `webpack.config.js`，并可以根据环境的不同加载特定的配置文件，配置好就可以一劳永逸了。
+5. 可以将代码切割成不同的 chunk，实现按需加载，有效利用浏览器的缓存功能提升性能，从而降低了初始化时间，提高用户体验。
 6. 支持 SourceUrls 和 SourceMaps，即使打包在一起依旧方便调试。
-7. 具有强大的Plugin接口，大多是内部插件，使用起来比较灵活。
+7. 具有强大的 Plugin 接口，大多是内部插件，使用起来比较灵活。
 8. Webpack 使用异步 IO 并具有多级缓存。这使得 Webpack 很快且在增量编译上更加快。
 
 简单来说，Webpack 可以把你的应用代码分离成许多文件，如果你有许多页面在你的单页应用里面，用户只需要下载当前页面所需要的代码。如果你跳转到另一个页面，他们不需要重新加载通用的代码。
-与此同时也能替代 grunt 或者 gulp 大部分的功能，因为他可以构建和打包 CSS，预处理 CSS，编译 JS 和打包处理图片，甚至更多事情。
+与此同时也能替代 Grunt 或者 Gulp 大部分的功能，因为它自己就可以构建和打包 CSS，预处理 CSS，编译 JS 和打包处理图片，甚至更多事情。
 
 ### 一个简单的 React 例子
 
@@ -178,7 +178,7 @@ UMD 的实现其实很简单：
 
 ## Reference：最佳实践
 
-Webpack 最酷的就是按「模块」预处理，最终按需打包，官方提供了很多很好用的 [loader](http://webpack.github.io/docs/list-of-loaders.html)。化繁为简，结合 NPM Script 及其庞大的生态圈就可以搞定几乎全部的前端构建需求了，从而大幅度提升了开发体验。前端也在工程化的道路上越走越远，刀耕火种的时代正在慢慢改善，能够见证并参与其中享受着创造的乐趣，真是一件幸事。
+Webpack 最酷的就是按「模块」预处理，最终按需打包，官方提供了很多很好用的 [loader](http://webpack.github.io/docs/list-of-loaders.html) 和 [plugins](https://webpack.github.io/docs/list-of-plugins.html)。化繁为简，结合 NPM Script 及其庞大的生态圈就可以搞定几乎全部的前端构建需求了，从而大幅度提升了开发体验。前端也在工程化的道路上越走越远，刀耕火种的时代正在慢慢改善，能够见证并参与其中享受着创造的乐趣，真是一件幸事。
 
 - [Getting Started - Webpack](http://webpack.github.io/docs/tutorials/getting-started/)
 - [如何使用webpack —— webpack-howto](http://qiutc.me/post/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8webpack%E2%80%94webpack-howto.html)
