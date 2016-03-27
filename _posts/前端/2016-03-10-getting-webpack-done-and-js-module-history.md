@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 搞定 Webpack (1)：前端模块化实践小史与 Webpack 入门
-categories: [编程]
+categories: [前端]
 tags: [Webpack, 工程化, JavaScript]
 published: True
 

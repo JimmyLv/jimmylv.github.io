@@ -2,7 +2,7 @@
 layout: post
 title: AngularJS 1.x 版本的限制
 categories: [前端]
-tags: [AngularJS, 前端]
+tags: [AngularJS]
 published: False
 
 ---

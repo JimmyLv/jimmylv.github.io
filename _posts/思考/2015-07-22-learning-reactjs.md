@@ -1,7 +1,7 @@
 ---
 layout: post
-title: React学习笔记：兼谈笔记与博客的区别
-categories: [编程]
+title: 安利 GitBook：兼谈笔记与博客的区别
+categories: [思考]
 tags: [React, 写作]
 published: True
 
@@ -11,7 +11,7 @@ published: True
 
 以后我的技术学习笔记就都以书的形式写在[GitBook: Write & Publish Books](http://www.gitbook.com/)里面，新技术的全面了解最好能够有一个清晰良好的结构组织，而书的形式就再好不过了，就可以用章节的方式来全面管理知识架构。
 
-另外不得不说GitBook是个非常好的书籍编写工具，可以用markdown语法写作，git管理，网页与客户端都做得不错，甚至可以甩其他的一些原生markdown编辑器几条街。
+另外不得不说GitBook是个非常好的书籍编写工具，可以用 Markdown 语法写作，git管理，网页与客户端都做得不错，甚至可以甩其他的一些原生 Markdown 编辑器几条街。
 
 ![](http://7xjbdq.com1.z0.glb.clouddn.com/screen%201.png)
 

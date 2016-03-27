@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 使用Gradle快速构建项目以及Gradle速度优化
+title: 使用 Gradle 快速构建项目以及 Gradle 速度优化
 categories: [编程]
 tags: [Gradle]
 published: True

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 关于前端的思考：Angular 2.0以及前后端边界
-categories: [编程]
+categories: [前端]
 tags: [AngularJS, JavaScript]
 published: True
 

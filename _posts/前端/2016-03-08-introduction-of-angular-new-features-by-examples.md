@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 升级 AngularJS 1.5：新特性对比与最佳实践
-categories: [编程]
+categories: [前端]
 tags: [AngularJS, JavaScript]
 published: True
 
