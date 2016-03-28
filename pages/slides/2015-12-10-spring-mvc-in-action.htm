@@ -1,0 +1,156 @@
+<!--
+    Powered By nodePPT - This is probably the best web presentation tool so far!
+    version: 1.4.1
+    site: https://github.com/ksky521/nodePPT
+    date: 
+-->
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>思沃讲堂：Spring MVC 实战 - By Jimmy Lv</title>
+    <link rel="stylesheet" media="all" href="./css/nodeppt.css">
+    <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="./css/phone.css">
+    
+    <link rel="stylesheet" href="./js/highlight/styles/kimbie.light.css">
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    
+<link rel="stylesheet" href="./css/theme.color.css">
+</head>
+<body>
+<div class="slides">
+    <slides id="container">
+        <slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>Th Wo - Bookshelf</h1>
+<p><small>by Jimmy Lv</small></p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<h2>MVC Workshop</h2>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<h3>Step 0:</h3>
+<p>GET: hello {name}! </p>
+<p>via <a href="http://docs.spring.io/spring/docs/current/spring-framework-reference/html/mvc.html#mvc-servlet" target="_blank">Spring Web MVC DispatcherServlet</a>.</p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<h3>Step 1:</h3>
+<p>// given</p>
+<p>GET: show all books in index page.</p>
+<p>// when</p>
+<p>// then</p>
+<p>implement <code>fetch book details</code> functionality.</p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<h3>Step 2:</h3>
+<p>// given</p>
+<p>a ready-to-wear <code>form</code> for book information.</p>
+<p>// when</p>
+<p>// then</p>
+<p>implement <code>create new book</code> functionality.</p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<h3>Step 3:</h3>
+<p>Edit / Delete / ...</p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<h2>Extendibility</h2>
+<ul>
+<li>What&#39;s Spring IoC &amp; DI?</li>
+<li>Service interface =&gt; different implementation</li>
+<li>Data Repository =&gt; using different database</li>
+<li>Split front-end &amp; back-end =&gt; return data with JSON format</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<h2>作业</h2>
+<ul>
+<li>先把书架CURD的功能，使用<strong>后端MVC</strong>的形式完善。<ul>
+<li>当然你可以改用其他模板语言，比如Jade什么的，这儿用的是Thymeleadf。</li>
+</ul>
+</li>
+<li>然后再改用<strong>JSON格式</strong>返回，而不再需要后端模板。<ul>
+<li>为了前后端分离，😂 以下形式就Okay：</li>
+</ul>
+</li>
+</ul>
+<img src="http://7xjbdq.com1.z0.glb.clouddn.com/json-format.jpg" alt="">
+
+</article></section></slide>
+        
+
+        <!-- <slide class="slide logoslide dark nobackground">
+            <article class="flexbox vcenter">
+                <h2 style="color: white;">Powered By nodePPT v1.4.1</h2>
+            </article>
+        </slide> -->
+        <div class="slideTip" id="tip"></div>
+    </slides>
+</div>
+<canvas id="drawBoard" class="draw-board" width="900" height="700"></canvas>
+<div class="progress"><span id="progress"></span></div>
+<div id="_buttons">
+    <div class="_btn-box" id="_btn-box" style="display:none;">
+        <button class="fa fa-arrow-circle-left" id="_btn-prev"></button>
+        <button class="fa fa-arrow-circle-right" id="_btn-next"></button>
+        <button class="fa fa-paint-brush" id="_btn-brush"></button>
+        <button class="fa fa-compress" id="_btn-overview" data-toggle="fa fa-expand"></button>
+    </div>
+    <button class="fa fa-bars" id="_btn-bar"  data-toggle="fa fa-close"></button>
+</div>
+<script src="./js/mixjs/lib/mix.0.3.0.min.js"></script>
+<script>
+var base = location.protocol + '//' + location.host;
+
+var path = (location.pathname + '#').split('/').filter(function(v){
+    return !!v;
+});
+path.pop();
+path = path.join('/');
+MixJS.config({
+    baseURL: [ base, path, 'js'].join('/')+'/'
+});
+
+</script>
+<script src="./js/mixjs/lib/event/broadcast.js"></script>
+<script src="./js/nodeppt.js"></script>
+<script>
+Slide.init({
+    containerID: 'container',
+    drawBoardID: 'drawBoard',
+    slideClass: '.slide',
+    buildClass: '.build',
+    progressID: 'progress',
+    transition: 'move',
+    width: 1100,
+    dir: './',
+    
+    //打开下面的注释就开启postMessage方式
+    //访问网址127.0.0.1:8080/ppt/demo#client
+    control:{
+        type: 'postMessage',
+        args:{
+            isControl:  false
+        }
+    },
+    
+    tipID: 'tip'
+});
+MixJS.loadJS('highlight/highlight.pack.js',function(){
+    hljs.tabReplace = '  ';
+    hljs.initHighlightingOnLoad();
+});
+</script>
+<script src="./assets/slide.js"></script>
+<link rel="stylesheet" href="./assets/slide.css">
+<script src="./js/zoom.js"></script>
+
+<!--placeholder-->
+</body>
+</html>
