@@ -9,6 +9,7 @@ function incallback() {
         document.getElementById('incallback').innerHTML = 'Welcome to my session!';
     }, 300)
 }
+
 var ctx, width, height, canvas;
 window.onload = function() {
     canvas = document.createElement('canvas');

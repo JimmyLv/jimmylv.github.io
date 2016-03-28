@@ -1,20 +1,15 @@
 ---
-layout: post
+layout: session
 title: 前端模块化小史，Webpack 入门
 categories: [演讲]
 tags: [Webpack, JavaScript, 工程化]
-published: False
-
+speaker: Jimmy Lv
+transition: move
+files: /assets/slide.js,/assets/slide.css,/js/zoom.js
+highlightStyle: kimbie.light
+theme: green
+published: True
 ---
-
-    title: 前端模块化小史，Webpack 入门 (by Jimmy)
-    speaker: Jimmy Lv
-    date: 2016年03月28日
-    url: http://nobackend.website
-    transition: move
-    files: /js/demo.js,/css/demo.css,/js/zoom.js
-    highlightStyle: kimbie.light
-    theme: green
 
 30 min = 15 min * 2
 
