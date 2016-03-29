@@ -44,21 +44,23 @@ published: True
     });
 
 
-    myModule.directive('myComponent', {
-      restrict: 'E',
-      template: '<h1>Hello {{ ctrl.getFullName() }}</h1>',
-      scope: {},
-      bindToController: { 
-        firstName: '<', 
-        lastName: '<' 
-      },
-      controller: function() {
-        this.getFullName = function() {
-          return this.firstName + ' ' + this.lastName;
-        };
-      },
-      controllerAs: 'ctrl'
-    });
+    myModule.directive('myComponent', function() {
+        return {
+            restrict: 'E',
+            template: '<h1>Hello {{ ctrl.getFullName() }}</h1>',
+            scope: {},
+            bindToController: { 
+                firstName: '<', 
+                lastName: '<' 
+            },
+            controller: function() {
+                this.getFullName = function() {
+                    return this.firstName + ' ' + this.lastName;
+                };
+            },
+            controllerAs: 'ctrl'
+        }
+    )};
 
 通过 `.component()` 方法定义的组件默认就是一个元素组件，并且拥有自己的独立 Scope。与此同时使用 `bindings` 替代了 `bindToController`，并且可以通过 '<' 符号单向绑定一个变量，即只有父 Scope 的变化会影响子 Scope 的值，这样也就避免了一些 Scope 黑魔法所造成的误伤。还有比较重要的就是，组件拥有默认为空的 Controller 方法，并且不需要 `controllerAs` 语法就可以在模板中直接使用默认的 `$ctrl` 别名。更多详细对比请看[官方文档](https://docs.angularjs.org/guide/component)。
 
