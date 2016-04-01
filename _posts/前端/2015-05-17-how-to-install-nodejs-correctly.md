@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Node.js的正确安装与相关工具（Mac OS X）
-categories: [编程]
+categories: [前端]
 tags: [JavaScript, NodeJS]
 published: True
 

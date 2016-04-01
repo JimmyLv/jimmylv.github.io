@@ -1,7 +1,7 @@
 ---
 layout: post
 title: GitHub开源项目源码十阅(1)：getAwesomeness
-categories: [编程]
+categories: [前端]
 tags: [开源项目, JavaScript, Express, GitHub]
 published: True
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 傻瓜式博客搭建教程：使用GitHub Pages快速生成博客
-category: 编程
+category: 前端
 tags: [Git, Jekyll]
 keywords: markdown
 description:

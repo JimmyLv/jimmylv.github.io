@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "写作环境的搭建（Jekyll+GitHub+Markdown）"
-category: 编程
+category: 前端
 tags: [Jekyll, 写作, Git]
 published: true
 ---
