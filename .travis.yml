@@ -1,0 +1,6 @@
+language: ruby
+rvm:
+  - 2.1
+install: gem install jekyll && gem install s3_website
+script: jekyll build
+after_success: s3_website push
