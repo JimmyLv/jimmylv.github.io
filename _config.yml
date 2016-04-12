@@ -1,4 +1,4 @@
-permalink: /:year-:month-:day-:title
+permalink: /:year-:month-:day-:title/
 paginate: 10
 markdown: kramdown
 encoding: utf-8
