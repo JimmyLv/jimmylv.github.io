@@ -2,6 +2,7 @@ branches:
   only:
     - gh-pages
 language: ruby
+cache: bundler
 rvm:
   - 2.1
 install: gem install bundler && bundle install
