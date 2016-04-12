@@ -5,6 +5,6 @@ language: ruby
 cache: bundler
 rvm:
   - 2.1
-install: gem install bundler && bundle install
-script: jekyll build
+# install: gem install bundler && bundle install
+script: jekyll build -i
 after_success: s3_website push
