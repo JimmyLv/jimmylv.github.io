@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/JimmyLv/jimmy.lv.svg?branch=master)](https://travis-ci.org/JimmyLv/jimmy.lv)
+
 ## 使用Rakefile自动生成文章格式
 
 ```shell
