@@ -1,15 +1,22 @@
-[![Build Status](https://travis-ci.org/JimmyLv/jimmy.lv.svg?branch=master)](https://travis-ci.org/JimmyLv/jimmy.lv)
+[![Build Status](https://travis-ci.org/JimmyLv/jimmy.lv.svg?branch=gh-pages)](https://travis-ci.org/JimmyLv/jimmy.lv)
 
-## 使用Rakefile自动生成文章格式
+## Using `rake post` to create new post
 
 ```shell
 rake post title="A Title" [category="category"] [tags=[tag1,tag2]] [description="description"]
 ```
 
-ps: this will reate category_imgs and post_imgs directory for this post article.
+> ps: this will reate category_imgs and post_imgs directory for this post article. 
+> 
+> more details in [Rakefile](https://github.com/JimmyLv/jimmy.lv/blob/gh-pages/Rakefile).
 
-## 修改样式
+## API Support
 
-button属性修改在bootstrap.css里面
+As you can see in [api](https://github.com/JimmyLv/jimmy.lv/tree/gh-pages/api) folder and generated result in <http://blog.jimmylv.info/api/index.json>.
 
-button显示修改在-include/footer.html和base.js里面
+## Publish Slides
+
+```
+nodeppt generate ./_posts/演讲 ./slides -a
+```
+
