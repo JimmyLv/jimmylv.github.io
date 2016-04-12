@@ -9,6 +9,6 @@ branches:
 
 install: gem install bundler && bundle install
 
-script: jekyll build -i && htmlproof ./_site
+script: jekyll build && htmlproof ./_site
 
 after_success: s3_website push
