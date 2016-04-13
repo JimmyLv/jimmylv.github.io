@@ -3,6 +3,7 @@
 *.iml
 
 .jekyll-metadata
+Gemfile.lock
 
 _site/
 _theme/
