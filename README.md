@@ -20,3 +20,7 @@ As you can see in [api](https://github.com/JimmyLv/jimmy.lv/tree/gh-pages/api) f
 nodeppt generate ./_posts/演讲 ./slides -a
 ```
 
+## Deployment
+
+1. Hosted on [GitHub Pages](http://blog.jimmylv.info/).
+2. Hosted on [AWS S3]().
