@@ -63,19 +63,50 @@ There are several elements to the Command Pattern: the **Receiver**, **Command**
 
 The receivers job is to hold our business logic. When given a command, it knows how to fulfill that request.
 
-**接收器**的职责就是保存我们的业务逻辑。每当给到一个命令，它都能知道如何满足相应的要求。
+**接收器** 的职责就是保存我们的业务逻辑。每当给到一个命令，它都能知道如何满足相应的要求。
 
 Imagine we are running sales for Tesla’s new Model 3. Let’s write some code to describe how this would look:
 
 想象一下我们正在销售特斯拉的新车型 Model 3。让我们写些代码来描述一下这是如何工作的：
 
-<script src="https://gist.github.com/abhiaiyer91/d0450c52ee8724ec5b32558d6832c517.js"></script>
+    /**
+     + Request information about the car
+     + @param model - model of car
+     + @param id - id of car
+     **/
+    function requestInfo(model, id) {
+      return `${model} with id: ${id}`;
+    }
+
+    /**
+     + Buy the car
+     + @param model - model of car
+     + @param id - id of car
+     **/
+    function buyVehicle(model, id) {
+      return `You purchased ${model} with id: ${id}`;
+    }
+
+    /** 
+     + Arrange viewing for car
+     + @param model - model of car
+     + @param id - id of car
+     **/
+    function arrangeViewing(model, id) {
+      return `You have successfully booked a viewing of ${model} (${id})`;
+    }
 
 In the traditional command pattern we would encapsulate this information in an object.
 
 在传统的命令模式下，我们通常会将这些信息包裹在一个对象当中。
 
-<script src="https://gist.github.com/abhiaiyer91/6c3a1c437193893ebcb343ab5c407ef1.js"></script>
+    const TeslaSalesControl = {
+      buyVehicle,
+      requestInfo,
+      arrangeViewing
+    }
+
+    export default TeslaSalesControl;
 
 #### **The Command** | **命令**
 
@@ -83,7 +114,10 @@ This contains information about the action being called, and its required parame
 
 **命令**这会包含行为调用时的一些信息，及其所需要的参数，通常就表示为一个对象。
 
-<script src="https://gist.github.com/abhiaiyer91/c53dccd106569b068a5aec0a38c3d549.js"></script>
+    const sampleCommand = {
+      action: "arrangeViewing", 
+      params: ['Tesla 3', '1337']
+    };
 
 As you can see, the command defines the action. This corresponds to the method that is on our control object. In the example above, our sample command is taking the action “arrangeViewing”. It also passes the required params to arrangeViewing: **model** and **carId**.
 
@@ -95,7 +129,13 @@ The next thing we need is an interface to executes commands. Lets give our Sales
 
 接下来我们需要做的就是一个执行命令的接口。让我们来给 Sales 控制器加上一个执行函数。对这个函数来说我想要实现一个能够用于接收的通用执行器，以及接收器。执行器的职责就是传入命令给接收器，并且调用我们的业务逻辑。
 
-<script src="https://gist.github.com/abhiaiyer91/edf07686b188a7c7f63a0b79ad8e9636.js"></script>
+    /**
+     + A generic execute function
+     + Takes a receiver and a command
+     **/
+    export default function execute(receiver, command) {
+      return receiver[command.action] && receiver[command.action](...command.params);
+    }
 
 Now we can execute commands from anywhere at any time!
 
@@ -103,7 +143,28 @@ Now we can execute commands from anywhere at any time!
 
 #### **Make things happen** | 让奇迹发生
 
-<script src="https://gist.github.com/abhiaiyer91/2fa6226c36e124927f97c922e8c2c213.js"></script>
+    import execute from 'executor.js';
+    import TeslaSalesControl from 'receiver.js';
+        
+    // Arrange a viewing
+    execute(TeslaSalesControl, {
+      action: "arrangeViewing",
+      param: ["Model S", "123"]
+    });
+
+    // Request Info
+    execute(TeslaSalesControl, {
+      action: "requestInfo",
+      param: ["Model S Battery", "123342"]
+    });
+
+    // Buy a Car!
+    execute(TeslaSalesControl, {
+      action: "buyVehicle",
+      param: ["Tesla 3", "23243425"]
+    });
+
+## Compare to Redux | 对比 Redux
 
 Thats it, now how does this compare to Redux!
 
@@ -119,9 +180,60 @@ The Store is instantiated with “**reducers**”, descriptions on how the Store
 
 Store 会根据 “**reducers**” 进行初始化，描述 Store 是如何变化的。这些 reducers 都是一些纯函数，每当被调用的时候都会返回一个新的 state，而不会导致莫名其妙地发生变化。这使得我们的代码具有高度的可预测性以及可测试性。
 
-<script src="https://gist.github.com/abhiaiyer91/09b2b3fb6b6583c6896587b3f7653584.js"></script>
+    import { combineReducers } = 'redux';
 
-<script src="https://gist.github.com/abhiaiyer91/99718738efd8258b77f3.js"></script>
+    function arrangeViewing(state, action) {
+      switch(action.type) {
+        case "ARRANGE_VIEWING":
+          const { model, id } = action.data;
+          return `${model} and ${id}`
+        default:
+          return ""
+      }
+    }
+
+    function requestInfo(state, action) {
+      switch(action.type) {
+        case "REQUEST_INFO":
+          const { model, id } = action.data;
+          return `${model} and ${id}`
+        default:
+          return ""
+      }
+    }
+
+    function buyVehicle(state, action) {
+      switch(action.type) {
+        case "BUY_VEHICLE":
+          const { model, id } = action.data;
+          return `${model} and ${id}`
+        default:
+          return false
+      }
+    }
+
+    const rootReducer = combineReducers({
+      arrangeViewing,
+      requestInfo,
+      buyVehicle
+    });
+
+    export default rootReducer;
+
+.
+
+    import { applyMiddleware, createStore } from 'redux';
+    import createLogger from 'redux-logger';
+    import ReduxThunk from 'redux-thunk';
+    import rootReducer from '../imports/client/reducers/rootReducer';
+
+    // create a logger
+
+    const logger = createLogger();
+    const middleware = [ReduxThunk, logger];
+
+    const Store = createStore(rootReducer, {}, applyMiddleware(...middleware));
+    export default Store;
 
 ### The Action = The Command | Action 即命令
 
@@ -129,7 +241,13 @@ The action object represents the description of the command and parameters it ne
 
 Action 对象则代表着对命令的描述，以及它在执行 state 更改时所需要的参数。
 
-<script src="https://gist.github.com/abhiaiyer91/53049403d82a6c173e3b14971487d894.js"></script>
+    const sampleActionObject = {
+      type: "BUY_CAR",
+      data: {
+        model: "TESLA",
+        id: "1234"
+      }
+    }
 
 ### Dispatch = Executor | Dispatch 即执行器
 
@@ -137,7 +255,31 @@ The difference between vanilla Flux and Redux, is the dispatch is a method of th
 
 普通的 Flux 和 Redux 之间的区别，就在于 dispatch 属于 store 当中的一个方法。Store 可以直接分派 action 从而改变我们应用程序的 state。
 
-<script src="https://gist.github.com/abhiaiyer91/6bd273129557e4b4e4fb2144d6a83934.js"></script>
+    import Store from 'store';
+
+    Store.dispatch({
+      type: "ARRANGE_VIEWING",
+      data: {
+        model: "Model S",
+        id: "123"
+      }
+    });
+
+    Store.dispatch({
+      type: "REQUEST_INFO",
+      data: {
+        model: "Model S Battery",
+        id: "123342"
+      }
+    });
+
+    Store.dispatch({
+      type: "BUY_VEHICLE",
+      data: {
+        model: "TESLA 3",
+        id: "23243425"
+      }
+    });
 
 As you can see, pretty similar right!? Knowing the Command Pattern makes learning Redux a lot easier! Trust me!
 
