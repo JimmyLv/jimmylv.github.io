@@ -9,13 +9,11 @@ published: True
 
 原文地址：[Redux and The Command Pattern (Apr 7, by Abhi Aiyer)](https://medium.com/@abhiaiyer/the-command-pattern-c51292e22ea7)
 
-## Redux and The Command Pattern | Redux 和 命令模式
-
 There are two things I know for absolute certainty in the Software industry.
 
 据我所知，软件行业有两件必然确定的事情：
 
-### 1\. Frameworks Always Change | 1. 框架永远都在变化
+## 1\. Frameworks Always Change | 1. 框架永远都在变化
 
 We’ve all been there.
 
@@ -29,7 +27,7 @@ If things always change, then as a Software Engineer your job is to constantly b
 
 如果事情总是在变化，那么作为一名软件工程师，你的工作就是持续不断的学习，以及在你决定使用的库或框架上做出正确的押注。
 
-### 2\. Design Patterns are the foundation of Software Engineering | 2. 设计模式是软件工程的基础
+## 2\. Design Patterns are the foundation of Software Engineering | 2. 设计模式是软件工程的基础
 
 So if we know Frameworks always change, then we have to stick to the foundation of great software: Design Patterns.
 
@@ -39,7 +37,7 @@ Design patterns represent the **best practices** used by experienced software de
 
 设计模式就代表着**最佳实践**，这些实践都是由经验丰富的软件开发者所使用并总结出来的。设计模式**教会你如何思考**。学习设计模式的主要好处就是，你在面对问题的时候能够更加快速地提出解决方案，如果你的同事也有设计模式方面的知识的话，那么每个人就是在说着同样一种语言。虽然现在我在提倡设计模式，但他们并不是最终的解决方案。只要你对于特定问题能有更好的解决方案，那么即使你并没有使用任何设计模式也是 okay 的。
 
-### History Lesson | 历史的教诲
+## History Lesson | 历史的教诲
 
 We can trace design patterns back to Christopher Alexander, author of [Pattern Language](https://en.wikipedia.org/wiki/A_Pattern_Language). Alexander realized that certain methods, over time, created constructs to achieve efficiency. It was then, stemming from Alexander’s work, other publications started coming out. A great one to read is *[Design Patterns: Elements of Reusable Object-Oriented Software](http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612)*. This describes patterns that provided solutions to common software development problems.
 
@@ -49,7 +47,7 @@ A great book for JavaScript developers is by Addy Osmani. It’s available onlin
 
 对于 JavaScript 开发者来说，这儿有一本来自于 Addy Osmani 的好书。你可以在[这里](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)在线查看。
 
-### Command Pattern | 命令模式
+## Command Pattern | 命令模式
 
 The Command Pattern is a great pattern for architecting really clean decoupled systems. The motivation of this pattern is to execute some piece of business logic at some point in the future. The reason why I wanted to touch on the Command Pattern specifically is because I believe its the root pattern of **Redux**. Let’s get into the Command Pattern, then translate this to Redux.
 
@@ -59,7 +57,7 @@ There are several elements to the Command Pattern: the **Receiver**, **Command**
 
 首先要理解命令模式当中的一些基本要素：**Receiver**， **Command**，以及 **Executor**。
 
-#### **The Receiver** | **接收器**
+### **The Receiver** | **接收器**
 
 The receivers job is to hold our business logic. When given a command, it knows how to fulfill that request.
 
@@ -108,7 +106,7 @@ In the traditional command pattern we would encapsulate this information in an o
 
     export default TeslaSalesControl;
 
-#### **The Command** | **命令**
+### **The Command** | **命令**
 
 This contains information about the action being called, and its required parameters. It is represented as an object.
 
@@ -123,7 +121,7 @@ As you can see, the command defines the action. This corresponds to the method t
 
 如你所见，一个**命令**就定义着一个行为， 这与我们在控制对象当中的方法是一致的。在上面的例子中，我们的命令就是执行 “arrangeViewing” 行为。与此同时它也给 arrangeViewing 传入了两个必需的参数：**model** 和 **carId**。
 
-#### **The Executor** | **执行器**
+### **The Executor** | **执行器**
 
 The next thing we need is an interface to executes commands. Lets give our Sales control an execution function. For this function I wanted to write a generic executor that can accept and receiver. The executors job is pass the command to the receiver and call our business logic.
 
@@ -141,7 +139,7 @@ Now we can execute commands from anywhere at any time!
 
 现在我们无论在何时何地都可以执行这些命令了。
 
-#### **Make things happen** | 让奇迹发生
+### **Make things happen** | 让奇迹发生
 
     import execute from 'executor.js';
     import TeslaSalesControl from 'receiver.js';
@@ -164,8 +162,6 @@ Now we can execute commands from anywhere at any time!
       param: ["Tesla 3", "23243425"]
     });
 
-## Compare to Redux | 对比 Redux
-
 Thats it, now how does this compare to Redux!
 
 就是这样，现在让我们来对比一下 Redux！
@@ -174,7 +170,7 @@ In Redux:
 
 在 Redux 中：
 
-### The Store = The Receiver | Store 即接收器
+## The Store = The Receiver | Store 即接收器
 
 The Store is instantiated with “**reducers**”, descriptions on how the Store change. These reducers are pure functions that when called return a new state rather than causing mutations in place. This allows you to have highly predictable and testable code.
 
@@ -220,7 +216,7 @@ Store 会根据 “**reducers**” 进行初始化，描述 Store 是如何变�
 
     export default rootReducer;
 
-.
+
 
     import { applyMiddleware, createStore } from 'redux';
     import createLogger from 'redux-logger';
@@ -235,7 +231,7 @@ Store 会根据 “**reducers**” 进行初始化，描述 Store 是如何变�
     const Store = createStore(rootReducer, {}, applyMiddleware(...middleware));
     export default Store;
 
-### The Action = The Command | Action 即命令
+## The Action = The Command | Action 即命令
 
 The action object represents the description of the command and parameters it needs to execute our state change.
 
@@ -249,7 +245,7 @@ Action 对象则代表着对命令的描述，以及它在执行 state 更改时
       }
     }
 
-### Dispatch = Executor | Dispatch 即执行器
+## Dispatch = Executor | Dispatch 即执行器
 
 The difference between vanilla Flux and Redux, is the dispatch is a method of the store. The Store can dispatch actions to change the state of our application.
 
