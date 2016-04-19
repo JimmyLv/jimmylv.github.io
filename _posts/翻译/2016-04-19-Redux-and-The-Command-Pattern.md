@@ -15,9 +15,7 @@ There are two things I know for absolute certainty in the Software industry.
 
 ## 1\. Frameworks Always Change | 1. 框架永远都在变化
 
-We’ve all been there.
-
-The Vicious cycle:
+We’ve all been there. The Vicious cycle:
 
 而，我们都曾在那里，恶性循环：
 
