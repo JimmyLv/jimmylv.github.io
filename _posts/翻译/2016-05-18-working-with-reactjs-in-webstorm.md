@@ -9,7 +9,7 @@ published: True
 
 ## 1. [Working with ReactJS in WebStorm: Coding Assistance](https://blog.jetbrains.com/webstorm/2015/10/working-with-reactjs-in-webstorm-coding-assistance/)
 
-Posted on *October 5, 2015* by [Ekaterina Prigara](https://blog.jetbrains.com/webstorm/author/ekaterina-prigara/) 
+Posted on *October 5, 2015* by [Ekaterina Prigara](https://blog.jetbrains.com/webstorm/author/ekaterina-prigara/)
 
 > [ReactJS](https://facebook.github.io/react/) is no doubt one of the trendiest JavaScript libraries released recently and as such is seeing wide adoption.
 
@@ -29,9 +29,9 @@ React 首次引入了 **JSX**，一种可以直接在 JavaScript 代码当中直
 
 ![](https://d3nmt5vlzunoa1.cloudfront.net/webstorm/files/2015/10/jsx_language_level.png)
 
-> You can also switch language version to *JSX Harmony* manually in *Preferences | Languages & Frameworks | JavaScript*.
+> You can also switch language version to *JSX Harmony* manually in *`Preferences | Languages & Frameworks | JavaScript`*.
 
-你可以手动地在 *Preferences | Languages & Frameworks | JavaScript* 当中切换语言版本到 *JSX Harmony*。
+你可以手动地在 *`Preferences | Languages & Frameworks | JavaScript`* 当中切换语言版本到 *JSX Harmony*。
 
 > **NB:** Once you have *react.js* library file somewhere in your project, WebStorm will provide you code completion for **React methods** and **React-specific attributes**. By default, the code completion popup displays automatically as you type. For example:
 
@@ -47,9 +47,9 @@ React 首次引入了 **JSX**，一种可以直接在 JavaScript 代码当中直
 
 为了增强代码补全的类型参数信息，我们推荐你可以添加一个 TypeScript 类型定义文件 [react.d.ts](https://github.com/borisyankov/DefinitelyTyped/blob/master/react/react.d.ts)，作为当前项目的 JavaScript 库。
 
-> Go to *Preferences | Languages & Frameworks | JavaScript | Libraries*, click *Download…*, search for *react* and click Download. The file will be added as [JavaScript library](http://blog.jetbrains.com/webstorm/2014/07/how-webstorm-works-completion-for-javascript-libraries/) for WebStorm to use in coding assistance.
+> Go to *`Preferences | Languages & Frameworks | JavaScript | Libraries`*, click *Download…*, search for *react* and click Download. The file will be added as [JavaScript library](http://blog.jetbrains.com/webstorm/2014/07/how-webstorm-works-completion-for-javascript-libraries/) for WebStorm to use in coding assistance.
 
-到 *Preferences | Languages & Frameworks | JavaScript | Libraries* 选项下，点击 *Download…*，搜索 *react* 并点击下载。这个文件将会被添加作为 [JavaScript 库](http://blog.jetbrains.com/webstorm/2014/07/how-webstorm-works-completion-for-javascript-libraries/)，给 WebStorm 用来做为编码辅助。
+到 *`Preferences | Languages & Frameworks | JavaScript | Libraries`* 选项下，点击 *Download…*，搜索 *react* 并点击下载。这个文件将会被添加作为 [JavaScript 库](http://blog.jetbrains.com/webstorm/2014/07/how-webstorm-works-completion-for-javascript-libraries/)，给 WebStorm 用来做为编码辅助。
 
 > Now when you type, you’ll also see information on parameters that you can use in this method:
 
@@ -93,17 +93,17 @@ WebStorm 也可以为 HTML 标签和组件名称提供代码补全，只要你�
 
 ### Emmet in JSX | 在 JSX 中使用 Emmet
 
-> With [Emmet](http://docs.emmet.io/cheat-sheet/) support in WebStorm, you can generate HTML markup really fast. You type an abbreviation that expands to HTML code when you press Tab. You can also use Emmet in JSX code, and that brings us to some special React twists. For example, the abbreviation *div.my-class* would expand in JSX to **<div className=”my-class></div>** and not to **<div class=”my-class></div>** like it would in HTML.
+> With [Emmet](http://docs.emmet.io/cheat-sheet/) support in WebStorm, you can generate HTML markup really fast. You type an abbreviation that expands to HTML code when you press Tab. You can also use Emmet in JSX code, and that brings us to some special React twists. For example, the abbreviation *div.my-class* would expand in JSX to **`<div className=”my-class></div>`** and not to **`<div class=”my-class></div>`** like it would in HTML.
 
-通过 WebStrom 中的 [Emmet](http://docs.emmet.io/cheat-sheet/) 支持，可以让你非常迅速地生成 HTML 标记。你可以在输入缩写后再按 Tab 键就可以自动扩展至 HTML 代码。你也可以在 JSX 代码中使用 Emmet，给我们带来一些专用于 React 的特殊扩展。比如，*div.my-class* 缩写就可以展开成 <div className=”my-class></div> 而不是像 HTML 中的 <div class=”my-class></div>。
+通过 WebStrom 中的 [Emmet](http://docs.emmet.io/cheat-sheet/) 支持，可以让你非常迅速地生成 HTML 标记。你可以在输入缩写后再按 Tab 键就可以自动扩展至 HTML 代码。你也可以在 JSX 代码中使用 Emmet，给我们带来一些专用于 React 的特殊扩展。比如，*`div.my-class`* 缩写就可以展开成 `<div className=”my-class></div>` 而不是像 HTML 中的 `<div class=”my-class></div>`。
 
 ![](https://d3nmt5vlzunoa1.cloudfront.net/webstorm/files/2015/10/react_emmet.gif)
 
 ### Live templates | 动态模板
 
-> Live templates work very similar to Emmet – type a special abbreviation and it will expand into a code snippet. WebStorm has a predefined set of templates for JavaScript and HTML, and you can also create your custom templates for React in *Preferences | Editor | Live templates*.
+> Live templates work very similar to Emmet – type a special abbreviation and it will expand into a code snippet. WebStorm has a predefined set of templates for JavaScript and HTML, and you can also create your custom templates for React in *`Preferences | Editor | Live templates`*.
 
-动态模板和 Emmet 工作方式很像 —— 输入特殊缩写就可以自动展开成代码片段。WebStorm 有着一系列预先定义好的 JavaScript 和 HTML 模板，而且你也可以在 *Preferences | Editor | Live templates* 中为 React 创建自己的自定义模板。
+动态模板和 Emmet 工作方式很像 —— 输入特殊缩写就可以自动展开成代码片段。WebStorm 有着一系列预先定义好的 JavaScript 和 HTML 模板，而且你也可以在 *`Preferences | Editor | Live templates`* 中为 React 创建自己的自定义模板。
 
 > As an example let’s create a live template for creating a new React component:
 
@@ -143,7 +143,7 @@ WebStorm 也可以为 HTML 标签和组件名称提供代码补全，只要你�
 
 ## 2. [Working with ReactJS in WebStorm: Linting, refactoring and compiling](http://blog.jetbrains.com/webstorm/2015/12/working-with-reactjs-in-webstorm-linting-refactoring-and-compiling/)
 
-Posted on *December 30, 2015* by [Ekaterina Prigara](http://blog.jetbrains.com/webstorm/author/ekaterina-prigara/) 
+Posted on *December 30, 2015* by [Ekaterina Prigara](http://blog.jetbrains.com/webstorm/author/ekaterina-prigara/)
 
 > We recently explored [coding assistance](http://blog.jetbrains.com/webstorm/2015/10/working-with-reactjs-in-webstorm-coding-assistance/) that WebStorm provides for React and JSX. Now we would like to talk a bit about the tools in the React ecosystem. In this area it’s not easy to provide a complete overview as tools are developing at a crazy pace. So right now we’ll focus on linters (code quality tools), refactoring and tools that can help us compile code.
 
@@ -161,9 +161,9 @@ Posted on *December 30, 2015* by [Ekaterina Prigara](http://blog.jetbrains.com/w
 
 ![](http://d3nmt5vlzunoa1.cloudfront.net/webstorm/files/2015/12/react-inspection.png)
 
-> You can customize the list of inspections in *Preferences | Editor | Inspections*. Disable those you don’t want to see, or change severity level from warning to error or vice versa.
+> You can customize the list of inspections in *`Preferences | Editor | Inspections`*. Disable those you don’t want to see, or change severity level from warning to error or vice versa.
 
-你可以在 *Preferences | Editor | Inspections* 中定制这一系列的检查。禁掉那些你并不想看到的，或者将安全等级从警告改成错误，反之亦然。
+你可以在 *`Preferences | Editor | Inspections`* 中定制这一系列的检查。禁掉那些你并不想看到的，或者将安全等级从警告改成错误，反之亦然。
 
 > On top of such inspections, you can also use linters like ESLint and JSCS for the JSX code. Let’s talk about these in more detail.
 
@@ -207,9 +207,9 @@ ESLint 本身就可以理解 JSX 语法，如果你在使用 React 的话，作�
 
 ![](http://d3nmt5vlzunoa1.cloudfront.net/webstorm/files/2015/12/eslint-react.png)
 
-> To enable ESLint, go to *Preferences | Languages & Frameworks | JavaScript | Code quality | ESLint* (or simply search for ESLint in Preferences) and check the *Enable* checkbox. WebStorm will automatically locate ESLint in your project’s node_modules folder and then use *.eslintrc* configuration by default.
+> To enable ESLint, go to *`Preferences | Languages & Frameworks | JavaScript | Code quality | ESLint`* (or simply search for ESLint in Preferences) and check the *Enable* checkbox. WebStorm will automatically locate ESLint in your project’s node_modules folder and then use *.eslintrc* configuration by default.
 
-为了启用 ESLint，可以到 *Preferences | Languages & Frameworks | JavaScript | Code quality | ESLint* （或者直接在 Preferences 中搜索 ESLint）然后选中 *Enable* 选项。WebStorm 将会自动找到项目 node_modules 文件夹下的 ESLint 并默认使用 *.eslintrc* 配置。
+为了启用 ESLint，可以到 *`Preferences | Languages & Frameworks | JavaScript | Code quality | ESLint`* （或者直接在 Preferences 中搜索 ESLint）然后选中 *Enable* 选项。WebStorm 将会自动找到项目 node_modules 文件夹下的 ESLint 并默认使用 *.eslintrc* 配置。
 
 ![](http://d3nmt5vlzunoa1.cloudfront.net/webstorm/files/2015/12/eslint-enable.png)
 
