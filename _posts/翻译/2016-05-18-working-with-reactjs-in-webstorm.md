@@ -171,7 +171,7 @@ Posted on *December 30, 2015* by [Ekaterina Prigara](http://blog.jetbrains.com/w
 
 ### ESLint
 
-> **[ESLint**](http://eslint.org/) is a linting utility that provides a wide range of linting rules, which can also be extended with plugins. WebStorm integrates with ESLint and allows you to see warnings as errors reported by ESLint right in the editor, as you type.
+> **[ESLint](http://eslint.org/)** is a linting utility that provides a wide range of linting rules, which can also be extended with plugins. WebStorm integrates with ESLint and allows you to see warnings as errors reported by ESLint right in the editor, as you type.
 
 **[ESLint**](http://eslint.org/) 是一种规范工具，提供了非常广泛的 linting 规则，并可以通过插件的方式进行扩展。WebStorm 集成了 ESLint， 并且让你在输入的时候就可以在编辑器中看到 ESLint 所报告的警告和错误。
 
