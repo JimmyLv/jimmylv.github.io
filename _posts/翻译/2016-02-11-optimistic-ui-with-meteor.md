@@ -33,7 +33,7 @@ Meteor 是一个全栈 *JavaScript* 平台，在从数据库到响应式 UI 渲�
 
 ![](http://cdn2.hubspot.net/hubfs/520701/Blog/optimistic-ui-latency-compensation.png?t=1454978788743)
 
-## Users of modern web apps expect the UI to respond instantly | 用户期望现代 web 应用 UI 能狗够即时响应
+## Users of modern web apps expect the UI to respond instantly | 用户期望现代 web 应用 UI 能够即时响应
 
 > When a user pushes a button in a website or a mobile app, they don't want to wait for a request to be sent all the way to the server to calculate the new state of the screen. Using the basic AJAX model of calculating the results on the server and then displaying them to the user will cause your app to feel laggy, and sometimes inconsistent with the user's input. Mobile developers especially need to worry about this because cellular networks can be unreliable, sometimes taking a second or more to deliver a result from your server.
 
