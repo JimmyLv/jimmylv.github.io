@@ -325,7 +325,7 @@ JavaScript 和 CSS 资源都会阻塞页面的渲染。通过采取某些的规�
 
 [Jake Archibald](https://jakearchibald.com/2016/streams-ftw/#streaming-results) 最近的一篇博文详细描述了一种有趣的技术，可以用于加速渲染时间：将 service workers 和流结合起来。结果非常令人叹服：
 
-<iframe width="600" height="400" src="https://www.youtube.com/embed/Cjo9iq8k-bc" frameborder="0" allowfullscreen=""></iframe>
+<iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/Cjo9iq8k-bc">VIDEO</iframe>
 
 > Unfortunately this technique requires APIs that are still in flux, which is why it is an interesting concept but can't really be applied now. The gist of the idea is to put a service worker between a site and the client. The service worker can cache certain data (like headers and stuff that doesn't change often) while fetching what is missing. The content that is missing can then be streamed to the page to be rendered as soon as possible.
 
