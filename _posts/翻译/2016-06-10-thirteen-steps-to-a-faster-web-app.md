@@ -11,7 +11,7 @@ published: True
 
 > Web apps are now more interactive than ever. Getting that last drop of performance can do a great deal to improve your end-users' experience. Read the following tips and learn if there is anything more you can do to improve latency, render times and general performance!
 
-时过境迁，Web 应用比以往任何时候都更具交互性。搞定性能可以帮助你极大地改善终端用户的体验。阅读以下的技巧并学以致用，看看哪些用来改善延迟，渲染时间以及整体性能吧！
+时过境迁，Web 应用比以往任何时候都更具交互性。搞定性能可以帮助你极大地改善终端用户的体验。阅读以下的技巧并学以致用，看看哪些可以用来改善延迟，渲染时间以及整体性能吧！
 
 - - - - - - - - - - -
  
