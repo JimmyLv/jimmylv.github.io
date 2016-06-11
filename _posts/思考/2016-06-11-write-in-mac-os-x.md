@@ -39,7 +39,7 @@ published: True
 
 使用（全局、局部）快捷键打开特定软件、特定功能，并形成肌肉记忆：
 
-- `^ + Number` 打开 Desktop，缺憾是不能打开全屏应用，故少用全屏为妙，当进入全屏后，即为专注于一个/两个软件的时候
+- `^ + Number` 打开不同的 Desktop，缺憾是不能打开全屏应用，故少用全屏为妙，当进入全屏后，即为专注于一个/两个软件的时候，不再切换。
 - `alt + Number` 打开常用的必用软件，比如 Chrome，Sublime，IDEA。多谢 [Snap - Launch apps in a snap!](http://indragie.com/snap/)
 - `Cmd + Number` 就是在特定软件中，打开不同的 Tab，比如 Chrome 中和 iTerm2 中的不同标签页。
 
