@@ -91,7 +91,7 @@ published: True
 
 - 换了个截图工具，[腾讯出品](http://sspai.com/33021)，可以直接截图后编辑，但是窗口截图的时候没办法消除阴影（虽然我觉得阴影挺好看的）。
 - 于是我自己设了一个 Alfred 的 WorkFlow 用来关闭和打开系统自带截图的阴影。参考：[一篇文章，解决 Mac 截图的所有问题 - 爱范儿](http://www.ifanr.com/app/546621)
-- 另外用上了一个好用 Alfred 的 WorkFlow，[tiann/markdown-img-upload: markdown图片实用工具](https://github.com/tiann/markdown-img-upload)，可以直接快捷键上传文件以及生产 md 链接。
+- 另外用上了一个好用 Alfred 的 WorkFlow，[tiann/markdown-img-upload: markdown图片实用工具](https://github.com/tiann/markdown-img-upload)，可以直接快捷键上传文件并生成 Markdown 格式的图片链接。
 - 进一步考虑 GIF 的录制，感觉小功能需要演示才倍感酸爽啊。我已经下载过的有 Gifrocket，是将视频转成 GIF 的，而[Mac 上怎么能少了一款好用的 GIF 录制工具？ - Pinapps - 感谢那些赐予我们力量的 apps - 知乎专栏](https://zhuanlan.zhihu.com/p/20732038?refer=pinapps)
 
 ![](http://7xjbdq.com1.z0.glb.clouddn.com/images/2016/1465614364872.png)
