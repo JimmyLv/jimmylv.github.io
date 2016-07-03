@@ -122,7 +122,7 @@ user/
 
 通过合并容器和相关组件还可以让代码变得更加易读。Redux 将连接状态的*容器*和无状态的哑巴*组件*区分开来。大部分教程都使用两个独立的文件来反映了这种区别：
  
-```js
+```jsx
 // in Product.js
 export default function Product({ name, description }) {
     return <div>
@@ -156,7 +156,7 @@ export default connect(mapStateToProps, mapDispatchToProps)(Product);
 
 区分组件和容器的唯一一个实际好处就是有利于组件的单元测试（根本无需 Redux）。99% 的情况下，这个组件都不会在容器以外的地方被用到。那么，ES6 允许一个文件不止导出一个元素对吧？然后我就可以把这两部分代码合并到一个文件里，并且默认导出的是容器，而 Production 则导出作为组件：
  
-```js
+```jsx
 // in Product.js
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
