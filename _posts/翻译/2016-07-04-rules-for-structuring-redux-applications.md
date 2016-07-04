@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rules For Structuring (Redux) Applications
+title: 【译】Redux + React 应用程序架构的 3 条规则
 categories: [翻译]
 tags: [Redux, React, FED, DX, Architecture]
 published: True
