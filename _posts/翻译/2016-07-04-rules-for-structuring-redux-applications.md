@@ -11,7 +11,7 @@ published: True
 
 > As our applications grow, we often find that file structure and organization to be crucial for the maintainability of application code.
 
-随着应用程序的增长，通常我们就会发现，文件结构和组织对应用程序代码的可维护性来说就会变得非常重要。
+随着应用程序的增长，通常我们就会发现文件结构和组织对于应用程序代码的可维护性来说就会变得非常重要。
 
 > What I want to do in this post is to present three organizational rules that I personally follow on my own projects. By following the rules, your application code should be easier to reason about, and you will find yourself wasting less time on file navigation, tedious refactoring, and bug fixes.
 
