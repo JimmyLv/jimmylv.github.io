@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 【译】Redux + React 应用程序架构的 3 条规则
+title: 【译】Redux + React 应用程序架构的 3 条规范（内含实例）
 categories: [翻译]
 tags: [Redux, React, FED, DX, Architecture]
 published: True
@@ -11,11 +11,11 @@ published: True
 
 > As our applications grow, we often find that file structure and organization to be crucial for the maintainability of application code.
 
-随着应用程序的增长，我们常常就会发现，文件结构和组织对应用程序代码的可维护性来说就会变得非常重要。
+随着应用程序的增长，通常我们就会发现，文件结构和组织对应用程序代码的可维护性来说就会变得非常重要。
 
 > What I want to do in this post is to present three organizational rules that I personally follow on my own projects. By following the rules, your application code should be easier to reason about, and you will find yourself wasting less time on file navigation, tedious refactoring, and bug fixes.
 
-在这篇文章里，我会介绍自己在项目中亲自实践的有关文件组织的三条规则。通过遵循这些规则，你的应用程序代码将会变得更加易读，并且你会发现自己不用再浪费时间在文件导航，频繁重构以及 Bug 修复上了。
+在这篇文章里，我会介绍自己在项目中亲自实践的三条组织规则。通过遵循这些规则，你的应用程序代码将会变得更加易读，而且你会发现自己不用再把时间浪费在文件导航，频繁重构以及 Bug 修复上了。
 
 > I hope that these tips will prove useful for developers who want to improve their application structure, but don’t know where to start.
 
@@ -26,7 +26,7 @@ published: True
 
 > The following are some basic rules for structuring a project. It should be noted that the rules themselves are framework and language agnostic, so you should should be able to follow them in all situations. However, the examples are in React and Redux. Familiarity with these frameworks is useful.
 
-接下来的内容就是关于构建一个项目的一些基本规则。需要注意的是，这些规则本身是跟框架和语言无关的，所以你应该在所有的情况下都是可以遵循他们的。但在这里，我们是以 React 和 Redux 为例，熟悉这些框架将会很有帮助。
+接下来的内容就是关于构建一个项目的一些基本规则。需要注意的是，这些规则本身是跟框架和语言无关的，所以你在所有的情况下都应该可以遵循这些规则。但在这里，我们是以 React 和 Redux 为例，熟悉这些框架将会很有帮助。
 
 ### Rule #1: Organize by feature | 规则 #1: 基于特性进行组织
 
@@ -77,11 +77,11 @@ app/
 
 > When you add and change features, you’ll start to notice that some groups of objects tend to change together. **These objects group together to form a feature module**. For example, in a todo app, when you change the `reducers/todos.js` file, it is likely that you will also change `actions/todos.js` and `components/todos/*.js`.
 
-每当你添加或修改特性的时候，你会开始注意到某些部分的对象倾向于同时发生改变。**这些对象归在一起可以共同构成一个特性模块**。比如说，在一个 Todo 应用里，每当你改变 `reducers/todos.js` 文件，很可能你也会改变 `actions/todos.js` 和 `components/todos/*.js`。
+每当你添加或修改特性的时候，你就会开始注意到某些部分的对象倾向于同时发生改变。**将这些对象归在一起可以共同构成一个特性模块**。比如说，在一个 Todo 应用里，每当你改变 `reducers/todos.js` 文件，很可能你也会改变 `actions/todos.js` 和 `components/todos/*.js`。
 
 > Instead of wasting time scrolling through your directories looking for todos related files, it is much better to have them sitting in the same location.
 
-相反，为了不再浪费时间浏览目录去寻找跟 todos 有关的文件，还是将它们放到同一个地方会明显比较好。
+相反，为了不再把时间浪费在浏览目录去寻找跟 todos 有关的文件，还是将它们放到同一个地方会明显比较好。
 
 > **A better way to structure Redux + React project:**
 
@@ -121,11 +121,11 @@ Rich Hickey 在他的 Ruby Conf 2012 演讲 [Simplicity Matters](https://www.you
 
 > The relevence of complexity to project structure is that when you place objects in **close proximity** to one another, the **barrier to couple** them lowers dramatically.
 
-项目结构的复杂相关度就是，当你把一个对象**靠近于**另外一个对象，他们之间的**耦合障碍**显著减少。
+项目结构的复杂相关度就是，当你把一个对象**靠近于**另外一个对象，将其**耦合到一起的障碍**就会显著减少。
 
 > As an example, let’s say that we want to add a new feature to our TODO app: We want the ability to manage TODO lists by *project*. That means we will create a new module called projects.
 
-作为示例，让我们来给 TODO 应用添加一个新特性：我们想要根据 *project* 管理 TODO 列表的能力。这就意味着我们将要创建一个名为 `projects` 的新模块。
+作为示例，让我们来给 TODO 应用添加一个新特性：我们想要根据 *project* 来管理 TODO 列表。这就意味着我们将要创建一个名为 `projects` 的新模块。
 
 ```
 projects/
@@ -222,7 +222,7 @@ const ProjectTodosContainer = connect(
 
 > By artificially creating strict module boundaries, we can simplify our application code, and in turn increase the maintainability of our application. **Instead of haphazardly reaching inside other modules, we should think about forming and maintaining contracts between them.**
 
-通过人为地设计严格的模块边界，我们可以简化应用代码，并且反过来增加应用的可维护性。**无需涉及其他模块的内部，我们应当思考模块之间契约的形式和维持。**
+通过人为地设计严格的模块边界，我们可以简化应用代码，并且反过来增加应用的可维护性。**无需涉及其他模块的内部，我们应当思考模块之间契约的形式和维护。**
 
 > Now that the projects are organized by features, and we have explicit boundaries between each feature, there is one last thing I want to cover: *circular dependencies*.
 
@@ -232,7 +232,7 @@ const ProjectTodosContainer = connect(
 
 > It shouldn’t take too much convincing for you to believe me when I say that circular dependencies are bad. Yet, without proper project structure, it is all too easy to fall into this trap.
 
-不用太费口舌应该就能让你相信「循环依赖是很糟糕的」这种言论。但是，如果没有适当的项目结构的话，还是会很容易就掉进了这个坑里。
+「循环依赖是很糟糕的」，这应该不用太费口舌就能让你相信我说的话。但是，如果没有适当的项目结构的话，还是会很容易就掉进了这个坑里。
 
 > Most of the time, dependencies start out innoculously. We may *think* that the projects module need to reduce some state based on todos actions. If we are not grouping by features, and we see a large manifest of all action types within a global `actionTypes.js` file, it is all too easy for us to just reach in and grab what we need (at the time) without a second thought.
 
@@ -240,7 +240,7 @@ const ProjectTodosContainer = connect(
 
 > Say, that within todos we want to reduce state based on an action type of projects. Easy enough if we have a global `actionTypes.js` file. However, we will soon learn that this is no easy feat if we have explicit module boundaries. To illustrate why, consider the following example.
 
-假设，在 `todos` 内部我们又想要根据 `projects` 的 action 类型来 reduce state。如果我们已经有了一个全局的 `actionTypes.js` 文件的话，这已经足够简单了。但是很快我们就会明白，要是我们有了清晰的模块边界的话这些就不足挂齿了。为了说明为什么，来看看以下的实例。
+假设，在 `todos` 内部我们又想要根据 `projects` 的 action 类型来 reduce 状态。如果我们已经有了一个全局的 `actionTypes.js` 文件的话，这应该已经足够简单了。但是很快我们就会明白，要是我们有了清晰的模块边界的话这些就不足挂齿了。为了说明原因，来看看以下的实例。
 
 #### Circular dependency example | 循环依赖示例
 
@@ -276,7 +276,7 @@ a(); // ???
 
 > We might expect “Hello Alice!” to be printed, but in actuality, a() would print “Hello undefined!”. This is because the name export of a is not available when a is imported by b (due to circular dependencies).
 
-我们可能会期待「Hello Alice!」会被打印出来，但其实 `a()` 会输出「Hello undefined!」。这是因为 `a` 的命名导出，在 `a` 是由 `b` 引入的时候并不可用（由于循环引用）。
+我们可能会期待 “Hello Alice!” 会被打印出来，但其实 `a()` 会输出 “Hello undefined!”。这是因为 `a` 的命名导出，在 `a` 是由 `b` 引入的时候并不可用（由于循环引用）。
 
 > The implication here is that we **cannot both have projects depend on action types within todos *and* todos depend on action types within projects.** You can get around restriction in clever ways, but if you go down this road I can guarantee you that it will come to bite you later on!
 
@@ -298,11 +298,11 @@ a(); // ???
 
 遵循规则 #2，你就很难会制造出这种循环依赖了。不要与之对抗，而是用这份精力来适当地分解你的模块。
 
-## In-depth example and recommendations | 深入的示例和规范推荐
+## In-depth example and recommendations | 深入的实例和规范推荐
 
 > I want to do a deeper dive into the contents of the different files within a Redux and React application. This section will be specifically about these frameworks, so feel free to skip if you are not interested in them. :)
 
-接下来我想要深入到 Redux 和 React 应用当中不同文件的具体内容。这个部分将会特别针对于这些框架，要是你不感兴趣的话随你便可以跳过去。:)
+接下来我想要深入到 Redux 和 React 应用当中不同文件的具体内容。这部分将会特别针对这些框架，要是你不感兴趣的话可以随你便跳过去。:)
 
 > Let’s take a look at our TODO app again. (I added constants, model, and selectors into this example)
 
@@ -330,7 +330,7 @@ rootReducer.js
 
 > The module index is responsible for maintaining its public API. This is the exposed surface where modules can interface with each other.
 
-模块 `index` 就是负责维护模块的公共 API。这是模块和模块相互之间进行交互而暴露的地方。
+模块 `index` 就是负责维护模块的公共 API。这是模块和模块之间相互进行交互而暴露的地方。
 
 > A minimum Redux + React application should be something like this.
 
@@ -392,7 +392,7 @@ export const add = (text) => ({
 
 > Note that I don’t necessarily need to use `addTodo` since I’m already in the todos module. In other modules I may use an action creator as follows.
 
-注意到我并没有必要去使用 `addTodo`，因为我已经在这个 todos 模块里面了。在其他模块里我就可以像下面这样使用一个 action creator。
+注意到我并没有必要去使用 `addTodo`，因为我已经在这个 todos 模块里面了。在其他模块里我也就可以像下面这样使用一个 action creator。
 
 ```
 import todos from 'todos';
@@ -433,7 +433,7 @@ export const filterActive = todos => todos.filter(t => !t.completed);
 
 > For the reducers, each module should maintain their own state as before. However, there is one particular coupling that should be solved. That is, a module’s reducer does not usually get to choose where it is mounted in the overall application state atom.
 
-对于 reducers 来说，每个模块都应该跟以前一样只维护自己的状态。但是这儿有一种特殊的解耦应当被解决，即一个模块的 reducer 通常不会去决定它在哪里被装载到整个应用状态原子当中。
+对于 reducers 来说，每个模块都应该跟以前一样只维护自己的状态。但是这儿有一种特殊的耦合应当被解决，即一个模块的 reducer 通常不会去决定它在哪里被装载到整个应用状态原子当中。
 
 > This is problematic, because it means our **module selectors** (which we will cover next) will be **indirectly coupled to the root reducer**. In turn, the module components will also be coupled to the root reducer.
 
@@ -556,7 +556,7 @@ export default connect(
 
 > That’s it in terms of my recommendations. But before we go, there is one last topic I want to discuss: How to detect project smells.
 
-这就是按照我所推荐规范所写的内容了。但是在我们结束之前，还有最后一个我想要讨论的主题：如何发现项目坏味道。
+这就是按照我所推荐规范的内容了。但是在我们结束之前，还有最后一个我想要讨论的主题：如何发现项目坏味道。
  
 ## Litmus test for project structure | 项目结构的石蕊测试
 
@@ -566,7 +566,7 @@ export default connect(
 
 > Every once in a while, pick a module in your application and **try to extract it as an external module** (e.g. a NodeJS module, Ruby gem, etc). You don’t have to actually do it, but at least think it through. If you can perform this extraction without much effort then you know it is well factored. The term “effort” here remains undefined, so you need to come up with your own measure (whether subjective or objective).
 
-每隔一段时间，从你的应用当中挑选一个模块，并且**尝试将它抽取成一个外部模块**（比如，一个 NodeJS 模块，Ruby gem 等等）。你不用实际这么去做，但至少像那样去思考。如果你可以不用花太多 efforts 就可以完成抽取，那么你就知道这个模块已经被很好得分解了。在这里的 “effort” 并没有被下定义，所以你还是需要自己去衡量（无论是主观或者客观）。
+每隔一段时间，从你的应用当中挑选一个模块，并且**尝试将它抽取成一个外部模块**（比如，一个 NodeJS 模块，Ruby gem 等等）。你不用实际这么去做，但至少像那样去思考。如果你不用花太多 efforts 就可以完成抽取，那么你就知道这个模块已经被很好得分解了。在这里的 “effort” 并没有被下定义，所以你还是需要自己去衡量（无论是主观或者客观）。
 
 > Run this experiment with other modules in your application. Jot down any problems you find in your experiments: circular dependencies, modules breaching boundaries, etc.
 
@@ -574,7 +574,7 @@ export default connect(
 
 > Whether you choose to take action based on your findings is up to you. Afterall, the software industry is all about tradeoffs. But at the very least it should give you a much better insight into your project structure.
 
-基于你的发现，无论你选择采取何种操作都取决于你。毕竟，软件行业就是一个跟权衡整个相关的行业。但至少这应该会让你对自己的项目结构有更好的深入了解。
+基于你的发现，无论你选择采取何种操作都取决于你。毕竟，软件行业就是一个与折衷息息相关的行业。但至少这应该会让你对自己的项目结构有更深入的了解。
  
 ## Closing | 收尾
 
