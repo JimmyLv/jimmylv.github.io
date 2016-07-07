@@ -392,6 +392,8 @@ e.g. `ShoppingCartActionCreators.addItem(…)`
 2. 一个处理显示汇总，税，配送和包装，以及总数的视图。
 3. 一个处理购物车中物品的个数，以及下拉详情菜单的视图。
 
+![](http://7xjbdq.com1.z0.glb.clouddn.com/images/2016/1467904299891.png)
+
 > In this system, we don’t want to tie different views and controllers directly to a ShoppingCart model because changes to the model causes a complex data flow that is hard to reason about.
 
 在这个系统中，我们不想把不同的视图和控制器直接绑定到 ShoppingCart 一个模型上，因为这个模型的修改将会导致难以理解的复杂数据流。
