@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 什么是 Flux 架构？（关于 Flux，DDD，以及 CQRS）
+title: 【译】什么是 Flux 架构？（关于 Flux，DDD，以及 CQRS）
 categories: [翻译]
 tags: [Flux, DDD, CQRS, Architecture, MVC]
 published: True
