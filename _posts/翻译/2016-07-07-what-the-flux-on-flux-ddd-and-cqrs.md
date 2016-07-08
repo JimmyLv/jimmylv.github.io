@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 【译】什么是 Flux 架构？（关于 Flux，DDD，以及 CQRS）
+title: 【译】什么是 Flux 架构？（兼谈 DDD 和 CQRS）
 categories: [翻译]
 tags: [Flux, DDD, CQRS, Architecture, MVC]
 published: True
@@ -21,7 +21,7 @@ published: True
 
 > While the Flux pattern may have found a new home in JavaScript applications, they have been explored before in **Domain-Driven Design** (DDD) and **Command-Query Responsibility Segregation** (CQRS). I think it is useful to learn from these older concepts, and see what they may tell us about the present.
 
-虽然 Flux 模式在 JavaScript 应用里像是找到了新家一样，但是它们肯定也借鉴了 **领域驱动设计** (DDD) 和 **命令-查询职责分离** (CQRS)。我觉得学习这些以前的概念非常有用，来看看它们会告诉我们和现在有怎样的故事。
+虽然 Flux 模式在 JavaScript 应用里像是找到了新家一样，但是它们肯定也借鉴了**领域驱动设计** (DDD) 和**命令-查询职责分离** (CQRS)。我觉得学习这些以前的概念非常有用，来看看它们会告诉我们和现在有怎样的故事。
 
 #### In this post I will: | 在这篇文章我将：
 
