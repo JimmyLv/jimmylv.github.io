@@ -13,7 +13,7 @@ published: True
 
 > There are several implementations of Flux. Frameworks like [Fluxxor](http://jaysoo.ca/2015/02/06/what-the-flux/fluxxor.com) keep to the original Facebook Flux pattern, but reduces the amount of boilerplate code. While other frameworks like [Reflux](https://github.com/spoike/refluxjs) and [Barracks](https://github.com/yoshuawuyts/barracks) stray from the canonical Flux architecture by getting rid of the Dispatcher (Reflux) or ActionCreators (Barracks). So which framework should you choose?
 
-现在已经有了一大堆 Flux 的实现。像 [Fluxxor](http://jaysoo.ca/2015/02/06/what-the-flux/fluxxor.com) 这样的框架在保持原生 Facebook Flux 模式的同时，减少了大量的样板文件代码。与此同时，其他类似 [Reflux](https://github.com/spoike/refluxjs) 和 [Barracks](https://github.com/yoshuawuyts/barracks) 之类的框架则偏离了规范的 Flux 架构，Reflux 摒弃了 Dispatcher，而 Barracks 则 抛弃了 ActionCreators。所以你会选择哪个框架呢？
+现在市面上有一大堆的 Flux 实现。像 [Fluxxor](http://jaysoo.ca/2015/02/06/what-the-flux/fluxxor.com) 这样的框架在保持原生 Facebook Flux 模式的同时，减少了大量的样板文件代码。与此同时，其他类似 [Reflux](https://github.com/spoike/refluxjs) 和 [Barracks](https://github.com/yoshuawuyts/barracks) 之类的框架则偏离了规范的 Flux 架构，Reflux 摒弃了 Dispatcher，而 Barracks 则 抛弃了 ActionCreators。所以你会选择哪个框架呢？
 
 > Before we get too wrapped up about what is canon, and whether we should be deviating from them, let’s consider a look into the past.
 
@@ -21,7 +21,7 @@ published: True
 
 > While the Flux pattern may have found a new home in JavaScript applications, they have been explored before in **Domain-Driven Design** (DDD) and **Command-Query Responsibility Segregation** (CQRS). I think it is useful to learn from these older concepts, and see what they may tell us about the present.
 
-虽然 Flux 模式在 JavaScript 应用里像是找到了新家一样，但是它们肯定也经历过了 **领域驱动设计** (DDD) 和 **命令-查询职责分离** (CQRS)。我觉得学习这些以前的概念非常有用，来看看它们会告诉我们和现在有怎样的故事。
+虽然 Flux 模式在 JavaScript 应用里像是找到了新家一样，但是它们肯定也借鉴了 **领域驱动设计** (DDD) 和 **命令-查询职责分离** (CQRS)。我觉得学习这些以前的概念非常有用，来看看它们会告诉我们和现在有怎样的故事。
 
 #### In this post I will: | 在这篇文章我将：
 
@@ -33,7 +33,7 @@ published: True
 1. Flux 架构概述
 2. 描述 CQRS 模式
 3. Flux 如何应用来自 CQRS 的概念
-4. 讨论 Flux 应用于 JavaScript 应用的时机
+4. 讨论 Flux 何时适用于 JavaScript 应用
     
 > > Knowledge of DDD is assumed, though the article still provides value without it. To learn more about DDD, I recommend this [free ebook](http://www.infoq.com/minibooks/domain-driven-design-quickly) from InfoQ on the subject. 
 
