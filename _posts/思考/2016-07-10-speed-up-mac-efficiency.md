@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 全面思考：Mac + iPhone 系统效率加速战略篇 && 战术篇
+title: 全面思考：Mac + iPhone 效率加速之战略篇 && 战术篇
 categories: [思考]
 tags: [写作, Mac, 学习, 效率]
 published: True
