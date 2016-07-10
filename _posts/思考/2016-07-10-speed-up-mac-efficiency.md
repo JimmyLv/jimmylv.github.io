@@ -144,8 +144,8 @@ published: True
                 - Cmd + Option + B 加粗
                 - Cmd + Option + I 斜体
                 - Cmd + Shift + ./, 切换 indent quote
-                - alt + shift + 6 该把注脚这个功能用起来啦，用于必要的解释
+                - Option + Shift + 6 该把注脚这个功能用起来啦，用于必要的解释
     + 命令行 @iTerm2 && @oh-my-zsh
     + 代码编辑 @Intellij IDEA && Webstorm
 
-![](http://7xjbdq.com1.z0.glb.clouddn.com/images/2016/1468141309796.png)
+![](http://7xjbdq.com1.z0.glb.clouddn.com/images/2016/1468147103565.png)
