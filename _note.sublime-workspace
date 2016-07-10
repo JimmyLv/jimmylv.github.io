@@ -1,0 +1,1597 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"命令",
+				"命令处理器"
+			],
+			[
+				"Shopp",
+				"ShoppingCart"
+			],
+			[
+				"Action",
+				"ActionCreator"
+			],
+			[
+				"Sho",
+				"ShoppingCartCommandHandler"
+			],
+			[
+				"Car",
+				"CartTotalStore"
+			],
+			[
+				"Shp",
+				"ShoppingCart"
+			],
+			[
+				"SHopp",
+				"ShoppingCart"
+			],
+			[
+				"Repo",
+				"Repository"
+			],
+			[
+				"Sh",
+				"ShoppingCart"
+			],
+			[
+				"Con",
+				"Controller"
+			],
+			[
+				"Dis",
+				"Dispatcher"
+			],
+			[
+				"sele",
+				"selectors"
+			],
+			[
+				"redu",
+				"reducer"
+			],
+			[
+				"reduc",
+				"reducers"
+			],
+			[
+				"cre",
+				"creator"
+			],
+			[
+				"optim",
+				"optimization"
+			],
+			[
+				"mar",
+				"mark	Tag"
+			],
+			[
+				"lin",
+				"linters"
+			],
+			[
+				"Web",
+				"WebStorm"
+			],
+			[
+				"pro",
+				"profile"
+			],
+			[
+				"first",
+				"firstName"
+			],
+			[
+				"bind",
+				"bindToController"
+			],
+			[
+				"ex",
+				"expect"
+			],
+			[
+				"roo",
+				"rooms〔variable〕"
+			],
+			[
+				"fr",
+				"fromJS"
+			],
+			[
+				"if",
+				"if	if"
+			],
+			[
+				"fun",
+				"fun	Function"
+			],
+			[
+				"ne",
+				"nextNextState"
+			],
+			[
+				"imp",
+				"import〔keyword〕"
+			],
+			[
+				"pact",
+				"pactverify"
+			],
+			[
+				"lo",
+				"loyalty"
+			],
+			[
+				"Jav",
+				"JavaScript"
+			],
+			[
+				"vaoff",
+				"var_hpr_off"
+			],
+			[
+				"va",
+				"var_hpl_on_sum"
+			],
+			[
+				"ca",
+				"cali_val_hp_left"
+			],
+			[
+				"Aud",
+				"AudioMTKHardware"
+			],
+			[
+				"sta",
+				"status"
+			],
+			[
+				"cha",
+				"channels"
+			],
+			[
+				"un",
+				"unint32_t"
+			],
+			[
+				"CuS",
+				"CUSTOM_VOLUME_SPEAKER_MODE"
+			],
+			[
+				"VO",
+				"VOLUME_SPEAKER_MODE"
+			],
+			[
+				"pT",
+				"pTagert"
+			],
+			[
+				"sc",
+				"screen"
+			],
+			[
+				"new",
+				"newTest.txt"
+			],
+			[
+				"re",
+				"res_data〔variable〕"
+			],
+			[
+				"jiajia",
+				"jiajia2.md"
+			],
+			[
+				"c",
+				"content"
+			],
+			[
+				"style",
+				"style={styles"
+			],
+			[
+				"View",
+				"ViewCSS〔class〕"
+			],
+			[
+				"fi",
+				"filename〔variable〕"
+			],
+			[
+				"p",
+				"pattern"
+			],
+			[
+				"pa",
+				"pattern〔variable〕"
+			],
+			[
+				"md",
+				"mdi	Markdown_image_(mdi)"
+			],
+			[
+				"m",
+				"month"
+			],
+			[
+				"sum",
+				"sum_money_per_month〔function〕"
+			],
+			[
+				"Gihub",
+				"Github"
+			],
+			[
+				"mdl",
+				"mdl	Markdown_link_(mdl)"
+			],
+			[
+				"pre",
+				"presentation"
+			],
+			[
+				"微信",
+				"微信公众号开发"
+			],
+			[
+				"send",
+				"send_msg"
+			],
+			[
+				"air",
+				"air_index〔variable〕"
+			],
+			[
+				"vo",
+				"voMeasured"
+			],
+			[
+				"MQ",
+				"MQ-2"
+			],
+			[
+				"cal",
+				"cal_voltage〔variable〕"
+			],
+			[
+				"pm",
+				"pm2.5"
+			],
+			[
+				"rep",
+				"response〔variable〕"
+			],
+			[
+				"js",
+				"json_str〔variable〕"
+			],
+			[
+				"RAM",
+				"RAM_stats"
+			],
+			[
+				"tem",
+				"temp_and_hum"
+			],
+			[
+				"rea",
+				"read_channel"
+			],
+			[
+				"传感器",
+				"传感器数据处理"
+			],
+			[
+				"mong",
+				"mongoose〔variable〕"
+			],
+			[
+				"Mov",
+				"MovieDAO"
+			],
+			[
+				"mon",
+				"mongoose"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"onc",
+				"onclick	Attr"
+			],
+			[
+				"ar",
+				"arg"
+			],
+			[
+				"in",
+				"indexOf"
+			],
+			[
+				"arg",
+				"arg"
+			],
+			[
+				"ke",
+				"key"
+			],
+			[
+				"s",
+				"split"
+			],
+			[
+				"exp",
+				"expect"
+			],
+			[
+				"de",
+				"depth"
+			],
+			[
+				"cpuli",
+				"cpulineused"
+			],
+			[
+				"cpu",
+				"cpu_used"
+			],
+			[
+				"C",
+				"CPU_temp"
+			],
+			[
+				"g",
+				"get_GPU_temp"
+			],
+			[
+				"R",
+				"RAM_total"
+			],
+			[
+				"Gp",
+				"GPU_temp"
+			],
+			[
+				"Cpu",
+				"CPU_temp"
+			],
+			[
+				"get_c",
+				"get_cpu_use"
+			],
+			[
+				"r",
+				"read_hum"
+			],
+			[
+				"air_",
+				"air_temp"
+			],
+			[
+				"T",
+				"TEMPERATURE"
+			],
+			[
+				"h",
+				"html_data"
+			],
+			[
+				"po",
+				"post_img_dir"
+			],
+			[
+				"imgs",
+				"imgs_dir"
+			],
+			[
+				"im",
+				"img_dir_name"
+			],
+			[
+				"fil",
+				"filename"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "_drafts/speed-up-mac-efficiency.md",
+			"settings":
+			{
+				"buffer_size": 3818,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"jekll",
+				"Jekyll: Edit template"
+			],
+			[
+				"j",
+				"Jekyll: Edit _config.yml"
+			],
+			[
+				"rename ",
+				"File: Rename"
+			],
+			[
+				"j d",
+				"Jekyll: New draft"
+			],
+			[
+				"new dr",
+				"Jekyll: New draft"
+			],
+			[
+				"gp",
+				"Git: Push"
+			],
+			[
+				"qu",
+				"Git: Quick Commit"
+			],
+			[
+				"sidebar",
+				"View: Toggle Side Bar"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"remove pack",
+				"Package Control: Remove Package"
+			],
+			[
+				" jekyll new te",
+				"Jekyll: New template"
+			],
+			[
+				" jekyll new post",
+				"Jekyll: New post from template"
+			],
+			[
+				"jekyll",
+				"Jekyll: Browse templates..."
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			],
+			[
+				"quic",
+				"Git: Quick Commit"
+			],
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"git qu",
+				"Git: Quick Commit"
+			],
+			[
+				"rename",
+				"File: Rename"
+			],
+			[
+				" move",
+				"File: Move"
+			],
+			[
+				"side",
+				"View: Toggle Side Bar"
+			],
+			[
+				"open",
+				"Evernote: Open Evernote Note"
+			],
+			[
+				"remove ",
+				"Tag: Remove All Tags in Document"
+			],
+			[
+				"remove t",
+				"Emmet: Remove Tag"
+			],
+			[
+				"open eve",
+				"Evernote: Open Evernote Note"
+			],
+			[
+				"jsx",
+				"Set Syntax: JSX"
+			],
+			[
+				"jekylll",
+				"Jekyll Utility: Browse backups..."
+			],
+			[
+				"jekll ",
+				"Jekyll Utility: Migrate user settings"
+			],
+			[
+				"jekyll config",
+				"Jekyll: Edit _config.yml"
+			],
+			[
+				"new post",
+				"Jekyll: New post from template"
+			],
+			[
+				"jekyll ",
+				"Jekyll: Remove post"
+			],
+			[
+				"jekyll po",
+				"Jekyll: Promote draft to post"
+			],
+			[
+				"jek",
+				"Jekyll: Promote draft to post"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"termian",
+				"Open in terminal"
+			],
+			[
+				"format",
+				"TextFormatting - Prettify JSON"
+			],
+			[
+				"for",
+				"TextFormatting - Prettify JSON"
+			],
+			[
+				"terminal",
+				"Preferences: Terminal Settings – User"
+			],
+			[
+				"termainl",
+				"Terminal: Open in project folder"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"termi",
+				"Terminal: Open"
+			],
+			[
+				"remove pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"keybin",
+				"Preferences: Key Bindings - Default"
+			],
+			[
+				"pacage",
+				"Package Control: List Packages"
+			],
+			[
+				"fetch",
+				"Fetch: File"
+			],
+			[
+				"preview",
+				"Preferences: OmniMarkupPreviewer Settings – User"
+			],
+			[
+				"package",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"evernote open",
+				"Evernote: Open Evernote Note"
+			],
+			[
+				"eve",
+				"Evernote: Open Evernote Note"
+			],
+			[
+				"quick",
+				"Git: Quick Commit"
+			],
+			[
+				"gcomm",
+				"Git: Commit"
+			],
+			[
+				" comm",
+				"Git: Quick Commit"
+			],
+			[
+				"mark",
+				"Preferences: MarkdownEditing Settings – User"
+			],
+			[
+				"move",
+				"File: Move"
+			],
+			[
+				"re",
+				"ANF: Rename File"
+			],
+			[
+				"ren",
+				"ANF: Rename File"
+			],
+			[
+				"comm",
+				"Git: Quick Commit"
+			],
+			[
+				"commit",
+				"Git: Quick Commit"
+			],
+			[
+				"jek new",
+				"Jekyll: New post from template"
+			],
+			[
+				"new",
+				"ANF: New File"
+			],
+			[
+				"ever",
+				"Evernote: Open Evernote Note"
+			],
+			[
+				"new ",
+				"ANF: New File"
+			],
+			[
+				"env",
+				"Evernote: List recent notes"
+			],
+			[
+				" rename",
+				"File: Rename"
+			],
+			[
+				"newpo",
+				"Jekyll: New post from template"
+			],
+			[
+				"move ",
+				"File: Move"
+			],
+			[
+				"jekyll new pos",
+				"Jekyll: New post from template"
+			],
+			[
+				"git comm",
+				"Git: Quick Commit"
+			],
+			[
+				" markdownEditing",
+				"MarkdownEditing: Convert Underlined Headers to ATX"
+			],
+			[
+				"evernote",
+				"Snippet: Evernote Metadata"
+			],
+			[
+				"sideba",
+				"View: Toggle Side Bar"
+			],
+			[
+				"jek d",
+				"Jekyll: Open draft"
+			],
+			[
+				"reanm",
+				"File: Rename"
+			],
+			[
+				"jek new pos",
+				"Jekyll: New post"
+			],
+			[
+				"jekyll post",
+				"Jekyll: Promote draft to post"
+			],
+			[
+				"jekll new ",
+				"Jekyll: New draft from template"
+			],
+			[
+				"pre",
+				"Permute Lines: Reverse"
+			],
+			[
+				"jekyll new post",
+				"Jekyll: New post from template"
+			],
+			[
+				"copy",
+				"ANF: Copy Current File"
+			],
+			[
+				"mar pre",
+				"OmniMarkupPreviewer: Preview Current Markup in Browser"
+			],
+			[
+				"ctags",
+				"CTags: Rebuild Tags"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"nef",
+				"ANF: New File"
+			],
+			[
+				"yml",
+				"Jekyll: Edit _config.yml"
+			],
+			[
+				"RENAME",
+				"File: Rename"
+			],
+			[
+				"gitadd",
+				"Git: Add All"
+			],
+			[
+				"je new ps",
+				"Jekyll: New post from template"
+			],
+			[
+				"add",
+				"Git: Add..."
+			],
+			[
+				"jekyl post",
+				"Jekyll: New post from template"
+			],
+			[
+				" moev",
+				"File: Move"
+			],
+			[
+				"markdown",
+				"MarkdownEditing: New Inline Link"
+			],
+			[
+				"rena",
+				"ANF: Rename File"
+			],
+			[
+				"post",
+				"Jekyll: New post from template"
+			],
+			[
+				"jekyll new",
+				"Jekyll: New post from template"
+			],
+			[
+				"jekyll remove",
+				"Jekyll: Remove template"
+			],
+			[
+				"fo",
+				"TextFormatting - Prettify JSON"
+			],
+			[
+				"jeky",
+				"Jekyll: Browse templates..."
+			],
+			[
+				"je",
+				"Jekyll: Edit _config.yml"
+			],
+			[
+				"foramat",
+				"Tag: Auto-Format Tags on Document"
+			],
+			[
+				"nf",
+				"File: New File Relative to Project Root"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Preferences: Browse Packages"
+			],
+			[
+				"remove pa",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove p",
+				"Package Control: Remove Package"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"cslore",
+				"Convert Case: Lower Case"
+			],
+			[
+				"gt add",
+				"Git: Add Current File"
+			],
+			[
+				"open ",
+				"Jekyll: Open post..."
+			],
+			[
+				"mv",
+				"File: Move"
+			],
+			[
+				"open dr",
+				"Jekyll: Open draft..."
+			],
+			[
+				"instll",
+				"Package Control: Install Package"
+			],
+			[
+				"github",
+				"Github: Repository"
+			],
+			[
+				"Gist:",
+				"Gist: Create Private Gist"
+			],
+			[
+				"open gist",
+				"Gist: Open Gist"
+			],
+			[
+				"create",
+				"Gist: Create Public Gist"
+			],
+			[
+				"gist",
+				"Snippet: gist"
+			],
+			[
+				"set mar",
+				"Set Syntax: Markdown (Jekyll)"
+			],
+			[
+				"set mark",
+				"Set Syntax: Markdown (Jekyll)"
+			],
+			[
+				"new file",
+				"ANF: New File"
+			],
+			[
+				"quci",
+				"Git: Quick Commit"
+			],
+			[
+				"renam",
+				"ANF: Rename File"
+			],
+			[
+				"set c++",
+				"Set Syntax: C++"
+			],
+			[
+				"side bar",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"set mea",
+				"Set Syntax: Markdown Extended"
+			],
+			[
+				"new fi",
+				"ANF: New File"
+			],
+			[
+				"raw",
+				"Raw Line Edit: Toggle"
+			],
+			[
+				"markd",
+				"Markdown Preview: Preview in Browser"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": true,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/Jing/Documents/Dropbox/note-blog",
+		"/Users/Jing/Documents/Dropbox/note-blog/_drafts"
+	],
+	"file_history":
+	[
+		"/Users/Jing/Documents/Dropbox/note-blog/_note.sublime-project",
+		"/Users/Jing/Library/Application Support/Sublime Text 3/Packages/User/Jekyll.sublime-settings",
+		"/Users/Jing/Library/Application Support/Sublime Text 3/Packages/Jekyll/Jekyll.sublime-settings",
+		"/Users/Jing/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/Jing/.zshrc",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/2016-07-07-why-sublime-text-is-still-better-than-markeditor.markdown",
+		"/Users/Jing/Library/Application Support/Sublime Text 3/Packages/User/Jekyll Templates/post.yaml",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/翻译/2016-07-07-what-the-flux-on-flux-ddd-and-cqrs.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_drafts/what-the-flux-on-flux-ddd-and-cqrs.md",
+		"/System/Library/Spotlight/RichText.mdimporter/Contents/Info.plist",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/.Archive/write-in-mac-os-x.md/2016-07-07-2016-06-11 10-37-59.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/2016-07-07- Why Sublime Text is still better than MarkEditor.md",
+		"/Users/Jing/Library/Application Support/Sublime Text 3/Packages/User/MultiMarkdown.sublime-settings",
+		"/Users/Jing/Library/Application Support/Sublime Text 3/Packages/User/MacTerminal.sublime-settings",
+		"/Users/Jing/Library/Application Support/Sublime Text 3/Packages/MacTerminal/MacTerminal.sublime-settings",
+		"/Users/Jing/Library/Application Support/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings",
+		"/Users/Jing/Library/Application Support/Sublime Text 3/Packages/User/Terminal.sublime-settings",
+		"/Users/Jing/Library/Application Support/Sublime Text 3/Packages/User/Bold and Italic Markers.tmPreferences",
+		"/Users/Jing/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/MultiMarkdown.sublime-settings",
+		"/Users/Jing/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/Bold and Italic Markers.tmPreferences",
+		"/Users/Jing/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/README.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_drafts/ Why Sublime Text is still better than MarkEditor.md",
+		"/Users/Jing/Library/Application Support/Sublime Text 3/Packages/User/OmniMarkupPreviewer.sublime-settings",
+		"/Users/Jing/Library/Application Support/Sublime Text 3/Packages/User/Fetch.sublime-settings",
+		"/Users/Jing/Documents/Dropbox/note-blog/_drafts/A Lazy Isomorphic React Experiment.md",
+		"/Users/Jing/Documents/Dropbox/nobackend-articles/articles/rules-for-structuring-redux-applications/rules-for-structuring-redux-applications.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/翻译/2016-07-04-rules-for-structuring-redux-applications.md",
+		"/Users/Jing/Documents/Dropbox/nobackend-articles/articles/rules-for-structuring-redux-applications/2016-07-04-rules-for-structuring-redux-applications.md",
+		"/Users/Jing/Library/Application Support/Sublime Text 3/Packages/User/Markdown.sublime-settings",
+		"/Users/Jing/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/Markdown.sublime-settings",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/翻译/2016-07-03-a-better-file-structure-for-react-redux-applications.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/翻译/2016-05-18-working-with-reactjs-in-webstorm.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/前端/2016-03-13-webpack-in-action.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/2016-07-03-a-better-file-structure-for-reactredux-applications.markdown",
+		"/Users/Jing/Documents/Dropbox/Note/Webs/A Better File Struct.md",
+		"/Users/Jing/Documents/Code Practice/Java/awesome-stencil/.gitignore",
+		"/Users/Jing/Desktop/12 Steps to a Faster Web App -- 引流版.md",
+		"/Users/Jing/Desktop/12 Steps to a Faster Web App -- Auth0.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/前端/2016-03-08-introduction-of-angular-new-features-by-examples.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_includes/footer.html",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/思考/2016-06-11-write-in-mac-os-x.md",
+		"/Users/Jing/Documents/Code Practice/WebApp/ReactNativeWorkShop/node_modules/react-native-mock/node_modules/react/lib/ViewportMetrics.js",
+		"/Users/Jing/Desktop/actionPayload.json",
+		"/.qrsync/MjCRith1Q_B5XKRYzsjPplGH.log",
+		"/Users/Jing/Users/Jing/.qrsync/MjCRith1Q_B5XKRYzsjPplGH.log",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/思考/2014-01-01-Book-List-2014.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/翻译/2016-06-10-thirteen-steps-to-a-faster-web-app.md",
+		"/Users/Jing/Documents/Code Practice/Python/pi_remote/l_werobot/src/wxdev/verify.js",
+		"/Users/Jing/Documents/Code Practice/Python/pi_remote/l_werobot/src/python",
+		"/Applications/XX-Net-3.1.15/start.bat",
+		"/Users/Jing/Documents/Code Practice/WebApp/FaceHub/parser_table.py",
+		"/Users/Jing/Documents/Dropbox/note-blog/_drafts/AlphaGo.md",
+		"/Users/Jing/Documents/Dropbox/Note/TW Record/team work/retro/0525 retro.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/翻译/2016-02-11-optimistic-ui-with-meteor.md",
+		"/Users/Jing/Documents/Code Practice/WebApp/FaceHub/node_modules/react-native/Libraries/CustomComponents/ListView/ListView.js",
+		"/Users/Jing/Documents/Dropbox/license/AWS Access Key.md",
+		"/Users/Jing/Library/Containers/biz.marboo.Marboo/Data/Library/Application Support/Marboo/Documents/.media/marboo_config.json",
+		"/Users/Jing/Documents/Dropbox/note-blog/_drafts/quick-note.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/思考/2016-05-18-new-role-model-for-developer-delivery-engineer.md",
+		"/Users/Jing/Downloads/Docker in Production Workshop/usb-stick/workshop-dist/topics/start/module4/swarm-cluster/list_swarm_nodes.sh",
+		"/Users/Jing/Downloads/Docker in Production Workshop/usb-stick/workshop-dist/topics/common/swarm_scripts/swarm_compose.sh",
+		"/Users/Jing/Documents/Dropbox/note-blog/_drafts/first-experience-with-docker.markdown",
+		"/Users/Jing/wh.py",
+		"/Users/Jing/Downloads/XX-Net-3.1.15/start.bat",
+		"/Users/Jing/Downloads/收银机 - G1 - 单品批发价出售.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/2016-05-06-little-thing-about-interaction---technology-part.markdown",
+		"/Users/Jing/Documents/Code Practice/WebApp/weibo/app.js",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/翻译/Redux and The Command Pattern.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_includes/navside.html",
+		"/Users/Jing/Documents/Dropbox/note-blog/pages/archive.html",
+		"/Users/Jing/Documents/Dropbox/note-blog/.travis.yml",
+		"/Users/Jing/Documents/Dropbox/note-blog/pages/about.html",
+		"/Users/Jing/Documents/Dropbox/note-blog/README.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/s3_website.yml",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/翻译/2016-04-08-react-v15-the-big-and-great-latest-version.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_config.yml",
+		"/Users/Jing/Documents/Dropbox/note-blog/Gemfile",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/2016-04-08-react-v150-the-big-and-great-latest-version.markdown",
+		"/Users/Jing/Documents/Dropbox/JavaScript/Meteor/meteor-guide-zh/README.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/前端/2016-04-01-powerful-exhibition-platform-for-programmer.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/前端/2013-10-02-blog-build-course.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/前端/2014-09-26-write-article-use-jekyll-github-markdown.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/前端/2015-05-17-how-to-install-nodejs-correctly.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/前端/2015-11-10-reading-open-resource-code-from-github.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/演讲/2016-03-28-js-moudle-history-and-webpack-in-action.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/c.c",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/演讲/2015-08-29-personal-knowledge-management.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/演讲/2016-01-01-introduction-of-node-ppt.md",
+		"/Users/Jing/Documents/Dropbox/Note/Session PPT/front-end history/web history v2.md",
+		"/Users/Jing/Documents/Dropbox/Note/Session PPT/nodePPT/ppts/demo.md",
+		"/Users/Jing/Documents/Dropbox/Note/Session PPT/JS module & Webpack/js/demo.js",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/前端/2016-03-27-limitation-of-angularjs-1-dot-x.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/思考/2015-07-22-learning-reactjs.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/编程/2015-11-16-how-to-use-gradle-and-speed-up-build-time.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/前端/2015-11-11-rethinking-about-front-end.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/前端/2016-02-21-Chinese-Version-of-React.js-Best-Practices-for-2016.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/前端/2016-03-10-getting-webpack-done-and-js-module-history.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/前端/2015-05-14-learning-reactjs.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/编程/2016-03-10-getting-webpack-done-and-js-module-history.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/翻译/2015-09-27-reactjs_tutorial_part_4.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/思考/2014-11-01-why-i-am-so-serious.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/思考/2015-10-30-productivity-and-pressure.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/编程/2016-03-08-introduction-of-angular-new-features-by-examples.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/编程/2016-03-13-webpack-in-action.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/编程/2016-03-10-getting-webpack-done.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/思考/2014-11-16-think-college-1.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/摄影/2013-09-21-SWJTU-photos.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/摄影/2014-11-17-SWJTU-photos-02.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/编程/2013-10-02-blog-build-course.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/编程/2014-09-25-how-to-install-and-config-ubuntu.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/编程/2014-09-26-write-article-use-jekyll-github-markdown.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/编程/2014-09-28-Linux-apt-get.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/编程/2014-11-15-pythonic-zen.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/思考/2015-08-01-Book-List-2015.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/编程/2014-09-25-begin-ruby-with-rubymine.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/编程/2014-09-25-use-git-and-github.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/编程/2014-09-27-Linux-file-and-dir.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/编程/2014-11-16-Linux-text-editor.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/编程/2014-11-17-python-to-java-01.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/编程/2016-03-10-getting-webpack-done.markdown",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/2016-03-10-getting-webpack-done.markdown",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/翻译/2016-01-22-React.js-Best-Practices-for-2016.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/编程/2016-02-21-Chinese-Version-of-React.js-Best-Practices-for-2016.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/编程/2016-03-08-migrating-from-14-to-15-introduction-of-new-features-by-examples.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/翻译/2015-08-23-Developing_a_RESTful_Web_Service_Using_Spring_Boot.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/翻译/2015-08-25-using_microservices_to_build_cloud_native_applications__part_1.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/思考/2015-05-27-new-state-in-library.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/编程/2015-04-29-fight-with-gfw.md"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"",
+			" Markdown ",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"*",
+			"        *",
+			"*",
+			"+",
+			"\"\n",
+			"//\n",
+			"  ",
+			"Publisher",
+			"发布者",
+			"领域事件发布者",
+			"> ",
+			"  *",
+			"CRQS",
+			" command 和 query",
+			"prompts",
+			"e",
+			"\\n>(.*)\\n",
+			"\\n>(.*)\\n\\n",
+			"\\n>(.*)",
+			">(.*)",
+			"By",
+			"breaching",
+			" giant",
+			"结",
+			"一种更好的 React/Redux 应用程序的文件目录结构",
+			"```js",
+			"js",
+			"IGNORECASE",
+			"答按",
+			"<pre lang=\"html\">",
+			"</pre>",
+			"<pre lang=\"js\">",
+			"loadStargazers",
+			"zhenwenc",
+			"postsByReddit",
+			"1465566806854",
+			"\n\nDon't know what you are saying",
+			"token",
+			"&& create new request",
+			"关注本账号，并转发此微博，有机会获得本店优惠劵一张",
+			" }}\"",
+			"\"\n",
+			"./assets",
+			"/girl.jpg",
+			"girl",
+			" ${",
+			"high",
+			" {:&.pull-right}",
+			"> ",
+			">",
+			"块",
+			"引用",
+			"按下【H】键查看效果",
+			"em",
+			"e'm",
+			"[slide]\n",
+			"* 列表支持渐显动效哦 {:&.fadeIn}\n    * 使用方法\n    * markdown列表第一条加上：{:&.动效类型}",
+			"(){\n",
+			"id",
+			"getElementById",
+			"markdown",
+			"端点",
+			"点",
+			"对 JS、CSS、图片等资源文件都支持打包，配合 loader 加载器，也可以支持 sass，less 等 CSS 预处理器。\n3. 串联式模块加载器以及插件机制",
+			"`webpack.config.js`",
+			"![](",
+			"1",
+			"##",
+			"###",
+			"乐观",
+			"![]",
+			"base",
+			"###",
+			"共同工作，这是",
+			")\n",
+			"livereload",
+			"format",
+			"[ ] ",
+			"feedback",
+			"[slide]",
+			"'\n",
+			"<",
+			"    ",
+			"	",
+			"0x",
+			"Task",
+			"premium",
+			"account",
+			"consumer",
+			"单体",
+			"单一",
+			"initializingbean",
+			"status",
+			"CUSTOME",
+			"CUSTOME_VOL_TYPE_SYSTEM",
+			"com",
+			"Command",
+			"Command–箭头",
+			"screen",
+			"mission_control",
+			"无切换，MissionControl",
+			"\n\n ",
+			"b",
+			"super+b",
+			"Liqing123!jia",
+			"Liqing123!97&83",
+			"Liqing123!97&83@Panda",
+			"931021",
+			"972183",
+			".aside3-date",
+			"menu",
+			"resources",
+			"title",
+			"show_recent_files_dir",
+			"- ",
+			" \n",
+			"-",
+			"\n-",
+			"- ",
+			"\n    ",
+			"http://7xjbdq.com1.z0.glb.clouddn.com",
+			"./photos/",
+			")",
+			"(",
+			"term",
+			"super+shift+t",
+			"shift",
+			"UX"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"命令和查询",
+			"",
+			"```jsx",
+			"```html",
+			"```",
+			"```js",
+			" Markdown",
+			"端口",
+			"![](http://7xjbdq.com1.z0.glb.clouddn.com",
+			"## ",
+			"### ",
+			"积极",
+			"##",
+			"",
+			"Feedback",
+			"",
+			"loyalty",
+			"premium",
+			"account",
+			"单体",
+			"",
+			"xxxxxx",
+			"###",
+			"",
+			"##",
+			"",
+			"```bash",
+			"bash",
+			"",
+			"编程",
+			".",
+			"",
+			"家庭自动化",
+			"，",
+			"192.168.31.183",
+			"#",
+			"树莓派",
+			"，",
+			"；",
+			"：",
+			"）",
+			"（",
+			"，",
+			"",
+			"：",
+			"，",
+			"）",
+			"（",
+			"，",
+			"3.4",
+			"）",
+			"（",
+			"，",
+			"：",
+			"，",
+			"",
+			"，",
+			"笔者",
+			"监控",
+			"GIF",
+			"",
+			"[package]",
+			"[version]",
+			"io.js",
+			"GPU",
+			"CPU",
+			"Dropbox",
+			"Chrome",
+			"Evernote",
+			"Markdown"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "_drafts/speed-up-mac-efficiency.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3818,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3806,
+								3806
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/MarkdownEditor.tmTheme",
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_thread_running": true,
+							"incomplete_sync": null,
+							"is_xml": false,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/MarkdownEditing/MultiMarkdown.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2088.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 68.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 124.0
+	},
+	"output.markdown":
+	{
+		"height": 100.0
+	},
+	"output.sftp":
+	{
+		"height": 121.0
+	},
+	"pinned_build_system": "Packages/Markdown Preview/Markdown.sublime-build",
+	"project": "_note.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"swarm",
+				"workshop-dist/topics/common/swarm_scripts/swarm_compose.sh"
+			],
+			[
+				"swarm_compose",
+				"workshop-dist/topics/common/swarm_scripts/swarm_compose.sh"
+			],
+			[
+				"list_swarm_nodes",
+				"workshop-dist/topics/start/module4/swarm-cluster/list_swarm_nodes.sh"
+			],
+			[
+				"dockerfile",
+				"Dockerfile-shop-app"
+			],
+			[
+				"2016",
+				"_posts/前端/2016-04-21-refactor-angular-to-vue.markdown"
+			],
+			[
+				"2016twoway",
+				"_posts/前端/2016-04-24-two-way-data-binding-vs-unidirectional-data-flow.markdown"
+			],
+			[
+				"app.route",
+				"src/angular/configs/app.routes.js"
+			],
+			[
+				"",
+				"Angular in Action/demo/app.js"
+			],
+			[
+				"self",
+				"self refection/self introduction.md"
+			],
+			[
+				"app.js",
+				"app.js"
+			],
+			[
+				"install",
+				"twu42proj4/scripts/install.sh"
+			],
+			[
+				"create.sh",
+				"db/create.sh"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Documents/Dropbox/nobackend-articles/_marketing.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 375.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 378.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 135.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
