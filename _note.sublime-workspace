@@ -404,10 +404,9 @@
 	"buffers":
 	[
 		{
-			"file": "_drafts/speed-up-mac-efficiency.md",
 			"settings":
 			{
-				"buffer_size": 3818,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		}
@@ -420,12 +419,60 @@
 	"command_palette":
 	{
 		"height": 354.0,
-		"last_filter": "",
+		"last_filter": "gp",
 		"selected_items":
 		[
 			[
+				"gp",
+				"Git: Push"
+			],
+			[
+				"q",
+				"Git: Quick Commit"
+			],
+			[
+				"comm",
+				"Git: Quick Commit"
+			],
+			[
+				"com",
+				"Git: Quick Commit"
+			],
+			[
+				" q",
+				"Git: Quick Commit"
+			],
+			[
+				"quic",
+				"Git: Quick Commit"
+			],
+			[
+				"move",
+				"File: Move"
+			],
+			[
+				"promo",
+				"Jekyll: Promote draft to post"
+			],
+			[
+				"open ",
+				"Github: Open File"
+			],
+			[
+				"finder",
+				"Finder: Open here"
+			],
+			[
 				"install",
 				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
 			],
 			[
 				"jekll",
@@ -446,10 +493,6 @@
 			[
 				"new dr",
 				"Jekyll: New draft"
-			],
-			[
-				"gp",
-				"Git: Push"
 			],
 			[
 				"qu",
@@ -482,10 +525,6 @@
 			[
 				"pack",
 				"Preferences: Browse Packages"
-			],
-			[
-				"quic",
-				"Git: Quick Commit"
 			],
 			[
 				"push",
@@ -554,10 +593,6 @@
 			[
 				"jek",
 				"Jekyll: Promote draft to post"
-			],
-			[
-				"remove",
-				"Package Control: Remove Package"
 			],
 			[
 				"termian",
@@ -636,20 +671,12 @@
 				"Preferences: MarkdownEditing Settings – User"
 			],
 			[
-				"move",
-				"File: Move"
-			],
-			[
 				"re",
 				"ANF: Rename File"
 			],
 			[
 				"ren",
 				"ANF: Rename File"
-			],
-			[
-				"comm",
-				"Git: Quick Commit"
 			],
 			[
 				"commit",
@@ -856,10 +883,6 @@
 				"Git: Add Current File"
 			],
 			[
-				"open ",
-				"Jekyll: Open post..."
-			],
-			[
 				"mv",
 				"File: Move"
 			],
@@ -910,30 +933,6 @@
 			[
 				"renam",
 				"ANF: Rename File"
-			],
-			[
-				"set c++",
-				"Set Syntax: C++"
-			],
-			[
-				"side bar",
-				"View: Toggle Open Files in Side Bar"
-			],
-			[
-				"set mea",
-				"Set Syntax: Markdown Extended"
-			],
-			[
-				"new fi",
-				"ANF: New File"
-			],
-			[
-				"raw",
-				"Raw Line Edit: Toggle"
-			],
-			[
-				"markd",
-				"Markdown Preview: Preview in Browser"
 			]
 		],
 		"width": 575.0
@@ -943,6 +942,7 @@
 		"height": 126.0,
 		"history":
 		[
+			"gst",
 			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
 		]
 	},
@@ -958,14 +958,20 @@
 	"expanded_folders":
 	[
 		"/Users/Jing/Documents/Dropbox/note-blog",
-		"/Users/Jing/Documents/Dropbox/note-blog/_drafts"
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/思考"
 	],
 	"file_history":
 	[
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/思考/2016-07-10-speed-up-mac-efficiency.md",
+		"/Users/Jing/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/Default (OSX).sublime-keymap",
+		"/Users/Jing/Documents/Dropbox/note-blog/_drafts/speed-up-mac-efficiency.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_scripts/git-summary.sh",
+		"/Users/Jing/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/Jing/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/Jing/Documents/Dropbox/note-blog/_note.sublime-project",
 		"/Users/Jing/Library/Application Support/Sublime Text 3/Packages/User/Jekyll.sublime-settings",
 		"/Users/Jing/Library/Application Support/Sublime Text 3/Packages/Jekyll/Jekyll.sublime-settings",
-		"/Users/Jing/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/Jing/.zshrc",
 		"/Users/Jing/Documents/Dropbox/note-blog/_posts/2016-07-07-why-sublime-text-is-still-better-than-markeditor.markdown",
 		"/Users/Jing/Library/Application Support/Sublime Text 3/Packages/User/Jekyll Templates/post.yaml",
@@ -1084,16 +1090,11 @@
 		"/Users/Jing/Documents/Dropbox/note-blog/_posts/编程/2016-03-10-getting-webpack-done.markdown",
 		"/Users/Jing/Documents/Dropbox/note-blog/_posts/2016-03-10-getting-webpack-done.markdown",
 		"/Users/Jing/Documents/Dropbox/note-blog/_posts/翻译/2016-01-22-React.js-Best-Practices-for-2016.md",
-		"/Users/Jing/Documents/Dropbox/note-blog/_posts/编程/2016-02-21-Chinese-Version-of-React.js-Best-Practices-for-2016.md",
-		"/Users/Jing/Documents/Dropbox/note-blog/_posts/编程/2016-03-08-migrating-from-14-to-15-introduction-of-new-features-by-examples.md",
-		"/Users/Jing/Documents/Dropbox/note-blog/_posts/翻译/2015-08-23-Developing_a_RESTful_Web_Service_Using_Spring_Boot.md",
-		"/Users/Jing/Documents/Dropbox/note-blog/_posts/翻译/2015-08-25-using_microservices_to_build_cloud_native_applications__part_1.md",
-		"/Users/Jing/Documents/Dropbox/note-blog/_posts/思考/2015-05-27-new-state-in-library.md",
-		"/Users/Jing/Documents/Dropbox/note-blog/_posts/编程/2015-04-29-fight-with-gfw.md"
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/编程/2016-02-21-Chinese-Version-of-React.js-Best-Practices-for-2016.md"
 	],
 	"find":
 	{
-		"height": 30.0
+		"height": 70.0
 	},
 	"find_in_files":
 	{
@@ -1110,6 +1111,23 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"![]()",
+			"前位置至行尾",
+			"位置至行尾",
+			"则专门用来记录以编程项目的时间，以",
+			"&&",
+			"&",
+			"&&",
+			"&",
+			" code",
+			" \n",
+			"                - Cmd + Shift + ./, 切换 indent quote",
+			"indent",
+			"打开剪切板历史",
+			"链接",
+			"super+shift+.",
+			" \n",
+			"v",
 			"*",
 			"        *",
 			"*",
@@ -1220,31 +1238,15 @@
 			"931021",
 			"972183",
 			".aside3-date",
-			"menu",
-			"resources",
-			"title",
-			"show_recent_files_dir",
-			"- ",
-			" \n",
-			"-",
-			"\n-",
-			"- ",
-			"\n    ",
-			"http://7xjbdq.com1.z0.glb.clouddn.com",
-			"./photos/",
-			")",
-			"(",
-			"term",
-			"super+shift+t",
-			"shift",
-			"UX"
+			"menu"
 		],
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": true,
+		"regex": false,
 		"replace_history":
 		[
+			"前位置至行尾",
 			"命令和查询",
 			"",
 			"```jsx",
@@ -1319,7 +1321,7 @@
 		"reverse": false,
 		"show_context": true,
 		"use_buffer2": true,
-		"whole_word": true,
+		"whole_word": false,
 		"wrap": true
 	},
 	"groups":
@@ -1330,108 +1332,28 @@
 			[
 				{
 					"buffer": 0,
-					"file": "_drafts/speed-up-mac-efficiency.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3818,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3806,
-								3806
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"auto_complete": false,
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/MarkdownEditor.tmTheme",
-							"encoding_helper_encoding": "UTF-8",
-							"encoding_thread_running": true,
-							"incomplete_sync": null,
-							"is_xml": false,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/MarkdownEditing/MultiMarkdown.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"default_dir": "/Users/Jing/Documents/Dropbox/note-blog",
+							"encoding_helper_encoding": "",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2088.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1499,7 +1421,7 @@
 	"project": "_note.sublime-project",
 	"replace":
 	{
-		"height": 56.0
+		"height": 114.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1567,7 +1489,7 @@
 		[
 			[
 				"",
-				"~/Documents/Dropbox/nobackend-articles/_marketing.sublime-project"
+				"~/Documents/Dropbox/note-blog/_note.sublime-project"
 			]
 		],
 		"width": 380.0
