@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 写作系统：Mac OS X 环境下的各种最优配置
+title: Mac OS X 环境下写作系统的各种最优配置
 categories: [思考]
 tags: [写作, Mac, 学习, PKM, 个人成长, 敏捷, 效率]
 published: True
