@@ -2,7 +2,7 @@
 layout: post
 title: 再谈个人知识管理：革新我的笔记系统
 categories: [思考]
-tags: [Mac, 学习, PKM, 个人成长, 效率, 笔记]
+tags: [学习, Rethink, PKM, 个人成长, 效率, 笔记]
 published: True
 
 ---
