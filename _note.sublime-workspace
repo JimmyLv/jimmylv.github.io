@@ -404,9 +404,10 @@
 	"buffers":
 	[
 		{
+			"file": "_posts/思考/2016-06-11-write-in-mac-os-x.md",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 5453,
 				"line_ending": "Unix"
 			}
 		}
@@ -419,9 +420,13 @@
 	"command_palette":
 	{
 		"height": 354.0,
-		"last_filter": "gp",
+		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"eve",
+				"Evernote: Open Evernote Note"
+			],
 			[
 				"gp",
 				"Git: Push"
@@ -648,10 +653,6 @@
 			],
 			[
 				"evernote open",
-				"Evernote: Open Evernote Note"
-			],
-			[
-				"eve",
 				"Evernote: Open Evernote Note"
 			],
 			[
@@ -1332,22 +1333,24 @@
 			[
 				{
 					"buffer": 0,
+					"file": "_posts/思考/2016-06-11-write-in-mac-os-x.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 5453,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								136,
+								136
 							]
 						],
 						"settings":
 						{
+							"auto_complete": false,
 							"bracket_highlighter.busy": false,
 							"bracket_highlighter.locations":
 							{
@@ -1419,13 +1422,14 @@
 								"bh_tag_close",
 								"bh_tag_content"
 							],
-							"default_dir": "/Users/Jing/Documents/Dropbox/note-blog",
-							"encoding_helper_encoding": "",
+							"color_scheme": "Packages/User/Color Highlighter/themes/MarkdownEditor.tmTheme",
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_thread_running": true,
 							"incomplete_sync": null,
 							"is_xml": false,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/MarkdownEditing/MultiMarkdown.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
