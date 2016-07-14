@@ -11,6 +11,7 @@
           "title": "{{ post.title }}",
           "category"   : "{{ post.categories }}",
           "url": "{{ post.url }}",
+          "path": "{{ post.path }}",
           "shortdate"  : "{{ post.date | date : '%B %d, %Y' }}"
         }{% if forloop.last %}{% else %},{% endif %}
       {% endfor %}]
@@ -25,8 +26,9 @@
           {
             "id": "{{ post.id }}",
             "title": "{{ post.title }}",
-            "category"   : "{{ post.categories }}",
+            "category": "{{ post.categories }}",
             "url": "{{ post.url }}",
+            "path": "{{ post.path }}",
             "shortdate"  : "{{ post.date | date : '%B %d, %Y' }}"
           }{% if forloop.last %}{% else %},{% endif %}
         {% endfor %}]
