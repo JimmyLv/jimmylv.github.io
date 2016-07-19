@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"mark",
+				"markdown"
+			],
+			[
 				"命令",
 				"命令处理器"
 			],
@@ -404,10 +408,10 @@
 	"buffers":
 	[
 		{
-			"file": "_posts/思考/2016-06-11-write-in-mac-os-x.md",
+			"file": "_posts/思考/2016-07-12-pkm-again-to-innovate-my-note-system.md",
 			"settings":
 			{
-				"buffer_size": 5453,
+				"buffer_size": 5299,
 				"line_ending": "Unix"
 			}
 		}
@@ -424,12 +428,140 @@
 		"selected_items":
 		[
 			[
-				"eve",
+				"evernote",
+				"HTML2Text: Convert clipboard content"
+			],
+			[
+				"diff",
+				"Git: Diff Current File"
+			],
+			[
+				"github",
+				"Github: Repository"
+			],
+			[
+				"ticket mas",
+				"Ticket Master: Create/Open Issue"
+			],
+			[
+				"tick",
+				"Ticket Master: Setup"
+			],
+			[
+				"issue",
+				"Github: Issues"
+			],
+			[
+				"update",
+				"Evernote: Update Evernote Note"
+			],
+			[
+				"open",
 				"Evernote: Open Evernote Note"
+			],
+			[
+				"",
+				"ANF: Rename File"
+			],
+			[
+				"set mar",
+				"Set Syntax: Markdown"
+			],
+			[
+				"mard",
+				"MarkdownEditing: Markdown Lint"
+			],
+			[
+				"remove all",
+				"Tag: Remove All Tags in Document"
+			],
+			[
+				"open ",
+				"Evernote: Open Evernote Note"
+			],
+			[
+				"remove  all",
+				"Tag: Remove All Attributes From Tags in Document"
+			],
+			[
+				"remove ",
+				"Emmet: Remove Tag"
+			],
+			[
+				"sen",
+				"Evernote: Send to Evernote as new note"
+			],
+			[
+				"set mar ",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"send",
+				"Evernote: Send to Evernote as new note"
 			],
 			[
 				"gp",
 				"Git: Push"
+			],
+			[
+				"quic",
+				"Git: Quick Commit"
+			],
+			[
+				"send to ",
+				"Evernote: Send to Evernote as new note"
+			],
+			[
+				"eve",
+				"Evernote: Open Evernote Note"
+			],
+			[
+				"set mard",
+				"Set Syntax: Markdown"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"quc",
+				"Git: Quick Commit"
+			],
+			[
+				"gcom",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add All"
+			],
+			[
+				"git comm",
+				"Git: Quick Commit"
+			],
+			[
+				"move ",
+				"File: Move"
+			],
+			[
+				"mark",
+				"MarkdownEditing: New Footnote"
+			],
+			[
+				"new post",
+				"Jekyll: New post"
+			],
+			[
+				"new te",
+				"Jekyll: New template"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"remove pac",
+				"Package Control: Remove Package"
 			],
 			[
 				"q",
@@ -448,10 +580,6 @@
 				"Git: Quick Commit"
 			],
 			[
-				"quic",
-				"Git: Quick Commit"
-			],
-			[
 				"move",
 				"File: Move"
 			],
@@ -460,16 +588,8 @@
 				"Jekyll: Promote draft to post"
 			],
 			[
-				"open ",
-				"Github: Open File"
-			],
-			[
 				"finder",
 				"Finder: Open here"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
 			],
 			[
 				"inst",
@@ -552,14 +672,6 @@
 				"View: Toggle Side Bar"
 			],
 			[
-				"open",
-				"Evernote: Open Evernote Note"
-			],
-			[
-				"remove ",
-				"Tag: Remove All Tags in Document"
-			],
-			[
 				"remove t",
 				"Emmet: Remove Tag"
 			],
@@ -582,10 +694,6 @@
 			[
 				"jekyll config",
 				"Jekyll: Edit _config.yml"
-			],
-			[
-				"new post",
-				"Jekyll: New post from template"
 			],
 			[
 				"jekyll ",
@@ -620,16 +728,8 @@
 				"Terminal: Open in project folder"
 			],
 			[
-				"instal",
-				"Package Control: Install Package"
-			],
-			[
 				"termi",
 				"Terminal: Open"
-			],
-			[
-				"remove pac",
-				"Package Control: Remove Package"
 			],
 			[
 				"keybin",
@@ -666,10 +766,6 @@
 			[
 				" comm",
 				"Git: Quick Commit"
-			],
-			[
-				"mark",
-				"Preferences: MarkdownEditing Settings – User"
 			],
 			[
 				"re",
@@ -712,24 +808,12 @@
 				"Jekyll: New post from template"
 			],
 			[
-				"move ",
-				"File: Move"
-			],
-			[
 				"jekyll new pos",
 				"Jekyll: New post from template"
 			],
 			[
-				"git comm",
-				"Git: Quick Commit"
-			],
-			[
 				" markdownEditing",
 				"MarkdownEditing: Convert Underlined Headers to ATX"
-			],
-			[
-				"evernote",
-				"Snippet: Evernote Metadata"
 			],
 			[
 				"sideba",
@@ -854,86 +938,6 @@
 			[
 				"ins",
 				"Package Control: Install Package"
-			],
-			[
-				"pac",
-				"Preferences: Browse Packages"
-			],
-			[
-				"remove pa",
-				"Package Control: Remove Package"
-			],
-			[
-				"remove p",
-				"Package Control: Remove Package"
-			],
-			[
-				"inde",
-				"Indentation: Reindent Lines"
-			],
-			[
-				"in",
-				"Package Control: Install Package"
-			],
-			[
-				"cslore",
-				"Convert Case: Lower Case"
-			],
-			[
-				"gt add",
-				"Git: Add Current File"
-			],
-			[
-				"mv",
-				"File: Move"
-			],
-			[
-				"open dr",
-				"Jekyll: Open draft..."
-			],
-			[
-				"instll",
-				"Package Control: Install Package"
-			],
-			[
-				"github",
-				"Github: Repository"
-			],
-			[
-				"Gist:",
-				"Gist: Create Private Gist"
-			],
-			[
-				"open gist",
-				"Gist: Open Gist"
-			],
-			[
-				"create",
-				"Gist: Create Public Gist"
-			],
-			[
-				"gist",
-				"Snippet: gist"
-			],
-			[
-				"set mar",
-				"Set Syntax: Markdown (Jekyll)"
-			],
-			[
-				"set mark",
-				"Set Syntax: Markdown (Jekyll)"
-			],
-			[
-				"new file",
-				"ANF: New File"
-			],
-			[
-				"quci",
-				"Git: Quick Commit"
-			],
-			[
-				"renam",
-				"ANF: Rename File"
 			]
 		],
 		"width": 575.0
@@ -964,6 +968,14 @@
 	],
 	"file_history":
 	[
+		"/Users/Jing/Documents/Dropbox/note-blog/Evernote: Meteor 中的响应式.enmd",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/思考/2016-06-11-write-in-mac-os-x.md",
+		"/Users/Jing/Library/Application Support/Sublime Text 3/Packages/User/Evernote.sublime-settings",
+		"/Users/Jing/Documents/Dropbox/note-blog/Evernote: Spencer Dixon - Test Driven React Tutorial.enmd",
+		"/Users/Jing/Library/Application Support/Sublime Text 3/Packages/Evernote/Evernote.sublime-settings",
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/思考/2016-07-12-pkm-again-to-innovate-my-note-system.md",
+		"/Users/Jing/Documents/Dropbox/note-blog/_config.yml",
+		"/Users/Jing/Documents/Dropbox/note-blog/api/index.json",
 		"/Users/Jing/Documents/Dropbox/note-blog/_posts/思考/2016-07-10-speed-up-mac-efficiency.md",
 		"/Users/Jing/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/Default (OSX).sublime-keymap",
 		"/Users/Jing/Documents/Dropbox/note-blog/_drafts/speed-up-mac-efficiency.md",
@@ -1009,7 +1021,6 @@
 		"/Users/Jing/Desktop/12 Steps to a Faster Web App -- Auth0.md",
 		"/Users/Jing/Documents/Dropbox/note-blog/_posts/前端/2016-03-08-introduction-of-angular-new-features-by-examples.md",
 		"/Users/Jing/Documents/Dropbox/note-blog/_includes/footer.html",
-		"/Users/Jing/Documents/Dropbox/note-blog/_posts/思考/2016-06-11-write-in-mac-os-x.md",
 		"/Users/Jing/Documents/Code Practice/WebApp/ReactNativeWorkShop/node_modules/react-native-mock/node_modules/react/lib/ViewportMetrics.js",
 		"/Users/Jing/Desktop/actionPayload.json",
 		"/.qrsync/MjCRith1Q_B5XKRYzsjPplGH.log",
@@ -1044,7 +1055,6 @@
 		"/Users/Jing/Documents/Dropbox/note-blog/README.md",
 		"/Users/Jing/Documents/Dropbox/note-blog/s3_website.yml",
 		"/Users/Jing/Documents/Dropbox/note-blog/_posts/翻译/2016-04-08-react-v15-the-big-and-great-latest-version.md",
-		"/Users/Jing/Documents/Dropbox/note-blog/_config.yml",
 		"/Users/Jing/Documents/Dropbox/note-blog/Gemfile",
 		"/Users/Jing/Documents/Dropbox/note-blog/_posts/2016-04-08-react-v150-the-big-and-great-latest-version.markdown",
 		"/Users/Jing/Documents/Dropbox/JavaScript/Meteor/meteor-guide-zh/README.md",
@@ -1085,13 +1095,7 @@
 		"/Users/Jing/Documents/Dropbox/note-blog/_posts/思考/2015-08-01-Book-List-2015.md",
 		"/Users/Jing/Documents/Dropbox/note-blog/_posts/编程/2014-09-25-begin-ruby-with-rubymine.md",
 		"/Users/Jing/Documents/Dropbox/note-blog/_posts/编程/2014-09-25-use-git-and-github.md",
-		"/Users/Jing/Documents/Dropbox/note-blog/_posts/编程/2014-09-27-Linux-file-and-dir.md",
-		"/Users/Jing/Documents/Dropbox/note-blog/_posts/编程/2014-11-16-Linux-text-editor.md",
-		"/Users/Jing/Documents/Dropbox/note-blog/_posts/编程/2014-11-17-python-to-java-01.md",
-		"/Users/Jing/Documents/Dropbox/note-blog/_posts/编程/2016-03-10-getting-webpack-done.markdown",
-		"/Users/Jing/Documents/Dropbox/note-blog/_posts/2016-03-10-getting-webpack-done.markdown",
-		"/Users/Jing/Documents/Dropbox/note-blog/_posts/翻译/2016-01-22-React.js-Best-Practices-for-2016.md",
-		"/Users/Jing/Documents/Dropbox/note-blog/_posts/编程/2016-02-21-Chinese-Version-of-React.js-Best-Practices-for-2016.md"
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/编程/2014-09-27-Linux-file-and-dir.md"
 	],
 	"find":
 	{
@@ -1112,6 +1116,28 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"^<en-media.*width=\"75\".*>$",
+			"^<en-media(?:.*)width=\"75\".*>$",
+			"width=\"75\"",
+			"width",
+			"^<en-media height=(.*)>$",
+			"<en-media height=\"40\" style=\"box-sizing: border-box; display: block; width: 700px; height: auto; margin: auto; vertical-align: baseline; visibility: hidden; opacity: 0; transition: visibility 0s linear 0.5s, opacity 0.1s 0.4s; -webkit-transition: visibility 0s linear 0.5s, opacity 0.1s 0.4s; border: 0px none rgba(0, 0, 0, 0.8); background-color: rgba(0, 0, 0, 0); background-image: none; box-shadow: none;\" width=\"75\" hash=\"95d18904196ed491b7376399f4672643\" type=\"image/png\"/>",
+			"<en-media height=\"40\" style=\"box-sizing: border-box; display: block; width: 700px; height: auto; margin: auto; vertical-align: baseline; visibility: hidden; opacity: 0; transition: visibility 0s linear 0.5s, opacity 0.1s 0.4s; -webkit-transition: visibility 0s linear 0.5s, opacity 0.1s 0.4s; border: 0px none rgba(0, 0, 0, 0.8); background-color: rgba(0, 0, 0, 0); background-image: none; box-shadow: none;\" width=\"75\" ",
+			"width=\"75\"",
+			"top: 0px; left: 0px;",
+			"position: absolute;",
+			"</div>",
+			"<div(.*)",
+			"<div",
+			"\n  \n",
+			"em",
+			"\n  \n\n",
+			"[",
+			"shell",
+			"*",
+			"            \"url\": \"{{ post.url }}\",\n",
+			"如果配合 macOS Sierra 的云剪切板，简直就是完美的文本输入方式。（暂时先用上[快贴 - 真正的云剪贴板](http://clipber.com/clipber/)）",
+			"\n  * 讯飞输入法的语音输入体验简直太棒，几乎没有切换成本。\n  * 如果配合 macOS Sierra 的云剪切板，简直就是完美的文本输入方式。（暂时先用上[快贴 - 真正的云剪贴板](http://clipber.com/clipber/)）\n  * 讯飞输入法还可以定制工具栏的快捷方式，简直完美，个性化乃用户体验至高境界。\n  * 可以把讯飞的语音输入图标放到工具栏的最右边，右手持机的时候培养语音输入习惯。\n",
 			"![]()",
 			"前位置至行尾",
 			"位置至行尾",
@@ -1217,36 +1243,15 @@
 			"Task",
 			"premium",
 			"account",
-			"consumer",
-			"单体",
-			"单一",
-			"initializingbean",
-			"status",
-			"CUSTOME",
-			"CUSTOME_VOL_TYPE_SYSTEM",
-			"com",
-			"Command",
-			"Command–箭头",
-			"screen",
-			"mission_control",
-			"无切换，MissionControl",
-			"\n\n ",
-			"b",
-			"super+b",
-			"Liqing123!jia",
-			"Liqing123!97&83",
-			"Liqing123!97&83@Panda",
-			"931021",
-			"972183",
-			".aside3-date",
-			"menu"
+			"consumer"
 		],
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": false,
+		"regex": true,
 		"replace_history":
 		[
+			"",
 			"前位置至行尾",
 			"命令和查询",
 			"",
@@ -1333,19 +1338,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "_posts/思考/2016-06-11-write-in-mac-os-x.md",
+					"file": "_posts/思考/2016-07-12-pkm-again-to-innovate-my-note-system.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5453,
+						"buffer_size": 5299,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								136,
-								136
+								881,
+								881
 							]
 						],
 						"settings":
@@ -1357,6 +1362,9 @@
 								"close":
 								{
 								},
+								"icon":
+								{
+								},
 								"open":
 								{
 								},
@@ -1366,61 +1374,61 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
 							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/MarkdownEditor.tmTheme",
 							"encoding_helper_encoding": "UTF-8",
@@ -1429,10 +1437,10 @@
 							"is_xml": false,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/MarkdownEditing/MultiMarkdown.tmLanguage"
+							"syntax": "Packages/MarkdownEditing/Markdown (Standard).tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 481.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1443,7 +1451,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 30.0
+		"height": 70.0
 	},
 	"input":
 	{
@@ -1590,7 +1598,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 135.0,
+	"side_bar_width": 207.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
