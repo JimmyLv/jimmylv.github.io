@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linux shell 命令之密室逃脱 
+title: WorkShop 笔记：Linux shell 命令之密室逃脱 
 categories: [编程]
 tags: [Linux, DevOps, Shell]
 published: True
