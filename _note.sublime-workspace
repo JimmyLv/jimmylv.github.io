@@ -419,7 +419,7 @@
 			"file": "_posts/编程/2016-08-17-linux-shell-workshop-note.md",
 			"settings":
 			{
-				"buffer_size": 2977,
+				"buffer_size": 3864,
 				"line_ending": "Unix"
 			}
 		}
@@ -1125,6 +1125,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"> ",
 			"</div>",
 			"<div.*>",
 			"  ",
@@ -1251,8 +1252,7 @@
 			"点",
 			"对 JS、CSS、图片等资源文件都支持打包，配合 loader 加载器，也可以支持 sass，less 等 CSS 预处理器。\n3. 串联式模块加载器以及插件机制",
 			"`webpack.config.js`",
-			"![](",
-			"1"
+			"![]("
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1465,15 +1465,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2977,
+						"buffer_size": 3864,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2638,
-								2638
+								3540,
+								3540
 							]
 						],
 						"settings":
@@ -1564,7 +1564,7 @@
 							"syntax": "Packages/MarkdownEditing/MultiMarkdown.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1794.0,
+						"translation.y": 2025.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
