@@ -23,7 +23,7 @@ published: True
 
 > 场景：vagrant 启动虚拟机，使用 ssh「快速」登录 Linux 机器，发现 Tomcat 没启动，启动后发现端口被占用 `http://192.168.33.20:8080/`，然后 kill 掉进程却发现内容被压缩然后找不到了，切换用户（找到密码）才发现文件，解压后却发现内容被篡改，然后一键替换内容才最终还原网页。
 
-`cat id_rsa.pub >> authorized_keys` 快速添加内容到特定文件 `>` 覆盖 | `>>` 增加
+`cat id_rsa.pub >> authorized_keys` 快速添加内容到特定文件 `>` 覆盖、`>>` 增加
 
 `ssh -i ./id_rsa dev@192.168.33.20` (--identity 身份)
 
