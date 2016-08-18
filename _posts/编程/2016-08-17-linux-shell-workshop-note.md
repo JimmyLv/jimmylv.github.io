@@ -75,7 +75,7 @@ published: True
     [Darker@localhost dev]$ sudo -iu dev
     [dev@localhost ~]$
 
-`grep -r "Darker"` 找到密码 | `U2Fsd,` 再查找一次 tar 包
+`grep -r "Darker"` | 找到密码 `U2Fsd,` 再查找一次 tar 包
 
     .README.md:This is the message: Check the port and kill the process, you can start tomcat right. # Kissing your hand may make you feel very good, but a diamond and sapphire bracelet lasts for ever. -- Darker:U2Fsd,
 
