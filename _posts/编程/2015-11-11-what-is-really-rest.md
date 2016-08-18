@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 什么才是真正的RESTful架构？
+title: 什么才是真正的 RESTful 架构？
 categories: [编程]
-tags: [RESTful]
+tags: [REST, API, HTTP]
 published: True
 
 ---
@@ -17,9 +17,9 @@ Roy Fielding是HTTP协议（1.0版和1.1版）的主要设计者，事实上HTTP
 
 ## Why？
 
-![RESTful API](http://www.dotnetage.com/webshared/home/images/restful-api.jpg)
+![](http://7xjbdq.com1.z0.glb.clouddn.com/images/2016/1471531874674.png)
 
-在「远古时代」前端后端是融合在一起的，比如之前的PHP，JSP，ASP等等（参考之前写的一篇文章：[Web前端开发模式演变]()）。近年来随着移动互联网的飞速发展，各种类型的Client端层出不穷，就需要通过一套统一的接口分别为Web，iOS和Android乃至桌面端提供服务。另外对于广大平台来说，比如Facebook platform，微博开放平台，微信公共平台等，它们不需要有显式的前端，只需要一套提供服务的接口，于是RESTful更是它们最好的选择。
+在「远古时代」前端后端是融合在一起的，比如之前的PHP，JSP，ASP等等（参考之前做过的一场演讲：[Web前端开发模式演变](http://blog.jimmylv.info/2015-11-02-history-about-web-development-evolution/)）。近年来随着移动互联网的飞速发展，各种类型的Client端层出不穷，就需要通过一套统一的接口分别为Web，iOS和Android乃至桌面端提供服务。另外对于广大平台来说，比如Facebook platform，微博开放平台，微信公共平台等，它们不需要有显式的前端，只需要一套提供服务的接口，于是RESTful更是它们最好的选择。
 
 而要理解RESTful架构，最好的方法就是去理解**Representational State Transfer**这个词组，直译过来就是「表现层状态转化」，其实它省略了主语。「表现层」其实指的是「资源」的「表现层」，所以通俗来讲就是：资源在网络中以某种表现形式进行状态转移。分解开来：
 

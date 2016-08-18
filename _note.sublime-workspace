@@ -419,7 +419,7 @@
 			"file": "_posts/编程/2016-08-17-linux-shell-workshop-note.md",
 			"settings":
 			{
-				"buffer_size": 3864,
+				"buffer_size": 3870,
 				"line_ending": "Unix"
 			}
 		}
@@ -1465,15 +1465,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3864,
+						"buffer_size": 3870,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3540,
-								3540
+								179,
+								179
 							]
 						],
 						"settings":
@@ -1564,7 +1564,7 @@
 							"syntax": "Packages/MarkdownEditing/MultiMarkdown.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2025.0,
+						"translation.y": 1.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
