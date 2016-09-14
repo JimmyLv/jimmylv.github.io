@@ -8,12 +8,13 @@
     <i class="fa fa-lg fa-navicon"></i>
   </button>
 </div>
-<script type="text/javascript" src="./public/js/jquery.js"></script>
-<script type="text/javascript" src="./public/js/jquery.pjax.js"></script>
-<script type="text/javascript" src="./public/js/bootstrap.js"></script>
-<script type="text/javascript" src="./public/js/prettify/prettify.js"></script>
-<script type="text/javascript" src="./public/js/nprogress/nprogress.js"></script>
-<script type="text/javascript" src="./public/js/base.js"></script>
+<script type="text/javascript" src="/public/js/jquery.js"></script>
+<script type="text/javascript" src="/public/js/bootstrap.js"></script>
+<script src="/public/js/jquery.pjax.js"></script>
+<script src="/public/js/prettify/prettify.js"></script>
+<script src="/public/js/base.js"></script>
+<script src='http://ricostacruz.com/nprogress/nprogress.js'></script>
+<link rel='stylesheet' href='http://ricostacruz.com/nprogress/nprogress.css'/>
 <script>
     $('a[href="#{{ site.active }}"]').tab('show');
     $(document).on('pjax:start', function() { NProgress.start(); });
