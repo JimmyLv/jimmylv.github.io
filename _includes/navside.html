@@ -7,13 +7,13 @@
          <li><a href="#{{ category | first }}" data-toggle="tab">{{ category[0] }}</a></li>
         {% endfor %}
         <li><a href="#tags" data-toggle="tab">{{ site.locals.tags }}</a></li>  
-        <li><a class="pjaxlink" href="/pages/archive/">{{ site.locals.archive }}</a></li>
-        <li><a class="pjaxlink" href="/pages/about/">{{ site.locals.about }}</a></li>
+        <li><a class="pjaxlink" href="./pages/archive/">{{ site.locals.archive }}</a></li>
+        <li><a class="pjaxlink" href="./pages/about/">{{ site.locals.about }}</a></li>
       </ul>
       <div class="aside1_bottom">
         <table class="table table-condensed">
           <tr>
-            <td><a href="/pages/atom.xml" target="_blank"><i class="fa fa-rss fa-2x" style="color:#000;"></i></a></td>
+            <td><a href="./pages/atom.xml" target="_blank"><i class="fa fa-rss fa-2x" style="color:#000;"></i></a></td>
             <td><a href="mailto:{{ site.author.email }}"><i class="fa fa-envelope-o fa-2x" style="color:#000;"></i></a></td>
           </tr>
         </table>
@@ -43,7 +43,7 @@
                   </div>
                   <div id="{{ tag[0] }}" class="panel-collapse collapse">
                     {% for post in tag[1] %}
-                      <a  href='{{ post.url }}' class="list-group-item pjaxlink">
+                      <a  href="{{ post.url }}" class="list-group-item pjaxlink">
                         {{post.title}}
                       </a>
                     {% endfor %}

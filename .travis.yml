@@ -4,10 +4,14 @@ rvm:
 
 branches:
   only:
-    - gh-pages
+    - master
 
-install: gem install bundler && bundle install
+install:
+  - gem install bundler
+  - bundle install
 
-script: jekyll build
+script:
+  - jekyll build
 
-after_success: s3_website push
+after_success:
+  - s3_website push
