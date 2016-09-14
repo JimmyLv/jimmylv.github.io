@@ -22,5 +22,6 @@ nodeppt generate ./_posts/演讲 ./slides -a
 
 ## Deployment
 
-1. Hosted on [GitHub Pages](http://blog.jimmylv.info/).
-2. Hosted on [AWS S3](http://blog.jimmylv.info.s3-website-ap-southeast-1.amazonaws.com/).
+1. Hosted on [Coding Pages](http://blog.jimmylv.info/).
+2. Hosted on [GitHub Pages](http://github-pages.jimmylv.info/).
+3. Hosted on [AWS S3](http://blog.jimmylv.info.s3-website-ap-southeast-1.amazonaws.com/).
