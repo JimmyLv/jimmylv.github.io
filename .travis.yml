@@ -27,6 +27,7 @@ after_success:
   - s3_website push
   - |
     cd _site
+    touch .nojekyll
     git init
     git add .
     git commit -m "Deploy at `date +"%Y-%m-%d %H:%M"`"
