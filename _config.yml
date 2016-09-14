@@ -49,6 +49,8 @@ locals:
 gems:
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll/tagging
+  - jekyll-tagging-related_posts
 
 exclude:
   - .idea/

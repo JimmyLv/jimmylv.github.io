@@ -12,6 +12,8 @@ layout: base
       {{ content }}
     </div>
     <br />
+    {% include related_posts.html %}
+    <br />
     <div class="row">
       {% for book in page.books %}
         <div class="col-md-12">
