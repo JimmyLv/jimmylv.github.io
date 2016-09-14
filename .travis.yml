@@ -1,17 +1,34 @@
 language: ruby
 rvm:
   - 2.1
-
 branches:
   only:
     - master
 
+before_install:
+  - openssl aes-256-cbc -K $encrypted_68227d46cd32_key -iv $encrypted_68227d46cd32_iv -in id_rsa.enc -out id_rsa -d
+  # 改变文件权限
+  - chmod 600 ~/.ssh/id_rsa
+  # 配置 ssh
+  - eval $(ssh-agent)
+  - ssh-add ~/.ssh/id_rsa
+  - cp .travis/ssh_config ~/.ssh/config
+  # 配置 git 信息
+  - git config --global user.name 'Travis CI'
+  - git config --global user.email travis@jimmylv.com
+
 install:
   - gem install bundler
   - bundle install
-
 script:
   - jekyll build
-
 after_success:
   - s3_website push
+  - |
+    cd _site
+    git init
+    git add .
+    git commit -m "Deploy at `date +"%Y-%m-%d %H:%M"`"
+    # Make sure to make the output quiet, or else the API token will leak!
+    # This works because the API key can replace your password.
+    git push -f -q https://git.coding.net/jimmylv/note-blog.git master:gh-pages > /dev/null 2>&1
