@@ -141,3 +141,12 @@ blockquote p {
   width: 100%;
   margin-bottom: 10px;
 }
+
+.about-link>a {
+  text-decoration: none !important;
+}
+
+.about-link>a>i {
+  font-style: normal;
+  color:#16a095;
+}
