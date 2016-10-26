@@ -2,7 +2,7 @@
 layout: post
 title: 科技带来的感动
 categories: [思考]
-tags: [学习, Rethink, 区块链, 手机, 小米, Android，ThoughtWorks]
+tags: [学习, 区块链, 手机, 小米, Python，ThoughtWorks]
 published: True
 
 ---
