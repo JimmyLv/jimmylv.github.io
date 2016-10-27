@@ -1,4 +1,15 @@
-[![Build Status](https://travis-ci.org/JimmyLv/jimmylv.github.io.svg?branch=master)](https://travis-ci.org/JimmyLv/jimmylv.github.io)
+<h1 align="center">
+jimmylv.github.io
+<h5 align="center", style="color, #666">
+:bowtie: Agile Learning based on GitHub issues, KEEP Introspection and Retrospection! 
+<br>
+基于 GitHub issues 的敏捷学习，持续反思，持续革新，持续进步……
+</h5>
+</h1>
+<p align="center">
+<a href="https://travis-ci.org/JimmyLv/jimmylv.github.io"><img src="https://travis-ci.org/JimmyLv/jimmylv.github.io.svg?branch=master" /></a>
+<img src="https://img.shields.io/badge/license-MIT-brightgreen.svg" />
+</p>
 
 ## Using `rake post` to create new post
 
