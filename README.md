@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/JimmyLv/jimmy.lv.svg?branch=gh-pages)](https://travis-ci.org/JimmyLv/jimmy.lv)
+[![Build Status](https://travis-ci.org/JimmyLv/jimmy.lv.svg?branch=master)](https://travis-ci.org/JimmyLv/jimmy.lv)
 
 ## Using `rake post` to create new post
 
