@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 渐进式知识管理： 写作动机与知识分享的价值影响
+title: 渐进式知识管理：写作动机与知识分享的价值影响
 categories: [思考]
 tags: [学习, PKM, 成长, 敏捷, iPhone, Diigo]
 published: True
