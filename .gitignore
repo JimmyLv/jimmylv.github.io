@@ -10,6 +10,9 @@ _theme/
 _book/
 node_modules/
 
+# hexo
+themes/
+
 .sync/*
 
 .me_configs.data
