@@ -51,6 +51,7 @@ gems:
   - jekyll-paginate
   - jekyll/tagging
   - jekyll-tagging-related_posts
+  - jekyll-seo-tag
 
 exclude:
   - .idea/
