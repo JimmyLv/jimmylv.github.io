@@ -21,7 +21,7 @@
 - [从需求出发：再谈 Mac OS X 下的 Mission Control](http://blog.jimmylv.info/2015-10-31-mission-control-on-mac-os-x/)
 - [谈谈效率：工作与生活、压力与负担](http://blog.jimmylv.info/2015-10-30-productivity-and-pressure/)
 - [个人知识管理：知识的三种形态](http://blog.jimmylv.info/2015-10-09-three-types-of-knowledge/)
-- [由写作环境引起的反思：单一入口的智能化](http://blog.jimmylv.info/2015-05-12-intellectual-and-single-entrance/)
+- [由写作环境引发的反思：单一入口的智能化](http://blog.jimmylv.info/2015-05-12-intellectual-and-single-entrance/)
 
 ## API Support
 
