@@ -1,5 +1,6 @@
 .idea/
 
+npm-debug.log
 node_modules/
 
 _site/
