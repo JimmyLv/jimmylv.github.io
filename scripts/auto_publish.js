@@ -22,35 +22,56 @@ const article = {
   content: result.slice(2).join('---')
 }
 
-console.log(article)
+const config = jsyaml.load(fs.readFileSync('scripts/config.yml', { encoding: 'utf-8' }))
+
+console.log(config)
+
+const account = config.accounts.jianshu
 
 nightmare
-  .goto('http://www.jianshu.com/sign_in')
-  .viewport(1024, 768)
-  .insert('#sign_in_name', '460051518@qq.com')
-  .insert('#sign_in_password', 'xx')
-  .wait('.gt_ajax_tip.success')
-  .click('button.ladda-button.submit-button')
-  .wait('a.btn.btn-large.btn-success')
-  .click('a.btn.btn-large.btn-success')
-  .wait('#note_title')
-  .insert('#note_title', '') // clear
-  .insert('#note_title', article.meta.title)
-  .insert('textarea.text.mousetrap', '') // clear
-  .insert('textarea.text.mousetrap', article.content)
-  .click('#publish-button')
-  .evaluate(() => {
-    /* eslint-disable */
-    // location.reload()
-    // location.href = 'http://www.jianshu.com/writer#/'
-    function handle() {
-      // do something...
-      console.info(document.title)
+  .goto('http://www.jianshu.com/')
+  .exists('.user.avatar') // already login?
+  .then(isLogin => {
+    console.info('already login?', isLogin)
+    if (!isLogin) {
+      nightmare
+        .goto('http://www.jianshu.com/sign_in')
+        .insert('#sign_in_name', account.username)
+        .insert('#sign_in_password', account.password)
+        .wait('.gt_ajax_tip.success')
+        .click('button.ladda-button.submit-button')
     }
-    
-    setInterval(handle, 2000)
-    return document.title
-    /* eslint-enable */
+    nightmare
+      .wait('a.btn.btn-large.btn-success')
+      .click('a.btn.btn-large.btn-success')
+      .wait('a.new-note-link')
+      .click('a.new-note-link')
+      .wait(1500) // waiting to create new note otherwise will override original article
+      .wait('#note_title')
+      .insert('#note_title', article.meta.title)
+      .insert('textarea.text.mousetrap', article.content)
+      .wait(1500) // publish button will hidden when saving draft
+      .wait('#publish-button')
+      .click('#publish-button')
+      .wait(3000) // publish need some times
+      .evaluate(() => {
+        /* eslint-disable */
+        const success = $('h3:contains("文章发布成功")')[0]
+        if (success) {
+          const title = $('.text-info')[0]
+          console.info('文章发布成功', title)
+          return `[${title.text}](${title.href})`
+        }
+        
+        throw new Error('文章发布异常')
+        /* eslint-enable */
+      })
+      .end()
+      .then(title => console.log(`${title} => 发布成功`))
+      .catch(err => console.error(err))
   })
-  .then(res => console.info(res))
-  .catch(err => console.error(err))
+
+
+// update article need find a.note-link.title text() === article.
+
+// eg: $( "a:contains('Hello World')" )
