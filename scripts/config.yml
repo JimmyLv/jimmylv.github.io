@@ -1,0 +1,14 @@
+accounts:
+  jianshu:
+    username: 'username@email.com'
+    password: 'password'
+  zhihu:
+    username: 'username@email.com'
+    password: 'password'
+  juejin:
+    username: 'username@email.com'
+    password: 'password'
+  segmentfault:
+    username: 'username@email.com'
+    password: 'password'
+
