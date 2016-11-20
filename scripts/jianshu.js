@@ -1,4 +1,4 @@
-const TIMES_TO_DELAY = 5000 // need decrease/increase deps on network.
+const TIMES_TO_DELAY = 3000 // need decrease/increase deps on network.
 
 function publish(nightmare, { username, password }, { meta, content }) {
   nightmare
@@ -26,7 +26,7 @@ function publish(nightmare, { username, password }, { meta, content }) {
         .wait(TIMES_TO_DELAY) // publish button will hidden when saving draft
         .wait('#publish-button')
         .click('#publish-button')
-        .wait(TIMES_TO_DELAY) // publish process need some times
+        .wait(TIMES_TO_DELAY * 2) // publish process need some times
         .evaluate(() => {
           const success = $('h3:contains("文章发布成功")')[0]
           if (success) {
