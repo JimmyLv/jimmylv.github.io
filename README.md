@@ -8,6 +8,8 @@
 </h1>
 <p align="center">
 <a href="https://travis-ci.org/JimmyLv/jimmylv.github.io"><img src="https://travis-ci.org/JimmyLv/jimmylv.github.io.svg?branch=master" /></a>
+<a href="https://github.com/JimmyLv/jimmylv.github.io/issues#boards?notFullScreen=false&amp;repos=50039903&amp;showClosed=false" target="_blank" rel="external"><img src="https://img.shields.io/github/issues/JimmyLv/jimmylv.github.io.svg?maxAge=2592000" alt="GitHub Issues"></a>
+<a href="https://github.com/JimmyLv/jimmylv.github.io/issues?q=is%3Aissue+is%3Aclosed" target="_blank" rel="external"><img src="https://img.shields.io/github/issues-closed/JimmyLv/jimmylv.github.io.svg?maxAge=2592000" alt=""></a>
 <img src="https://img.shields.io/badge/license-MIT-brightgreen.svg" />
 </p>
 
