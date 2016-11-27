@@ -431,10 +431,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 294.0,
-		"last_filter": "set javasc",
+		"height": 126.0,
+		"last_filter": "github iss",
 		"selected_items":
 		[
+			[
+				"github iss",
+				"Github: Plugin Settings"
+			],
 			[
 				"set javasc",
 				"Set Syntax: JavaScript"
@@ -942,10 +946,6 @@
 			[
 				"gitadd",
 				"Git: Add All"
-			],
-			[
-				"je new ps",
-				"Jekyll: New post from template"
 			]
 		],
 		"width": 503.0
@@ -974,6 +974,7 @@
 	],
 	"file_history":
 	[
+		"/Users/Jing/Library/Application Support/Sublime Text 3/Packages/User/Github Tools.sublime-settings",
 		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/_note.sublime-project",
 		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/source/_posts/time recording.md",
 		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/package.json",
@@ -1100,8 +1101,7 @@
 		"/Users/Jing/Documents/Dropbox/note-blog/_posts/前端/2014-09-26-write-article-use-jekyll-github-markdown.md",
 		"/Users/Jing/Documents/Dropbox/note-blog/_posts/前端/2015-05-17-how-to-install-nodejs-correctly.md",
 		"/Users/Jing/Documents/Dropbox/note-blog/_posts/前端/2015-11-10-reading-open-resource-code-from-github.md",
-		"/Users/Jing/Documents/Dropbox/note-blog/_posts/演讲/2016-03-28-js-moudle-history-and-webpack-in-action.md",
-		"/Users/Jing/Documents/Dropbox/note-blog/c.c"
+		"/Users/Jing/Documents/Dropbox/note-blog/_posts/演讲/2016-03-28-js-moudle-history-and-webpack-in-action.md"
 	],
 	"find":
 	{
