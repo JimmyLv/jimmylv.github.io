@@ -124,13 +124,15 @@ ZenHub 也提供了 Burndown 和 Velocity tracking 图，可以得出这个迭�
 
 #### 其他辅助工具
 
-- 看板：as Jira/Trello，可视化当前进度 => GitHub Issues group by @Projects / 日历 in @滴答清单；如果你不想用 ZenHub 可以试试 [Gitlo](http://gitlo.co) 可以在 GitHub issues 和 Trello 之间进行双向同步。
-- 晨间日记/每日回顾：as Stand-Up，只用关注 Done/Todo/Blocker 以及当天的心情/天气 etc => @格志日记
+- 看板：as Jira/[Trello](https://trello.com/)，可视化当前进度 => GitHub Issues group by @Projects / 日历 in @滴答清单；如果你不想用 ZenHub 可以试试 [Gitlo](http://gitlo.co) 可以在 GitHub issues 和 Trello 之间进行双向同步。
+- 晨间日记/每日回顾：as Stand-Up，只用关注 Timeline/Done/Todo/Blocker 以及当天的心情/天气等等，使用 @[格志日记](http://griddiaryapp.com/zh/)的一个特点就是可以通过问答的方式对一天进行回顾。
+- 时间记录：@[时间块](http://timeblocks-simple-daily-activi.appstor.io/zh/)的优点在于记录非常得简单、快捷，用户评论最省时间的时间记录工具没有之一，推荐新手可以试试。但由于个人需要更加详细的记录细节和报告分析，以及多平台（包括 Chrome Extension）的支持，从而选择了 @[Toggl](https://toggl.com/app/timer)。
+- 白噪声：作为一款时间记录工具，@[Toggl](https://toggl.com/app/timer) 本身就支持 Pomodoro 的 25 分钟提示，而作为专注力辅助的白噪声软件我在手机上用的 @[潮汐](https://itunes.apple.com/tw/app/chao-xi-mei-hao-fan-jia-zhong/id1077776989?l=zh&mt=8)，电脑上则选择了 @[Noizio](http://noiz.io/)。
 
 ## 后话
 
 也许你很喜欢这个解决方案但又不太想公开自己的 issues 列表，那可以试试 GitHub 的 private repo（需要付费），免费的可以试试 GitLab，支持从 GitHub 一键导入，并且已经原生支持了 pipline 和 kanban 功能。当然咯，不限于工具或软件，这一套方法论其实是可以运用在任何地方的，甚至于我们可以来做一个结合敏捷方法论的个人学习管理软件也不错嘛！
 
-但是于我而言，选择在 GitHub 这样一个公开环境下记录学习的最大一个动机就在于「开源」，很喜欢一句话，大意是「在这个互联网时代，能限制住学习的只有你的求知欲」。当你从互联网这个广阔的知识海洋当中汲取知识的时候，也应当有所输出到即反哺到整个互联网当中去。我会经常写博客/笔记来总结分享自己的所学，但是一篇文章诞生的背后往往还有很多其他知识和经验的相互交融与沉淀。[Issues · JimmyLv/jimmylv.github.io](https://github.com/JimmyLv/jimmylv.github.io/issues) 这个列表里面的某个 issues 最终能否演变成一篇文章我不知道，但是基于 GitHub 开放式的学习历程都会被这些 issues 如实地记录着，任何一个想法都能追本溯源被找出最开始的缘由。
+但是于我而言，选择在 GitHub 这样一个公开环境下记录学习的最大一个动机就在于「开源」，很喜欢一句话，大意是「**在这个互联网时代，能限制住学习的只有你的求知欲**」。当你从互联网这个广阔的知识海洋当中汲取知识的时候，也应当有所输出到即反哺到整个互联网当中去。我会经常写博客/笔记来总结分享自己的所学，但是一篇文章诞生的背后往往还有很多其他知识和经验的相互交融与沉淀。[Issues · JimmyLv/jimmylv.github.io](https://github.com/JimmyLv/jimmylv.github.io/issues) 这个列表里面的某个 issues 最终能否演变成一篇文章我不知道，但是基于 GitHub 开放式的学习历程都会被这些 issues 如实地记录着，任何一个想法都能追本溯源被找出最开始的缘由。
 
 > 相比于软件开发这件小事儿，健康快乐地成长显然要重要得多。—— 立青
