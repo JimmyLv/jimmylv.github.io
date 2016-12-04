@@ -15,7 +15,7 @@ published: True
 
 > 需要好多年才能懂得，最好不是去震惊世界，而是要像易卜生所说的，生活在世界上。
 
-我们都一样，渴望着建树功勋、改变世界，可是伴随着年岁的增长，却发现想要实现的梦想依然那么遥远，而时间却依然残酷得流逝着，不会仅仅因为「你」而发生丝毫的改变。如《奇特的一生》当中所言，我对时间充满着敬畏之心，最好的方式也不过是奢求时间能够跟自己做朋友，伴随着我这也许注定朴实无华的一生，共同成长。
+我们都一样，渴望着建树功勋、改变世界，可是伴随着年岁的增长，却发现想要实现的梦想依然那么遥远，而时间却依然残酷得流逝着，不会仅仅因为「你」而发生丝毫的改变。如《奇特的一生》当中所言，我对时间始终充满着敬畏之心，最好的方式也不过是奢求时间能够跟自己做朋友，伴随着我这也许注定朴实无华的一生，共同成长。
 
 在我们的一生所能做的事情里边儿，睡眠占去 1/3，此生只剩 2/3，除去非做不可的[基本生活维护成本](http://blog.jimmylv.info/2015-09-05-periodically-anxiety/#title0)过后，剩下的时间要么选择浪费而荒度此生，要么选择目标而奋力向前，让这一生不留遗憾。Follow your heart，你需要找到一些愿意为其付诸终身的「目标」，以这样的姿态「生活在这世界上」。
 
@@ -38,7 +38,7 @@ published: True
 
 ### 通过 GitHub Issues 收集需求： anywhere anytime
 
-首先你可以给自己建一个 GitHub 仓库作为主页，比如我的 [JimmyLv/jimmylv.github.io: Agile Learning based on GitHub issues.](https://github.com/JimmyLv/jimmylv.github.io) 其实最开始是从[个人博客](http://blog.jimmylv.info/)的主仓库发展而来。那么，如何快速得收纳自己的想法呢？以解决问题为导向，当然就是有什么需求就直接给自己的 repo 建一个 issue 作为 Story Card，然后了却这个需求的最终形态就是 close 掉这个 Issue，比如我要写这篇文章就始于这个 issue：[基于 GitHub 的敏捷学习方法总结 · Issue #36 · JimmyLv/jimmylv.github.io](https://github.com/JimmyLv/jimmylv.github.io/issues/36)。
+首先你可以给自己建一个 GitHub 仓库作为主页，比如我的 [JimmyLv/jimmylv.github.io: Agile Learning based on GitHub issues](https://github.com/JimmyLv/jimmylv.github.io) 其实最开始是从[个人博客](http://blog.jimmylv.info/)的主仓库发展而来。那么，如何快速得收纳自己的想法呢？以解决问题为导向，当然就是有什么需求就直接给自己的 repo 建一个 issue 作为 Story Card，然后了却这个需求的最终形态就是 close 掉这个 Issue，比如我要写这篇文章就始于这个 issue：[基于 GitHub 的敏捷学习方法总结 · Issue #36 · JimmyLv/jimmylv.github.io](https://github.com/JimmyLv/jimmylv.github.io/issues/36)。
 
 ![GitHub README](http://7xjbdq.com1.z0.glb.clouddn.com/images/2016/1480841415310.png)
 
@@ -48,13 +48,18 @@ published: True
 
 ![New issue](http://7xjbdq.com1.z0.glb.clouddn.com/images/2016/1480842912044.png)
 
-issue 和 issue 之间是可以通过 `#` 相互连接的，甚至可以跨仓库，被 reference 的 issue 也会出现在另外一边的 issue 下；你还可以随意艾特你的小伙伴们 @linesh-simplicity @Yaowenjie ，互相监督、互相学习或者给出 Constructive Feedback 之类的，😂；而通过 `#!` 符号是可以在 comments 里面直接新建一个 issue 的，这在思维爆炸的时候来得特别爽快；更甚至于，若是在 Intellij 里面关联了 GitHub，就可以在 git commit 信息里面直接看到你所要关联的 issues 列表了。这种方式仿佛学习的大脑，神经网络被连通了的感觉。
+- issue 和 issue 之间是可以通过 `#` 相互连接的，甚至可以跨仓库，被 reference 的 issue 也会出现在另外一边的 issue 下；
+- 而通过 `#!` 符号是可以在 comments 里面直接新建一个 issue 的，这在思维爆炸的时候来得特别爽快；
+- 你还可以随意艾特你的小伙伴们 @linesh-simplicity @Yaowenjie ，互相监督、互相学习或者给出 Constructive Feedback 之类的，😂；
+- 更甚至于，若是在 Intellij 里面关联了 GitHub，就可以在 git commit 信息里面直接看到你所要关联的 issues 列表了。
+
+这种方式仿佛学习中的大脑，神经网络被连通了的感觉。
 
 ![Intellij & Issues](http://7xjbdq.com1.z0.glb.clouddn.com/images/2016/1480844039076.png)
 
 #### 移动端的解决方案
 
-而在移动端则可以通过 [GitDo](http://gitdo.io/) 这个 App 来轻松新建和管理自己的 Issues，没错，就是有人把 GitHub issues 做成了一个 Todos 类 App，还做得很漂亮功能很完善，只可惜不知道这软件最近为啥被下降了，伤感，我就又重新把滴答清单（TickTick）作为自己的万能收集箱了，之后再把重要的需要进一步追踪的事项添加到 GitHub issues 里面来。
+而在移动端则可以通过 [GitDo](http://gitdo.io/) 这个 App 来轻松新建和管理自己的 Issues，没错，就是有人把 GitHub issues 做成了一个 Todos 类 App，还做得很漂亮功能很完善。只可惜不知道这软件最近为啥被下降了，伤感，我就又重新把滴答清单（TickTick）作为自己的万能收集箱了，之后再把重要的需要进一步追踪的事项添加到 GitHub issues 里面来。
 
 ![GitDo](https://cloud.githubusercontent.com/assets/4997466/20562832/b1916908-b1c0-11e6-9961-cb5d65ab893a.png)
 
@@ -68,7 +73,7 @@ issue 和 issue 之间是可以通过 `#` 相互连接的，甚至可以跨仓�
 
 ![ZenHub piepline](http://7xjbdq.com1.z0.glb.clouddn.com/images/2016/1480844770670.png)
 
-首先呢，让我们来新建一个 Milestone 来制定计划，也就是决定在一个 Iteration 里面你需要完成哪些 issues，在这里我所制定的阶段性计划周期为一个月，当然你也可以勤快一点以 2 周作为一个 Iteration，享受一下自己的计划要完不成了这个 Milestone 就要废了，没法像「时间」这个一生的朋友交付所有需求的快感吧，🙂
+首先呢，让我们来新建一个 [Milestone](https://github.com/JimmyLv/jimmylv.github.io/milestones?state=open) 来制定计划，也就是决定在一个 Iteration 里面你需要完成哪些 issues，在这里我所制定的阶段性计划周期为一个月，当然你也可以勤快一点以 2 周作为一个 Iteration，享受一下自己的计划要完不成了这个 Milestone 就要废了，没法像「时间」这个一生的朋友交付所有需求的快感吧，🙂
 
 ![Milestone](https://cloud.githubusercontent.com/assets/4997466/20562662/b6ccb2e8-b1bf-11e6-9702-755d137ab570.png)
 
@@ -119,6 +124,6 @@ ZenHub 也提供了 Burndown 和 Velocity tracking 图，可以得出这个迭�
 
 也许你很喜欢这个解决方案但又不太想公开自己的 issues 列表，那可以试试 GitHub 的 private repo（需要付费），免费的可以试试 GitLab，支持从 GitHub 一键导入，并且已经原生支持了 pipline 和 kanban 功能。当然咯，不限于工具或软件，这一套方法论其实是可以运用在任何地方的，甚至于我们可以来做一个结合敏捷方法论的个人学习管理软件也不错嘛！
 
-但是于我而言，选择在 GitHub 这样一个公开环境下记录学习的最大一个动机就在于「开源」，很喜欢一句话，大意是「在这个互联网时代，能限制住学习的只有你的求知欲」。当你从互联网这个广阔的知识海洋当中汲取知识的时候，也应当有所输出到即反哺到整个互联网当中去。我会经常写博客/笔记来总结分享自己的所学，但是一篇文章诞生的背后往往还有知识和经验的相互交融与沉淀。[Issues · JimmyLv/jimmylv.github.io](https://github.com/JimmyLv/jimmylv.github.io/issues) 这个列表里面的某个 issues 最终能否演变成一篇文章我不知道，但是基于 GitHub 的开放式的学习历程都会被这些 issues 如实地记录着，任何一个想法都能追本溯源被找出最开始的缘由。
+但是于我而言，选择在 GitHub 这样一个公开环境下记录学习的最大一个动机就在于「开源」，很喜欢一句话，大意是「在这个互联网时代，能限制住学习的只有你的求知欲」。当你从互联网这个广阔的知识海洋当中汲取知识的时候，也应当有所输出到即反哺到整个互联网当中去。我会经常写博客/笔记来总结分享自己的所学，但是一篇文章诞生的背后往往还有知识和经验的相互交融与沉淀。[Issues · JimmyLv/jimmylv.github.io](https://github.com/JimmyLv/jimmylv.github.io/issues) 这个列表里面的某个 issues 最终能否演变成一篇文章我不知道，但是基于 GitHub 开放式的学习历程都会被这些 issues 如实地记录着，任何一个想法都能追本溯源被找出最开始的缘由。
 
 > 相比于软件开发这件小事儿，健康快乐地成长显然要重要得多。—— 立青
