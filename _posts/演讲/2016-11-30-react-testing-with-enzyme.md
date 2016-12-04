@@ -8,7 +8,7 @@ transition: move
 files: /assets/slide.js,/assets/slide.css,/js/zoom.js
 highlightStyle: kimbie.light
 theme: green
-published: True
+published: False
 ---
 
 30 min = 15 min * 2

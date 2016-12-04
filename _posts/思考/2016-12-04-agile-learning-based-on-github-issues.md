@@ -1,4 +1,11 @@
-# 基于 GitHub 的敏捷学习方法之道与术
+---
+layout: post
+title: 基于 GitHub 的敏捷学习方法之道与术
+categories: [思考]
+tags: [学习, GitHub, 成长, 敏捷, 知识]
+published: True
+
+---
 
 > 「持续行动，持续反思，持续进步。」—— via. 敏捷学习宣言
 
@@ -18,7 +25,7 @@
 
 敏捷当中最重要的一大前提就是「拥抱变化」，时间充当着 Product Owner 的角色在不断着向你提出需求。在「[记录时间这件小事儿](https://github.com/JimmyLv/jimmylv.github.io/issues/85)」里面我提到的 GTD 流程便可以用于处理这源源不断的需求，即收集、整理、执行、回顾，而对应到敏捷当中的几大会议显然也可以由个人完成，自己就是自己的 IM & PM，当然也是 BA & Dev & QA。（当然不用担心人格分裂，😂）
 
-## 终于进入正题 => 如何实践？
+## 实践之术
 
 > 我都没想到写着写着怎么就把开头写成了鸡汤文，`[捂脸](./wechat/emoji.jpg)`。但是咧，如果说前面的讲的是「道」，那么接下来就会具体到基于 GitHub 的「术」即各种实践了。
 
@@ -41,7 +48,7 @@
 
 ![New issue](http://7xjbdq.com1.z0.glb.clouddn.com/images/2016/1480842912044.png)
 
-issue 和 issue 之间是可以通过 `#` 相互连接的，甚至可以跨仓库，被 reference 的 issue 也会出现在另外边的 issue 下；你还可以随意艾特你的小伙伴们 @linesh-simplicity @Yaowenjie ，互相监督、互相学习或者给出 Constructive Feedback 之类的，😂；而通过 `#!` 符号是可以在 comments 里面直接新建一个 issue 的，这在思维爆炸的时候来得特别爽快；更甚至于，若是在 Intellij 里面关联了 GitHub，就可以在 git commit 信息里面直接看到你所要关联的 issues 列表了。这种方式仿佛学习的大脑，神经网络被连通了的感觉。
+issue 和 issue 之间是可以通过 `#` 相互连接的，甚至可以跨仓库，被 reference 的 issue 也会出现在另外一边的 issue 下；你还可以随意艾特你的小伙伴们 @linesh-simplicity @Yaowenjie ，互相监督、互相学习或者给出 Constructive Feedback 之类的，😂；而通过 `#!` 符号是可以在 comments 里面直接新建一个 issue 的，这在思维爆炸的时候来得特别爽快；更甚至于，若是在 Intellij 里面关联了 GitHub，就可以在 git commit 信息里面直接看到你所要关联的 issues 列表了。这种方式仿佛学习的大脑，神经网络被连通了的感觉。
 
 ![Intellij & Issues](http://7xjbdq.com1.z0.glb.clouddn.com/images/2016/1480844039076.png)
 
@@ -110,8 +117,8 @@ ZenHub 也提供了 Burndown 和 Velocity tracking 图，可以得出这个迭�
 
 ## 后话
 
-也许你很喜欢这个解决方案但又不太想公开自己的 issues 列表，那可以试试 GitHub 的 private repo（需要付费），免费的可以试试 GitLab，支持从 GitHub 一键导入，并且已经原生支持了 pipline 和看板功能。当然咯，不限于工具或软件，这一套方法论其实是可以运用在任何地方的，甚至于我们可以来做一个结合敏捷方法论的个人学习管理软件也不错嘛！
+也许你很喜欢这个解决方案但又不太想公开自己的 issues 列表，那可以试试 GitHub 的 private repo（需要付费），免费的可以试试 GitLab，支持从 GitHub 一键导入，并且已经原生支持了 pipline 和 kanban 功能。当然咯，不限于工具或软件，这一套方法论其实是可以运用在任何地方的，甚至于我们可以来做一个结合敏捷方法论的个人学习管理软件也不错嘛！
 
 但是于我而言，选择在 GitHub 这样一个公开环境下记录学习的最大一个动机就在于「开源」，很喜欢一句话，大意是「在这个互联网时代，能限制住学习的只有你的求知欲」。当你从互联网这个广阔的知识海洋当中汲取知识的时候，也应当有所输出到即反哺到整个互联网当中去。我会经常写博客/笔记来总结分享自己的所学，但是一篇文章诞生的背后往往还有知识和经验的相互交融与沉淀。[Issues · JimmyLv/jimmylv.github.io](https://github.com/JimmyLv/jimmylv.github.io/issues) 这个列表里面的某个 issues 最终能否演变成一篇文章我不知道，但是基于 GitHub 的开放式的学习历程都会被这些 issues 如实地记录着，任何一个想法都能追本溯源被找出最开始的缘由。
 
-> 相比于软件开发这件小事儿，健康快乐地成长显然要重要得多。—— 吕立青
+> 相比于软件开发这件小事儿，健康快乐地成长显然要重要得多。—— 立青
