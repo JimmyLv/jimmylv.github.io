@@ -117,7 +117,7 @@ ZenHub 也提供了 Burndown 和 Velocity tracking 图，可以得出这个迭�
 #### 其他辅助工具
 
 - 计时：[Toggl](https://toggl.com/) 用来记录具体实施的总时间从而能够更精确地预估时间（点数），比方说这篇文章我估了 5 个点现在已经写了 4.5 hours 了。不过这是另外一个大话题，可以参考 [记录时间这件小事儿](https://github.com/JimmyLv/jimmylv.github.io/issues/85) 这个 issue。
-- 看板：as Jira/Trello，可视化当前进度 => GitHub Issues group by @Projects || 日历 in @滴答清单；如果你不想用 ZenHub 可以试试 [Gitlo](http://gitlo.co) 可以在 GitHub issues 和 Trello 之间进行双向同步。
+- 看板：as Jira/Trello，可视化当前进度 => GitHub Issues group by @Projects / 日历 in @滴答清单；如果你不想用 ZenHub 可以试试 [Gitlo](http://gitlo.co) 可以在 GitHub issues 和 Trello 之间进行双向同步。
 - 晨间日记/每日回顾：as Stand-Up，只用关注 Done/Todo/Blocker 以及当天的心情/天气 etc => @格志日记
 
 ## 后话
