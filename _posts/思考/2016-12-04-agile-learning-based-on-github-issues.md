@@ -36,7 +36,7 @@ published: True
 * 执行：as Dev & QA，Developing & Testing & Review/Sign-Off
 * 回顾：Retrospection，Introspection，持续反思，持续进步…
 
-### 通过 GitHub Issues 收集需求： anywhere anytime
+### 通过 GitHub Issues 收集需求
 
 首先你可以给自己建一个 GitHub 仓库作为主页，比如我的 [JimmyLv/jimmylv.github.io: Agile Learning based on GitHub issues](https://github.com/JimmyLv/jimmylv.github.io) 其实最开始是从[个人博客](http://blog.jimmylv.info/)的主仓库发展而来。那么，如何快速得收纳自己的想法呢？以解决问题为导向，当然就是有什么需求就直接给自己的 repo 建一个 issue 作为 Story Card，然后了却这个需求的最终形态就是 close 掉这个 Issue，比如我要写这篇文章就始于这个 issue：[基于 GitHub 的敏捷学习方法总结 · Issue #36 · JimmyLv/jimmylv.github.io](https://github.com/JimmyLv/jimmylv.github.io/issues/36)。
 
