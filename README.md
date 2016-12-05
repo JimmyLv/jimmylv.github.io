@@ -35,7 +35,7 @@ As you can see in [api](https://github.com/JimmyLv/jimmy.lv/tree/gh-pages/api) f
 nodeppt generate ./_posts/演讲 ./slides -a
 ```
 
-## Deployment
+## Deploy
 
 1. Hosted on [Coding Pages](http://blog.jimmylv.info/).
 2. Hosted on [GitHub Pages](http://jimmylv.github.io/).
