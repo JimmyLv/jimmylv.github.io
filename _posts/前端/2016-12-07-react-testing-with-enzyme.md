@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 使用 Enzyme 测试 React（Native）组件
+title: 「技术雷达」之使用 Enzyme 测试 React（Native）组件
 categories: [前端]
 tags: [React, ReactNaitve, Enzyme, Testing, TechRadar]
 published: True
