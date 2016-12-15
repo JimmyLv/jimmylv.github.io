@@ -120,10 +120,22 @@ h4.panel-title {
   right:20px;
   top:120px;
   display:none;
-  opacity: 0.68;
-  width: 280px;
+  opacity: 0.65;
+  width: 250px;
   overflow: auto;
 }
+
+#nav {
+  font-size: initial;
+}
+
+#content-table .panel-body {
+  padding: 0;
+}
+
+// #content-table .panel.panel-success {
+//   background-color: rgba(255,255,255,0.45);
+// }
 
 #pjax .row {
   margin-top: 0px;
