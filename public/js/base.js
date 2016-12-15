@@ -45,14 +45,16 @@ $(document).ready(function() {
     isClicked = $(this).data('clicked');
 
     nav_click(isClicked);
+    content_click(!isClicked);
 
     $(this).data('clicked', !isClicked);
+
   });
 
   $("#content_btn").on('click', function(){
     isClicked = $(this).data('clicked');
 
-    content_click(!isClicked);
+    content_click(isClicked);
 
     $(this).data('clicked',!isClicked);
 
