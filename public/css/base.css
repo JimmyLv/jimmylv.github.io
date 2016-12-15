@@ -113,6 +113,18 @@ h4.panel-title {
   padding-right: 30px;
   color: #444443;
 }
+
+/* 文章目录 */
+#content-table {
+  position:fixed;
+  right:20px;
+  top:120px;
+  display:none;
+  opacity: 0.68;
+  width: 280px;
+  overflow: auto;
+}
+
 #pjax .row {
   margin-top: 0px;
 }
