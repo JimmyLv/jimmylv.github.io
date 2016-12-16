@@ -36,7 +36,7 @@
 				"Set Syntax: Markdown Extended"
 			]
 		],
-		"width": 575.0
+		"width": 503.0
 	},
 	"console":
 	{
@@ -56,15 +56,40 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/Jing/Documents/Dropbox/jimmylv.github.io"
+		"/Users/Jing/Documents/Dropbox/jimmylv.github.io",
+		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/_includes",
+		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/_layouts",
+		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/_posts",
+		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/_posts/思考",
+		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/pages",
+		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/public",
+		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/public/css",
+		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/public/js",
+		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/slides/js"
 	],
 	"file_history":
 	[
+		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/_layouts/session.html",
+		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/_layouts/base.html",
+		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/public/js/base.js",
+		"/Users/Jing/Documents/Code Practice/WebApp/Real-React/Haiku/src/components/Header/ToolBar.jsx",
+		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/_posts/思考/2016-12-04-agile-learning-based-on-github-issues.md",
+		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/_layouts/post.html",
+		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/public/css/base.css",
+		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/_layouts/base_title.html",
+		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/pages/archive.html",
+		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/_includes/header.html",
+		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/README.md",
+		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/_posts/思考/2016-11-19-input-and-output-of-PKM.md",
+		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/public/css/css_backup.css",
+		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/_posts/前端/2016-12-07-react-testing-with-enzyme.md",
+		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/public/css/yue.css",
+		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/slides/js/shake.js",
 		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/_posts/演讲/2016-11-30-react-testing-with-enzyme.md"
 	],
 	"find":
 	{
-		"height": 34.0
+		"height": 72.0
 	},
 	"find_in_files":
 	{
@@ -78,6 +103,18 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"table",
+			"_",
+			"{\n",
+			"content_table",
+			";\n",
+			"content_table",
+			"\n    ",
+			"content_click",
+			"nav_btn",
+			"}\n",
+			";\n",
+			"h2",
 			";\n",
 			"* "
 		],
@@ -155,16 +192,56 @@
 		"selected_items":
 		[
 			[
+				"base",
+				"public/css/base.css"
+			],
+			[
+				"githubmd",
+				"_posts/思考/2016-12-04-agile-learning-based-on-github-issues.md"
+			],
+			[
+				"",
+				"public/css/base.css"
+			],
+			[
+				"base.css",
+				"public/css/base.css"
+			],
+			[
+				"base.js",
+				"public/js/base.js"
+			],
+			[
+				"enzym",
+				"_posts/前端/2016-12-07-react-testing-with-enzyme.md"
+			],
+			[
+				"js",
+				"slides/js/shake.js"
+			],
+			[
+				"yue",
+				"public/css/yue.css"
+			],
+			[
+				"hea",
+				"_includes/header.html"
+			],
+			[
+				"css",
+				"public/css/css_backup.css"
+			],
+			[
+				"2016-11-19-input-and-output-of-pkm",
+				"_posts/思考/2016-11-19-input-and-output-of-PKM.md"
+			],
+			[
 				"2016",
 				"_posts/思考/2016-12-04-agile-learning-based-on-github-issues.md"
 			],
 			[
 				"post",
 				"_layouts/post.html"
-			],
-			[
-				"base.css",
-				"public/css/base.css"
 			],
 			[
 				"enzy",
@@ -183,6 +260,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"",
+				"~/Documents/Dropbox/jimmylv.github.io/_.sublime-project"
+			]
 		],
 		"width": 380.0
 	},
@@ -203,7 +284,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 204.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
