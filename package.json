@@ -6,7 +6,6 @@
     "version": "3.2.2"
   },
   "scripts": {
-    "publish": "DEBUG=nightmare:actions* node scripts/auto_publish.js"
   },
   "dependencies": {
     "hexo": "^3.2.0",
@@ -22,8 +21,6 @@
     "hexo-renderer-jade": "^0.3.0",
     "hexo-renderer-marked": "^0.2.10",
     "hexo-renderer-stylus": "^0.3.1",
-    "hexo-server": "^0.2.0",
-    "js-yaml": "^3.7.0",
-    "nightmare": "^2.8.1"
+    "hexo-server": "^0.2.0"
   }
 }
