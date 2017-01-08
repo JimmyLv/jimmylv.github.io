@@ -9,7 +9,7 @@ published: true
 
 原文地址：<https://github.com/ryanmcdermott/clean-code-javascript#classes>
 
-> GitHub 总之有很多 Code Example 案例的仓库来教你如何正确写出好代码，诸多 Markdown 写手以 BAD | GOOD 两种代码作为示范，加上一些说明注释作为辅助，清晰易懂。我就准备来翻译最近看到的 JavaScript 整洁代码中 Classes 设计原则这一段，进一步加深对面向对象设计原则的理解，而不只是 Java 世界。
+> GitHub 总之有很多 Code Example 案例的仓库来教你如何正确写出好代码，诸多 Markdown 写手以 BAD/GOOD 两种代码作为示范，辅以一些叙述和注释作为说明，清晰易懂。我就准备来翻译最近看到的 JavaScript 整洁代码中 Classes 设计原则这一段，进一步加深对面向对象设计原则的理解，而不只是 Java 世界。
 
 ## [JavaScript **Classes**](https://github.com/ryanmcdermott/clean-code-javascript#classes)
 
