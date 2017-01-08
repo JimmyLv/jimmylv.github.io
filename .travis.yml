@@ -32,5 +32,4 @@ after_success:
     git add .
     git commit -m "Deploy at `date +"%Y-%m-%d %H:%M"`"
     # Make sure to make the output quiet, or else the API token will leak!
-    # This works because the API key can replace your password.
-    git push -f -q git@git.coding.net:jimmylv/note-blog.git > /dev/null 2>&1
+    git push -f -q git@git.coding.net:jimmylv/note-blog.git master:master > /dev/null 2>&1

@@ -58,3 +58,4 @@ exclude:
   - .github/
   - .travis/
   - node_modules/
+  - themes/
