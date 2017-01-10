@@ -73,6 +73,7 @@ published: False
     - IDE
       - 下载安装：`brew cask install wechatwebdevtools
       - Appdata panel Appdata panel 用于显示当前项目当前时刻 appdata 具体数据，实时地反馈项目数据情况，可以在此处编辑数据，并及时地反馈到界面上。   [mp.weixin.qq.com]
+      - 基于 [Microsoft/monaco-editor: A browser based code editor](https://github.com/Microsoft/monaco-editor)
       - 微信小程序运行在三端：iOS、Android 和 用于调试的开发者工具。 三端的脚本执行环境聚以及用于渲染非原生组件的环境是各不相同的： 在 iOS 上，小程序的 javascript 代码是运行在 JavaScriptCore 中，是由 WKWebView 来渲染的，环境有 iOS8、iOS9、iOS10 在 Android 上，小程序的 javascript 代码是通过 X5 JSCore来解析，是由 X5 基于 Mobile Chrome 37 内核来渲染的 在 开发工具上， 小程序的 javascript 代码是运行在 nwjs 中，是由 Chrome Webview 来渲染的   所以还是 WebView？ [mp.weixin.qq.com]
     - API
       - 数据绑定
@@ -88,6 +89,8 @@ published: False
       - 事件绑定
         - 在组件中绑定一个事件处理函数。  如bindtap，当用户点击该组件的时候会在该页面对应的Page中找到相应的事件处理函数。  Click me!   在相应的Page定义中写上相应的事件处理函数，参数是event。  Page({   tapName: function(event) {     console.log(event)   } })    [mp.weixin.qq.com]
 - 第三方开发框架
+    - [maichong/labrador: 微信小程序模块化开发框架](https://github.com/maichong/labrador)
+    - [wepyjs/wepy: 小程序组件化开发框架](https://github.com/wepyjs/wepy)
     - 支持加载外部NPM包。在编译过程当中，会递归遍历代码中的require然后将对应依赖文件从node_modules当中拷贝出来，并且修改require为相对路径，从而实现对外部NPM包的支持。  [wepyjs.github.io]
     - wpy文件说明wpy文件的编译过程过下：  [zhuanlan.zhihu.com]
 - 与其他方案的对比
