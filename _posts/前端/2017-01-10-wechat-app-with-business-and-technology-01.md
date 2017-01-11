@@ -65,7 +65,7 @@ published: True
 
 ![](http://7xjbdq.com1.z0.glb.clouddn.com/images/2016/1484051670988.png)
 
-最后想说一点的是，在微信（[Weixin/Wechat Wide Web](https://zhuanlan.zhihu.com/p/24782839)）掌控之下的小程序所提供的服务对用户来说不见得是一件坏事儿，我们程序猿会从技术的角度批判它的封闭，违背了互联网/万维网的初衷。但是在另一方面，我相信一句话「人性本恶」，放任不管的互联网最终会变成一个烂摊子，看看现在的[网络暴力](https://zh.wikipedia.org/zh-hant/%E7%B6%B2%E8%B7%AF%E9%9C%B8%E5%87%8C)、[比特币市场](http://if.pedaily.cn/news/201701/20170106161298634.shtml)以及被调教的[微软聊天机器人 Tay](https://www.zhihu.com/question/41764875)。
+最后想说一点的是，在微信（[Weixin/Wechat Wide Web](https://zhuanlan.zhihu.com/p/24782839)）掌控之下的小程序所提供的服务对用户来说不见得是一件坏事儿。我们程序猿会从技术的角度批判它的封闭，违背了互联网/万维网的初衷，但在另一方面，我相信一句话「人性本恶」，放任不管的互联网最终会变成一个烂摊子，看看现在的[网络暴力](https://zh.wikipedia.org/zh-hant/%E7%B6%B2%E8%B7%AF%E9%9C%B8%E5%87%8C)、[比特币市场](http://if.pedaily.cn/news/201701/20170106161298634.shtml)以及被调教的[微软聊天机器人 Tay](https://www.zhihu.com/question/41764875)。
 
 ## 技术
 
