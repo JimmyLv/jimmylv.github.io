@@ -69,4 +69,4 @@ published: True
 
 ## 技术
 
-总之不可避免地喜欢写长文，技术相关的内容就还是放到下篇吧，目前还处于大纲草稿阶段。
+> 总之不可避免地喜欢写长文，技术相关的内容就还是放到下篇吧，目前还处于大纲[草稿](https://github.com/JimmyLv/jimmylv.github.io/blob/master/_posts/%E5%89%8D%E7%AB%AF/2017-01-11-wechat-app-with-business-and-technology-02.md)阶段，敬请期待。
