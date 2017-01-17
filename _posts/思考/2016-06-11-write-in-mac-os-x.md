@@ -105,6 +105,7 @@ published: True
 下一篇我就会根据应用场景来详细总结描述一下使用 MarkEditor 进行写作的过程，类似问答的形式会比较好，方便于初学者能够更好地理解。然后还要介绍一下 Reflection 在个人生活中是如何应用起来的，比如一些 App（如 Evernote 配合 reflectapp、Google 配合 Kifi）以及 Pocket 和 Kindle 的高阶用法。
 
 > **后续更新：**
+> 
 > - MarkEditor 的设计确实非常好，若是初入写作这一大坑的人，我必然会大力推荐他直接用上 MarkEditor 而不用再去折腾其他乱七八糟的 Markdown 编辑器。但是由于我已然养成的操作习惯，我还是依赖于文件系统和 Alfred 直接对 Markdown 文件进行预览（Markoff）和编辑（Sublime），而且打开神速以及满足了我的可定制化需求，所以之前购买 MarkEditor 就权当对于美好事物的赞赏吧。
 > - 对于 Reflection 还得说上几句，Kifi 已经被 Google 收购并且停止运营了，reflectapp 至今未支持 Evernote 中国版即印象笔记，从 Pocket 定期发到 Kindle 的文章也没能坚持阅读下去。现在的方案大概就是，输入端全靠 Diigo 大杀器（已付费），哪怕 PDF 也是可以收录并且评注的，然后标注的内容会通过 RSS 订阅的方式在手机端进行阅读，当然标注的内容也会随着 Google 的搜索关键词出现在页面右边。
 > - 已经将 Pocket 替换为 Instapaper，Pocket 随着版本迭代已经越来越花哨，而 Instapaper 可以说依然保持着极致的阅读体验，并且在被 Pinterest 收购之后现在已经宣布所有付费功能（比如搜索和标注）全部免费。其实 Diigo 也有对应的 Read it later 的保存项，但是由于 Read it later 的时机往往都出现在碎片阅读时间即需要在移动端进行阅读，而 Diigo 现在的移动端就不说赶不上 Instapaper 的阅读体验吧，就连 Read it later 这一项都没有专门划分出来，不过也坐等 Diigo 更新移动端并且足够好得能够取代 Instapaper，现有的 IFTTT 方案减少了互相连通所需的操作，但也依然有其弊端即不能把 Instapaper 的标注内容同步到 Diigo。
