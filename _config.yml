@@ -53,6 +53,7 @@ gems:
   - jekyll/tagging
   - jekyll-tagging-related_posts
   - jekyll-seo-tag
+  - jekyll-toc
 
 exclude:
   - .idea/
