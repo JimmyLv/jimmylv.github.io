@@ -7,16 +7,17 @@ encoding: utf-8
 author: 
   name: 吕立青
   email: lv460051518@gmail.com
-  link: http://www.jimmylv.info
-  weibo: http://weibo.com/liqing215
-  github: http://github.com/JimmyLv
-  zhihu: http://www.zhihu.com/people/JimmyLv
+  link: https://blog.jimmylv.info
+  weibo: https://weibo.com/liqing215
+  github: https://github.com/JimmyLv
+  zhihu: https://www.zhihu.com/people/JimmyLv
 
 # 站点信息
 title: 吕立青的博客
 description: My personal note-blog.
-url: http://jimmylv.info
-rss_url: /pages/atom.xml
+url: https://blog.jimmylv.info
+repo: https://github.com/JimmyLv/jimmylv.github.io
+rss: /pages/atom.xml
 
 # gavatar头像及Favicon
 gavatar: /public/img/gavatar.jpg
@@ -25,7 +26,7 @@ favicon: /public/img/favicon.ico
 # google analytics 设置
 ga:
   id: UA-74789926-1
-  url: http://blog.jimmylv.info
+  url: https://blog.jimmylv.info
 
 # disqus 设置
 disqus:
