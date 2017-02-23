@@ -596,5 +596,5 @@ export default connect(
  
 > Whether you are using Redux and React or not, I highly recommend following these rules on your software projects.
 
-无论你是否正在使用 Redux 和 Redux，我都非常推荐你在自己的软件项目当中遵循这些规则。
+无论你是否正在使用 React 和 Redux，我都非常推荐你在自己的软件项目当中遵循这些规则。
 
