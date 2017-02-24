@@ -1,12 +1,12 @@
-## Description
+1. 定义目标和原则
 
-- What's Target？
-- What's Problem？
-- What's
+2. 展望结果
 
-## TODOs
+3. 头脑风暴
 
-- [ ] Elaboration of this issue
+4. 组织整理
+
+5. 明确「下一步行动」
 
 ## References
 
