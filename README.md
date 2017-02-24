@@ -15,6 +15,7 @@
 
 ## Continuous Progressive Ideology Revolution
 
+- [《搞定》最佳实践：如何利用滴答清单（TickTick）实践 GTD 理念？ - 吕立青的博客](https://blog.jimmylv.info/2017-02-20-gtd-best-practice-137/)
 - [基于 GitHub 的敏捷学习方法之道与术 - 吕立青的博客](http://blog.jimmylv.info/2016-12-04-agile-learning-based-on-github-issues/)
 - [渐进式知识管理： 写作动机与知识分享的价值影响](http://blog.jimmylv.info/2016-11-19-input-and-output-of-PKM/)
 - [不断革新，不断改进：去伪存真的知识管理之路](http://blog.jimmylv.info/2016-09-16-sorting-out-knowledge-from-information/)
