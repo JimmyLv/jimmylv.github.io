@@ -28,6 +28,7 @@ after_success:
   - |
     cd _site
     touch .nojekyll
+    git status
     git init
     git add .
     git commit -m "Deploy at `date +"%Y-%m-%d %H:%M"`"
