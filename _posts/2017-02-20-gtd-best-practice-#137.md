@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  系统性学习 GTD：如何利用滴答清单（TickTick）实践 GTD 理念？
-categories: [生活]
-tags: [GTD, 效率, 目标, 产品, 工具]
+title:  《搞定》最佳实践：如何利用 TickTick 实践 GTD 理念？
+categories: [思考]
+tags: [GTD, 最佳实践, 效率, 目标, 产品, 工具]
 published: True
 
 ---
