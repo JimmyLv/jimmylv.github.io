@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 微信小程序(1)：技术是如何服务于商业的？
+categories: [前端]
 tags: [WeChat, 微信, 小程序, 商业, 技术]
 published: True
 ---
