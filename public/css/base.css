@@ -32,13 +32,10 @@ body, html {
   /*box-shadow: inset -15px 0 20px -15px #77AEF4;*/
 }
 .aside1 > .nav > li > a {
-  padding-left: 0px;
-  padding-right: 0px;
   border-radius: 0px;
   color: #000;
   font-size: 15px;
-  padding: 10px 10px;
-
+  padding: 10px;
 }
 .aside1> .nav > li > a:hover {
   /*color:#fff;*/
