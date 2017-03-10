@@ -111,10 +111,10 @@ h4.panel-title {
   color: #444443;
 }
 .aside3-slide {
-  min-height: 600px;
-  display: inherit;
-  text-align: center;
-  margin-bottom: 10px;
+  min-height: 600px !important;
+  display: inherit !important;
+  text-align: center !important;
+  margin-bottom: 10px !important;
 }
 /* 文章目录 */
 #content-table {
