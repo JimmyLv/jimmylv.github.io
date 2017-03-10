@@ -113,7 +113,12 @@ h4.panel-title {
   padding-right: 30px;
   color: #444443;
 }
-
+.aside3-slide {
+  min-height: 600px;
+  display: inherit;
+  text-align: center;
+  margin-bottom: 10px;
+}
 /* 文章目录 */
 #content-table {
   position:fixed;
