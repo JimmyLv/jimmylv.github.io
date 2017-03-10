@@ -46,7 +46,7 @@ published: True
 
 与此同时，新建 issue 还有更高级的用法，也就是通过 [ISSUE_TEMPLATE](https://help.github.com/articles/creating-an-issue-template-for-your-repository/) 这样一个模板来新建某个 issue，从而更快地定位问题所在和解析自己的想法，最主要的是能够输出更具体的 TODOs，即下一步行动的具体内容，这个还会在后面详细解释的。
 
-![New issue](http://7xjbdq.com1.z0.glb.clouddn.com/images/2016/1480842912044.png)
+![New issue](http://7xjbdq.com1.z0.glb.clouddn.com/images/2017/03/1489125677512.png)
 
 - issue 和 issue 之间是可以通过 `#` 相互连接的，甚至可以跨仓库，被 reference 的 issue 也会出现在另外一边的 issue 里面；
 - 而通过 `#!` 符号是可以在 comments 里面直接新建一个 issue 的，这在思维爆炸的时候来得特别爽快；
