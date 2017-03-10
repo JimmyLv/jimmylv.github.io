@@ -14,7 +14,7 @@ published: True
 
 React.js 作为前端框架的后起之秀，却在 2015 年携着虚拟 DOM，组件化，单向数据流等利器，给前端 UI 构建掀起了一波声势浩大的函数式新潮流。虽然说组件化不是 React 最先提出来的，但却是 React 使得组件化在前端世界里发扬光大的，而现在几乎所有的所谓现代化 UI 框架比如 Angular 或者 Vue 都已经将组件化作为框架的立足之本。
 
-![](http://7xjbdq.com1.z0.glb.clouddn.com/images/2016/1481267000925.png)
+![](//o7mw3gkkh.qnssl.com//images/2016/1481267000925.png)
 
 React 已经让 UI 测试变得容易很多，React 组件都可以被简化为这样一个表达式，即 `UI = f(data)`，这个纯函数返回的只是一个描述 UI 组件应该是什么样子的虚拟 DOM，本质上就是一个树形的数据结构。给这个纯函数输入一些应用程序的状态，就会得到相应的 UI 描述的输出，这个过程不会去直接操作实际的 UI 元素，也不会产生所谓的副作用。
 
@@ -22,7 +22,7 @@ React 已经让 UI 测试变得容易很多，React 组件都可以被简化为�
 
 按理来说按照纯函数这样的思路，React 组件的测试应该很简单的说。但与此同时对于（渲染出 UI 的）组件树进行测试依然存在一个问题，从下图中可以看出，越处于上层的组件，其复杂度必然会随之提高。对于最底层的子组件来说，我们可以很容易得将其进行渲染并测试其逻辑的正确与否，但对于较上层的父组件来说，通常来说就需要对其所包含的所有子组件都进行预先渲染，甚至于最上面的组件需要渲染出整个 UI 页面的真实 DOM 节点才能对其进行测试，这显然是不可取的。
 
-![Components-Tree](http://7xjbdq.com1.z0.glb.clouddn.com/images/2016/1481119659338.png)
+![Components-Tree](//o7mw3gkkh.qnssl.com//images/2016/1481119659338.png)
 
 > Shallow rendering lets you render a component "one level deep" and assert facts about what its render method returns, without worrying about the behavior of child components, which are not instantiated or rendered. This does not require a DOM.
 
@@ -38,7 +38,7 @@ React 已经让 UI 测试变得容易很多，React 组件都可以被简化为�
 
 对比一下两者 `facebook/react-addons-test-utils` vs `airbnb/enzyme` 的 API 就一目了然，立见分明：
 
-![](http://7xjbdq.com1.z0.glb.clouddn.com/images/2016/1481121353201.png)
+![](//o7mw3gkkh.qnssl.com//images/2016/1481121353201.png)
 
 ## Enzyme 的三种渲染方法
 
@@ -173,5 +173,5 @@ Enzyme 推荐在测试环境中使用 [react-native-mock](https://github.com/Rea
 
 > **技术雷达**：我们非常享受Enzyme为React.js应用提供的快速组件级UI测试功能。与许多其他基于快照的测试框架不同，Enzyme允许开发者在不进行设备渲染的情况下做测试，从而实现速度更快，粒度更小的测试。在开发React应用时，我们经常需要做大量的功能测试，而Enzyme可以在大规模地减少功能测试数量上做出贡献。
 
-![TechRadar](http://7xjbdq.com1.z0.glb.clouddn.com/images/2016/1481128632569.png)
+![TechRadar](//o7mw3gkkh.qnssl.com//images/2016/1481128632569.png)
 

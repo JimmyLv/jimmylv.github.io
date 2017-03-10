@@ -53,13 +53,13 @@ published: True
 
 在 MVC 当中，一个 Model 可以被多个 Views 读取，并且可以被多个 Controllers 进行更新。在大型应用当中，单个 Model 会导致多个 Views 去通知 Controllers，并可能触发更多的 Model 更新，这样结果就会变得非常复杂。
 
-![](http://7xjbdq.com1.z0.glb.clouddn.com/images/2016/1467895052725.png)
+![](//o7mw3gkkh.qnssl.com//images/2016/1467895052725.png)
 
 > Flux attempts to solve this complexity by forcing a unidirectional data flow. In this architecture, Views query Stores (not Models), and user interactions result in Actions that are submitted to a centralized Dispatcher. When the Actions are dispatched, Stores can then update themselves accordingly and notify Views of any changes. These changes in the Store prompts Views to query for new data.
 
 Flux 试图通过强制单向数据流来解决这个复杂度。在这种架构当中，Views 查询 Stores（而不是 Models），并且用户交互将会触发 Actions，Actions 则会被提交到一个集中的 Dispatcher 当中。当 Actions 被派发之后，Stores 将会随之更新自己并且通知 Views 进行修改。这些 Store 当中的修改会进一步促使 Views 查询新的数据。
 
-![](http://7xjbdq.com1.z0.glb.clouddn.com/images/2016/1467895448296.png)
+![](//o7mw3gkkh.qnssl.com//images/2016/1467895448296.png)
 
 > The main difference between MVC and Flux is the separation of queries and updates. In MVC, the Model is both updated by the Controller *and* queried by the View. In Flux, the data that a View gets from a Store is read-only. Stores can only be updated through Actions, which would affect the Stores themselves *not* the read-only data.
 
@@ -392,7 +392,7 @@ e.g. `ShoppingCartActionCreators.addItem(…)`
 2. 一个处理显示汇总，税，配送和包装，以及总数的视图。
 3. 一个处理购物车中物品的个数，以及下拉详情菜单的视图。
 
-![](http://7xjbdq.com1.z0.glb.clouddn.com/images/2016/1467904299891.png)
+![](//o7mw3gkkh.qnssl.com//images/2016/1467904299891.png)
 
 > In this system, we don’t want to tie different views and controllers directly to a ShoppingCart model because changes to the model causes a complex data flow that is hard to reason about.
 

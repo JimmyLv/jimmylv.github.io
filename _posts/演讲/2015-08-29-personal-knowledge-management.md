@@ -64,14 +64,14 @@ published: True
 
 - RSS：<http://feedly.com>
 
-![feedly](http://7xjbdq.com1.z0.glb.clouddn.com/feedly.png)
+![feedly](//o7mw3gkkh.qnssl.com//feedly.png)
 
 [slide]
 # 阅读
 
 - 稍后阅读：<http://getpocket.com>
 
-![](http://7xjbdq.com1.z0.glb.clouddn.com/pocket.png)
+![](//o7mw3gkkh.qnssl.com//pocket.png)
 
 [slide]
 # 收藏

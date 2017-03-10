@@ -26,7 +26,7 @@ published: True
 
 之前一直没有利用系统的多桌面，刚刚尝试了一把，真是酷炫叼渣天。发掘最深的需求应该是**不需要频繁切换窗口**，而是分为不同的工作区，不同的桌面存放不同的软件。使用 Mission Control 和多 Desktop 工作区，简直就是完美任务切换啊。
 
-![MissionControl](http://7xjbdq.com1.z0.glb.clouddn.com/MissionControl.jpg)
+![MissionControl](//o7mw3gkkh.qnssl.com//MissionControl.jpg)
 
 你怎么翻译 Desktop，桌面？屁！妈的被 Windows 的翻译洗脑了。就是那个每次都要回到桌面再找程序？ 然后还要一直右键刷新的「桌面」？！卧槽，或者，一定要保持桌面整洁？
 
@@ -43,17 +43,17 @@ published: True
 
 核心理念就是要专注，在一个工作区下做一件事情，至于这件事情需要多少软件，那就提前把这些软件放进来就好了。比如说编程，通常一边看教程，一边写代码，一边操作终端。
 
-![write code](http://7xjbdq.com1.z0.glb.clouddn.com/write%20code.jpg)
+![write code](//o7mw3gkkh.qnssl.com//write%20code.jpg)
 
 这里用到一个 ShiftIt 的 App，可以非常方便得布局程序窗口。
 
-![shiftit](http://7xjbdq.com1.z0.glb.clouddn.com/images/2016/1468227896312.png)
+![shiftit](//o7mw3gkkh.qnssl.com//images/2016/1468227896312.png)
 
 而且一个软件可以同时有多个窗口，但是这个软件也不一定是在做同一件事吖。比如说 Chrome，你可以用来查文档，也可以用来刷知乎，但是这两个 Chrome 窗口完全就该放在不同的工作台中。
 
 但是与此同时，在同一工作台也可以使用两个 Chrome 窗口，这两个窗口的工作性质一致，但是固定性不统一。比如说，你可以新建一个 Chrome 搜索文档中不明确的地方，然后使用 `Cmd+~` 切换回来，继续看文档写代码。前者是不固定的且搜索数目为止，后者是固定不定的，文档只有一份。
 
-![](http://7xjbdq.com1.z0.glb.clouddn.com/search.jpg)
+![](//o7mw3gkkh.qnssl.com//search.jpg)
 
 ### 总结
 
@@ -64,11 +64,11 @@ published: True
 
 快捷键和手势：
 
-![](http://7xjbdq.com1.z0.glb.clouddn.com/Screenshot%202015-07-13%2023.49.22.png)
+![](//o7mw3gkkh.qnssl.com//Screenshot%202015-07-13%2023.49.22.png)
 
 在这里还可以有更详细的设置，关闭 Dashboard 就又少了一个不必要的工作区，神清气爽。
 
-![](http://7xjbdq.com1.z0.glb.clouddn.com/shortcut%20for%20MissionControl.jpg)
+![](//o7mw3gkkh.qnssl.com//shortcut%20for%20MissionControl.jpg)
 
 理解了 Mission Control 的工作理念和操作概念，现在看来原生支持的这些快捷键简直就是贴心到爆。手势和快捷键的支持都足够好用，但还是会觉得手势更酷更顺手吧。
 
@@ -83,4 +83,4 @@ published: True
 
 直接看图，使用频率高是一回事儿，提高幸福感是另外一回事儿，待续。。。
 
-![](http://7xjbdq.com1.z0.glb.clouddn.com/software_summary.png)
+![](//o7mw3gkkh.qnssl.com//software_summary.png)

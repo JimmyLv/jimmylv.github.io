@@ -19,7 +19,7 @@ published: True
 
 ToMarkdown 让文字返璞归真，而 ToArticle 则让思考的乐趣重现。
 
-![](http://7xjbdq.com1.z0.glb.clouddn.com/images/2016/1468653650621.png)
+![](//o7mw3gkkh.qnssl.com//images/2016/1468653650621.png)
 
 ## 快速输入的极致
 
@@ -35,7 +35,7 @@ ToMarkdown 让文字返璞归真，而 ToArticle 则让思考的乐趣重现。
 
 我会在手机端进行阅读的来源主要分为 RSS、Pocket、网页、微信（朋友圈链接 + 公众号）、内容 App（掘金、知乎）等等，而这些都是可以统一放入印象笔记的，放心吧，要么 App 内部支持，要么系统级支持，要么你还可以在浏览器里打开相应的网站，再放到印象笔记里面。
 
-![](http://7xjbdq.com1.z0.glb.clouddn.com/images/2016/1468653900621.png)
+![](//o7mw3gkkh.qnssl.com//images/2016/1468653900621.png)
 
 而在电脑端，则可以通过[剪藏](https://www.yinxiang.com/webclipper/)快速收藏网页文章，再不济就是 `Ctrl + C`、`Ctrl + V` 贴到印象笔记里面，但是更推荐使用全局快捷键 `Cmd + Option + Ctrl + V` 直接贴到印象笔记里面，一触即达。
 
@@ -57,7 +57,7 @@ ToMarkdown 让文字返璞归真，而 ToArticle 则让思考的乐趣重现。
 
 而最完美的书写编辑体验，当然需要借助代码编辑器的强大以及 Markdown 语法的简洁。使用 Sublime Text 的 Evernote 插件打开印象笔记内容，顺便就可以完美得格式化，然后在编辑器里删除掉我们不需要的而留下所需要的，而且这个 Sublime-Evernote 插件还可以自定义样式，代码高亮和字体格式什么的都配置成与博客相同，在获得一致性阅读体验的同时保持了私密性。
 
-![](http://7xjbdq.com1.z0.glb.clouddn.com/images/2016/1468653053257.png)
+![](//o7mw3gkkh.qnssl.com//images/2016/1468653053257.png)
 
 而刚好 Jekyll 和 [Sublime-Evernote](https://github.com/bordaigorl/sublime-evernote) 都采用了 yaml 语法的头文件，所以最好能够统一它们的分类和标签系统，在整理的同时也是在设计美好的 API 系统，我们在下一部分会进一步提到。
 
@@ -84,7 +84,7 @@ notebook: 0.0 Inbox
 
 兜了大大的一个圈子，从抛弃印象笔记想要彻底实现文本化文档管理，到现在又重拾印象笔记作为统一的收纳管理以及存储同步工具，围绕着印象笔记算是终于快找到比较完美的方案了吧：印象笔记作为收集器确实很完美，在 Sublime 里代码般的编辑体验也比较完美，重新归档到印象笔记进行阅读和搜索（配合 Alfred）也比较完美，使用 Presentation 模式时的阅读体验简直太美太棒。
 
-![](http://7xjbdq.com1.z0.glb.clouddn.com/images/2016/1468654167867.png)
+![](//o7mw3gkkh.qnssl.com//images/2016/1468654167867.png)
 
 进一步，将印象笔记重新[迁移](https://help.yinxiang.com/hc/zh-cn/articles/212819428-%E5%A6%82%E4%BD%95%E8%BF%81%E7%A7%BBEvernote%E5%9B%BD%E9%99%85%E7%89%88%E7%AC%94%E8%AE%B0%E5%88%B0%E5%8D%B0%E8%B1%A1%E7%AC%94%E8%AE%B0-)到 Evernote 国际版也是基于几个考虑：
 
@@ -97,7 +97,7 @@ notebook: 0.0 Inbox
 
 除了同步到博客以外，想要重点讨论 Reflection 对于个人而言的价值所在，也就是指**个人知识系统的闭环**。印象笔记的内容可以集成到 Google 搜索结果的右边栏，那么当你搜索关键词的时候印象笔记也会相应的给出自己的答案。若是自己在之前放入印象笔记的知识是经过整理了的话，那印象笔记所展示的内容甚至会比 Google 更懂自己。这就是知识闭环的一种形态，**在最恰当的时候唤醒人的相关记忆**，而且你可以相应地更新笔记内容从而进一步丰富你的知识系统。
 
-![](http://7xjbdq.com1.z0.glb.clouddn.com/images/2016/1468654329533.png)
+![](//o7mw3gkkh.qnssl.com//images/2016/1468654329533.png)
 
 ## 后续
 

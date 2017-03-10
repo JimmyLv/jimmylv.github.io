@@ -287,18 +287,18 @@ nodeppt：https://github.com/ksky521/nodePPT
 ## 演示magic标签效果
 -----
 <div class="columns3">
-    <img src="http://7xjbdq.com1.z0.glb.clouddn.com/girl.jpg" height="450">
-    <img src="http://7xjbdq.com1.z0.glb.clouddn.com/girl.jpg" height="450">
-    <img src="http://7xjbdq.com1.z0.glb.clouddn.com/girl.jpg" height="450">
+    <img src="//o7mw3gkkh.qnssl.com//girl.jpg" height="450">
+    <img src="//o7mw3gkkh.qnssl.com//girl.jpg" height="450">
+    <img src="//o7mw3gkkh.qnssl.com//girl.jpg" height="450">
 </div>
 ========
 ## 演示earthquake转场效果
 -----
 <div class="columns4">
-    <img src="http://7xjbdq.com1.z0.glb.clouddn.com/girl.jpg" height="320">
-    <img src="http://7xjbdq.com1.z0.glb.clouddn.com/girl.jpg" height="320">
-    <img src="http://7xjbdq.com1.z0.glb.clouddn.com/girl.jpg" height="320">
-    <img src="http://7xjbdq.com1.z0.glb.clouddn.com/girl.jpg" height="320">
+    <img src="//o7mw3gkkh.qnssl.com//girl.jpg" height="320">
+    <img src="//o7mw3gkkh.qnssl.com//girl.jpg" height="320">
+    <img src="//o7mw3gkkh.qnssl.com//girl.jpg" height="320">
+    <img src="//o7mw3gkkh.qnssl.com//girl.jpg" height="320">
 </div>
 [/magic]
 
@@ -307,9 +307,9 @@ nodeppt：https://github.com/ksky521/nodePPT
 [magic data-transition="cover-circle"]
 ## 换个magic动效效果
 ----
-![](http://7xjbdq.com1.z0.glb.clouddn.com/girl.jpg)
+![](//o7mw3gkkh.qnssl.com//girl.jpg)
 ====
-![](http://7xjbdq.com1.z0.glb.clouddn.com/girl.jpg)
+![](//o7mw3gkkh.qnssl.com//girl.jpg)
 [/magic]
 
 
@@ -427,7 +427,7 @@ nodeppt：https://github.com/ksky521/nodePPT
 ## 图片，点击全屏
 ----
 
-![小萝莉](http://7xjbdq.com1.z0.glb.clouddn.com/girl.jpg "小萝莉")
+![小萝莉](//o7mw3gkkh.qnssl.com//girl.jpg "小萝莉")
 
 
 [slide]

@@ -28,13 +28,13 @@ published: True
 
 ## 被误解的前端
 
-![](http://7xjbdq.com1.z0.glb.clouddn.com/css.jpeg)
+![](//o7mw3gkkh.qnssl.com//css.jpeg)
 
 [slide]
 
 ## 热门的前端
 
-![](http://7xjbdq.com1.z0.glb.clouddn.com/money.png)
+![](//o7mw3gkkh.qnssl.com//money.png)
 
 [slide]
 
@@ -49,7 +49,7 @@ published: True
 
 ## 语言排行榜
 
-![](http://7xjbdq.com1.z0.glb.clouddn.com/hot_language.jpg)
+![](//o7mw3gkkh.qnssl.com//hot_language.jpg)
 
 [slide]
 

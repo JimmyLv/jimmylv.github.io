@@ -130,6 +130,6 @@ run
 
 - 开始一个Rails项目
 
-![1](http://7xjbdq.com1.z0.glb.clouddn.com/public/img/tech/0926-1.png)
+![1](//o7mw3gkkh.qnssl.com//public/img/tech/0926-1.png)
 
-![2](http://7xjbdq.com1.z0.glb.clouddn.com/public/img/tech/0926-2.png)
+![2](//o7mw3gkkh.qnssl.com//public/img/tech/0926-2.png)

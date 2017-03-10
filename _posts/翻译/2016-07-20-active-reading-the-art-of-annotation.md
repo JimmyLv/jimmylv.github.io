@@ -77,4 +77,4 @@ published: true
 
 **评注内容样例：**
 
-![](http://7xjbdq.com1.z0.glb.clouddn.com/images/2016/1469014013361.png)
+![](//o7mw3gkkh.qnssl.com//images/2016/1469014013361.png)

@@ -117,7 +117,7 @@ rootReducer.js
 
 Rich Hickey 在他的 Ruby Conf 2012 演讲 [Simplicity Matters](https://www.youtube.com/watch?v=rI8tNMsozo0) 中，将复杂度定义为一种**编织**（或交织）的东西。当你把模块耦合在一起，你将会从代码当中看到某种跟现实中的绳结或者辫子一样的形态。
 
-![](http://7xjbdq.com1.z0.glb.clouddn.com/images/2016/1467619650283.png)
+![](//o7mw3gkkh.qnssl.com//images/2016/1467619650283.png)
 
 > The relevence of complexity to project structure is that when you place objects in **close proximity** to one another, the **barrier to couple** them lowers dramatically.
 
@@ -288,7 +288,7 @@ a(); // ???
 
 换句话来说，制造循环依赖，你就是**在用最糟糕的方式在打着绳子的结**。想象一下一个模块就是一缕头发，然后模块之间相互依赖着形成了一个巨大的，混乱的毛团。
 
-![](http://7xjbdq.com1.z0.glb.clouddn.com/images/2016/1467640142143.png)
+![](//o7mw3gkkh.qnssl.com//images/2016/1467640142143.png)
 
 > Whenever you want to use a small module within the hairball, you will have no choice but to pull in the giant mess. And even worse, when you change something inside the hairball, it would be hard *not* to break something else.
 

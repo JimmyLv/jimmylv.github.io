@@ -18,7 +18,7 @@ published: True
 
 本次更新的 `.component()` 方法其实就是一种更加方便定义元素指令的方式，并自带默认配置使之符合最佳实践。而组件开发的方式也就使应用更加符合 [Angular 2.0](http://www.angular.io/) 的架构风格，所以说，Angular 1.5 就是为了方便开发者能够更加顺利地过渡到 Angular 2.0。为了 Angular 2.0 的未来 Google 也是迫不得已啊，要知道很多前端开发者在经历过 Angular 1.x 的「折磨」过后都转投了其他框架的怀抱。可以说前有 [React.js](https://github.com/facebook/react) 携着组件化，虚拟 DOM ，单向数据流等利器，给前端 UI 构建掀起了一波声势浩大的函数式新潮流；后有 [Vue.js](http://vuejs.org/) 等更轻便的 MVVM 框架穷追猛赶，据说用过 Vue 的开发者都一致叫好。
 
-![](http://7xjbdq.com1.z0.glb.clouddn.com/images/2016/1466241519959.png)
+![](//o7mw3gkkh.qnssl.com//images/2016/1466241519959.png)
 
 - 终于支持了 **Multi-slot transclusion**：
 
@@ -101,7 +101,7 @@ AngularJS 在早些版本引入了 `controllerAs` 语法，相当于给 ViewMode
       this.name = 'JimmyLv';
     });
 
-![](http://7xjbdq.com1.z0.glb.clouddn.com/images/2016/1466241548419.png)
+![](//o7mw3gkkh.qnssl.com//images/2016/1466241548419.png)
 
 但与此同时，在指令使用 `controllerAs` 语法也会遇到问题：
 

@@ -17,7 +17,7 @@ Roy Fielding是HTTP协议（1.0版和1.1版）的主要设计者，事实上HTTP
 
 ## Why？
 
-![](http://7xjbdq.com1.z0.glb.clouddn.com/images/2016/1471531874674.png)
+![](//o7mw3gkkh.qnssl.com//images/2016/1471531874674.png)
 
 在「远古时代」前端后端是融合在一起的，比如之前的PHP，JSP，ASP等等（参考我之前做过的一场演讲：[Web前端开发模式演变](http://blog.jimmylv.info/2015-11-02-history-about-web-development-evolution/)）。近年来随着移动互联网的飞速发展，各种类型的Client端层出不穷，就需要通过一套统一的接口分别为Web，iOS和Android乃至桌面端提供服务。另外对于广大平台来说，比如Facebook platform，微博开放平台，微信公共平台等，它们不需要有显式的前端，只需要一套提供服务的接口，于是RESTful更是它们最好的选择。
 

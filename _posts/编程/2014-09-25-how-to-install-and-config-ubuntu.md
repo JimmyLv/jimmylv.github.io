@@ -112,7 +112,7 @@ sudo apt-get install ttf-wqy-microhei
 
 原系统设置中没有找到修改字体的地方，使用Ubuntu Tweak：调整－>字库中，将默认字体、桌面字体等做修改
 
-![](http://7xjbdq.com1.z0.glb.clouddn.com/images/2016/1487949759355.png)
+![](//o7mw3gkkh.qnssl.com//images/2016/1487949759355.png)
 
 3) 进一步确认并修改字体配置文件
 

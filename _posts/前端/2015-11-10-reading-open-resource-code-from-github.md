@@ -9,7 +9,7 @@ published: True
 
 # GitHub开源项目：getAwesomeness
 
-![](http://7xjbdq.com1.z0.glb.clouddn.com/getAwesome.png)
+![](//o7mw3gkkh.qnssl.com//getAwesome.png)
 
 repo url: <https://github.com/panzhangwang/getawesomeness/>
 
@@ -67,7 +67,7 @@ time: 2 days
   });
 ```
 
-![](http://7xjbdq.com1.z0.glb.clouddn.com/swig_404.png)
+![](//o7mw3gkkh.qnssl.com//swig_404.png)
 
 当然可以再次分层，把具体的`res.render()`函数放到不同的地方。
 

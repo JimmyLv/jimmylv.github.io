@@ -6,11 +6,11 @@ tags: [摄影, 大学]
 description: 
 ---
 
-![1](http://7xjbdq.com1.z0.glb.clouddn.com/1.jpg)
-![2](http://7xjbdq.com1.z0.glb.clouddn.com/2.jpg)
-![3](http://7xjbdq.com1.z0.glb.clouddn.com/3.jpg)
-![4](http://7xjbdq.com1.z0.glb.clouddn.com/4.jpg)
-![5](http://7xjbdq.com1.z0.glb.clouddn.com/5.jpg)
-![6](http://7xjbdq.com1.z0.glb.clouddn.com/6.jpg)
-![7](http://7xjbdq.com1.z0.glb.clouddn.com/7.jpg)
+![1](//o7mw3gkkh.qnssl.com//1.jpg)
+![2](//o7mw3gkkh.qnssl.com//2.jpg)
+![3](//o7mw3gkkh.qnssl.com//3.jpg)
+![4](//o7mw3gkkh.qnssl.com//4.jpg)
+![5](//o7mw3gkkh.qnssl.com//5.jpg)
+![6](//o7mw3gkkh.qnssl.com//6.jpg)
+![7](//o7mw3gkkh.qnssl.com//7.jpg)
 

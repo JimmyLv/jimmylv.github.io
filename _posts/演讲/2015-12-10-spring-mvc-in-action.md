@@ -80,5 +80,5 @@ Edit / Delete / ...
 - 然后再改用**JSON格式**返回，而不再需要后端模板。
     + 为了前后端分离，😂 以下形式就Okay：
 
-![](http://7xjbdq.com1.z0.glb.clouddn.com/json-format.jpg)
+![](//o7mw3gkkh.qnssl.com//json-format.jpg)
 

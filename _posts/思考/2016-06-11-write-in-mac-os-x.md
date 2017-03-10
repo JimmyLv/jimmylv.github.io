@@ -45,7 +45,7 @@ published: True
 
 减少切换，亦为隔离任务。**在单一任务无需切换的时候，如果你发现你还在切换，那就说明你并没有专注在当前任务，依然在分心而已。**而大而全的应用也切中了少切换的首要要害，在 IDEA 中开发绝对比你同时打开多种工具要爽得多得多，并且和 Evernote 一样，也可以通过定制化使页面变得简洁。所以在机器性能够好的情况下，软件太笨重显然也变成了一个伪话题。
 
-![](http://7xjbdq.com1.z0.glb.clouddn.com/images/2016/1465622967957.png)
+![](//o7mw3gkkh.qnssl.com//images/2016/1465622967957.png)
 
 + 通过 Alfred 和快捷键，就可以尽可能得减少切换成本，所以 [Hocus Focus - A Mac menu bar utility that hides your inactive windows](http://hocusfoc.us/) 自动隐藏其他窗口，大概是个伪需求。
 + 再比如全局可显示，即每个 Desktop 都能随处打开的窗口就是一个痒点，比如 `F12` 之下的 iTerm2，以及 `Cmd + Space` 打开 Alfred 和 `^ + Cmd + N` 打开 Evernote 通知栏小窗口。很爽，随时随地就是干。
@@ -55,7 +55,7 @@ published: True
 - 尽可能排除视觉干扰，使用 [Noodlesoft – Simply Useful Software](https://www.noodlesoft.com/) 可以实现桌面上文件的自动整理。
 - Finder 中的 Smart Folder 可以自定义一些搜索结果集合，从而实现了在特定条件规则限制下的自动整合，也算是一种自动整理。
 
-![](http://7xjbdq.com1.z0.glb.clouddn.com/images/2016/1463930568879.png)
+![](//o7mw3gkkh.qnssl.com//images/2016/1463930568879.png)
 
 ## 写作工具篇
 
@@ -74,7 +74,7 @@ published: True
     + 至于非自我产出的内容，比如 Session PPT，电子书，这些都可以到互联网上随时可找的，并不担心丢失。
     + 还有物理备份，即 TimeMachine 是同步到移动硬盘的，所以有了多重保障。
 
-![](http://7xjbdq.com1.z0.glb.clouddn.com/images/2016/1465623105726.png)
+![](//o7mw3gkkh.qnssl.com//images/2016/1465623105726.png)
 
 ### Markdown 文件的预览和修改
 
@@ -85,7 +85,7 @@ published: True
 - 通过 Marboo 能够直接把生成的 HTML 内容映射到 `http://192.168.199.123:56866/xxxx.html`，同一局域网下可直接访问，还有贴心的二维码。
 - 如果需要映射到外网，那就在本地起了 Server 之后打开 [ngork - Secure tunnels to localhost](https://ngrok.com/) 神器来突破防火墙吧。
 
-![](http://7xjbdq.com1.z0.glb.clouddn.com/images/2016/1465623155194.png)
+![](//o7mw3gkkh.qnssl.com//images/2016/1465623155194.png)
 
 ### 似乎完美解决了写作时的图片上传问题
 
@@ -94,7 +94,7 @@ published: True
 - 另外用上了一个好用 Alfred 的 WorkFlow，[tiann/markdown-img-upload: markdown图片实用工具](https://github.com/tiann/markdown-img-upload)，可以直接快捷键上传文件并生成 Markdown 格式的图片链接。
 - 进一步考虑 GIF 的录制，感觉小功能需要演示才倍感酸爽啊。我已经下载过的有 Gifrocket，是将视频转成 GIF 的，而[Mac 上怎么能少了一款好用的 GIF 录制工具？ - Pinapps - 感谢那些赐予我们力量的 apps - 知乎专栏](https://zhuanlan.zhihu.com/p/20732038?refer=pinapps)
 
-![](http://7xjbdq.com1.z0.glb.clouddn.com/images/2016/1465614364872.png)
+![](//o7mw3gkkh.qnssl.com//images/2016/1465614364872.png)
 
 ## Really cool => Fantastic!!!
 
@@ -114,4 +114,4 @@ published: True
 
 下图来自：[如何看待 Pinterest 收购 Instapaper？ - 知乎](https://www.zhihu.com/question/49956820?rf=49985197)
 
-![](http://7xjbdq.com1.z0.glb.clouddn.com/images/2016/1479525595732.png)
+![](//o7mw3gkkh.qnssl.com//images/2016/1479525595732.png)
