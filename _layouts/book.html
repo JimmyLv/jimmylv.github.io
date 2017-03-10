@@ -2,10 +2,11 @@
 layout: base
 ---
 <div class="row yue">
-  <div class="col-md-12 aside3-title">
-    <br>
-    <h2 id="#identifier">{{ page.title }}</h2>
-  </div>
+    <div class="col-md-12 aside3-title">
+        <h1 id="#identifier">{{ page.title }}</h1>
+        <div class="aside3-date">{{ page.date | date:"%Y年%m月%d日" }}</div>
+    </div>
+    <hr/>
   <div class="col-md-12 aside3-content">
     <br />
     <div id="content">
@@ -16,7 +17,7 @@ layout: base
       {% for book in page.books %}
         <div class="col-md-12">
           <div class="panel panel-primary">
-            <div class="panel-heading">{{ book.title }}</div>
+            <h4 class="panel-heading">{{ book.title }}</h4>
             <div class="panel-body">
               <div class="row">
                 <div class="col-md-4 col-xs-12 center">

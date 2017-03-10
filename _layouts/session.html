@@ -9,8 +9,9 @@ layout: base
   <hr/>
   <div class="col-md-12 aside3-content">
     <div id="content">
-      <iframe id="preview" class="aside3-slide" src="https://jimmylv.github.io/slides/{{ page.url | remove_first: '/' | replace: '/', '.htm' }}"
-          frameborder="0" width="100%" height="100%"></iframe>
+      <iframe id="preview" style="min-height: 600px;display: inherit;text-align: center;margin-bottom: 10px;"
+              src="https://jimmylv.github.io/slides/{{ page.url | remove_first: '/' | replace: '/', '.htm' }}"
+              frameborder="0" width="100%" height="100%"></iframe>
     </div>
   {% include related_posts.html %}
   {% include disqus.html %}
@@ -20,5 +21,15 @@ layout: base
     <div class="panel panel-success">
       <div class="panel-body" id="nav"></div>
     </div>
+  </div>
+  <!--全屏-->
+  <div style="position:fixed;right:15px;top:62px;z-index: 10000">
+    <a id="fullscreen_btn"
+       href="https://jimmylv.github.io/slides/{{ page.url | remove_first: '/' | replace: '/', '.htm' }}"
+       target="_blank"
+       class="btn btn-primary"
+       style="width:43px; height:34px;">
+      <i class="fa fa-lg fa-arrows-alt" style="color: white; font-style: normal"></i>
+    </a>
   </div>
 </div>

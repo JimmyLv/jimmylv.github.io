@@ -9,9 +9,12 @@ layout: base
   <hr/>
   <div class="col-md-12 aside3-content">
     <div id="content">
-      <iframe id="preview" class="aside3-slide" src="https://jimmylv.gitbooks.io/{{ page.gitbook }}/content/"
+      <iframe id="preview" style="min-height: 600px;display: inherit;text-align: center;margin-bottom: 10px;"
+              src="https://jimmylv.gitbooks.io/{{ page.gitbook }}/content/"
               frameborder="0" width="100%" height="100%"></iframe>
-      下载地址：<a href="https://www.gitbook.com/download/pdf/book/jimmylv/{{ page.gitbook }}">PDF</a> ·
+      <br />
+      下载地址：<a href="https://www.gitbook.com/book/jimmylv/{{ page.gitbook }}/details">GitBook</a> ·
+      <a href="https://www.gitbook.com/download/pdf/book/jimmylv/{{ page.gitbook }}">PDF</a> ·
       <a href="https://www.gitbook.com/download/mobi/book/jimmylv/{{ page.gitbook }}">Mobi</a> ·
       <a href="https://www.gitbook.com/download/epub/book/jimmylv/{{ page.gitbook }}">ePub</a>
     </div>
@@ -23,6 +26,16 @@ layout: base
     <div class="panel panel-success">
       <div class="panel-body" id="nav"></div>
     </div>
+  </div>
+  <!--全屏-->
+  <div style="position:fixed;right:15px;top:62px;z-index: 10000">
+    <a id="fullscreen_btn"
+       href="https://jimmylv.gitbooks.io/{{ page.gitbook }}/content/"
+       target="_blank"
+       class="btn btn-primary"
+       style="width:43px; height:34px;">
+      <i class="fa fa-lg fa-arrows-alt" style="color: white; font-style: normal"></i>
+    </a>
   </div>
 </div>
 
