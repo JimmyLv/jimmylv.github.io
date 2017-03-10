@@ -3,7 +3,6 @@ layout: post
 title: 个人成长基础设施：纪念那些年我折腾过的各种…
 categories: [资源]
 tags: [插件, 程序员, 成长]
-toc: true
 published: True
 
 ---

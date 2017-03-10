@@ -1,7 +1,7 @@
 ---
 layout: base
 ---
-<div class="row">
+<div class="row yue">
   <div class="col-md-12 aside3-title">
     <br>
     <h2 id="#identifier">{{ page.title }}</h2>
@@ -11,8 +11,6 @@ layout: base
     <div id="content">
       {{ content }}
     </div>
-    <br />
-    {% include related_posts.html %}
     <br />
     <div class="row">
       {% for book in page.books %}
@@ -55,6 +53,8 @@ layout: base
         </div>
       {% endfor %}
     </div>
+    <br />
+    {% include related_posts.html %}
     <hr>
     {% include disqus.html %}
   </div>
