@@ -8,80 +8,114 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>思沃讲堂：Spring MVC 实战 - By Jimmy Lv</title>
+    <title>React (Native) Testing with Enzyme - By Jimmy Lv</title>
     <link rel="stylesheet" media="all" href="./css/nodeppt.css">
     <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="./css/phone.css">
     
     <link rel="stylesheet" href="./js/highlight/styles/kimbie.light.css">
     <link rel="stylesheet" href="./css/font-awesome.css">
     
-<link rel="stylesheet" href="./css/theme.color.css">
+<link rel="stylesheet" href="./css/theme.green.css">
 </head>
 <body>
 <div class="slides">
     <slides id="container">
         <slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
-<h1>Th Wo - Bookshelf</h1>
-<p><small>by Jimmy Lv</small></p>
+<h1>React (Native) Testing with Enzyme</h1>
+<p><small>via <strong>Jimmy Lv</strong></small></p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>模块化管理？</h1>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><hgroup>
+<h1>JavaScript 模块化</h1>
+
+</hgroup><article>
+
+<pre><code class="javascript">import { shallow } from &#39;enzyme&#39;
+
+describe(&#39;Enzyme Shallow&#39;, () =&gt; {
+  it(&#39;App should have title equals to Todos&#39;, () =&gt; {
+    let app = shallow(&lt;App /&gt;)
+    expect(app.find(&#39;h1&#39;).text()).to.equal(&#39;Todos&#39;)
+  })
+}
+</code></pre>
 
 </article></section></slide>
 <slide class="slide"><section class="slide-wrapper"><article>
-<h2>MVC Workshop</h2>
+<pre><code class="javascript">import { render } from &#39;enzyme&#39;
+
+describe(&#39;Enzyme Render&#39;, () =&gt; {
+  it(&#39;Todo item should not have todo-done class&#39;, () =&gt; {
+    let app = render(&lt;App /&gt;)
+    expect(app.find(&#39;.todo-done&#39;).length).to.equal(0)
+  })
+})
+</code></pre>
 
 </article></section></slide>
 <slide class="slide"><section class="slide-wrapper"><article>
-<h3>Step 0:</h3>
-<p>GET: hello {name}! </p>
-<p>via <a href="http://docs.spring.io/spring/docs/current/spring-framework-reference/html/mvc.html#mvc-servlet" target="_blank">Spring Web MVC DispatcherServlet</a>.</p>
+<pre><code class="javascript">import { mount } from &#39;enzyme&#39;
+
+describe(&#39;Enzyme Mount&#39;, () =&gt; {
+  it(&#39;should delete Todo when click button&#39;, () =&gt; {
+    let app = mount(&lt;App /&gt;)
+    let todoLength = app.find(&#39;li&#39;).length
+    app.find(&#39;button.delete&#39;).at(0).simulate(&#39;click&#39;)
+    expect(app.find(&#39;li&#39;).length).to.equal(todoLength - 1)
+  })
+})
+</code></pre>
 
 </article></section></slide>
 <slide class="slide"><section class="slide-wrapper"><article>
-<h3>Step 1:</h3>
-<p>// given</p>
-<p>GET: show all books in index page.</p>
-<p>// when</p>
-<p>// then</p>
-<p>implement <code>fetch book details</code> functionality.</p>
+<pre><code class="javascript">it(&#39;simulates click events&#39;, () =&gt; {  
+  const onButtonClick = sinon.spy()
+  const wrapper = shallow(
+    &lt;Foo onButtonClick={onButtonClick} /&gt;
+  )
+  wrapper.find(&#39;button&#39;).simulate(&#39;click&#39;)
+  expect(onButtonClick.calledOnce).to.be.true
+})
+</code></pre>
 
 </article></section></slide>
 <slide class="slide"><section class="slide-wrapper"><article>
-<h3>Step 2:</h3>
-<p>// given</p>
-<p>a ready-to-wear <code>form</code> for book information.</p>
-<p>// when</p>
-<p>// then</p>
-<p>implement <code>create new book</code> functionality.</p>
+<pre><code class="javascript">/* CSS Selector */
+wrapper.find(&#39;.foo&#39;) //class syntax
+wrapper.find(&#39;input&#39;) //tag syntax
+wrapper.find(&#39;#foo&#39;) //id syntax 
+wrapper.find(&#39;[htmlFor=&quot;foo&quot;]&#39;) //prop syntax
+
+
+/* Component Constructor */
+wrapper.find(MyComponent)
+MyComponent.displayName = &#39;MyComponent&#39;
+wrapper.find(&#39;MyComponent&#39;)
+
+/* Object Property Selector */
+const wrapper = mount(
+  &lt;div&gt;
+    &lt;span foo={3} bar={false} title=&quot;baz&quot; /&gt;
+  &lt;/div&gt;
+)
+
+wrapper.find({ foo: 3 })
+wrapper.find({ bar: false })
+wrapper.find({ title: &#39;baz&#39;})
+</code></pre>
 
 </article></section></slide>
-<slide class="slide"><section class="slide-wrapper"><article>
-<h3>Step 3:</h3>
-<p>Edit / Delete / ...</p>
+<slide class="slide" data-on-leave="outcallback"><section class="slide-wrapper"></section></slide>
+<slide class="slide"><section class="slide-wrapper"><hgroup>
+<h1><a href="http://nobackend.website" target="_blank">NoBackend Website</a></h1>
 
-</article></section></slide>
-<slide class="slide"><section class="slide-wrapper"><article>
-<h2>Extendibility</h2>
-<ul>
-<li>What&#39;s Spring IoC &amp; DI?</li>
-<li>Service interface =&gt; different implementation</li>
-<li>Data Repository =&gt; using different database</li>
-<li>Split front-end &amp; back-end =&gt; return data with JSON format</li>
-</ul>
+</hgroup><article>
 
-</article></section></slide>
-<slide class="slide"><section class="slide-wrapper"><article>
-<h2>作业</h2>
-<ul>
-<li>先把书架CURD的功能，使用<strong>后端MVC</strong>的形式完善。<ul>
-<li>当然你可以改用其他模板语言，比如Jade什么的，这儿用的是Thymeleadf。</li>
-</ul>
-</li>
-<li>然后再改用<strong>JSON格式</strong>返回，而不再需要后端模板。<ul>
-<li>为了前后端分离，😂 以下形式就Okay：</li>
-</ul>
-</li>
-</ul>
-<img src="///o7mw3gkkh.qnssl.com//json-format.jpg" alt="">
-
+<iframe data-src="http://nobackend.website" src="about:blank"></iframe>
 </article></section></slide>
         
 

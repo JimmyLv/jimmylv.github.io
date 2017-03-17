@@ -1,0 +1,425 @@
+<!--
+    Powered By nodePPT - This is probably the best web presentation tool so far!
+    version: 1.4.2
+    site: https://github.com/ksky521/nodePPT
+    date: 2017年03月16日
+-->
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>「React 系列 Workshop 01」之 Atomic Design with React - By Jimmy Lv</title>
+    <link rel="stylesheet" media="all" href="./css/nodeppt.css">
+    <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="./css/phone.css">
+    
+    <link rel="stylesheet" href="./js/highlight/styles/kimbie.light.css">
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    
+<link rel="stylesheet" href="./css/theme.green.css">
+</head>
+<body>
+<div class="slides">
+    <slides id="container">
+        <slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>Atomic Design with React</h1>
+<p>Total Time: 2 hours </p>
+<p>via <strong>JimmyLv</strong></p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><hgroup>
+<h1>0. 💻 Env Setup</h1>
+<ul>
+<li>[ ] reminder/reading material in invitation mail</li>
+<li>[ ] join wechat group to share info easily</li>
+</ul>
+
+</hgroup><article>
+
+<pre><code>git clone git@github.com:JimmyLv/atomic-design-react-workshop.git
+cd atomic-design-react-workshop
+yarn install &amp;&amp; yarn start
+</code></pre>
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>🐵 唠嗑唠嗑</h1>
+<ul>
+<li>不讲什么：Webpack/ES6/Styling/Linter</li>
+<li>脚手架：<code>create-react-app</code> &amp; <code>react-app-stencil</code></li>
+<li>观念在先，实战为王 🔨</li>
+<li>Pair Programming 👬</li>
+<li>Parking Lot 🅿️</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>⏲️ Agenda</h1>
+<ol>
+<li>Atomic Design (15 mins)</li>
+<li>React Basic: FP、JSX、V-DOM (25 mins)</li>
+<li>Component-Driven Development (20 mins)</li>
+<li>Component&#39;s State &amp; Lifecycle (20 mins)</li>
+<li>Refactoring to ES6+ (remaining times...)</li>
+</ol>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>1. 🏗️ Atomic Design (15 mins)</h1>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>What&#39;s Atomic Design？</h1>
+<p><a href="http://atomicdesign.bradfrost.com/chapter-2/" target="_blank"><img src="http://7xjbdq.com1.z0.glb.clouddn.com/images/2017/03/1489580083893.png" alt=""></a></p>
+<p>demo: <a href="http://patternlab.io/" target="_blank">Pattern Lab | Build Atomic Design Systems</a></p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>🔨 Practice 01</h1>
+<img src="http://7xjbdq.com1.z0.glb.clouddn.com/images/2017/03/1489561356582.png" alt="">
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>🌲 Components Tree</h1>
+<img src="http://7xjbdq.com1.z0.glb.clouddn.com/images/2017/03/1489635396524.png" alt="">
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>💡 Rethink?</h1>
+<ul>
+<li>Presentational components</li>
+<li>Container components</li>
+<li>Transactional components</li>
+<li>Micro Front-Ends</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<img src="http://andrewhfarmer.com/react-ajax-best-practices/img/container-components.png" alt="">
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>2. 📖 React Basic (25 mins)</h1>
+<ul>
+<li>JSX</li>
+<li>VirtualDOM</li>
+<li>Functional/Stateless Components</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<img src="http://7xjbdq.com1.z0.glb.clouddn.com/images/2017/03/1489660500667.png" alt="">
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>🌲 DOM Tree -&gt; Functions</h1>
+<pre><code class="jsx">function warn(msg) {
+  alert(msg)
+}
+
+function App(data) {
+  (function Header(menu) {
+    (function Menu(menu, func) {
+      (function Text(text) {return &lt;li&gt;{text}&lt;/li&gt;})(menu[0])
+      (function Text(text) {return &lt;li onClick={() =&gt; func(text)}&gt;{text}&lt;/li&gt;})(menu[1])
+    })(menu, warn)
+  })(data.menu)
+
+  (function Content(content) {
+    return &lt;section&gt;{content}&lt;/section&gt;
+  })(data.content)
+
+  (function Footer() {
+    return &lt;footer&gt;I am footer!&lt;/footer&gt;
+  })()
+}
+</code></pre>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><hgroup>
+<h1>JSX (XML in JavaScript)</h1>
+<p>In</p>
+<pre><code class="jsx">function Profile(props) {
+  return &lt;div&gt;
+    &lt;img src=&quot;avatar.png&quot; className=&quot;profile&quot; /&gt;
+    &lt;h3&gt;{props.title}&lt;/h3&gt;
+  &lt;/div&gt;
+}
+</code></pre>
+
+</hgroup><article>
+
+<p>Out</p>
+<pre><code class="jsx">function Profile(props) {
+  return React.createElement(
+    &quot;div&quot;,
+    null,
+    React.createElement(&quot;img&quot;, { src: &quot;avatar.png&quot;, className: &quot;profile&quot; }),
+    React.createElement(
+      &quot;h3&quot;,
+      null,
+      props.title
+    )
+  )
+}
+</code></pre>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>Virtual DOM</h1>
+<pre><code class="js">function DeleteAccount() {
+    return ({
+      type: &#39;div&#39;,
+      props: {
+        children: [{
+          type: &#39;p&#39;,
+          props: {
+            children: &#39;Are you sure?&#39;
+          }
+        }, {
+          type: Button,
+          props: {
+            type: &#39;danger&#39;,
+            children: &#39;Yep&#39;
+          }
+        }, {
+          type: Button,
+          props: {
+            color: &#39;blue&#39;,
+            children: &#39;Cancel&#39;
+          }
+       }]
+    })
+}
+</code></pre>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<img src="http://7xjbdq.com1.z0.glb.clouddn.com/images/2017/03/1489564943831.png" alt="">
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<img src="http://7xjbdq.com1.z0.glb.clouddn.com/images/2017/03/1489635877830.png" alt="">
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>() =&gt; Virtual DOM Objects</h1>
+<pre><code class="js">function DeleteAccount() {
+    return ({
+      type: &#39;div&#39;,
+      props: {
+        children: [{
+          type: &#39;p&#39;,
+          props: {
+            children: &#39;Are you sure?&#39;
+          }
+        }, {
+          type: Button,
+          props: {
+            type: &#39;danger&#39;,
+            children: &#39;Yep&#39;
+          }
+        }, {
+          type: Button,
+          props: {
+            color: &#39;blue&#39;,
+            children: &#39;Cancel&#39;
+          }
+       }]
+    })
+}
+</code></pre>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>Functional/Stateless Components</h1>
+<pre><code class="jsx">const DeleteAccount = (props) =&gt; (
+  &lt;div&gt;
+    &lt;p&gt;Are you sure?&lt;/p&gt;
+    &lt;Button type=&#39;danger&#39;&gt;Yep&lt;/Button&gt;
+    &lt;Button color=&#39;blue&#39;&gt;Cancel&lt;/Button&gt;
+  &lt;/div&gt;
+)
+</code></pre>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>3. 🏃 CDD (20 mins)</h1>
+<p>“Visual TDD”: Component-Driven Development</p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><hgroup>
+<h1>Component-Driven Development</h1>
+<p><a href="https://blog.hichroma.com/component-driven-development-ce1109d56c8e#.68tcwmv7p" target="_blank"><img src="https://cdn-images-1.medium.com/max/800/1*YUVIg5jdB-pUUszWhTkgdw.gif" alt=""></a></p>
+
+</hgroup><article>
+
+<ol class="moveIn">
+<li>Focus development</li>
+<li>Increase UI coverage</li>
+<li>Target feedback</li>
+<li>Build a component library</li>
+<li>Parallelize development</li>
+<li>Test visually</li>
+</ol>
+
+</article></section></slide>
+<slide class="slide hasnote"><aside class="note">
+<section>
+<p>tdd components，即 data 如何对应到 view; tdd business logic，即 event 如何对应到 state</p>
+
+</section>
+</aside><section class="slide-wrapper"><article>
+<img src="http://7xjbdq.com1.z0.glb.clouddn.com/images/2017/03/1488610496651.png" alt="">
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>Storybook</h1>
+<p><a href="http://airbnb.io/react-dates/" target="_blank"><img src="https://getstorybook.io/static/media/demo.f13d28a7.gif" alt=""></a></p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><hgroup>
+<h1>🔨 Practice 02</h1>
+<p><img src="http://7xjbdq.com1.z0.glb.clouddn.com/images/2017/03/1489581902209.png" alt=""></p>
+
+</hgroup><article>
+
+<ul>
+<li>type:<code>primary</code> <code>default</code> <code>danger</code> <code>dashed</code></li>
+<li>color: <code>blue</code>, <code>white</code>, <code>red</code>, <code>border</code></li>
+<li>onClick: <code>console.info()</code>, <code>alert()</code></li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<img src="http://7xjbdq.com1.z0.glb.clouddn.com/images/2017/03/1489635512260.png" alt="">
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>4. 🐒 State &amp; Lifecycle (20 mins)</h1>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>React.Component</h1>
+<pre><code class="jsx">class Contacts extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+
+    }
+  }
+
+  handleClick(e) {
+      console.log(this) // React Component instance
+  }
+
+  render() {
+    return (
+      &lt;button onClick={(e) =&gt; this.handleClick(e)}&gt;&lt;/button&gt;
+    )
+  }
+}
+
+export default Contacts
+</code></pre>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>Lifecycle</h1>
+<p><a href="https://rawgit.com/rkendall/visible-react/master/demo/dist/demo.html" target="_blank"><img src="http://7xjbdq.com1.z0.glb.clouddn.com/images/2017/03/1489566393031.png" alt=""></a></p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>🔨 Practice 03</h1>
+<p><a href="https://codepen.io/gaearon/pen/amqdNA?editors=0010" target="_blank">Clock component</a>: <code>new Date().toLocaleTimeString(locales,options)</code> with timeZone</p>
+<iframe height='265' scrolling='no' title='Hello World in React' src='///codepen.io/gaearon/embed/amqdNA/?height=265&theme-id=0&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'></iframe>
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>State vs Props</h1>
+<p><a href="https://facebook.github.io/react/docs/state-and-lifecycle.html#converting-a-function-to-a-class" target="_blank"><img src="http://7xjbdq.com1.z0.glb.clouddn.com/images/2017/03/1489566510269.png" alt=""></a></p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>5. Refactoring to ES6+ (remaining times...)</h1>
+<ul>
+<li><a href="https://babeljs.io/blog/2015/06/07/react-on-es6-plus" target="_blank">React on ES6+ · Babel</a></li>
+<li><a href="http://www.reactnativeexpress.com/es6" target="_blank">React Native Express - ES6</a></li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>📑 Homework</h1>
+<p><a href="https://www.suncorp.com.au/insurance/car.html" target="_blank"><img src="http://7xjbdq.com1.z0.glb.clouddn.com/images/2017/03/1489581432456.png" alt=""></a></p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>Thanks,  Q&amp;A❓</h1>
+
+</article></section></slide>
+        
+
+        <!-- <slide class="slide logoslide dark nobackground">
+            <article class="flexbox vcenter">
+                <h2 style="color: white;">Powered By nodePPT v1.4.2</h2>
+            </article>
+        </slide> -->
+        <div class="slideTip" id="tip"></div>
+    </slides>
+</div>
+<canvas id="drawBoard" class="draw-board" width="900" height="700"></canvas>
+<div class="progress"><span id="progress"></span></div>
+<div id="_buttons">
+    <div class="_btn-box" id="_btn-box" style="display:none;">
+        <button class="fa fa-arrow-circle-left" id="_btn-prev"></button>
+        <button class="fa fa-arrow-circle-right" id="_btn-next"></button>
+        <button class="fa fa-paint-brush" id="_btn-brush"></button>
+        <button class="fa fa-compress" id="_btn-overview" data-toggle="fa fa-expand"></button>
+    </div>
+    <button class="fa fa-bars" id="_btn-bar"  data-toggle="fa fa-close"></button>
+</div>
+<script src="./js/mixjs/lib/mix.0.3.0.min.js"></script>
+<script>
+var base = location.protocol + '//' + location.host;
+
+var path = (location.pathname + '#').split('/').filter(function(v){
+    return !!v;
+});
+path.pop();
+path = path.join('/');
+MixJS.config({
+    baseURL: [ base, path, 'js'].join('/')+'/'
+});
+
+</script>
+<script src="./js/mixjs/lib/event/broadcast.js"></script>
+<script src="./js/nodeppt.js"></script>
+<script>
+Slide.init({
+    containerID: 'container',
+    drawBoardID: 'drawBoard',
+    slideClass: '.slide',
+    buildClass: '.build',
+    progressID: 'progress',
+    transition: 'move',
+    width: 1100,
+    dir: './',
+    
+    //打开下面的注释就开启postMessage方式
+    //访问网址127.0.0.1:8080/ppt/demo#client
+    control:{
+        type: 'postMessage',
+        args:{
+            isControl:  false
+        }
+    },
+    
+    tipID: 'tip'
+});
+MixJS.loadJS('highlight/highlight.pack.js',function(){
+    hljs.tabReplace = '  ';
+    hljs.initHighlightingOnLoad();
+});
+</script>
+
+
+<!--placeholder-->
+</body>
+</html>
