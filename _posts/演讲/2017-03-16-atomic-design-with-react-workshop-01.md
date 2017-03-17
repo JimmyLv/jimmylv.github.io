@@ -2,7 +2,6 @@
 layout: session
 title: 「React 系列 Workshop 01」之 Atomic Design with React
 categories: [演讲]
-date: 2017年03月16日
 tags: [React, AtomicDesign, CDD, FP]
 speaker: Jimmy Lv
 transition: move
