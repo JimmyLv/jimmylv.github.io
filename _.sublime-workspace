@@ -7,24 +7,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "_posts/前端/2016-12-07-react-testing-with-enzyme.md",
-			"settings":
-			{
-				"buffer_size": 7102,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "_posts/思考/2016-12-04-agile-learning-based-on-github-issues.md",
-			"settings":
-			{
-				"buffer_size": 8261,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -33,25 +15,13 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 354.0,
+		"height": 210.0,
 		"last_filter": "",
 		"selected_items":
 		[
 			[
-				"set mar",
-				"Set Syntax: Markdown"
-			],
-			[
-				"set mark",
-				"Set Syntax: Markdown"
-			],
-			[
-				"sidebar",
-				"View: Toggle Open Files in Side Bar"
-			],
-			[
-				"set mad",
-				"Set Syntax: Markdown Extended"
+				"jsx",
+				"Set Syntax: JSX"
 			]
 		],
 		"width": 503.0
@@ -74,40 +44,15 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/Jing/Documents/Dropbox/jimmylv.github.io",
-		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/_includes",
-		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/_layouts",
-		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/_posts",
-		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/_posts/前端",
-		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/_posts/思考",
-		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/pages",
-		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/public",
-		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/public/css",
-		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/public/js"
+		"/Users/Jing/Documents/Dropbox/jimmylv.github.io"
 	],
 	"file_history":
 	[
-		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/_layouts/session.html",
-		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/_layouts/base.html",
-		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/public/js/base.js",
-		"/Users/Jing/Documents/Code Practice/WebApp/Real-React/Haiku/src/components/Header/ToolBar.jsx",
-		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/_posts/思考/2016-12-04-agile-learning-based-on-github-issues.md",
-		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/_layouts/post.html",
-		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/public/css/base.css",
-		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/_layouts/base_title.html",
-		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/pages/archive.html",
-		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/_includes/header.html",
-		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/README.md",
-		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/_posts/思考/2016-11-19-input-and-output-of-PKM.md",
-		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/public/css/css_backup.css",
-		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/_posts/前端/2016-12-07-react-testing-with-enzyme.md",
-		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/public/css/yue.css",
-		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/slides/js/shake.js",
-		"/Users/Jing/Documents/Dropbox/jimmylv.github.io/_posts/演讲/2016-11-30-react-testing-with-enzyme.md"
+		"/Users/Jing/c/Real-React/atomic-design-react-workshop/node_modules/.4.5.9@es5-shim/tests/lib/jasmine.css"
 	],
 	"find":
 	{
-		"height": 72.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -121,20 +66,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"table",
-			"_",
-			"{\n",
-			"content_table",
-			";\n",
-			"content_table",
-			"\n    ",
-			"content_click",
-			"nav_btn",
-			"}\n",
-			";\n",
-			"h2",
-			";\n",
-			"* "
+			"primary: {\n\t\tcolor: 'red',\n\t\tonClick: (text) => console.info(text),\n\t},",
+			"',\n",
+			"primary"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -152,229 +86,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "_posts/前端/2016-12-07-react-testing-with-enzyme.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7102,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								152,
-								152
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/MarkdownEditor.tmTheme",
-							"encoding_helper_encoding": "UTF-8",
-							"encoding_thread_running": true,
-							"incomplete_sync": null,
-							"is_xml": false,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/MarkdownEditing/MultiMarkdown.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "_posts/思考/2016-12-04-agile-learning-based-on-github-issues.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 8261,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								577
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/MarkdownEditor.tmTheme",
-							"encoding_helper_encoding": "UTF-8",
-							"encoding_thread_running": true,
-							"incomplete_sync": null,
-							"is_xml": false,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/MarkdownEditing/MultiMarkdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 81.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -430,70 +143,6 @@
 		"last_filter": "",
 		"selected_items":
 		[
-			[
-				"github",
-				"_posts/思考/2016-12-04-agile-learning-based-on-github-issues.md"
-			],
-			[
-				"enzy",
-				"_posts/前端/2016-12-07-react-testing-with-enzyme.md"
-			],
-			[
-				"base",
-				"public/css/base.css"
-			],
-			[
-				"githubmd",
-				"_posts/思考/2016-12-04-agile-learning-based-on-github-issues.md"
-			],
-			[
-				"",
-				"public/css/base.css"
-			],
-			[
-				"base.css",
-				"public/css/base.css"
-			],
-			[
-				"base.js",
-				"public/js/base.js"
-			],
-			[
-				"enzym",
-				"_posts/前端/2016-12-07-react-testing-with-enzyme.md"
-			],
-			[
-				"js",
-				"slides/js/shake.js"
-			],
-			[
-				"yue",
-				"public/css/yue.css"
-			],
-			[
-				"hea",
-				"_includes/header.html"
-			],
-			[
-				"css",
-				"public/css/css_backup.css"
-			],
-			[
-				"2016-11-19-input-and-output-of-pkm",
-				"_posts/思考/2016-11-19-input-and-output-of-PKM.md"
-			],
-			[
-				"2016",
-				"_posts/思考/2016-12-04-agile-learning-based-on-github-issues.md"
-			],
-			[
-				"post",
-				"_layouts/post.html"
-			],
-			[
-				"2016-12",
-				"_posts/思考/2016-12-04-agile-learning-based-on-github-issues.md"
-			]
 		],
 		"width": 0.0
 	},
@@ -524,10 +173,10 @@
 	{
 	},
 	"show_minimap": true,
-	"show_open_files": true,
+	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 204.0,
+	"side_bar_width": 150.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
