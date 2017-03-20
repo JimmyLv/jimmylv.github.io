@@ -27,6 +27,13 @@
 - [个人知识管理：知识的三种形态](http://blog.jimmylv.info/2015-10-09-three-types-of-knowledge/)
 - [由写作环境引发的反思：单一入口的智能化](http://blog.jimmylv.info/2015-05-12-intellectual-and-single-entrance/)
 
+## Related Tools
+
+- [IntelliJ IDEA](https://www.jetbrains.com/idea/)
+- [Sublime Text](https://www.sublimetext.com/3)
+- [iTerm2](https://www.iterm2.com/)
+- [Dash](https://kapeli.com/dash)
+
 ## API Support
 
 As you can see in [api](https://github.com/JimmyLv/jimmy.lv/tree/gh-pages/api) folder and generated result in <http://blog.jimmylv.info/api/index.json>.
