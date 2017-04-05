@@ -92,6 +92,11 @@ h4.panel-title {
   background-color: #fff;
   /*background-image: url(/public/img/bg_lines1.jpg);*/
 }
+.aside3-slogan {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 .aside3-title {
 /*  background-color: #f5f5f5;*/
   /*background-image: url(/public/img/body_bg.jpg);*/
