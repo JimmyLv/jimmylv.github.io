@@ -20,7 +20,7 @@ before_install:
   # 配置 qshell
   - cat scripts/conf.json.in | sed -e "s/QiNiuAK/$QiNiuAK/" | sed -e "s/QiNiuSK/$QiNiuSK/" > scripts/conf.json
   - wget http://devtools.qiniu.com/qshell-v2.0.5.zip
-  - apt-get install unzip
+  - sudo apt-get install unzip
   - unzip qshell-*.zip
 install:
   - gem install bundler
