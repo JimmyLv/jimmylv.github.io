@@ -26,14 +26,15 @@ install:
   - gem install bundler
   - bundle install
 script:
+  - jekyll clean
   - jekyll build
+  - cat ./public/css/base.css # just for verify changes
   - ./qshell_linux_amd64 qupload scripts/qiniu.conf.json
 after_success:
   # - s3_website push
   - |
     cd _site
     touch .nojekyll
-    git status
     git init
     git add .
     git commit -m "Deploy at `date +"%Y-%m-%d %H:%M"`"
