@@ -17,15 +17,16 @@ before_install:
   # 配置 git 信息
   - git config --global user.name 'Travis CI'
   - git config --global user.email travis@jimmylv.com
-
+  # 配置 qshell
+  - cat scripts/conf.json.in | sed -e "s/QiNiuAK/$QiNiuAK/" | sed -e "s/QiNiuSK/$QiNiuSK/" > scripts/conf.json
+  - wget http://devtools.qiniu.com/qshell-v2.0.5.zip
+  - apt-get install unzip
+  - unzip qshell-*.zip
 install:
   - gem install bundler
   - bundle install
 script:
   - jekyll build
-  - cat scripts/conf.json.in | sed -e "s/QiNiuAK/$QiNiuAK/" | sed -e "s/QiNiuSK/$QiNiuSK/" > scripts/conf.json
-  - wget http://devtools.qiniu.com/qshell-v2.0.5.zip
-  - tar xfz qshell-*.zip
   - ./qshell_linux_amd64 qupload scripts/conf.json
 after_success:
   # - s3_website push
