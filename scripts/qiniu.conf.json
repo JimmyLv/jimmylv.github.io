@@ -1,0 +1,6 @@
+{
+  "src_dir" : "./public",
+  "bucket" : "jimmylv-blog",
+  "key_prefix": "blog/public/",
+  "overwrite" : true
+}

@@ -1,5 +1,0 @@
-{
-  "src": "./public",
-  "dest": "qiniu:access_key=QiNiuAK&secret_key=QiNiuSK&bucket=jimmylv-blog&key_prefix=blog/public/",
-  "debug_level": 1
-}
