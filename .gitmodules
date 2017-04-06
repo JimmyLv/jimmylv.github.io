@@ -3,4 +3,4 @@
 	url = https://github.com/JimmyLv/jimmylv.github.io.wiki.git
 [submodule "_posts"]
 	path = _posts
-	url = git@github.com:JimmyLv/_posts.git
+	url = https://github.com/JimmyLv/_posts.git
