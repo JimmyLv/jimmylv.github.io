@@ -24,9 +24,9 @@ install:
 script:
   - jekyll build
   - cat scripts/conf.json.in | sed -e "s/QiNiuAK/$QiNiuAK/" | sed -e "s/QiNiuSK/$QiNiuSK/" > scripts/conf.json
-  - wget http://devtools.qiniu.io/qiniu-devtools-linux_amd64-current.tar.gz
-  - tar xfz qiniu-*.tar.gz
-  - ./qrsync scripts/conf.json
+  - wget http://devtools.qiniu.com/qshell-v2.0.5.zip
+  - tar xfz qshell-*.zip
+  - ./qshell_linux_amd64 qupload scripts/conf.json
 after_success:
   # - s3_website push
   - |
