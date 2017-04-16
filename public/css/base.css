@@ -6,7 +6,7 @@
 body, html {
   margin: 0px;
   height: 100%;
-  overflow: hidden; 
+  overflow: hidden;
   background-color: #EAEDEF;
 }
 .row {
@@ -115,6 +115,13 @@ h4.panel-title {
   padding-right: 30px;
   color: #444443;
 }
+
+.photo img {
+  max-width: 49.5%;
+  height: auto;
+  margin: 0.2em 0;
+}
+
 /* 文章目录 */
 #content-table {
   position:fixed;
