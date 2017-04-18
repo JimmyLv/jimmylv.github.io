@@ -157,6 +157,12 @@ h4.panel-title {
 #content h2, h3 {
   /*line-height: 2;*/
 }
+#preview {
+  min-height: 600px;
+  display: inherit;
+  text-align: center;
+  margin-bottom: 0;
+}
 blockquote p {
   /*color: #95a5a6;*/
   /*font-size: 20px;*/
