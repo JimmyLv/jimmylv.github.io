@@ -24,7 +24,7 @@ before_install:
 install:
   - npm install nodeppt -g
 script:
-  - nodeppt generate ./_posts/演讲 ./slides -a
+  - nodeppt generate ./演讲 ./slides -a
 #  - cat ./public/css/base.css # just for verify changes
 #  - ./qshell_linux_amd64 qupload scripts/qiniu.conf.json
 after_success:
