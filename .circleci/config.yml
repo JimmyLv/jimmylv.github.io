@@ -1,0 +1,23 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: node:7.4.0
+    working_directory: ~/jimmylv.github.io
+    steps:
+      - checkout
+      - run: mkdir -p ~/jimmylv.github.io/artifacts
+      - run: npm install -g nodeppt
+      - run: nodeppt generate ./演讲 ./slides -a
+      - store_artifacts:
+          path: ~/jimmylv.github.io/artifacts
+      - add_ssh_keys
+      - deploy:
+          command: |
+            cd slides
+            touch .nojekyll
+            git init
+            git add .
+            git commit -m "Deploy at `date +"%Y-%m-%d %H:%M"`"
+            # Make sure to make the output quiet, or else the API token will leak!
+            git push -f -q git@git.coding.net:jimmylv/lecture.git master:master > /dev/null 2>&1
