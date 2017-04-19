@@ -27,22 +27,46 @@
 - [个人知识管理：知识的三种形态](http://blog.jimmylv.info/2015-10-09-three-types-of-knowledge/)
 - [由写作环境引发的反思：单一入口的智能化](http://blog.jimmylv.info/2015-05-12-intellectual-and-single-entrance/)
 
+## **BIG CHANGE!!! MOVED TO DISTRIBUTED GITHUB REPO**
+
+### Focus 
+
+This repo will only record ideas and posts, which means I will focus on writing and learning in [jimmylv.github.io](https://github.com/JimmyLv/jimmylv.github.io) and other features will be support by other individual GitHub repo: `jimmylv.github.io/xxx`.
+
+Actually the biggest benefits is that you can use this repo as git submodules of other repos, which can make things more flexible and make our life easier. 
+
+### APIs
+
+As you can see in [JimmyLv/api](https://github.com/JimmyLv/api) repo which will be used to generate `json` result in <https://jimmylv.github.io/api/index.json>.
+
+### Blog
+
+- [x] [JimmyLv/jekyll-blog](https://github.com/JimmyLv/jekyll-blog): `jekyll` version, which is the default blog to be published on <https://blog.jimmylv.info> | <http://jekyll.jimmylv.info>..
+- [ ] [JimmyLv/hexo-blog](https://github.com/JimmyLv/hexo-blog): `hexo` version, which is another alternative of `jekyll` and you can play with `nodejs` easily, <http://hexo.jimmylv.info>.
+- [x] [JimmyLv/Haiku](https://github.com/JimmyLv/Haiku)：`react` version, which be invoke the markdown raw files from GitHub repo, and we can easily enjoy the frontend deployment, <https://haiku.jimmylv.info>
+- [x] [JimmyLv/nobackend.website](https://github.com/JimmyLv/nobackend.website)：`angular 1.5x` version, also created for frontend but gave up because of `AngularJS` <http://nobackend.website/_ng>  
+- [ ] [JimmyLv/gitbook](https://github.com/JimmyLv/GitBook)：`gitbook` version, which can be used to generate beautiful e-book and also you just put all markdown files together. <https://www.gitbook.com/@jimmylv>
+
+### Slides
+
+I will still use `nodeppt` to generate the final slides files, which will be published to <https://lecture.jimmylv.info/>
+
+```
+nodeppt generate ./演讲 ./slides -a
+```
+
+### CI/CD
+
+- `default`: GitHub Pages with `jekyll`, so easy and no configuration need and whatever the repo you are in.
+- `travis-ci`: Try whatever you want, I prefer to use Node to do all these stuff in one place, <https://travis-ci.org/JimmyLv/jimmylv.github.io>.
+
+
 ## Related Tools
 
 - [IntelliJ IDEA](https://www.jetbrains.com/idea/)
 - [Sublime Text](https://www.sublimetext.com/3)
 - [iTerm2](https://www.iterm2.com/)
 - [Dash](https://kapeli.com/dash)
-
-## API Support
-
-As you can see in [api](https://github.com/JimmyLv/jimmy.lv/tree/gh-pages/api) folder and generated result in <http://blog.jimmylv.info/api/index.json>.
-
-## Publish Slides
-
-```
-nodeppt generate ./_posts/演讲 ./slides -a
-```
 
 ## Deploy
 
