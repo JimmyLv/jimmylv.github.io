@@ -1,51 +1,15 @@
----
-layout: page_title
-title: <i class="fa fa-home fa-lg"></i>
-titlename: 首页
----
-<div class="aside3-slogan">
-  <h3>
-    <span style="color: #000080; ">未</span>
-    <span style="color: #FFA500; ">知</span>
-    <span style="color: #2E8B57; ">的</span>
-    <span style="color: #F08080; ">可</span>
-    <span style="color: #00CED1; ">能</span>
-    <span style="color: #ff0000; ">性</span>
-    <span style="color: #BA55D3; ">,</span>
-    <span style="color: #601986; ">追</span>
-    <span style="color: #556fb5; ">随</span>
-    <span style="color: #fa1089; ">我</span>
-    <span style="color: #638c0b; ">心</span>
-  </h3>
-</div>
-<div class="row">
-  <div class="col-md-12">
-    <div class="panel panel-primary">
-      <div class="panel-heading">{{ site.locals.newest }}</div>
-      {% for post in paginator.posts %}
-        <a  href='{{ post.url }}' class="list-group-item pjaxlink clearfix">
-          {{post.title}}
-          <span class="badge">{{ post.date | date:"%Y年%m月%d日" }}</span>
-        </a>
-      {% endfor %}
-    </div>
-  </div>
-  {% for cate in site.cates %}
-    <div class="col-md-12">
-      <div class="panel panel-primary">
-        <div class="panel-heading">{{ cate }}</div>
-        {% for tag in site.tags %} 
-          {% if tag[0] == cate %}
-            {% for post in tag[1] %}
-              <a  href='{{ post.url }}' class="list-group-item pjaxlink clearfix">
-                {{post.title}}
-                <span class="badge">{{ post.date | date:"%Y年%m月%d日" }}</span>
-              </a>
-            {% endfor %}
-          {% endif %}
-        {% endfor %}
-      </div>
-    </div>
-  {% endfor %}
-</div>
- 
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Redirect to...</title>
+    <script>
+      window.location = "https://blog.jimmylv.info"
+    </script>
+</head>
+<body>
+</body>
+</html>

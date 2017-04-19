@@ -23,8 +23,8 @@ before_install:
 #  - unzip qshell-*.zip
 #  - ./qshell_linux_amd64 account $QiNiuAK $QiNiuSK
 install:
-#  - gem install bundler
-#  - bundle install
+  - gem install bundler
+  - bundle install
 script:
   - jekyll clean
   - jekyll build
