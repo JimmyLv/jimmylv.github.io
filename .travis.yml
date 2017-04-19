@@ -18,20 +18,19 @@ before_install:
   - git config --global user.name 'Travis CI'
   - git config --global user.email travis@jimmylv.com
   # 配置 qshell
-  - wget http://devtools.qiniu.com/qshell-v2.0.5.zip
-  - sudo apt-get install unzip
-  - unzip qshell-*.zip
-  - ./qshell_linux_amd64 account $QiNiuAK $QiNiuSK
+#  - wget http://devtools.qiniu.com/qshell-v2.0.5.zip
+#  - sudo apt-get install unzip
+#  - unzip qshell-*.zip
+#  - ./qshell_linux_amd64 account $QiNiuAK $QiNiuSK
 install:
-  - gem install bundler
-  - bundle install
+#  - gem install bundler
+#  - bundle install
 script:
   - jekyll clean
   - jekyll build
-  - cat ./public/css/base.css # just for verify changes
-  - ./qshell_linux_amd64 qupload scripts/qiniu.conf.json
+#  - cat ./public/css/base.css # just for verify changes
+#  - ./qshell_linux_amd64 qupload scripts/qiniu.conf.json
 after_success:
-  # - s3_website push
   - |
     cd _site
     touch .nojekyll
@@ -39,4 +38,4 @@ after_success:
     git add .
     git commit -m "Deploy at `date +"%Y-%m-%d %H:%M"`"
     # Make sure to make the output quiet, or else the API token will leak!
-    git push -f -q git@git.coding.net:jimmylv/note-blog.git master:master > /dev/null 2>&1
+    git push -f -q git@git.coding.net:jimmylv/lecture.git master:master > /dev/null 2>&1

@@ -14,49 +14,10 @@ author:
 
 # 站点信息
 title: 吕立青的博客
-description: My personal note-blog.
 url: https://blog.jimmylv.info
 repo: https://github.com/JimmyLv/jimmylv.github.io
-rss: /pages/atom.xml
-
-# gavatar头像及Favicon
-gavatar: /public/img/gavatar.jpg
-favicon: /public/img/favicon.ico
-
-# google analytics 设置
-ga:
-  id: UA-74789926-1
-  url: https://blog.jimmylv.info
-
-# disqus 设置
-disqus:
-  shortname: gotoshare
-
-# 主题设置，自动激活某个标签
-active: 思考
-
-# 首页除了最新文章外显示分类
-cates: 
-  - React
-  - 摄影
-
-# 中文本地化
-locals:
-  tags: 标签
-  about: 关于
-  newest: 最新文章
-  archive: 归档
-
-gems:
-  - jekyll-sitemap
-  - jekyll-paginate
-  - jekyll/tagging
-  - jekyll-tagging-related_posts
-  - jekyll-seo-tag
 
 exclude:
-  - .idea/
+  - _wiki/
   - .github/
   - .travis/
-  - node_modules/
-  - themes/
