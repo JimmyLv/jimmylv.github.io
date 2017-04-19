@@ -16,6 +16,8 @@ jobs:
           command: |
             cd slides
             touch .nojekyll
+            git config --global user.name 'Circle CI'
+            git config --global user.email circle@jimmylv.com
             git init
             git add .
             git commit -m "Deploy at `date +"%Y-%m-%d %H:%M"`"
