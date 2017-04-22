@@ -6,6 +6,9 @@ node_js:
   - stable
 
 before_install:
+  # 安装 ruby 环境
+  - rvm install 2.1.5
+  - gem install bundler
   - openssl aes-256-cbc -K $encrypted_68227d46cd32_key -iv $encrypted_68227d46cd32_iv -in .travis/id_rsa.enc -out ~/.ssh/id_rsa -d
   # 改变文件权限
   - chmod 600 ~/.ssh/id_rsa
@@ -27,6 +30,7 @@ install:
 script:
   - nodeppt generate ./演讲 ./slides -a
   - cd jekyll-blog
+  - bundle install
   - jekyll build
   - cat build/index.html
 #  - cat ./public/css/base.css # just for verify changes
