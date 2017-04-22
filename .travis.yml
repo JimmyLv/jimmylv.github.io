@@ -37,7 +37,7 @@ script:
   - git clone --depth=1 --branch=master https://github.com/JimmyLv/jimmylv.github.io.git _posts
   - bundle install
   - jekyll build
-  - cat _site/index.html
+  - cat ./public/css/base.css # just for verify changes
   - ../qshell_linux_amd64 qupload scripts/qiniu.conf.json
 after_success:
   - |
