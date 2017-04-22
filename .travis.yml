@@ -16,15 +16,19 @@ before_install:
   # 配置 git 信息
   - git config --global user.name 'Travis CI'
   - git config --global user.email travis@jimmylv.com
+  - git clone --depth=1 --branch=master https://github.com/JimmyLv/jekyll-blog.git
   # 配置 qshell
 #  - wget http://devtools.qiniu.com/qshell-v2.0.5.zip
 #  - sudo apt-get install unzip
 #  - unzip qshell-*.zip
 #  - ./qshell_linux_amd64 account $QiNiuAK $QiNiuSK
 install:
-  - npm install nodeppt -g
+  - npm install nodeppt jekyll -g
 script:
   - nodeppt generate ./演讲 ./slides -a
+  - cd jekyll-blog
+  - jekyll build
+  - cat build/index.html
 #  - cat ./public/css/base.css # just for verify changes
 #  - ./qshell_linux_amd64 qupload scripts/qiniu.conf.json
 after_success:
