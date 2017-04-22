@@ -49,7 +49,7 @@ after_success:
     # Make sure to make the output quiet, or else the API token will leak!
     git push -f -q git@git.coding.net:jimmylv/note-blog.git master:master > /dev/null 2>&1
   - |
-    cd ../slides
+    cd ../../slides
     touch .nojekyll
     git init
     git add .
