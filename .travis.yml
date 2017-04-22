@@ -38,21 +38,21 @@ script:
   - bundle install
   - jekyll build
   - cat _site/index.html
-  - ./qshell_linux_amd64 qupload scripts/qiniu.conf.json
+  - ../qshell_linux_amd64 qupload scripts/qiniu.conf.json
 after_success:
   - |
-    cd slides
-    touch .nojekyll
-    git init
-    git add .
-    git commit -m "Deploy at `date +"%Y-%m-%d %H:%M"`"
-    # Make sure to make the output quiet, or else the API token will leak!
-    git push -f -q git@git.coding.net:jimmylv/lecture.git master:master > /dev/null 2>&1
-  - |
-    cd ../_site
+    cd _site
     touch .nojekyll
     git init
     git add .
     git commit -m "Deploy at `date +"%Y-%m-%d %H:%M"`"
     # Make sure to make the output quiet, or else the API token will leak!
     git push -f -q git@git.coding.net:jimmylv/note-blog.git master:master > /dev/null 2>&1
+  - |
+    cd ../slides
+    touch .nojekyll
+    git init
+    git add .
+    git commit -m "Deploy at `date +"%Y-%m-%d %H:%M"`"
+    # Make sure to make the output quiet, or else the API token will leak!
+    git push -f -q git@git.coding.net:jimmylv/lecture.git master:master > /dev/null 2>&1
