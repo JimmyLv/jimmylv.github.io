@@ -21,10 +21,10 @@ before_install:
   - git config --global user.email travis@jimmylv.com
   - git clone --depth=1 --branch=master https://github.com/JimmyLv/jekyll-blog.git
   # 配置 qshell
-#  - wget http://devtools.qiniu.com/qshell-v2.0.5.zip
-#  - sudo apt-get install unzip
-#  - unzip qshell-*.zip
-#  - ./qshell_linux_amd64 account $QiNiuAK $QiNiuSK
+  - wget http://devtools.qiniu.com/qshell-v2.0.5.zip
+  - sudo apt-get install unzip
+  - unzip qshell-*.zip
+  - ./qshell_linux_amd64 account $QiNiuAK $QiNiuSK
 install:
   - npm install nodeppt -g
 script:
@@ -33,9 +33,8 @@ script:
   - git clone --depth=1 --branch=master https://github.com/JimmyLv/jimmylv.github.io.git _posts
   - bundle install
   - jekyll build
-  - cat build/index.html
-#  - cat ./public/css/base.css # just for verify changes
-#  - ./qshell_linux_amd64 qupload scripts/qiniu.conf.json
+  - cat _site/index.html
+  - ./qshell_linux_amd64 qupload scripts/qiniu.conf.json
 after_success:
   - |
     cd slides
@@ -45,3 +44,11 @@ after_success:
     git commit -m "Deploy at `date +"%Y-%m-%d %H:%M"`"
     # Make sure to make the output quiet, or else the API token will leak!
     git push -f -q git@git.coding.net:jimmylv/lecture.git master:master > /dev/null 2>&1
+  - |
+    cd ../_site
+    touch .nojekyll
+    git init
+    git add .
+    git commit -m "Deploy at `date +"%Y-%m-%d %H:%M"`"
+    # Make sure to make the output quiet, or else the API token will leak!
+    git push -f -q git@git.coding.net:jimmylv/note-blog.git master:master > /dev/null 2>&1
