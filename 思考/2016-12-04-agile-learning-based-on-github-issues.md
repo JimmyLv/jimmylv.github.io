@@ -27,7 +27,7 @@ published: True
 
 ## 实践之术
 
-> 我都没想到写着写着怎么就把开头写成了鸡汤文，`[捂脸](./wechat/emoji.jpg)`。但是咧，如果说前面的讲的是「道」，那么接下来就会具体到基于 GitHub 的「术」即各种实践了。
+> 我都没想到写着写着怎么就把开头写成了鸡汤文，`[捂脸](./wechat/emoji.jpg)`。但是咧，如果说前面的讲的是「道」，那么接下来就会具体到基于 GitHub 的「术」，即各种实践。
 
 首先呢，让我们从需求出发，从市面上来寻找一款符合敏捷的学习软件，别想了，当然是没有的。对于一名程序猿来说，**最理想的答案其实就是 GitHub**，作为全球最大的程序猿~~交友~~网站，GitHub 本身以及围绕 GitHub 的各种插件使得其项目管理能力其实远比你所能想象的厉害得多。
 
@@ -77,7 +77,7 @@ published: True
 
 #### 制定迭代计划
 
-首先呢，让我们来新建一个 [Milestone](https://github.com/JimmyLv/jimmylv.github.io/milestones?state=open) 来制定计划，也就是决定在一个 Iteration 里面你需要完成哪些 issues。在这里我所制定的阶段性计划周期为一个月，当然你也可以勤快一点以 2 周作为一个 Iteration，享受一下自己的计划要完不成了这个 Milestone 就要废了，没法像「时间」这个一生的朋友交付所有需求的快感吧，🙂
+首先呢，让我们来新建一个 [Milestone](https://github.com/JimmyLv/jimmylv.github.io/milestones?state=open) 来制定计划，也就是决定在一个 Iteration 里面你需要完成哪些 issues。在这里我所制定的阶段性计划周期为一个月，当然你也可以勤快一点以 2 周作为一个 Iteration，享受一下自己的计划要完不成了这个 Milestone 就要废了，没法向「时间」这个一生的朋友交付所有需求的快感吧，🙂
 
 ![Milestone](https://cloud.githubusercontent.com/assets/4997466/20562662/b6ccb2e8-b1bf-11e6-9702-755d137ab570.png)
 
