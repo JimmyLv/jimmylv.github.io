@@ -1,6 +1,6 @@
 ---
 layout: iframe
-title: 'Progressive Web Applications (PWAs): Build Native-like Mobile Web App'
+title: 'Progressive Web Applications (PWAs)'
 categories: [演讲]
 tags: [PWA, Web, Native, Mobile, ServiceWorker]
 speaker: Jimmy Lv
