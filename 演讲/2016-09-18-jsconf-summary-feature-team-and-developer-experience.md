@@ -18,5 +18,5 @@ published: True
 [slide]
 
 <iframe id="preview" style="height: 600px;" frameborder="0" width="100%" height="100%"
-        src="https://blog.jimmylv.info/public/2016-09-18-jsconf-summary-feature-team-and-developer-experience.pdf">
+        src="https://lecture.jimmylv.info/assets/2016-09-18-jsconf-summary-feature-team-and-developer-experience.pdf">
 </iframe>
