@@ -9,7 +9,7 @@ published: False
 
 # The Art of Platform Thinking
 
-作者: Amit Kaul([Vice President, Emerging Technology](https://www.thoughtworks.com/profiles/amit-kaul)) & Ryan Murray([Director, Digital Platform Strategy](https://www.thoughtworks.com/profiles/ryan-murray))
+作者: Amit Kaul ([Vice President, Emerging Technology](https://www.thoughtworks.com/profiles/amit-kaul)) & Ryan Murray ([Director, Digital Platform Strategy](https://www.thoughtworks.com/profiles/ryan-murray))
 
 标签: [#Technology Strategy](https://www.thoughtworks.com/insights/technology-strategy), [#Innovation](https://www.thoughtworks.com/insights/innovation), [#Strategy](https://www.thoughtworks.com/insights/strategy)
 
@@ -17,7 +17,7 @@ published: False
 
 The digitally-savvy customer has highly sophisticated - and ever-evolving - expectations for engagement and brand experience at every touchpoint. Delivering on and keeping up with these expectations requires an innovation-driven culture with customer value at its center. We’ve seen a common theme across our most successful client engagements: innovation and speed to market at scale requires more than just intense customer-centricity, adoption of agile practices and technology acumen. For almost any organization with significant brand value and historical technology investments, there will be friction from years of built-up technical and architectural debt. Unlocking core assets and business capabilities to enable customer-facing innovation requires effort and investment.  
 
-数字化客户已经变得非常复杂并不断演进，期望于在每一触点（touchpoint）都能参与互动和品牌体验。交付（实施）并保持这些期望，需要以商业价值为中心的创新驱动文化。在诸多与我们合作的客户成功案例之中，我们看到了一个共同主题：即创新和快速大规模地推向市场需要的不仅仅是 intense 的以用户为中心，采取（实践/遵循）敏捷实践和技术敏感度。几乎任何一个组织的巨大品牌价值和历史技术投资，都会有来自于数年的技术建设与架构债务之间的摩擦。解锁（unlock）核心资产（价值）和商业能力使得面向用户的创新需要努力和投资。
+数字化客户（的需求？）已经变得非常复杂（久经世故、见过识广）并不断演进，期望于在每一触点（touchpoint）都能参与互动和品牌体验。交付（实施）并持续满足于客户期望，需要围绕客户价值打造创新驱动型（企业）文化。我们从最成功的客户案例之中见证着一个共同主题：即创新和快速大规模地推向市场需要的不仅仅是 intense （紧锣密鼓）的以用户为中心（/围绕客户），采取（实践/遵循）敏捷实践和技术敏感度。对于几乎所有组织的显著品牌价值和历史技术投资来说，都会有来自于数年的技术建设与架构债务之间的摩擦。解锁（unlock）核心资产（价值）和商业能力使得面向用户的创新需要努力和投资。
 
 > All organizations have an innate innovation capability [![](https://g.twimg.com/dev/documentation/image/Twitter_logo_blue_16.png)Tweet this](http://twitter.com/home/?status=All%20organizations%20have%20an%20innate%20innovation%20capability%20say%20@amitk_tw%20and%20Ryan%20Murray%20http://thght.works/2qjllpS%20via%20@ThoughtWorks)
 
