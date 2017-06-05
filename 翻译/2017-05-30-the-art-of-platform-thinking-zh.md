@@ -17,7 +17,13 @@ published: False
 
 The digitally-savvy customer has highly sophisticated - and ever-evolving - expectations for engagement and brand experience at every touchpoint. Delivering on and keeping up with these expectations requires an innovation-driven culture with customer value at its center. We’ve seen a common theme across our most successful client engagements: innovation and speed to market at scale requires more than just intense customer-centricity, adoption of agile practices and technology acumen. For almost any organization with significant brand value and historical technology investments, there will be friction from years of built-up technical and architectural debt. Unlocking core assets and business capabilities to enable customer-facing innovation requires effort and investment.  
 
-数字化客户（的需求？）已经变得非常复杂（久经世故、见过识广）并不断演进，期望于在每一触点（touchpoint）都能参与互动和品牌体验。交付（实施）并持续满足于客户期望，需要围绕客户价值打造创新驱动型（企业）文化。我们从最成功的客户案例之中见证着一个共同主题：即创新和快速大规模地推向市场需要的不仅仅是 intense （紧锣密鼓）的以用户为中心（/围绕客户），采取（实践/遵循）敏捷实践和技术敏感度。对于几乎所有组织的显著品牌价值和历史技术投资来说，都会有来自于数年的技术建设与架构债务之间的摩擦。解锁（unlock）核心资产（价值）和商业能力使得面向用户的创新需要努力和投资。
+v2 随着数字化客户需求的高度复杂化和不断演进，用户对企业的期望寄托于每一触点技术之上的品牌体验和互动。要实现并持续满足于客户需求，需要围绕客户价值打造创新驱动型企业文化。
+
+v3 数字化客户对于企业在每一触点的参与感和品牌体验都有着高度复杂化和持续提升（不断演进）的期望。实现并持续满足于客户需求，需要以客户价值为中心打造创新驱动型企业文化。
+
+v1 数字化客户（的需求？）已经变得非常复杂（久经世故、见过识广）并不断演进，期望于在每一触点（touchpoint）都能参与互动和品牌体验。交付（实施）并持续满足于客户期望，需要围绕客户价值打造创新驱动型（企业）文化。
+
+在我们最成功的客户合作案例当中，我们见证着一个共同主题：大规模的创新和快速推向市场所需要的，不只是紧锣密鼓地围绕客户采取敏捷实践和保持技术敏锐度而已。对于几乎任何最具品牌价值和对技术做过投资的组织来说，都需要处理与现有遗留技术、架构债务相互磨合（friction）的问题。解锁核心资产价值和业务能力需要努力和投资，才能够实现面向客户的创新。（任重而道远）
 
 > All organizations have an innate innovation capability [![](https://g.twimg.com/dev/documentation/image/Twitter_logo_blue_16.png)Tweet this](http://twitter.com/home/?status=All%20organizations%20have%20an%20innate%20innovation%20capability%20say%20@amitk_tw%20and%20Ryan%20Murray%20http://thght.works/2qjllpS%20via%20@ThoughtWorks)
 
@@ -86,7 +92,9 @@ Our Digital Platform Strategy framework is a blueprint for platform building tha
 * Architecture and API Remediation
 * Self Service Data
 * Experiment Infrastructure and Telemetry
-* Customer Touchpoint Technology![Digital Platform Strategy - a blueprint](https://insights-images.thoughtworks.com/DPS_Blueprint_AOPT_99208eda9fac5ff4f35a3c9c54c1ed70.jpg)  
+* Customer Touchpoint Technology
+
+![Digital Platform Strategy - a blueprint](https://insights-images.thoughtworks.com/DPS_Blueprint_AOPT_99208eda9fac5ff4f35a3c9c54c1ed70.jpg)  
 
 我们的数字平台战略框架是一个打造平台的蓝图，由五个本质的支柱（专注领域）组成。拆分企业平台的复杂度能够提供有目的性的关注点，专注于提供对基础技术的分类以交付商业价值（bullshit）。为了移除摩擦和打造生态系统，我们专注于交付的核心部分：
 
@@ -112,7 +120,7 @@ Our Digital Platform Strategy framework is a blueprint for platform building tha
 
 **Experiment Infrastructure and Telemetry:** Innovation lives and dies by the ability to learn quickly through purposeful, measured experimentation. Using canary release processes, toggle architecture, and meaningful instrumentation, your experiment infrastructure helps you to make the right decisions about your experiments and investments.  
 
-**创新实验基础设施和监控体系**：创新的存亡取决于凭借针对性、慎重的创新实验而快速学习的能力。采取金丝雀发布流程、Toggle 架构和有意义的监控系统，创新试验基础设施帮助企业根据试验与投资制定正确决策。
+**创新实验基础设施和监控体系**：创新的存亡取决于凭借针对性、慎重的创新实验而快速学习的能力。采取金丝雀发布流程、功能切换开关（toggle）架构和有意义的监控系统，创新试验基础设施帮助企业根据试验与投资制定正确决策。
 
 **Customer Touchpoint Technology:** Knowledge of your customer is the foundation of delivering value. Together, a consistent content strategy, a single view of the customer, and transparent telemetry provide unprecedented customer insight that enables personalized product offerings. The benefit? New, targeted value streams that can be delivered quickly across multiple channels.
 
