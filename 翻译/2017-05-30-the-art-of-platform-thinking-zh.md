@@ -31,19 +31,19 @@ v1 数字化客户（的需求？）已经变得非常复杂（久经世故、�
 
 But yours may be so knotted up with organizational complexity and technology delivery friction that it’s less painful to stick to business as usual. How do you know? If progress becomes mired in departmental finger pointing, or your best people are busy just keeping things up and running, innovation is suffering.  This wasted energy costs time and competitive advantage, it creates frustrating experiences for your customers, and ultimately drives tech talent out the door.
 
-但是您的组织可能被组织复杂度和技术交付摩擦（friction）所束缚，一如既往地坚持做生意要来得更加艰难（反过来的 painful）。你怎么会知道？如果进程陷入部门间相互指责的困境当中，或者你最得力的下属只是忙于保持事情继续运转，创新就会受挫。所浪费的能量花费了时间和竞争优势，给你的用户们创造了糟糕的（令人沮丧的/破坏性的？）体验，最终将技术人才扫地出门。
+但是，企业组织可能会由于复杂度和技术交付摩擦（冲突）而陷入困境，因此一如既往坚持做生意就没那么痛苦（bullshit）。有趣的问题？当事态陷入部门间相互指责时，或者企业的（栋梁和中流砥柱/得力干将）却只是忙于维持事情运转的时候，创新就会受挫。这浪费的资源消耗了时间和竞争优势，并且给你的用户造成了糟糕的体验，技术人才还会最终因此扫地出门。
 
 Platform thinking can help untangle those knots and free your organization up to be more innovative without adding additional debt such as inventory, real estate, divisions, and staff.  
 
-平台思维能够帮助解开这些根结，并解放你的组织使之变得更具有创新性，而不用再添加额外的存货、真实财产、（部门）分歧和人员（上的）等债务。
+平台思维能够帮助企业走出困境并释放企业组织的创新能力，与此同时不用担心额外的库存、不动产（？）、（部门）分歧和人员（流失）等问题。
 
 **Here’s how it works:**  
 
 For your organization to make the most out of technology investments, you need a comprehensive strategy that puts your essential business priorities at the heart of your approach to foundational technologies. Platform thinking then becomes the touchstone for making key technology decisions that will simplify your ecosystem, stimulate innovation, and accelerate delivery.  
 
-**以下是如何运作：**
+**以下是平台思维的工作原理：**
 
-为了你的组织能够充分利用技术投资，你需要一个全面的战略，将你的基本业务（统筹）安排在基础技术放方法的核心之上。平台思维就会变成制定核心技术决策的试金石，将会简化你的生态系统，刺激创新，并且加速交付。
+企业需要一个全面战略以合理充分地运用技术投资，将企业至关重要的业务核心放在打造基础技术的方法上，平台思维就会变成制定核心技术决策的试金石，从而简化企业生态系统，刺激创新，并且加速交付。
 
 At **Thought**Works, we’ve spent the past few years building and enhancing platforms that enable our enterprise clients to utilize the assets they already possess to support their forward-looking business objectives. We’ve collaborated with our clients to address key questions, such as:
 
@@ -52,20 +52,20 @@ At **Thought**Works, we’ve spent the past few years building and enhancing pla
 * How do I unlock the assets and infrastructure we already possess to stay ahead of potential competitors and market disruption?
 * How does our technology platform support a culture of innovation across the entire business?
 
-在 ThoughtWorks，我们在建设和增强平台这方面已经拥有了数年经验，使得我们的企业级客户能够利用已具备的资产来支撑具有远见的商业目标。我们（协同）帮助我们的客户定位核心问题，比如：
+在 **Thought**Works，我们花费数年经验打造与巩固企业平台，帮助我们的客户利用现有资产实现其极具远见的商业抱负。我们协同客户定位核心问题，比如：
 
-- 如何减少已有软件开发流程的摩擦，减少架构债务，以及具备竞争力所需的加速交付？
-- 是否已有现成有效的方法，或者是说我们是否应该开发一个自定义的内部解决方案？或者是说答案位于两者之间？
-- 如何解锁资产与我们已具备的基础设施，以领先于（走在前列）潜在竞争者或（新的）市场搅局者？
-- 我们的技术平台该如何支撑贯穿整个业务的创新文化？
+- 如何减少已有软件开发流程冲突（摩擦？）、减少技术架构债务、提升市场竞争的交付速度？
+- 是否存在现成有效的方法实践，或是提供企业定制化的内部解决方案？或是答案位于两者之间？
+- 如何解锁（充分利用）企业已经具备的资产与基础设施，以保持相较于潜在对手或市场搅局者的竞争优势？
+- 企业技术平台该如何支撑贯穿业务始终的全面创新文化？
 
 By working in the trenches with partners facing real-world challenges, we have defined a holistic approach to technology that helps organizations meet and often exceed the expectations of today's digitally savvy customer. Our platform-focused approach distills a client's business objectives, current state architecture, and technology capability to provide a set of actions to maximize innovation and increase speed to market. We call it a Digital Platform Strategy.  
 
-在面对真实世界的挑战与合作伙伴并肩作战之后，我们定义了一整套技术方法 （方案）来帮助组织能够满足于甚至于常常出乎（当今的）数码化敏感客户意料（特别是当现在的客户都变得数字化敏感的时候）。我们（这个）专注平台的方法浓缩了客户业务目标、现有架构形态（状态）、以及技术能力，以提供一整套行动充分利用创新并加快推向市场的速度。我们称之为数字平台战略。
+通过与合作伙伴并肩作战面对现实挑战，**Thought**Works 打造了一整套解决方案，能够帮助企业组织达到甚至常常超越当今数字化知识丰富的客户所期望的效果。**Thought**Works 以平台为重心的解决方案可以用于提炼企业业务目标、现有架构形态与技术能力，以提供一系列具体行动，充分发挥创新能力与加快推向市场速度。我们称之为数字平台战略。
 
 The Digital Platform Strategy is a ThoughtWorks offering that distils our global experience and learnings across domains and clients in order to unlock enterprise assets to facilitate innovation. Our knowledge framework and accelerators direct our clients to define and maximize the value of their core business capabilities and data assets through lean, iterative development of their foundational technology platform. Our wealth of experience gathered across a range of clients and industries, enables us to significantly accelerate and de-risk customer's efforts. We’ve fallen into the traps and potholes and found the escape hatches so you don’t have to.
 
-数字平台战略由 **Thought**Works 所提供，浓缩全球经验与收获（成果），跨越多个领域和客户，解锁企业资产以促进创新变革。我们的知识框架和加速器（油门）引导我们的客户能够定义与最大化其核心业务能力和数据资产的价值，通过精益、迭代开发其（企业）基础技术平台。我们（丰富的）所聚集的经验财富跨越（包罗万象）大量客户和产业，使得我们能够显著促进并化解客户（承受？开销？）风险。我们曾经掉过坑、踩过陷阱并且找到了逃生舱口（出路），而你不必再重蹈覆辙。
+数字平台战略是 **Thought**Works 所打造的一款产品，浓缩无数专业领域和企业客户的全球性经验与成果，帮助企业解锁核心资产以加速创新变革。我们所提供的理论框架与高效执行力，引导我们的客户定义并实现核心业务能力和数据资产的价值最大化，通过精益、迭代开发企业基础技术平台。我们所积累的丰富经验在无数企业客户与专业领域都卓有成效，使得我们能够显著促进企业创新进程并化解客户风险。我们曾经掉过坑、踩过无数陷阱并成功找到了逃生舱口（出路），而您不必再重蹈覆辙。
 
 ### Platform Thinking at the Core | 平台思维的核心
 Platform thinking works by:
@@ -74,17 +74,17 @@ Platform thinking works by:
 * Creating an ecosystem of technology and business capabilities. Using domain-driven principles, carefully-factored business capability interfaces (APIs) are critical components of an effective, modern Service Oriented Architecture (SOA) strategy.
 * Explicitly investing in a foundation for experimentation which ensures every delivery team has access to tools to make testing new ideas and validating learnings easy.
 
-平台思维有效于（通过）：
+平台思维得益于以下几点：
 
-- 通过专注于高质量，面向基础技术的自服务来移除交付团队的摩擦
-- 打造技术与业务能力的生态系统。利用领域驱动原则、精准分析的业务能力接口（APIs）是一个卓有成效、现代化面向服务架构（SOA）的重要组件。
-- 明确投资于试验性（创新实验）基础设施，确保全部交付团队能够使用相关工具，轻松测试新想法、验证经验收获。
+- 通过专注高质量、面向基础技术的自服务来消除交付团队的摩擦（冲突）
+- 打造技术与业务能力的生态系统。能够利用领域驱动原则、精准业务分析的能力接口（APIs），会是一个卓有成效、现代化的面向服务架构（SOA）重要组件。
+- 明确投资于试验性（创新实验）基础设施，确保每个交付团队都能使用相关工具，轻松测试新想法、验证经验收获。
 
 This isn’t a “build it and they will come” approach to platform building. The Digital Platform Strategy engages your business and technology stakeholders to prioritize building the most valuable capabilities in a lean, incremental manner.
 
-平台构建不是「打造它他们就能成」（一蹴而就？）的方法（方式）。数字平台战略能够保证企业业务与技术的利益相关者能够按轻重缓急的优先次序，以精益、递增的方式打造最具价值的能力。
+这不是一个「一蹴而就」的平台建设方法。数字平台战略使得企业的业务和技术利益相关者以精益、渐进的方式优先打造最具价值的能力。
 
-### The Pillars of the Digital Platform Strategy | 数字平台战略的支柱
+### The Pillars of the Digital Platform Strategy | 数字平台战略的（五大）支柱
 
 Our Digital Platform Strategy framework is a blueprint for platform building that is comprised of five essential pillars (focus areas). Breaking down the complexity of an enterprise platform provides targeted focus on delivering business value through classes of foundational technology. To remove friction and build ecosystems, we focus on the key areas of delivery:
 
@@ -96,7 +96,7 @@ Our Digital Platform Strategy framework is a blueprint for platform building tha
 
 ![Digital Platform Strategy - a blueprint](https://insights-images.thoughtworks.com/DPS_Blueprint_AOPT_99208eda9fac5ff4f35a3c9c54c1ed70.jpg)  
 
-我们的数字平台战略框架是一个打造平台的蓝图，由五个本质的支柱（专注领域）组成。拆分企业平台的复杂度能够提供有目的性的关注点，专注于提供对基础技术的分类以交付商业价值（bullshit）。为了移除摩擦和打造生态系统，我们专注于交付的核心部分：
+我们的数字平台战略框架是由五个主要支柱（重点领域）所组成的平台建设蓝图。打破企业平台复杂度，通过基础技术能力建设提供有针对性的商业价值交付。为了消除技术摩擦与打造生态系统，我们专注于交付的关键领域（核心部分）：
 
 - 交付基础设施
 - API 和架构治理
@@ -108,11 +108,11 @@ Our Digital Platform Strategy framework is a blueprint for platform building tha
 
 **Delivery Infrastructure:** We take a holistic approach to infrastructure, build and release support, and observability. Elastic infrastructure and related tooling, coupled with simplified build, deployment, and monitoring enables engineers to deliver rapidly and safely, with appropriate controls and audit support. This pillar directly addresses delivery friction, reducing your time to market for new products and services.  
 
-**交付基础设施**：我们采取全方位的方式来打造基础设施、构建和发布支持，以及监控系统。弹性基础设施和相关工具，联接精简构建、部署和监控使得工程师能够快速、安全地交付，并伴随合理控制与审计支持（❓）。这个支柱直接致力于解决交付摩擦，减少新产品和服务推向市场的时间。
+**交付基础设施**：我们采取全方位的方式来打造基础设施、构建与发布支持、以及监控系统。弹性基础设施和相关工具再加上精简化的构建、部署和监控，使工程师能够在快速、安全地进行交付的同时，得以适当控制与审计支持。这个支柱将直接解决交付摩擦的问题，减少新产品和服务推向市场的时间。
 
 **Architecture and API Remediation:** Engaging customer experiences that evolve to meet the constantly changing market require maximizing the value of existing organizational assets and business capabilities. Our approach to API and architecture includes methods for building net-new capabilities using modern service-oriented (SOA) and event-driven (EDA) approaches, as well as practices for remediating legacy systems so they effectively expose key existing assets to developers. A platform of well-factored, self-service APIs that hide the process, technical, and operational complexity of the underlying capability allows teams to move quickly to experiment with and production-alize new customer-facing solutions. We typically start by focusing internally to optimizing your own delivery capability, and can extend the approach to public API strategies to expand the ecosystem to your customers and partners.  
 
-**API 和架构治理**：保证用户体验发展成为满足于不断（时时）变化的市场，需要最大化组织既有资产和业务能力的价值。用于 API 和架构治理的途径包括打造新型能力的方法论、采用现代化的面向服务（SOA）和事件驱动（EDA）的方式，也包括治理遗留系统的具体时间，如此他们能够有效地向开发者们提供（expose）企业的既有资产。 一个良好拆分、自服务 APIs 的平台能够将这个过程隐藏起来，技术和操作复杂度的底层能力，允许团队能够迅速试验新的面向客户解决方案，并上线产品环境。通常我们会从关注内部开始以优化你的交付能力，以及扩大公有 API 战略途径从而发展企业客户与合作伙伴的生态系统。
+**API 和架构治理**：打造响应市场不断变化的用户体验，需要最大化现有组织资产与业务能力的价值。我们对 API 和架构治理的途径包括使用现代化面向服务（SOA）和事件驱动（EDA）的方式打造网络新功能的方法，也包括治理遗留系统的具体实践，从而有效地将关键的现有资产提供给开发者使用。 一个完美的自助 APIs 平台，隐藏了底层功能的流程、技术和操作复杂度，使团队能够快速试验并为生产实现提供新的面向客户方案。通常我们会从内部开始着手优化企业的交付能力，并且能够扩展公共 API 战略的解决方案，将生态系统扩展到客户与合作伙伴。
 
 **Self-Service Data:** Today’s businesses rely on real-time analytics to power decisions. Data and application architecture are increasingly merging as we create more real-time, data-enabled business capabilities, while supporting advanced data science-driven analytics. Application developers need to focus on contributing to the organizational data stream and selectively tapping into it. Your data platform is therefore becoming ubiquitous. It needs to reduce friction by streamlining the use, management, and operations of complex data technologies like Kafka, Hadoop, and Spark. It should also expose a self-service ecosystem of curated data assets, addressing data strategy issues such as data lake design, data ownership, and authorization issues.  
 
@@ -126,25 +126,25 @@ Our Digital Platform Strategy framework is a blueprint for platform building tha
 
 **用户触点技术**：企业的客户认知是交付价值的基础。放到一起来说，一致的内容战略、单一用户视野和透明的监控体系可以提供史无前例的客户洞察，使得个性化的产品邀约（供给）成为可能。好处？全新的、定向的价值流能够被快速交付到多重渠道。
 
-### The Digital Platform Strategy Process at a Glance | 数字平台战略进程一览
+### The Digital Platform Strategy Process at a Glance | 数字平台战略流程一览
 A Digital Platform Strategy engagement begins with a discovery to understand your customer’s business priorities, organizational complexity, and technical maturity. We then merge that with our patterns, practices, and principles of enterprise platform building. This culminates in a prioritized, lean technology strategy and platform roadmap tailored to your business needs.  
 
-数字平台战略（交战）开始于一个新发现以理解企业客户的商业优先级、组织结构复杂度或者是技术完备（成熟期）。然后我们将其与构建企业级平台的模式、实践和原则相互融合。这会在具备优先级的、精益技术战略和为企业的业务而量身定制的平台路径图时达到顶峰。
+数字平台战略始于探索，以理解客户的业务优先级、组织复杂性或是技术成熟度。然后，我们再将其与我们的企业平台构建的模式、实践和原则相结合。这将会是为企业业务需求而量身定制优先级的精益技术战略和平台路线图。
 
 ![Digital Platform Strategy - the approach](https://insights-images.thoughtworks.com/DPS_Approach_a448fc7dece1eb230c4d78d374f3a64d.png)  
 
 Moving into the execution phase, the partnership of strategy and delivery moves into high gear. We begin with the highest priority platform capabilities to vet strategy against reality. At this stage, we test our assumptions about organizational delivery capabilities, degree of technical debt, and remediation complexity. This allows us to deliver early platform value that underpins your key business priorities. As the engagement continues, insights from execution are fed back into continuous strategy development and review to inform the path of execution. This feedback loop fine-tunes the short- and medium-term tactical moves, while platform thinking maintains the strategic vision of meeting your business objectives.
 
-进入到实施阶段，战略和交付合作关系将会马力全开（进入全力以赴的阶段）。我们从高优先级的平台能力开始着手以根据事实审视策略。在此阶段，我们根据企业交付能力、技术债务程度和治理复杂度的具体情况测试验证我们的假设。这使得我们能够较早地交付平台价值，巩固企业核心商业优先级基础。随着合作的持续进行，来自于具体实施的洞见将会被反馈到持续战略开发与审查（回顾？），以制定（告知/改善新的？）执行路径。反馈环可以对中短期的战术实施进行微调，与此同时平台思维则继续维持企业商业目标所需的战略视野。
+进入到执行阶段，我们的战略与交付合作关系将会全力以赴，马力全开。我们从最高优先级的平台能力建设开始着手，根据具体事实重新审视具体策略。在此阶段，我们根据企业交付能力、技术债务程度和治理复杂度的具体情况，逐个测试验证我们的假设。这使我们能够较早地交付平台价值，以巩固企业关键业务优先级的基础。随着合作的持续进行，来自于具体实施的洞见将会被反馈到持续的战略制定与回顾中去，以制定改善新的执行路径。这种反馈环可以对中短期的战术实施进行微调，与此同时平台思维则继续维持企业商业目标所需的战略视野。
 
 ### So Where Do You Begin? | 所以从何开始（着手）？
 Digitally-savvy customers want to feel delighted and inspired; they expect your brand to add value to their lives. They want to feel the passion that you feel for your brand and to be part of your next great solution. Building out a scalable technology strategy that manages complexity will enable rapid development, stimulate innovation, and create new opportunity for growth. An optimized foundational technology platform is essential to being able to meet your customer’s expectations and increase their engagement with your brand.  
 
-数字时代的用户都期望愉悦体验和备受鼓舞；他们期待企业品牌能够为生活添资增彩。他们期望感受到企业对于品牌的热忱并且想成为企业下一代卓越解决方案的一员。建立可伸缩（可扩展）的技术战略，管理复杂度将会使得快速开发、激励创新和创造增长新机遇成为可能。一个被优化的基础技术平台对于满足客户期望和增加客户品牌忠诚度（参与度）非常重要。
+数字化知识丰富的客户都期望着愉悦的用户体验、或是从中备受鼓舞；他们期待企业品牌能够为其生活添资增彩。他们期望感受到企业对于品牌的热忱，并且想成为企业下一代卓越解决方案中的一员。建立可管理复杂度的、可伸缩的技术战略，将会使得快速开发、激励创新和创造增长新机遇成为可能。优化的基础技术平台对于满足客户期望并增强用户品牌粘性（忠诚度/参与度）至关重要。
 
 For more information on how to harness the creative horsepower that your enterprise already possesses, check out ThoughtWorks' [Digital Platform Strategy](https://www.thoughtworks.com/digital-platform-strategy).
 
-想要查看关于如何治理（驾驭）您的企业已然持有的创造性马力的更多信息，可以查看 **Thought**Works 的数字平台战略（[Digital Platform Strategy](https://www.thoughtworks.com/digital-platform-strategy)）。
+有关如何运用（驾驭）企业具备创新能力（马力）的更多信息，请查看 **Thought**Works 的数字平台战略（[Digital Platform Strategy](https://www.thoughtworks.com/digital-platform-strategy)）。
 
 
 
