@@ -17,7 +17,7 @@ published: False
 
 The digitally-savvy customer has highly sophisticated - and ever-evolving - expectations for engagement and brand experience at every touchpoint. Delivering on and keeping up with these expectations requires an innovation-driven culture with customer value at its center. We’ve seen a common theme across our most successful client engagements: innovation and speed to market at scale requires more than just intense customer-centricity, adoption of agile practices and technology acumen. For almost any organization with significant brand value and historical technology investments, there will be friction from years of built-up technical and architectural debt. Unlocking core assets and business capabilities to enable customer-facing innovation requires effort and investment.  
 
-v2 随着数字化客户需求的高度复杂化和不断演进，用户对企业的期望寄托于每一触点技术之上的品牌体验和互动。要实现并持续满足于客户需求，需要围绕客户价值打造创新驱动型企业文化。
+v2 随着数字化客户需求的高度复杂化和不断演进，用户对企业的期望寄托于每个触点技术的品牌体验和互动。要实现并持续满足于客户需求，需要围绕客户价值打造创新驱动型企业文化。
 
 v3 数字化客户对于企业在每一触点的参与感和品牌体验都有着高度复杂化和持续提升（不断演进）的期望。实现并持续满足于客户需求，需要以客户价值为中心打造创新驱动型企业文化。
 
@@ -116,15 +116,15 @@ Our Digital Platform Strategy framework is a blueprint for platform building tha
 
 **Self-Service Data:** Today’s businesses rely on real-time analytics to power decisions. Data and application architecture are increasingly merging as we create more real-time, data-enabled business capabilities, while supporting advanced data science-driven analytics. Application developers need to focus on contributing to the organizational data stream and selectively tapping into it. Your data platform is therefore becoming ubiquitous. It needs to reduce friction by streamlining the use, management, and operations of complex data technologies like Kafka, Hadoop, and Spark. It should also expose a self-service ecosystem of curated data assets, addressing data strategy issues such as data lake design, data ownership, and authorization issues.  
 
-**数据自服务**：现今的商业依赖于实时分析来做出强有力的决策。数据和应用架构正由于更多的实时的、数据使能的商业能力而融合在一起，与此同时支撑着进一步的数据科学驱动的分析。应用程序开发者需要专注致力于企业数据流和有选择性地挖掘数据。企业的数据平台因此变得无处不在。这需要通过精简（流线型化）复杂数据技术如 Kafka、Hadoop 或者 Spark 的运用、管理和操作，以减少摩擦（friction）。 与此同时也应当暴露一个自服务的生态系统，用于管理数据资产、定位数据战略问题，比如数据湖（lake）设计、数据所有权以及授权问题。
+**数据自服务**：现今的商业依赖于实时分析来做出强有力的决策（在当今的商业世界里，企业依赖于实时分析来做出强有力的决策）。数据和应用程序架构正由于越来越多实时的、数据支持的业务能力而融合在一起，与此同时也在支撑着进一步的数据科学驱动的分析。应用程序开发者需要专注致力于企业数据流和有选择性地挖掘数据。因此，企业数据平台将变得无处不在。这需要通过简化 Kafka、Hadoop 或 Spark 等复杂数据技术的使用、管理和操作来减少摩擦（friction）。与此同时还应该暴露出一个用于管理数据资产的自服务生态系统，解决诸如数据湖设计、数据所有权和授权问题等数据战略问题。
 
 **Experiment Infrastructure and Telemetry:** Innovation lives and dies by the ability to learn quickly through purposeful, measured experimentation. Using canary release processes, toggle architecture, and meaningful instrumentation, your experiment infrastructure helps you to make the right decisions about your experiments and investments.  
 
-**创新实验基础设施和监控体系**：创新的存亡取决于凭借针对性、慎重的创新实验而快速学习的能力。采取金丝雀发布流程、功能切换开关（toggle）架构和有意义的监控系统，创新试验基础设施帮助企业根据试验与投资制定正确决策。
+**创新实验基础设施和监控体系**：创新的存亡与否取决于通过有针对性、有分寸的试验而快速学习的能力。使用金丝雀发布流程、功能切换开关（toggle）架构和有意义的监控系统，创新实验基础设施能够帮助企业对实验与投资制定正确决策。
 
 **Customer Touchpoint Technology:** Knowledge of your customer is the foundation of delivering value. Together, a consistent content strategy, a single view of the customer, and transparent telemetry provide unprecedented customer insight that enables personalized product offerings. The benefit? New, targeted value streams that can be delivered quickly across multiple channels.
 
-**用户触点技术**：企业的客户认知是交付价值的基础。放到一起来说，一致的内容战略、单一用户视野和透明的监控体系可以提供史无前例的客户洞察，使得个性化的产品邀约（供给）成为可能。好处？全新的、定向的价值流能够被快速交付到多重渠道。
+**用户触点技术**：了解客户是交付价值的基础。一致的内容战略、单一用户视野和透明的监控体系可以共同提供前所未有的客户洞察力，实现个性化的产品交付。好处就是能够在多重渠道快速投放新的有针对性的价值流。
 
 ### The Digital Platform Strategy Process at a Glance | 数字平台战略流程一览
 A Digital Platform Strategy engagement begins with a discovery to understand your customer’s business priorities, organizational complexity, and technical maturity. We then merge that with our patterns, practices, and principles of enterprise platform building. This culminates in a prioritized, lean technology strategy and platform roadmap tailored to your business needs.  
@@ -148,5 +148,5 @@ For more information on how to harness the creative horsepower that your enterpr
 
 
 
-[^touchpoint]: **接触点**（**touchpoint**）指的是品牌与消费者产生信息接触的地方，具体到网络上主要包括搜索引擎、品牌官网、论坛社区、微博、sns、微信等媒介形态
+[^touchpoint]: **接触点**（**touchpoint**）指的是品牌与消费者产生信息接触的地方，具体到网络上主要包括搜索引擎、品牌官网、论坛社区、微博、sns、微信等媒介形态。
 
