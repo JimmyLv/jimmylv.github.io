@@ -17,13 +17,15 @@ published: False
 
 The digitally-savvy customer has highly sophisticated - and ever-evolving - expectations for engagement and brand experience at every touchpoint. Delivering on and keeping up with these expectations requires an innovation-driven culture with customer value at its center. We’ve seen a common theme across our most successful client engagements: innovation and speed to market at scale requires more than just intense customer-centricity, adoption of agile practices and technology acumen. For almost any organization with significant brand value and historical technology investments, there will be friction from years of built-up technical and architectural debt. Unlocking core assets and business capabilities to enable customer-facing innovation requires effort and investment.  
 
+v4 随着数字化的高度复杂化和不断演进，用户不再满足于单一触点技术的企业品牌体验与互动。要实现并持续满足于客户需求，需要围绕客户价值打造创新驱动型企业文化。
+
 v2 随着数字化客户需求的高度复杂化和不断演进，用户对企业的期望寄托于每个触点技术的品牌体验和互动。要实现并持续满足于客户需求，需要围绕客户价值打造创新驱动型企业文化。
 
 v3 数字化客户对于企业在每一触点的参与感和品牌体验都有着高度复杂化和持续提升（不断演进）的期望。实现并持续满足于客户需求，需要以客户价值为中心打造创新驱动型企业文化。
 
 v1 数字化客户（的需求？）已经变得非常复杂（久经世故、见过识广）并不断演进，期望于在每一触点（touchpoint）都能参与互动和品牌体验。交付（实施）并持续满足于客户期望，需要围绕客户价值打造创新驱动型（企业）文化。
 
-我们从最（or 大多数）成功的客户合作案例中发现一个共同主题：大规模的创新和快速推向市场所需要的，不只是紧锣密鼓地围绕客户采取敏捷实践和保持技术敏锐度而已。对于几乎任何最具品牌价值和对技术做过投资的组织来说，都需要处理与现有遗留技术、架构债务相互磨合（friction）的问题。解锁核心资产价值和业务能力需要努力和投资，才能够实现面向客户的创新。（解锁核心资产与业务价值，实现面向客户创新，任重而道远？）
+在与客户合作最成功的案例之中我们发现一个共同主题：即大规模的创新和快速推向市场，紧密围绕客户采取敏捷实践和保持技术敏锐度还远远不够。对于几乎任何最具品牌价值和对技术做过投资的组织来说，历史遗留技术和架构债务之间都存在摩擦（friction）。解锁核心资产价值和业务能力需要付出与投资，才能够实现面向客户的创新。（解锁核心资产与业务价值，实现面向客户创新，任重而道远？）
 
 > All organizations have an innate innovation capability [![](https://g.twimg.com/dev/documentation/image/Twitter_logo_blue_16.png)Tweet this](http://twitter.com/home/?status=All%20organizations%20have%20an%20innate%20innovation%20capability%20say%20@amitk_tw%20and%20Ryan%20Murray%20http://thght.works/2qjllpS%20via%20@ThoughtWorks)
 
@@ -31,11 +33,11 @@ v1 数字化客户（的需求？）已经变得非常复杂（久经世故、�
 
 But yours may be so knotted up with organizational complexity and technology delivery friction that it’s less painful to stick to business as usual. How do you know? If progress becomes mired in departmental finger pointing, or your best people are busy just keeping things up and running, innovation is suffering.  This wasted energy costs time and competitive advantage, it creates frustrating experiences for your customers, and ultimately drives tech talent out the door.
 
-但是，企业组织可能会由于复杂度和技术交付摩擦（冲突）而陷入困境，因此一如既往坚持做生意就没那么痛苦（bullshit）。有趣的问题？当事态陷入部门间相互指责时，或者企业的（栋梁和中流砥柱/得力干将）却只是忙于维持事情运转的时候，创新就会受挫。这浪费的资源消耗了时间和竞争优势，并且给你的用户造成了糟糕的体验，技术人才还会最终因此扫地出门。
+但是，企业可能会由于组织复杂度和技术交付相冲突而陷入困境，从而使得一直以来的业务变得有些痛苦（bullshit）。有趣的问题？当事态陷入部门间相互指责时，或者企业的中流砥柱却只是忙于维持事情运转的时候，创新就会因此受挫。所浪费的资源将会消耗时间和竞争优势，并给你的用户造成糟糕的体验，技术人才最终还会被扫地出门。
 
 Platform thinking can help untangle those knots and free your organization up to be more innovative without adding additional debt such as inventory, real estate, divisions, and staff.  
 
-平台思维能够帮助企业走出困境并释放企业组织的创新能力，与此同时不用担心额外的库存、不动产（？）、（部门）分歧和人员（流失）等问题。
+平台思维能够帮助企业走出困境并释放企业组织的创新能力，而不用增添额外债务，比如库存积压、财产损失、部门分歧和人员流失等。
 
 **Here’s how it works:**  
 
@@ -43,7 +45,7 @@ For your organization to make the most out of technology investments, you need a
 
 **以下是平台思维的工作原理：**
 
-企业需要一个全面战略以合理充分地运用技术投资，将企业至关重要的业务核心放在打造基础技术的方法上，平台思维就会变成制定核心技术决策的试金石，从而简化企业生态系统，刺激创新，并且加速交付。
+要让企业合理充分地运用技术投资，企业就需要一个全面的战略，将至关重要的业务核心放在打造基础技术的方法上，平台思维就会变成制定核心技术决策的试金石，从而简化企业生态系统，刺激创新，并且加速交付。
 
 At **Thought**Works, we’ve spent the past few years building and enhancing platforms that enable our enterprise clients to utilize the assets they already possess to support their forward-looking business objectives. We’ve collaborated with our clients to address key questions, such as:
 
