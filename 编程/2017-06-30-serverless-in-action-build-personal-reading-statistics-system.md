@@ -17,7 +17,7 @@ published: True
 
 随着时间的推移，Instapaper 里面的文章将会变得越来越多，就像我们在代码中所注释的 `TODO:` 可能就变成了 `Never Do`，稍后读也是一样地被人广为诟病：Read it Later = Read Never。其实我发现文章堆积的一个永恒痛点就是**没有有效的方式追踪自己的阅读需求与能力，其核心原因就是因为读完的速度赶不上添加的速度**。从而没办法可视化出来评估自己的阅读进度，合理安排阅读计划，也就没办法给予自己适当的奖励，进而失去了阅读的动力。
 
-上回博客大赛写过一篇[基于 GitHub 的敏捷学习方法之道与术](https://blog.jimmylv.info/2016-12-04-agile-learning-based-on-github-issues/)，其中提到使用 GitHub Issue 来管理自己的学习计划，从而就又产生了这么一个想法，就是将我的稍后阅读列表跟 GitHub 结合起来，使用 ZenHub 丰富的图表功能将阅读体系进行追踪与可视化。
+上回博客大赛写过一篇 [基于 GitHub 的敏捷学习方法之道与术](https://blog.jimmylv.info/2016-12-04-agile-learning-based-on-github-issues/)，其中提到使用 GitHub Issue 来管理自己的学习计划，从而就又产生了这么一个想法，就是将我的稍后阅读列表跟 GitHub 结合起来，使用 ZenHub 丰富的图表功能将阅读体系进行追踪与可视化。
 
 ![](https://o7mw3gkkh.qnssl.com/images/2016/1480844770670.png)
 
@@ -27,7 +27,7 @@ published: True
 
 ![](https://o7mw3gkkh.qnssl.com/images/2017/07/1499007659821.png)
 
-里特定律（Little’s law）告诉我们**交付时间（Delivery time）依赖于在制品数量（Work In Progress, WIP）。WIP 是指所有已经初始但还未完成的工作，例如：所有在分析（Analysis）与完成（Done）之间的工作**。必须要首先留意的就是 WIP，**如果 WIP 增加了，交付日期就会有风险。**ZenHub 所提供的 Release Report 最有效果就是**预测完成日期**，总之就是跟敏捷方法结合起来，用项目管理的方式来管理阅读列表。当然其实我也在进一步的探索之中，但是每次看看到这个走势图就能对自己的阅读列表有了更多的掌控和理解，至少减少了我看到堆积文章数量时所产生的焦虑感。
+里特定律（Little’s law）告诉我们**交付时间（Delivery time）依赖于在制品数量（Work In Progress, WIP）。WIP 是指所有已经初始但还未完成的工作，例如：所有在分析（Analysis）与完成（Done）之间的工作**。必须要首先留意的就是 WIP，**如果 WIP 增加了，交付日期就会有风险。**ZenHub 所提供的 Release Report 中最有效果的就是**预测完成日期**，总之就是跟敏捷方法结合起来，使用项目管理的方式来管理自己的阅读列表，当然其实我也在进一步的探索之中，但是每次看看到这个走势图就能对自己的阅读列表有了更多的掌控和理解，至少减少了文章堆积时所产生的焦虑感。
 
 ## Serverless 架构
 
@@ -41,7 +41,7 @@ published: True
 
 ![](https://o7mw3gkkh.qnssl.com/images/2017/07/1499008946205.png)
 
-而我们现在遇到的这个串联式的场景下是特别合适 Serverless 架构的，使用 IFTTT 并且将它跟 Instapaper 账号绑定，设置好添加、归档等行为作为 trigger 条件，然后将相关信息发到某一个指定 API endpoint。先把操作 GitHub Issue 和 ZenHub 的各种 APIs 准备好，结合 IFTTT 的触发器与 Marker 工具能够非常方便地与之相集成，最后我们可以产出这样一个 APIs 交互流程图：
+而我们现在遇到的这个串联式的场景下是特别合适 Serverless 架构的，使用 IFTTT 并且将它跟 Instapaper 账号绑定，**设置文章添加、高亮、归档等行为作为 trigger 条件，然后将相关信息发到某一个指定 API endpoint。**先把操作 GitHub Issue 和 ZenHub 的各种 APIs 准备好，结合 IFTTT 的触发器与 Marker 工具能够非常方便地与之相集成，最后我们可以产出这样一个 APIs 交互流程图：
 
 ![](https://o7mw3gkkh.qnssl.com/images/2017/07/1499010393382.png)
 
@@ -59,15 +59,15 @@ wt init <YOUR-EMAIL>
 
 创建项目目录，添加 `index.js` 文件并添加以下内容：
 
-```
+```js
 module.exports = function (cb) {
-  cb(null, 'Hello World!');
+  cb(null, 'Hello World');
 }
 ```
 
 然后在该目录中运行以下命令进行应用程序部署之后，点击控制台中输出的 URL 就能看到编程史上最有名气没有之一的 `HelloWorld!`：
 
-```
+```bash
 wt create index
 ```
 
@@ -75,7 +75,7 @@ wt create index
 
 ### Webtask 的上下文绑定
 
-Webtask 有一个实用工具 `webtask-tools` 可以将应用程序绑定到 Webtask 上下文，将之前所 export 简单函数修改为绑定到 Webtask 的 Express app，然后就可以愉快地使用 Express 进行开发，一切就又回到了熟悉的味道：
+Webtask 有一个实用工具 `webtask-tools` 可以将应用程序绑定到 Webtask 上下文，让我们将之前所 export 的简单函数修改为绑定到 Webtask 的 Express app，然后就可以愉快地使用 Express 进行开发，一切就又回到了熟悉的味道：
 
 ```js
 const Express = require('express')
@@ -91,7 +91,7 @@ require('./routes/reading')(app)
 module.exports = Webtask.fromExpress(app)
 ```
 
-Webtask context 还有一个非常重要的用途就是在部署时传输一些敏感信息比如安全 Token，从而在应用程序当中可以使用它们。下面的命令中 `--secret` 后面所传入的 `ACCESS_TOKEN` 都会在后续与 GitHub 和 ZenHub APIs 交互时会用到。
+Webtask context 还有一个非常重要的用途就是在部署时传输一些敏感信息比如安全 Token，从而在应用程序当中可以随时使用它们。下面的部署命令中 `--secret` 后面所传入的 `ACCESS_TOKEN` 都会在后续与 GitHub 和 ZenHub APIs 交互时被用到。
 
 ```bash
 wt create index --bundle --secret GITHUB_ACCESS_TOKEN=$GITHUB_ACCESS_TOKEN --secret ZENHUB_ACCESS_TOKEN=$ZENHUB_ACCESS_TOKEN --secret ZENHUB_ACCESS_TOKEN_V4=$ZENHUB_ACCESS_TOKEN_V4
@@ -121,7 +121,7 @@ module.exports = (app) => {
 
 ### 使用 GitHub Webhook 更新 Issue 的 Milestone 
 
-所以我们的 Webtask 就需要处理 GitHub Webhook 所转发的 POST 请求，其中包括了 Issue 的类型和内容，在拿到 `'opened'` 即新建 Issue 类型的 action 之后我们可以对其进行相应的处理：
+所以我们的 Webtask 就需要处理 GitHub Webhook 所转发的 POST 请求，其中包括了 Issue 的类型和内容，在拿到 `'opened'` 即新建 Issue 类型的 action 之后我们可以对其进行相应的处理即添加到 Milestone 当中：
 
 ```js
 if (action === 'opened') {
@@ -139,7 +139,7 @@ if (action === 'opened') {
 
 ![](https://o7mw3gkkh.qnssl.com/images/2017/07/1499017955460.png)
 
-结合 ZenHub 的 Milestone 燃尽图我们可以清晰地看到剩余阅读量的多少，以及跟理想中的阅读速度进行对比，从而判断自己什么时候能够全部读完所有的文章。可能有些小伙伴看到这里会有所疑问了，这些所谓的 Story Point 是从哪儿来的呢？那就要提到我们接下来将要集成的 ZenHub API 了。 
+结合 ZenHub 的 Milestone 燃尽图我们可以清晰地看到剩余阅读量的多少，并且能够跟理想中的阅读速度进行对比，从而判断自己什么时候能够全部读完所有的文章。可能有些小伙伴看到这里会有所疑问了，这些所谓的 Story Point 是从哪儿来的呢？那么接下来就要提到我们将要集成的 ZenHub API 了。 
 
 ## 集成 ZenHub API：阅读可视化
 
@@ -172,7 +172,7 @@ if (action === 'milestoned') {
 
 ### 归档 Instapaper 文章后关闭 GitHub Issue
 
-说了这么多，不要忘了整个阅读系统最最核心的部分依然还是要「阅读」啊，在众多的稍后阅读工具中我无比喜爱 Instapaper 并迟迟没有转到 Diigo 的原因就在于它优秀、简洁、纯粹的阅读体验，让人可以专注在阅读本身这件事情上，在被 Pinterest 收购之后更是将所有的诸如全文搜索、无限高亮/笔记、速读等 Premium 功能都变成了免费。
+说了这么多，不要忘了**整个阅读系统最最核心的部分依然还是要「阅读」啊！**在众多的稍后阅读工具中我无比喜爱 Instapaper 并迟迟没有转到 Diigo 的原因就在于它优秀、简洁、纯粹的阅读体验，让人可以专注在阅读本身这件事情上，在被 Pinterest 收购之后更是将所有的诸如全文搜索、无限高亮/笔记、速读等 Premium 功能都变成了免费，岂不美哉？
 
 ![](https://o7mw3gkkh.qnssl.com/images/2017/07/1499019018150.png)
 
