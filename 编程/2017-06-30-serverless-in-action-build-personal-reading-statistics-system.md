@@ -221,13 +221,13 @@ app.get('/reading', (req, res) => {
 
 ## 一些参考资料
 
-- [基于 GitHub 的敏捷学习方法之道与术 | 吕立青的博客](https://blog.jimmylv.info/2016-12-04-agile-learning-based-on-github-issues/)
+- [基于 GitHub 的敏捷学习方法之道与术 - 吕立青的博客](https://blog.jimmylv.info/2016-12-04-agile-learning-based-on-github-issues/)
 - [Build a Serverless MERN Story App With Webtask.io -- Zero to Deploy: 1 ― Scotch](https://scotch.io/tutorials/build-a-serverless-mern-story-app-with-webtask-io-zero-to-deploy-1)
 - [触发你的智能生活：IFTTT 入门 - 少数派](https://sspai.com/post/25270)
 - [利用 IFTTT Maker DIY 你的 Applet - 少数派](https://sspai.com/post/39243)
-- [个人知识管理：知识的三种形态 | 吕立青的博客](https://blog.jimmylv.info/2015-10-09-three-types-of-knowledge/)
+- [个人知识管理：知识的三种形态 - 吕立青的博客](https://blog.jimmylv.info/2015-10-09-three-types-of-knowledge/)
 - [用 GTD 的方法结束稍后读 - 少数派](https://sspai.com/post/33933)
-- [不断革新，不断改进：去伪存真的知识管理之路 | 吕立青的博客](https://blog.jimmylv.info/2016-09-16-sorting-out-knowledge-from-information/)
+- [不断革新，不断改进：去伪存真的知识管理之路 - 吕立青的博客](https://blog.jimmylv.info/2016-09-16-sorting-out-knowledge-from-information/)
 - [卡片状态累积流图（Cumulative Flow Diagram – CFD ） – 效率云](http://xiaolvyun.baidu.com/docs/knowledge-base/788)
 
 
