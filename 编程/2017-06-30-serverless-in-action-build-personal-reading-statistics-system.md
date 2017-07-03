@@ -2,7 +2,7 @@
 layout: post
 title: Serverless 实战：打造个人阅读追踪系统
 categories: [编程]
-tags: [Serverless, Reading, Aglie, PKM]
+tags: [Serverless, Reading, Aglie, PKM, GitHub, Diigo, JavaScript]
 published: True
 
 ---
