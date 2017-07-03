@@ -219,6 +219,8 @@ app.get('/reading', (req, res) => {
 
 与此同时呢，还需要把估点根据不同的文章类型和难易程度具体划分一下，而不是现在简简单单的 1 点，比如说 Instapaper 也有根据字数所预测的阅读分钟数，以及根据中文或英文、技术或~~鸡汤~~等不同种类文章阅读难度进行区分，从而使整套追踪系统更具有效性与参考性。
 
+![](https://o7mw3gkkh.qnssl.com/images/2017/07/1499007659821.png)
+
 ## 一些参考资料
 
 - [基于 GitHub 的敏捷学习方法之道与术 - 吕立青的博客](https://blog.jimmylv.info/2016-12-04-agile-learning-based-on-github-issues/)
