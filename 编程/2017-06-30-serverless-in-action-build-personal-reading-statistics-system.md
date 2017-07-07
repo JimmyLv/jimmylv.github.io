@@ -111,7 +111,7 @@ module.exports = (app) => {
 
 ### IFTTT：添加 Instapaper 文章后自动创建 GitHub Issue
 
-得益于 IFTTT 非常丰富的第三方服务，IFTTT 可以直接创建 Instapaper 与 GitHub Issue 相集成的 Applet：[If new item saved, then create a new issue - IFTTT](https://ifttt.com/applets/54307045d-if-new-item-saved-then-create-a-new-issue/edit)，就可以在当 Instapaper 新增文章的时候，自动在 GitHub 所指定的仓库 [Issues · JimmyLv/reading](https://github.com/JimmyLv/reading/issues/) 中创建一个新的 Issue 并添加相应的标题、链接以及描述等相关信息。
+得益于 IFTTT 非常丰富的第三方服务，IFTTT 可以直接创建 Instapaper 与 GitHub Issue 相集成的 Applet：[If new item saved, then create a new issue - IFTTT](https://ifttt.com/applets/54307045d-if-new-item-saved-then-create-a-new-issue)，就可以在当 Instapaper 新增文章的时候，自动在 GitHub 所指定的仓库 [Issues · JimmyLv/reading](https://github.com/JimmyLv/reading/issues/) 中创建一个新的 Issue 并添加相应的标题、链接以及描述等相关信息。
 
 ![](https://o7mw3gkkh.qnssl.com/images/2017/07/1499013190840.png)
 
