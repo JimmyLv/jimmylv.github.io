@@ -59,7 +59,7 @@ published: True
 
 #### 移动端的解决方案
 
-而在移动端则可以通过 [GitDo](http://gitdo.io/) 这个 App 来轻松新建和管理自己的 Issues，没错，就是有人把 GitHub issues 做成了一个 Todos 类 App，还做得很漂亮功能很完善。只可惜不知道这软件最近为啥被下降了，伤感，我就又重新把滴答清单（TickTick）作为自己的万能收集箱了，之后再把比较重要的、需要进一步追踪的事项添加到 GitHub issues 里面来。
+而在移动端则可以通过 [GitDo](http://gitdo.io/) 这个 App 来轻松新建和管理自己的 Issues，没错，就是有人把 GitHub issues 做成了一个 Todos 类 App，还做得很漂亮功能很完善。只可惜不知道这软件最近为啥被下架了，伤感，我就又重新把滴答清单（TickTick）作为自己的万能收集箱了，之后再把比较重要的、需要进一步追踪的事项添加到 GitHub issues 里面来。
 
 ![GitDo](https://cloud.githubusercontent.com/assets/4997466/20562832/b1916908-b1c0-11e6-9961-cb5d65ab893a.png)
 
