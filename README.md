@@ -15,6 +15,7 @@
 
 ## Continuous Progressive Ideology Revolution
 
+- [Serverless 实战：打造个人阅读追踪系统](https://blog.jimmylv.info/2017-06-30-serverless-in-action-build-personal-reading-statistics-system/)
 - [《搞定》最佳实践：如何利用滴答清单（TickTick）实践 GTD 理念？](https://blog.jimmylv.info/2017-02-20-gtd-best-practice-137/)
 - [基于 GitHub 的敏捷学习方法之道与术](http://blog.jimmylv.info/2016-12-04-agile-learning-based-on-github-issues/)
 - [渐进式知识管理： 写作动机与知识分享的价值影响](http://blog.jimmylv.info/2016-11-19-input-and-output-of-PKM/)
@@ -73,3 +74,5 @@ nodeppt generate ./演讲 ./slides -a
 1. Hosted on [Coding Pages](http://blog.jimmylv.info/).
 2. Hosted on [GitHub Pages](http://jimmylv.github.io/).
 3. Hosted on [AWS S3](http://blog.jimmylv.info.s3-website-ap-southeast-1.amazonaws.com/).
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2FJimmyLv%2Fjimmylv.github.io.svg?type=large)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2FJimmyLv%2Fjimmylv.github.io?ref=badge_large)
