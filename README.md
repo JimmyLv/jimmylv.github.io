@@ -10,6 +10,7 @@
 <a href="https://travis-ci.org/JimmyLv/jimmylv.github.io"><img src="https://travis-ci.org/JimmyLv/jimmylv.github.io.svg?branch=master" /></a>
 <a href="https://github.com/JimmyLv/jimmylv.github.io/issues#boards?notFullScreen=false&amp;repos=50039903&amp;showClosed=false" target="_blank" rel="external"><img src="https://img.shields.io/github/issues/JimmyLv/jimmylv.github.io.svg?maxAge=2592000" alt="GitHub Issues"></a>
 <a href="https://github.com/JimmyLv/jimmylv.github.io/issues?q=is%3Aissue+is%3Aclosed" target="_blank" rel="external"><img src="https://img.shields.io/github/issues-closed-raw/JimmyLv/jimmylv.github.io.svg?maxAge=2592000" alt=""></a>
+<a href="https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2FJimmyLv%2Fjimmylv.github.io?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2FJimmyLv%2Fjimmylv.github.io.svg?type=shield"/></a>
 <img src="https://img.shields.io/badge/license-MIT-brightgreen.svg" />
 </p>
 
@@ -74,5 +75,7 @@ nodeppt generate ./演讲 ./slides -a
 1. Hosted on [Coding Pages](http://blog.jimmylv.info/).
 2. Hosted on [GitHub Pages](http://jimmylv.github.io/).
 3. Hosted on [AWS S3](http://blog.jimmylv.info.s3-website-ap-southeast-1.amazonaws.com/).
+
+## License
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2FJimmyLv%2Fjimmylv.github.io.svg?type=large)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2FJimmyLv%2Fjimmylv.github.io?ref=badge_large)
