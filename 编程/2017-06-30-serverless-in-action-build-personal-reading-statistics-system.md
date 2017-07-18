@@ -29,7 +29,7 @@ published: True
 
 里特定律（Little’s law）告诉我们**交付时间（Delivery time）依赖于在制品数量（Work In Progress, WIP）。WIP 是指所有已经初始但还未完成的工作，例如：所有在分析（Analysis）与完成（Done）之间的工作**。必须要首先留意的就是 WIP，**如果 WIP 增加了，交付日期就会有风险。**ZenHub 所提供的 Release Report 中最有效果的就是**预测完成日期**，总之就是跟敏捷方法结合起来，使用项目管理的方式来管理自己的阅读列表，当然其实我也在进一步的探索之中，但是每次看看到这个走势图就能对自己的阅读列表有了更多的掌控和理解，至少减少了文章堆积时所产生的焦虑感。
 
-## Serverless 架构
+## IFTTT 与 Serverless 架构
 
 那么这背后是怎么通过 APIs 来实现的呢？当然，在真正进入正题之前我们先来简单介绍一下 Serverless 架构。Serverless 指的是在构建 Web 应用程序的时候，而不用担心如何配置服务器，但是这并不意味着应用程序不会在服务器上运行，而是说服务器的管理都可以尽可能地交给相应的云平台，从而最大程度地减轻开发人员的部署与配置工作。与之对应的一个名词可能就是 Function As a Service（FAAS），由 AWS Lambda 这个命名上就能想到，当我们在构建 Serverless 架构时，实际上我们是在写一个个的 Function 即函数而已。
 
