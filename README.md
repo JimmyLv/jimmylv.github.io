@@ -14,6 +14,8 @@
 <img src="https://img.shields.io/badge/license-MIT-brightgreen.svg" />
 </p>
 
+[![Throughput Graph](https://graphs.waffle.io/JimmyLv/jimmylv.github.io/throughput.svg)](https://waffle.io/JimmyLv/jimmylv.github.io/metrics/throughput)
+
 ## Continuous Progressive Ideology Revolution
 
 - [Serverless 实战：打造个人阅读追踪系统](https://blog.jimmylv.info/2017-06-30-serverless-in-action-build-personal-reading-statistics-system/)
