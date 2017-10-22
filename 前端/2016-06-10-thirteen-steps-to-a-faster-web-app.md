@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 【译】唯快不破：Web 应用的 13 个优化步骤
-categories: [翻译]
+categories: [前端]
 tags: [Web, FED, Optimization, JavaScript]
 published: True
 

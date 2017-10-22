@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 【译】React.js教程 第二部分：使用Gulp自动化构建工具
-categories: [翻译]
+categories: [前端]
 tags: [React, Gulp]
 published: True
 

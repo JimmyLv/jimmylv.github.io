@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 【译】展望2016，React.js 最佳实践 (中英对照版)
-categories: [翻译]
+categories: [前端]
 tags: [React, 总结]
 published: True
 ---

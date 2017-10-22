@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "【译】Facebook 正式发布 ReactJS v15.0 稳定版"
-categories: [翻译]
+categories: [前端]
 tags: [React, Release]
 published: True
 

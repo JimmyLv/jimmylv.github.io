@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 【译】主动阅读：评注的艺术
-category: [翻译]
+category: [思考]
 tags: [阅读, 评注, 学习]
 published: true
 

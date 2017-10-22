@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 【译】数字平台思考的艺术(之道？)
-categories: [翻译]
+categories: [思考]
 tags: [DPS, Platform, Framework, Innovation, Strategy, Rethink]
 published: False
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 【译】一种更好的 React/Redux 应用程序的文件目录结构
-categories: [翻译]
+categories: [前端]
 tags: [React, Redux, Test, FED, DX]
 published: True
 

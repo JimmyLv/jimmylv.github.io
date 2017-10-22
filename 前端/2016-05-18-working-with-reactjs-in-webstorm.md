@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 【译】在 Webstorm 中使用 ReactJS：编码辅助、代码规范、重构以及编译
-categories: [翻译]
+categories: [前端]
 tags: [React, Intellij, IDE, DX]
 published: True
 
