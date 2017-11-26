@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 【译】整洁代码：JavaScript 当中的面向对象设计原则（S.O.L.I.D）
-category: [编程]
+category: [前端]
 tags: [JavaScript, 前端, 面向对象, 设计原则, 类型系统]
 published: true
 
