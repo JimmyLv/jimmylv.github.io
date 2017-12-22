@@ -8,7 +8,6 @@ transition: move
 files: /assets/slide.css,/js/zoom.js
 highlightStyle: kimbie.light
 theme: colors
-date: 2017年12月23日
 published: True
 ---
 
