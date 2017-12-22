@@ -5,3 +5,15 @@
     margin-top:10px;
     background-color: rgba(0,0,0,.5);
 }
+
+h1, h2, h3, h4, h5, strong, em {
+	text-shadow: none !important;
+}
+
+code {
+	border: none !important;
+}
+
+.with-notes.popup .note {
+    font-size: medium;
+}
