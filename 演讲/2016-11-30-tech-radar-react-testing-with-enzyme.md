@@ -1,6 +1,6 @@
 ---
 layout: session
-title: React (Native) Testing with Enzyme
+title: 「技术雷达」之 React (Native) Testing with Enzyme
 categories: [演讲]
 tags: [React, ReactNaitve, Enzyme, UI, UnitTest]
 speaker: Jimmy Lv
