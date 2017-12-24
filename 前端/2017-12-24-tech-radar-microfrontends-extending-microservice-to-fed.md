@@ -10,7 +10,31 @@ published: True
 
 > 本文共计约 7k 字，预计阅读时间 15mins
 
-[TOC]
+- [微前端的缘由：单体应用与微服务架构](#title1)
+  - [微服务架构带来了哪些好处？](#title2)
+  - [那么前端的现状呢？ —— 臃肿的前端](#title3)
+- [微前端的定义 - 将微服务理念扩展到前端开发](#title4)
+  - [拆分微前端所带来的好处](#title5)
+  - [微前端的核心思想](#title6)
+- [微前端的可选实践方案（4 种 +）](#title7)
+  - [创建更小的 Apps（而不是 Components）](#title8)
+  - [如何组合微前端的 App 模块？](#title9)
+    - [Option 1: 使用后端模板引擎插入 HTML](#title10)
+    - [Option 1.1: 渐进式从后端进行加载](#title11)
+    - [Option 2: 使用 IFrame 隔离运行时](#title12)
+    - [Option 3: 客户端 JavaScript 异步加载](#title13)
+    - [Option 4: WebComponents 整合所有功能模块](#title14)
+  - [不同 App 模块之间如何交互？](#title15)
+  - [More Options…](#title16)
+- [微前端的页面优化与实例](#title17)
+  - [多模块页面加载问题与优化建议](#title18)
+  - [微前端在 AEM（CMS）项目的应用](#title19)
+  - [现成解决方案：Single-SPA “meta framework”](#title20)
+- [总结与思考：微前端的优缺点](#title21)
+  - [优点](#title22)
+  - [缺点](#title23)
+  - [持续思考…](#title24)
+- [参考资料](#title25)
 
 ## 微前端的缘由：单体应用与微服务架构
 
@@ -107,9 +131,9 @@ fs.readFile(htmlPath, 'utf8', (err, html) => {
 
 再依次创建其他 Apps 并独立部署：
 
-- https://microfrontends-header.herokuapp.com/
-- https://microfrontends-products-list.herokuapp.com/
-- https://microfrontends-cart.herokuapp.com/
+- <https://microfrontends-header.herokuapp.com/>
+- <https://microfrontends-products-list.herokuapp.com/>
+- <https://microfrontends-cart.herokuapp.com/>
 
 ### 如何组合微前端的 App 模块？
 
@@ -422,17 +446,17 @@ start();
 
 ## 参考资料
 
-> 本次技术雷达「微前端」主题的宣讲 Slides 可以在我的博客找到：[「技术雷达」之 Micro Frontends：微前端 - 将微服务理念扩展到前端开发 | 吕立青的博客](https://blog.jimmylv.info/2017-12-22-tech-radar-microfrontends-extending-microservice-to-fed/)
+> 本次技术雷达「微前端」主题的宣讲 Slides 可以在我的博客找到：[「技术雷达」之 Micro Frontends：微前端 - 将微服务理念扩展到前端开发 - 吕立青的博客](https://blog.jimmylv.info/2017-12-22-tech-radar-microfrontends-extending-microservice-to-fed/)
 
 ![](https://o7mw3gkkh.qnssl.com/images/2017/12/1514125808768.png)
 
-- 在做 Slides 之前所整理的 XMind 思维导图：https://www.xmind.net/m/e3dv
-- 本人所整理的所有关于「微前端」的资料：https://www.diigo.com/user/jimmylv?query=%23microfrontends
+- 在做 Slides 之前所整理的 XMind 思维导图：<https://www.xmind.net/m/e3dv>
+- 本人所整理的所有关于「微前端」的资料：<https://www.diigo.com/user/jimmylv?query=%23microfrontends>
 - 日常挖宝：ThoughtWorks 邮件组搜索「microfrontend」关键字：<https://inbox.google.com/u/1/search/microfrontend>
-- https://micro-frontends.org/
+- <https://micro-frontends.org/>
 - <https://medium.com/@tomsoderlund/micro-frontends-a-microservice-approach-to-front-end-web-development-f325ebdadc16>
 - <https://medium.com/@_rchaves_/building-microfrontends-part-i-creating-small-apps-710d709b48b7>
 - <http://www.agilechamps.com/microservices-to-micro-frontends/>
-- http://allegro.tech/2016/03/Managing-Frontend-in-the-microservices-architecture.html
-- https://technologyconversations.com/2015/08/09/developing-front-end-microservices-with-polymer-web-components-and-test-driven-development-part-55-using-microservices/
-- https://technologyconversations.com/2015/08/09/including-front-end-web-components-into-microservices/
+- <http://allegro.tech/2016/03/Managing-Frontend-in-the-microservices-architecture.html>
+- <https://technologyconversations.com/2015/08/09/developing-front-end-microservices-with-polymer-web-components-and-test-driven-development-part-55-using-microservices/>
+- <https://technologyconversations.com/2015/08/09/including-front-end-web-components-into-microservices/>
