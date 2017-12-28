@@ -75,6 +75,16 @@ published: True
 
 如果我们看到微服务提供给后端的好处，那么就可以更进一步将这些好处应用到前端。与此同时，在设计微服务的时候，就可以考虑不仅要完成后端逻辑，而且还要完成前端的视觉部分。而对于微前端来说，与微服务的许多要求也是一致的：监控、日志、HealthCheck、Analytics 等等。
 
+### 微前端的核心思想
+
+![](https://o7mw3gkkh.qnssl.com/images/2017/12/1513878936981.png)
+
+- ✨ Be Technology Agnostic：每个团队都应该能够选择和升级他们的技术栈，而不必与其他团队协调。自定义元素（后面会具体提到）是隐藏实现细节的好方法，同时为其他人提供公共接口。
+- ✨ Isolate Team Code：即使所有团队使用相同的框架，也不要共享运行时。构建独立的应用程序。不要依赖共享状态或全局变量。
+- ✨ Establish Team Prefixes：相互约定命名隔离。为 CSS、浏览器事件、Local Storage 和 Cookies 制定命名空间，以避免冲突和明确其所有权。
+- ✨ Favor Native Browser Features over Custom APIs：使用浏览器事件进行通信，而不是构建全局的 PubSub 系统。如果确实需要构建跨团队 API，请尽量保持简单。（与框架无关，可使用 CustomEvent）
+- ✨ Build a Resilient Site：即使 JavaScript 失败或尚未执行，Web 应用程序的功能仍应有效。可以使用通用渲染和渐进增强来提高用户的感知性能。
+
 ### 拆分微前端所带来的好处
 
 这样就能使各个前端团队按照自己的步调迭代，并随时准备就绪处于可发布状态，并隔离相互依赖所产生的风险，与此同时也更容易尝试新技术。
@@ -86,16 +96,6 @@ published: True
 - 可以同时拥有后端、前端、数据访问层和数据库，即一个服务子域所需的所有内容。
 - 查找线上 bug、测试、框架迭代，甚至语言、代码隔离与责任和其他事情变得更容易处理。
 - 我们不得不付出的代价是部署，但是容器（Docker 和 Rocket）以及不可变服务器使得这种情况也得到了极大的改善。
-
-### 微前端的核心思想
-
-![](https://o7mw3gkkh.qnssl.com/images/2017/12/1513878936981.png)
-
-- ✨ Be Technology Agnostic：每个团队都应该能够选择和升级他们的技术栈，而不必与其他团队协调。自定义元素（后面会具体提到）是隐藏实现细节的好方法，同时为其他人提供公共接口。
-- ✨ Isolate Team Code：即使所有团队使用相同的框架，也不要共享运行时。构建独立的应用程序。不要依赖共享状态或全局变量。
-- ✨ Establish Team Prefixes：相互约定命名隔离。为 CSS、浏览器事件、Local Storage 和 Cookies 制定命名空间，以避免冲突和明确其所有权。
-- ✨ Favor Native Browser Features over Custom APIs：使用浏览器事件进行通信，而不是构建全局的 PubSub 系统。如果确实需要构建跨团队 API，请尽量保持简单。（与框架无关，可使用 CustomEvent）
-- ✨ Build a Resilient Site：即使 JavaScript 失败或尚未执行，Web 应用程序的功能仍应有效。可以使用通用渲染和渐进增强来提高用户的感知性能。
 
 ## 微前端的可选实践方案（4 种+）
 
