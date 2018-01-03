@@ -87,7 +87,7 @@ CQS 在一个对象的层面上意味着：
 
 > In normal DDD, Aggregate objects are used for both command and query. We will also have Repositories that contain methods to find and persist Aggregate objects.
 
-在一般的 DDD 当中，Aggregate 对象通常被用于命令和查询。我们也有 Repositories 维护用于查找和存储 Aggregate 对象的方法。
+在一般的 DDD 当中，Aggregate（聚合）对象通常被用于命令和查询。我们也有 Repositories（资源库）包含用于查找和存储 Aggregate 对象的方法。
 
 > CQRS simply takes CQS further by separating command and query into different objects. Aggregates would have no query methods, only command methods. Repositories would now only have a single query method (e.g. `find`), and a single persist method (e.g. `save`).
 
@@ -364,7 +364,7 @@ e.g. `ShoppingCartActionCreators.addItem(…)`
 
 > As you see, the canonical Flux architecture is only one way of implementing CQRS in a system. It also adds a lot of objects into a system, compared with a normal DDD approach. Is added bloat worth it?
 
-如你所见，规范的 Flux 只是一种 CQRS 在系统中的一种实现方式。相比于 一般的 DDD 方法，它也给一个系统添加了大量的对象。有必要因此而得意吗？
+如你所见，规范的 Flux 只是一种 CQRS 在系统中的一种实现方式。相比于 一般的 DDD 方法，它也给一个系统添加了大量的对象。有必要因此得意而膨胀吗？
 
 ## When should I Flux? | 何时应用 Flux？
 
