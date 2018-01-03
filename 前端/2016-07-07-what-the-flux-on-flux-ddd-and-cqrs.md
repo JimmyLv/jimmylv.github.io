@@ -417,14 +417,14 @@ e.g. `ShoppingCartActionCreators.addItem(…)`
 
 这是一些 CQRS 当中的对象角色。
 
-* Query Model | 查询模型
-* Query Processor | 查询处理器
-* Command Model (Aggregate) | 命令模型（Aggregate）
-* Commands | 命令
-* Command Handler | 命令处理器
-* Domain Event | 领域事件
-* Domain Event Publisher | 领域事件发布者 
-* Event Subscriber | 事件订阅者
+* Query Model - 查询模型
+* Query Processor - 查询处理器
+* Command Model (Aggregate) - 命令模型（聚合）
+* Commands - 命令
+* Command Handler - 命令处理器
+* Domain Event - 领域事件
+* Domain Event Publisher - 领域事件发布者 
+* Event Subscriber - 事件订阅者
 
 > In Facebook Flux some objects take on more than one role. This is perfectly reasonable to do! When we encounter other Flux implementations, we could also discuss them using the different object roles in CQRS.
 
