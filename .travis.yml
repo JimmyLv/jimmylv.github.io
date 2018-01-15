@@ -23,7 +23,7 @@ before_install:
   # 配置 git 信息
   - git config --global user.name 'Travis CI'
   - git config --global user.email travis@jimmylv.com
-  - git clone --depth=50 --branch=master https://github.com/JimmyLv/jekyll-blog.git
+  - git clone --branch=master https://github.com/JimmyLv/jekyll-blog.git
   # 配置 qshell
   - wget http://devtools.qiniu.com/qshell-v2.0.5.zip
   - sudo apt-get install unzip
