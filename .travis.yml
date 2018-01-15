@@ -35,6 +35,7 @@ script:
   - nodeppt generate ./演讲 ./slides -a
   - cd jekyll-blog
   - git clone --depth=1 --branch=master https://github.com/JimmyLv/jimmylv.github.io.git _posts
+  - ls
   - bundle install
   - jekyll build
   - cat ./public/css/base.css # just for verify changes
