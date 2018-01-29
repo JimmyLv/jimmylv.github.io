@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "【译】《React 学习之道》The Road to learn React (简体中文版)"
+title: "【译】《React 学习之道》The Road to learn React (简体中文版) 最简单，且最实用的 React 实战教程"
 categories: [前端]
 tags: [Tutorial, Roadmap, ES6, React]
 published: True
@@ -113,5 +113,5 @@ published: True
 ## 最后！求 Star！求小星星！
 
 
-- GitHub 翻译地址：[the-road-to-learn-react/the-road-to-learn-react-chinese: 《React 学习之道》The Road to learn React (简体中文版) | 最简单，且最实用的 React 实战教程。](https://github.com/the-road-to-learn-react/the-road-to-learn-react-chinese)
+- GitHub 翻译地址：[the-road-to-learn-react/the-road-to-learn-react-chinese: 《React 学习之道》The Road to learn React (简体中文版) - 最简单，且最实用的 React 实战教程。](https://github.com/the-road-to-learn-react/the-road-to-learn-react-chinese)
 - GitHub 原书地址：[the-road-to-learn-react/the-road-to-learn-react: The Road to learn React](https://github.com/the-road-to-learn-react/the-road-to-learn-react)
