@@ -23,7 +23,7 @@ before_install:
   # 配置 git 信息
   - git config --global user.name 'Travis CI'
   - git config --global user.email travis@jimmylv.com
-  - git clone https://github.com/JimmyLv/jekyll-blog.git
+  - git clone --depth=1 --branch=master https://github.com/JimmyLv/jekyll-blog.git
   # 配置 qshell
   - wget http://devtools.qiniu.com/qshell-v2.0.5.zip
   - sudo apt-get install unzip
@@ -34,7 +34,7 @@ install:
 script:
   - nodeppt generate ./演讲 ./slides -a
   - cd jekyll-blog
-  - git clone https://github.com/JimmyLv/jimmylv.github.io.git _posts
+  - git clone --depth=1 --branch=master https://github.com/JimmyLv/jimmylv.github.io.git _posts
   - ls
   - bundle install
   - jekyll build
