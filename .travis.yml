@@ -38,6 +38,7 @@ script:
   - ls
   - bundle install
   - jekyll build
+  - gem install jekyll jekyll-paginate jekyll-sitemap jekyll-tagging-related_posts jekyll-seo-tag
   - cat ./public/css/base.css # just for verify changes
   - ../qshell_linux_amd64 qupload scripts/qiniu.conf.json
 after_success:
