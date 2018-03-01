@@ -9,7 +9,7 @@ published: true
 
 原文地址：<https://github.com/ryanmcdermott/clean-code-javascript#classes>
 
-> GitHub 总之有很多 Code Example 案例的仓库来教你如何正确写出好代码，诸多 Markdown 写手以 BAD/GOOD 两种代码作为示范，辅以一些叙述和注释作为说明，清晰易懂。我就准备来翻译最近看到的 JavaScript 整洁代码中 Classes 设计原则这一段，进一步加深对面向对象设计原则的理解，而不只是 Java 世界。
+> GitHub 总是有很多 Code Example 案例的仓库来教你如何正确写出好代码，诸多 Markdown 写手以 BAD/GOOD 两种代码作为示范，辅以一些叙述和注释作为说明，清晰易懂。我就准备来翻译最近看到的 JavaScript 整洁代码中 Classes 设计原则这一段，进一步加深对面向对象设计原则的理解，而不只是 Java 世界。
 
 ## [JavaScript **Classes**](https://github.com/ryanmcdermott/clean-code-javascript#classes)
 
@@ -17,7 +17,7 @@ published: true
 
 > As stated in Clean Code, "There should never be more than one reason for a class to change". It's tempting to jam-pack a class with a lot of functionality, like when you can only take one suitcase on your flight. The issue with this is that your class won't be conceptually cohesive and it will give it many reasons to change. Minimizing the amount of times you need to change a class is important. It's important because if too much functionality is in one class and you modify a piece of it, it can be difficult to understand how that will affect other dependent modules in your codebase. 
 
-如《整洁代码》中所述，「不应该有一个以上的理由去修改某个类」。我们往往会倾向于往一个类里面塞入过多的功能，类似于你只能往航班上携带唯一一个行李箱。这里的问题在于，这个类从概念上来说不再是内聚的，从而导致了将来可能有很多理由会去修改它。尽可能少地去修改某个类是非常重要的，因为如果在一个类里面包含了过多的功能，那么当你修改其中的某一部分，就会很难理解你所做的修改将如何影响代码库当中其他相互依赖的模块。
+如《整洁代码》中所言，「不应该有一个以上的理由去修改某个类」。通常情况下，我们会倾向于往一个类当中塞入过多的功能，就像当你只能往航班上携带**一个**行李箱的时候。这里的问题在于，这个类不再是概念上的内聚，从而导致了未来可能有很多理由会去修改它。尽可能少地去修改某个类是非常重要的，因为如果在一个类里面包含了过多的功能，那么当你修改其中的某一部分，就会难以理解新的修改将如何影响代码库中的其他依赖模块。
 
 **Bad:**
 
@@ -71,7 +71,7 @@ class UserSettings {
 > As stated by Bertrand Meyer, "software entities (classes, modules, functions,
 etc.) should be open for extension, but closed for modification." What does that mean though? This principle basically states that you should allow users to extend the functionality of your module without having to open up the `.js` source code file and manually manipulate it.
 
-正如 Bertrand Meyer 所言，「软件实体（类、模块、函数等等）应该对于扩展是开放的，而对于修改是封闭的」。换句话说，该原则的基本意思就是你应该让用户在扩展你的模块功能时，没有必要去打开 `.js` 源文件并且手动修改源代码。
+正如 Bertrand Meyer 所言，「软件实体（类、模块、函数等等）应该对扩展开放，而对修改封闭」。换句话说，该原则的基本含义就是当用户在扩展你的模块功能时，没有必要去打开 `.js` 源文件并手动修改源代码。
 
 **Bad:**
 
@@ -112,18 +112,18 @@ class AjaxRequester {
 
 > This is a scary term for a very simple concept. It's formally defined as "If S is a subtype of T, then objects of type T may be replaced with objects of type S (i.e., objects of type S may substitute objects of type T) without altering any of the desirable properties of that program (correctness, task performed, etc.)." That's an even scarier definition.
 
-这个原则听起来有点儿拗口但是概念非常简单。正式的定义就是「如果 S 为 T 的子类型，那么 T 类型的对象可以被 S 类型的对象所替换（也就是说类型 S 的对象可以替换类型 T 的对象），而不会改变该程序的任何期望的属性（正确性，执行的任务等）」。不得不说这是一个更拗口的定义。
+这个原则听起来有点儿拗口，但其实概念非常简单。正式的定义就是「如果 S 为 T 的子类型，那么 T 类型的对象可以被 S 类型的对象所替换（也就是说类型 S 的对象可以替换类型 T 的对象），而不会改变该程序的任何预期特性（正确性，执行的任务等）」。不得不说这是一个更拗口的定义。
 
 > The best explanation for this is if you have a parent class and a child class, then the base class and child class can be used interchangeably without getting incorrect results. This might still be confusing, so let's take a look at the classic Square-Rectangle example. Mathematically, a square is a rectangle, but if you model it using the "is-a" relationship via inheritance, you quickly get into trouble.
 
-最好的一种解释就是，我们所创建的父类与其子类应当可交换地使用而不会引起异常。可能这还是会使人感到困惑，所以让我们来看一个经典的 Square-Rectangle 例子。从数学上来说，一个 Square 也是 一个 Rectangle，但是如果你通过继承使用 “is-a” 的关系对其进行建模，你很快就会遇到问题。
+最好的一种解释就是，我们所创建的父类与其子类应当可交换地使用而不会引起异常。可能这还是会使人感到困惑，所以让我们来看一个经典的 Square-Rectangle 例子。从数学上来说，一个 Square（正方形）也是一个 Rectangle（矩形），但如果你通过继承来运用 “is-a” 关系对其进行建模，你很快就会遇到麻烦。
 
 **Bad:**
 
 ```js
 class Rectangle {
   constructor() {
-    this.width=0;
+    this.width = 0;
     this.height = 0;
   }
 
@@ -144,7 +144,7 @@ class Rectangle {
   }
 
   getArea() {
-    return this.width \* this.height;
+    return this.width * this.height;
   }
 }
 
@@ -208,7 +208,7 @@ class Rectangle extends Shape {
   }
 
   getArea() {
-    return this.width \* this.height;
+    return this.width * this.height;
   }
 }
 
@@ -223,7 +223,7 @@ class Square extends Shape {
   }
 
   getArea() {
-    return this.length \* this.length;
+    return this.length * this.length;
   }
 }
 
@@ -260,7 +260,7 @@ ISP 的表述是「不应该强制客户端去依赖于他们不需要的接口�
 
 > A good example to look at that demonstrates this principle in JavaScript is for classes that require large settings objects. Not requiring clients to setup huge amounts of options is beneficial, because most of the time they won't need all of the settings. Making them optional helps prevent having a "fat interface". 
 
-这一点在 JavaScript 中较为典型的例子就是那些需要大量配置信息的类。其实使用者并不需要去关心每一个配置项，不强制他们设置大量的选项能够节省大量的时间，保持设置选项可选能够有助于防止「胖接口」。
+这一点在 JavaScript 中较为典型的例子就是那些需要大量配置信息的类。其实使用者并不需要去关心每一个配置项，不强制他们设置大量的选项能够节省大量的时间，保持设置选项的**可选性**能够有助于防止「胖接口」。
 
 **Bad:**
 
@@ -335,12 +335,12 @@ let $ = new DOMTraverser({
 
 > This can be hard to understand at first, but if you've worked with Angular.js, you've seen an implementation of this principle in the form of Dependency Injection (DI). While they are not identical concepts, DIP keeps high-level modules from knowing the details of its low-level modules and setting them up. It can accomplish this through DI. A huge benefit of this is that it reduces the coupling between modules. Coupling is a very bad development pattern because it makes your code hard to refactor.
 
-最开始可能很难理解，但是如果你曾经用过 Angular.js，你就已经见过这个原则的一种实现了，依赖注入（DI）就是其中一种形式。但是他们不是完全相同的概念，DIP 可以避免上层模块知道你的下层模块的实现细节和具体设置，这可以通过 DI 来达成目的。一个显著的好处就是减少了模块之间的耦合，耦合是非常坏的一种开发模式，因为它会使得你的代码难以重构。
+最开始可能很难理解，但是如果你曾经用过 Angular.js，你就已经见到过这个原则的一种实现，依赖注入（DI）就是其中一种形式。但是他们不是完全相同的概念，DIP 可以避免上层模块知道你的下层模块的实现细节和具体设置，而这可以通过 DI 来达成目的。一个显著的好处就是减少了模块之间的耦合，而耦合是非常差的一种开发模式，因为它会使得你的代码难以重构。
 
 > As stated previously, JavaScript doesn't have interfaces so the abstractions
 that are depended upon are implicit contracts. That is to say, the methods and properties that an object/class exposes to another object/class. In the example below, the implicit contract is that any Request module for an `InventoryTracker` will have a `requestItems` method.
 
-就像之前所提到的，JavaScript 语言本身没有接口，从而抽象只能依赖于隐性的契约。也就是指，一个对象/类所暴露给另一个对象/类的方法和属性。下面这个例子当中的隐性契约就是，`InventoryTracker` 所依赖的任意一个 Request 模块都要有一个 `requestItems` 方法。
+就像之前所提到的，JavaScript 语言本身没有接口，从而抽象只能依赖于隐性的契约。也就是指，一个对象/类所暴露给另一个对象/类的方法和属性。以下例子中所隐含的契约就是，`InventoryTracker` 所依赖的任意 Request 模块都要有一个 `requestItems` 方法。
 
 **Bad:**
 
