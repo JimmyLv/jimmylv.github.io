@@ -33,6 +33,9 @@ Github则是一个基于Git的日益流行的开源项目托管库，也就是�
 2. 下载安装（[https://help.github.com/articles/set-up-git](https://help.github.com/articles/set-up-git)）
 3. 安装完成后，桌面出现两个图标：
  ![](https://lh4.googleusercontent.com/-muAVO81BsfM/Ukwf1vepLzI/AAAAAAAAAFc/20AHhLdbK8U/s0/GIT.jpg)
+
+[[https://lh4.googleusercontent.com/-muAVO81BsfM/Ukwf1vepLzI/AAAAAAAAAFc/20AHhLdbK8U/s0/GIT.jpg]]
+
 4. GitHub是客户端，点击登陆，输入你先前注册的帐号密码
 5. Git Shell是Git的命令行，类似于window下的CMD
 6. 在Shell里面配置本地信息，分别输入你的github帐号和邮箱：
