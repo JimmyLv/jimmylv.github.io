@@ -24,15 +24,16 @@ Tag: [Spring](http://kielczewski.eu/tag/Spring/), [Spring Boot](http://kielczews
 ## Service overview | 服务概述
 
 > The goal will be to create a simple web service with the following requirements:
+> * Given no user with same id exists, it should store a new user in the database and immediately return the stored object.
+> * Given there exists a user with same id, it should not store, but return error status with the message.
+> * Given there are previously stored users, it should be able to retrieve the list of them.
 
 目标就是构建一个简单的web服务，需求如下：
 
-> * Given no user with same id exists, it should store a new user in the database and immediately return the stored object.
-    - 给一个具有ID的不存在的用户，这将在数据库中存储一个新的用户，并立即返回存储的对象。
-> * Given there exists a user with same id, it should not store, but return error status with the message.
-    - 给一个具有ID的已存在的用户，将不会存储，而是返回错误码信息。
-> * Given there are previously stored users, it should be able to retrieve the list of them.
-    - 给定已存储的用户，将拿到用户的列表。
+- 给一个具有ID的不存在的用户，这将在数据库中存储一个新的用户，并立即返回存储的对象。
+- 给一个具有ID的已存在的用户，将不会存储，而是返回错误码信息。
+- 给定已存储的用户，将拿到用户的列表。
+
 
 ## Maven
 
