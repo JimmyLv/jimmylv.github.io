@@ -28,7 +28,7 @@ published: True
 
 接下来的内容就是关于构建一个项目的一些基本规则。需要注意的是，这些规则本身是跟框架和语言无关的，所以你在所有的情况下都应该可以遵循这些规则。但在这里，我们是以 React 和 Redux 为例，熟悉这些框架将会很有帮助。
 
-### Rule #1: Organize by feature | 规则 #1: 基于特性进行组织
+### Rule #1: Organize by feature | 规则 #1: 基于特性进行组织 id:41
 
 > Let’s first start by going over what not to do. A common way that projects can be organized is by object roles.
 
@@ -111,7 +111,7 @@ rootReducer.js
 
 从表面上来看，根据特性组织似乎看起来像是一种基于美学的考虑。但是，就如我们在接下来的两个规则中所看到的那样，这种构建项目的方式将会帮助简化你的应用程序代码。
  
-### Rule #2: Create strict module boundaries | 规则 #2: 设计严格的模块边界
+### Rule #2: Create strict module boundaries | 规则 #2: 设计严格的模块边界 id:40
 
 > In his Ruby Conf 2012 talk [Simplicity Matters](https://www.youtube.com/watch?v=rI8tNMsozo0), Rich Hickey defines complexity as the **complecting** (or interleaving) of things. When you couple modules together, you can picture an actual knot or braid forming in your code.
 
@@ -228,7 +228,7 @@ const ProjectTodosContainer = connect(
 
 既然项目已经根据特性组织而成，并且在每个特性之间也有了清晰的边界，那么接下来就是我想要涉及的最后一件事：*循环依赖*。
 
-### Rule #3: Avoid circular dependencies | 规则 #3: 避免循环依赖
+### Rule #3: Avoid circular dependencies | 规则 #3: 避免循环依赖 id:42
 
 > It shouldn’t take too much convincing for you to believe me when I say that circular dependencies are bad. Yet, without proper project structure, it is all too easy to fall into this trap.
 
