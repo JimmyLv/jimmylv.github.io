@@ -1,19 +1,487 @@
-.file-setting{
-    color: yellow;
-}
-#incallback,#outcallback{
-    margin-top:10px;
-    background-color: rgba(0,0,0,.5);
-}
-
-h1, h2, h3, h4, h5, strong, em {
-	text-shadow: none !important;
-}
-
-code {
-	border: none !important;
+@charset "UTF-8";
+/**
+ * ThoughtWorks theme for reveal.js.
+ *
+ * Juntao QIU, http://icodeit.org
+ */
+/* line 36, source/thoughtworks.scss */
+section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
+  color: #333333;
 }
 
-.with-notes.popup .note {
-    font-size: medium;
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+/* line 7, template/theme.scss */
+body {
+  background: #1BB470;
+  background-color: #1BB470;
+  font-family: "Open Sans", "Microsoft YaHei", "Hiragino Sans GB", "Hiragino Sans GB W3", "微软雅黑", "Helvetica Neue", Arial, sans-serif;
+  font-size: 38px;
+  font-weight: normal;
+  color: #FFFFFF;
+}
+
+/* line 19, template/theme.scss */
+::selection {
+  color: #fff;
+  background: white;
+  text-shadow: none;
+}
+
+/* line 25, template/theme.scss */
+ .slides > section,
+ .slides > section > section {
+  line-height: 1.3;
+  font-weight: inherit;
+}
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+/* line 35, template/theme.scss */
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+  margin: 0 0 20px 0;
+  color: #FFFFFF;
+  font-family: "Open Sans", "Microsoft YaHei", "Hiragino Sans GB", "Hiragino Sans GB W3", "微软雅黑", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  text-shadow: none;
+  word-wrap: break-word;
+}
+
+/* line 55, template/theme.scss */
+ h1 {
+  font-size: 2.5em;
+}
+
+/* line 56, template/theme.scss */
+ h2 {
+  font-size: 1.6em;
+}
+
+/* line 57, template/theme.scss */
+ h3 {
+  font-size: 1.3em;
+}
+
+/* line 58, template/theme.scss */
+ h4 {
+  font-size: 1em;
+}
+
+/* line 60, template/theme.scss */
+ h1 {
+  text-shadow: none;
+}
+
+/*********************************************
+ * OTHER
+ *********************************************/
+/* line 69, template/theme.scss */
+ p {
+  margin: 20px 0;
+  line-height: 1.3;
+}
+
+/* Ensure certain elements are never larger than the slide itself */
+/* line 75, template/theme.scss */
+ img,
+ video,
+ iframe {
+  max-width: 95%;
+  max-height: 95%;
+}
+
+/* line 81, template/theme.scss */
+ strong,
+ b {
+  font-weight: bold;
+}
+
+/* line 86, template/theme.scss */
+ em {
+  font-style: italic;
+}
+
+/* line 90, template/theme.scss */
+ ol,
+ dl,
+ ul {
+  display: inline-block;
+  text-align: left;
+  margin: 0 0 0 1em;
+}
+
+/* line 99, template/theme.scss */
+ ol {
+  list-style-type: decimal;
+}
+
+/* line 103, template/theme.scss */
+ ul {
+  list-style-type: disc;
+}
+
+/* line 107, template/theme.scss */
+ ul ul {
+  list-style-type: square;
+}
+
+/* line 111, template/theme.scss */
+ ul ul ul {
+  list-style-type: circle;
+}
+
+/* line 115, template/theme.scss */
+ ul ul,
+ ul ol,
+ ol ol,
+ ol ul {
+  display: block;
+  margin-left: 40px;
+}
+
+/* line 123, template/theme.scss */
+ dt {
+  font-weight: bold;
+}
+
+/* line 127, template/theme.scss */
+ dd {
+  margin-left: 40px;
+}
+
+/* line 131, template/theme.scss */
+ q,
+ blockquote {
+  quotes: none;
+}
+
+/* line 136, template/theme.scss */
+ blockquote {
+  display: block;
+  position: relative;
+  width: 70%;
+  margin: 20px auto;
+  padding: 5px;
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* line 147, template/theme.scss */
+ blockquote p:first-child,
+ blockquote p:last-child {
+  display: inline-block;
+}
+
+/* line 152, template/theme.scss */
+ q {
+  font-style: italic;
+}
+
+/* line 156, template/theme.scss */
+ pre {
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: 20px auto;
+  text-align: left;
+  font-size: 0.55em;
+  font-family: monospace;
+  line-height: 1.2em;
+  word-wrap: break-word;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* line 171, template/theme.scss */
+ code {
+  font-family: monospace;
+}
+
+/* line 175, template/theme.scss */
+ pre code {
+  display: block;
+  padding: 5px;
+  overflow: auto;
+  max-height: 400px;
+  word-wrap: normal;
+  background: #3F3F3F;
+  color: #DCDCDC;
+}
+
+/* line 185, template/theme.scss */
+ table {
+  margin: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 191, template/theme.scss */
+ table th {
+  font-weight: bold;
+}
+
+/* line 195, template/theme.scss */
+ table th,
+ table td {
+  text-align: left;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  border-bottom: 1px solid;
+}
+
+/* line 202, template/theme.scss */
+ table tr:last-child td {
+  border-bottom: none;
+}
+
+/* line 206, template/theme.scss */
+ sup {
+  vertical-align: super;
+}
+
+/* line 209, template/theme.scss */
+ sub {
+  vertical-align: sub;
+}
+
+/* line 213, template/theme.scss */
+ small {
+  display: inline-block;
+  font-size: 0.6em;
+  line-height: 1.2em;
+  vertical-align: top;
+}
+
+/* line 220, template/theme.scss */
+ small * {
+  vertical-align: top;
+}
+
+/*********************************************
+ * LINKS
+ *********************************************/
+/* line 229, template/theme.scss */
+ a {
+  color: #cccccc;
+  text-decoration: none;
+  -webkit-transition: color .15s ease;
+  -moz-transition: color .15s ease;
+  transition: color .15s ease;
+}
+
+/* line 237, template/theme.scss */
+ a:hover {
+  color: #f2f2f2;
+  text-shadow: none;
+  border: none;
+}
+
+/* line 244, template/theme.scss */
+ .roll span:after {
+  color: #fff;
+  background: #a6a6a6;
+}
+
+/*********************************************
+ * IMAGES
+ *********************************************/
+/* line 254, template/theme.scss */
+ section img {
+  margin: 15px 0px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 4px solid #FFFFFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+/* line 262, template/theme.scss */
+ a img {
+  -webkit-transition: all .15s linear;
+  -moz-transition: all .15s linear;
+  transition: all .15s linear;
+}
+
+/* line 268, template/theme.scss */
+ a:hover img {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #cccccc;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+}
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+/* line 280, template/theme.scss */
+ .controls div.navigate-left,
+ .controls div.navigate-left.enabled {
+  border-right-color: #cccccc;
+}
+
+/* line 285, template/theme.scss */
+ .controls div.navigate-right,
+ .controls div.navigate-right.enabled {
+  border-left-color: #cccccc;
+}
+
+/* line 290, template/theme.scss */
+ .controls div.navigate-up,
+ .controls div.navigate-up.enabled {
+  border-bottom-color: #cccccc;
+}
+
+/* line 295, template/theme.scss */
+ .controls div.navigate-down,
+ .controls div.navigate-down.enabled {
+  border-top-color: #cccccc;
+}
+
+/* line 300, template/theme.scss */
+ .controls div.navigate-left.enabled:hover {
+  border-right-color: #f2f2f2;
+}
+
+/* line 304, template/theme.scss */
+ .controls div.navigate-right.enabled:hover {
+  border-left-color: #f2f2f2;
+}
+
+/* line 308, template/theme.scss */
+ .controls div.navigate-up.enabled:hover {
+  border-bottom-color: #f2f2f2;
+}
+
+/* line 312, template/theme.scss */
+ .controls div.navigate-down.enabled:hover {
+  border-top-color: #f2f2f2;
+}
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+/* line 321, template/theme.scss */
+ .progress {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* line 324, template/theme.scss */
+ .progress span {
+  background: #cccccc;
+  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+}
+
+/*********************************************
+ * SLIDE NUMBER
+ *********************************************/
+/* line 335, template/theme.scss */
+ .slide-number {
+  color: #cccccc;
+}
+
+/* line 46, source/thoughtworks.scss */
+ h1,  h2,  h3,  h4,  h5,  h6 {
+  letter-spacing: -0.08em;
+  text-rendering: optimizelegibility;
+}
+/* line 51, source/thoughtworks.scss */
+ .slide-background {
+  transition: none;
+}
+/* line 55, source/thoughtworks.scss */
+ .subtitle {
+  font-size: 1em;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: normal;
+  text-transform: normal;
+}
+/* line 63, source/thoughtworks.scss */
+ .title {
+  padding: .4em 0;
+  border-bottom: 2px solid #FFFFFF;
+}
+/* line 68, source/thoughtworks.scss */
+ p {
+  font-weight: 100;
+}
+/* line 72, source/thoughtworks.scss */
+ .emphasize {
+  font-style: italic;
+}
+/* line 76, source/thoughtworks.scss */
+ .pink {
+  color: #EF5BA1;
+}
+/* line 80, source/thoughtworks.scss */
+ .bg-pink {
+  background-color: #EF5BA1;
+}
+/* line 84, source/thoughtworks.scss */
+ .blue {
+  color: #30C7D5;
+}
+/* line 88, source/thoughtworks.scss */
+ .bg-blue {
+  background-color: #30C7D5;
+}
+/* line 92, source/thoughtworks.scss */
+ .lightgray {
+  color: #eeeeee;
+}
+/* line 96, source/thoughtworks.scss */
+ .bg-lightgray {
+  background-color: #eeeeee;
+}
+/* line 100, source/thoughtworks.scss */
+ .darkgray {
+  color: #333333;
+}
+/* line 104, source/thoughtworks.scss */
+ .bg-darkgray {
+  background-color: #333333;
+}
+/* line 108, source/thoughtworks.scss */
+ .white {
+  color: white;
+}
+/* line 112, source/thoughtworks.scss */
+ .bg-white {
+  background-color: white;
+}
+/* line 116, source/thoughtworks.scss */
+ .black {
+  color: black;
+}
+/* line 120, source/thoughtworks.scss */
+ .bg-black {
+  background-color: black;
+}
+/* line 124, source/thoughtworks.scss */
+ .green {
+  color: #1BB470;
+}
+/* line 128, source/thoughtworks.scss */
+ .bg-green {
+  background-color: #1BB470;
+}
+/* line 132, source/thoughtworks.scss */
+ .left {
+  text-align: left;
+}
+/* line 136, source/thoughtworks.scss */
+ .right {
+  text-align: right;
+}
+/* line 141, source/thoughtworks.scss */
+ code .title {
+  border-bottom: 0px;
 }

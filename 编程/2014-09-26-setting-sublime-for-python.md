@@ -5,6 +5,18 @@ category: 编程
 tags: [Ubuntu, Sublime, Python]
 published: true
 ---
+<!-- MarkdownTOC -->
+
+- 配置Python环境
+    - 1. 安装pip
+    - 2. 构建虚拟环境
+- Sublime Text 3的安装与配置
+    - 1. 安装插件
+    - 2. 修改快捷键
+    - 3. 修改视图
+    - 4. 编辑器快捷键汇总
+
+<!-- /MarkdownTOC -->
 
 ## 配置Python环境
 

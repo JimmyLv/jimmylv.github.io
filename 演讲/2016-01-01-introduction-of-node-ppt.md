@@ -4,7 +4,7 @@ title: Node PPT Markdown 演示（转）
 categories: [演讲]
 tags: [Node, 技能]
 speaker: Jimmy Lv
-transition: move
+transition: circle
 files: /assets/slide.js,/assets/slide.css,/js/zoom.js
 theme: moon
 published: True
