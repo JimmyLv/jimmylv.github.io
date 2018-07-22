@@ -9,7 +9,7 @@ published: True
 
 > [Flux](http://facebook.github.io/flux/docs/overview.html) is an application architecture designed by Facebook for their JavaScript applications. It was first introduced by Facebook in May 2014, and it has since garnered much interest in the JavaScript community.
 
-[Flux](http://facebook.github.io/flux/docs/overview.html) 是一个由 Facebook 为其应用所设计的应用程序架构。Facebook 在 2014 年五月的时候首次提出 Flux，如今已经收获了 JavaScript 社区的浓厚兴趣。
+[Flux](http://facebook.github.io/flux/docs/overview.html) 是一个由 Facebook 为其应用所设计的应用程序架构。Facebook 在 2014 年五月的时候首次提出 Flux，如今已经引发了 JavaScript 社区的浓厚兴趣。
 
 > There are several implementations of Flux. Frameworks like [Fluxxor](http://jaysoo.ca/2015/02/06/what-the-flux/fluxxor.com) keep to the original Facebook Flux pattern, but reduces the amount of boilerplate code. While other frameworks like [Reflux](https://github.com/spoike/refluxjs) and [Barracks](https://github.com/yoshuawuyts/barracks) stray from the canonical Flux architecture by getting rid of the Dispatcher (Reflux) or ActionCreators (Barracks). So which framework should you choose?
 
