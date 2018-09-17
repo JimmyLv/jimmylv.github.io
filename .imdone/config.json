@@ -21,10 +21,15 @@
       "MARK",
       "1",
       "2",
-      "3"
+      "3",
+      "HELP"
     ]
   },
   "lists": [
+    {
+      "name": "HELP",
+      "hidden": false
+    },
     {
       "name": "1",
       "hidden": false
@@ -54,5 +59,6 @@
     "id": "5aa2413ebb63cf6fc8d9beb8",
     "name": "JimmyLv/jimmylv.github.io",
     "useImdoneioForPriority": true
-  }
+  },
+  "noHelp": true
 }
