@@ -12,8 +12,10 @@
 <a href="https://github.com/JimmyLv/jimmylv.github.io/issues?q=is%3Aissue+is%3Aclosed" target="_blank" rel="external"><img src="https://img.shields.io/github/issues-closed-raw/JimmyLv/jimmylv.github.io.svg?maxAge=2592000" alt=""></a>
 <a href="https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2FJimmyLv%2Fjimmylv.github.io?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2FJimmyLv%2Fjimmylv.github.io.svg?type=shield"/></a>
 <img src="https://img.shields.io/badge/license-MIT-brightgreen.svg" />
-<a href="https://waffle.io/JimmyLv/jimmylv.github.io/metrics/throughput" alt="Throughput Graph"><img src="https://graphs.waffle.io/JimmyLv/jimmylv.github.io/throughput.svg"/></a>
 </p>
+
+[![Throughput Graph](https://graphs.waffle.io/JimmyLv/jimmylv.github.io/throughput.svg)](https://waffle.io/JimmyLv/jimmylv.github.io/metrics/throughput)
+
 
 ## Continuous Progressive Ideology Revolution
 
