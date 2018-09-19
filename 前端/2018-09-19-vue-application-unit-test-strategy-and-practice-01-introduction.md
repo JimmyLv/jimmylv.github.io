@@ -6,6 +6,8 @@ tags: [Tutorial, UnitTest, ES6, Vue, Jest, Agile, TDD]
 published: True
 ---
 
+## 前言
+
 本文主要尝试解决三个问题：
 
 1. 在 TDD 做完Tasking列完实例化数据之后，完全没有UT基础不知道该怎么写单元测试？
@@ -14,9 +16,9 @@ published: True
 
 不谈论的包括：
 
-- ATT 验收测试 或 E2E 端到端测试，这个是我想进一步探索的话题，特别是在TDD的语境下 [#322](https://github.com/JimmyLv/jimmylv.github.io/issues/322)
+- ATT 验收测试 或 E2E 端到端测试，这个是我想进一步探索的话题，特别是在TDD的语境下。[#322](https://github.com/JimmyLv/jimmylv.github.io/issues/322)
 - 为什么要 TDD？但是我会讲为什么要 UT 单元测试。测试和TDD是两码事，而光是自动化测试的好处就已经足够多，但是如何做到更好的自动化和持续集成，那就需要TDD来指引方向。
-- Snapshot Testing 快照测试，其实我是很认可快照这种形式，但需要改进其工作流，至少结合Image Snapshot和Storybook等工具，甚至更应该放到CI上去，[#311](https://github.com/JimmyLv/jimmylv.github.io/issues/311)
+- Snapshot Testing 快照测试，其实我是很认可快照这种形式，但需要改进其工作流，至少结合Image Snapshot和Storybook等工具，甚至更应该放到CI上去。[#311](https://github.com/JimmyLv/jimmylv.github.io/issues/311)
 
 下面我就来结合具体场景，进一步实例化这些问题，举几个🌰：
 
