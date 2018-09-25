@@ -48,6 +48,8 @@ As you can see in [JimmyLv/api](https://github.com/JimmyLv/api) repo which will 
 
 ### Blog
 
+#TODO: add more details in wiki, and also update md images url from qiniu to github
+
 * [x] [JimmyLv/jekyll-blog](https://github.com/JimmyLv/jekyll-blog): `jekyll` version, which is the default blog to be published on <https://blog.jimmylv.info> | <http://jekyll.jimmylv.info>..
 * [ ] [JimmyLv/hexo-blog](https://github.com/JimmyLv/hexo-blog): `hexo` version, which is another alternative of `jekyll` and you can play with `nodejs` easily, <http://hexo.jimmylv.info>.
 * [x] [JimmyLv/Haiku](https://github.com/JimmyLv/Haiku)：`react` version, which be invoke the markdown raw files from GitHub repo, and we can easily enjoy the frontend deployment, <https://haiku.jimmylv.info>
