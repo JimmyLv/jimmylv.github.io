@@ -7,3 +7,5 @@ Notes/
 .idea/
 .vscode/
 .DS_Store
+
+*.sublime-*
