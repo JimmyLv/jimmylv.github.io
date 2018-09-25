@@ -48,7 +48,7 @@ As you can see in [JimmyLv/api](https://github.com/JimmyLv/api) repo which will 
 
 ### Blog
 
-#TODO: add more details in wiki, and also update md images url from qiniu to github
+#TODO: add more details in wiki, and also update md images url from qiniu to github id:50
 
 * [x] [JimmyLv/jekyll-blog](https://github.com/JimmyLv/jekyll-blog): `jekyll` version, which is the default blog to be published on <https://blog.jimmylv.info> | <http://jekyll.jimmylv.info>..
 * [ ] [JimmyLv/hexo-blog](https://github.com/JimmyLv/hexo-blog): `hexo` version, which is another alternative of `jekyll` and you can play with `nodejs` easily, <http://hexo.jimmylv.info>.
