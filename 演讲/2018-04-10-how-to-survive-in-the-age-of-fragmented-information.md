@@ -145,7 +145,7 @@ published: True
 
 ------
 
-![](http://7xjbdq.com1.z0.glb.clouddn.com/images/2016/1523444746311.png)
+![](http://o7mw3gkkh.qnssl.com/images/2016/1523444746311.png)
 
 [slide]
 

@@ -22,9 +22,9 @@ published: True
 
 然后，我就有了这样一个 **项目视野（1 楼）**，即 GitHub 当中的一个 Issue ：[系统性学习 GTD：《如何利用滴答清单（TickTick）做 GTD？》 · Issue #137](https://github.com/JimmyLv/jimmylv.github.io/issues/137)，然后产出了一系列的 TODOs（下一步行动），即**地面视野**：
 
-- [x] 阅读原著[《搞定1:无压工作的艺术》 · Issue #136](https://github.com/JimmyLv/jimmylv.github.io/issues/136)
-- [x] 对比滴答清单（@TickTick）与其他工具 [Todoist](https://en.todoist.com/)、奇妙清单（Wunderlist）、Any.do
-- [x] 输出一篇自己的文章《如何利用滴答清单（TickTick）做 GTD？》
+* [x] 阅读原著[《搞定1:无压工作的艺术》 · Issue #136](https://github.com/JimmyLv/jimmylv.github.io/issues/136)
+* [x] 对比滴答清单（@TickTick）与其他工具 [Todoist](https://en.todoist.com/)、奇妙清单（Wunderlist）、Any.do
+* [x] 输出一篇自己的文章《如何利用滴答清单（TickTick）做 GTD？》
 
 ## Why 滴答清单？
 

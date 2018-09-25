@@ -62,7 +62,7 @@ published: True
 
 - 文字即代码
     + 可以使用特殊语法糖标记特殊的标签，比如 `# @ !` 等等，可以被 @LetterSpace 和 @Workflowy 所识别，最好统一起来，😂
-    + 当然还有最典型的还被 Markdown 语法所支持的 `- [ ]` 勾选框
+    + 当然还有最典型的还被 Markdown 语法所支持的 `* [ ]` 勾选框
     + 代码统计工具，`brew install cloc` && [git-loc](https://github.com/josephwecker/git-loc)，当然活跃度还可以看 GitHub 上原生的[图表统计](https://github.com/JimmyLv/jimmy.lv/graphs/code-frequency)。
 - 短暂的休息是为了更长久的专注
     + 若是一直坐在这里，我都不相信自己还有清晰的头脑去思考，去保持自己的注意力不被拉走或者被完全消耗而无力继续。
