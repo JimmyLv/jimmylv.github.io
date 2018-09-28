@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 个人成长基础设施：纪念那些年我折腾过的各种…
-categories: [资源]
+categories: [思考]
 tags: [插件, 程序员, 成长]
 published: True
 
@@ -55,7 +55,7 @@ published: True
 - [搜狗输入法](http://pinyin.sogou.com/mac/introduce.php) · 自动 English
 - [TickTick/滴答清单](https://dida365.com/#q/all/tasks) · 万能 Inbox、GTD 工具
 - [有道词典](http://cidian.youdao.com/index-mac.html) · 取词/查词、生词本
-- [EverNote/印象笔记](https://www.yinxiang.com/?from=evernote) · 资料备查 #78 #140 
+- [EverNote/印象笔记](https://www.yinxiang.com/?from=evernote) · 资料备查 #78 #140
 - [Pomotodo](https://pomotodo.com/app/) · 好用的 TODO & 番茄
 - [Near Lock](http://nearlock.me/) · 配合 iPhone 自动解锁、输入密码
 - [Noizio](http://noiz.io/) · 白噪声（全局快捷键）
@@ -76,19 +76,19 @@ published: True
 - [Irvue](https://itunes.apple.com/us/app/irvue-unsplash-wallpapers/id1039633667?mt=12) · 自动切换壁纸（from [Unsplash](https://unsplash.com/)）
 - [WD MyCloud](http://mycloud.com/) · 私有云
 - [NeteaseMusic](https://itunes.apple.com/cn/app/wang-yi-yun-yin-le/id944848654?l=en) · 网易云音乐
-- [Adobe Lightroom](https://www.adobe.com/products/photoshop-lightroom.html) & Photoshop · 摄影相关 #77 
+- [Adobe Lightroom](https://www.adobe.com/products/photoshop-lightroom.html) & Photoshop · 摄影相关 #77
 - [百度网盘](https://yun.baidu.com/) & [Aria2GUI](https://github.com/yangshun1029/aria2gui) · 照片备份、全速下载
 
 #### level 2. Web Apps
 
 - [Instapaper](https://www.instapaper.com/u) · 完美阅读体验
-- [Diigo](https://www.diigo.com/user/jimmylv) · 内容评注 #99 
+- [Diigo](https://www.diigo.com/user/jimmylv) · 内容评注 #99
 - [Inbox](https://inbox.google.com) · 无敌 Email 邮箱
 - [Toggl](https://toggl.com/) · 时间记录 & Reports
 
 ### References
 
-> 为了更快 sign-off 这张卡，拆分出了专门的移动端专题 #141 & 各大平台型软件及其插件专题 #143 #142 #140 #78 
+> 为了更快 sign-off 这张卡，拆分出了专门的移动端专题 #141 & 各大平台型软件及其插件专题 #143 #142 #140 #78
 
 - [装了啥 · Issue #16 · sorrycc/blog](https://github.com/sorrycc/blog/issues/16)
 - [dbarobin/liqi: LiQi of robinwen.](https://github.com/dbarobin/liqi)

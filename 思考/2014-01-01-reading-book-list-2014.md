@@ -1,17 +1,17 @@
 ---
 layout: book
 title: 2014年阅读书单
-category: 资源
+category: [思考]
 tags: [阅读, 书籍]
-books: 
+books:
     - title: 数据挖掘导论
       status: 已读
-      author: Pang-Ning Tan / Michael Steinbach / Vipin Kumar 
+      author: Pang-Ning Tan / Michael Steinbach / Vipin Kumar
       publisher: 人民邮电出版社
       language: 中文
       link: http://book.douban.com/subject/5377669/
       cover: http://img3.doubanio.com/mpic/s4548758.jpg
-      description: 
+      description:
     - title: 失控
       status: 在读
       author: Kevin Kelly
@@ -19,7 +19,7 @@ books:
       language: 中文
       link: http://book.douban.com/subject/5375620/
       cover: http://img3.douban.com/mpic/s4554820.jpg
-      description: 
+      description:
     - title: 黄金时代
       status: 在读
       author: 王小波
@@ -43,7 +43,7 @@ books:
       language: 中文
       link: http://book.douban.com/subject/6082808/
       cover: http://img3.douban.com/lpic/s6384944.jpg
-      description: 
+      description:
     - title: 牧羊少年奇幻之旅
       status: 已读
       author: 保罗·柯艾略
@@ -51,7 +51,7 @@ books:
       language: 中文
       link: http://book.douban.com/subject/3608208/
       cover: http://img3.doubanio.com/mpic/s3668327.jpg
-      description:    
+      description:
     - title: 可爱的Python
       status: 已读
       author: 哲思社区
@@ -59,10 +59,10 @@ books:
       language: 中文
       link: http://book.douban.com/subject/3884108/
       cover: http://img3.doubanio.com/mpic/s3901817.jpg
-      description:    
+      description:
     - title: Python开发技术详解
       status: 已读
-      author: 周伟 / 宗杰 
+      author: 周伟 / 宗杰
       publisher: 机械工业出版社
       language: 中文
       link: http://book.douban.com/subject/3889005/

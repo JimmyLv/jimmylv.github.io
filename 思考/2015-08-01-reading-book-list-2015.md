@@ -1,9 +1,9 @@
 ---
 layout: book
 title: 2015年阅读书单
-category: 资源
+category: [思考]
 tags: [阅读, 书籍]
-books: 
+books:
     - title: 失控
       status: 在读
       author: Kevin Kelly
@@ -19,7 +19,7 @@ books:
       language: 中文
       link: http://book.douban.com/subject/1069685/
       cover: http://img3.douban.com/lpic/s1055094.jpg
-      description: 
+      description:
     - title: 计算机程序的构造和解释
       status: 在读
       author: Harold Abelson / Gerald Jay Sussman / Julie Sussman （译者： 裘宗燕）
@@ -46,7 +46,7 @@ books:
       description: 这本可以推荐，进而想到ES6都出来了，CoffeeScript也会被后浪推前浪了吧。
     - title: 智能时代
       status: 已读
-      author: 杰夫.霍金斯 / 桑德拉.布拉克斯莉 
+      author: 杰夫.霍金斯 / 桑德拉.布拉克斯莉
       publisher: 中国华侨出版社
       language: 中文
       link: http://book.douban.com/subject/25926823/
@@ -59,10 +59,10 @@ books:
       language: 中文
       link: http://book.douban.com/subject/4199741/
       cover: http://img3.douban.com/lpic/s4103991.jpg
-      description: Clean Code，保持追求。   
+      description: Clean Code，保持追求。
     - title: JavaScript语言精粹
       status: 已读
-      author: Douglas Crockford 
+      author: Douglas Crockford
       publisher: 电子工业出版社
       language: 中文
       link: http://book.douban.com/subject/3590768/

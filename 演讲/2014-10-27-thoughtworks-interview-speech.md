@@ -1,8 +1,8 @@
 ---
 layout: post
 title: ThoughtWorks 面试演讲稿
-category: 思考
-tags: [演讲, 工作]
+category: [演讲]
+tags: [面试, 工作]
 description:
 published: true
 ---
