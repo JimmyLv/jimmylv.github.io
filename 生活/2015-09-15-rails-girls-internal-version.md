@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 看介里！Rails Girls成都站活动总结火热来袭~
-categories: [摄影]
-tags: [活动, 编程]
+categories: [生活]
+tags: [活动, 编程, 摄影]
 published: True
 
 ---

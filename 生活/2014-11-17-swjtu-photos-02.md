@@ -1,8 +1,8 @@
 ---
 layout: photo
 title: 西南交大摄影集【二】
-category: 摄影
-tags: [大学]
+category: [生活]
+tags: [大学, 摄影]
 description: 
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '记一次 #博客大赛# 的作者采访'
+title: "记一次 #博客大赛# 的作者采访"
 categories: [思考]
 tags: [PKM, Rethink, 写作]
 published: True

@@ -1,8 +1,8 @@
 ---
 layout: photo
 title: 吕立青拍的壁纸系列（一）
-categories: [摄影]
-tags: [爱情]
+categories: [生活]
+tags: [爱情, 摄影]
 published: True
 
 ---
