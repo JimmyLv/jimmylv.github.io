@@ -48,11 +48,13 @@ As you can see in [JimmyLv/api](https://github.com/JimmyLv/api) repo which will 
 
 ### Blog
 
-- [x] [JimmyLv/jekyll-blog](https://github.com/JimmyLv/jekyll-blog): `jekyll` version, which is the default blog to be published on <https://blog.jimmylv.info> | <http://jekyll.jimmylv.info>..
-- [ ] [JimmyLv/hexo-blog](https://github.com/JimmyLv/hexo-blog): `hexo` version, which is another alternative of `jekyll` and you can play with `nodejs` easily, <http://hexo.jimmylv.info>.
-- [x] [JimmyLv/Haiku](https://github.com/JimmyLv/Haiku)：`react` version, which be invoke the markdown raw files from GitHub repo, and we can easily enjoy the frontend deployment, <https://haiku.jimmylv.info>
-- [x] [JimmyLv/nobackend.website](https://github.com/JimmyLv/nobackend.website)：`angular 1.5x` version, also created for frontend but gave up because of `AngularJS` <http://nobackend.website/_ng>  
-- [ ] [JimmyLv/gitbook](https://github.com/JimmyLv/GitBook)：`gitbook` version, which can be used to generate beautiful e-book and also you just put all markdown files together. <https://www.gitbook.com/@jimmylv>
+#TODO: add more details in wiki, and also update md images url from qiniu to github id:50
+
+* [x] [JimmyLv/jekyll-blog](https://github.com/JimmyLv/jekyll-blog): `jekyll` version, which is the default blog to be published on <https://blog.jimmylv.info> | <http://jekyll.jimmylv.info>..
+* [ ] [JimmyLv/hexo-blog](https://github.com/JimmyLv/hexo-blog): `hexo` version, which is another alternative of `jekyll` and you can play with `nodejs` easily, <http://hexo.jimmylv.info>.
+* [x] [JimmyLv/Haiku](https://github.com/JimmyLv/Haiku)：`react` version, which be invoke the markdown raw files from GitHub repo, and we can easily enjoy the frontend deployment, <https://haiku.jimmylv.info>
+* [x] [JimmyLv/nobackend.website](https://github.com/JimmyLv/nobackend.website)：`angular 1.5x` version, also created for frontend but gave up because of `AngularJS` <http://nobackend.website/_ng>  
+* [ ] [JimmyLv/gitbook](https://github.com/JimmyLv/GitBook)：`gitbook` version, which can be used to generate beautiful e-book and also you just put all markdown files together. <https://www.gitbook.com/@jimmylv>
 
 ### Slides
 
