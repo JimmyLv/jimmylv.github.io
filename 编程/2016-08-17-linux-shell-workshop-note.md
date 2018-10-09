@@ -19,7 +19,7 @@ published: True
 
 ## 正式开工
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1471433233240.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1471433233240.png)
 
 > 场景：vagrant 启动虚拟机，使用 ssh「快速」登录 Linux 机器，发现 Tomcat 没启动，启动后发现端口被占用 `http://192.168.33.20:8080/`，然后 kill 掉进程却发现内容被压缩然后找不到了，切换用户（找到密码）才发现文件，解压后却发现内容被篡改，然后一键替换内容才最终还原网页。
 
@@ -33,7 +33,7 @@ published: True
 `ssh bws` | ssh + 别名 Host，快速登录到 Linux 机器
 `tldr systemctl` | >> `man tldr` 好于 man，只是比较慢
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1471439210291.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1471439210291.png)
 
 命令/快捷键 | 解释/作用/备注
 -----------|--------------
@@ -46,7 +46,7 @@ published: True
 `Ctrl + K` | 从当前位置删除至尾
 `Ctrl + W` | 删除单词
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1471427513741.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1471427513741.png)
 
 命令/快捷键 | 解释/作用/备注
 -----------|--------------
@@ -62,9 +62,9 @@ published: True
 命令/快捷键 | 解释/作用/备注
 -----------|--------------
 `grep -rI 747339117 .` | 查找特定文字的文件
-`set encoding:utf-8` | vim 设置编码 
+`set encoding:utf-8` | vim 设置编码
 `Ctrl + Z` | vim 转入后台进程
-`fg + Enter` | 返回 vim 后台进程 
+`fg + Enter` | 返回 vim 后台进程
 `find root_path -name '*.tar.gz'` | 找到特定后缀名的文件
 `find / -name "*.tar.gz" 2>>/dev/null` | 过滤无用错误信息（2）
 `cat /etc/passwd` | 查看所用用户
@@ -99,11 +99,11 @@ published: True
 
 ## Finally!!!
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1471432922494.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1471432922494.png)
 
 另外不得不说 Dash 太好用了，好用到哭，/(ㄒoㄒ)/~~
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1471440990555.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1471440990555.png)
 
 ## 一点儿小思考
 

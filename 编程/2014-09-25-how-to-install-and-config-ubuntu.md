@@ -6,7 +6,7 @@ tags: [Ubuntu, OS]
 published: true
 ---
 
-## 安装Ubuntu 
+## 安装Ubuntu
 
 [参考教程](http://jingyan.baidu.com/article/ff42efa9423991c19e22020d.html)
 
@@ -28,7 +28,7 @@ published: true
 
 ## Ubuntu软件
 
-### 1. 简化安装：Synaptic (新立得) 
+### 1. 简化安装：Synaptic (新立得)
 - 是Ubuntu的包管理工具apt的图形化前端。
 - 集成了很多一键安装的软件包，eg: LAMP 解决包依赖的问题。
 - 这里可以先在系统Software Center内安装这个软件
@@ -58,7 +58,7 @@ E: Unable to lock the administration directory (/var/lib/dpkg/), is another proc
 
 > 1. 修改DNS/host：更改系统文件，可能出现莫名奇妙的问题
 > 2. GoAgent + [SwitchySharp](http://www.baidu.com/s?&wd=SwitchySharp)：GoAgent不稳定
-> 3. [红杏](http://botey.cn/UPLOAD/All_Files/Chrome_Red.rar)：付费，但是基础功能提高Google的访问，足以。 
+> 3. [红杏](http://botey.cn/UPLOAD/All_Files/Chrome_Red.rar)：付费，但是基础功能提高Google的访问，足以。
 > tips：此时都不能从Google应用商店下载，只能先下载再拖入chromium安装
 
 - 解决flash
@@ -80,7 +80,7 @@ sudo update-pepperflashplugin-nonfree --install
 - `sudo apt-get build-dep guake`
 
 
-## 界面美化/优化 
+## 界面美化/优化
 
 ### 1. 鼠标指针闪烁
 
@@ -112,7 +112,7 @@ sudo apt-get install ttf-wqy-microhei
 
 原系统设置中没有找到修改字体的地方，使用Ubuntu Tweak：调整－>字库中，将默认字体、桌面字体等做修改
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1487949759355.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1487949759355.png)
 
 3) 进一步确认并修改字体配置文件
 
@@ -144,7 +144,7 @@ sudo apt-get install ttf-wqy-microhei
             <string>AR PL ZenKai Uni</string>
             <string>HYSong</string>
         </edit>
-    </match> 
+    </match>
     <match target="pattern">
         <test qual="any" name="family">
             <string>sans-serif</string>
@@ -162,7 +162,7 @@ sudo apt-get install ttf-wqy-microhei
             <string>AR PL UKai CN</string>
             <string>AR PL ZenKai Uni</string>
         </edit>
-    </match> 
+    </match>
     <match target="pattern">
         <test qual="any" name="family">
             <string>monospace</string>
@@ -180,7 +180,7 @@ sudo apt-get install ttf-wqy-microhei
             <string>AR PL UKai CN</string>
             <string>AR PL ZenKai Uni</string>
         </edit>
-    </match> 
+    </match>
 
 </fontconfig>
 ```

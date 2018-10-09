@@ -34,10 +34,10 @@ published: True
 2. 描述 CQRS 模式
 3. Flux 如何应用来自 CQRS 的概念
 4. 讨论 Flux 何时适用于 JavaScript 应用
-    
-> > Knowledge of DDD is assumed, though the article still provides value without it. To learn more about DDD, I recommend this [free ebook](http://www.infoq.com/minibooks/domain-driven-design-quickly) from InfoQ on the subject. 
 
-> > Examples will be shown in JavaScript, though the language isn't the focus of this post. 
+> > Knowledge of DDD is assumed, though the article still provides value without it. To learn more about DDD, I recommend this [free ebook](http://www.infoq.com/minibooks/domain-driven-design-quickly) from InfoQ on the subject.
+
+> > Examples will be shown in JavaScript, though the language isn't the focus of this post.
 
 > 假设已知 DDD 基础知识，但是没有相关基础的话这篇文章也依然有价值。想了解更多关于 DDD 的知识，我推荐 InfoQ 有关这个话题的[免费电子书](http://www.infoq.com/minibooks/domain-driven-design-quickly)。
 
@@ -53,13 +53,13 @@ published: True
 
 在 MVC 当中，一个 Model 可以被多个 Views 读取，并且可以被多个 Controllers 进行更新。在大型应用当中，单个 Model 会导致多个 Views 去通知 Controllers，并可能触发更多的 Model 更新，这样结果就会变得非常复杂。
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1467895052725.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1467895052725.png)
 
 > Flux attempts to solve this complexity by forcing a unidirectional data flow. In this architecture, Views query Stores (not Models), and user interactions result in Actions that are submitted to a centralized Dispatcher. When the Actions are dispatched, Stores can then update themselves accordingly and notify Views of any changes. These changes in the Store prompts Views to query for new data.
 
 Flux 试图通过强制单向数据流来解决这个复杂度。在这种架构当中，Views 查询 Stores（而不是 Models），并且用户交互将会触发 Actions，Actions 则会被提交到一个集中的 Dispatcher 当中。当 Actions 被派发之后，Stores 将会随之更新自己并且通知 Views 进行修改。这些 Store 当中的修改会进一步促使 Views 查询新的数据。
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1467895448296.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1467895448296.png)
 
 > The main difference between MVC and Flux is the separation of queries and updates. In MVC, the Model is both updated by the Controller *and* queried by the View. In Flux, the data that a View gets from a Store is read-only. Stores can only be updated through Actions, which would affect the Stores themselves *not* the read-only data.
 
@@ -75,7 +75,7 @@ MVC 和 Flux 最大的不同就是查询和更新的分离。在 MVC 中，Model
 
 为了理解 CQRS，让我们首先来讲讲对象模式**命令-查询分离**（CQS）。
 
-> CQS at an object level means: 
+> CQS at an object level means:
 
 > 1. If a method mutates the state of the object, it is a *command*, and it must not return a value.
 > 2. If the method returns some value, it is a *query*, and it must not mutate state.
@@ -125,7 +125,7 @@ CQRS 仅仅是让 CQS 进一步将命令和查询拆分到不同的对象当中�
 
 领域事件会让「事件订阅者」（Event Subscribers）知道在相应的命令模型中发生了一些变化。它们包含着这个事件的*名字*，并且附带一个 *payload*，里面包含了能让订阅者正确更新查询模型的有效信息。
 
-> > **Note:** Domain Events are always in past tense since they describe what has already occurred (e.g. `'ITEM_ADDED_TO_CART'`). 
+> > **Note:** Domain Events are always in past tense since they describe what has already occurred (e.g. `'ITEM_ADDED_TO_CART'`).
 
 > **注意：**领域事件总在过去时，因为它们描述着已发生的事情（如 `'ITEM_ADDED_TO_CART'`）。
 
@@ -136,12 +136,12 @@ CQRS 仅仅是让 CQS 进一步将命令和查询拆分到不同的对象当中�
 一个*事件订阅者*接受由命令模型所发布的所有领域事件。当一个事件发生时，它就会相应地更新查询模型。
 
 ### Command | 命令
- 
+
 > *Commands* are submitted as the means of executing behaviour on Command Models. A command contains the *name* of the behaviour to execute and a *payload* necessary to carry it out.
 
 命令模型所执行的行为就意味着所提交的*命令*。一个命令包含这个要被执行的行为的*名字*和需要携带的*负载*。
 
-> > **Note:** Commands are always in imperative tense since they describe behaviours that need to be executed (e.g. `AddItemToCart`). 
+> > **Note:** Commands are always in imperative tense since they describe behaviours that need to be executed (e.g. `AddItemToCart`).
 
 > **注意：**命令总是命令式的，因为它们描述需要被执行的行为（比如 `AddItemToCart`）。
 
@@ -162,7 +162,7 @@ CQRS 仅仅是让 CQS 进一步将命令和查询拆分到不同的对象当中�
 > In normal DDD, we may find an Aggregate `ShoppingCart` that contains multiple `CartItems`, as well as a corresponding Repository.
 
 在普通的 DDD 当中，我们可能会发现一个 Aggregate `ShoppingCart` 会包含多个 `CartItems`，并且会有一个相应的 Repository。
-    
+
 ```js
 // The Aggregate model
 class ShoppingCart {
@@ -229,7 +229,7 @@ class ShoppingCartRepository {
 {
   cartId: 123,
   total: 129.95
-}    
+}
 ```
 
 > 1. Create `CartTotalStore` that holds the query models in memory. This object acts like a Query Processor in that it knows how to look up out Query Models.
@@ -326,7 +326,7 @@ class ShoppingCartCommandHandler extends CommandHandler {
 
 现在你应该已经对 CQRS 有了一定的了解。那么接下来，我们将会仔细介绍 Flux 与 CQRS 是如何搞基的。
 
-## Flux and CQRS | Flux 和 CQRS 
+## Flux and CQRS | Flux 和 CQRS
 
 > Let’s see how the different types of object in Flux map to the CQRS pattern.
 
@@ -392,7 +392,7 @@ e.g. `ShoppingCartActionCreators.addItem(…)`
 2. 一个处理显示汇总，税，配送和包装，以及总数的视图。
 3. 一个处理购物车中物品的个数，以及下拉详情菜单的视图。
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1467904299891.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1467904299891.png)
 
 > In this system, we don’t want to tie different views and controllers directly to a ShoppingCart model because changes to the model causes a complex data flow that is hard to reason about.
 
@@ -423,7 +423,7 @@ e.g. `ShoppingCartActionCreators.addItem(…)`
 * Commands - 命令
 * Command Handler - 命令处理器
 * Domain Event - 领域事件
-* Domain Event Publisher - 领域事件发布者 
+* Domain Event Publisher - 领域事件发布者
 * Event Subscriber - 事件订阅者
 
 > In Facebook Flux some objects take on more than one role. This is perfectly reasonable to do! When we encounter other Flux implementations, we could also discuss them using the different object roles in CQRS.

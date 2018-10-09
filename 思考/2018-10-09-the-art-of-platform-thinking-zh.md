@@ -88,7 +88,7 @@ Our Digital Platform Strategy framework is a blueprint for platform building tha
 * Experiment Infrastructure and Telemetry
 * Customer Touchpoint Technology
 
-![Digital Platform Strategy - a blueprint](https://insights-images.thoughtworks.com/DPS_Blueprint_AOPT_99208eda9fac5ff4f35a3c9c54c1ed70.jpg)  
+![Digital Platform Strategy - a blueprint](https://ws2.sinaimg.cn/large/006tNbRwgy1fw2b5m83dtj318g0i2acf.jpg)  
 
 我们的数字平台战略框架是由五个主要支柱（重点领域）所组成的平台建设蓝图。打破企业平台复杂度，通过基础技术能力建设提供有针对性的商业价值交付。为了消除技术摩擦与打造生态系统，我们专注于交付的关键领域（核心部分）：
 
@@ -125,7 +125,7 @@ A Digital Platform Strategy engagement begins with a discovery to understand you
 
 数字平台战略始于探索，以理解客户的业务优先级、组织复杂性或是技术成熟度。然后，我们再将其与我们的企业平台构建的模式、实践和原则相结合。这将会是为企业业务需求而量身定制优先级的精益技术战略和平台路线图。
 
-![Digital Platform Strategy - the approach](https://insights-images.thoughtworks.com/DPS_Approach_a448fc7dece1eb230c4d78d374f3a64d.png)  
+![Digital Platform Strategy - the approach](https://ws4.sinaimg.cn/large/006tNbRwgy1fw2b8vb2goj318g0g4k3z.jpg)  
 
 Moving into the execution phase, the partnership of strategy and delivery moves into high gear. We begin with the highest priority platform capabilities to vet strategy against reality. At this stage, we test our assumptions about organizational delivery capabilities, degree of technical debt, and remediation complexity. This allows us to deliver early platform value that underpins your key business priorities. As the engagement continues, insights from execution are fed back into continuous strategy development and review to inform the path of execution. This feedback loop fine-tunes the short- and medium-term tactical moves, while platform thinking maintains the strategic vision of meeting your business objectives.
 

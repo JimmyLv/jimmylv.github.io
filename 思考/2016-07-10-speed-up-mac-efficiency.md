@@ -29,7 +29,7 @@ published: True
             - Finder 对于文件的操作和预览真的是比 Windows 下好太多了。
             - 当一个好太多的东西出现之后，依旧会有可优化的地方
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1468146690815.png)
+![](https://ws2.sinaimg.cn/large/006tNbRwgy1fw2b95l3vfj31kw0zke81.jpg)
 
 - 命令行与快捷键快于一切
     + 使用 `brew install` 安装软件
@@ -58,7 +58,7 @@ published: True
         * 但是发现写文章的时候其实更多的是在**思考**，真正打字的时间反而比较少。
         * 其实对中文普通话的标准程度要求也是挺高的呢，发现自己还得多练练。
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1468146749104.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1468146749104.png)
 
 - 文字即代码
     + 可以使用特殊语法糖标记特殊的标签，比如 `# @ !` 等等，可以被 @LetterSpace 和 @Workflowy 所识别，最好统一起来，😂
@@ -70,14 +70,14 @@ published: True
         * 有很多新的有趣的想法，或者以后编程中遇到了什么问题，简单休息一下反而可以灵感突现找到解决方案
         * 最关键是可以走动走动，活动筋骨不说，还不会忘记喝水上厕所这种事情，以防 25min  之内的时候被生理需求所打断。
         * 而这 5 分钟，还可以简单收拾搭理一下家里的衣服呀，或者是换一下垃圾袋啊之类的，一举两得。
-        * 当然，还可以简单洗把脸，既清爽醒神又能让皮肤变好一点儿吧。 
+        * 当然，还可以简单洗把脸，既清爽醒神又能让皮肤变好一点儿吧。
 - 软件应用的价值理念
     + 只留有价值的，只记录有价值的，只分析有价值的，部分。
     + 不用记录下所有的部分，完美主义去死啦，我不想活得太累。
         * 就像记账一样，大体策略上（尽可能使用信用卡）是正确的，那么分析起来就很简单。
         * 而在记录时间里面，只看有价值的部分，其实就可以推断为何当天有价值部分占比不高的情况。
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1468146873449.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1468146873449.png)
 
 ## 战术篇
 
@@ -105,8 +105,8 @@ published: True
             - 英文输入助手（自动空格）
         * 表情输入 ☺️ (=σωσ=)♪
         * 模板输入（Dash Snippet 和 编辑器中的 Live templates）
-    
-![](//o7mw3gkkh.qnssl.com//images/2016/1468140060115.png)
+
+![](//o7mw3gkkh.qnssl.com/images/2016/1468140060115.png)
 
 - 软件篇之「时间管理」
     + @滴答清单
@@ -120,10 +120,10 @@ published: True
         * Toggl 则专门用来记录以编程项目的时间，以 Issue 即 Story 为最小单元来辅助估算，记录 Iteration 的 Expect 和 Actual。
         * Calendar 则用来规划一天大概的剩余时间，并分成强制时间和自由时间。
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1468145148644.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1468145148644.png)
 
 - 软件篇之「代码编程」
-    + 文本编辑 @SublimeText 
+    + 文本编辑 @SublimeText
         + 竟然也有 Project 和 WorkSpace 的概念
             - 还可以用 Cmd + Ctrl + P 快速切换项目，简直可以完美替换 MarkEditor 了，一切无忧。
             - 一个 Project可以添加多个 floder，甚至创建新的
@@ -148,4 +148,4 @@ published: True
     + 命令行 @iTerm2 && @oh-my-zsh
     + 代码编辑 @Intellij IDEA && Webstorm
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1468147103565.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1468147103565.png)

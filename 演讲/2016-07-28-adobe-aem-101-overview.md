@@ -43,17 +43,17 @@ published: True
 
 ## What? & Why? & How? & Question?
 
-[slide] 
+[slide]
 
 # How's Your Customer Experience?
 
-[![](//o7mw3gkkh.qnssl.com//images/2016/1469770434690.png)](https://www.youtube.com/watch?v=HGb6NQMeZ-c)
+[![](//o7mw3gkkh.qnssl.com/images/2016/1469770434690.png)](https://www.youtube.com/watch?v=HGb6NQMeZ-c)
 
 [slide]
 
 # Adobe Marketing Cloud
 
-[![](//o7mw3gkkh.qnssl.com//images/2016/1469750403141.png)](http://www.adobe.com/)
+[![](//o7mw3gkkh.qnssl.com/images/2016/1469750403141.png)](http://www.adobe.com/)
 
 <br/>
 
@@ -67,20 +67,20 @@ Don't just create experiences. Make it your business.
 To be an experience business, it takes a leader.
 
 - We’re a Leader. And here’s why.
- 
+
 [/note]
 
-[slide] 
+[slide]
 
 # AEM in Adobe Marketing Cloud
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1469675204327.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1469675204327.png)
 
 [slide]
 
 # Adobe Experience Manager
 
-[![](//o7mw3gkkh.qnssl.com//images/2016/1469750678577.png)](http://www.adobe.com/marketing-cloud/enterprise-content-management.html#x)
+[![](//o7mw3gkkh.qnssl.com/images/2016/1469750678577.png)](http://www.adobe.com/marketing-cloud/enterprise-content-management.html#x)
 
 > AEM is a comprehensive **content management** solution for building websites, mobile apps, and forms. And it makes it easy to manage your marketing content and assets.
 
@@ -96,17 +96,17 @@ To be an experience business, it takes a leader.
 # Product history of Adobe CQ
 
 ```
-Date | Product      
+Date | Product
 ---- | ----------
-2002 | Day CQ 3.5                           
-2005 | Day CQ 4.0                         
-2006 | Day CQ 4.1                       
-2008 | Day CQ 4.2                        
-2008 | Day CQ 5.0                        
-2009 | Day CQ 5.2                        
-2010 | Day CQ 5.3                        
-2011 | Adobe CQ 5.4                      
-2012 | Adobe CQ 5.5                      
+2002 | Day CQ 3.5
+2005 | Day CQ 4.0
+2006 | Day CQ 4.1
+2008 | Day CQ 4.2
+2008 | Day CQ 5.0
+2009 | Day CQ 5.2
+2010 | Day CQ 5.3
+2011 | Adobe CQ 5.4
+2012 | Adobe CQ 5.5
 2013 | Adobe Experience Manager 5.6
 2014 | Adobe Experience Manager 6.0
 2015 | Adobe Experience Manager 6.1
@@ -121,7 +121,7 @@ Date | Product
 
 # Google Trending
 
-[![](//o7mw3gkkh.qnssl.com//images/2016/1469768209884.png)
+[![](//o7mw3gkkh.qnssl.com/images/2016/1469768209884.png)
 ](https://www.google.com/trends/explore#q=%22adobe%20cq%22%2C%20adobe%20cq5%2C%20adobe%20aem%2C%20Adobe%20Experience%20Manager&cmpt=q&tz=Etc%2FGMT-8)
 
 [note]
@@ -134,7 +134,7 @@ Date | Product
 
 ### 前身：[CQ5 - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/CQ5)
 
-<br/> 
+<br/>
 
 > CQ5 or Communique5 (renamed as **Adobe Experience Manager**) is a **Web Content Management System** (WCMS) designed to enable users (mainly marketers and IT professionals) to **create, edit, manage and optimize** websites **across different digital channels** such as web, mobile, social and more.
 
@@ -158,19 +158,19 @@ Apache HTTP服务器的核心开发者Roy Fielding,他还是Apache软件基金�
 
 # 能做啥？
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1469776743596.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1469776743596.png)
 
 [slide]
 
 # 功能演示
 
-[![](//o7mw3gkkh.qnssl.com//images/2016/1468060034522.png)](http://localhost:4505/projects.html/content/projects)
+[![](//o7mw3gkkh.qnssl.com/images/2016/1468060034522.png)](http://localhost:4505/projects.html/content/projects)
 
 [slide]
 
 # 角色分工 之 Content Editor
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1469772633873.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1469772633873.png)
 
 [slide]
 
@@ -180,19 +180,19 @@ Apache HTTP服务器的核心开发者Roy Fielding,他还是Apache软件基金�
 编辑也有几种模式，视角不同。
 [/note]
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1469716451473.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1469716451473.png)
 
 [slide]
 
 #  Touch UI Customizations
 
-[![](//o7mw3gkkh.qnssl.com//images/2016/1469772544746.png)](http://blogs.adobe.com/experiencedelivers/experience-management/touch-ui-customizations-part-1/)
+[![](//o7mw3gkkh.qnssl.com/images/2016/1469772544746.png)](http://blogs.adobe.com/experiencedelivers/experience-management/touch-ui-customizations-part-1/)
 
 [slide]
 
-# 组件 构成 页面 
+# 组件 构成 页面
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1469716589609.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1469716589609.png)
 
 [note]
 开发，完全组件化看起来好爽！（两者本质都是 HTML）
@@ -202,7 +202,7 @@ Apache HTTP服务器的核心开发者Roy Fielding,他还是Apache软件基金�
 
 # 角色分工 之 PIM Editor
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1469772945441.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1469772945441.png)
 
 [note]
 电子商务，改改价格什么的
@@ -212,13 +212,13 @@ Apache HTTP服务器的核心开发者Roy Fielding,他还是Apache软件基金�
 
 # Developing
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1469716527090.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1469716527090.png)
 
 [slide]
 
 # 角色分工 之 Componets Developer
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1469716341707.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1469716341707.png)
 
 [slide]
 
@@ -226,38 +226,38 @@ Apache HTTP服务器的核心开发者Roy Fielding,他还是Apache软件基金�
 
 [slide]
 
-# Rio Olympics: 'Welcome to hell' 
+# Rio Olympics: 'Welcome to hell'
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1469772248011.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1469772248011.png)
 
 [slide]
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1469776281516.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1469776281516.png)
 
-<br/> 
+<br/>
 
 > An author in WCM **generates** the material which will, at some point, be published to your website.
-> When ready, the content is **published** to the publish environment. 
+> When ready, the content is **published** to the publish environment.
 
 [slide]
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1469776380542.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1469776380542.png)
 
 [slide]
 
 # 技术架构
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1469749733269.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1469749733269.png)
 
 [slide]
 
 # Architechture
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1469614691277.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1469614691277.png)
 
 [slide]
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1469613962134.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1469613962134.png)
 
 1.  **Web Application Server**: 可以单独集成 Jetty web server，也可以用于第三方
 2.  **Web Application Framework**: 简化 RESTful 面向对象的 Web 应用，即内容优先
@@ -265,7 +265,7 @@ Apache HTTP服务器的核心开发者Roy Fielding,他还是Apache软件基金�
 
 [slide]
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1469776708150.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1469776708150.png)
 
 <br/>
 
@@ -279,11 +279,11 @@ Apache HTTP服务器的核心开发者Roy Fielding,他还是Apache软件基金�
 
 目前该平台逐渐成为一个为室内、交通工具、移动电话和其他环境下的所有类型的网络设备的应用程序和服务进行传递和远程管理的开放式服务平台。
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1469539342406.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1469539342406.png)
 
 [slide]
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1469776814871.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1469776814871.png)
 
 > OSGi 的作用在于 Runtime，之所以为动态模块加载，用于管理复杂度，并可以动态扩展其依赖。（类 JavaScript 的 Require.js ？）
 > 该规范和核心部分是一个框架，其中定义了**应用程序的生命周期模式和服务注册**。基于这个框架定义了大量的OSGi服务：日志、配置管理、偏好，HTTP（运行servlet）、XML分析、设备访问、软件包管理、许可管理、星级、用户管理、IO连接、连线管理、Jini和UPnP。
@@ -313,7 +313,7 @@ Apache HTTP服务器的核心开发者Roy Fielding,他还是Apache软件基金�
 
 # JCR （[JSR-170](https://jcp.org/en/jsr/detail?id=170) & [JSR-283](https://jcp.org/en/jsr/detail?id=283) Specification）
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1469777086086.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1469777086086.png)
 
 [slide]
 
@@ -321,43 +321,43 @@ Apache HTTP服务器的核心开发者Roy Fielding,他还是Apache软件基金�
 
 > CRX is short for **C**ontent **R**epository e**X**treme, Day's JCR-compliant repository. CRX allows you to store, manage, and access data using a standardized Java interface.
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1469709908396.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1469709908396.png)
 
 [slide]
 
 # Sling 背后靠着 CRX 吃饭
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1469777354485.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1469777354485.png)
 
 [slide]
 
-# Sling & REST 
+# Sling & REST
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1469777407980.png)
-
-[slide]
-
-# 做一个照片 CMS 
-
-![](//o7mw3gkkh.qnssl.com//images/2016/1469707517793.png)
-
+![](//o7mw3gkkh.qnssl.com/images/2016/1469777407980.png)
 
 [slide]
 
-Sling 背后靠着 CRX 吃饭： 
+# 做一个照片 CMS
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1469710299369.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1469707517793.png)
+
+
+[slide]
+
+Sling 背后靠着 CRX 吃饭：
+
+![](//o7mw3gkkh.qnssl.com/images/2016/1469710299369.png)
 [slide]
 
 对比传统 Controller，直接对应 JCR 节点，并且包含相关信息。
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1469710389235.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1469710389235.png)
 [slide]
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1469710400998.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1469710400998.png)
 [slide]
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1469710435546.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1469710435546.png)
 
 [note]
 不是直接对应文件目录，但是也完全可以这样。
@@ -365,22 +365,22 @@ Sling 背后靠着 CRX 吃饭：
 
 [slide]
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1469710511007.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1469710511007.png)
 [slide]
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1469710571268.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1469710571268.png)
 
 [slide]
 
 # URI Decomposition
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1469777634817.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1469777634817.png)
 
 [slide]
 
 # From URL to Content and Scripts
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1469777621445.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1469777621445.png)
 
 [slide]
 

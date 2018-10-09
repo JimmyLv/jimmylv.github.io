@@ -11,7 +11,7 @@ published: True
 
 在互联网时代，知识可以说从未像如此一般廉价，但是**再好的知识若是对个人没有产生价值的话，那也只不过是一种信息噪音而已**。我在 [个人知识管理：知识的三种形态](https://blog.jimmylv.info/2015-10-09-three-types-of-knowledge/) 这篇文章中使用 **`材料 -> 资料 -> 知识`** 这样的路径来解释信息的流通，**如何方便快捷并且有效地收集材料，再将其整理转化为有价值的个人知识体系结构**，在这个信息严重碎片化的时代变得尤为重要。而在 [去伪存真的知识管理之路](https://blog.jimmylv.info/2016-09-16-sorting-out-knowledge-from-information/) 一文中也详细阐述了如何将网络上的碎片化文章纳入统一的稍后阅读体系，比如说有时候在朋友圈看到一篇好文章，但暂时没时间直接看，或是这篇文章值得再读一遍，细读一遍，那么我就会将其存入稍后阅读工具即 [Instapaper](https://www.instapaper.com) 当中，诸如此类的还有 [Pocket](https://getpocket.com/)、[收趣](https://shouqu.me/)等等。
 
-![](https://o7mw3gkkh.qnssl.com//images/2016/1474027837640.png)
+![](https://o7mw3gkkh.qnssl.com/images/2016/1474027837640.png)
 
 ### 稍后阅读永远读不完的痛点：缺乏追踪
 
@@ -119,7 +119,7 @@ module.exports = (app) => {
 
 ![](https://o7mw3gkkh.qnssl.com/images/2017/07/1499016439751.png)
 
-### 使用 GitHub Webhook 更新 Issue 的 Milestone 
+### 使用 GitHub Webhook 更新 Issue 的 Milestone
 
 所以我们的 Webtask 就需要处理 GitHub Webhook 所转发的 POST 请求，其中包括了 Issue 的类型和内容，在拿到 `'opened'` 即新建 Issue 类型的 action 之后我们可以对其进行相应的处理即添加到 Milestone 当中：
 
@@ -139,7 +139,7 @@ if (action === 'opened') {
 
 ![](https://o7mw3gkkh.qnssl.com/images/2017/07/1499017955460.png)
 
-结合 ZenHub 的 Milestone 燃尽图我们可以清晰地看到剩余阅读量的多少，并且能够跟理想中的阅读速度进行对比，从而判断自己什么时候能够全部读完所有的文章。可能有些小伙伴看到这里会有所疑问了，这些所谓的 Story Point 是从哪儿来的呢？那么接下来就要提到我们将要集成的 ZenHub API 了。 
+结合 ZenHub 的 Milestone 燃尽图我们可以清晰地看到剩余阅读量的多少，并且能够跟理想中的阅读速度进行对比，从而判断自己什么时候能够全部读完所有的文章。可能有些小伙伴看到这里会有所疑问了，这些所谓的 Story Point 是从哪儿来的呢？那么接下来就要提到我们将要集成的 ZenHub API 了。
 
 ## 集成 ZenHub API：阅读可视化
 

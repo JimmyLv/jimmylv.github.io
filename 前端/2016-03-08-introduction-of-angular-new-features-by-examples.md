@@ -18,7 +18,7 @@ published: True
 
 本次更新的 `.component()` 方法其实就是一种更加方便定义元素指令的方式，并自带默认配置使之符合最佳实践。而组件开发的方式也就使应用更加符合 [Angular 2.0](http://www.angular.io/) 的架构风格，所以说，Angular 1.5 就是为了方便开发者能够更加顺利地过渡到 Angular 2.0。为了 Angular 2.0 的未来 Google 也是迫不得已啊，要知道很多前端开发者在经历过 Angular 1.x 的「折磨」过后都转投了其他框架的怀抱。可以说前有 [React.js](https://github.com/facebook/react) 携着组件化，虚拟 DOM ，单向数据流等利器，给前端 UI 构建掀起了一波声势浩大的函数式新潮流；后有 [Vue.js](http://vuejs.org/) 等更轻便的 MVVM 框架穷追猛赶，据说用过 Vue 的开发者都一致叫好。
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1466241519959.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1466241519959.png)
 
 - 终于支持了 **Multi-slot transclusion**：
 
@@ -32,9 +32,9 @@ published: True
 
     myModule.component('myComponent', {
       template: '<h1>Hello {{ $ctrl.getFullName() }}</h1>',
-      bindings: { 
-        firstName: '<', 
-        lastName: '<' 
+      bindings: {
+        firstName: '<',
+        lastName: '<'
       },
       controller: function() {
         this.getFullName = function() {
@@ -49,9 +49,9 @@ published: True
             restrict: 'E',
             template: '<h1>Hello {{ ctrl.getFullName() }}</h1>',
             scope: {},
-            bindToController: { 
-                firstName: '<', 
-                lastName: '<' 
+            bindToController: {
+                firstName: '<',
+                lastName: '<'
             },
             controller: function() {
                 this.getFullName = function() {
@@ -72,7 +72,7 @@ published: True
       'ngInject';
 
       var vm = this;
-      
+
       vm.$onInit = function () {
         githubService.getConfig().then(res =>
           vm.config = res.data
@@ -90,9 +90,9 @@ published: True
 AngularJS 在早些版本引入了 `controllerAs` 语法，相当于给 ViewModel 定义了一个命名空间，从而避免了不同层级 Scope 关系的混淆不清。并且，`controllerAs`语法也更加从语法层面上体现了 Controller 初始化 ViewModel 数据的单一职责，若把 `as` 看做面向对象编程当中的 `new`，其实就相当于将 Controller 这个 Function() 进行实例化，从而我们就拥有了 ViewModel 这么一个可以在模板当中直接使用的对象。而其实现原理，则是直接把这个对象再次挂在当前 Controller 所对应的 $scope 之上，可以试着在 `link` 方法里边儿判断一下 `$ctrl === $scope.vm`，其结果为 `true`。
 
     <div ng-controller="MainCtrl as main">
-        <my-component 
-            first-name="'Alan'" 
-            last-name="'Rickman'" 
+        <my-component
+            first-name="'Alan'"
+            last-name="'Rickman'"
             name="main.name">
         </my-component>
     </div>
@@ -101,7 +101,7 @@ AngularJS 在早些版本引入了 `controllerAs` 语法，相当于给 ViewMode
       this.name = 'JimmyLv';
     });
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1466241548419.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1466241548419.png)
 
 但与此同时，在指令使用 `controllerAs` 语法也会遇到问题：
 
@@ -109,7 +109,7 @@ AngularJS 在早些版本引入了 `controllerAs` 语法，相当于给 ViewMode
       restrict: 'E',
       template: '<h1>Hello {{ ctrl.getFullName() }} to {{ ctrl.name }}</h1>',
       scope: {
-        firstName: '@', 
+        firstName: '@',
         lastName: '<',
         name: '='
       },
@@ -144,7 +144,7 @@ AngularJS 在早些版本引入了 `controllerAs` 语法，相当于给 ViewMode
 - **组件只能控制自身的输入输出**：组件绝不应该修改不属于自身 Scope 的任何数据和 DOM。通常来说，Angular 通过 Scope 继承的方式提供了随时随处可修改数据的能力。但其实，当修改数据职责不清晰的时候就会导致问题，这也就是为什么组件指令要默认使用独立 Scope，从而避免了跨 Scope 操作的可能，
 
 - **组件应该拥有清晰的公共API - Inputs 和 Outputs**：隔离 Scope 的方式也难以避免 Angular 的双向绑定，如果你通过 `bindings: {item: '='}` 这种方式将一个对象传入组件，你依然可以改变父组件当中的属性。所以说，组件应该只能修改属于它自己的数据，这样的话就很容易控制什么时候要进行修改，以及为什么要修改。所以说纯粹的组件 Inputs 应该只使用 '<' 和 '@' 单向数据绑定，而 Outputs 应当通过 '&' 进行函数方法的绑定，作为组件内事件的 callbacks。
- 
+
 比如说一个删除操作，组件不再直接操作输入的数据，而是去调用正确的 Outputs 事件来改变数据，这就意味着组件不会删除数据本身，而是通过事件的形式将其返回到拥有该数据的组件当中。
 
     <button ng-click="$ctrl.onDelete({hero: $ctrl.hero})">Delete</button>
@@ -199,8 +199,8 @@ AngularJS 在早些版本引入了 `controllerAs` 语法，相当于给 ViewMode
             'body': 'paneBody',
             'footer': '?paneFooter'
           },
-          template: '<div ng-transclude="title">Fallback Title</div>' + 
-                    '<p ng-transclude="body"></p>' + 
+          template: '<div ng-transclude="title">Fallback Title</div>' +
+                    '<p ng-transclude="body"></p>' +
                     '<div ng-transclude="footer">Fallback Footer</div>'
         };
     });
@@ -222,8 +222,8 @@ AngularJS 在早些版本引入了 `controllerAs` 语法，相当于给 ViewMode
 
     myMod.component('pane', function(){
         return {
-          template: '<div>{{ $ctrl.title}}</div>' + 
-                    '<p>{{ $ctrl.body}}</p>' + 
+          template: '<div>{{ $ctrl.title}}</div>' +
+                    '<p>{{ $ctrl.body}}</p>' +
                     '<div>{{ $ctrl.footer}}</div>',
           bindings: {
             'title': '<paneTitle',

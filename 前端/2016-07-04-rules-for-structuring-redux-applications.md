@@ -21,7 +21,7 @@ published: True
 
 我希望这些建议，可以给那些想要改善应用结构却不知从何入手的开发者们提供帮助。
 
- 
+
 ## Three rules for project structure | 项目结构的三条规则
 
 > The following are some basic rules for structuring a project. It should be noted that the rules themselves are framework and language agnostic, so you should should be able to follow them in all situations. However, the examples are in React and Redux. Familiarity with these frameworks is useful.
@@ -35,7 +35,7 @@ published: True
 首先让我们来看看不该做什么，常见的一种方式就是根据对象角色来组织项目结构。
 
 **Redux + React:**
- 
+
 ```
 actions/
   todos.js
@@ -86,7 +86,7 @@ app/
 > **A better way to structure Redux + React project:**
 
 **一种更好的 React + Redux 项目文件目录：**
- 
+
 ```
 todos/
   components/
@@ -99,7 +99,7 @@ index.js
 rootReducer.js
 ```
 
-> **Note:** I will go into the details of what's inside the files later in this post. 
+> **Note:** I will go into the details of what's inside the files later in this post.
 
 **注意：**我将会在文章后面的部分详细描述这些文件的具体内容。
 
@@ -110,14 +110,14 @@ rootReducer.js
 > On the surface, organizing by feature may seem like an aesthetics concern, but as we will see in the next two rules, this way of structuring projects will help simplify your application code.
 
 从表面上来看，根据特性组织似乎看起来像是一种基于美学的考虑。但是，就如我们在接下来的两个规则中所看到的那样，这种构建项目的方式将会帮助简化你的应用程序代码。
- 
+
 ### Rule #2: Create strict module boundaries | 规则 #2: 设计严格的模块边界 id:40
 
 > In his Ruby Conf 2012 talk [Simplicity Matters](https://www.youtube.com/watch?v=rI8tNMsozo0), Rich Hickey defines complexity as the **complecting** (or interleaving) of things. When you couple modules together, you can picture an actual knot or braid forming in your code.
 
 Rich Hickey 在他的 Ruby Conf 2012 演讲 [Simplicity Matters](https://www.youtube.com/watch?v=rI8tNMsozo0) 中，将复杂度定义为一种**编织**（或交织）的东西。当你把模块耦合在一起，你将会从代码当中看到某种跟现实中的绳结或者辫子一样的形态。
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1467619650283.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1467619650283.png)
 
 > The relevence of complexity to project structure is that when you place objects in **close proximity** to one another, the **barrier to couple** them lowers dramatically.
 
@@ -281,14 +281,14 @@ a(); // ???
 > The implication here is that we **cannot both have projects depend on action types within todos *and* todos depend on action types within projects.** You can get around restriction in clever ways, but if you go down this road I can guarantee you that it will come to bite you later on!
 
 这里隐含的意思就是，我们**不能同时让 `projects` 依赖于 `todos` 内部的 action 类型，*并且* `todos` 又依赖于 `projects` 内部的 action 类型**。你可以使用聪明的方式绕过这种限制，但要是你继续这样下去的话，我保证你会在将来的时候被坑的！
- 
+
 #### Don’t make hairballs! | 不要制造毛团！
 
 > Put another way, by creating circular dependencies, you are **complecting in the worst possible way**. Imagine a module to be a strand of hair, then modules that are inter-dependent on each other form a big, messy hairball.
 
 换句话来说，制造循环依赖，你就是**在用最糟糕的方式在打着绳子的结**。想象一下一个模块就是一缕头发，然后模块之间相互依赖着形成了一个巨大的，混乱的毛团。
 
-![](//o7mw3gkkh.qnssl.com//images/2016/1467640142143.png)
+![](//o7mw3gkkh.qnssl.com/images/2016/1467640142143.png)
 
 > Whenever you want to use a small module within the hairball, you will have no choice but to pull in the giant mess. And even worse, when you change something inside the hairball, it would be hard *not* to break something else.
 
@@ -307,7 +307,7 @@ a(); // ???
 > Let’s take a look at our TODO app again. (I added constants, model, and selectors into this example)
 
 让我们来重新看看我们的 TODO 应用。（我在示例当中添加了 constants，model，以及 selectors）
- 
+
 ```
 todos/
   components/
@@ -325,7 +325,7 @@ rootReducer.js
 > We can break these modules down by their responsibilities.
 
 我们将会根据他们的职责来拆分这些模块。
- 
+
 ### Module index and constants | 模块 index 和 常量
 
 > The module index is responsible for maintaining its public API. This is the exposed surface where modules can interface with each other.
@@ -335,14 +335,14 @@ rootReducer.js
 > A minimum Redux + React application should be something like this.
 
 一个最小化的 Redux + React 应用应该就会如下所示。
- 
+
 ```js
 // todos/constants.js
 
 // This will be used later in our root reducer and selectors
 export const NAME = 'todos';
 ```
- 
+
 ```js
 // todos/index.js
 import * as actions from './actions';
@@ -353,7 +353,7 @@ import * as selectors from './selectors';
 
 export default { actions, components, constants, reducer, selectors };
 ```
- 
+
 > **Note:** This is similar to the [Ducks](https://github.com/erikras/ducks-modular-redux) structure.
 
 **注意：**这跟 [Ducks](https://github.com/erikras/ducks-modular-redux) 架构有所类似。
@@ -377,7 +377,7 @@ export const CLEAR_COMPLETED = 'todos/CLEAR_COMPLETED';
 > As for action creators, not much changes from the usual Redux application.
 
 至于 action creators，跟往常的 Redux 应用没什么太大改变。
- 
+
 ```
 // todos/actions.js
 import t from './actionTypes';
@@ -401,7 +401,7 @@ import todos from 'todos';
 
 todos.actions.add('Do that thing');
 ```
- 
+
 ### Model
 
 > The `model.js` file is where I like to keep things that are related to the module’s state.
@@ -411,7 +411,7 @@ todos.actions.add('Do that thing');
 > This is especially useful if you are using TypeScript or Flow.
 
 如果你使用 TypeScript 或者 Flow 的话，这将会尤其有用。
- 
+
 ```js
 // todos/model.js
 export type Todo = {
@@ -428,7 +428,7 @@ export const filterCompleted = todos => todos.filter(t => t.completed);
 
 export const filterActive = todos => todos.filter(t => !t.completed);
 ```
- 
+
 ### Reducers
 
 > For the reducers, each module should maintain their own state as before. However, there is one particular coupling that should be solved. That is, a module’s reducer does not usually get to choose where it is mounted in the overall application state atom.
@@ -442,7 +442,7 @@ export const filterActive = todos => todos.filter(t => !t.completed);
 > We can solve this issue by giving control to the todos module on where it should be mounted in the state atom.
 
 我们可以通过授权给 `todos` 模块来解决这个问题，让这个模块来决定应该在哪里被装载到状态原子。
- 
+
 ```js
 // rootReducer.js
 import { combineReducers } from 'redux';
@@ -452,7 +452,7 @@ export default combineReducers({
   [todos.constants.NAME]: todos.reducer
 });
 ```
- 
+
 > This removes the coupling between our todos module and root reducer. Of course, you don’t *have* to do it this way. Other options include relying on naming conventions (e.g. todos module state is mounted under “todos” key in the state atom), or you can use module factory functions instead of relying on a static key.
 
 这就可以移除我们的 `todos` 模块和根 reducer 之间的耦合。当然，你也*不一定*要通过这种方式。其他的选择也包括依赖命名约定（比如，将 `todos` 模块状态装载到使用 todos 作为 key 的状态原子底下），或者你也可以使用模块工厂函数而不是依赖于静态 key。
@@ -460,7 +460,7 @@ export default combineReducers({
 > And the reducer would look as follows.
 
 然后 reducer 就可能长得跟下面一样。
- 
+
 ``` js
 // todos/reducer.js
 import t from './actionTypes';
@@ -482,7 +482,7 @@ export (state = initialState, action: any): State => {
   }
 };
 ```
- 
+
 ### Selectors
 
 > Selectors provide a way to query data from the module state. While they are not normally named as such in a Redux project, they are always present.
@@ -500,7 +500,7 @@ connect 的第一个参数就是一个 selector，从状态原子当中**选择*
 > I highly recommend that you check out [reselect](https://github.com/reactjs/reselect) as it provides a way to build composable selectors that are automatically memoized.
 
 我非常推荐你去看看 [reselect](https://github.com/reactjs/reselect)，因为它提供了一种方式，可以用来构建可组合的 selectors，并且能够自动 memoized。
- 
+
 ```js
 // todos/selectors.js
 import { createSelector } from 'reselect';
@@ -525,7 +525,7 @@ export const getCounts = createSelector(
   })
 );
 ```
- 
+
 ### Components
 
 > And lastly, we have our React components. I encourage you to use shared selectors here as much as possible. It gives you the advantage of having an easy way to unit test the mapping of state to props without relying on component tests.
@@ -557,7 +557,7 @@ export default connect(
 > That’s it in terms of my recommendations. But before we go, there is one last topic I want to discuss: How to detect project smells.
 
 这就是按照我所推荐规范的内容了。但是在我们结束之前，还有最后一个我想要讨论的主题：如何发现项目坏味道。
- 
+
 ## Litmus test for project structure | 项目结构的石蕊测试
 
 > It is important for us to have the tools to tell us when something smells in our code. From experience, just because a project starts out clean doesn’t mean it’ll stay that way. Thus, I want to present an easy method to detect project structure smells.
@@ -575,7 +575,7 @@ export default connect(
 > Whether you choose to take action based on your findings is up to you. Afterall, the software industry is all about tradeoffs. But at the very least it should give you a much better insight into your project structure.
 
 基于你的发现，无论你选择采取何种操作都取决于你。毕竟，软件行业就是一个与折衷息息相关的行业。但至少这应该会让你对自己的项目结构有更深入的了解。
- 
+
 ## Closing | 收尾
 
 > Project structure isn’t a particularly exciting topic to discuss. It is, however, an important one.
@@ -593,7 +593,7 @@ export default connect(
 1. 基于特性组织
 2. 设计严格的模块边界
 3. 避免循环依赖
- 
+
 > Whether you are using Redux and React or not, I highly recommend following these rules on your software projects.
 
 无论你是否正在使用 React 和 Redux，我都非常推荐你在自己的软件项目当中遵循这些规则。
