@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 【译】（数字）平台思维的艺术
+title: 【译】（数字化）平台思维的艺术
 categories: [思考]
 tags: [DPS, Platform, Framework, Innovation, Strategy, Rethink]
 published: True
