@@ -17,7 +17,7 @@ published: True
 
 The digitally-savvy customer has highly sophisticated - and ever-evolving - expectations for engagement and brand experience at every touchpoint. Delivering on and keeping up with these expectations requires an innovation-driven culture with customer value at its center. We’ve seen a common theme across our most successful client engagements: innovation and speed to market at scale requires more than just intense customer-centricity, adoption of agile practices and technology acumen. For almost any organization with significant brand value and historical technology investments, there will be friction from years of built-up technical and architectural debt. Unlocking core assets and business capabilities to enable customer-facing innovation requires effort and investment.  
 
-精通数字化的客户对每一种触点技术的品牌体验与互动都有着高度复杂的、不断变化的期望。而实现和保持这些期望需要以客户价值为中心的创新驱动文化。我们在最成功的客户合作案例当中看到了一个共同的主题：即大规模的创新和快速推向市场需要的不仅仅是以客户为中心、采取敏捷实践和保持技术敏锐度。对于几乎任何最具品牌价值和对技术做过投资的组织来说，多年积累的技术和架构债务都会带来摩擦（friction）。解锁核心资产与业务价值，任重而道远，只有持续不断付出努力和投资，才能够实现面向客户的创新。
+精通数字化的客户对每一种触点技术的品牌体验与互动都有着高度复杂的、不断变化的期望，实现和保持这些期望，需要以客户价值为中心的创新驱动文化。我们在最成功的客户合作案例当中看到了一个共同的主题：即大规模的创新和快速推向市场需要的不仅仅是以客户为中心、采取敏捷实践和保持技术敏锐度。对于几乎任何最具品牌价值和对技术做过投资的组织来说，多年积累的技术和架构债务都会带来摩擦（friction）。解锁核心资产与业务价值，任重而道远，只有持续不断付出努力和投资，才能够实现面向客户的创新。
 
 > All organizations have an innate innovation capability [![](https://g.twimg.com/dev/documentation/image/Twitter_logo_blue_16.png)Tweet this](http://twitter.com/home/?status=All%20organizations%20have%20an%20innate%20innovation%20capability%20say%20@amitk_tw%20and%20Ryan%20Murray%20http://thght.works/2qjllpS%20via%20@ThoughtWorks)
 
@@ -138,7 +138,7 @@ Digitally-savvy customers want to feel delighted and inspired; they expect your 
 
 For more information on how to harness the creative horsepower that your enterprise already possesses, check out ThoughtWorks' [Digital Platform Strategy](https://www.thoughtworks.com/digital-platform-strategy).
 
-有关如何运用（驾驭）企业具备创新能力（马力）的更多信息，请查看 **Thought**Works 的数字平台战略（[Digital Platform Strategy](https://www.thoughtworks.com/digital-platform-strategy)）。
+有关如何运用企业资产发挥创新性能力的更多信息，请查看 **Thought**Works 的数字平台战略（[Digital Platform Strategy](https://www.thoughtworks.com/digital-platform-strategy)）。
 
 
 
