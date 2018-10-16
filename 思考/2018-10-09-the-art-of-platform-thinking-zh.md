@@ -98,7 +98,7 @@ Our Digital Platform Strategy framework is a blueprint for platform building tha
 - 创新实验基础设施和监控体系
 - 客户触点技术
 
-![DPS](https://raw.githubusercontent.com/JimmyLv/images/master/2018/20181009201650.png)
+![DPS](https://raw.githubusercontent.com/JimmyLv/images/master/2018/20181016213732.png)
 
 **Delivery Infrastructure:** We take a holistic approach to infrastructure, build and release support, and observability. Elastic infrastructure and related tooling, coupled with simplified build, deployment, and monitoring enables engineers to deliver rapidly and safely, with appropriate controls and audit support. This pillar directly addresses delivery friction, reducing your time to market for new products and services.  
 
