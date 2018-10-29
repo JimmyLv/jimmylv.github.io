@@ -97,7 +97,7 @@ published: True
 
 -------
 
-## 单元测试基础
+## 为什么要有单元测试？
 
 引用[好友](https://github.com/linesh-simplicity/linesh-simplicity.github.io/issues/122)鲜明的观点就是：**写不好是能力问题，不写则是态度问题**。单元测试客观上可以让开发者的工作更高效，Vue 应用的单元测试是一定要的。
 
@@ -126,6 +126,8 @@ published: True
 
 ### 单元测试与自动化的关系
 
+![](https://raw.githubusercontent.com/JimmyLv/images/master/2018/20181029222614.png)
+
 综上，我们用来谈论单元测试的「透镜」是什么呢？一言以蔽之，两点：**反馈速度**和**自动化**。
 
 **自动化**回答的是**要不要自动化的单元测试**这个问题。测试是重构的唯一保障，也就是说，没有测试，基本上就没法重构代码（重构指的是 [不改变软件可观测行为的前提下改善代码内部设计或实现](https://www.martinfowler.com/bliki/DefinitionOfRefactoring.html) ），基本上就只能看着代码腐化。那么，基本上只要你的系统需要持续发展，你就需要单元测试。
@@ -134,7 +136,9 @@ published: True
 
 至此，回答了「为什么我们需要写单元测试」的问题。下面让我们来谈谈如何写好 JavaScript 代码和 Vue 应用框架的单元测试。
 
-### 为什么选择 Jest
+## 如何选择一个测试框架？
+
+众所周知，JavaScript 世界里最不缺的就是轮子，测试框架也是如此。其实这里的子标题就是为什么选择 Jest？有时候安于现状，只不过是因为我们没有见过理想的模样。只有当我们见过更好的世界和更好的测试框架，才会惊呼“原来世界是这样美好呀！我怎么都没有想到呢？”
 
 ![](https://raw.githubusercontent.com/JimmyLv/jimmylv.github.io/master/images/jest.png)
 
@@ -142,16 +146,16 @@ published: True
 >
 > 我们团队对采用JEST做前端测试的结果非常满意。它提供了一种“零配置”的开发体验，并具备诸多开箱即用的功能，比如 Mock 和代码覆盖率等。你不仅可以将此测试框架应用于React.js应用程序，也可以应用于其他 JavaScript 框架。Jest 经常被炒作的功能之一是用户界面的快照测试。快照测试可以作为测试金字塔上层一个很好的补充，但请记住，单元测试仍然是坚实的基础。
 
-Jest 的几大好处可以涵盖为：
+一个好的测试框架，Jest 的几大好处可以涵盖为：
 
-- Fast 天下武功，唯快不破。确实很快，虽然实测下来跟[Mocha 4]()还是慢了些，以后找个机会再测一次。
+- Fast 天下武功，唯快不破。确实很快，虽然实测下来跟 [Mocha 新版本](https://github.com/mochajs/mocha/blob/master/CHANGELOG.md)还是慢了些，以后找个机会再测一次。
 - Opinionated 不需要你做出选择和配置，就能提供所有的东西，比如Mock（干掉Sinon）、Test Runner（干掉Karma）、Matcher（干掉Chai）、Test Coverage（内置istanbul）
-- Watch Mode 注重开发者体验，能够在编码的时候帮助我们快速获得测试结果的反馈。
-- Snapshot Testing 这一点是值得争议的一点，前文也提到过会专门开个issue来讨论，在此不再赘述。
+- Watch Mode 守护模式。非常注重开发者体验，能够在编码的时候帮助我们快速获得测试结果的反馈。
+- Snapshot Testing 快照测试。这是值得争议的一点，前文也提到过会专门开个issue来讨论，在此不再赘述。
 
-### 总结一下
+### 最后，总结一下 Jest
 
-Jest 最大的特点是它是一个非常有效的解决方案，不需要与其他测试库交互来执行它的工作。与此同时 Jest 非常注重[开发者体验](https://www.thoughtworks.com/talks/developer-exp-tech-radar-summit-05-2017)，这一点也是特别值得欣赏，现在市面上关注开发者（“人”）体验的开发框架和工具实在不多，而Jest Watch模式的核心就在于快速获得反馈，虽然我没在命令行使用而是WebStorm但亦可以与之结合。
+Jest 作为一个测试框架，其最大的特点就在于它是一个非常有效的解决方案，不需要与其他测试库交互来执行它的工作。与此同时 Jest 非常注重[开发者体验](https://www.thoughtworks.com/talks/developer-exp-tech-radar-summit-05-2017)，这一点也是特别值得欣赏，现在市面上关注开发者（“人”）体验的开发框架和工具实在不多，而Jest Watch模式的核心就在于快速获得反馈，虽然我没在命令行使用而是WebStorm但亦可以与之结合。
 
 ps: 除此之外，还有很多开发者体验亦值得细细品味与发现，特别是Jest本身来自Facebook的工程化支持也是特别棒的，这个讲述如何开发Jest的官方视频值得一看：[Building High-Quality JavaScript Tools](https://developers.facebook.com/videos/f8-2017/building-high-quality-javascript-tools/)。
 
