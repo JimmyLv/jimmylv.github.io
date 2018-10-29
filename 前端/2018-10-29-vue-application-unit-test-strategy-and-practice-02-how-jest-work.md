@@ -25,7 +25,7 @@ published: True
 
 在[上一篇文章](https://blog.jimmylv.info/2018-09-19-vue-application-unit-test-strategy-and-practice-01-introduction/)当中我们介绍了单元测试的意义，以及为何选择 Facebook 的 Jest 作为我们的测试框架。现在就让我们一起来学习如何编写最基础的单元测试。
 
->  如果你已经有了使用 Jest 编写单元测试的经验，可以选择直接跳过本段。
+>  如果你已经有了使用 Jest 编写单元测试的经验，可以选择直接跳到第二段。
 
 ### 第一个 Jest 实例
 
