@@ -8,7 +8,7 @@ published: True
 
 ## 本文的目标
 
-2. 在Vue应用的单元测试中，对不同UI组件的单元测试有何不同？颗粒度该细到什么样的程度？
+2.1 在Vue应用的单元测试中，对不同UI组件的单元测试有何不同？颗粒度该细到什么样的程度？
 
 ```md
 // Given
@@ -124,7 +124,7 @@ describe('Vue Component renderedString', () => {
 
 ## 实例 Wrapper `find()` 方法与选择器
 
-![](https://raw.githubusercontent.com/JimmyLv/images/master/2018/20181030214240.png)
+![](https://raw.githubusercontent.com/JimmyLv/images/master/2018/20181030214617.png)
 
 从前面的示例代码中可以看到，无论哪种渲染方式所返回的 wrapper 都有一个 `.find()` 方法，它接受一个 selector 参数，然后返回一个对应的 wrapper 对象。而 `.findAll()` 则会返回一个类型相同的 wrapper 对象数组，里面包含了所有符合条件的子组件。在这个对象数组的基础上，`at` 方法则可以返回指定位置的子组件，`trigger` 方法用于在组件之上模拟触发某种行为。
 
@@ -139,7 +139,8 @@ wrapper.find('[foo="bar"]') //attribute syntax
 wrapper.find('div:first-of-type') //pseudo selectors
 ```
 
-在下面的示例中，我们可以通过 Vue 组件构造函数的引用找到该组件，与此同时也可以基于 Vue 组件属性的子集来查找组件和节点。
+在下面的示例中，我们可以通过 Vue 组件构造函数的引用找到该组件，与此同时也可以基于 Vue 组件属性的子集来查找组件和节点，或者通过根据 $ref 选择相应元素。
+
 
 ```javascript
 /* Component Constructor */
@@ -149,7 +150,11 @@ const wrapper = shallowMount(app)
 expect(wrapper.find(foo).is(foo)).toBe(true)
 
 /* Find Option Object */
-const wrapper = wrapper.find({ name: 'my-button' })
+const wrapper = appWrapper.find({ name: 'my-button' })
+wrapper.trigger('click')
+
+/* Find by refs */
+const wrapper = appWrapper.find({ ref: 'myButton' })
 wrapper.trigger('click')
 ```
 
@@ -172,7 +177,7 @@ it('should trigger event when click button', () => {
 
 ### 关于 `nextTick` 怎么办？
 
-Vue 会异步的将未生效的 DOM 更新批量应用，以避免因数据反复突变而导致的无谓的重渲染。这也是为什么在实践过程中我们经常在触发状态改变后用 `Vue.nextTick` 来等待 Vue 把实际的 DOM 更新做完的原因。
+Vue 会异步的将未生效的 DOM 更新批量应用，以避免因数据反复突变而导致的无谓的重新渲染。这也是为什么在实践过程中我们经常在触发状态改变后用 `Vue.nextTick` 来等待 Vue 把实际的 DOM 更新做完的原因。
 
 为了简化用法，Vue Test Utils 同步应用了所有的更新，所以你不需要在测试中使用 `Vue.nextTick` 来等待 DOM 更新。
 
