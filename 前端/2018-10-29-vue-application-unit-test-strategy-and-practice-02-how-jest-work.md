@@ -50,7 +50,7 @@ module.exports = { sum }
 ```js
 const { sum } = require('./math')
 
-describe('Match module', () => {
+describe('Math module', () => {
   it("should return sum result when one number plus another number", () => {
     // Given
     const number = 1
@@ -63,7 +63,7 @@ describe('Match module', () => {
 })
 ```
 
-然后运行 `yarn test` 你就可以看到相应的结果。
+然后运行 `yarn test` （添加 NPM Script）你就可以看到相应的结果。
 
 ![](https://raw.githubusercontent.com/JimmyLv/jimmylv.github.io/master/images/jest-failure.png)
 
@@ -153,7 +153,7 @@ it('plays video', () => {
 
 Spy 并不会影响到原有模块的功能代码，而只是充当一个监护人的作用，“你可以继续我型我秀上课讲小话，但是老师会偷偷告诉你妈妈，看你放学后老妈不打断你的腿”。比如说上文中的 `video` 模块中的 `play()` 方法已经被 `spy` 过，那么之后 `play()` 方法只要被调用过，我们就能判断其是否执行，甚至执行的次数。
 
-### 如何 Mock 全局的方法
+### 如何 Mock 全局的方法？
 
 把全局的数据 Mock 掉很简单，只需要像 `window.document.title = undefined` 这样简单 Fake 赋值就很完美。而像 `matchMedia` 这样的方法在 jsdom 里面并没有被实现，这时候我们当然就需要去把它 Mock 掉，简单把要用到的一些对象属性赋值就好，总之不至于在运行时报错。
 
