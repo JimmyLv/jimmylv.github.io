@@ -134,7 +134,7 @@ Moving into the execution phase, the partnership of strategy and delivery moves 
 ### So Where Do You Begin? | 所以，从何开始着手？
 Digitally-savvy customers want to feel delighted and inspired; they expect your brand to add value to their lives. They want to feel the passion that you feel for your brand and to be part of your next great solution. Building out a scalable technology strategy that manages complexity will enable rapid development, stimulate innovation, and create new opportunity for growth. An optimized foundational technology platform is essential to being able to meet your customer’s expectations and increase their engagement with your brand.  
 
-数字化知识丰富的客户都期望着愉悦的用户体验、或是从中备受鼓舞；他们期待企业品牌能够为其生活添资增彩。他们期望感受到企业对于品牌的热忱，并且想成为企业下一代卓越解决方案中的一员。建立可管理复杂度的、可伸缩的技术战略，将会使得快速开发、激励创新和创造增长新机遇成为可能。优化的基础技术平台对于满足客户期望并增强用户品牌粘性（忠诚度/参与度）至关重要。
+数字化知识丰富的客户都期望着愉悦的用户体验、或是从中备受鼓舞；他们期待企业品牌能够为其生活添资增彩。他们期望感受到企业对于品牌的热忱，并且想成为企业下一代卓越解决方案中的一员。建立可管理复杂度的、可伸缩的技术战略，将会使得快速开发、激励创新和创造增长新机遇成为可能。优化的基础技术平台，对满足客户期望并增强用户品牌粘性至关重要。
 
 For more information on how to harness the creative horsepower that your enterprise already possesses, check out ThoughtWorks' [Digital Platform Strategy](https://www.thoughtworks.com/digital-platform-strategy).
 
