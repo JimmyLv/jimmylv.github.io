@@ -209,15 +209,15 @@ export default {
 import { shallowMount, createLocalVue } from '@vue/test-utils'
 import Vuex from 'vuex'
 
+const localVue = createLocalVue()
+localVue.use(Vuex)
+
 const fakeStore = new Vuex.Store({
   state: {},
   actions: {
     actionClick: jest.fn()
   }
 })
-
-const localVue = createLocalVue()
-localVue.use(Vuex)
 
 it('当按钮被点击时候调用“actionClick”的 action', () => {
     const wrapper = shallowMount(Actions, { store: fakeStore, localVue })
@@ -234,6 +234,9 @@ it('当按钮被点击时候调用“actionClick”的 action', () => {
 import { shallowMount, createLocalVue } from '@vue/test-utils'
 import Vuex from 'vuex'
 
+const localVue = createLocalVue()
+localVue.use(Vuex)
+
 const fakeStore = new Vuex.Store({
   state: {
     price: '998'
@@ -243,9 +246,6 @@ const fakeStore = new Vuex.Store({
     inputValue: () => 'input'
   }
 })
-
-const localVue = createLocalVue()
-localVue.use(Vuex)
 
 it('在app中渲染价格和“state.inputValue”', () => {
   const wrapper = shallowMount(Components, { store: fakeStore, localVue })
