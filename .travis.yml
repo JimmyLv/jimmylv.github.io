@@ -25,10 +25,10 @@ before_install:
   - git config --global user.email travis@jimmylv.com
   - git clone --depth=1 --branch=master https://github.com/JimmyLv/jekyll-blog.git
   # 配置 qshell
-  - wget http://devtools.qiniu.com/qshell-v2.0.5.zip
-  - sudo apt-get install unzip
-  - unzip qshell-*.zip
-  - ./qshell_linux_amd64 account $QiNiuAK $QiNiuSK
+  #  - wget http://devtools.qiniu.com/qshell-v2.0.5.zip
+  #  - sudo apt-get install unzip
+  #  - unzip qshell-*.zip
+  #  - ./qshell_linux_amd64 account $QiNiuAK $QiNiuSK
 install:
   - npm install nodeppt -g
 script:
@@ -39,8 +39,8 @@ script:
   - bundle install
   - jekyll build
   # - gem install jekyll jekyll-paginate jekyll-sitemap jekyll-tagging-related_posts jekyll-seo-tag
-  - cat ./public/css/base.css # just for verify changes
-  - ../qshell_linux_amd64 qupload scripts/qiniu.conf.json
+  #  - cat ./public/css/base.css # just for verify changes
+  #  - ../qshell_linux_amd64 qupload scripts/qiniu.conf.json
 after_success:
   - |
     cd _site
