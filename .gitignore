@@ -9,5 +9,6 @@ Calendar/
 .idea/
 .vscode/
 .DS_Store
+configs/
 
 *.sublime-*
