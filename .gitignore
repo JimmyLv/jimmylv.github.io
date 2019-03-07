@@ -1,5 +1,6 @@
 .Trash/
 
+_drafts/
 Inbox/
 Archive/
 
@@ -9,6 +10,8 @@ Calendar/
 .idea/
 .vscode/
 .DS_Store
+
 configs/
 
+*.plist
 *.sublime-*
