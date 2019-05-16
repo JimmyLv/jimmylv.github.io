@@ -1,32 +1,9 @@
 {
-  "noHelp": true,
-  "sync": {
-    "useImdoneioForPriority": true,
-    "name": "JimmyLv/jimmylv.github.io",
-    "id": "5aa2413ebb63cf6fc8d9beb8"
-  },
-  "marked": {
-    "langPrefix": "language-",
-    "smartLists": true,
-    "pedantic": false,
-    "breaks": false,
-    "tables": true,
-    "gfm": true
-  },
-  "lists": [
-    {
-      "hidden": false,
-      "name": "TODO"
-    },
-    {
-      "hidden": false,
-      "name": "DOING"
-    },
-    {
-      "hidden": false,
-      "name": "DONE"
-    }
+  "exclude": [
+    "^(node_modules|bower_components|\\.imdone|target|build|dist|logs|flow-typed|imdone-export.json)[\\/\\\\]?|\\.(git|svn|hg|npmignore)|\\~$|\\.(jpg|png|gif|swp|ttf|otf)$"
   ],
+  "watcher": true,
+  "keepEmptyPriority": true,
   "code": {
     "include_lists": [
       "TODO",
@@ -48,9 +25,40 @@
       "HELP"
     ]
   },
-  "keepEmptyPriority": true,
-  "watcher": true,
-  "exclude": [
-    "^(node_modules|bower_components|\\.imdone|target|build|dist|logs|flow-typed|imdone-export.json)[\\/\\\\]?|\\.(git|svn|hg|npmignore)|\\~$|\\.(jpg|png|gif|swp|ttf|otf)$"
-  ]
+  "lists": [
+    {
+      "hidden": false,
+      "name": "TODO"
+    },
+    {
+      "hidden": false,
+      "name": "DOING"
+    },
+    {
+      "hidden": false,
+      "name": "DONE"
+    },
+    {
+      "name": "HELP",
+      "hidden": false
+    },
+    {
+      "name": "pylint",
+      "hidden": false
+    }
+  ],
+  "marked": {
+    "langPrefix": "language-",
+    "smartLists": true,
+    "pedantic": false,
+    "breaks": false,
+    "tables": true,
+    "gfm": true
+  },
+  "sync": {
+    "useImdoneioForPriority": true,
+    "name": "JimmyLv/jimmylv.github.io",
+    "id": "5aa2413ebb63cf6fc8d9beb8"
+  },
+  "noHelp": true
 }
