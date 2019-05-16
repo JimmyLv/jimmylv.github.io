@@ -15,28 +15,16 @@
   },
   "lists": [
     {
-      "name": "HELP",
-      "hidden": false
+      "hidden": false,
+      "name": "TODO"
     },
     {
-      "name": "1",
-      "hidden": false
+      "hidden": false,
+      "name": "DOING"
     },
     {
-      "name": "2",
-      "hidden": false
-    },
-    {
-      "name": "3",
-      "hidden": false
-    },
-    {
-      "name": "pylint",
-      "hidden": false
-    },
-    {
-      "name": "TODO",
-      "hidden": false
+      "hidden": false,
+      "name": "DONE"
     }
   ],
   "code": {

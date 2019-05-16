@@ -16,9 +16,9 @@ published: True
 
 不谈论的包括：
 
-- ATT 验收测试 或 E2E 端到端测试，这个是我想进一步探索的话题，特别是在TDD的语境下。[#322](https://github.com/JimmyLv/jimmylv.github.io/issues/322)
+- ATT 验收测试 或 E2E 端到端测试，这个是我想进一步探索的话题，特别是在TDD的语境下。[^322](https://github.com/JimmyLv/jimmylv.github.io/issues/322)
 - 为什么要 TDD？但是我会讲为什么要 UT 单元测试。测试和TDD是两码事，而光是自动化测试的好处就已经足够多，但是如何做到更好的自动化和持续集成，那就需要TDD来指引方向。
-- Snapshot Testing 快照测试，其实我是很认可快照这种形式，但需要改进其工作流，至少结合Image Snapshot和Storybook等工具，甚至更应该放到CI上去。[#311](https://github.com/JimmyLv/jimmylv.github.io/issues/311)
+- Snapshot Testing 快照测试，其实我是很认可快照这种形式，但需要改进其工作流，至少结合Image Snapshot和Storybook等工具，甚至更应该放到CI上去。[^311](https://github.com/JimmyLv/jimmylv.github.io/issues/311)
 
 下面我就来结合具体场景，进一步实例化这些问题，举几个🌰：
 
@@ -91,21 +91,21 @@ published: True
 ### 应用测试的测试策略
 ```
 
--------
+---- 
 
 😯 哦豁，正文终于开始……
 
--------
+---- 
 
 ## 为什么要有单元测试？
 
-引用[好友](https://github.com/linesh-simplicity/linesh-simplicity.github.io/issues/122)鲜明的观点就是：**写不好是能力问题，不写则是态度问题**。单元测试客观上可以让开发者的工作更高效，Vue 应用的单元测试是一定要的。
+引用[好友][1]鲜明的观点就是：**写不好是能力问题，不写则是态度问题**。单元测试客观上可以让开发者的工作更高效，Vue 应用的单元测试是一定要的。
 
 ### 单元测试的上下文
 
 谈任何东西都一定要有个上下文。你的论述不能是「因为单元测试有这些好处，所以我们要做单元测试」，而应该是「不做单元测试我们会遇到什么问题」，这样才能回答「为什么要写单元测试」的问题。那么我们谈论单元测试的上下文是什么呢？不做单元测试我们会遇到什么问题呢？
 
-![agile](https://user-images.githubusercontent.com/11895199/40921436-03152e66-6842-11e8-9c24-920ba5d8dd27.png)
+![agile][image-1]
 
 上图为一个产品从 idea 分析、设计、开发、测试到交付并获取市场反馈的过程。
 
@@ -126,13 +126,13 @@ published: True
 
 ### 单元测试与自动化的关系
 
-![](https://raw.githubusercontent.com/JimmyLv/images/master/2018/20181029222614.png)
+![][image-2]
 
 综上，我们用来谈论单元测试的「透镜」是什么呢？一言以蔽之，两点：**反馈速度**和**自动化**。
 
-**自动化**回答的是**要不要自动化的单元测试**这个问题。测试是重构的唯一保障，也就是说，没有测试，基本上就没法重构代码（重构指的是 [不改变软件可观测行为的前提下改善代码内部设计或实现](https://www.martinfowler.com/bliki/DefinitionOfRefactoring.html) ），基本上就只能看着代码腐化。那么，基本上只要你的系统需要持续发展，你就需要单元测试。
+**自动化**回答的是**要不要自动化的单元测试**这个问题。测试是重构的唯一保障，也就是说，没有测试，基本上就没法重构代码（重构指的是 [不改变软件可观测行为的前提下改善代码内部设计或实现][2] ），基本上就只能看着代码腐化。那么，基本上只要你的系统需要持续发展，你就需要单元测试。
 
-**反馈速度**回答的是**要不要 TDD、测试先行还是后补**这个问题。答案是，需要 TDD，最好先行，因为[可以提高反馈速度](https://github.com/linesh-simplicity/linesh-simplicity.github.io/issues/197)，缩短反馈周期，与此同时减少不必要的浪费。
+**反馈速度**回答的是**要不要 TDD、测试先行还是后补**这个问题。答案是，需要 TDD，最好先行，因为[可以提高反馈速度][3]，缩短反馈周期，与此同时减少不必要的浪费。
 
 至此，回答了「为什么我们需要写单元测试」的问题。下面让我们来谈谈如何写好 JavaScript 代码和 Vue 应用框架的单元测试。
 
@@ -140,48 +140,60 @@ published: True
 
 众所周知，JavaScript 世界里最不缺的就是轮子，测试框架也是如此。其实这里的子标题就是为什么选择 Jest？有时候安于现状，只不过是因为我们没有见过理想的模样。只有当我们见过更好的世界和更好的测试框架，才会惊呼“原来世界是这样美好呀！我怎么都没有想到呢？”
 
-![](https://raw.githubusercontent.com/JimmyLv/jimmylv.github.io/master/images/jest.png)
+![][image-3]
 
-> 引自[技术雷达](https://www.thoughtworks.com/cn/radar/languages-and-frameworks/jest)：Jest是一个“零配置”的前端测试工具，具有诸如模拟和代码覆盖之类的开箱即用特性，主要用于React和其他JavaScript框架。
->
+> 引自[技术雷达][4]：Jest是一个“零配置”的前端测试工具，具有诸如模拟和代码覆盖之类的开箱即用特性，主要用于React和其他JavaScript框架。
+> 
 > 我们团队对采用JEST做前端测试的结果非常满意。它提供了一种“零配置”的开发体验，并具备诸多开箱即用的功能，比如 Mock 和代码覆盖率等。你不仅可以将此测试框架应用于React.js应用程序，也可以应用于其他 JavaScript 框架。Jest 经常被炒作的功能之一是用户界面的快照测试。快照测试可以作为测试金字塔上层一个很好的补充，但请记住，单元测试仍然是坚实的基础。
 
 一个好的测试框架，Jest 的几大好处可以涵盖为：
 
-- Fast 天下武功，唯快不破。确实很快，虽然实测下来跟 [Mocha 新版本](https://github.com/mochajs/mocha/blob/master/CHANGELOG.md)还是慢了些，以后找个机会再测一次。
+- Fast 天下武功，唯快不破。确实很快，虽然实测下来跟 [Mocha 新版本][5]还是慢了些，以后找个机会再测一次。
 - Opinionated 不需要你做出选择和配置，就能提供所有的东西，比如Mock（干掉Sinon）、Test Runner（干掉Karma）、Matcher（干掉Chai）、Test Coverage（内置istanbul）
 - Watch Mode 守护模式。非常注重开发者体验，能够在编码的时候帮助我们快速获得测试结果的反馈。
 - Snapshot Testing 快照测试。这是值得争议的一点，前文也提到过会专门开个issue来讨论，在此不再赘述。
 
 ### 最后，总结一下 Jest
 
-Jest 作为一个测试框架，其最大的特点就在于它是一个非常有效的解决方案，不需要与其他测试库交互来执行它的工作。与此同时 Jest 非常注重[开发者体验](https://www.thoughtworks.com/talks/developer-exp-tech-radar-summit-05-2017)，这一点也是特别值得欣赏，现在市面上关注开发者（“人”）体验的开发框架和工具实在不多，而Jest Watch模式的核心就在于快速获得反馈，虽然我没在命令行使用而是WebStorm但亦可以与之结合。
+Jest 作为一个测试框架，其最大的特点就在于它是一个非常有效的解决方案，不需要与其他测试库交互来执行它的工作。与此同时 Jest 非常注重[开发者体验][6]，这一点也是特别值得欣赏，现在市面上关注开发者（“人”）体验的开发框架和工具实在不多，而Jest Watch模式的核心就在于快速获得反馈，虽然我没在命令行使用而是WebStorm但亦可以与之结合。
 
-ps: 除此之外，还有很多开发者体验亦值得细细品味与发现，特别是Jest本身来自Facebook的工程化支持也是特别棒的，这个讲述如何开发Jest的官方视频值得一看：[Building High-Quality JavaScript Tools](https://developers.facebook.com/videos/f8-2017/building-high-quality-javascript-tools/)。
+ps: 除此之外，还有很多开发者体验亦值得细细品味与发现，特别是Jest本身来自Facebook的工程化支持也是特别棒的，这个讲述如何开发Jest的官方视频值得一看：[Building High-Quality JavaScript Tools][7]。
 
 ## 未完待续……
 
-**## 单元测试基础**
+**\## 单元测试基础**
 
 * [x] ### 为什么选择 Jest
 * [ ] ### Jest 的基本用法
 * [ ] ### 该如何测试异步代码？
 * [ ] ### 单元测试与自动化的意义  
 
-**## Vue 单元测试**
+**\## Vue 单元测试**
 
 * [ ] ### Vue 组件的渲染方式
 * [ ] ### Wrapper `find()` 方法与选择器
 * [ ] ### UI 组件交互行为的测试  
 
-**## Vuex 单元测试**
+**\## Vuex 单元测试**
 
 * [ ] ### CQRS 与 `Redux-like` 架构
 * [ ] ### 如何对 Vuex 进行单元测试
 * [ ] ### Vue组件和Vuex store的交互  
 
-**## Vue应用测试策略**
+**\## Vue应用测试策略**
 
 * [ ] ### 单元测试的特点及其位置
 * [ ] ### 单元测试的关注点
 * [ ] ### 应用测试的测试策略
+
+[1]:	https://github.com/linesh-simplicity/linesh-simplicity.github.io/issues/122
+[2]:	https://www.martinfowler.com/bliki/DefinitionOfRefactoring.html
+[3]:	https://github.com/linesh-simplicity/linesh-simplicity.github.io/issues/197
+[4]:	https://www.thoughtworks.com/cn/radar/languages-and-frameworks/jest
+[5]:	https://github.com/mochajs/mocha/blob/master/CHANGELOG.md
+[6]:	https://www.thoughtworks.com/talks/developer-exp-tech-radar-summit-05-2017
+[7]:	https://developers.facebook.com/videos/f8-2017/building-high-quality-javascript-tools/
+
+[image-1]:	https://user-images.githubusercontent.com/11895199/40921436-03152e66-6842-11e8-9c24-920ba5d8dd27.png
+[image-2]:	https://raw.githubusercontent.com/JimmyLv/images/master/2018/20181029222614.png
+[image-3]:	https://raw.githubusercontent.com/JimmyLv/jimmylv.github.io/master/images/jest.png
