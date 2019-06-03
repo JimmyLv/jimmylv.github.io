@@ -7,7 +7,7 @@ published: True
 
 ---
 
-技术系列笔记均已迁移至GitBook，更多`React`的内容请到：[http://jimmylv.gitbooks.io/learning-react-js/content/reactjs_tutorial/reactjs_tutorial_part_1.html](http://jimmylv.gitbooks.io/learning-react-js/content/reactjs_tutorial/reactjs_tutorial_part_1.html)
+技术系列笔记均已迁移至 GitBook，更多`React`的内容请到：[http://jimmylv.gitbooks.io/learning-react-js/content/reactjs_tutorial/reactjs_tutorial_part_1.html](http://jimmylv.gitbooks.io/learning-react-js/content/reactjs_tutorial/reactjs_tutorial_part_1.html)
 
 # React.js Tutorial Part 2
 
@@ -19,13 +19,13 @@ published: True
 
 > In this part of the tutorial, we are going to make our React.js/Express.js app more like a full-fledged web application with the addition of a build system called [Gulp.js](http://gulpjs.com/). Gulp.js is a build system (or task runner) that I have been using for a while. There are [many](http://gruntjs.com/), [many](https://github.com/broccolijs/broccoli), [many](http://webpack.github.io/) out there, but I find Gulp.js to be very sufficient for my needs.
 
-这一部分，我们将使用额外的[Gulp.js](http://gulpjs.com/)构建工具，搭建一个更加完善的React.js/Express.js应用。Gulp.js是一个我一直在使用的构建工具（任务管理器），这里有很多类似的[gruntjs](http://gruntjs.com/), [broccoli](https://github.com/broccolijs/broccoli), [webpack](http://webpack.github.io/)等工具，但是最终发现Gulp.js最符合需求。
+这一部分，我们将使用额外的[Gulp.js](http://gulpjs.com/)构建工具，搭建一个更加完善的 React.js/Express.js 应用。Gulp.js 是一个我一直在使用的构建工具（任务管理器），这里有很多类似的[gruntjs](http://gruntjs.com/), [broccoli](https://github.com/broccolijs/broccoli), [webpack](http://webpack.github.io/)等工具，但是最终发现 Gulp.js 最符合需求。
 
 ## Installing Gulp | 安装 Gulp
 
 > Installing Gulp is very similar as to how we installed Express in the last tutorial, we need to add the `--save-dev` flag to save gulp to our `devDependencies` portion of the `package.json` file. Run:
 
-安装Gulp非常简单，就像上个教程中安装Express一样。使用`--save-dev`标记将gulp保存到`package.json`文件的`devDependencies`部分，运行：
+安装 Gulp 非常简单，就像上个教程中安装 Express 一样。使用`--save-dev`标记将 gulp 保存到`package.json`文件的`devDependencies`部分，运行：
 
 ```bash
 $ npm install --save-dev gulp
@@ -33,7 +33,7 @@ $ npm install --save-dev gulp
 
 > Now with Gulp installed, we can create our basic `gulpfile.js` file:
 
-Gulp安装好之后，我们建立一个`gulpfile.js`文件：
+Gulp 安装好之后，我们建立一个`gulpfile.js`文件：
 
 ```js
 var gulp = require('gulp');
@@ -45,7 +45,7 @@ gulp.task('default', function() {
 
 > Now we need to install the Gulp packages that we will need to build our application. To start, let's install [browserify](https://www.npmjs.com/package/browserify), [reactify](https://www.npmjs.com/package/reactify) and [vinyl-source-stream](https://www.npmjs.com/package/vinyl-source-stream). To install these packages, run the following command:
 
-现在需要为我们的应用安装Gulp包，开始之前，让我们添加[browserify](https://www.npmjs.com/package/browserify)，[reactify](https://www.npmjs.com/package/reactify)和[vinyl-source-stream](https://www.npmjs.com/package/vinyl-source-stream)。运行：
+现在需要为我们的应用安装 Gulp 包，开始之前，让我们添加[browserify](https://www.npmjs.com/package/browserify)，[reactify](https://www.npmjs.com/package/reactify)和[vinyl-source-stream](https://www.npmjs.com/package/vinyl-source-stream)。运行：
 
 ```bash
 $ npm install --save-dev react browserify reactify vinyl-source-stream
@@ -69,7 +69,7 @@ $ npm install --save-dev react browserify reactify vinyl-source-stream
 
 > The next step is to set up Gulp to automatically build our `.jsx` files into usable javascript. To do this, we are going to create a Gulp task. A Gulp task is a function that will stream a bunch of steps transforming our `.jsx` to javascript. We will need to modify our `gulpfile.js` to look like this:
 
-下一步就是编写Gulp任务来将`.jsx`文件自动编译成可用的JavaScript文件。一个Gulp任务就是一个函数，包含编译文件的一系列步骤。我们需要修改`gulpfile.js`：
+下一步就是编写 Gulp 任务来将`.jsx`文件自动编译成可用的 JavaScript 文件。一个 Gulp 任务就是一个函数，包含编译文件的一系列步骤。我们需要修改`gulpfile.js`：
 
 ```js
 var gulp = require('gulp');
@@ -91,17 +91,17 @@ gulp.task('default', ['js']);
 
 > Now running `gulp` from the command line will trigger the build of our React app; however, there are some things we need to do to our react app first!
 
-现在从命令行中运行`gulp`就会自动编译我们的React应用。但是，还有一些事情需要做！
+现在从命令行中运行`gulp`就会自动编译我们的 React 应用。但是，还有一些事情需要做！
 
 ### Browserifying React | 将 React 浏览器化
 
 > There are some things we need to do to our application before browserify will work. Last tutorial we wrote a `helloworld.jsx`, now we need to modify this slightly to work with browserify. If you don't know browserify is a tool for compiling node-flavored commonjs modules for the browser. So let's modify our React code to work with browserify.
 
-在browserify可以工作之前需要做一些事情，在上一节中编写了`helloworld.jsx`，现在我们需要稍微修改一下。browserify是一个工具，可以将node模块编译成浏览器可执行的commonjs模块。
+在 browserify 可以工作之前需要做一些事情，在上一节中编写了`helloworld.jsx`，现在我们需要稍微修改一下。browserify 是一个工具，可以将 node 模块编译成浏览器可执行的 commonjs 模块。
 
 > First, we need to create an "entry point" for browersify, we can do this by simply creating an `app.jsx` file:
 
-首先，我们需要为browersify创建一个入口，建立一个`app.jsx`文件就可以了：
+首先，我们需要为 browersify 创建一个入口，建立一个`app.jsx`文件就可以了：
 
 ```js
 var React = require('react');
@@ -115,11 +115,11 @@ React.render(
 
 > This file is taking our `HelloWorld` component and rendering it in the div with id "example". This code is taken from our original `helloworld.jsx` file from last tutorial. Instead of doing everything in that file, we are now requiring a module `HelloWorld` and rendering it in `app.jsx`. The reason for this is that as our application gets more complex, we have more control of how our files are broken out.
 
-这个文件就是一个`HelloWorld`组件，可以被渲染到`id="example"`的div标签中，这份代码是直接从上一个教程的`helloworld.jsx`文章拿到的。但现在不是在一个文件中做所有事情，而是将`HelloWorld`模块渲染到`app.jsx`中。
+这个文件就是一个`HelloWorld`组件，可以被渲染到`id="example"`的 div 标签中，这份代码是直接从上一个教程的`helloworld.jsx`文章拿到的。但现在不是在一个文件中做所有事情，而是将`HelloWorld`模块渲染到`app.jsx`中。
 
 > The next thing is that we have is modify our existing `helloworld.jsx` file to be a React component named `HelloWorld.jsx`. This is easily done and our `HelloWorld.jsx` file now looks like this:
 
-下一件事是已有的`helloworld.jsx`文件修改成React组件，`HelloWorld.jsx`：
+下一件事是已有的`helloworld.jsx`文件修改成 React 组件，`HelloWorld.jsx`：
 
 ```js
 var React = require('react');
@@ -139,7 +139,7 @@ render: function() {
 
 > Now, running `gulp` will create a javascript file in `public/javascripts/build/` called `app.js` and it will have everything we need to run our React app. Let's add this to our `layout.jade` file instead of the `react.min.js` and `helloworld.js` files:
 
-现在运行`gulp`会在`public/javascripts/build/`目录中新建名为`app.js`的标准JavaScript文件，我们需要它来运行React应用。让我们添加到`layout.jade`，替换之前的`react.min.js`和`helloworld.js`文件：
+现在运行`gulp`会在`public/javascripts/build/`目录中新建名为`app.js`的标准 JavaScript 文件，我们需要它来运行 React 应用。让我们添加到`layout.jade`，替换之前的`react.min.js`和`helloworld.js`文件：
 
 ```
 doctype html
@@ -154,7 +154,7 @@ body
 
 > There you have it, a React application being built with Gulp using browersify!
 
-现在就有了一个使用Gulp自动构建browersify的React应用啦！
+现在就有了一个使用 Gulp 自动构建 browersify 的 React 应用啦！
 
 ![](http://www.joshfinnie.com/assets/images/blog/hello-react-component.png)
 
@@ -162,7 +162,7 @@ body
 
 > To make Gulp even better, let's implement the built-in `watch` functionality to have gulp watch for changes in our `.jsx` files and automatically build our javascript. To do this, we want to add the following task to our `gulpfile.js`:
 
-为了更好得使用Gulp，我们可以实现一个内建的`watch`功能，能够自动监测和编译`.jsx`文件。添加任务：
+为了更好得使用 Gulp，我们可以实现一个内建的`watch`功能，能够自动监测和编译`.jsx`文件。添加任务：
 
 ```js
 gulp.task('watch', function() {
@@ -180,11 +180,11 @@ gulp.task('default', ['js', 'watch']);
 
 > Now when we run `gulp` it will watch for changes in our `.jsx` and rebuild our javascript with that change! Awesome!
 
-现在我们可以运行`gulp`来自动监控`.jsx`的变化，并且自动重新编译成标准的JavaScript，Awesome！
+现在我们可以运行`gulp`来自动监控`.jsx`的变化，并且自动重新编译成标准的 JavaScript，Awesome！
 
 ### Next Time | 下一次
 
 > Next time we will continue to use Gulp to build out some more niceties when building a web application, introduce [Bower](http://bower.io/), and finally get to building some of the React Components we will use in our job board.
 
-下一次我们将继续使用Gulp来构建开发web应用时的其他细节，介绍[Bower](http://bower.io/)，最终为我们的工作布告栏应用的编写React组件。
+下一次我们将继续使用 Gulp 来构建开发 web 应用时的其他细节，介绍[Bower](http://bower.io/)，最终为我们的工作布告栏应用的编写 React 组件。
 

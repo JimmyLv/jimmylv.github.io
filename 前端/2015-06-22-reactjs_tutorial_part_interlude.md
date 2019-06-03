@@ -7,7 +7,7 @@ published: True
 
 ---
 
-技术系列笔记均已迁移至GitBook，更多`React`的内容请到：[http://jimmylv.gitbooks.io/learning-react-js/content/reactjs_tutorial/reactjs_tutorial_part_1.html](http://jimmylv.gitbooks.io/learning-react-js/content/reactjs_tutorial/reactjs_tutorial_part_1.html)
+技术系列笔记均已迁移至 GitBook，更多`React`的内容请到：[http://jimmylv.gitbooks.io/learning-react-js/content/reactjs_tutorial/reactjs_tutorial_part_1.html](http://jimmylv.gitbooks.io/learning-react-js/content/reactjs_tutorial/reactjs_tutorial_part_1.html)
 
 # React.js Tutorial Part (Interlude)
 
@@ -15,17 +15,17 @@ published: True
 
 > Welcome to part (Interlude) of my React.js/Express.js app tutorial. This is going to be an extension of [part 2](http://www.joshfinnie.com/blog/reactjs-tutorial-part-2/), where we go into a bit more detail of how to use Gulp along with Bower.io to make our application a better, well-rounded system. We will not be going into too much React.js this tutorial, so I didn't want to call this "part 3". If you haven't already, please start the tutorial at [Part 1](http://www.joshfinnie.com/blog/reactjs-tutorial-part-1/)
 
-欢迎来到React.js/Express.js应用教程的番外篇，这将是[第二部分](http://www.joshfinnie.com/blog/reactjs-tutorial-part-2/)的扩展，我们将进一步了解如何配配合使用Gulp和Bower.io来使我们的应用更好更完善。这部分内容不会太多涉及React.js，所以我就不想称之为“第三部分”了。如果你还没准备好，从[第一部分](http://www.joshfinnie.com/blog/reactjs-tutorial-part-1/)开始吧。
+欢迎来到 React.js/Express.js 应用教程的番外篇，这将是[第二部分](http://www.joshfinnie.com/blog/reactjs-tutorial-part-2/)的扩展，我们将进一步了解如何配配合使用 Gulp 和 Bower.io 来使我们的应用更好更完善。这部分内容不会太多涉及 React.js，所以我就不想称之为“第三部分”了。如果你还没准备好，从[第一部分](http://www.joshfinnie.com/blog/reactjs-tutorial-part-1/)开始吧。
 
 ## Bower
 
 > For much of the UI, we are going to use a package manager called [Bower](http://bower.io/). Bower calls itself a package manager for the web, and it actually does a great job at doing just that. We are going to use Bower to install and keep track of many of the third-party libraries we are going to use for our job board.
 
-使用包管理工具[Bower](http://bower.io/)可以让我们拿到更多的UI库。Bower自称为互联网的包管理工具，实际上它做得非常好。我们将使用Bower来安装和追踪我们将要使用到项目中的第三方库。
+使用包管理工具[Bower](http://bower.io/)可以让我们拿到更多的 UI 库。Bower 自称为互联网的包管理工具，实际上它做得非常好。我们将使用 Bower 来安装和追踪我们将要使用到项目中的第三方库。
 
 > To install Bower, we simply have to install it from NPM using the following command:
 
-使用NPM来安装Bower：
+使用 NPM 来安装 Bower：
 
 ```bash
 $ npm install --save bower
@@ -33,11 +33,11 @@ $ npm install --save bower
 
 > This automatically adds it to our `package.json` file which we all should be familiar with now. If you are comfortable with Bower, it is recommended to install the package globally, which I have done. Your mileage may vary.
 
-这将自动添加依赖到`package.json`。如果你对Bower感觉良好，可以像我一样直接安装到全局。当然你的情况可能会有所不同。
+这将自动添加依赖到`package.json`。如果你对 Bower 感觉良好，可以像我一样直接安装到全局。当然你的情况可能会有所不同。
 
 > The one thing I do not enjoy about the default Bower installation is where the libraries are stored by default: `.bower-components/`. Luckily, it is not that hard to change, so let's change where we install our third-party libraries. To do this, create a `.bowerrc` file which looks like the following:
 
-还有一件我不喜欢的事情是，Bower会将第三方库默认安装到`.bower-components/`目录。幸运的是，我们可以很容易修改这个位置，创建一个`.bowerrc`文件：
+还有一件我不喜欢的事情是，Bower 会将第三方库默认安装到`.bower-components/`目录。幸运的是，我们可以很容易修改这个位置，创建一个`.bowerrc`文件：
 
 ```json
 {
@@ -47,7 +47,7 @@ $ npm install --save bower
 
 > This will change the default bower install folder to be `public/libraries/` which will allow us to easily access it later on. Once we do this, let's create the `bower.json` file, which will allow us an easy way to save our Bower packages very much like `package.json`. Simply run the following commands to prompt you to create your `bower.json` file:
 
-这就能将Bower的默认安装路径设置为`public/libraries/`，以便于之后的调用。一旦我们完成些之后，新建`bower.json`文件，就像`package.json`一样能够轻易保存我们的Bower包依赖。运行以下命令可以直接创建：
+这就能将 Bower 的默认安装路径设置为`public/libraries/`，以便于之后的调用。一旦我们完成些之后，新建`bower.json`文件，就像`package.json`一样能够轻易保存我们的 Bower 包依赖。运行以下命令可以直接创建：
 
 ```bash
 $ bower init
@@ -83,7 +83,7 @@ $ bower init
 
 > The next bit of setup we are going to do for our web app is to install [Twitter Bootstrap](http://getbootstrap.com/) using its official [SASS](http://sass-lang.com/) bower package. You can see what packages are available through bower using its search function: `bower search` Searching for `bootstrap` brings up many, many packages, but also shows us the package we want. Here is an excerpt from the search:
 
-下一步就是为我们的web应用安装[Twitter Bootstrap](http://getbootstrap.com/)，并且选用官方的[SASS](http://sass-lang.com/)版本的Bower包。可以使用`bower search`来搜索哪些包是可用的，搜索`bootstrap`可以得到很多包，当然包括我们想要的。这是一些搜索的片段：
+下一步就是为我们的 web 应用安装[Twitter Bootstrap](http://getbootstrap.com/)，并且选用官方的[SASS](http://sass-lang.com/)版本的 Bower 包。可以使用`bower search`来搜索哪些包是可用的，搜索`bootstrap`可以得到很多包，当然包括我们想要的。这是一些搜索的片段：
 
     $ bower search bootstrap
     Search results:
@@ -104,7 +104,7 @@ $ bower install bootstrap-sass-official --save
 
 > Now with the `bootstrap-sass-official` library installed, we can update our `style.scss` file to import the Bootstrap packages we want to use. For now, let's just import the entire bootstrap library. To do this, let's update our `style.scss` file to read as the following:
 
-现在`bootstrap-sass-official`库已经安装好，我们可以将我们想要使用的Bootstrap更新到`style.scss`。到现在为止，我们直接导入整个bootstrap库，让我们更新`style.scss`如下所示：
+现在`bootstrap-sass-official`库已经安装好，我们可以将我们想要使用的 Bootstrap 更新到`style.scss`。到现在为止，我们直接导入整个 bootstrap 库，让我们更新`style.scss`如下所示：
 
 ```css
 @import "../../libraries/bootstrap-sass-official/assets/stylesheets/bootstrap";
@@ -121,7 +121,7 @@ a {
 
 > Next, let's set up our Gulp file to automatically build our SASS and add it to our application. To do this, we need to install a few more applications:
 
-接下来，设置Gulp文件来自动编辑我们的SASS文件并添加到我们的应用。我们需要安装更多应用：
+接下来，设置 Gulp 文件来自动编辑我们的 SASS 文件并添加到我们的应用。我们需要安装更多应用：
 
 ```bash
 $ npm install gulp-sass --save-dev
@@ -129,7 +129,7 @@ $ npm install gulp-sass --save-dev
 
 > This will install the `gulp-sass` so we can have Gulp build our SASS file. We now need to to update our Gulp file with the following function to build our SASS:
 
-这将安装`gulp-sass`以便于编译SASS文件，我们现在需要更新Gulp文件来创建相应的函数：
+这将安装`gulp-sass`以便于编译 SASS 文件，我们现在需要更新 Gulp 文件来创建相应的函数：
 
 ```js
 var sass = require('gulp-sass');
@@ -152,7 +152,7 @@ gulp.task('default', ['js', 'sass', 'watch']);
 
 > With the gulp task above, we now have our SASS automatically compiled whenever we change it. Lastly we need to add the compiled CSS to our Jade template. We can do this by simply adding the following line to the head of `layout.jade`:
 
-有了以上的Gulp任务，无论什么时候我们修改SASS文件，Gulp都会自动编译。最后让我们把已经编译好的CSS添加Jade模板中。直接添加到头文件：
+有了以上的 Gulp 任务，无论什么时候我们修改 SASS 文件，Gulp 都会自动编译。最后让我们把已经编译好的 CSS 添加 Jade 模板中。直接添加到头文件：
 
 ```jade
 link(rel='stylesheet', href='/stylesheets/css/style.css')
@@ -162,7 +162,7 @@ link(rel='stylesheet', href='/stylesheets/css/style.css')
 
 > With the introduction of Twitter Bootstrap, we have also introduced two new javascript libraries to our code base: the Twitter Bootstrap javascript, and jQuery. Since we are already transforming our JSX code into javascript, let's take this time to concatenate all our javascripts together into a singular `app.js`. To do this, we just need to have a way to tell our JSX code that there are more libraries to import. Luckily since we are already using browserify, this is as simple as adding the following lines to our `app.jsx` file:
 
-在介绍Twitter Bootstrap之后，我们还需要加入新的JavaScript库：jQuery。由于我们已经可以将JSX代码编译成JavaScript，让我们花点时间把JavaScript连接到单个`app.js`中。只需要告诉JSX导入相应的库即可，由于我们已经使用了browserify，所以很简单就可以加入到`app.jsx`文件：
+在介绍 Twitter Bootstrap 之后，我们还需要加入新的 JavaScript 库：jQuery。由于我们已经可以将 JSX 代码编译成 JavaScript，让我们花点时间把 JavaScript 连接到单个`app.js`中。只需要告诉 JSX 导入相应的库即可，由于我们已经使用了 browserify，所以很简单就可以加入到`app.jsx`文件：
 
 ```js
 var $ = jQuery = require('../../libraries/jquery/dist/jquery');
@@ -171,7 +171,7 @@ var bootstrap = require('../../libraries/bootstrap-sass-official/assets/javascri
 
 > Doing this points both `jQuery ($)` and `bootstrap` to the appropriate file which were installed via Bower. When we re-run our browserify gulp task, these two libraries get pulled in! Simple as that.
 
-至此，`jQuery ($)`和`bootstrap`都已经通过Bower正确安装了，当我们重新运行browserify的Gulp任务，这两个库就已经被加入了。
+至此，`jQuery ($)`和`bootstrap`都已经通过 Bower 正确安装了，当我们重新运行 browserify 的 Gulp 任务，这两个库就已经被加入了。
 
 ## Bootstrapping our App | 初始化 App
 

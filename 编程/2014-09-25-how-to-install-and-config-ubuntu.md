@@ -15,24 +15,24 @@ published: true
 - [下载.iso文件](http://www.ubuntu.com/download/desktop)
 - [UltraISO下载](http://www.baidu.com/s?&wd=UltraISO)
 - [制作U盘启动器](http://jingyan.baidu.com/article/d169e186800f02436711d87b.html)
-- 修改BIOS设置为U盘启动：HP电脑开机按F9
+- 修改 BIOS 设置为 U 盘启动：HP 电脑开机按 F9
 
 ### 2. 安装中的分区问题：
 
-- swap: 交换空间，类似于Win下的虚拟空间。（内存够大也许不需要）
-- /: 根目录，系统的安装目录，相当于C盘，重装时数据丢失。
-- /boot是开机引导系统用的，建立此分区可使Win引导Ubuntu，否则默认Ubuntu引导Win。
-- /home是个人资料文件夹（下载/音乐/文档）这些，重装时数据保留。
+- swap: 交换空间，类似于 Win 下的虚拟空间。（内存够大也许不需要）
+- /: 根目录，系统的安装目录，相当于 C 盘，重装时数据丢失。
+- /boot 是开机引导系统用的，建立此分区可使 Win 引导 Ubuntu，否则默认 Ubuntu 引导 Win。
+- /home 是个人资料文件夹（下载/音乐/文档）这些，重装时数据保留。
 
 ### 3. 安装过程中下载软件更新和安装软件部分可以skip
 
 ## Ubuntu软件
 
 ### 1. 简化安装：Synaptic (新立得)
-- 是Ubuntu的包管理工具apt的图形化前端。
+- 是 Ubuntu 的包管理工具 apt 的图形化前端。
 - 集成了很多一键安装的软件包，eg: LAMP 解决包依赖的问题。
-- 这里可以先在系统Software Center内安装这个软件
-- tips: 注意此软件打开时terminal中无法使用apt-get
+- 这里可以先在系统 Software Center 内安装这个软件
+- tips: 注意此软件打开时 terminal 中无法使用 apt-get
 
 ```bash
 E: Could not get lock /var/lib/dpkg/lock - open (11: Resource temporarily unavailable)
@@ -48,21 +48,21 @@ E: Unable to lock the administration directory (/var/lib/dpkg/), is another proc
 
 ### 3. 输入法：搜狗/Google输入法（Fcitx系列）
 
-- 在synaptic中搜索*googlepinyin*即可安装
+- 在 synaptic 中搜索*googlepinyin*即可安装
 
 ### 4. 浏览器：Firefox/Chromium
 
-- 还未安装Chromium时使用火狐，火狐的flash插件可以在软件商店中心下载安装解决
+- 还未安装 Chromium 时使用火狐，火狐的 flash 插件可以在软件商店中心下载安装解决
 
-- 解决google无法访问 [参考知乎](http://www.zhihu.com/question/21245060/answer/27201877)
+- 解决 google 无法访问 [参考知乎](http://www.zhihu.com/question/21245060/answer/27201877)
 
 > 1. 修改DNS/host：更改系统文件，可能出现莫名奇妙的问题
 > 2. GoAgent + [SwitchySharp](http://www.baidu.com/s?&wd=SwitchySharp)：GoAgent不稳定
 > 3. [红杏](http://botey.cn/UPLOAD/All_Files/Chrome_Red.rar)：付费，但是基础功能提高Google的访问，足以。
 > tips：此时都不能从Google应用商店下载，只能先下载再拖入chromium安装
 
-- 解决flash
-Pepper Flash Player，一个来自Google更安全更稳定的版本的Flash Player
+- 解决 flash
+Pepper Flash Player，一个来自 Google 更安全更稳定的版本的 Flash Player
 
 ```bash
 sudo apt-get install pepperflashplugin-nonfree
@@ -71,7 +71,7 @@ sudo update-pepperflashplugin-nonfree --install
 
 ### 5. 系统优化：[Ubuntu Tweak](http://ubuntu-tweak.com/)
 
-- 国人TualatriX开发的ubuntu平台下的优化大师，简单易用
+- 国人 TualatriX 开发的 ubuntu 平台下的优化大师，简单易用
 
 - 可以设置字体/清理垃圾/查看软件
 
@@ -96,9 +96,9 @@ nautilus -q
 
 ### 3. 字体/语言
 
-- 系统语言使用English，默认字体看起来就很舒服
+- 系统语言使用 English，默认字体看起来就很舒服
 
-- 浏览器中的字体实在太难看，下载[微软雅黑字体](http://www.baidu.com/s?&wd=微软雅黑字体) -> 在浏览器中选择相应字体+chrome扩展
+- 浏览器中的字体实在太难看，下载[微软雅黑字体](http://www.baidu.com/s?&wd=微软雅黑字体) -> 在浏览器中选择相应字体+chrome 扩展
 
 ### 4. 使用开源字体库文泉驿的微黑字体
 
@@ -110,7 +110,7 @@ sudo apt-get install ttf-wqy-microhei
 
 2) 下载安装[Ubuntu Tweak](http://ubuntu-tweak.com/)
 
-原系统设置中没有找到修改字体的地方，使用Ubuntu Tweak：调整－>字库中，将默认字体、桌面字体等做修改
+原系统设置中没有找到修改字体的地方，使用 Ubuntu Tweak：调整－>字库中，将默认字体、桌面字体等做修改
 
 ![](//o7mw3gkkh.qnssl.com/images/2016/1487949759355.png)
 

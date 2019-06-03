@@ -13,8 +13,8 @@ description:
 ## 前言：搭建博客的几大要素
 
 - 一个域名（即你的博客的网址，这里选用顶级免费域名.tk）
-- 一个服务器（即博客的代码存放的地方，这里选用github）
-- 一个Blog生成工具（这里选用jekyll，类似WordPress）
+- 一个服务器（即博客的代码存放的地方，这里选用 github）
+- 一个 Blog 生成工具（这里选用 jekyll，类似 WordPress）
 
 ## 第一部分：使用GitHub Pages快速生成博客
 
@@ -23,9 +23,9 @@ description:
 
 Git，一个非常强大的版本管理工具。
 
-Github则是一个基于Git的日益流行的开源项目托管库，也就是你的“代码仓库”（repository）。
+Github 则是一个基于 Git 的日益流行的开源项目托管库，也就是你的“代码仓库”（repository）。
 
-你可以在本地或者网上对自己的代码进行修改，而Github就是一个将你对代码的任何修改和更改说明（commit）进行同步的一个工具，并且可以进行版本管理。在我们搭建博客的过程中，它就扮演着一个“云仓库”服务器的角色，存放我们的博客代码。
+你可以在本地或者网上对自己的代码进行修改，而 Github 就是一个将你对代码的任何修改和更改说明（commit）进行同步的一个工具，并且可以进行版本管理。在我们搭建博客的过程中，它就扮演着一个“云仓库”服务器的角色，存放我们的博客代码。
 
 ### 二、Github的安装和配置
 
@@ -36,9 +36,9 @@ Github则是一个基于Git的日益流行的开源项目托管库，也就是�
 
 [[https://lh4.googleusercontent.com/-muAVO81BsfM/Ukwf1vepLzI/AAAAAAAAAFc/20AHhLdbK8U/s0/GIT.jpg]]
 
-4. GitHub是客户端，点击登陆，输入你先前注册的帐号密码
-5. Git Shell是Git的命令行，类似于window下的CMD
-6. 在Shell里面配置本地信息，分别输入你的github帐号和邮箱：
+4. GitHub 是客户端，点击登陆，输入你先前注册的帐号密码
+5. Git Shell 是 Git 的命令行，类似于 window 下的 CMD
+6. 在 Shell 里面配置本地信息，分别输入你的 github 帐号和邮箱：
 
 ```
 git config --global user.name "Your Name Here"# Sets the default name for git to use when you commit
@@ -46,7 +46,7 @@ git config --global user.name "Your Name Here"# Sets the default name for git to
 git config --global user.email "your_email@example.com"# Sets the default email for git to use when you commit
 ```
 
-更多关于Github的设置可以看[这里](http://www.cnblogs.com/sprying/p/3276984.html)
+更多关于 Github 的设置可以看[这里](http://www.cnblogs.com/sprying/p/3276984.html)
 
 ### 三、使用Github Pages生成博客
 
@@ -72,9 +72,9 @@ git config --global user.email "your_email@example.com"# Sets the default email 
 
 ![](https://lh3.googleusercontent.com/-465J4njURXw/Ukww9gZE8PI/AAAAAAAAAG4/2YfW-sTvMWI/s450/%E5%88%9B%E5%BB%BArepository4.jpg)
 
-5、然后进入Github自带的markdown编辑器进行编辑，你可以随意修改写上几句自己的话。然后点击右下角的绿色按钮`Continue to Layouts`。
+5、然后进入 Github 自带的 markdown 编辑器进行编辑，你可以随意修改写上几句自己的话。然后点击右下角的绿色按钮`Continue to Layouts`。
 
-6、然后你可以选择一个自己喜欢的主题，点击Publish就可以生成属于你自己的博客啦！
+6、然后你可以选择一个自己喜欢的主题，点击 Publish 就可以生成属于你自己的博客啦！
 
 7、试着在地址栏输入http://yourname.github.io/就可以进入你刚刚创建的博客，比如我的就是[http://liqing215.github.io/](http://liqing215.github.io/)
 
@@ -86,29 +86,29 @@ git config --global user.email "your_email@example.com"# Sets the default email 
 
 #### 4.1 利用GitHub图形界面
 
-1、跟上面一样，在网站上新建一个repository，这里我们把名字命名为myBlog，（其实随意啦）
+1、跟上面一样，在网站上新建一个 repository，这里我们把名字命名为 myBlog，（其实随意啦）
 
-2、新建好到这个界面的时候，打开你的GitHub软件，刷新一下你就可以在列表里看到你新建的那个repository了。
+2、新建好到这个界面的时候，打开你的 GitHub 软件，刷新一下你就可以在列表里看到你新建的那个 repository 了。
 
 ![](https://lh5.googleusercontent.com/-hTOYtR5YD2E/Ukw5VGhg8qI/AAAAAAAAAHo/ysaYhKsb9Ic/s450/HTTP+SSH.jpg)
 
 3、此时你就可以把网上的仓库加载到本地：
 
-一种非常简单的方法是点击列表中repository的右边有个clone按钮，点击之后等待下载，然后右键可以选择open in explorer在资源管理器中打开。
+一种非常简单的方法是点击列表中 repository 的右边有个 clone 按钮，点击之后等待下载，然后右键可以选择 open in explorer 在资源管理器中打开。
 
-在资源管理器中你可以新建文件啊，更改文件啊，随便进行任何修改之后回到GitHub你会发现它已经感应到了。
+在资源管理器中你可以新建文件啊，更改文件啊，随便进行任何修改之后回到 GitHub 你会发现它已经感应到了。
 
 ![](https://lh5.googleusercontent.com/-03kwuSLa5fg/Ukw6OzSVIBI/AAAAAAAAAH0/lPmjGm3-Fzg/s450/local+update.jpg)
 
-之后点击上方的publish按钮就可以把本地的更改发布上去了，这里publish的概念应该就是发布一个新版本，在右边它会让你填写commit，应该是对此版本的一个说明。
+之后点击上方的 publish 按钮就可以把本地的更改发布上去了，这里 publish 的概念应该就是发布一个新版本，在右边它会让你填写 commit，应该是对此版本的一个说明。
 
 #### 4.2 利用Git Shell命令行
 
-1、也可以选择在Shell下完成整个过程，虽然比较麻烦，但是有一种程序员的感觉有木有：
+1、也可以选择在 Shell 下完成整个过程，虽然比较麻烦，但是有一种程序员的感觉有木有：
 
 ![](https://lh5.googleusercontent.com/-hTOYtR5YD2E/Ukw5VGhg8qI/AAAAAAAAAHs/CnHE_IV0TP0/s450/HTTP+SSH.jpg)
 
-2、在上图中可以看到在Shell中新建一个仓库的完整命令：
+2、在上图中可以看到在 Shell 中新建一个仓库的完整命令：
 
 ```
 makdir ~/hello-world    //创建一个项目hello-world

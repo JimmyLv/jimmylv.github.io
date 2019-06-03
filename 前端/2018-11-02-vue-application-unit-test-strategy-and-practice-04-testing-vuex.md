@@ -8,7 +8,7 @@ published: True
 
 ## 本文的目标
 
-2.2 在Vue应用的单元测试中，对 Vuex store 该如何测试？如何测试与 Vue 组件之间的交互？
+2.2 在 Vue 应用的单元测试中，对 Vuex store 该如何测试？如何测试与 Vue 组件之间的交互？
 
 ```md
 // Given
@@ -226,7 +226,7 @@ it('当按钮被点击时候调用“actionClick”的 action', () => {
 })
 ```
 
-需要注意的是，在这里我们是把 Vuex store 传递给一个 localVue，而不是传递给基础的 Vue 构造函数。这是因为我们不想影响到全局的 Vue 构造函数，如果直接使用 `Vue.use(Vuex)` 会让Vue 的原型上会增加 $store 属性从而影响到其他的单元测试。而 localVue 则是一个独立作用域的 Vue 构造函数，我们可以对其进行任意的改动。
+需要注意的是，在这里我们是把 Vuex store 传递给一个 localVue，而不是传递给基础的 Vue 构造函数。这是因为我们不想影响到全局的 Vue 构造函数，如果直接使用 `Vue.use(Vuex)` 会让 Vue 的原型上会增加 $store 属性从而影响到其他的单元测试。而 localVue 则是一个独立作用域的 Vue 构造函数，我们可以对其进行任意的改动。
 
 当然咯，除了 mock 掉 actions，Vuex store 里面的任何内容我们都可以将其模拟出来，比如 state 或者 getters：
 
@@ -279,7 +279,7 @@ it('在app中渲染价格和“state.inputValue”', () => {
 * [x] ### 如何对 Vuex 进行单元测试
 * [x] ### Vue组件和Vuex store的交互  
 
-**## Vue应用测试策略**
+**## Vue 应用测试策略**
 
 * [ ] ### 单元测试的特点及其位置
 * [ ] ### 单元测试的关注点

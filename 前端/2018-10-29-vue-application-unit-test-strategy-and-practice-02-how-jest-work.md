@@ -8,7 +8,7 @@ published: True
 
 ## 本文的目标
 
-1. 在 TDD 做完 Tasking 列完实例化数据之后，完全没有UT基础不知道该怎么写单元测试？
+1. 在 TDD 做完 Tasking 列完实例化数据之后，完全没有 UT 基础不知道该怎么写单元测试？
 
 ```md
 // Given
@@ -71,13 +71,13 @@ describe('Math module', () => {
 
 麻雀虽小五脏俱全，在上面的例子当中，我们可以看到很多的测试元素，下面将会一一介绍：
 
-首先我们看到的是一个由 `it` 包裹的测试主体最小单元，采用了Given When Then的经典格式，我们常常称之为测试三部曲，也可以解释为 3A 即：
+首先我们看到的是一个由 `it` 包裹的测试主体最小单元，采用了 Given When Then 的经典格式，我们常常称之为测试三部曲，也可以解释为 3A 即：
 
 GWT | 3A |说明
 --|--|--
 **Given**|Arrange|准备测试测试数据，有时可以抽取到 `beforeEach`
 **When** |Act|采取行动，一般来说就是调用相应的模块执行对应的函数或方法
-**Then** |Assert|断言，这时需要借助的就是Matchers的能力，Jest还可以扩展自己的Matcher
+**Then** |Assert|断言，这时需要借助的就是 Matchers 的能力，Jest 还可以扩展自己的 Matcher
 
 在 `expect` 后面的  `toBe`称之为 Matcher，是断言时的判断语句以验证正确性 ✅，在后面的文章中我们还会接触更多 Matchers，甚至可以扩展一些特别定制的 Matchers。
 
@@ -231,7 +231,7 @@ test('the data is peanut butter', async () => {
 
 Async/Await 语法糖在业务代码当中就特别好使了，好处不多说直接看得见：原本需要 `done()` 或 `then()` 的地方都不再混乱，又一次回归到了正常的 Given/When/Then 三段式套路，让测试代码变得非常清晰易读。唯一需要注意的是， 额外的`expect.assertions(number)` 其实是验证在测试期间所调用的断言数量，这在测试多层异步代码时很有用，以确保实际调用回调中的断言次数。
 
-意犹未尽吗？更加Jest相关的内容可以查看这篇文章 [Testing JavaScript with Jest](https://flaviocopes.com/jest/)，与此同时具体的 API 可以参考[官方文档](https://facebook.github.io/jest/)。
+意犹未尽吗？更加 Jest 相关的内容可以查看这篇文章 [Testing JavaScript with Jest](https://flaviocopes.com/jest/)，与此同时具体的 API 可以参考[官方文档](https://facebook.github.io/jest/)。
 
 ## 未完待续……
 
@@ -254,7 +254,7 @@ Async/Await 语法糖在业务代码当中就特别好使了，好处不多说�
 * [ ] ### 如何对 Vuex 进行单元测试
 * [ ] ### Vue组件和Vuex store的交互  
 
-**## Vue应用测试策略**
+**## Vue 应用测试策略**
 
 * [ ] ### 单元测试的特点及其位置
 * [ ] ### 单元测试的关注点

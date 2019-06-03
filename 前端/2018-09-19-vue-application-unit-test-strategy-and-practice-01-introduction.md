@@ -10,19 +10,19 @@ published: True
 
 本文主要尝试解决三个问题：
 
-1. 在 TDD 做完Tasking列完实例化数据之后，完全没有UT基础不知道该怎么写单元测试？
-2. 在Vue应用的单元测试中，对UI组件和vuex store等测试的区别有何不同？颗粒度该细到什么程度？
+1. 在 TDD 做完 Tasking 列完实例化数据之后，完全没有 UT 基础不知道该怎么写单元测试？
+2. 在 Vue 应用的单元测试中，对 UI 组件和 vuex store 等测试的区别有何不同？颗粒度该细到什么程度？
 3. 测试收益如何最大化，如何配置高性价比的测试策略，即什么地方到底该花力气测试，什么地方又可以暂且放一放？
 
 不谈论的包括：
 
-- ATT 验收测试 或 E2E 端到端测试，这个是我想进一步探索的话题，特别是在TDD的语境下。[^322](https://github.com/JimmyLv/jimmylv.github.io/issues/322)
-- 为什么要 TDD？但是我会讲为什么要 UT 单元测试。测试和TDD是两码事，而光是自动化测试的好处就已经足够多，但是如何做到更好的自动化和持续集成，那就需要TDD来指引方向。
-- Snapshot Testing 快照测试，其实我是很认可快照这种形式，但需要改进其工作流，至少结合Image Snapshot和Storybook等工具，甚至更应该放到CI上去。[^311](https://github.com/JimmyLv/jimmylv.github.io/issues/311)
+- ATT 验收测试 或 E2E 端到端测试，这个是我想进一步探索的话题，特别是在 TDD 的语境下。[^322](https://github.com/JimmyLv/jimmylv.github.io/issues/322)
+- 为什么要 TDD？但是我会讲为什么要 UT 单元测试。测试和 TDD 是两码事，而光是自动化测试的好处就已经足够多，但是如何做到更好的自动化和持续集成，那就需要 TDD 来指引方向。
+- Snapshot Testing 快照测试，其实我是很认可快照这种形式，但需要改进其工作流，至少结合 Image Snapshot 和 Storybook 等工具，甚至更应该放到 CI 上去。[^311](https://github.com/JimmyLv/jimmylv.github.io/issues/311)
 
 下面我就来结合具体场景，进一步实例化这些问题，举几个🌰：
 
-1. 在 TDD 做完Tasking列完实例化数据之后，完全没有UT基础不知道该怎么写单元测试？
+1. 在 TDD 做完 Tasking 列完实例化数据之后，完全没有 UT 基础不知道该怎么写单元测试？
 
 ```md
 // Given
@@ -35,7 +35,7 @@ published: True
 他能够学会Jest中测试异步的几种方式
 ```
 
-2. 在Vue应用的单元测试中，对UI组件和vuex store等测试的区别有何不同？颗粒度该细到什么程度？
+2. 在 Vue 应用的单元测试中，对 UI 组件和 vuex store 等测试的区别有何不同？颗粒度该细到什么程度？
 
 ```md
 // Given
@@ -50,7 +50,7 @@ published: True
 他能够测试组件如何正确dispatch action以及action中如何做异步操作
 ```
 
-3. Vue项目中测试收益如何最大化，如何配置高性价比的测试策略，即什么地方到底该花力气测试，什么地方又可以暂且放一放？
+3. Vue 项目中测试收益如何最大化，如何配置高性价比的测试策略，即什么地方到底该花力气测试，什么地方又可以暂且放一放？
 
 ```md
 // Given
@@ -62,7 +62,7 @@ published: True
 他能够在项目背景下合理配置单元测试的测试策略
 ```
 
-于是乎，这就是本系列文章的大纲，先放出来给大家一个对于Vue应用单元测试的全局观：
+于是乎，这就是本系列文章的大纲，先放出来给大家一个对于 Vue 应用单元测试的全局观：
 
 ```md
 ## 单元测试基础
@@ -149,15 +149,15 @@ published: True
 一个好的测试框架，Jest 的几大好处可以涵盖为：
 
 - Fast 天下武功，唯快不破。确实很快，虽然实测下来跟 [Mocha 新版本][5]还是慢了些，以后找个机会再测一次。
-- Opinionated 不需要你做出选择和配置，就能提供所有的东西，比如Mock（干掉Sinon）、Test Runner（干掉Karma）、Matcher（干掉Chai）、Test Coverage（内置istanbul）
+- Opinionated 不需要你做出选择和配置，就能提供所有的东西，比如 Mock（干掉 Sinon）、Test Runner（干掉 Karma）、Matcher（干掉 Chai）、Test Coverage（内置 istanbul）
 - Watch Mode 守护模式。非常注重开发者体验，能够在编码的时候帮助我们快速获得测试结果的反馈。
-- Snapshot Testing 快照测试。这是值得争议的一点，前文也提到过会专门开个issue来讨论，在此不再赘述。
+- Snapshot Testing 快照测试。这是值得争议的一点，前文也提到过会专门开个 issue 来讨论，在此不再赘述。
 
 ### 最后，总结一下 Jest
 
-Jest 作为一个测试框架，其最大的特点就在于它是一个非常有效的解决方案，不需要与其他测试库交互来执行它的工作。与此同时 Jest 非常注重[开发者体验][6]，这一点也是特别值得欣赏，现在市面上关注开发者（“人”）体验的开发框架和工具实在不多，而Jest Watch模式的核心就在于快速获得反馈，虽然我没在命令行使用而是WebStorm但亦可以与之结合。
+Jest 作为一个测试框架，其最大的特点就在于它是一个非常有效的解决方案，不需要与其他测试库交互来执行它的工作。与此同时 Jest 非常注重[开发者体验][6]，这一点也是特别值得欣赏，现在市面上关注开发者（“人”）体验的开发框架和工具实在不多，而 Jest Watch 模式的核心就在于快速获得反馈，虽然我没在命令行使用而是 WebStorm 但亦可以与之结合。
 
-ps: 除此之外，还有很多开发者体验亦值得细细品味与发现，特别是Jest本身来自Facebook的工程化支持也是特别棒的，这个讲述如何开发Jest的官方视频值得一看：[Building High-Quality JavaScript Tools][7]。
+ps: 除此之外，还有很多开发者体验亦值得细细品味与发现，特别是 Jest 本身来自 Facebook 的工程化支持也是特别棒的，这个讲述如何开发 Jest 的官方视频值得一看：[Building High-Quality JavaScript Tools][7]。
 
 ## 未完待续……
 
@@ -180,7 +180,7 @@ ps: 除此之外，还有很多开发者体验亦值得细细品味与发现，�
 * [ ] ### 如何对 Vuex 进行单元测试
 * [ ] ### Vue组件和Vuex store的交互  
 
-**\## Vue应用测试策略**
+**\## Vue 应用测试策略**
 
 * [ ] ### 单元测试的特点及其位置
 * [ ] ### 单元测试的关注点

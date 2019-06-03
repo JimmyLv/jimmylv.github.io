@@ -15,11 +15,11 @@ Tag: [Spring](http://kielczewski.eu/tag/Spring/), [Spring Boot](http://kielczews
 
 > I'm really impressed with [Spring Boot](http://projects.spring.io/spring-boot/). Its main goal is to take away most of this boilerplate configuration that was needed before and to replace it with some sensible defaults. One might say it's taking the control away from the developer and giving it to the army of fairies. That's probably right, but in this case the fairies are here to help, and moreover they can easily be cast away from doing particular thing. It's just a matter of doing it yourself as before, and thanks to `@ConditionalOn...` behaviour Spring Boot's auto configuration will not fire up.
 
-我对[Spring Boot](http://projects.spring.io/spring-boot/)的印象非常深刻。它的主要目的就是为了减少以往所需要的大部分初始化配置，从而采用一些默认的设置来代替。可能有人会说，这将会使开发者失去控制，而将控制权让给了一些黑暗魔法。这可能是正确的，但在这种情况下，仙子却是来帮忙的，而且他们也可以很容易得从这些特定的事情脱离开来。它只是像以往一样，做你亲历而为的那些事情，与此同时，通过`@ConditionalOn...`可以设置Spring Boot的自动配置的启动。
+我对[Spring Boot](http://projects.spring.io/spring-boot/)的印象非常深刻。它的主要目的就是为了减少以往所需要的大部分初始化配置，从而采用一些默认的设置来代替。可能有人会说，这将会使开发者失去控制，而将控制权让给了一些黑暗魔法。这可能是正确的，但在这种情况下，仙子却是来帮忙的，而且他们也可以很容易得从这些特定的事情脱离开来。它只是像以往一样，做你亲历而为的那些事情，与此同时，通过`@ConditionalOn...`可以设置 Spring Boot 的自动配置的启动。
 
 > In the following article I will explore the way of employing Spring Boot to create a very basic, restful web service. As usual the source code can be found [here on GitHub](https://github.com/bkielczewski/example-spring-boot-rest) to play around. 
 
-在接下来的文章里，我将会尝试使用Spring Boot，来创建一个基本的RESTful Web服务。像往常一样，源代码放在[GitHub](https://github.com/bkielczewski/example-spring-boot-rest)上。
+在接下来的文章里，我将会尝试使用 Spring Boot，来创建一个基本的 RESTful Web 服务。像往常一样，源代码放在[GitHub](https://github.com/bkielczewski/example-spring-boot-rest)上。
 
 ## Service overview | 服务概述
 
@@ -28,10 +28,10 @@ Tag: [Spring](http://kielczewski.eu/tag/Spring/), [Spring Boot](http://kielczews
 > * Given there exists a user with same id, it should not store, but return error status with the message.
 > * Given there are previously stored users, it should be able to retrieve the list of them.
 
-目标就是构建一个简单的web服务，需求如下：
+目标就是构建一个简单的 web 服务，需求如下：
 
-- 给一个具有ID的不存在的用户，这将在数据库中存储一个新的用户，并立即返回存储的对象。
-- 给一个具有ID的已存在的用户，将不会存储，而是返回错误码信息。
+- 给一个具有 ID 的不存在的用户，这将在数据库中存储一个新的用户，并立即返回存储的对象。
+- 给一个具有 ID 的已存在的用户，将不会存储，而是返回错误码信息。
 - 给定已存储的用户，将拿到用户的列表。
 
 
@@ -71,7 +71,7 @@ Tag: [Spring](http://kielczewski.eu/tag/Spring/), [Spring Boot](http://kielczews
 
 > The relevant thing here is `<parent>` tag - we will be inheriting from Spring Boot's parent POM. It's not absolutely necessary, however it provides a very useful thing which is the dependency management. It has already defined many artifacts we might find useful to use, together with their recent versions supported by Spring, so it really saves up the hassle of tracking them down yourself. We just need to override `java.version` property, which defaults to 1.6, and add version property for [Guava](https://code.google.com/p/guava-libraries/), which is a nice thing to have in handy - but both of these are a matter of personal preference.
 
-需要关注的就是`<parent>`标签——我们将会继承Spring Boot父类的POM。当然这不是必须的，但是这有一个非常有用的好处就是依赖管理。它已经帮我们定义了可能会用到的很多有用的东西，而且都是可以被Spring支持的最新版本，所以真的是解决了很多需要自己搜寻的麻烦事。我们需要重写`java.version`属性，默认是1.6，然后添加[Guava](https://code.google.com/p/guava-libraries/)版本信息，这都是一些非常好用的东西。——但这纯属个人喜好。
+需要关注的就是`<parent>`标签——我们将会继承 Spring Boot 父类的 POM。当然这不是必须的，但是这有一个非常有用的好处就是依赖管理。它已经帮我们定义了可能会用到的很多有用的东西，而且都是可以被 Spring 支持的最新版本，所以真的是解决了很多需要自己搜寻的麻烦事。我们需要重写`java.version`属性，默认是 1.6，然后添加[Guava](https://code.google.com/p/guava-libraries/)版本信息，这都是一些非常好用的东西。——但这纯属个人喜好。
 
 > Next thing to do will be to specify the dependencies, which will decide upon the technology stack we will be using:
 
@@ -139,19 +139,19 @@ Tag: [Spring](http://kielczewski.eu/tag/Spring/), [Spring Boot](http://kielczews
 
 > When it comes to Spring Boot its functions are spread between the starter modules. The `spring-boot-starter` is the main one, followed by `spring-boot-starter-test` which pulls some nice tools for unit testing including JUnit4 and Mockito. Next comes `spring-boot-starter-web` that pulls Spring MVC dependencies, but also Jackson which will be used for JSON, and most importantly Tomcat, which act as embedded Servlet container. Finally `spring-boot-starter-data-jpa` which is responsible for setting up Spring Data JPA, and comes bundled with Hibernate.
 
-当涉及到Spring Boot的时候，它的功能就是连接各个starter模块。最主要的就是`spring-boot-starter`，然后是`spring-boot-starter-test`，包含了一些非常好用的单元测试工具，比如JUnit4和Mockito。接下来就是`spring-boot-starter-web`，包含了Spring MVC的相关依赖，Jackson将在JSON数据结构中用到。最重要单独的就是Tomcat，它将作为一个内嵌的Servlet容器。最后就是`spring-boot-starter-data-jpa`，用来设置Spring Data JPA，和Hibernate绑定在一起。
+当涉及到 Spring Boot 的时候，它的功能就是连接各个 starter 模块。最主要的就是`spring-boot-starter`，然后是`spring-boot-starter-test`，包含了一些非常好用的单元测试工具，比如 JUnit4 和 Mockito。接下来就是`spring-boot-starter-web`，包含了 Spring MVC 的相关依赖，Jackson 将在 JSON 数据结构中用到。最重要单独的就是 Tomcat，它将作为一个内嵌的 Servlet 容器。最后就是`spring-boot-starter-data-jpa`，用来设置 Spring Data JPA，和 Hibernate 绑定在一起。
 
 > Additional dependencies include Hibernate Validator, as we will be doing some validation. HSQLDB will be the database engine, chosen here because it can be easily embedded and has in memory database feature which is handy for tutorial purposes. Notice I haven't specified versions for these - they are managed by `spring-boot-starter-parent`.
 
-额外的依赖还包括Hibernate Validator，因为我们将会有一些数据验证。我们选用HSQLDB作为数据库引擎，因为它很容易被嵌入本项目，而且内存数据库的特性也对本教程的目标非常有用。需要注意的是，我并没有特意指定它们的版本，这些都会被`spring-boot-starter-parent`所管理。
+额外的依赖还包括 Hibernate Validator，因为我们将会有一些数据验证。我们选用 HSQLDB 作为数据库引擎，因为它很容易被嵌入本项目，而且内存数据库的特性也对本教程的目标非常有用。需要注意的是，我并没有特意指定它们的版本，这些都会被`spring-boot-starter-parent`所管理。
 
 > The rest is something of my personal preference - Guava, because it's cool ;) and JSR-330 API to replace `@Autowired` annotation with `@Inject`, which I like better.
 
-剩下的纯属我的个人爱好——Guava，因为它非常之酷！JSR-330的API可以将`@Autowired`注解替换成我更喜欢的`@Inject`。
+剩下的纯属我的个人爱好——Guava，因为它非常之酷！JSR-330 的 API 可以将`@Autowired`注解替换成我更喜欢的`@Inject`。
 
 > Last thing that's left is to add Spring Boot Maven Plugin:
 
-最后一件事情就是Spring Boot的Maven插件。
+最后一件事情就是 Spring Boot 的 Maven 插件。
 
 ```xml
 <build>
@@ -181,7 +181,7 @@ Tag: [Spring](http://kielczewski.eu/tag/Spring/), [Spring Boot](http://kielczews
 
 > The execution will start by firing up the main() method, so let's write a class to hold it:
 
-程序执行需要一个main()方法，所以让我们写一个类包含它：
+程序执行需要一个 main()方法，所以让我们写一个类包含它：
 
 ```java
 @Configuration
@@ -223,7 +223,7 @@ public class Application extends SpringBootServletInitializer {
 
 > Let's start with writing a test case for creating a new user through the UserController.
 
-让我们从一个测试案例开始，通过UserController来创建一个新用户。
+让我们从一个测试案例开始，通过 UserController 来创建一个新用户。
 
 ```java
 @RunWith(MockitoJUnitRunner.class)
@@ -264,11 +264,11 @@ public class UserControllerTest {
 
 > Both `MockitoJUnitRunner.class` and `@Mock` annotation come from Mockito and their purpose is to inject mocked object instead of real implementation of UserService interface. Thanks to this, without the need for a real implementation of `UserService`, I can simulate returning a stored `User` object that comes from the service and verify that it will be exactly the object the `UserController` is going to return. I also check that the `UserService` is going to be called exactly once.
 
-`MockitoJUnitRunner.class`和`@Mock`注解都来自于Mockito，用于注入已经Mock的对象，就不用实现真正的`UserService`了。我可以模拟从Service返回一个已经存储的`User`对象，然后验证它是否是`UserController`将要返回的那个对象，同时验证`UserService`是否被调用过一次。
+`MockitoJUnitRunner.class`和`@Mock`注解都来自于 Mockito，用于注入已经 Mock 的对象，就不用实现真正的`UserService`了。我可以模拟从 Service 返回一个已经存储的`User`对象，然后验证它是否是`UserController`将要返回的那个对象，同时验证`UserService`是否被调用过一次。
 
 > From the REST point of view it will hook up to the POST http method of the `/user` resource.
 
-从REST的角度来说，它将会和`/user` resource的POST方法联系起来。
+从 REST 的角度来说，它将会和`/user` resource 的 POST 方法联系起来。
 
 > So let's implement it:
     
@@ -310,7 +310,7 @@ public class UserController {
 
 > How about UserService and User then? For the test to pass we need only an interface for UserService, because it is not even created, but merely mocked. It should take `User` objects into the `save()` methods which will be used to save them, then it should return saved `User` object back to the caller.
 
-对测试来说，只需要传一个UserService的接口即可，因为它可以被Mock而并不用真正创建出来。接下来，UserService应该把`User`对象传入`save()`方法中保存起来，然后将`User`对象返回给调用者。
+对测试来说，只需要传一个 UserService 的接口即可，因为它可以被 Mock 而并不用真正创建出来。接下来，UserService 应该把`User`对象传入`save()`方法中保存起来，然后将`User`对象返回给调用者。
 
 ```java
 public interface UserService {
@@ -342,7 +342,7 @@ public class User {
 
 > Where `@NotNull` and `@Size` are validation constraints the object will be checked against while being deserialized from the request body.
 
-`@NotNull`和`@Size`就是验证对象的一些限制，它将会检查从request请求中反序列化出来的对象内容。
+`@NotNull`和`@Size`就是验证对象的一些限制，它将会检查从 request 请求中反序列化出来的对象内容。
 
 ## Adding UserService | 添加 UserService
 
@@ -385,11 +385,11 @@ public class UserServiceImplTest {
 
 > The assumption is that the `UserService` will delegate actual storage to the `UserRepository`, which is mocked, and later stubbed to return a stored `User` object. Then I'm checking whether the object returned from `save()` is the stored one, and that `UserRepository` is called exactly once.
 
-假设`UserService`将会使用`UserRepository`来进行实际的数据存储，首先将它Mock，然后Stub返回一个已存储的`User`对象。然后我就可以验证从`save()`返回回来的对象是否就是被存储的那个`User`，还有就是`UserRepository`有没有被实际调用一次。
+假设`UserService`将会使用`UserRepository`来进行实际的数据存储，首先将它 Mock，然后 Stub 返回一个已存储的`User`对象。然后我就可以验证从`save()`返回回来的对象是否就是被存储的那个`User`，还有就是`UserRepository`有没有被实际调用一次。
 
 > As previously, at this point all we need is the interface for `UserRepository`, but thanks to Spring Data JPA it's also everything that we'll ever need for this project. The interface looks like this:
     
-像以前一样，我们需要做的就是一个`UserRepository`接口。而多亏了Spring Data JPA，已经为我们准备了项目所需要的所有东西。接口就像这样：
+像以前一样，我们需要做的就是一个`UserRepository`接口。而多亏了 Spring Data JPA，已经为我们准备了项目所需要的所有东西。接口就像这样：
 
 ```java
 public interface UserRepository extends JpaRepository<User, String> {
@@ -399,11 +399,11 @@ public interface UserRepository extends JpaRepository<User, String> {
 
 > It just extends `JpaRepository` generic interface with `User` and `String` as type parameters. The former indicates that there will be `User` objects in this repository, latter that it's primary key will be of the `String` type. The `save()` method we need is already there inherited, among other basic CRUD methods.
 
-只需要继承`JpaRepository`接口，将`User`和`String`作为类型参数就可以了。前者意味着将被存储到repository的是一个`User`对象，后者表示primary key是`String`类型。
+只需要继承`JpaRepository`接口，将`User`和`String`作为类型参数就可以了。前者意味着将被存储到 repository 的是一个`User`对象，后者表示 primary key 是`String`类型。
 
 > We won't need to implement this interface, because that's how Spring Data JPA works - it generates the implementation for us.
 
-我们不需要实现这个接口，因为这就是Spring Data JPA的作用——直接就为我们实现好了。
+我们不需要实现这个接口，因为这就是 Spring Data JPA 的作用——直接就为我们实现好了。
 
 > We need however to make the test to pass by implementing `UserService`:
 
@@ -459,7 +459,7 @@ public class User {
 
 > Notice the `@Entity`, `@Column`, and `@Id` annotations that appeared. The first one tells the object is a JPA entity. The second tells JPA how fields should be mapped to a column and what can be done with them - what the column name will be, whether it's allowed for a column to be updated or have null value. Whereas the `@Id` indicates a primary key for database record - it needs to be non null and unique, so our `User.id` fits here perfectly.
 
-注意`@Entity`、`@Column`和`@Id`注解，第一个表示这个对象是一个JPA Entity，第二个就是告诉JPA要如何将这些字段map到数据库里的每一列以及需要map的内容，比如每一列的名字和是否允许修改，还有就是是否可以为空。`@Id`注解就表示数据库所记录的primary key，这个字段不能为空，而且必须是唯一的，这样我们的`User.id`就完全无可挑剔了。
+注意`@Entity`、`@Column`和`@Id`注解，第一个表示这个对象是一个 JPA Entity，第二个就是告诉 JPA 要如何将这些字段 map 到数据库里的每一列以及需要 map 的内容，比如每一列的名字和是否允许修改，还有就是是否可以为空。`@Id`注解就表示数据库所记录的 primary key，这个字段不能为空，而且必须是唯一的，这样我们的`User.id`就完全无可挑剔了。
 
 ## Getting this to work | 让它跑起来
 
@@ -473,11 +473,11 @@ mvn spring-boot:run
 
 > And you should have the web service running on the default port from the current compiled sources.
 
-然后你就应该可以编译和运行这个Web Service了，运行在一个默认的端口。
+然后你就应该可以编译和运行这个 Web Service 了，运行在一个默认的端口。
 
 > Alternatively you can build and run the package:
 
-当然你也可以build和运行这个包：
+当然你也可以 build 和运行这个包：
 
 ```bash
 mvn package
@@ -508,7 +508,7 @@ curl -X POST -d '{ "id": "test_id", "password": "test_password" }' http://localh
 
 > Another requirement for our service is to prevent inserting users if another user already exists with the same id.
 
-另外一个需求就是，我们的Service能禁止插入已存在相同ID的用户。
+另外一个需求就是，我们的 Service 能禁止插入已存在相同 ID 的用户。
 
 > Lets add a test case to the `UserServiceTest`:
 
@@ -534,7 +534,7 @@ private void stubRepositoryToReturnExistingUser() {
 
 > That assumes we will ask `UserRepository` about existing user with the same id by calling its `findOne()` method. If such user will be found, the `UserAlreadyExistsException` should be thrown, and the `save()` method on the repository should never be called.
 
-假设我们通过相同id调用`UserRepository`的`findOne()`方法来查找已存在的用户。如果有用户被找到，那么将会抛出`UserAlreadyExistsException`异常，`save()`也就不会被调用了。
+假设我们通过相同 id 调用`UserRepository`的`findOne()`方法来查找已存在的用户。如果有用户被找到，那么将会抛出`UserAlreadyExistsException`异常，`save()`也就不会被调用了。
 
 > Now we need to change `save()` method in `UserService` implementation, that becomes:
 
@@ -555,15 +555,15 @@ public User save(final User user) {
 
 > It clearly has the logic the test requires. The `findOne(id)` method already exists in `UserRepository` and returns null if no object could be found.
 
-测试所需要的逻辑非常清晰，如果没有找到相应的对象，存在于`UserRepository`的`findOne(id)`方法就会返回null。
+测试所需要的逻辑非常清晰，如果没有找到相应的对象，存在于`UserRepository`的`findOne(id)`方法就会返回 null。
 
 > The web service will be working fine after that, but once `UserAlreadyExistsException` will be thrown, it will cause INTERNAL SERVER ERROR response for the client using it. We should make sure the response will be different, so the client can more clearly see the situation occurred.
 
-完成这些，这个Web Service就可以正常工作了。但是一旦抛出`UserAlreadyExistsException`，它将会向客户端返回`INTERNAL SERVER ERROR`。我们应该确保这种response是不一样的，所以客户端才可以比较清晰得知道发生了什么。
+完成这些，这个 Web Service 就可以正常工作了。但是一旦抛出`UserAlreadyExistsException`，它将会向客户端返回`INTERNAL SERVER ERROR`。我们应该确保这种 response 是不一样的，所以客户端才可以比较清晰得知道发生了什么。
 
 > Let's say it should be a response with CONFLICT status with a meaningful error message in the body. To do that we need to add `@ExceptionHandler` to the `UserController`:
 
-让我们返回一个`CONFLICT`状态码和一个有意义的Error信息，给`UserController`加上`@ExceptionHandler`：
+让我们返回一个`CONFLICT`状态码和一个有意义的 Error 信息，给`UserController`加上`@ExceptionHandler`：
 
 ```java
     @ExceptionHandler
@@ -581,4 +581,4 @@ public User save(final User user) {
 
 > I hope that was helpful to get a grasp on what it takes to do a simple web service the Spring Boot way. The implementation of the third requirement about returning all stored users could be a way to spend an evening instead of doing all the things normal people usually do on evenings. If not, take a peek at the [source code](https://github.com/bkielczewski/example-spring-boot-rest) I have prepared sacrificing mine for you.
 
-我希望这篇文章可以对你有所作用，帮助你理解如何使用Spring Boot创建一个简单的Web Service。第三个关于如何实现返回所有已保存用户的需求，你可以花上一个晚上去完成它，而不是像其他人一样过一个平淡的夜晚。如果没有的话，我已经为你准备好了[源代码](https://github.com/bkielczewski/example-spring-boot-rest)，尽情品尝。
+我希望这篇文章可以对你有所作用，帮助你理解如何使用 Spring Boot 创建一个简单的 Web Service。第三个关于如何实现返回所有已保存用户的需求，你可以花上一个晚上去完成它，而不是像其他人一样过一个平淡的夜晚。如果没有的话，我已经为你准备好了[源代码](https://github.com/bkielczewski/example-spring-boot-rest)，尽情品尝。

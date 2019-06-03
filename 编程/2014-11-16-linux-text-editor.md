@@ -10,22 +10,22 @@ description:
 
 ### 1. vi
 
-`:w`：Vi保存当前编辑文件，但并不退出
+`:w`：Vi 保存当前编辑文件，但并不退出
 
-`:w newfile`：此时Vi将把当前文件的内容保存到指定的newfile中，而原有文件保持不变
+`:w newfile`：此时 Vi 将把当前文件的内容保存到指定的 newfile 中，而原有文件保持不变
 
 `File exists (use ! to override)`
 
-`:w! newfile`此时，若用户真的希望用文件的当前内容替换newfile中原有内容，可强行写入
+`:w! newfile`此时，若用户真的希望用文件的当前内容替换 newfile 中原有内容，可强行写入
 
-`:q`：系统退出Vi返回到shell
+`:q`：系统退出 Vi 返回到 shell
 
 `No write since last change (use ! to overrides)`
-`:q!`：不想保存被修改后的文件而要强行退出Vi时，可放弃所作修改
+`:q!`：不想保存被修改后的文件而要强行退出 Vi 时，可放弃所作修改
 
-`:wq`：Vi将先保存文件，然后退出Vi返回到shell。
+`:wq`：Vi 将先保存文件，然后退出 Vi 返回到 shell。
 
-`:x`：该命令的功能同命令模式下的`ZZ`命令功能相同，若当前编辑的文件曾被修改过，则Vi保存该文件后退出，返回到shell；若当前编辑的文件没被修改过，则Vi直接退出, 返回到shell。
+`:x`：该命令的功能同命令模式下的`ZZ`命令功能相同，若当前编辑的文件曾被修改过，则 Vi 保存该文件后退出，返回到 shell；若当前编辑的文件没被修改过，则 Vi 直接退出, 返回到 shell。
 
 ### 2. gedit
 
@@ -38,7 +38,7 @@ sudo gedit /home/文档/av&gv
 
 `sudo nano /etc/hosts`
 
-完成后按ctrl+x退出，按y保存，回车，OK
+完成后按 ctrl+x 退出，按 y 保存，回车，OK
 
 ### 4. sed
 

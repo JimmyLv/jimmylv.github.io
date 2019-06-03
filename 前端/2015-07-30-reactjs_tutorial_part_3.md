@@ -7,7 +7,7 @@ published: True
 
 ---
 
-技术系列笔记均已迁移至GitBook，更多`React`的内容请到：[http://jimmylv.gitbooks.io/learning-react-js/content/reactjs_tutorial/reactjs_tutorial_part_1.html](http://jimmylv.gitbooks.io/learning-react-js/content/reactjs_tutorial/reactjs_tutorial_part_1.html)
+技术系列笔记均已迁移至 GitBook，更多`React`的内容请到：[http://jimmylv.gitbooks.io/learning-react-js/content/reactjs_tutorial/reactjs_tutorial_part_1.html](http://jimmylv.gitbooks.io/learning-react-js/content/reactjs_tutorial/reactjs_tutorial_part_1.html)
 
 # React.js Tutorial Part 3
 
@@ -15,19 +15,19 @@ published: True
 
 > Welcome to part 3 of my React.js/Express.js app tutorial. In this part we are going to actually take a deep dive into react and start hashing out the application's components. If you haven't already, please start the tutorial at [Part 1](http://www.joshfinnie.com/blog/reactjs-tutorial-part-1/)
 
-欢迎来到React.js/Express.js教程的第三部分。在这一部分我们将深入React并构建应用组件。如果还没有开始，请从[第一部分](http://www.joshfinnie.com/blog/reactjs-tutorial-part-1/)开始。
+欢迎来到 React.js/Express.js 教程的第三部分。在这一部分我们将深入 React 并构建应用组件。如果还没有开始，请从[第一部分](http://www.joshfinnie.com/blog/reactjs-tutorial-part-1/)开始。
 
 ## A React Component | 一个 React 组件
 
 > From the [React Documentation](https://facebook.github.io/react/docs/why-react.html), "React is all about building reusable components. In fact, with React the only thing you do is build components. Since they're so encapsulated, components make code reuse, testing, and separation of concerns easy." This is what drew me to React in the first place, coming from [Angular.js](https://angularjs.org/) the idea of components spoke to me. It seemed like React's components were the next logical step in the progression of Javascript's MVCs. Here we are going to try our hardest to stay true to the definition of a React Component and try to truly encapsulate a single idea of our web application per React component. First, let's see what this means in regards to our job board web application.
 
-根据[React文档](https://facebook.github.io/react/docs/why-react.html)所述：“React一切都是为了组件重用，事实上，使用React你唯一需要做的就是构建组件。由于封装性，组件使得代码具有可复用性，可测试性，并且易于分离。”这是React在最开始吸引我的地方，这在[Angular.js](https://angularjs.org/)中是从来没有的，看起来React组件是属于Javascript的MVCs模型的逻辑部分。我们将尽力保持React组件的定义，并尽量使web应用的每一个React组件都保持单一想法的封装性。首先，让我们看看这对于我们的「工作布告栏」程序意味着什么。
+根据[React文档](https://facebook.github.io/react/docs/why-react.html)所述：“React 一切都是为了组件重用，事实上，使用 React 你唯一需要做的就是构建组件。由于封装性，组件使得代码具有可复用性，可测试性，并且易于分离。”这是 React 在最开始吸引我的地方，这在[Angular.js](https://angularjs.org/)中是从来没有的，看起来 React 组件是属于 Javascript 的 MVCs 模型的逻辑部分。我们将尽力保持 React 组件的定义，并尽量使 web 应用的每一个 React 组件都保持单一想法的封装性。首先，让我们看看这对于我们的「工作布告栏」程序意味着什么。
 
 ## The Job Component | Job 组件
 
 > This first encapsulated part of our web application is going to be the job posting itself. Here we want to create a component that simply lists the information that we should have in an individual job post. To start, lets create a file for this react component and let's call it `Job.jsx` and put it in our `public/javascripts/scr/` folder:
 
-第一个封装的模块就是工作的发布功能，首先新建一个组件，简单列出所有的发布信息。让我们为React组件新建一个`Job.jsx`文件，放到`public/javascripts/scr/`文件夹：
+第一个封装的模块就是工作的发布功能，首先新建一个组件，简单列出所有的发布信息。让我们为 React 组件新建一个`Job.jsx`文件，放到`public/javascripts/scr/`文件夹：
 
 ```js
 var React = require('react');
@@ -59,13 +59,13 @@ React.render(
 
 > **Please note** we also changed the HTML element we are attaching our React app to from `example` to `job-post` so make sure to adjust your `index.jade` file to match. Running `gulp` and then serving your application, you should see a header title of "Job Title" instead of our "Hello World" text from the last couple of tutorials. Now let's add some information to this component and really make it look like a job posting!
 
-**请注意**，我们应该将HTML元素从`example`改成`job-post`，所以确保`index.jade`能够对应上。运行`gulp`然后启动应用，你可以看到标题从前两个教程中的"Hello World"变成了"Job Title"。选择让我们为这个添加一些信息，使之更像一个工作公告。
+**请注意**，我们应该将 HTML 元素从`example`改成`job-post`，所以确保`index.jade`能够对应上。运行`gulp`然后启动应用，你可以看到标题从前两个教程中的"Hello World"变成了"Job Title"。选择让我们为这个添加一些信息，使之更像一个工作公告。
 
 ### Adding Information to our Component | 为我们的组件添加信息
 
 > To add some useful information to our `Job` component, we want to create an "initial state" for the component. This over simplifies the task of getting data into your component, but it will work for us right now. In the `Job.jsx` file, we want to create a function called `getInitialState` and return a dictionary with the information we want our component to start with. Once we do that, we want to change our rendering element to use the initialized state. Below you will see what changes we made to `Job.jsx` to accomplish this:
 
-为了给我们的`Job`组件添加一些有用信息，我们需要为组件新建一个“初始状态”。这是在简化组件获取数据的任务，但是现在它为我们所用。在`Job.jsx`这个文件，我们新建一个`getInitialState`函数，然后返回一个字典，其中包括我们想要组件在最开始时所需要的一些信息。一旦我们完成这些，我们就可以使用初始state数据来改变渲染的原色。从以下的内容可以看到我们对`Job.jsx`所做的修改：
+为了给我们的`Job`组件添加一些有用信息，我们需要为组件新建一个“初始状态”。这是在简化组件获取数据的任务，但是现在它为我们所用。在`Job.jsx`这个文件，我们新建一个`getInitialState`函数，然后返回一个字典，其中包括我们想要组件在最开始时所需要的一些信息。一旦我们完成这些，我们就可以使用初始 state 数据来改变渲染的原色。从以下的内容可以看到我们对`Job.jsx`所做的修改：
 
 ```js
 var React = require('react');
@@ -101,7 +101,7 @@ module.exports = React.createClass({
 
 > Note that with the `getInitialState` function, the `render` function now has access to a useful state. We can cycle through the state to render the data in our app. Our web application should now look like this:
 
-可以注意到，通过`getInitialState`这个方法，`render`方法就操作一些有用的state数据。我们可以在app中循环使用state来渲染数据。现在的web应用：
+可以注意到，通过`getInitialState`这个方法，`render`方法就操作一些有用的 state 数据。我们可以在 app 中循环使用 state 来渲染数据。现在的 web 应用：
 
 ![](http://www.joshfinnie.com/assets/images/blog/filled-out-job-component.png)
 
@@ -113,7 +113,7 @@ module.exports = React.createClass({
 
 > In the `Jobs` component, we are going to map all the jobs to individual `Job` components, but for this part of the tutorial, we are still going to hard-code the data. First, we want to create an "initial state" that is going to mirror our future API call. This is done through the `getInitialState` function in our `Jobs` component. Looping over this data to render many components is easy in React.js, but not all that intuitive. We want to use the `map()` function in Javascript to map each "job" to the `Job component`. Below is what the final `Jobs.jsx` file looks like:
 
-在`Jobs`组件中，我们map出所有单独的`Job`组件。但是在教程的这个部分，我们依然会很难为数据编程。首先，我们要新建“初始化state数据”，看起来就像我们将来的API形式。为`Jobs`组件添加`getInitialState`方法，在React.js中循环渲染很多组件很容易，但也不完全靠直觉。我们想要在JavaScript中使用`map()`函数map将每一个"job"渲染到`Job`组件。以下是最终的`Jobs.jsx`：
+在`Jobs`组件中，我们 map 出所有单独的`Job`组件。但是在教程的这个部分，我们依然会很难为数据编程。首先，我们要新建“初始化 state 数据”，看起来就像我们将来的 API 形式。为`Jobs`组件添加`getInitialState`方法，在 React.js 中循环渲染很多组件很容易，但也不完全靠直觉。我们想要在 JavaScript 中使用`map()`函数 map 将每一个"job"渲染到`Job`组件。以下是最终的`Jobs.jsx`：
 
 ```js
 var React = require('react');
@@ -169,7 +169,7 @@ module.exports = React.createClass({
 
 > This allows us to clean up the `Job` component a little bit, most importantly switching from using `state` to `props` since we are now passing in the data to the `Job` component and not using our `getInitialState` function. Most of this is the same, but we made some small changes to the return function. First note the change from `class` to `className` due to some issue with React.js and how it handles the `class` namespace. Second, note we got rid of the `getInitialState` function since we now pass in the data through our `Jobs` component.
 
-这样使我们保证`Job`组件的整洁性，最重要的变化是将`state`换成了`props`，因为我们需要将数据传递到`Job`组件，而不是使用`getInitialState`方法。大部分都是一样的，但是我们在`return`方法中需要做出一点改变。首先，注意到`class`换成了`className`，这是由于React.js的一些issue，因为这涉及到`class`的命名空间。第二，注意到我们不需要`getInitialState`方法了，因为我们现在是从`Jobs`组件中拿到的数据。
+这样使我们保证`Job`组件的整洁性，最重要的变化是将`state`换成了`props`，因为我们需要将数据传递到`Job`组件，而不是使用`getInitialState`方法。大部分都是一样的，但是我们在`return`方法中需要做出一点改变。首先，注意到`class`换成了`className`，这是由于 React.js 的一些 issue，因为这涉及到`class`的命名空间。第二，注意到我们不需要`getInitialState`方法了，因为我们现在是从`Jobs`组件中拿到的数据。
 
 ```js
 var React = require('react');
@@ -198,7 +198,7 @@ module.exports = React.createClass({
 
 > Next let's add some simple SCSS in our `public/stylesheets/scss/style.scss` file to make our application look a little better. Below is all the SCSS I have added:
 
-接下来让我们在`public/stylesheets/scss/style.scss`文件中添加一些简单的SCSS，这会使我们的应用看起来更漂亮一些。如下所示：
+接下来让我们在`public/stylesheets/scss/style.scss`文件中添加一些简单的 SCSS，这会使我们的应用看起来更漂亮一些。如下所示：
 
 ```css
 @import "../../libraries/bootstrap-sass-official/assets/stylesheets/bootstrap";
@@ -239,6 +239,6 @@ a {
 
 > In this tutorial we went through how to create a real component and how to loop over that component with data. Our application is looking more and more like a real web app! Next time we will work through how we are going to build out our Express.js app to return some JSON jobs data and how we can make our React.js app talk to that API. See you then!
 
-在本次教程中，我们学习了如何创建一个真实的React组件和如何循环渲染组件并且传递数据。我们的应用看起来越来越像一个web应用！下一次我们会继续学习如何构建Express.js应用来返回JSON格式的工作信息数据，以及React.js应用如何与API进行交互。See you then！
+在本次教程中，我们学习了如何创建一个真实的 React 组件和如何循环渲染组件并且传递数据。我们的应用看起来越来越像一个 web 应用！下一次我们会继续学习如何构建 Express.js 应用来返回 JSON 格式的工作信息数据，以及 React.js 应用如何与 API 进行交互。See you then！
 
 

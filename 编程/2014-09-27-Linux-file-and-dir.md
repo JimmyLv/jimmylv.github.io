@@ -20,7 +20,7 @@ published: true
 
 ### 2. Dash面板
 
-在Dash面板中按CTRL + TAB: 切换到下一个子面板（可搜索不同类型项目，如程序、文件、音乐）
+在 Dash 面板中按 CTRL + TAB: 切换到下一个子面板（可搜索不同类型项目，如程序、文件、音乐）
 
 - WIN + A: 搜索或浏览程序（Application）
 - WIN + F: 搜索或浏览文件（File）
@@ -30,7 +30,7 @@ published: true
 
 - CTRL + ALT + T: 打开终端
 - TAB: 自动补全命令或文件名
-- CTRL + SHIFT + V: 粘贴（Linux中不需要复制的动作，文本被选择就自动被复制）
+- CTRL + SHIFT + V: 粘贴（Linux 中不需要复制的动作，文本被选择就自动被复制）
 - CTRL + SHIFT + T: 新建标签页
 - CTRL + D: 关闭标签页
 - CTRL + L: 清楚屏幕
@@ -55,8 +55,8 @@ published: true
 
 1) 目录处理
 
-- cd：变换目录，cd是Change Directory的缩写
-- pwd：显示目前的目录，pwd是Print Working Directory的缩写
+- cd：变换目录，cd 是 Change Directory 的缩写
+- pwd：显示目前的目录，pwd 是 Print Working Directory 的缩写
 - mkdir：创建一个新的目录
 - rmdir：删除一个空的目录
 
@@ -76,7 +76,7 @@ PATH="$PATH":/root     #将/root路径加入PATH环境变量中
 - grep：文本内容搜索
 - find：文件或者目录名以及权限属主等匹配搜索
 - tar：解压命令
-- clear：清屏，相当与DOS下的cls
+- clear：清屏，相当与 DOS 下的 cls
 - date：显示当前时间
 
 
@@ -98,7 +98,7 @@ ls -l           #显示文件，属性的第一个字段是文件的权限，共
 
 - -: 普通文件（regular file）
 - d: 目录文件（directory）
-- l: 连接文件，类似于windows的快捷方式（link）
+- l: 连接文件，类似于 windows 的快捷方式（link）
 - b: 块设备文件（block）
 - c: 字符设备文件（character）
 - s: 套接字（sockets）
@@ -111,13 +111,13 @@ chgrp       #改变文件所属用户组，具体句法记得使用 man page 查
 chown       #改变文件所有者
 chmod       #改变文件的权限
 ```
-其中，chmod修改权限的方法有两种，分别是符号法与数字法，数字法中r，w，x的数值分别是4，2，1。
+其中，chmod 修改权限的方法有两种，分别是符号法与数字法，数字法中 r，w，x 的数值分别是 4，2，1。
 
-要开放“目录”（注意不是“文件”）给任何人看，应该至少同时给予r和x权限，但w权限不可随便给予。
+要开放“目录”（注意不是“文件”）给任何人看，应该至少同时给予 r 和 x 权限，但 w 权限不可随便给予。
 
 ### 4. 一个例子
 
-将install.log文件复制成为LAYtest.log，并且要给linanya这个人读写权限，可以这样做：
+将 install.log 文件复制成为 LAYtest.log，并且要给 linanya 这个人读写权限，可以这样做：
 
 ```
 [root@localhost ~]# cp install.log LAYtest.log     #若复制文件夹，用cp -r
@@ -137,9 +137,9 @@ chmod       #改变文件的权限
 man command  #command是要查询的命令名称
 ```
 
-进入man命令后，可按`空格`往下翻页，按`q`键离开。
+进入 man 命令后，可按`空格`往下翻页，按`q`键离开。
 
-在man page中，可以在任何时候输入`/keyword`来查询关键字，比如/date.
+在 man page 中，可以在任何时候输入`/keyword`来查询关键字，比如/date.
 
 ### 2. 正确的关机方法
 

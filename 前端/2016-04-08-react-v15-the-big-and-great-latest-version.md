@@ -45,7 +45,7 @@ React 15 在如何与 DOM 进行交互这方面提供了重大改善：
 
 > As usual with major releases, React 15 will remove support for some of the patterns deprecated nine months ago in React 0.14. We know changes can be painful (the Facebook codebase has over 20,000 React components, and that’s not even counting React Native), so we always try to make changes gradually in order to minimize the pain.
 
-跟以往的大版本更新一样，在九个月前所发布的 React 0.14 版本中标记为废弃的一些模式，将会在React 15 当中被彻底移除。我们知道这很痛苦（Facebook 代码库中有着超过 20,000 的 React 组件，这还不包括 React Native 的数量），所以我们就一直都在尝试着逐步修改，就是为了尽量减少这种痛苦。
+跟以往的大版本更新一样，在九个月前所发布的 React 0.14 版本中标记为废弃的一些模式，将会在 React 15 当中被彻底移除。我们知道这很痛苦（Facebook 代码库中有着超过 20,000 的 React 组件，这还不包括 React Native 的数量），所以我们就一直都在尝试着逐步修改，就是为了尽量减少这种痛苦。
 
 > If your code is free of warnings when running under React 0.14, upgrading should be easy. The bulk of changes in this release are actually behind the scenes, impacting the way that React interacts with the DOM. The other substantial change is that React now supports the full range of SVG elements and attributes. Beyond that we have a large number of incremental improvements and additional warnings aimed to aid developers. We’ve also laid some groundwork in the core to bring you some new capabilities in future releases.
 

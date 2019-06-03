@@ -14,7 +14,7 @@ published: True
 
 ## nvm
 
-node version manager: 版本管理工具，可以同时安装不同的node版本包括io.js，并且随意切换相应的版本，甚至于特意使用某一版本的node来运行某个js文件。
+node version manager: 版本管理工具，可以同时安装不同的 node 版本包括 io.js，并且随意切换相应的版本，甚至于特意使用某一版本的 node 来运行某个 js 文件。
 
 ```bash
 nvm ls/ls-remote #列出已经安装的/远程仓库中的所有版本
@@ -37,11 +37,11 @@ npm install [package] --save #自动把模块和版本号添加到dependencies�
 npm install [package] --save--dev #自动把模块和版本号添加到devdependencies部分
 ```
 
-用于区别开发依赖模块和产品依赖模块，devDepandencies主要是配置测试框架， 例如jshint、mocha。
+用于区别开发依赖模块和产品依赖模块，devDepandencies 主要是配置测试框架， 例如 jshint、mocha。
 
 ## 坑：安装包
 
-如果从官方网站直接下载安装包安装的话会有一个问题：我安装io.js之后，它会在io.js和node的目录之间直接建立软链接（symlinks），从而导致了nvm怎么也不能把io.js切换到原来node.js版本
+如果从官方网站直接下载安装包安装的话会有一个问题：我安装 io.js 之后，它会在 io.js 和 node 的目录之间直接建立软链接（symlinks），从而导致了 nvm 怎么也不能把 io.js 切换到原来 node.js 版本
 
 ```bash
 $ ll /usr/local/bin/{node,io.js}
@@ -53,21 +53,21 @@ $ ll /usr/local/bin/{node,io.js}
 
 ### 通过brew安装nvm
 
-先使用brew安装好nvm（此时你还没有node呢，怎么`npm install nvm -g`）:
+先使用 brew 安装好 nvm（此时你还没有 node 呢，怎么`npm install nvm -g`）:
 
 ```bash
 brew update #更新软件源（就像sudo apt-get update）
 brew install nvm 
 ```
 
-在安装完毕之后需要根据terminal里的提示做一下操作：
+在安装完毕之后需要根据 terminal 里的提示做一下操作：
 
 ```bash
 mkdir ~/.nvm #建立一个nvm版本库，之后安装的node版本都会在这里
 cp $(brew --prefix nvm)/nvm-exec ~/.nvm/ #拷贝brew目录中的nvm-exec执行文件到新建的目录
 ```
 
-然后把以下的内容添加到`~/.bashrc`和`~/.zshrc`中，这样就可以在终端中使用bash和zsh命令行工具啦，不然会显示`command not found`。
+然后把以下的内容添加到`~/.bashrc`和`~/.zshrc`中，这样就可以在终端中使用 bash 和 zsh 命令行工具啦，不然会显示`command not found`。
 
 ```bash
 export NVM_DIR=~/.nvm
@@ -81,7 +81,7 @@ nvm install 0.12.3 #首先安装好想要的版本
 nvm alias default 0.12.3 #然后设置默认的node版本以便于在所有shell中使用
 ```
 
-通过`npm config get prefix`命令可以看到安装的路径是`/Users/Thoughtworks/.nvm/versions/node/v0.12.3`，所以nvm是直接把不同的node版本安装在先前所建立的.nvm文件夹中，易于管理。
+通过`npm config get prefix`命令可以看到安装的路径是`/Users/Thoughtworks/.nvm/versions/node/v0.12.3`，所以 nvm 是直接把不同的 node 版本安装在先前所建立的.nvm 文件夹中，易于管理。
 
 
 ### 通过npm安装依赖库
@@ -90,7 +90,7 @@ nvm alias default 0.12.3 #然后设置默认的node版本以便于在所有shell
 npm install -g npm@latest #首先更新一下npm到最新版
 ```
 
-最好不要使用sudo安装全局库，所以需要更改一下npm工具的权限，就不用每次都需要输入密码啦
+最好不要使用 sudo 安装全局库，所以需要更改一下 npm 工具的权限，就不用每次都需要输入密码啦
 
 ```bash
 sudo chown -R $USER ~/.npm
@@ -98,11 +98,11 @@ sudo chown -R $USER ~/.npm
 
 ### 切换软件源
 
-由于墙的问题，有时候npm install会在node-gyp rebuild那里卡很久，原因在于node-gyp编译时候需要Node.js源码来提供头文件，所以它会先尝试下载Node.js，但是由于下载速度奇慢所以就卡住不动了。
+由于墙的问题，有时候 npm install 会在 node-gyp rebuild 那里卡很久，原因在于 node-gyp 编译时候需要 Node.js 源码来提供头文件，所以它会先尝试下载 Node.js，但是由于下载速度奇慢所以就卡住不动了。
 
-为了获得更快的库安装速度，我们可以切换到淘宝的软件源，淘宝说与官方的同步频率为10分钟，所以还是相当可靠的。
+为了获得更快的库安装速度，我们可以切换到淘宝的软件源，淘宝说与官方的同步频率为 10 分钟，所以还是相当可靠的。
 
-可以使用我们定制的cnpm命令行工具代替默认的npm:
+可以使用我们定制的 cnpm 命令行工具代替默认的 npm:
 
 ```bash
 npm install -g cnpm --registry=https://registry.npm.taobao.org

@@ -139,7 +139,7 @@ Keep It Simple, Stupid
 - 格式：Markdown
 - 预览：Marboo
 - 版本管理：Git
-- 标签：mac osx自带
+- 标签：mac osx 自带
 - 同步：GitHub/Dropbox
 - 格式：HTML、PDF、PPT
 

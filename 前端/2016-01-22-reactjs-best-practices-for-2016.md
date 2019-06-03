@@ -14,11 +14,11 @@ Tags: [React](https://blog.risingstack.com/tag/react/) · [ReactJS](https://blog
 
 > **2015 was the year of [React](https://facebook.github.io/react/)** with tons of new releases and developer conferences dedicated to the topic all over the world. For a detailed list of the most important milestones of last year, check out our [React in 2015](https://blog.risingstack.com/react-in-2015/) wrap up.
 
-过去的2015年，**[React](https://facebook.github.io/react/)** 在全世界范围都是一派欣欣向荣的景象，开发者会议无一不热衷于这个话题。在过去一年中发生了很多重要的里程碑事件，更多详情可以查看我们关于 [React in 2015](https://blog.risingstack.com/react-in-2015/) 的总结。
+过去的 2015 年，**[React](https://facebook.github.io/react/)** 在全世界范围都是一派欣欣向荣的景象，开发者会议无一不热衷于这个话题。在过去一年中发生了很多重要的里程碑事件，更多详情可以查看我们关于 [React in 2015](https://blog.risingstack.com/react-in-2015/) 的总结。
 
 > The most interesting question for 2016: **How should we write an application** and what are the recommended libraries?
 
-在新的2016年里，最有趣的问题来了：**我们该如何开发一个应用**，有什么推荐使用的库？
+在新的 2016 年里，最有趣的问题来了：**我们该如何开发一个应用**，有什么推荐使用的库？
 
 > > As a developer working for a long time with React.js I have my own answers and best practices, but it's possible that you won’t agree on everything with me. I’m interested in your ideas and opinions: please leave a comment so we can discuss them.
 
@@ -42,7 +42,7 @@ Tags: [React](https://blog.risingstack.com/tag/react/) · [ReactJS](https://blog
 
 > 2015 started with the releases of different Flux libraries and continued with more functional and reactive solutions.
 
-2015之初诞生了很多不同 Flux 库，并不断产出了更加实用的响应式方案。
+2015 之初诞生了很多不同 Flux 库，并不断产出了更加实用的响应式方案。
 
 > Let's see where we are now:
 
@@ -263,7 +263,7 @@ React 和 ES2015 的 Class 语法搭配完美。
 
 > If you still don't check your properties, you should start 2016 with fixing this. It can save hours for you, believe me.
 
-如果你在2016年依然没有检查 properties，那么你应该从现在开始做起，这将为你节省大量时间，相信我。
+如果你在 2016 年依然没有检查 properties，那么你应该从现在开始做起，这将为你节省大量时间，相信我。
 
     MyComponent.propTypes = {  
       isLoading: PropTypes.bool.isRequired,
@@ -296,7 +296,7 @@ React 和 ES2015 的 Class 语法搭配完美。
 
 > At RisingStack, we also like to separate data fetching and controller-like logic to higher order components and keep our views as simple as possible.
 
-在RisingStack，我们也将数据获取和类 Controller 的逻辑分割成高阶组件，并保持视图层尽可能简单。
+在 RisingStack，我们也将数据获取和类 Controller 的逻辑分割成高阶组件，并保持视图层尽可能简单。
 
 ## Testing | 测试
 
@@ -462,7 +462,7 @@ GraphQL 和 Relay 相对而言属于新技术，在 RisingStack，目前我们�
 
 > We wrote a library called [graffiti](https://github.com/risingstack/graffiti) which is a MongoDB ORM for Relay and makes it possible to create a GraphQL server from your existing mongoose models.   
 
-我们曾经写过一个 Relay 的 MongoDB ORM库，叫做 [graffiti](https://github.com/risingstack/graffiti)，可以使用已有的 mongoose 模型直接创建一个 GraphQL 服务器。
+我们曾经写过一个 Relay 的 MongoDB ORM 库，叫做 [graffiti](https://github.com/risingstack/graffiti)，可以使用已有的 mongoose 模型直接创建一个 GraphQL 服务器。
 
 > If you would like to learn these new technologies we recommend to check it out and play with it.
 
@@ -472,7 +472,7 @@ GraphQL 和 Relay 相对而言属于新技术，在 RisingStack，目前我们�
 
 > Some of the highlighted techniques and libraries are not React.js related at all - always keep your eyes open and check what others in the community do. The React community is inspired a lot by the [Elm architecture](https://github.com/evancz/elm-architecture-tutorial/) in 2015.
 
-有些突出的技术和库其实跟 React.js 并不相关 —— 但是保持视野开阔，关注社区的其他人都在做些什么。React 社区在2015年里就受到了 [Elm 架构](https://github.com/evancz/elm-architecture-tutorial/) 的很多启发。
+有些突出的技术和库其实跟 React.js 并不相关 —— 但是保持视野开阔，关注社区的其他人都在做些什么。React 社区在 2015 年里就受到了 [Elm 架构](https://github.com/evancz/elm-architecture-tutorial/) 的很多启发。
 
 > > If you know about other essential React.js tools that people should use in 2016, let us know in the comments!
 

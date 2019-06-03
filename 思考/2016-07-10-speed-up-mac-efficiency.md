@@ -126,7 +126,7 @@ published: True
     + 文本编辑 @SublimeText
         + 竟然也有 Project 和 WorkSpace 的概念
             - 还可以用 Cmd + Ctrl + P 快速切换项目，简直可以完美替换 MarkEditor 了，一切无忧。
-            - 一个 Project可以添加多个 floder，甚至创建新的
+            - 一个 Project 可以添加多个 floder，甚至创建新的
             - 至于字数/代码统计，可以采用 Git Summary 来记录哦，每天记得 commit 啊，😊。
         + 文本选择与编辑
             * 自带快捷键

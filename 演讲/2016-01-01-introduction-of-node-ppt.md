@@ -26,15 +26,15 @@ theme: moon
 [slide]
 ## 为什么选择nodePPT
 ----
-* 基于GFM的markdown语法编写 {:&.rollIn}
-* 支持html混排，再复杂的demo也可以做！
-* 导出网页或者pdf更容易分享
+* 基于 GFM 的 markdown 语法编写 {:&.rollIn}
+* 支持 html 混排，再复杂的 demo 也可以做！
+* 导出网页或者 pdf 更容易分享
 * 支持单页背景图片
 * 多种模式：纵览模式，双屏模式，远程控制
-* 可以使用画板，可以使用note做备注
-* 支持语法高亮，自由选择highlight样式
-* 可以单页ppt内部动效，单步动效
-* 支持进入/退出回调，做在线demo很方便
+* 可以使用画板，可以使用 note 做备注
+* 支持语法高亮，自由选择 highlight 样式
+* 可以单页 ppt 内部动效，单步动效
+* 支持进入/退出回调，做在线 demo 很方便
 
 
 [slide]
@@ -85,7 +85,7 @@ usemathjax: yes 启用MathJax渲染公式
 
 使用方法：&#91;slide style="background-image:url('/img/bg1.png')"&#93;
 
-完全style写法，更加灵活，视频背景、repeat背景更不在话下
+完全 style 写法，更加灵活，视频背景、repeat 背景更不在话下
 
 [slide]
 ## 使用LaTex公式：
@@ -109,7 +109,7 @@ $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a}.    s = ut + \frac{1}{2}at^2 $$
 ### ----是上下分界线
 ----
 
-nodeppt是基于nodejs写的支持 **Markdown!** 语法的网页PPT
+nodeppt 是基于 nodejs 写的支持 **Markdown!** 语法的网页 PPT
 
 nodeppt：https://github.com/ksky521/nodePPT
 
@@ -123,7 +123,7 @@ nodeppt：https://github.com/ksky521/nodePPT
 :-------|:------:|-------:|--------
 环境 |js/nodejs | Ruby(这列右对齐) | nodejs(高亮) {:.highlight}
 扩展名 | .less | .scss/.sass | .styl
-特点 | 老牌，用户多，支持js解析 | 功能全，有成型框架，发展快 | 语法多样，小众
+特点 | 老牌，用户多，支持 js 解析 | 功能全，有成型框架，发展快 | 语法多样，小众
 案例/框架 | [Bootstrap](http://getbootstrap.com/) | [Compass](http://beta.compass-style.org) [Bootstrap](http://getbootstrap.com/css/#sass) [Foundation](http://foundation.zurb.com/) [Bourbon](http://bourbon.io) [Base.Sass](https://github.com/jsw0528/base.sass) |
 
 
@@ -229,7 +229,7 @@ nodeppt：https://github.com/ksky521/nodePPT
 <p id="css-demo">这是css样式</p>
 <p>将html代码直接混编到**markdown**文件中即可</p>
 
-我是js控制的颜色 black {:#testScriptTag}
+我是 js 控制的颜色 black {:#testScriptTag}
 
 <script>
     function testScriptTag(){
@@ -273,7 +273,7 @@ nodeppt：https://github.com/ksky521/nodePPT
 ---
 本页面网址改成 [url?_multiscreen=1](?_multiscreen=1)，支持多屏演示哦！
 
-跟powderpoint/keynote一样的双屏功能，带有备注信息。
+跟 powderpoint/keynote 一样的双屏功能，带有备注信息。
 
 [slide]
 # nodePPT动效和转场演示
@@ -318,7 +318,7 @@ nodeppt：https://github.com/ksky521/nodePPT
 ----
 * 列表支持渐显动效哦 {:&.fadeIn}
     * 使用方法
-    * markdown列表第一条加上：{:&.动效类型}
+    * markdown 列表第一条加上：{:&.动效类型}
 * 动效类型
     * fadeIn
     * rollIn
@@ -404,8 +404,8 @@ nodeppt：https://github.com/ksky521/nodePPT
 [slide]
 ## 快速翻页
 ----
-1. 输入页码，然后enter
-2. 使用O键，开启纵览模式，然后翻页
+1. 输入页码，然后 enter
+2. 使用 O 键，开启纵览模式，然后翻页
 
 [slide]
 ## 动效样式强调
@@ -420,7 +420,7 @@ nodeppt：https://github.com/ksky521/nodePPT
 ## 支持zoom.js
 ----
 
-增加了zoom.js的支持，在演示过程中使用`alt`+鼠标点击，则点击的地方就开始放大，再次`alt+click`则回复原状
+增加了 zoom.js 的支持，在演示过程中使用`alt`+鼠标点击，则点击的地方就开始放大，再次`alt+click`则回复原状
 
 [slide]
 
@@ -432,16 +432,16 @@ nodeppt：https://github.com/ksky521/nodePPT
 
 [slide]
 [note]
-##这里是note
+##这里是 note
 
-使用n键，才能显示
+使用 n 键，才能显示
 [/note]
 ## 使用note笔记
 ### note笔记是多窗口，或者自己做一些笔记用的
 ---
-按下键盘【N】键测试下note，
+按下键盘【N】键测试下 note，
 
-markdown语法如下：
+markdown 语法如下：
 ```markdown
 [note]
 这里是note，{ 要换成中括号啊！！
@@ -469,7 +469,7 @@ markdown语法如下：
 :-------|:------:|-------:|--------
 环境 |js/nodejs | Ruby(这列右对齐) | nodejs(高亮) {:.highlight}
 扩展名 | .less | .sass/.scss | .styl
-特点 | 老牌，用户多，支持js解析 | 功能全，有成型框架，发展快 | 语法多样，小众
+特点 | 老牌，用户多，支持 js 解析 | 功能全，有成型框架，发展快 | 语法多样，小众
 案例/框架 | [Bootstrap](http://getbootstrap.com/) | [compass](http://compass-style.org) [bourbon](http://bourbon.io) |
 
 [slide]
@@ -477,9 +477,9 @@ markdown语法如下：
 ---
 按下键盘【O】键。看下效果。
 
-在overview模式下，方向键下一页，【enter】键进入选中页
+在 overview 模式下，方向键下一页，【enter】键进入选中页
 
-或者按下键盘【O】键，退出overview模式
+或者按下键盘【O】键，退出 overview 模式
 
 
 
@@ -488,12 +488,12 @@ markdown语法如下：
 # 介绍下nodePPT的函数和事件
 
 [slide]
-支持单个slide事件：build/enter/leave/keypress，事件统一在&#91;slide&#93;
+支持单个 slide 事件：build/enter/leave/keypress，事件统一在&#91;slide&#93;
 中使用`data-on-X`来指定一个全局函数名
 
-* build：当触发下一步操作的时会触发，event具有stop方法
-* keypress：在当前页面按键触发，event具有stop方法
-* enter/leave：进入/离开 此页面触发的事件，event无stop方法
+* build：当触发下一步操作的时会触发，event 具有 stop 方法
+* keypress：在当前页面按键触发，event 具有 stop 方法
+* enter/leave：进入/离开 此页面触发的事件，event 无 stop 方法
 
 
 [slide data-on-leave="outcallback" data-on-enter="incallback" ]
@@ -501,9 +501,9 @@ markdown语法如下：
 ----
 
 * &#91;slide data-on-leave="fnName"&#93;
-    * 进入执行回调incallback函数
+    * 进入执行回调 incallback 函数
 * &#91;slide data-on-enter="fnName"&#93;
-    * 退出执行outcallback函数
+    * 退出执行 outcallback 函数
 
 亦可以组合写：
 
@@ -542,6 +542,6 @@ https://github.com/ksky521/nodePPT
 
 什么？这些功能还不够用？
 
-socket远程控制可以在手机上摇一摇换页哦~
+socket 远程控制可以在手机上摇一摇换页哦~
 
-查看项目目录ppts获取更多帮助信息
+查看项目目录 ppts 获取更多帮助信息

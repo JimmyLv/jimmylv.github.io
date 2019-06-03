@@ -98,7 +98,7 @@ UMD 的实现其实很简单：
 
 就像前面所提到的那样，Webpack 具有和 RequireJS， Browserify 等模块化工具相类似的功能，但还有更多独有的新特性：
 
-1. 对 CommonJS 、 AMD 、ES6的语法做了兼容，以及特殊模块的 Shim 处理，也就是说基本可以无痛迁移旧项目。
+1. 对 CommonJS 、 AMD 、ES6 的语法做了兼容，以及特殊模块的 Shim 处理，也就是说基本可以无痛迁移旧项目。
 2. 对 JS、CSS、图片等资源文件都支持打包，配合 loader 加载器，也可以支持 Sass，Less 等 CSS 预处理器。
 3. 串联式模块加载器以及插件机制，让其具有更好的灵活性和扩展性，例如通过 babel-loader 就可以直接使用 ES6 的模块机制（当然 [Webpack 2 将会直接支持 ES6 模块](https://gist.github.com/sokra/27b24881210b56bbaff7)）。
 4. 有独立的配置文件 `webpack.config.js`，并可以根据环境的不同加载特定的配置文件，配置好就可以一劳永逸了。

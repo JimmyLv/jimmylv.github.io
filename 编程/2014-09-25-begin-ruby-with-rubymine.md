@@ -10,9 +10,9 @@ published: true
 
 ### 1. 安装RVM
 
-- Ruby版本管理工具，一个命令行工具，它允许你在同一台电脑上安装并管理和切换多个 Ruby 版本。
-- cURL是一个利用URL语法在命令行下工作的文件传输工具，它支持文件上传和下载，所以是综合传输工具。
-- Source命令也称为“点命令”，通常用于重新执行刚修改的初始化文件，使之立即生效，而不必注销并重新登录。
+- Ruby 版本管理工具，一个命令行工具，它允许你在同一台电脑上安装并管理和切换多个 Ruby 版本。
+- cURL 是一个利用 URL 语法在命令行下工作的文件传输工具，它支持文件上传和下载，所以是综合传输工具。
+- Source 命令也称为“点命令”，通常用于重新执行刚修改的初始化文件，使之立即生效，而不必注销并重新登录。
 
 ```sh
 $ curl -L get.rvm.io | bash -s stable
@@ -22,7 +22,7 @@ $ source ~/.bash_profile
 
 ### 2.1 利用RVM安装Ruby
 
-- 安装Ruby
+- 安装 Ruby
 
 ```sh
 #修改 RVM 的 Ruby 安装源到国内的 淘宝镜像服务器，这样能提高安装速度
@@ -40,20 +40,20 @@ $ rvm use 1.9.3 --default
 
 ### 2.2 Ubuntu下apt-get直接安装Ruby[*不推荐*]
 
-- 安装ruby
+- 安装 ruby
 
 `sudo apt-get install ruby irb rdoc`
 
 >这样安装之后rvm和ruby似乎是分开的，rvm无法使用和管理该版本的ruby
 
-- 安装Rubygems
+- 安装 Rubygems
 
 `sudo apt-get rubygems`
 
 > RubyGems 是什么？
 > RubyGems（简称 gems）是一个用于对 Ruby组件进行打包的Ruby打包系统。它提供一个分发 Ruby 程序和库的标准格式，还提供一个管理程序包安装的工具，功能类似于Linux下的apt-get。
 
-使用它可以方便第从远程服务器下载并安装Rails。输入执行命令：
+使用它可以方便第从远程服务器下载并安装 Rails。输入执行命令：
 
 ```
 gem install rails --remote
@@ -98,7 +98,7 @@ $ sudo apt-get install oracle-java7-set-default
 
 ### 2. 安装RubyMine
 
-- 下载.tar.gz文件
+- 下载.tar.gz 文件
 [Ruby on Rails IDE :: JetBrains RubyMine](http://www.jetbrains.com/ruby/)
 
 - 解压并安装
@@ -128,7 +128,7 @@ run
 
 > 深色主题：Dracula
 
-- 开始一个Rails项目
+- 开始一个 Rails 项目
 
 ![1](//o7mw3gkkh.qnssl.com//public/img/tech/0926-1.png)
 

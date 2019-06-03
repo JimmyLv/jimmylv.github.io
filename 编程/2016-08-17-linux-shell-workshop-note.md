@@ -29,7 +29,7 @@ published: True
 `scp id_rsa.pub dev@192.168.33.20:/.ssh` | 拷贝公钥（`id_rsa.pub`）到服务器上
 `cat id_rsa.pub >> authorized_keys` | 快速添加内容到特定文件 `>` 覆盖、`>>` 增加
 `ssh -i ./id_rsa dev@192.168.33.20` | (`--identity_file` 带上身份认证秘钥)
-`echo IdentityFile $PWD/id_rsa >> ~/.ssh/config` | 一行命令id_rsa 文件路径**增加**到指定配置文件
+`echo IdentityFile $PWD/id_rsa >> ~/.ssh/config` | 一行命令 id_rsa 文件路径**增加**到指定配置文件
 `ssh bws` | ssh + 别名 Host，快速登录到 Linux 机器
 `tldr systemctl` | >> `man tldr` 好于 man，只是比较慢
 

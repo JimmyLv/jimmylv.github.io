@@ -25,7 +25,7 @@ published: True
 
 就像软件开发一样，一个人的成长也应该有自己的方法论。人的一生若是顺风顺水、一成不变，那未免太无趣了，正是由于世界的未知在等着我们去探索，不一样的经历才会让人感到惊喜和有趣。想做的事情永远都不会嫌多，就像柳比歇夫最开始是研究生物学的，却在科学的道路上越走越远，进而研究起了数学、物理、哲学，甚至于美学，而更关键的是，他在每一方面都做出了很大贡献并且留下了诸多著作。
 
-时间充当着 Product Owner 的角色在不断向你提出各种各样的需求，敏捷当中最重要的一大前提就是「拥抱变化」，而在「[记录时间这件小事儿](https://github.com/JimmyLv/jimmylv.github.io/issues/85)」里面我提到的GTD流程便可以用于处理这源源不断的需求，即收集、整理、执行、回顾，对应到敏捷当中的几大会议，显然也可以由个人完成，自己就是自己的 IM & PM，当然也是 BA & Dev & QA（当然不用担心人格分裂）。
+时间充当着 Product Owner 的角色在不断向你提出各种各样的需求，敏捷当中最重要的一大前提就是「拥抱变化」，而在「[记录时间这件小事儿](https://github.com/JimmyLv/jimmylv.github.io/issues/85)」里面我提到的 GTD 流程便可以用于处理这源源不断的需求，即收集、整理、执行、回顾，对应到敏捷当中的几大会议，显然也可以由个人完成，自己就是自己的 IM & PM，当然也是 BA & Dev & QA（当然不用担心人格分裂）。
 
 ### 实践之术
 
@@ -79,7 +79,7 @@ published: True
 
 ##### 制定迭代计划
 
-首先，让我们新建一个 [Milestone](https://github.com/JimmyLv/jimmylv.github.io/milestones?state=open) 来制定计划，也就是决定在一个 Iteration 里面你需要完成哪些 issues。在这里我所制定的阶段性计划周期为一个月，当然你也可以勤快一点，以2周作为一个 Iteration，享受一下自己的计划要完成不了、这个 Milestone 就要废了，没法向「时间」这个一生的朋友交付所有需求的快感吧 ：）
+首先，让我们新建一个 [Milestone](https://github.com/JimmyLv/jimmylv.github.io/milestones?state=open) 来制定计划，也就是决定在一个 Iteration 里面你需要完成哪些 issues。在这里我所制定的阶段性计划周期为一个月，当然你也可以勤快一点，以 2 周作为一个 Iteration，享受一下自己的计划要完成不了、这个 Milestone 就要废了，没法向「时间」这个一生的朋友交付所有需求的快感吧 ：）
 
 [![](http://insights.thoughtworkers.org/wp-content/uploads/2017/05/7-Milestone.png)](http://insights.thoughtworkers.org/wp-content/uploads/2017/05/7-Milestone.png)
 
@@ -99,7 +99,7 @@ GitHub 在 issues 里面直接集成了 Markdown 的 TODO 语法，甚至于可�
 
 ##### 专注当下
 
-ZenHub 还提供了一个基于 GitHub Issues 的 To do List，你可以只关注 Today 这一个列表，专心于当前要完成的任务。而且更有趣的是这个 list 可以加入 GitHub 的任何 issues，也就是说它是全局的，所以你可以加入很多在 GitHub 上通过 issues 写的 blog，比如徐飞的这篇文章[流动的数据——使用 RxJS 构造复杂单页应用的数据逻辑 · Issue #38 · xufei/blog](https://github.com/xufei/blog/issues/38)，被我加入到了 Reading列表当中。
+ZenHub 还提供了一个基于 GitHub Issues 的 To do List，你可以只关注 Today 这一个列表，专心于当前要完成的任务。而且更有趣的是这个 list 可以加入 GitHub 的任何 issues，也就是说它是全局的，所以你可以加入很多在 GitHub 上通过 issues 写的 blog，比如徐飞的这篇文章[流动的数据——使用 RxJS 构造复杂单页应用的数据逻辑 · Issue #38 · xufei/blog](https://github.com/xufei/blog/issues/38)，被我加入到了 Reading 列表当中。
 
 [![](http://insights.thoughtworkers.org/wp-content/uploads/2017/05/10-Things-to-do-1024x481.png)](http://insights.thoughtworkers.org/wp-content/uploads/2017/05/10-Things-to-do.png)
 

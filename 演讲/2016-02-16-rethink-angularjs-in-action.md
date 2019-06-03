@@ -32,7 +32,7 @@ published: True
 
 ## Template&Directive
 
-基于DOM <=> Vitural DOM
+基于 DOM <=> Vitural DOM
 
 ng-controller="MainCtrl as main"
 
@@ -42,13 +42,13 @@ content Editable
 
 ## Model&View Data binding
 
-"single-source-of-truth" 其实只需要关注data，易测试，灵活性高
+"single-source-of-truth" 其实只需要关注 data，易测试，灵活性高
 
 双向数据绑定，dirty check -> $watch -> 影响性能
 
 View 和 Model 应该分开? 
 
-React: 数据只会由parent流向children，只会由逻辑流向页面，更好理解和维护。
+React: 数据只会由 parent 流向 children，只会由逻辑流向页面，更好理解和维护。
 
 onChange={this.handleChange.bind(this, "pass")} in React
 
@@ -56,15 +56,15 @@ onChange={this.handleChange.bind(this, "pass")} in React
 
 ## Dependency Injection
 
-动态语言、ES5没有包管理/注入？ -> Angular module -> ES6 or RequireJS
+动态语言、ES5 没有包管理/注入？ -> Angular module -> ES6 or RequireJS
 
 [slide]
 
 ## 学习曲线
 
-最开始只要Controller&Directive就实现了hello world
+最开始只要 Controller&Directive 就实现了 hello world
 
-但是一旦深入，就必须接受一大堆Angular自创术语
+但是一旦深入，就必须接受一大堆 Angular 自创术语
 
 [slide]
 
@@ -94,13 +94,13 @@ $scope.message = 'hello';
 
 to expose data to our view via $scope & add functions to $scope
 
-nested or multiple nested controllers 可以继承，每 ng-controller 指令会创建新的子级 scope，三层div结构，也就对应有三层 scope 继承关系的层级结构 
+nested or multiple nested controllers 可以继承，每 ng-controller 指令会创建新的子级 scope，三层 div 结构，也就对应有三层 scope 继承关系的层级结构 
 
-不要操作具体的DOM和filter等其他事情，专注单个view的业务逻辑
+不要操作具体的 DOM 和 filter 等其他事情，专注单个 view 的业务逻辑
 
 Presentation logic should remain within views and directives.
 
-相互间操作使用Service（across app/module），再注入controller
+相互间操作使用 Service（across app/module），再注入 controller
 
 old? > controller as syntax : -> this = self . create a reference to this so that we don't lose context of our controller when we create/call functions within our controller.
 
@@ -108,7 +108,7 @@ old? > controller as syntax : -> this = self . create a reference to this so tha
 
 ## $scope
 
-不显式注入$scope了，语法是这样：
+不显式注入$scope 了，语法是这样：
 
 ```
 function CtrlB() {
@@ -123,7 +123,7 @@ function CtrlB() {
 在任意一个已有的作用域上调用$new()，就能创建一个新的作用域：
 
 var newScope = scope.$new();
-刚创建出来的作用域是一个“悬空”的作用域，也就是说，它跟任何界面模板都不存在绑定关系，创建它的作用域会成为它的$parent。这种作用域可以经过$compile阶段，与某视图模板进行融合。
+刚创建出来的作用域是一个“悬空”的作用域，也就是说，它跟任何界面模板都不存在绑定关系，创建它的作用域会成为它的$parent。这种作用域可以经过$compile 阶段，与某视图模板进行融合。
 
 [slide]
 
@@ -135,7 +135,7 @@ singletons that can be injected into controllers and other services: reusable
 
 like $http
 
-最明显的DI体现
+最明显的 DI 体现
 
 Lazily instantiated:  not registering a service instance, but rather a factory function ->  angular.module('myModule', []).factory('serviceId',
 
@@ -143,7 +143,7 @@ Lazily instantiated:  not registering a service instance, but rather a factory f
 
 ## Test
 
-Controller的数据测试，
+Controller 的数据测试，
 
 Jasmine spy (mock) a real browser alert.
 
@@ -151,11 +151,11 @@ Jasmine spy (mock) a real browser alert.
 
 ## Form
 
-{{}} 只支持一部分js表达式，支持三元
+{{}} 只支持一部分 js 表达式，支持三元
 
 angular.copy(user)
 
-form 可以直接用css
+form 可以直接用 css
 
 [slide]
 

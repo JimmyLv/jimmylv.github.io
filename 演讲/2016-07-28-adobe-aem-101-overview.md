@@ -147,7 +147,7 @@ Date | Product
 - Day is engaged in the **Java Content Repository** API for Java standardization process and contributes to open source software projects such as **Apache Jackrabbit** and **Apache Sling**.
 
 [note]
-Apache HTTP服务器的核心开发者Roy Fielding,他还是Apache软件基金会的合作创始人
+Apache HTTP 服务器的核心开发者 Roy Fielding,他还是 Apache 软件基金会的合作创始人
 [/note]
 
 [slide]
@@ -275,7 +275,7 @@ Apache HTTP服务器的核心开发者Roy Fielding,他还是Apache软件基金�
 
 # OSGi (Open Service Gateway Initiative)
 
-[OSGi - 维基百科，自由的百科全书](https://zh.wikipedia.org/wiki/OSGi)：一个基于Java语言的服务（业务）规范——OSGi服务平台（Service Platform）。
+[OSGi - 维基百科，自由的百科全书](https://zh.wikipedia.org/wiki/OSGi)：一个基于 Java 语言的服务（业务）规范——OSGi 服务平台（Service Platform）。
 
 目前该平台逐渐成为一个为室内、交通工具、移动电话和其他环境下的所有类型的网络设备的应用程序和服务进行传递和远程管理的开放式服务平台。
 

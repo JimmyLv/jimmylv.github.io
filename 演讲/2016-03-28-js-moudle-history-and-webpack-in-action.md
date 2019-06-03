@@ -209,7 +209,7 @@ define(['firstModule'], function(module) {
 
 # 特性
 
-1. 兼容CommonJS 、 AMD 、ES6语法 {:&.rollIn}
+1. 兼容 CommonJS 、 AMD 、ES6 语法 {:&.rollIn}
 2. 支持打包 JS、CSS、图片等资源文件
 3. 串联式 loader 以及插件机制
 4. 独立配置文件 **webpack.config.js**

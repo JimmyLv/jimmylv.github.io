@@ -7,10 +7,10 @@ published: true
 ---
 <!-- MarkdownTOC -->
 
-- 配置Python环境
-    - 1. 安装pip
+- 配置 Python 环境
+    - 1. 安装 pip
     - 2. 构建虚拟环境
-- Sublime Text 3的安装与配置
+- Sublime Text 3 的安装与配置
     - 1. 安装插件
     - 2. 修改快捷键
     - 3. 修改视图
@@ -46,7 +46,7 @@ $ pip uninstall [ ]
 
 * 套件升级不影响其他应用
 
-- 安装Virtualenv和Virtualenvwrapper
+- 安装 Virtualenv 和 Virtualenvwrapper
 
 > Virtaulenvwrapper是virtualenv的扩展包，用于更方便管理虚拟环境，它可以做：
 
@@ -57,7 +57,7 @@ $ pip uninstall [ ]
 * 切换虚拟环境
 
 
-1) **安装virtualenv和virtualenvwrapper**
+1) **安装 virtualenv 和 virtualenvwrapper**
 
 ```sh
 $ sudo apt-get install python-virtualenv
@@ -111,7 +111,7 @@ $ rmvirtualenv [虚拟环境名称]
 
 ### 1. 安装插件
 
-1) 首先安装[Package Control](https://sublime.wbond.net/installation#st3)，通过Package Control可以很方便安装其他插件
+1) 首先安装[Package Control](https://sublime.wbond.net/installation#st3)，通过 Package Control 可以很方便安装其他插件
 
 > - 通过快捷键 ctrl+` 或者 View > Show Console 菜单打开控制台
 
@@ -122,7 +122,7 @@ $ rmvirtualenv [虚拟环境名称]
 import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
 ```
 
-2) 按快捷键Ctrl+Shift+P调出命令窗口，选择Package Control: Install Package，安装 Python 开发常用的插件：
+2) 按快捷键 Ctrl+Shift+P 调出命令窗口，选择 Package Control: Install Package，安装 Python 开发常用的插件：
 
 >Sublime 有一个非常丰富的插件系统。而我当前使用的插件如下：
  
@@ -134,7 +134,7 @@ import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330
 
 * SublimeCodeIntel  为部分语言增强自动完成功能，包括了 Python 。这个插件同时也可以让你跳转到符号定义的地方，通过按住 alt 并点击符号。非常方便。
  
-* SublimeTmpl  这个插件允许用户定义文件的模板，比如在写一个html文件时，老是重复文件头的一些引入信息很繁琐，可以定义一个模板直接生成必须的信息，具体的SublimeTmpl插件用法请自行百度。
+* SublimeTmpl  这个插件允许用户定义文件的模板，比如在写一个 html 文件时，老是重复文件头的一些引入信息很繁琐，可以定义一个模板直接生成必须的信息，具体的 SublimeTmpl 插件用法请自行百度。
 
 * SideBarEnhancements  一个增强侧边栏文件夹浏览功能的插件，比较不错。
 
@@ -144,9 +144,9 @@ import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330
 
 * Pylinter  这个插件提供了目前我所见到的最好的 pylint 编辑器整合。它自动检查 .py 文件，无论其何时被保存，并且会直接在编辑界面显示 pylint 违规。它还有一个快捷方式来禁用局部的 pylint 检查，通过插入一个 #pylint: 禁用注释。这个插件对于我确实非常有用。 id:43
 
-* SublimeLinter 是用来在写代码时做代码检查的，可以检查Python代码是否符合PEP8的要求。
+* SublimeLinter 是用来在写代码时做代码检查的，可以检查 Python 代码是否符合 PEP8 的要求。
 
-* Tag  可以为web开发者提供html和css标签，很方便快捷，对于web前端设计者非常实用。
+* Tag  可以为 web 开发者提供 html 和 css 标签，很方便快捷，对于 web 前端设计者非常实用。
 
 3) 自动安装插件
 
@@ -183,11 +183,11 @@ import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330
 
 > SublimeREPL安装之后没有快捷键，每次运行程序必须用鼠标去点工具栏，有些不爽。
 
-1) **SublimeREPL插件的菜单命令**
+1) **SublimeREPL 插件的菜单命令**
 
-Preferences => Browser Packages…打开插件安装包位置，依次找到 SublimeREPL\config\Python文件夹下的Main.sublime-menu并打开。
+Preferences => Browser Packages…打开插件安装包位置，依次找到 SublimeREPL\config\Python 文件夹下的 Main.sublime-menu 并打开。
 
-该文件即是插件菜单的结构及相关参数，从中找到运行Python文件的菜单项的部分：
+该文件即是插件菜单的结构及相关参数，从中找到运行 Python 文件的菜单项的部分：
 
 ```json
     {"command": "repl_open",
@@ -206,11 +206,11 @@ Preferences => Browser Packages…打开插件安装包位置，依次找到 Sub
     },
 ```
 
-其中id的值是我们需要的，因为我们正是要为其添加快捷键。另外，菜单文件的位置也是需要先记下的，因为需要为这个命令指定定义的来源。
+其中 id 的值是我们需要的，因为我们正是要为其添加快捷键。另外，菜单文件的位置也是需要先记下的，因为需要为这个命令指定定义的来源。
 
 2) **自定义快捷键**
 
-Preferences => Key Boundings-User打开自定义快捷键文件，写入如下内容：
+Preferences => Key Boundings-User 打开自定义快捷键文件，写入如下内容：
 
 ```json
 [
@@ -231,7 +231,7 @@ Preferences => Key Boundings-User打开自定义快捷键文件，写入如下�
 
 - 选择查看--布局--行：2 或者 Shift+Alt+8
 
-将Sublime分割为上下两部分，选择F5进行代码编译，编译信息将会显示在下面的编译区域。
+将 Sublime 分割为上下两部分，选择 F5 进行代码编译，编译信息将会显示在下面的编译区域。
 
 ### 4. 编辑器快捷键汇总
 
@@ -283,7 +283,7 @@ Ctrl+/：注释当前行
 
 Ctrl+Shift+/：当前位置插入注释
 
-Ctrl+Alt+/：块注释，并Focus到首行，写注释说明用的
+Ctrl+Alt+/：块注释，并 Focus 到首行，写注释说明用的
 
 Ctrl+Shift+A：选择当前标签前后，修改标签用的
 
@@ -297,12 +297,12 @@ Alt+.：闭合标签
 
 Alt+Shift+数字：分屏显示
 
-Alt+数字：切换打开第N个文件
+Alt+数字：切换打开第 N 个文件
 
 Shift+右键拖动：光标多不，用来更改或插入列内容
 
-鼠标的前进后退键可切换Tab文件
+鼠标的前进后退键可切换 Tab 文件
 
-按Ctrl，依次点击或选取，可需要编辑的多个位置
+按 Ctrl，依次点击或选取，可需要编辑的多个位置
 
-按Ctrl+Shift+上下键，可替换行
+按 Ctrl+Shift+上下键，可替换行

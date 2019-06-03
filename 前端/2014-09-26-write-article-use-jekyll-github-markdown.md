@@ -62,7 +62,7 @@ $ cd my-awesome-site
 
 ### 1. 使用Jekyll + GitHub Pages快速生成博客
 
-- JekyllBootstrap提供了一个界面：[Host on GitHub in 3 Minutes](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
+- JekyllBootstrap 提供了一个界面：[Host on GitHub in 3 Minutes](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
 
 > 1. Create a New Repository
 
@@ -72,7 +72,7 @@ $ cd my-awesome-site
 
 ### 2. 利用Jekyll进行本地调试
 
-- 直接下载jekyll-bootstrap模板
+- 直接下载 jekyll-bootstrap 模板
 
 ```sh
 $ git clone https://github.com/plusjade/jekyll-bootstrap.git
@@ -91,7 +91,7 @@ $ jekyll serve
 Error:  Address already in use - bind(2)
 ```
 
-这个错误是因为在另外一个在和终端里面也运行了jekyll serve，关掉之后在打开就可以看到自己的博客了。
+这个错误是因为在另外一个在和终端里面也运行了 jekyll serve，关掉之后在打开就可以看到自己的博客了。
 
 ![4](//o7mw3gkkh.qnssl.com//public/img/tech/0926-4.png)
 
@@ -100,7 +100,7 @@ $ jekyll serve
 CNAME already taken: ......
 ```
 
-这个错误是因为CNAME文件的原因，是用来指定自定义域名的，和本地调试地址冲突。如果你没有自定义域名，那就不需要删除。
+这个错误是因为 CNAME 文件的原因，是用来指定自定义域名的，和本地调试地址冲突。如果你没有自定义域名，那就不需要删除。
 
 
 ### 3. Markdown写作
@@ -119,7 +119,7 @@ sudo apt-get update
 sudo apt-get install uberwriter
 ```
 
-- 只需要在_posts文件夹下添加相应博文的.md文件即可。
+- 只需要在_posts 文件夹下添加相应博文的.md 文件即可。
 
 > 注意命名格式一定要是yy-mm-dd-title.md，title是你文章的标题。（也可以卸载.md文件开头）
 
@@ -135,9 +135,9 @@ description: null
 published: true
 ```
 
-layout: post指的是博文格式要按照_layouts文件夹下的
+layout: post 指的是博文格式要按照_layouts 文件夹下的
 
-post.html指定的格式来显示。
+post.html 指定的格式来显示。
 
 categories: 指定博文分类技术。
 
@@ -147,7 +147,7 @@ published: 表示发布与否
 
 2) **线上写作**
 
-- 在线Md编辑器：
+- 在线 Md 编辑器：
 
 > 1.[马克飞象](http://maxiang.info)- 专为印象笔记打造的Markdown
 
@@ -159,7 +159,7 @@ published: 表示发布与否
 
 > Prose is a content editor for GitHub designed for managing websites. Learn more. Authorize on GitHub.
 
-最终就选择了Prose.io直接在线编辑修改GitHub上的文章，无比方便。
+最终就选择了 Prose.io 直接在线编辑修改 GitHub 上的文章，无比方便。
 
 ![5](//o7mw3gkkh.qnssl.com//public/img/tech/0926-5.png)
 

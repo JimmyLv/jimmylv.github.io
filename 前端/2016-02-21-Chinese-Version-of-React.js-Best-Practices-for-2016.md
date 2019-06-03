@@ -13,9 +13,9 @@ published: True
 
 原文地址：<https://blog.risingstack.com/react-js-best-practices-for-2016/>
 
-过去的2015年，**[React](https://facebook.github.io/react/)** 在全世界范围都是一派欣欣向荣的景象，开发者会议无一不热衷于这个话题。在过去一年中发生了很多重要的里程碑事件，更多详情可以查看我们关于 [React in 2015](https://blog.risingstack.com/react-in-2015/) 的总结。
+过去的 2015 年，**[React](https://facebook.github.io/react/)** 在全世界范围都是一派欣欣向荣的景象，开发者会议无一不热衷于这个话题。在过去一年中发生了很多重要的里程碑事件，更多详情可以查看我们关于 [React in 2015](https://blog.risingstack.com/react-in-2015/) 的总结。
 
-在新的2016年里，最有趣的问题来了：**我们该如何开发一个应用**，有什么推荐使用的库？
+在新的 2016 年里，最有趣的问题来了：**我们该如何开发一个应用**，有什么推荐使用的库？
 
 > 作为一名长时间使用 React.js 的开发者来说，我对这个问题有自己的答案以及最佳实践，但也有可能你不会完全认同。我也非常乐于倾听你的想法和观点：请留言以便讨论。
 
@@ -29,7 +29,7 @@ published: True
 
 这是因为你可以通过各种方式将属性数据传递给 React 组件，并从中构建渲染树；然而这种方式也并非那么显而易见，到底该如何更新视图。
 
-2015之初诞生了很多不同 Flux 库，并不断产出了更加实用的响应式方案。
+2015 之初诞生了很多不同 Flux 库，并不断产出了更加实用的响应式方案。
 
 让我们看看现在的情况：
 
@@ -170,7 +170,7 @@ React 和 ES2015 的 Class 语法搭配完美。
 
 ### 属性类型
 
-如果你在2016年依然没有检查 properties，那么你应该从现在开始做起，这将为你节省大量时间，相信我。
+如果你在 2016 年依然没有检查 properties，那么你应该从现在开始做起，这将为你节省大量时间，相信我。
 
     MyComponent.propTypes = {
       isLoading: PropTypes.bool.isRequired,
@@ -193,7 +193,7 @@ React 和 ES2015 的 Class 语法搭配完美。
 
 本质上来说，你可以由原始组件创造一个新的组件并且扩展它的行为。你可以在多种情况下使用它，比如授权：`requireAuth({ role: 'admin' })(MyComponent)` *（检查上层组件中的用户，若是未登录则需要重定向）*，或者是连接你的组件和 Flux/Redux 仓库。
 
-在RisingStack，我们也将数据获取和类似 Controller 的逻辑分割成高阶组件，并保持视图层尽可能简单。
+在 RisingStack，我们也将数据获取和类似 Controller 的逻辑分割成高阶组件，并保持视图层尽可能简单。
 
 ## 测试
 
@@ -305,13 +305,13 @@ React 和 ES2015 的 Class 语法搭配完美。
 
 GraphQL 和 Relay 相对而言属于新技术，在 RisingStack，目前我们还没有在产品环境中使用它们，暂时保持关注。
 
-我们曾经写过一个 Relay 的 MongoDB ORM库，叫做 [graffiti](https://github.com/risingstack/graffiti)，可以使用已有的 mongoose 模型直接创建一个 GraphQL 服务器。
+我们曾经写过一个 Relay 的 MongoDB ORM 库，叫做 [graffiti](https://github.com/risingstack/graffiti)，可以使用已有的 mongoose 模型直接创建一个 GraphQL 服务器。
 
 如果你想要学习这些新技术，我们建议你可以找来玩一玩。
 
 ## 尽情享用这些 React.js 最佳实践
 
-有些突出的技术和库其实跟 React.js 并不相关 —— 但是保持视野开阔，关注社区的其他人都在做些什么。React 社区在2015年里就受到了 [Elm 架构](https://github.com/evancz/elm-architecture-tutorial/) 的很多启发。
+有些突出的技术和库其实跟 React.js 并不相关 —— 但是保持视野开阔，关注社区的其他人都在做些什么。React 社区在 2015 年里就受到了 [Elm 架构](https://github.com/evancz/elm-architecture-tutorial/) 的很多启发。
 
 > 如果你知道其它在2016年必不可少的 React.js 工具，请留言让我们知道！
 
