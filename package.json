@@ -1,0 +1,19 @@
+{
+  "name": "jimmylv.github.io",
+  "version": "1.0.0",
+  "description": "Jimmy's articles.",
+  "main": "index.js",
+  "repository": "git@github.com:JimmyLv/jimmylv.github.io.git",
+  "author": "JimmyLv <jimmy.jinglv@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "lint": "textlint **/*.md",
+    "lint:fix": "yarn lint --fix"
+  },
+  "devDependencies": {
+    "textlint": "^11.2.5",
+    "textlint-rule-ja-space-between-half-and-full-width": "^2.0.1",
+    "textlint-rule-no-todo": "^2.0.1"
+  }
+}

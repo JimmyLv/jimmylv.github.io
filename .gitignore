@@ -13,6 +13,7 @@ Calendar/
 .DS_Store
 
 configs/
+node_modules/
 
 *.plist
 *.sublime-*
