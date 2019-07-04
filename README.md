@@ -83,3 +83,8 @@ nodeppt generate ./演讲 ./slides -a
 ## License
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2FJimmyLv%2Fjimmylv.github.io.svg?type=large)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2FJimmyLv%2Fjimmylv.github.io?ref=badge_large)
+
+## GitHub Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/JimmyLv/jimmylv.github.io.svg)](https://starchart.cc/JimmyLv/jimmylv.github.io)
+ 
