@@ -14,17 +14,22 @@
   dependencies:
     "@azu/format-text" "^1.0.1"
 
-"@textlint/ast-node-types@^4.2.1", "@textlint/ast-node-types@^4.2.2":
+"@textlint/ast-node-types@^4.2.1":
   version "4.2.2"
   resolved "https://nexus.dev.casaba.tech/repository/npm/@textlint/ast-node-types/-/ast-node-types-4.2.2.tgz#5042d0b3b16f18b9f2d16b96e6ee5356e6f3d37d"
   integrity sha1-UELQs7FvGLny0WuW5u5TVubz030=
 
-"@textlint/ast-traverse@^2.1.3":
-  version "2.1.3"
-  resolved "https://nexus.dev.casaba.tech/repository/npm/@textlint/ast-traverse/-/ast-traverse-2.1.3.tgz#8cce87ad790f4bc0f1504a8c5c7098cabc0f74a9"
-  integrity sha1-jM6HrXkPS8DxUEqMXHCYyrwPdKk=
+"@textlint/ast-node-types@^4.2.2", "@textlint/ast-node-types@^4.2.3":
+  version "4.2.3"
+  resolved "https://nexus.dev.casaba.tech/repository/npm/@textlint/ast-node-types/-/ast-node-types-4.2.3.tgz#2fc57a14600ac4dc5136dc7fb9793ac064bbd864"
+  integrity sha1-L8V6FGAKxNxRNtx/uXk6wGS72GQ=
+
+"@textlint/ast-traverse@^2.1.4":
+  version "2.1.4"
+  resolved "https://nexus.dev.casaba.tech/repository/npm/@textlint/ast-traverse/-/ast-traverse-2.1.4.tgz#d26917b79d1c32e39727d6cc33d5573c774ac962"
+  integrity sha1-0mkXt50cMuOXJ9bMM9VXPHdKyWI=
   dependencies:
-    "@textlint/ast-node-types" "^4.2.2"
+    "@textlint/ast-node-types" "^4.2.3"
 
 "@textlint/feature-flag@^3.1.3":
   version "3.1.3"
@@ -33,30 +38,31 @@
   dependencies:
     map-like "^2.0.0"
 
-"@textlint/fixer-formatter@^3.1.5":
-  version "3.1.5"
-  resolved "https://nexus.dev.casaba.tech/repository/npm/@textlint/fixer-formatter/-/fixer-formatter-3.1.5.tgz#179b2c284084590ec05dce7ebb8a763fe36cad44"
-  integrity sha1-F5ssKECEWQ7AXc5+u4p2P+NsrUQ=
+"@textlint/fixer-formatter@^3.1.7":
+  version "3.1.7"
+  resolved "https://nexus.dev.casaba.tech/repository/npm/@textlint/fixer-formatter/-/fixer-formatter-3.1.7.tgz#f90a48bc30e95657a7b15d2c58683e0162af6050"
+  integrity sha1-+QpIvDDpVlensV0sWGg+AWKvYFA=
   dependencies:
-    "@textlint/types" "^1.1.5"
+    "@textlint/types" "^1.2.0"
     chalk "^1.1.3"
     debug "^4.1.1"
-    diff "^2.2.2"
+    diff "^4.0.1"
     interop-require "^1.0.0"
     is-file "^1.0.0"
     string-width "^1.0.1"
     text-table "^0.2.0"
     try-resolve "^1.0.1"
 
-"@textlint/kernel@^3.1.6":
-  version "3.1.6"
-  resolved "https://nexus.dev.casaba.tech/repository/npm/@textlint/kernel/-/kernel-3.1.6.tgz#3614a864d29682404fc0447fc247df0d37adcc1e"
-  integrity sha1-NhSoZNKWgkBPwER/wkffDTetzB4=
+"@textlint/kernel@^3.1.7":
+  version "3.1.7"
+  resolved "https://nexus.dev.casaba.tech/repository/npm/@textlint/kernel/-/kernel-3.1.7.tgz#cb8f73282134218937e7c7e5cd49d1691eb76715"
+  integrity sha1-y49zKCE0IYk358flzUnRaR63ZxU=
   dependencies:
-    "@textlint/ast-node-types" "^4.2.2"
-    "@textlint/ast-traverse" "^2.1.3"
+    "@textlint/ast-node-types" "^4.2.3"
+    "@textlint/ast-traverse" "^2.1.4"
     "@textlint/feature-flag" "^3.1.3"
-    "@textlint/types" "^1.1.5"
+    "@textlint/types" "^1.2.0"
+    "@textlint/utils" "^1.0.1"
     "@types/bluebird" "^3.5.18"
     bluebird "^3.5.1"
     debug "^4.1.1"
@@ -65,14 +71,14 @@
     object-assign "^4.1.1"
     structured-source "^3.0.2"
 
-"@textlint/linter-formatter@^3.1.5":
-  version "3.1.5"
-  resolved "https://nexus.dev.casaba.tech/repository/npm/@textlint/linter-formatter/-/linter-formatter-3.1.5.tgz#4b33feee89a8420b5cfc0c7d20644cca521dace1"
-  integrity sha1-SzP+7omoQgtc/Ax9IGRMylIdrOE=
+"@textlint/linter-formatter@^3.1.6":
+  version "3.1.6"
+  resolved "https://nexus.dev.casaba.tech/repository/npm/@textlint/linter-formatter/-/linter-formatter-3.1.6.tgz#5f2762ae93412cc8d67385890307e5bef6a35b4f"
+  integrity sha1-XydirpNBLMjWc4WJAwflvvajW08=
   dependencies:
     "@azu/format-text" "^1.0.1"
     "@azu/style-format" "^1.0.0"
-    "@textlint/types" "^1.1.5"
+    "@textlint/types" "^1.2.0"
     chalk "^1.0.0"
     concat-stream "^1.5.1"
     js-yaml "^3.2.4"
@@ -86,12 +92,12 @@
     try-resolve "^1.0.1"
     xml-escape "^1.0.0"
 
-"@textlint/markdown-to-ast@^6.1.3":
-  version "6.1.3"
-  resolved "https://nexus.dev.casaba.tech/repository/npm/@textlint/markdown-to-ast/-/markdown-to-ast-6.1.3.tgz#5932ad2b080aa102cbda687fa1213ef0d3741969"
-  integrity sha1-WTKtKwgKoQLL2mh/oSE+8NN0GWk=
+"@textlint/markdown-to-ast@^6.1.4":
+  version "6.1.4"
+  resolved "https://nexus.dev.casaba.tech/repository/npm/@textlint/markdown-to-ast/-/markdown-to-ast-6.1.4.tgz#5f58c2c27a1b65ba90c34b64eb23171e8681a35a"
+  integrity sha1-X1jCwnobZbqQw0tk6yMXHoaBo1o=
   dependencies:
-    "@textlint/ast-node-types" "^4.2.2"
+    "@textlint/ast-node-types" "^4.2.3"
     debug "^4.1.1"
     remark-frontmatter "^1.2.0"
     remark-parse "^5.0.0"
@@ -99,34 +105,46 @@
     traverse "^0.6.6"
     unified "^6.1.6"
 
-"@textlint/text-to-ast@^3.1.3":
-  version "3.1.3"
-  resolved "https://nexus.dev.casaba.tech/repository/npm/@textlint/text-to-ast/-/text-to-ast-3.1.3.tgz#d4cdbf48cedcaf2558faa7ca6e48253dade0b96a"
-  integrity sha1-1M2/SM7cryVY+qfKbkglPa3guWo=
+"@textlint/text-to-ast@^3.1.4":
+  version "3.1.4"
+  resolved "https://nexus.dev.casaba.tech/repository/npm/@textlint/text-to-ast/-/text-to-ast-3.1.4.tgz#c9145498d8393b8bd600d631e602c3e51099a61a"
+  integrity sha1-yRRUmNg5O4vWANYx5gLD5RCZpho=
   dependencies:
-    "@textlint/ast-node-types" "^4.2.2"
+    "@textlint/ast-node-types" "^4.2.3"
 
-"@textlint/textlint-plugin-markdown@^5.1.6":
-  version "5.1.6"
-  resolved "https://nexus.dev.casaba.tech/repository/npm/@textlint/textlint-plugin-markdown/-/textlint-plugin-markdown-5.1.6.tgz#8655ff930f58432b8d2493116c87e6730f83af99"
-  integrity sha1-hlX/kw9YQyuNJJMRbIfmcw+Dr5k=
+"@textlint/textlint-plugin-markdown@^5.1.7":
+  version "5.1.7"
+  resolved "https://nexus.dev.casaba.tech/repository/npm/@textlint/textlint-plugin-markdown/-/textlint-plugin-markdown-5.1.7.tgz#781562fd605acba8e5bdd3a212c54afc4f0a6adb"
+  integrity sha1-eBVi/WBay6jlvdOiEsVK/E8Kats=
   dependencies:
-    "@textlint/markdown-to-ast" "^6.1.3"
+    "@textlint/markdown-to-ast" "^6.1.4"
 
-"@textlint/textlint-plugin-text@^4.1.6":
-  version "4.1.6"
-  resolved "https://nexus.dev.casaba.tech/repository/npm/@textlint/textlint-plugin-text/-/textlint-plugin-text-4.1.6.tgz#2f529368a7b137ddf33278dc24fd01fa99bae3b3"
-  integrity sha1-L1KTaKexN93zMnjcJP0B+pm647M=
+"@textlint/textlint-plugin-text@^4.1.7":
+  version "4.1.7"
+  resolved "https://nexus.dev.casaba.tech/repository/npm/@textlint/textlint-plugin-text/-/textlint-plugin-text-4.1.7.tgz#b3f8603aab2b72e4453fc1a5433bd528c2b0b992"
+  integrity sha1-s/hgOqsrcuRFP8GlQzvVKMKwuZI=
   dependencies:
-    "@textlint/text-to-ast" "^3.1.3"
+    "@textlint/text-to-ast" "^3.1.4"
 
-"@textlint/types@^1.1.2", "@textlint/types@^1.1.5":
+"@textlint/types@^1.1.2":
   version "1.1.5"
   resolved "https://nexus.dev.casaba.tech/repository/npm/@textlint/types/-/types-1.1.5.tgz#2834cd625f71ca2a6d7b0540dcc67ba5dbe34ac5"
   integrity sha1-KDTNYl9xyiptewVA3MZ7pdvjSsU=
   dependencies:
     "@textlint/ast-node-types" "^4.2.2"
     structured-source "^3.0.2"
+
+"@textlint/types@^1.2.0":
+  version "1.2.0"
+  resolved "https://nexus.dev.casaba.tech/repository/npm/@textlint/types/-/types-1.2.0.tgz#4850e8438f220523603d3891ca80f866a56f0226"
+  integrity sha1-SFDoQ48iBSNgPTiRyoD4ZqVvAiY=
+  dependencies:
+    "@textlint/ast-node-types" "^4.2.3"
+
+"@textlint/utils@^1.0.1":
+  version "1.0.1"
+  resolved "https://nexus.dev.casaba.tech/repository/npm/@textlint/utils/-/utils-1.0.1.tgz#cdb0f6d6b362de05090b40d865fdd4595aaa896e"
+  integrity sha1-zbD21rNi3gUJC0DYZf3UWVqqiW4=
 
 "@types/bluebird@^3.5.18":
   version "3.5.27"
@@ -232,11 +250,6 @@ charenc@~0.0.1:
   resolved "https://nexus.dev.casaba.tech/repository/npm/charenc/-/charenc-0.0.2.tgz#c0a1d2f3a7092e03774bfa83f14c0fc5790a8667"
   integrity sha1-wKHS86cJLgN3S/qD8UwPxXkKhmc=
 
-circular-json@^0.3.1:
-  version "0.3.3"
-  resolved "https://nexus.dev.casaba.tech/repository/npm/circular-json/-/circular-json-0.3.3.tgz#815c99ea84f6809529d2f45791bdf82711352d66"
-  integrity sha1-gVyZ6oT2gJUp0vRXkb34JxE1LWY=
-
 co@^4.6.0:
   version "4.6.0"
   resolved "https://nexus.dev.casaba.tech/repository/npm/co/-/co-4.6.0.tgz#6ea6bdf3d853ae54ccb8e47bfa0bf3f9031fb184"
@@ -277,13 +290,6 @@ crypt@~0.0.1:
   resolved "https://nexus.dev.casaba.tech/repository/npm/crypt/-/crypt-0.0.2.tgz#88d7ff7ec0dfb86f713dc87bbb42d044d3e6c41b"
   integrity sha1-iNf/fsDfuG9xPch7u0LQRNPmxBs=
 
-debug@^3.1.0:
-  version "3.2.6"
-  resolved "https://nexus.dev.casaba.tech/repository/npm/debug/-/debug-3.2.6.tgz#e83d17de16d8a7efb7717edbe5fb10135eee629b"
-  integrity sha1-6D0X3hbYp++3cX7b5fsQE17uYps=
-  dependencies:
-    ms "^2.1.1"
-
 debug@^4.1.1:
   version "4.1.1"
   resolved "https://nexus.dev.casaba.tech/repository/npm/debug/-/debug-4.1.1.tgz#3b72260255109c6b589cee050f1d516139664791"
@@ -308,10 +314,10 @@ define-properties@^1.1.2:
   dependencies:
     object-keys "^1.0.12"
 
-diff@^2.2.2:
-  version "2.2.3"
-  resolved "https://nexus.dev.casaba.tech/repository/npm/diff/-/diff-2.2.3.tgz#60eafd0d28ee906e4e8ff0a52c1229521033bf99"
-  integrity sha1-YOr9DSjukG5Oj/ClLBIpUhAzv5k=
+diff@^4.0.1:
+  version "4.0.1"
+  resolved "https://nexus.dev.casaba.tech/repository/npm/diff/-/diff-4.0.1.tgz#0c667cb467ebbb5cea7f14f135cc2dba7780a8ff"
+  integrity sha1-DGZ8tGfru1zqfxTxNcwtuneAqP8=
 
 error-ex@^1.2.0, error-ex@^1.3.1:
   version "1.3.2"
@@ -368,13 +374,12 @@ fault@^1.0.1:
   dependencies:
     format "^0.2.2"
 
-file-entry-cache@^2.0.0:
-  version "2.0.0"
-  resolved "https://nexus.dev.casaba.tech/repository/npm/file-entry-cache/-/file-entry-cache-2.0.0.tgz#c392990c3e684783d838b8c84a45d8a048458361"
-  integrity sha1-w5KZDD5oR4PYOLjISkXYoEhFg2E=
+file-entry-cache@^5.0.1:
+  version "5.0.1"
+  resolved "https://nexus.dev.casaba.tech/repository/npm/file-entry-cache/-/file-entry-cache-5.0.1.tgz#ca0f6efa6dd3d561333fb14515065c2fafdf439c"
+  integrity sha1-yg9u+m3T1WEzP7FFFQZcL6/fQ5w=
   dependencies:
-    flat-cache "^1.2.1"
-    object-assign "^4.0.1"
+    flat-cache "^2.0.1"
 
 find-up@^2.0.0:
   version "2.1.0"
@@ -383,15 +388,19 @@ find-up@^2.0.0:
   dependencies:
     locate-path "^2.0.0"
 
-flat-cache@^1.2.1:
-  version "1.3.4"
-  resolved "https://nexus.dev.casaba.tech/repository/npm/flat-cache/-/flat-cache-1.3.4.tgz#2c2ef77525cc2929007dfffa1dd314aa9c9dee6f"
-  integrity sha1-LC73dSXMKSkAff/6HdMUqpyd7m8=
+flat-cache@^2.0.1:
+  version "2.0.1"
+  resolved "https://nexus.dev.casaba.tech/repository/npm/flat-cache/-/flat-cache-2.0.1.tgz#5d296d6f04bda44a4630a301413bdbc2ec085ec0"
+  integrity sha1-XSltbwS9pEpGMKMBQTvbwuwIXsA=
   dependencies:
-    circular-json "^0.3.1"
-    graceful-fs "^4.1.2"
-    rimraf "~2.6.2"
-    write "^0.2.1"
+    flatted "^2.0.0"
+    rimraf "2.6.3"
+    write "1.0.3"
+
+flatted@^2.0.0:
+  version "2.0.1"
+  resolved "https://nexus.dev.casaba.tech/repository/npm/flatted/-/flatted-2.0.1.tgz#69e57caa8f0eacbc281d2e2cb458d46fdb449e08"
+  integrity sha1-aeV8qo8OrLwoHS4stFjUb9tEngg=
 
 format@^0.2.2:
   version "0.2.2"
@@ -426,9 +435,9 @@ glob@^7.1.3:
     path-is-absolute "^1.0.0"
 
 graceful-fs@^4.1.2:
-  version "4.1.15"
-  resolved "https://nexus.dev.casaba.tech/repository/npm/graceful-fs/-/graceful-fs-4.1.15.tgz#ffb703e1066e8a0eeaa4c8b80ba9253eeefbfb00"
-  integrity sha1-/7cD4QZuig7qpMi4C6klPu77+wA=
+  version "4.2.0"
+  resolved "https://nexus.dev.casaba.tech/repository/npm/graceful-fs/-/graceful-fs-4.2.0.tgz#8d8fdc73977cb04104721cb53666c1ca64cd328b"
+  integrity sha1-jY/cc5d8sEEEchy1NmbBymTNMos=
 
 has-ansi@^2.0.0:
   version "2.0.0"
@@ -463,9 +472,9 @@ inflight@^1.0.4:
     wrappy "1"
 
 inherits@2, inherits@^2.0.1, inherits@^2.0.3, inherits@~2.0.3:
-  version "2.0.3"
-  resolved "https://nexus.dev.casaba.tech/repository/npm/inherits/-/inherits-2.0.3.tgz#633c2c83e3da42a502f52466022480f4208261de"
-  integrity sha1-Yzwsg+PaQqUC9SRmAiSA9CCCYd4=
+  version "2.0.4"
+  resolved "https://nexus.dev.casaba.tech/repository/npm/inherits/-/inherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
+  integrity sha1-D6LGT5MpF8NDOg3tVTY6rjdBa3w=
 
 interop-require@^1.0.0:
   version "1.0.0"
@@ -591,10 +600,10 @@ json-stable-stringify@^1.0.1:
   dependencies:
     jsonify "~0.0.0"
 
-json5@^1.0.1:
-  version "1.0.1"
-  resolved "https://nexus.dev.casaba.tech/repository/npm/json5/-/json5-1.0.1.tgz#779fb0018604fa854eacbf6252180d83543e3dbe"
-  integrity sha1-d5+wAYYE+oVOrL9iUhgNg1Q+Pb4=
+json5@^2.1.0:
+  version "2.1.0"
+  resolved "https://nexus.dev.casaba.tech/repository/npm/json5/-/json5-2.1.0.tgz#e7a0c62c48285c628d20a10b85c89bb807c32850"
+  integrity sha1-56DGLEgoXGKNIKELhcibuAfDKFA=
   dependencies:
     minimist "^1.2.0"
 
@@ -641,9 +650,9 @@ locate-path@^2.0.0:
     path-exists "^3.0.0"
 
 lodash@^4.0.0:
-  version "4.17.11"
-  resolved "https://nexus.dev.casaba.tech/repository/npm/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
-  integrity sha1-s56mIp72B+zYniyN8SU2iRysm40=
+  version "4.17.14"
+  resolved "https://nexus.dev.casaba.tech/repository/npm/lodash/-/lodash-4.17.14.tgz#9ce487ae66c96254fe20b599f21b6816028078ba"
+  integrity sha1-nOSHrmbJYlT+ILWZ8htoFgKAeLo=
 
 log-symbols@^1.0.2:
   version "1.0.2"
@@ -703,9 +712,9 @@ mkdirp@^0.5.0, mkdirp@^0.5.1:
     minimist "0.0.8"
 
 ms@^2.1.1:
-  version "2.1.1"
-  resolved "https://nexus.dev.casaba.tech/repository/npm/ms/-/ms-2.1.1.tgz#30a5864eb3ebb0a66f2ebe6d727af06a09d86e0a"
-  integrity sha1-MKWGTrPrsKZvLr5tcnrwagnYbgo=
+  version "2.1.2"
+  resolved "https://nexus.dev.casaba.tech/repository/npm/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
+  integrity sha1-0J0fNXtEP0kzgqjrPM0YOHKuYAk=
 
 normalize-package-data@^2.3.2:
   version "2.5.0"
@@ -866,18 +875,18 @@ prelude-ls@~1.1.2:
   integrity sha1-IZMqVJ9eUv/ZqCf1cOBL5iqX2lQ=
 
 process-nextick-args@~2.0.0:
-  version "2.0.0"
-  resolved "https://nexus.dev.casaba.tech/repository/npm/process-nextick-args/-/process-nextick-args-2.0.0.tgz#a37d732f4271b4ab1ad070d35508e8290788ffaa"
-  integrity sha1-o31zL0JxtKsa0HDTVQjoKQeI/6o=
+  version "2.0.1"
+  resolved "https://nexus.dev.casaba.tech/repository/npm/process-nextick-args/-/process-nextick-args-2.0.1.tgz#7820d9b16120cc55ca9ae7792680ae7dba6d7fe2"
+  integrity sha1-eCDZsWEgzFXKmud5JoCufbptf+I=
 
-rc-config-loader@^2.0.2:
-  version "2.0.3"
-  resolved "https://nexus.dev.casaba.tech/repository/npm/rc-config-loader/-/rc-config-loader-2.0.3.tgz#5fbe45784c3301b15350ab6507e023c33007928f"
-  integrity sha1-X75FeEwzAbFTUKtlB+AjwzAHko8=
+rc-config-loader@^2.0.4:
+  version "2.0.4"
+  resolved "https://nexus.dev.casaba.tech/repository/npm/rc-config-loader/-/rc-config-loader-2.0.4.tgz#fe23e26a87e2ec07541b29e7f37bfd75807a4c36"
+  integrity sha1-/iPiaofi7AdUGynn83v9dYB6TDY=
   dependencies:
-    debug "^3.1.0"
+    debug "^4.1.1"
     js-yaml "^3.12.0"
-    json5 "^1.0.1"
+    json5 "^2.1.0"
     object-assign "^4.1.0"
     object-keys "^1.0.12"
     path-exists "^3.0.0"
@@ -930,9 +939,9 @@ regexp.prototype.flags@^1.1.1:
     define-properties "^1.1.2"
 
 remark-frontmatter@^1.2.0:
-  version "1.3.1"
-  resolved "https://nexus.dev.casaba.tech/repository/npm/remark-frontmatter/-/remark-frontmatter-1.3.1.tgz#bc28c0c913fa0b9dd26f17304bc47b856b2ea2de"
-  integrity sha1-vCjAyRP6C53SbxcwS8R7hWsuot4=
+  version "1.3.2"
+  resolved "https://nexus.dev.casaba.tech/repository/npm/remark-frontmatter/-/remark-frontmatter-1.3.2.tgz#91d9684319cd1b96cc3d9d901f10a978f39c752d"
+  integrity sha1-kdloQxnNG5bMPZ2QHxCpePOcdS0=
   dependencies:
     fault "^1.0.1"
     xtend "^4.0.1"
@@ -974,13 +983,13 @@ require-from-string@^2.0.2:
   integrity sha1-iaf92TgmEmcxjq/hT5wy5ZjDaQk=
 
 resolve@^1.10.0:
-  version "1.11.0"
-  resolved "https://nexus.dev.casaba.tech/repository/npm/resolve/-/resolve-1.11.0.tgz#4014870ba296176b86343d50b60f3b50609ce232"
-  integrity sha1-QBSHC6KWF2uGND1Qtg87UGCc4jI=
+  version "1.11.1"
+  resolved "https://nexus.dev.casaba.tech/repository/npm/resolve/-/resolve-1.11.1.tgz#ea10d8110376982fef578df8fc30b9ac30a07a3e"
+  integrity sha1-6hDYEQN2mC/vV434/DC5rDCgej4=
   dependencies:
     path-parse "^1.0.6"
 
-rimraf@~2.6.2:
+rimraf@2.6.3:
   version "2.6.3"
   resolved "https://nexus.dev.casaba.tech/repository/npm/rimraf/-/rimraf-2.6.3.tgz#b2d104fe0d8fb27cf9e0a1cda8262dd3833c6cab"
   integrity sha1-stEE/g2Psnz54KHNqCYt04M8bKs=
@@ -1024,9 +1033,9 @@ spdx-expression-parse@^3.0.0:
     spdx-license-ids "^3.0.0"
 
 spdx-license-ids@^3.0.0:
-  version "3.0.4"
-  resolved "https://nexus.dev.casaba.tech/repository/npm/spdx-license-ids/-/spdx-license-ids-3.0.4.tgz#75ecd1a88de8c184ef015eafb51b5b48bfd11bb1"
-  integrity sha1-dezRqI3owYTvAV6vtRtbSL/RG7E=
+  version "3.0.5"
+  resolved "https://nexus.dev.casaba.tech/repository/npm/spdx-license-ids/-/spdx-license-ids-3.0.5.tgz#3694b5804567a458d3c8045842a6358632f62654"
+  integrity sha1-NpS1gEVnpFjTyARYQqY1hjL2JlQ=
 
 sprintf-js@~1.0.2:
   version "1.0.3"
@@ -1152,24 +1161,25 @@ textlint-rule-no-todo@^2.0.1:
     textlint-rule-helper "^2.0.0"
 
 textlint@^11.2.5:
-  version "11.2.5"
-  resolved "https://nexus.dev.casaba.tech/repository/npm/textlint/-/textlint-11.2.5.tgz#89663b781bf1038dca6a923f15bc41bab3dcde05"
-  integrity sha1-iWY7eBvxA43KapI/FbxBurPc3gU=
+  version "11.3.0"
+  resolved "https://nexus.dev.casaba.tech/repository/npm/textlint/-/textlint-11.3.0.tgz#4dfda4f5b6a3d4a471e2c38980bd1ecc381e87eb"
+  integrity sha1-Tf2k9baj1KRx4sOJgL0ezDgeh+s=
   dependencies:
-    "@textlint/ast-node-types" "^4.2.2"
-    "@textlint/ast-traverse" "^2.1.3"
+    "@textlint/ast-node-types" "^4.2.3"
+    "@textlint/ast-traverse" "^2.1.4"
     "@textlint/feature-flag" "^3.1.3"
-    "@textlint/fixer-formatter" "^3.1.5"
-    "@textlint/kernel" "^3.1.6"
-    "@textlint/linter-formatter" "^3.1.5"
-    "@textlint/textlint-plugin-markdown" "^5.1.6"
-    "@textlint/textlint-plugin-text" "^4.1.6"
-    "@textlint/types" "^1.1.5"
+    "@textlint/fixer-formatter" "^3.1.7"
+    "@textlint/kernel" "^3.1.7"
+    "@textlint/linter-formatter" "^3.1.6"
+    "@textlint/textlint-plugin-markdown" "^5.1.7"
+    "@textlint/textlint-plugin-text" "^4.1.7"
+    "@textlint/types" "^1.2.0"
+    "@textlint/utils" "^1.0.1"
     "@types/bluebird" "^3.5.18"
     bluebird "^3.0.5"
     debug "^4.1.1"
     deep-equal "^1.0.1"
-    file-entry-cache "^2.0.0"
+    file-entry-cache "^5.0.1"
     get-stdin "^5.0.1"
     glob "^7.1.3"
     interop-require "^1.0.0"
@@ -1181,7 +1191,7 @@ textlint@^11.2.5:
     object-assign "^4.0.1"
     optionator "^0.8.0"
     path-to-glob-pattern "^1.0.2"
-    rc-config-loader "^2.0.2"
+    rc-config-loader "^2.0.4"
     read-pkg "^1.1.0"
     read-pkg-up "^3.0.0"
     structured-source "^3.0.2"
@@ -1326,10 +1336,10 @@ wrappy@1:
   resolved "https://nexus.dev.casaba.tech/repository/npm/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
   integrity sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
 
-write@^0.2.1:
-  version "0.2.1"
-  resolved "https://nexus.dev.casaba.tech/repository/npm/write/-/write-0.2.1.tgz#5fc03828e264cea3fe91455476f7a3c566cb0757"
-  integrity sha1-X8A4KOJkzqP+kUVUdvejxWbLB1c=
+write@1.0.3:
+  version "1.0.3"
+  resolved "https://nexus.dev.casaba.tech/repository/npm/write/-/write-1.0.3.tgz#0800e14523b923a387e415123c865616aae0f5c3"
+  integrity sha1-CADhRSO5I6OH5BUSPIZWFqrg9cM=
   dependencies:
     mkdirp "^0.5.1"
 
@@ -1344,6 +1354,6 @@ xml-escape@^1.0.0:
   integrity sha1-OQTBQ/qOs6ADDsZG0pAqLxtwbEQ=
 
 xtend@^4.0.1:
-  version "4.0.1"
-  resolved "https://nexus.dev.casaba.tech/repository/npm/xtend/-/xtend-4.0.1.tgz#a5c6d532be656e23db820efb943a1f04998d63af"
-  integrity sha1-pcbVMr5lbiPbgg77lDofBJmNY68=
+  version "4.0.2"
+  resolved "https://nexus.dev.casaba.tech/repository/npm/xtend/-/xtend-4.0.2.tgz#bb72779f5fa465186b1f438f674fa347fdb5db54"
+  integrity sha1-u3J3n1+kZRhrH0OPZ0+jR/2121Q=
