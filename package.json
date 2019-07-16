@@ -12,8 +12,8 @@
     "lint:fix": "yarn lint --fix"
   },
   "devDependencies": {
-    "textlint": "^11.2.5",
-    "textlint-rule-ja-space-between-half-and-full-width": "^2.0.1",
-    "textlint-rule-no-todo": "^2.0.1"
+    "textlint": "11.3.0",
+    "textlint-rule-ja-space-between-half-and-full-width": "2.0.1",
+    "textlint-rule-no-todo": "2.0.1"
   }
 }
