@@ -1145,25 +1145,25 @@ textlint-rule-helper@^2.0.0:
     structured-source "^3.0.2"
     unist-util-visit "^1.1.0"
 
-textlint-rule-ja-space-between-half-and-full-width@^2.0.1:
+textlint-rule-ja-space-between-half-and-full-width@2.0.1:
   version "2.0.1"
-  resolved "https://nexus.dev.casaba.tech/repository/npm/textlint-rule-ja-space-between-half-and-full-width/-/textlint-rule-ja-space-between-half-and-full-width-2.0.1.tgz#a527f83bd833149763e4043965f796c9ec2192ba"
+  resolved "https://registry.yarnpkg.com/textlint-rule-ja-space-between-half-and-full-width/-/textlint-rule-ja-space-between-half-and-full-width-2.0.1.tgz#a527f83bd833149763e4043965f796c9ec2192ba"
   integrity sha1-pSf4O9gzFJdj5AQ5ZfeWyewhkro=
   dependencies:
     match-index "^1.0.1"
     textlint-rule-helper "^2.0.0"
 
-textlint-rule-no-todo@^2.0.1:
+textlint-rule-no-todo@2.0.1:
   version "2.0.1"
-  resolved "https://nexus.dev.casaba.tech/repository/npm/textlint-rule-no-todo/-/textlint-rule-no-todo-2.0.1.tgz#86351ed3521ce8faa3b8224f88887f3cecbf2920"
-  integrity sha1-hjUe01Ic6PqjuCJPiIh/POy/KSA=
+  resolved "https://registry.yarnpkg.com/textlint-rule-no-todo/-/textlint-rule-no-todo-2.0.1.tgz#86351ed3521ce8faa3b8224f88887f3cecbf2920"
+  integrity sha512-+adoWaBgoTN2g0WNcrERhVq7gdPKQIf1z7Ol+6XwMGv8XmuoFp5vJljHKtCmJBmGhBihjty2b8oaza2MY6UNlw==
   dependencies:
     textlint-rule-helper "^2.0.0"
 
-textlint@^11.2.5:
+textlint@11.3.0:
   version "11.3.0"
-  resolved "https://nexus.dev.casaba.tech/repository/npm/textlint/-/textlint-11.3.0.tgz#4dfda4f5b6a3d4a471e2c38980bd1ecc381e87eb"
-  integrity sha1-Tf2k9baj1KRx4sOJgL0ezDgeh+s=
+  resolved "https://registry.yarnpkg.com/textlint/-/textlint-11.3.0.tgz#4dfda4f5b6a3d4a471e2c38980bd1ecc381e87eb"
+  integrity sha512-Hf2ATpqNOWdaElv6G82KUosndhOtEsGmJWOVDzMO+JwufEsVSlKSdBr6kDal7UOprfK9eRJoMj2xU84luZW+cg==
   dependencies:
     "@textlint/ast-node-types" "^4.2.3"
     "@textlint/ast-traverse" "^2.1.4"
