@@ -247,7 +247,7 @@ const fakeStore = new Vuex.Store({
   }
 })
 
-it('在app中渲染价格和“state.inputValue”', () => {
+it('在app中渲染价格和“inputValue”', () => {
   const wrapper = shallowMount(Components, { store: fakeStore, localVue })
   expect(wrapper.find('p').text()).toBe('input')  
   expect(wrapper.find('.price').text()).stringContaining('$998')
