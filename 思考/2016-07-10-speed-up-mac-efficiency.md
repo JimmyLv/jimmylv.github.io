@@ -29,7 +29,7 @@ published: True
             - Finder 对于文件的操作和预览真的是比 Windows 下好太多了。
             - 当一个好太多的东西出现之后，依旧会有可优化的地方
 
-![](https://ws2.sinaimg.cn/large/006tNbRwgy1fw2b95l3vfj31kw0zke81.jpg)
+![](https://raw.githubusercontent.com/JimmyLv/images/master/2019/006tNbRwgy1fw2b95l3vfj31kw0zke81.jpg)
 
 - 命令行与快捷键快于一切
     + 使用 `brew install` 安装软件

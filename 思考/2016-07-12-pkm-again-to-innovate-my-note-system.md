@@ -19,7 +19,7 @@ published: True
 
 ToMarkdown 让文字返璞归真，而 ToArticle 则让思考的乐趣重现。
 
-![](https://ws4.sinaimg.cn/large/006tNbRwgy1fw2b97sbiuj31kw0yidkd.jpg)
+![](https://raw.githubusercontent.com/JimmyLv/images/master/2019/006tNbRwgy1fw2b97sbiuj31kw0yidkd.jpg)
 
 ## 快速输入的极致
 

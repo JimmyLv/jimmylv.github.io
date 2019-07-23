@@ -11,7 +11,7 @@ published: True
 
 曾经写过一篇：[再谈个人知识管理：革新我的笔记系统](http://blog.jimmylv.info/2016-07-12-pkm-again-to-innovate-my-note-system/)，如今我又来亲自打自己的脸了。现在回过头去看上一篇内容时，最大的一个感受就是缺失了应用场景和情境性，看似介绍了很多好用的功能，但其实并没有串连到一起从而发挥实际运用的价值。这篇文章依旧会从 `材料 -> 资料 -> 知识` 这样的路径来解释信息的流通，如何方便快捷并且**有效地**收集材料，再将其整理转化为有价值的知识体系结构，便是本文的重点。
 
-![](https://ws1.sinaimg.cn/large/006tNbRwgy1fw2b96qzpcj30hg079gll.jpg)
+![](https://raw.githubusercontent.com/JimmyLv/images/master/2019/006tNbRwgy1fw2b96qzpcj30hg079gll.jpg)
 
 ## 收集
 
