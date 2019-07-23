@@ -63,7 +63,7 @@ yarn install && yarn start
 
 # What's Atomic Design？
 
-[![](http://o7mw3gkkh.qnssl.com/images/2017/03/1489580083893.png)](http://atomicdesign.bradfrost.com/chapter-2/)
+[![](https://raw.githubusercontent.com/JimmyLv/images/master/2017/03/1489580083893.png)](http://atomicdesign.bradfrost.com/chapter-2/)
 
 demo: [Pattern Lab | Build Atomic Design Systems](http://patternlab.io/)
 
@@ -71,13 +71,13 @@ demo: [Pattern Lab | Build Atomic Design Systems](http://patternlab.io/)
 
 # 🔨 Practice 01
 
-![](http://o7mw3gkkh.qnssl.com/images/2017/03/1489561356582.png)
+![](https://raw.githubusercontent.com/JimmyLv/images/master/2017/03/1489561356582.png)
 
 [slide]
 
 # 🌲 Components Tree
 
-![](http://o7mw3gkkh.qnssl.com/images/2017/03/1489635396524.png)
+![](https://raw.githubusercontent.com/JimmyLv/images/master/2017/03/1489635396524.png)
 
 [slide]
 
@@ -102,7 +102,7 @@ demo: [Pattern Lab | Build Atomic Design Systems](http://patternlab.io/)
 
 [slide]
 
-![](http://o7mw3gkkh.qnssl.com/images/2017/03/1489660500667.png)
+![](https://raw.githubusercontent.com/JimmyLv/images/master/2017/03/1489660500667.png)
 
 [slide]
  
@@ -199,11 +199,11 @@ function DeleteAccount() {
 
 [slide]
 
-![](http://o7mw3gkkh.qnssl.com/images/2017/03/1489564943831.png)
+![](https://raw.githubusercontent.com/JimmyLv/images/master/2017/03/1489564943831.png)
 
 [slide]
 
-![](http://o7mw3gkkh.qnssl.com/images/2017/03/1489635877830.png)
+![](https://raw.githubusercontent.com/JimmyLv/images/master/2017/03/1489635877830.png)
 
 [slide]
 
@@ -273,7 +273,7 @@ const DeleteAccount = (props) => (
 
 [slide]
 
-![](http://o7mw3gkkh.qnssl.com/images/2017/03/1488610496651.png)
+![](https://raw.githubusercontent.com/JimmyLv/images/master/2017/03/1488610496651.png)
 
 [note]tdd components，即 data 如何对应到 view; tdd business logic，即 event 如何对应到 state[/note]
 
@@ -287,7 +287,7 @@ const DeleteAccount = (props) => (
 
 # 🔨 Practice 02
 
-![](http://o7mw3gkkh.qnssl.com/images/2017/03/1489581902209.png)
+![](https://raw.githubusercontent.com/JimmyLv/images/master/2017/03/1489581902209.png)
 
 -------
 
@@ -297,7 +297,7 @@ const DeleteAccount = (props) => (
 
 [slide]
 
-![](http://o7mw3gkkh.qnssl.com/images/2017/03/1489635512260.png)
+![](https://raw.githubusercontent.com/JimmyLv/images/master/2017/03/1489635512260.png)
 
 [slide]
 
@@ -334,7 +334,7 @@ export default Contacts
 
 # Lifecycle
 
-[![](http://o7mw3gkkh.qnssl.com/images/2017/03/1489566393031.png)](https://rawgit.com/rkendall/visible-react/master/demo/dist/demo.html)
+[![](https://raw.githubusercontent.com/JimmyLv/images/master/2017/03/1489566393031.png)](https://rawgit.com/rkendall/visible-react/master/demo/dist/demo.html)
 
 [slide]
 
@@ -348,7 +348,7 @@ export default Contacts
 
 # State vs Props
 
-[![](http://o7mw3gkkh.qnssl.com/images/2017/03/1489566510269.png)](https://facebook.github.io/react/docs/state-and-lifecycle.html#converting-a-function-to-a-class)
+[![](https://raw.githubusercontent.com/JimmyLv/images/master/2017/03/1489566510269.png)](https://facebook.github.io/react/docs/state-and-lifecycle.html#converting-a-function-to-a-class)
 
 [slide]
 
@@ -361,7 +361,7 @@ export default Contacts
 
 # 📑 Homework
 
-[![](http://o7mw3gkkh.qnssl.com/images/2017/03/1489581432456.png)](https://www.suncorp.com.au/insurance/car.html)
+[![](https://raw.githubusercontent.com/JimmyLv/images/master/2017/03/1489581432456.png)](https://www.suncorp.com.au/insurance/car.html)
 
 [slide]
 

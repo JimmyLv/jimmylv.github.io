@@ -30,7 +30,7 @@ published: True
 3. Demo
 4. 优缺点总结与思考
 
-[slide style="background-image:url('https://o7mw3gkkh.qnssl.com/images/2017/12/1513920317188.png')"]
+[slide style="background-image:url('https://raw.githubusercontent.com/JimmyLv/images/master/2017/12/1513920317188.png')"]
 
 # The Majestic Monolith
 
