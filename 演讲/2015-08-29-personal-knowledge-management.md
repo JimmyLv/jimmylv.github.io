@@ -64,14 +64,14 @@ published: True
 
 - RSS：<http://feedly.com>
 
-![feedly](//o7mw3gkkh.qnssl.com//feedly.png)
+![feedly](https://raw.githubusercontent.com/JimmyLv/images/master/images/feedly.png)
 
 [slide]
 # 阅读
 
 - 稍后阅读：<http://getpocket.com>
 
-![](//o7mw3gkkh.qnssl.com//pocket.png)
+![](https://raw.githubusercontent.com/JimmyLv/images/master/images/pocket.png)
 
 [slide]
 # 收藏

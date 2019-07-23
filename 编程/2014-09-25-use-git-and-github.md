@@ -107,4 +107,4 @@ $ git push -u origin gh-pages
 
 ## 5. Git命令大全
 
-![cheat-sheet-large01](//o7mw3gkkh.qnssl.com//public/img/tech/cheat-sheet-large01.png)
+![cheat-sheet-large01](https://raw.githubusercontent.com/JimmyLv/images/master/images/tech/cheat-sheet-large01.png)
