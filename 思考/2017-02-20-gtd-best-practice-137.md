@@ -121,7 +121,7 @@ GTD 的核心观点就是「在任何时候，都做到既高效又放松」，�
 
 说到安排时间，其实这儿有一个精妙的「预计时」的概念，这是在我使用计时系统（Toggl）一段时间过后的一个深刻心得：即**完美自律的人会知晓未来某时段自己在做什么，只要被计划的行动被具体实施，该时间段的记录就已然确定，也就是说「计时无用，无须计时」**。在滴答清单的日历界面中，还有一个用户体验爆棚的功能，即可以将右侧清单中的任务直接拖拽到日历当中，iOS 端甚至可以直接通过拉伸从而控制时间段的长短。
 
-![](https://o7mw3gkkh.qnssl.com/images/2017/07/1499671064550.png)
+![](https://raw.githubusercontent.com/JimmyLv/images/master/2017/07/1499671064550.png)
 
 再多提一嘴，我特意废弃了滴答清单所提供的「今天」清单，因为一旦有了「今天」这个概念，就反而会让人忽略「下一步行动」这个清单，误以为「今天」（隐喻着「今天的事情最紧急」）清单列表里的事情是今天最值得做的，一旦有了期限，就又有了压力。
 
@@ -204,4 +204,4 @@ GTD 的核心观点就是「在任何时候，都做到既高效又放松」，�
 - [互联网时代的时间管理实践 · Issue #102 · lifesinger/blog](https://github.com/lifesinger/blog/issues/102)
 - [David Allen's Getting Things Done® Methodology](http://gettingthingsdone.com/)
 
-![GTD Flow](https://o7mw3gkkh.qnssl.com/images/2017/04/1491614932473.png)
+![GTD Flow](https://raw.githubusercontent.com/JimmyLv/images/master/2017/04/1491614932473.png)
