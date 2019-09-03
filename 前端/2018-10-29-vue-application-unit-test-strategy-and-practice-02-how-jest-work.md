@@ -65,7 +65,7 @@ describe('Math module', () => {
 
 然后运行 `yarn test` （添加 NPM Script）你就可以看到相应的结果。
 
-![](https://raw.githubusercontent.com/JimmyLv/jimmylv.github.io/master/images/jest-failure.png)
+![](https://raw.githubusercontent.com/JimmyLv/images/master/images/jest-failure.png)
 
 ### Given/When/Then 的套路
 
@@ -88,11 +88,11 @@ expect(1+1).not.toBe(3)
 
 修改断言的结果，就可以看到成功后的结果了：
 
-![](https://raw.githubusercontent.com/JimmyLv/jimmylv.github.io/master/images/jest-success.png)
+![](https://raw.githubusercontent.com/JimmyLv/images/master/images/jest-success.png)
 
 ## 模块间依赖 Fake/Stub/Mock/Spy
 
-![](https://raw.githubusercontent.com/JimmyLv/jimmylv.github.io/master/images/isolate.png)
+![](https://raw.githubusercontent.com/JimmyLv/images/master/images/isolate.png)
 
 如同人类世界中的羁绊，软件模块之间必然也免不了依赖。[Martin Fowler](https://martinfowler.com/) 在 [UnitTest](https://martinfowler.com/bliki/UnitTest.html) 这篇文章当中将单元测试作了一个重要的区分，即你所测试的单位应该是社交型（Social Tests）还是独立型（Solitary Tests）？ 想象一下你正在测试一个 `Order` Class 的 `price()` 方法，而 `price()` 方法需要在 `Product` 和 `Customer` Class 中调用一些函数。如果你希望单元测试所测试的 `Order` 模块是独立的，那么你就不想直接使用真正的 `Product` 或 `Customer` Class，因为 `Customer` Class 的错误会直接导致 `Order` Class 的单元测试失败。相反，你可能会使用一个替身作为依赖的对象，也就是我们接下来会提到的 Fake/Stub/Mock/Spy。
 

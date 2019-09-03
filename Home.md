@@ -11,7 +11,7 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-[[images/gavatar.jpg]]
+[[https://blog.jimmylv.info/public/img/gavatar.jpg]]
 
 Welcome to the jimmylv.github.io wiki!
 
