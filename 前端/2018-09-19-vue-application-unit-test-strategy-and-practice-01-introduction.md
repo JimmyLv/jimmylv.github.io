@@ -189,6 +189,8 @@ ps: 除此之外，还有很多开发者体验亦值得细细品味与发现，�
 * [ ] ### 单元测试的关注点
 * [ ] ### 应用测试的测试策略
 
+我的博客即将同步至腾讯云+社区，邀请大家一同入驻：https://cloud.tencent.com/developer/support-plan?invite_code=5jtaw8aqdjnd
+
 [1]:	https://github.com/linesh-simplicity/linesh-simplicity.github.io/issues/122
 [2]:	https://www.martinfowler.com/bliki/DefinitionOfRefactoring.html
 [3]:	https://github.com/linesh-simplicity/linesh-simplicity.github.io/issues/197
