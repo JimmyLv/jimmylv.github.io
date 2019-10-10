@@ -11,7 +11,21 @@
     "lint": "textlint **/*.md",
     "lint:fix": "yarn lint --fix"
   },
+  "lint-staged": {
+    "*.{md}": [
+      "npm run lint:fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "post-commit": "git update-index --again",
+      "pre-commit": "lint-staged"
+    }
+  },
   "devDependencies": {
+    "husky": "^1.3.1",
+    "lint-staged": "^7.3.0",
     "textlint": "11.3.0",
     "textlint-rule-ja-space-between-half-and-full-width": "2.0.1",
     "textlint-rule-no-todo": "2.0.1"
