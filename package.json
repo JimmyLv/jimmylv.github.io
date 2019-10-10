@@ -13,7 +13,7 @@
   },
   "lint-staged": {
     "*.{md}": [
-      "npm run lint:fix",
+      "textlint --fix",
       "git add"
     ]
   },
