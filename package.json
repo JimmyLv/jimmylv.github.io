@@ -12,7 +12,7 @@
     "lint:fix": "yarn lint --fix"
   },
   "lint-staged": {
-    "*.{md}": [
+    "*.md": [
       "textlint --fix",
       "git add"
     ]
