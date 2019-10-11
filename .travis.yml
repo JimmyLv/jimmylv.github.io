@@ -30,7 +30,7 @@ before_install:
   #  - unzip qshell-*.zip
   #  - ./qshell_linux_amd64 account $QiNiuAK $QiNiuSK
 install:
-  - npm install nodeppt -g
+  - npm install nodeppt@1 -g
 script:
   - nodeppt generate ./演讲 ./slides -a
   - cd jekyll-blog
