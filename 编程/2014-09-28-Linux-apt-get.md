@@ -8,7 +8,7 @@ description:
 
 ## 程序安装与卸载`apt-get`
 
-### 1. 添加PPA源
+### 1. 添加 PPA 源
 
 > PPA，表示 Personal Package Archives，也就是个人软件包集。
 
