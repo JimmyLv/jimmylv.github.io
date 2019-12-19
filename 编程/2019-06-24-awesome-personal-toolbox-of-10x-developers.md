@@ -2,7 +2,7 @@
 layout: post
 title: 10x程序员
 categories: [编程]
-tags: [Serverless, Reading, Aglie, PKM, GitHub, Diigo, JavaScript]
+tags: [Agile, PKM, GTD]
 published: False
 
 ---
