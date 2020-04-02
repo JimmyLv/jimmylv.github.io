@@ -1,19 +1,24 @@
+# macOS
 .Trash/
+.DS_Store
 
+# Archive
 _drafts/
 Inbox/
 Archive/
 _Archive/
 
+# NotePlan
 Notes/
 Calendar/
+Filters/
 
+# IDE
 .idea/
 .vscode/
-.DS_Store
-
-configs/
-node_modules/
-
 *.plist
 *.sublime-*
+
+# Dependencies
+configs/
+node_modules/
