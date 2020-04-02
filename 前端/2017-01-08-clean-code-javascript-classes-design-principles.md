@@ -4,7 +4,6 @@ title: 【译】整洁代码：JavaScript 当中的面向对象设计原则（S.
 category: [前端]
 tags: [JavaScript, 前端, 面向对象, 设计原则, 类型系统]
 published: true
-
 ---
 
 原文地址：<https://github.com/ryanmcdermott/clean-code-javascript#classes>
@@ -15,7 +14,7 @@ published: true
 
 ### [Single Responsibility Principle (SRP)](https://github.com/ryanmcdermott/clean-code-javascript#single-responsibility-principle-srp) | 单一职责原则
 
-> As stated in Clean Code, "There should never be more than one reason for a class to change". It's tempting to jam-pack a class with a lot of functionality, like when you can only take one suitcase on your flight. The issue with this is that your class won't be conceptually cohesive and it will give it many reasons to change. Minimizing the amount of times you need to change a class is important. It's important because if too much functionality is in one class and you modify a piece of it, it can be difficult to understand how that will affect other dependent modules in your codebase. 
+> As stated in Clean Code, "There should never be more than one reason for a class to change". It's tempting to jam-pack a class with a lot of functionality, like when you can only take one suitcase on your flight. The issue with this is that your class won't be conceptually cohesive and it will give it many reasons to change. Minimizing the amount of times you need to change a class is important. It's important because if too much functionality is in one class and you modify a piece of it, it can be difficult to understand how that will affect other dependent modules in your codebase.
 
 如《整洁代码》中所言，「不应该有一个以上的理由去修改某个类」。通常情况下，我们会倾向于往一个类当中塞入过多的功能，就像当你只能往航班上携带**一个**行李箱的时候。这里的问题在于，这个类不再是概念上的内聚，从而导致了未来可能有很多理由会去修改它。尽可能少地去修改某个类是非常重要的，因为如果在一个类里面包含了过多的功能，那么当你修改其中的某一部分，就会难以理解新的修改将如何影响代码库中的其他依赖模块。
 
@@ -55,7 +54,7 @@ class UserAuth {
 class UserSettings {
   constructor(user) {
     this.user = user;
-    this.auth = new UserAuth(user)
+    this.auth = new UserAuth(user);
   }
 
   changeSettings(settings) {
@@ -69,7 +68,7 @@ class UserSettings {
 ### [Open/Closed Principle (OCP)](https://github.com/ryanmcdermott/clean-code-javascript#openclosed-principle-ocp) | 开放封闭原则
 
 > As stated by Bertrand Meyer, "software entities (classes, modules, functions,
-etc.) should be open for extension, but closed for modification." What does that mean though? This principle basically states that you should allow users to extend the functionality of your module without having to open up the `.js` source code file and manually manipulate it.
+> etc.) should be open for extension, but closed for modification." What does that mean though? This principle basically states that you should allow users to extend the functionality of your module without having to open up the `.js` source code file and manually manipulate it.
 
 正如 Bertrand Meyer 所言，「软件实体（类、模块、函数等等）应该对扩展开放，而对修改封闭」。换句话说，该原则的基本含义就是当用户在扩展你的模块功能时，没有必要去打开 `.js` 源文件并手动修改源代码。
 
@@ -80,13 +79,12 @@ class AjaxRequester {
   constructor() {
     // What if we wanted another HTTP Method, like DELETE? We would have to
     // open this file up and modify this and put it in manually.
-    this.HTTP_METHODS = ['POST', 'PUT', 'GET'];
+    this.HTTP_METHODS = ["POST", "PUT", "GET"];
   }
 
   get(url) {
     // ...
   }
-
 }
 ```
 
@@ -95,7 +93,7 @@ class AjaxRequester {
 ```js
 class AjaxRequester {
   constructor() {
-    this.HTTP_METHODS = ['POST', 'PUT', 'GET'];
+    this.HTTP_METHODS = ["POST", "PUT", "GET"];
   }
 
   get(url) {
@@ -170,7 +168,7 @@ function renderLargeRectangles(rectangles) {
     rectangle.setHeight(5);
     let area = rectangle.getArea(); // BAD: Will return 25 for Square. Should be 20.
     rectangle.render(area);
-  })
+  });
 }
 
 let rectangles = [new Rectangle(), new Rectangle(), new Square()];
@@ -230,16 +228,16 @@ class Square extends Shape {
 function renderLargeShapes(shapes) {
   shapes.forEach((shape) => {
     switch (shape.constructor.name) {
-      case 'Square':
+      case "Square":
         shape.setLength(5);
-      case 'Rectangle':
+      case "Rectangle":
         shape.setWidth(4);
         shape.setHeight(5);
     }
 
     let area = shape.getArea();
     shape.render(area);
-  })
+  });
 }
 
 let shapes = [new Rectangle(), new Rectangle(), new Square()];
@@ -253,12 +251,12 @@ renderLargeShapes(shapes);
 JavaScript 语言本身并不包含对于接口语法的支持，因此也无法像其他语言那样达到严格限制的程度。不过鉴于 JavaScript 本身类型系统的缺失，遵循接口隔离原则还是非常重要的。
 
 > ISP states that "Clients should not be forced to depend upon interfaces that
-they do not use." Interfaces are implicit contracts in JavaScript because of
-duck typing.
+> they do not use." Interfaces are implicit contracts in JavaScript because of
+> duck typing.
 
 ISP 的表述是「不应该强制客户端去依赖于他们不需要的接口」，由于 JavaScript 的「鸭子类型」，JavaScript 当中的接口只是一种隐性的契约而已。
 
-> A good example to look at that demonstrates this principle in JavaScript is for classes that require large settings objects. Not requiring clients to setup huge amounts of options is beneficial, because most of the time they won't need all of the settings. Making them optional helps prevent having a "fat interface". 
+> A good example to look at that demonstrates this principle in JavaScript is for classes that require large settings objects. Not requiring clients to setup huge amounts of options is beneficial, because most of the time they won't need all of the settings. Making them optional helps prevent having a "fat interface".
 
 这一点在 JavaScript 中较为典型的例子就是那些需要大量配置信息的类。其实使用者并不需要去关心每一个配置项，不强制他们设置大量的选项能够节省大量的时间，保持设置选项的**可选性**能够有助于防止「胖接口」。
 
@@ -282,8 +280,8 @@ class DOMTraverser {
 }
 
 let $ = new DOMTraverser({
-  rootNode: document.getElementsByTagName('body'),
-  animationModule: function() {} // Most of the time, we won't need to animate when traversing.
+  rootNode: document.getElementsByTagName("body"),
+  animationModule: function () {}, // Most of the time, we won't need to animate when traversing.
   // ...
 });
 ```
@@ -315,16 +313,17 @@ class DOMTraverser {
 }
 
 let $ = new DOMTraverser({
-  rootNode: document.getElementsByTagName('body'),
-  options: {  
-    animationModule: function() {}
-  }
+  rootNode: document.getElementsByTagName("body"),
+  options: {
+    animationModule: function () {},
+  },
 });
 ```
 
 ### [Dependency Inversion Principle (DIP)](https://github.com/ryanmcdermott/clean-code-javascript#dependency-inversion-principle-dip) | 依赖反转原则
 
 > This principle states two essential things:
+>
 > 1. High-level modules should not depend on low-level modules. Both should depend on abstractions.
 > 2. Abstractions should not depend upon details. Details should depend on abstractions.
 
@@ -338,7 +337,7 @@ let $ = new DOMTraverser({
 最开始可能很难理解，但是如果你曾经用过 Angular.js，你就已经见到过这个原则的一种实现，依赖注入（DI）就是其中一种形式。但是他们不是完全相同的概念，DIP 可以避免上层模块知道你的下层模块的实现细节和具体设置，而这可以通过 DI 来达成目的。一个显著的好处就是减少了模块之间的耦合，而耦合是非常差的一种开发模式，因为它会使得你的代码难以重构。
 
 > As stated previously, JavaScript doesn't have interfaces so the abstractions
-that are depended upon are implicit contracts. That is to say, the methods and properties that an object/class exposes to another object/class. In the example below, the implicit contract is that any Request module for an `InventoryTracker` will have a `requestItems` method.
+> that are depended upon are implicit contracts. That is to say, the methods and properties that an object/class exposes to another object/class. In the example below, the implicit contract is that any Request module for an `InventoryTracker` will have a `requestItems` method.
 
 就像之前所提到的，JavaScript 语言本身没有接口，从而抽象只能依赖于隐性的契约。也就是指，一个对象/类所暴露给另一个对象/类的方法和属性。以下例子中所隐含的契约就是，`InventoryTracker` 所依赖的任意 Request 模块都要有一个 `requestItems` 方法。
 
@@ -363,7 +362,7 @@ class InventoryTracker {
 
 class InventoryRequester {
   constructor() {
-    this.REQ_METHODS = ['HTTP'];
+    this.REQ_METHODS = ["HTTP"];
   }
 
   requestItem(item) {
@@ -371,7 +370,7 @@ class InventoryRequester {
   }
 }
 
-let inventoryTracker = new InventoryTracker(['apples', 'bananas']);
+let inventoryTracker = new InventoryTracker(["apples", "bananas"]);
 inventoryTracker.requestItems();
 ```
 
@@ -393,7 +392,7 @@ class InventoryTracker {
 
 class InventoryRequesterV1 {
   constructor() {
-    this.REQ_METHODS = ['HTTP'];
+    this.REQ_METHODS = ["HTTP"];
   }
 
   requestItem(item) {
@@ -403,7 +402,7 @@ class InventoryRequesterV1 {
 
 class InventoryRequesterV2 {
   constructor() {
-    this.REQ_METHODS = ['WS'];
+    this.REQ_METHODS = ["WS"];
   }
 
   requestItem(item) {
@@ -413,6 +412,9 @@ class InventoryRequesterV2 {
 
 // By constructing our dependencies externally and injecting them, we can easily
 // substitute our request module for a fancy new one that uses WebSockets.
-let inventoryTracker = new InventoryTracker(['apples', 'bananas'], new InventoryRequesterV2());
+let inventoryTracker = new InventoryTracker(
+  ["apples", "bananas"],
+  new InventoryRequesterV2()
+);
 inventoryTracker.requestItems();
 ```

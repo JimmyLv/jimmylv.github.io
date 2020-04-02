@@ -4,7 +4,6 @@ title: 【译】主动阅读：评注的艺术
 category: [思考]
 tags: [阅读, 评注, 学习]
 published: true
-
 ---
 
 # Active Reading: The Art of Annotation | 主动阅读：评注的艺术
@@ -27,12 +26,11 @@ published: true
 
 值得考虑的三大事情：确定作者最重要的见解，理解它们如何相互配合，并且描述你对其感觉如何。
 
-> * To annotate: *underline*, highlight, or flag passages that stand out to you in some way. Make written notes in the margins to connect ideas or make note of important passages. Also make note of specific details that support a main idea or literary theme, and identify your reactions to specific passages (if applicable).
-> * Although the more specific your marks, the better it will be when you write your essays, the downfall to annotating is that many people underline or highlight too much! Try to avoid this pitfall. **Remember, annotate according to your purpose!**
+> - To annotate: _underline_, highlight, or flag passages that stand out to you in some way. Make written notes in the margins to connect ideas or make note of important passages. Also make note of specific details that support a main idea or literary theme, and identify your reactions to specific passages (if applicable).
+> - Although the more specific your marks, the better it will be when you write your essays, the downfall to annotating is that many people underline or highlight too much! Try to avoid this pitfall. **Remember, annotate according to your purpose!**
 
-
-  * 评注的方式：*下划线*，高亮，或者标记那些在某方面吸引你注意力的段落。在边缘处写下备注，用来关联想法，或者标记重要段落。也可以标注支持某个中心思想或者文学主题的具体细节，或者记下你对于某个段落的反应（如果可以的话）。
-  * 虽然你标记得越特别，在你写论文的时候就会越好，然而评注不起作用的原因却是很多人的下划线或者高亮太多了！尽量避免这个陷阱。**记住，评注要取决于你的目标！**
+- 评注的方式：_下划线_，高亮，或者标记那些在某方面吸引你注意力的段落。在边缘处写下备注，用来关联想法，或者标记重要段落。也可以标注支持某个中心思想或者文学主题的具体细节，或者记下你对于某个段落的反应（如果可以的话）。
+- 虽然你标记得越特别，在你写论文的时候就会越好，然而评注不起作用的原因却是很多人的下划线或者高亮太多了！尽量避免这个陷阱。**记住，评注要取决于你的目标！**
 
 > **Consider the following questions as you read:**
 
@@ -42,36 +40,35 @@ published: true
 
 > Landsberger, Joe. “Reading Critically.” Study Guides and Strategies. Web. 20 Aug. 2010.
 
-> * What initial topics or questions are raised for me, the reader?
-> * What issues are addressed in the reading?
-> * What conclusions does the author reach about the issue(s)?
-> * What are the author’s reasons for his or her assertions?
-> * Are there passages that stick out in the reading selection? Why does this passage stickout (ask this question for each passage)?
+> - What initial topics or questions are raised for me, the reader?
+> - What issues are addressed in the reading?
+> - What conclusions does the author reach about the issue(s)?
+> - What are the author’s reasons for his or her assertions?
+> - Are there passages that stick out in the reading selection? Why does this passage stickout (ask this question for each passage)?
 
-  * 最初的主题是什么？我，即读者最开始所提出的问题是什么？
-  * 阅读材料所提及的问题是什么？
-  * 作者对于这个（些）问题达成了什么结论？
-  * 他或她的主张背后的原因是什么？
-  * 阅读选集的这些段落是否突出了重点？为什么这个段落有所着重（每个段落都要提出这个问题）？
+- 最初的主题是什么？我，即读者最开始所提出的问题是什么？
+- 阅读材料所提及的问题是什么？
+- 作者对于这个（些）问题达成了什么结论？
+- 他或她的主张背后的原因是什么？
+- 阅读选集的这些段落是否突出了重点？为什么这个段落有所着重（每个段落都要提出这个问题）？
 
 > **Suggestions for annotating include the following:**
 
 **以下是作评注的一些建议：**
 
-> * Label and interpret literary devices (metaphor, simile, imagery, personification, symbol, alliteration, metonymy, synecdoche, etc.) and elements of style (tone, diction, syntax, narrative pace, use of figurative language, etc.)
-> * Identify themes, main ideas, supportive details and/or evidence that lead the reader to a conclusion about the text
-> * Summarize what you read (minimally)
-> * Write questions
-> * Converse with the author
-> * Make connections to other texts or experiences
+> - Label and interpret literary devices (metaphor, simile, imagery, personification, symbol, alliteration, metonymy, synecdoche, etc.) and elements of style (tone, diction, syntax, narrative pace, use of figurative language, etc.)
+> - Identify themes, main ideas, supportive details and/or evidence that lead the reader to a conclusion about the text
+> - Summarize what you read (minimally)
+> - Write questions
+> - Converse with the author
+> - Make connections to other texts or experiences
 
-
-  * 标签和解释性文学元素（暗喻、明喻、意象、象征、符号、头韵、转喻、提喻，等等）和元素风格（语气、措辞、语法、叙事节奏、比喻性语言的使用，等等)
-  * 确定主题，主要观点，支持论点的细节以及/或者是引导读者得出内容结论的论据
-  * 总结所阅读的内容（最小化）
-  * 写下问题或疑虑
-  * 与作者谈话
-  * 跟其他内容或经验建立连接
+- 标签和解释性文学元素（暗喻、明喻、意象、象征、符号、头韵、转喻、提喻，等等）和元素风格（语气、措辞、语法、叙事节奏、比喻性语言的使用，等等)
+- 确定主题，主要观点，支持论点的细节以及/或者是引导读者得出内容结论的论据
+- 总结所阅读的内容（最小化）
+- 写下问题或疑虑
+- 与作者谈话
+- 跟其他内容或经验建立连接
 
 > **Sample annotated text:**
 

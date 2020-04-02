@@ -4,7 +4,6 @@ title: 个人成长基础设施：纪念那些年我折腾过的各种…
 categories: [思考]
 tags: [插件, 程序员, 成长]
 published: True
-
 ---
 
 ## 硬件&软件篇 [\#121](https://github.com/JimmyLv/jimmylv.github.io/issues/121)
@@ -29,7 +28,6 @@ published: True
 - [cnpm](https://github.com/cnpm/cnpm) & [Yarn](https://yarnpkg.com/) & npm packages manager (inside Intellij or ndm GUI or npm-check-updates) · Node 下 NPM 包管理及其升级（为了速度、可视化...）
 - [Jekyll](https://jekyllrb.com/) or [Hexo](https://hexo.io/) · 博客相关
 - of course learning linux bash first
-
 
 #### level 1. GUI Applications
 
@@ -96,7 +94,11 @@ published: True
 - [macOS - 热门问答 - 知乎](https://www.zhihu.com/topic/19550290/hot)
 
 ## 常用代码（动态）模板 [\#41](https://github.com/JimmyLv/jimmylv.github.io/issues/41)
+
 ## 常用脚手架 [\#122](https://github.com/JimmyLv/jimmylv.github.io/issues/122)
+
 ## 可复用 UI 组件 [\#80](https://github.com/JimmyLv/jimmylv.github.io/issues/80)
+
 ## Intellij 相关配置 [\#60](https://github.com/JimmyLv/jimmylv.github.io/issues/60)
+
 ## Alfred Workflow [\#78](https://github.com/JimmyLv/jimmylv.github.io/issues/78)

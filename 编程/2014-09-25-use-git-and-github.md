@@ -6,7 +6,7 @@ tags: [Ubuntu, Git]
 published: true
 ---
 
-## 1. 安装/设置Git
+## 1. 安装/设置 Git
 
 ```bash
 #下载
@@ -35,11 +35,11 @@ $ git init
 Initialized empty Git repository in /home/llgreen/Documents/Git_repository/.git/
 ```
 
-## 3. 连接/克隆远程仓库Github
+## 3. 连接/克隆远程仓库 Github
 
-[Permission denied: 怎样生成SSH Keys?](https://help.github.com/articles/generating-ssh-keys)
+[Permission denied: 怎样生成 SSH Keys?](https://help.github.com/articles/generating-ssh-keys)
 
-[如何添加SSH key到GitHub?](https://github.com/settings/ssh)
+[如何添加 SSH key 到 GitHub?](https://github.com/settings/ssh)
 
 ```bash
 #第二次连接远程仓库，忘记添加密匙，权限拒绝
@@ -60,7 +60,7 @@ Your public key has been saved in /home/llgreen/.ssh/id_rsa.pub.
 $ eval "$(ssh-agent -s)"
 Agent pid 7359
 $ ssh-add ~/.ssh/id_rsa
-Enter passphrase for /home/llgreen/.ssh/id_rsa: 
+Enter passphrase for /home/llgreen/.ssh/id_rsa:
 Identity added: /home/llgreen/.ssh/id_rsa (/home/llgreen/.ssh/id_rsa)
 
 #Step 3: Add your SSH key to GitHub
@@ -82,9 +82,9 @@ Hi liqing215! You've successfully authenticated, but GitHub does not provide she
 ```bash
 $ git clone git@github.com:liqing215/note-blog.git
 $ cd note-blog/
-$ nano README.md 
+$ nano README.md
 #添加文件 add -> commit -> push
-$ git add README.md 
+$ git add README.md
 $ git commit -m 'learngit commit'
 #查看文件在那个分支，选择推送到gh-pages分支（这是GitHub的pages分支，项目在master上）
 $ git status
@@ -94,17 +94,17 @@ $ git push -u origin gh-pages
 
 ```
 
-[廖雪峰-Git教程-添加远程库](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013752340242354807e192f02a44359908df8a5643103a000)
+[廖雪峰-Git 教程-添加远程库](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013752340242354807e192f02a44359908df8a5643103a000)
 
 > - 要关联一个远程库：
-`git remote add origin git@server-name:path/repo-name.git`
-> - 关联后，第一次推送master分支的所有内容：
-`git push -u origin master`
+>   `git remote add origin git@server-name:path/repo-name.git`
+> - 关联后，第一次推送 master 分支的所有内容：
+>   `git push -u origin master`
 > - 此后，每次本地提交后，推送最新修改：
-`git push origin master`
+>   `git push origin master`
 > - 提交默认的对应分支：
-`git push`
+>   `git push`
 
-## 5. Git命令大全
+## 5. Git 命令大全
 
 ![cheat-sheet-large01](https://raw.githubusercontent.com/JimmyLv/images/master/images/tech/cheat-sheet-large01.png)

@@ -5,23 +5,24 @@ category: 编程
 tags: [Ubuntu, Sublime, Python]
 published: true
 ---
+
 <!-- MarkdownTOC -->
 
 - 配置 Python 环境
-    - 1. 安装 pip
-    - 2. 构建虚拟环境
+  - 1. 安装 pip
+  - 2. 构建虚拟环境
 - Sublime Text 3 的安装与配置
-    - 1. 安装插件
-    - 2. 修改快捷键
-    - 3. 修改视图
-    - 4. 编辑器快捷键汇总
+  - 1. 安装插件
+  - 2. 修改快捷键
+  - 3. 修改视图
+  - 4. 编辑器快捷键汇总
 
 <!-- /MarkdownTOC -->
 
-## 配置Python环境
+## 配置 Python 环境
 
-### 1. 安装pip
- 
+### 1. 安装 pip
+
 > pip 是 Python 的包管理工具，建议 Python 的包都用 pip 进行管理。
 
 ```sh
@@ -35,44 +36,42 @@ $ pip install --upgrade [ ]
 $ pip uninstall [ ]
 ```
 
-
 ### 2. 构建虚拟环境
 
-> virtualenv用于创建独立的Python环境，多个Python相互独立，互不影响，它能够：
+> virtualenv 用于创建独立的 Python 环境，多个 Python 相互独立，互不影响，它能够：
 
-* 在没有权限的情况下安装新套件
+- 在没有权限的情况下安装新套件
 
-* 不同应用可以使用不同的套件版本
+- 不同应用可以使用不同的套件版本
 
-* 套件升级不影响其他应用
+- 套件升级不影响其他应用
 
-- 安装 Virtualenv 和 Virtualenvwrapper
+* 安装 Virtualenv 和 Virtualenvwrapper
 
-> Virtaulenvwrapper是virtualenv的扩展包，用于更方便管理虚拟环境，它可以做：
+> Virtaulenvwrapper 是 virtualenv 的扩展包，用于更方便管理虚拟环境，它可以做：
 
-* 将所有虚拟环境整合在一个目录下
+- 将所有虚拟环境整合在一个目录下
 
-* 管理（新增，删除，复制）虚拟环境 
+- 管理（新增，删除，复制）虚拟环境
 
-* 切换虚拟环境
+- 切换虚拟环境
 
-
-1) **安装 virtualenv 和 virtualenvwrapper**
+1. **安装 virtualenv 和 virtualenvwrapper**
 
 ```sh
 $ sudo apt-get install python-virtualenv
 $ virtualenv --version
 1.11.6
-$ sudo pip install virtualenvwrapper  
+$ sudo pip install virtualenvwrapper
 
 ```
 
-2) **设置环境**
+2. **设置环境**
 
 ```sh
 #创建目录用来存放虚拟环境
 $ mkdir $HOME/.virtualenvs
-#在~/.bashrc中添加： 
+#在~/.bashrc中添加：
 $ nano ~/.bashrc
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
@@ -80,9 +79,9 @@ source /usr/local/bin/virtualenvwrapper.sh
 $ source ~/.bashrc
 ```
 
-3) **使用方法**
+3. **使用方法**
 
-> 默认情况下，虚拟环境会依赖系统环境中的site packages，就是说系统中已经安装好的第三方package也会安装在虚拟环境中，如果不想依赖这些package，那么可以加上参数 --no-site-packages建立虚拟环境`virtualenv --no-site-packages [虚拟环境名称]`
+> 默认情况下，虚拟环境会依赖系统环境中的 site packages，就是说系统中已经安装好的第三方 package 也会安装在虚拟环境中，如果不想依赖这些 package，那么可以加上参数 --no-site-packages 建立虚拟环境`virtualenv --no-site-packages [虚拟环境名称]`
 
 ```sh
 #列出虚拟环境列表
@@ -105,13 +104,13 @@ $ rmvirtualenv [虚拟环境名称]
 (testENV)llgreen@Work-PC:~$ deactivate
 ```
 
-## Sublime Text 3的安装与配置
+## Sublime Text 3 的安装与配置
 
 [官网下载](http://www.sublimetext.com/3)
 
 ### 1. 安装插件
 
-1) 首先安装[Package Control](https://sublime.wbond.net/installation#st3)，通过 Package Control 可以很方便安装其他插件
+1. 首先安装[Package Control](https://sublime.wbond.net/installation#st3)，通过 Package Control 可以很方便安装其他插件
 
 > - 通过快捷键 ctrl+` 或者 View > Show Console 菜单打开控制台
 
@@ -122,68 +121,66 @@ $ rmvirtualenv [虚拟环境名称]
 import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
 ```
 
-2) 按快捷键 Ctrl+Shift+P 调出命令窗口，选择 Package Control: Install Package，安装 Python 开发常用的插件：
+2. 按快捷键 Ctrl+Shift+P 调出命令窗口，选择 Package Control: Install Package，安装 Python 开发常用的插件：
 
->Sublime 有一个非常丰富的插件系统。而我当前使用的插件如下：
- 
-* Color Scheme - Tomorrow Night Color schemes 决定了编辑器界面语法高亮的字体颜色。这是一个非常酷的暗黑系样式。
- 
-* Theme  - Soda Dark Themes 影响 Sublime 界面元素的颜色和风格。这个非常适合 Tomorrow Night 的配色方案。 
+> Sublime 有一个非常丰富的插件系统。而我当前使用的插件如下：
 
-* All  Autocomplete Sublime 默认的自动完成只关注当前文件的单词。这个插件扩展了其自动完成的单词列表到所有打开的文件。 
+- Color Scheme - Tomorrow Night Color schemes 决定了编辑器界面语法高亮的字体颜色。这是一个非常酷的暗黑系样式。
 
-* SublimeCodeIntel  为部分语言增强自动完成功能，包括了 Python 。这个插件同时也可以让你跳转到符号定义的地方，通过按住 alt 并点击符号。非常方便。
- 
-* SublimeTmpl  这个插件允许用户定义文件的模板，比如在写一个 html 文件时，老是重复文件头的一些引入信息很繁琐，可以定义一个模板直接生成必须的信息，具体的 SublimeTmpl 插件用法请自行百度。
+- Theme - Soda Dark Themes 影响 Sublime 界面元素的颜色和风格。这个非常适合 Tomorrow Night 的配色方案。
 
-* SideBarEnhancements  一个增强侧边栏文件夹浏览功能的插件，比较不错。
+- All Autocomplete Sublime 默认的自动完成只关注当前文件的单词。这个插件扩展了其自动完成的单词列表到所有打开的文件。
 
-* SublimeREPL  允许你在编辑界面直接运行 Python 解释器。我倾向于在单独的终端窗口用 bpython 来运行，但有时 SublimeREPL 是很有帮助的。 
+- SublimeCodeIntel 为部分语言增强自动完成功能，包括了 Python 。这个插件同时也可以让你跳转到符号定义的地方，通过按住 alt 并点击符号。非常方便。
 
-* GitGutter  在编辑器的凹槽区，依照 Git ，增加小图标来标识一行是否被插入、修改或删除。在 GitGutter 的 readme 中有说明如何更改颜色图标来更新你的配色方案文件。 
+- SublimeTmpl 这个插件允许用户定义文件的模板，比如在写一个 html 文件时，老是重复文件头的一些引入信息很繁琐，可以定义一个模板直接生成必须的信息，具体的 SublimeTmpl 插件用法请自行百度。
 
-* Pylinter  这个插件提供了目前我所见到的最好的 pylint 编辑器整合。它自动检查 .py 文件，无论其何时被保存，并且会直接在编辑界面显示 pylint 违规。它还有一个快捷方式来禁用局部的 pylint 检查，通过插入一个 #pylint: 禁用注释。这个插件对于我确实非常有用。 id:43
+- SideBarEnhancements 一个增强侧边栏文件夹浏览功能的插件，比较不错。
 
-* SublimeLinter 是用来在写代码时做代码检查的，可以检查 Python 代码是否符合 PEP8 的要求。
+- SublimeREPL 允许你在编辑界面直接运行 Python 解释器。我倾向于在单独的终端窗口用 bpython 来运行，但有时 SublimeREPL 是很有帮助的。
 
-* Tag  可以为 web 开发者提供 html 和 css 标签，很方便快捷，对于 web 前端设计者非常实用。
+- GitGutter 在编辑器的凹槽区，依照 Git ，增加小图标来标识一行是否被插入、修改或删除。在 GitGutter 的 readme 中有说明如何更改颜色图标来更新你的配色方案文件。
 
-3) 自动安装插件
+- Pylinter 这个插件提供了目前我所见到的最好的 pylint 编辑器整合。它自动检查 .py 文件，无论其何时被保存，并且会直接在编辑界面显示 pylint 违规。它还有一个快捷方式来禁用局部的 pylint 检查，通过插入一个 #pylint: 禁用注释。这个插件对于我确实非常有用。 id:43
 
-> 修改配置文件Preferences->Package Settings->Package Control->Settings-User如下，保存以后，选择Package Control->Install Package，将会自动下载。
+- SublimeLinter 是用来在写代码时做代码检查的，可以检查 Python 代码是否符合 PEP8 的要求。
 
+- Tag 可以为 web 开发者提供 html 和 css 标签，很方便快捷，对于 web 前端设计者非常实用。
+
+3. 自动安装插件
+
+> 修改配置文件 Preferences->Package Settings->Package Control->Settings-User 如下，保存以后，选择 Package Control->Install Package，将会自动下载。
 
 ```json
 {
-	"installed_packages":
-	[
-		"Terminal",
-		"Alignment",
-		"BracketHighlighter",
-		"SublimeLinter",
-		"ColorPicker",
-		"CompactExpandCss",
-		"CSScomb JS",
-		"Emmet Css Snippets",
-		"Hex-to-RGBA",
-		"HTML5",
-		"JsFormat",
-		"Package Control",
-		"Rails Developer Snippets",
-		"Ruby on Rails snippets",
-		"RubyTest",
-		"SublimeTmpl",
-		"Tag",
-		"Tradsim"
-	]
+  "installed_packages": [
+    "Terminal",
+    "Alignment",
+    "BracketHighlighter",
+    "SublimeLinter",
+    "ColorPicker",
+    "CompactExpandCss",
+    "CSScomb JS",
+    "Emmet Css Snippets",
+    "Hex-to-RGBA",
+    "HTML5",
+    "JsFormat",
+    "Package Control",
+    "Rails Developer Snippets",
+    "Ruby on Rails snippets",
+    "RubyTest",
+    "SublimeTmpl",
+    "Tag",
+    "Tradsim"
+  ]
 }
 ```
 
 ### 2. 修改快捷键
 
-> SublimeREPL安装之后没有快捷键，每次运行程序必须用鼠标去点工具栏，有些不爽。
+> SublimeREPL 安装之后没有快捷键，每次运行程序必须用鼠标去点工具栏，有些不爽。
 
-1) **SublimeREPL 插件的菜单命令**
+1. **SublimeREPL 插件的菜单命令**
 
 Preferences => Browser Packages…打开插件安装包位置，依次找到 SublimeREPL\config\Python 文件夹下的 Main.sublime-menu 并打开。
 
@@ -208,22 +205,21 @@ Preferences => Browser Packages…打开插件安装包位置，依次找到 Sub
 
 其中 id 的值是我们需要的，因为我们正是要为其添加快捷键。另外，菜单文件的位置也是需要先记下的，因为需要为这个命令指定定义的来源。
 
-2) **自定义快捷键**
+2. **自定义快捷键**
 
 Preferences => Key Boundings-User 打开自定义快捷键文件，写入如下内容：
 
 ```json
 [
-	{
-		"keys" : ["f5"],                           // 快捷键，注意小写
-		"command" : "run_existing_window_command", // 运行定义的命令
-		"args" :                                   // 命令参数
-		{
-			"id" : "repl_python_run",              // 上一步查看的命令的id
-			"file" : "config/Python/Main.sublime-menu" // 菜单定义文件位置
-		}
-
-	}
+  {
+    "keys": ["f5"], // 快捷键，注意小写
+    "command": "run_existing_window_command", // 运行定义的命令
+    // 命令参数
+    "args": {
+      "id": "repl_python_run", // 上一步查看的命令的id
+      "file": "config/Python/Main.sublime-menu" // 菜单定义文件位置
+    }
+  }
 ]
 ```
 

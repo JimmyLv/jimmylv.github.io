@@ -4,7 +4,6 @@ title: "【译】Redux 和 命令模式"
 categories: [前端]
 tags: [React, Redux, Design Pattern]
 published: True
-
 ---
 
 原文地址：[Redux and The Command Pattern (Apr 7, by Abhi Aiyer)](https://medium.com/@abhiaiyer/the-command-pattern-c51292e22ea7)
@@ -37,9 +36,9 @@ published: True
 
 ## History Lesson | 历史的教诲
 
-> We can trace design patterns back to Christopher Alexander, author of [Pattern Language](https://en.wikipedia.org/wiki/A_Pattern_Language). Alexander realized that certain methods, over time, created constructs to achieve efficiency. It was then, stemming from Alexander’s work, other publications started coming out. A great one to read is *[Design Patterns: Elements of Reusable Object-Oriented Software](http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612)*. This describes patterns that provided solutions to common software development problems.
+> We can trace design patterns back to Christopher Alexander, author of [Pattern Language](https://en.wikipedia.org/wiki/A_Pattern_Language). Alexander realized that certain methods, over time, created constructs to achieve efficiency. It was then, stemming from Alexander’s work, other publications started coming out. A great one to read is _[Design Patterns: Elements of Reusable Object-Oriented Software](http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612)_. This describes patterns that provided solutions to common software development problems.
 
-对于设计模式我们可以追溯到 Christopher Alexander，[Pattern Language](https://en.wikipedia.org/wiki/A_Pattern_Language) （中译名：[《建筑模式语言》](https://book.douban.com/subject/1157145/)）的作者，Alexander 意识到，随着时间的推移，某些方法所创造的结构可以达成效率。当时，由于 Alexander 的工作，其他出版物也开始出来了。其中很棒的一本读物就是 *[Design Patterns: Elements of Reusable Object-Oriented Software](http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612)* （中译名：[《设计模式:可复用面向对象软件的基础》](https://book.douban.com/subject/1052241/)）。这本书描述了给常见的软件开发问题提供解决方案的各种模式。
+对于设计模式我们可以追溯到 Christopher Alexander，[Pattern Language](https://en.wikipedia.org/wiki/A_Pattern_Language) （中译名：[《建筑模式语言》](https://book.douban.com/subject/1157145/)）的作者，Alexander 意识到，随着时间的推移，某些方法所创造的结构可以达成效率。当时，由于 Alexander 的工作，其他出版物也开始出来了。其中很棒的一本读物就是 _[Design Patterns: Elements of Reusable Object-Oriented Software](http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612)_ （中译名：[《设计模式:可复用面向对象软件的基础》](https://book.douban.com/subject/1052241/)）。这本书描述了给常见的软件开发问题提供解决方案的各种模式。
 
 > A great book for JavaScript developers is by Addy Osmani. It’s available online [here](https://addyosmani.com/resources/essentialjsdesignpatterns/book/).
 
@@ -83,7 +82,7 @@ published: True
       return `You purchased ${model} with id: ${id}`;
     }
 
-    /** 
+    /**
      + Arrange viewing for car
      + @param model - model of car
      + @param id - id of car
@@ -111,7 +110,7 @@ published: True
 **命令**这会包含行为调用时的一些信息，及其所需要的参数，通常就表示为一个对象。
 
     const sampleCommand = {
-      action: "arrangeViewing", 
+      action: "arrangeViewing",
       params: ['Tesla 3', '1337']
     };
 
@@ -141,7 +140,7 @@ published: True
 
     import execute from 'executor.js';
     import TeslaSalesControl from 'receiver.js';
-        
+
     // Arrange a viewing
     execute(TeslaSalesControl, {
       action: "arrangeViewing",

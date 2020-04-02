@@ -3,7 +3,7 @@ layout: post
 title: Ubuntu下的几种命令行编辑器介绍
 category: 编程
 tags: [Ubuntu]
-description: 
+description:
 ---
 
 ## 命令行编辑器
@@ -31,10 +31,10 @@ description:
 
 ```sh
 #以gedit打开名为av&gv的文件
-sudo gedit /home/文档/av&gv 
+sudo gedit /home/文档/av&gv
 ```
 
-### 3. nano 
+### 3. nano
 
 `sudo nano /etc/hosts`
 
@@ -42,9 +42,9 @@ sudo gedit /home/文档/av&gv
 
 ### 4. sed
 
-> sed是一种非交互式的流编辑器，可动态编辑文件。所谓非交互式是说，sed和传统的文本编辑器不同，并非和使用者直接互动，sed处理的对象是文件的数据流（称为stream/流）。
+> sed 是一种非交互式的流编辑器，可动态编辑文件。所谓非交互式是说，sed 和传统的文本编辑器不同，并非和使用者直接互动，sed 处理的对象是文件的数据流（称为 stream/流）。
 
-> 特别注意：sed并不会更改文件内容。sed的工作方式是读取文件内容，经流编辑之后，把结果显示到标准输出。因此，如果想要存储sed的处理结果，得自行运用转向输出将结果存成其他文件。
+> 特别注意：sed 并不会更改文件内容。sed 的工作方式是读取文件内容，经流编辑之后，把结果显示到标准输出。因此，如果想要存储 sed 的处理结果，得自行运用转向输出将结果存成其他文件。
 
 ```sh
 #修改 RVM 的 Ruby 安装源到国内的 淘宝镜像服务器，能提高安装速度

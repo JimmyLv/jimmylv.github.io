@@ -4,7 +4,6 @@ title: 基于 GitHub 的敏捷学习方法之道与术
 categories: [思考]
 tags: [学习, GitHub, 成长, 敏捷, 知识]
 published: True
-
 ---
 
 > 持续行动，持续反思，持续进步。—— via. 敏捷学习宣言
@@ -33,10 +32,10 @@ published: True
 
 首先，让我们从需求出发，从市面上来寻找一款符合敏捷的学习软件，别想了，当然是没有的。对于一名程序猿来说，**最理想的答案其实就是 GitHub**，作为全球最大的程序猿~~（交友）~~网站，GitHub 本身以及围绕 GitHub 的各种插件使得其项目管理能力远比你所能想象的厉害得多。
 
-* 收集：需求无时无刻，无处不在，anywhere anytime
-* 整理：as BA，即分析，Elaboration & Estimation & IPM => 确定 MVP & Efforts
-* 执行：as Dev & QA，Developing & Testing & Review/Sign-Off
-* 回顾：Retrospection，Introspection，持续反思，持续进步…
+- 收集：需求无时无刻，无处不在，anywhere anytime
+- 整理：as BA，即分析，Elaboration & Estimation & IPM => 确定 MVP & Efforts
+- 执行：as Dev & QA，Developing & Testing & Review/Sign-Off
+- 回顾：Retrospection，Introspection，持续反思，持续进步…
 
 #### 通过 GitHub Issues 收集需求
 
@@ -50,10 +49,10 @@ published: True
 
 [![](http://insights.thoughtworkers.org/wp-content/uploads/2017/05/2-New-issue-1-1024x634.png)](http://insights.thoughtworkers.org/wp-content/uploads/2017/05/2-New-issue-1.png)
 
-* issue 和 issue 之间是可以通过 `#` 相互连接，甚至可以跨仓库，被 reference 的 issue 也会出现在另外一边的 issue 里面；
-* 而通过 `#!` 符号是可以在 comments 里面直接新建一个 issue ，这在思维爆炸的时候来得特别爽快；
-* 你还可以随意艾特你的小伙伴们，互相监督、互相学习或者给出 Constructive Feedback 之类的，😂；
-* 更甚至于，若是在 Intellij 里面关联了 GitHub，就可以在 git commit 信息里面直接看到你所要关联的 issues 列表了。
+- issue 和 issue 之间是可以通过 `#` 相互连接，甚至可以跨仓库，被 reference 的 issue 也会出现在另外一边的 issue 里面；
+- 而通过 `#!` 符号是可以在 comments 里面直接新建一个 issue ，这在思维爆炸的时候来得特别爽快；
+- 你还可以随意艾特你的小伙伴们，互相监督、互相学习或者给出 Constructive Feedback 之类的，😂；
+- 更甚至于，若是在 Intellij 里面关联了 GitHub，就可以在 git commit 信息里面直接看到你所要关联的 issues 列表了。
 
 这种方式仿佛学习中的大脑，神经网络被连通了的感觉。
 
@@ -115,21 +114,21 @@ ZenHub 也提供了 Burndown 和 Velocity tracking 图，可以得出这个迭�
 
 还可以根据 GitHub 和 Toggl 里面的数据进行汇总和分析，下面这个表格就是我在 11 月这个迭代完成后一部分 issues 的具体 Estimation Points 和 Time Efforts，再结合 issues 里面所记录下的各种笔记和 references，来得到一个比较直观的总结和复盘。
 
-| Number & Description                                         | Estimation Points | Time Efforts |
-| ------------------------------------------------------------ | ----------------- | ------------ |
-| [\#85](https://github.com/JimmyLv/jimmylv.github.io/issues/85) 记录时间这件小事儿 | 3                 | 04:26:18     |
-| [\#96](https://github.com/JimmyLv/jimmylv.github.io/issues/96) 如何对时间进行分类？ | 8                 | 03:00:09     |
-| [\#102](https://github.com/JimmyLv/jimmylv.github.io/issues/102) 建立个人 Wiki 系统 | 2                 | 02:53:56     |
+| Number & Description                                                                           | Estimation Points | Time Efforts |
+| ---------------------------------------------------------------------------------------------- | ----------------- | ------------ |
+| [\#85](https://github.com/JimmyLv/jimmylv.github.io/issues/85) 记录时间这件小事儿              | 3                 | 04:26:18     |
+| [\#96](https://github.com/JimmyLv/jimmylv.github.io/issues/96) 如何对时间进行分类？            | 8                 | 03:00:09     |
+| [\#102](https://github.com/JimmyLv/jimmylv.github.io/issues/102) 建立个人 Wiki 系统            | 2                 | 02:53:56     |
 | [\#101](https://github.com/JimmyLv/jimmylv.github.io/issues/101) 技术雷达宣讲：enzyme 测试框架 | 5                 | 06:11:19     |
-| [\#90](https://github.com/JimmyLv/jimmylv.github.io/issues/90) Working time improvement | 1                 | 33:27 min    |
-| [\#97](https://github.com/JimmyLv/jimmylv.github.io/issues/97) 如何使用 XX 的标签系统？ | 1                 | 25:21 min    |
+| [\#90](https://github.com/JimmyLv/jimmylv.github.io/issues/90) Working time improvement        | 1                 | 33:27 min    |
+| [\#97](https://github.com/JimmyLv/jimmylv.github.io/issues/97) 如何使用 XX 的标签系统？        | 1                 | 25:21 min    |
 
 ##### 其他辅助工具
 
-* 看板：as Jira/[Trello](https://trello.com/)，可视化当前进度 => GitHub Issues group by @Projects / 日历 in @滴答清单；如果你不想用 ZenHub ，可以试试 [Gitlo](http://gitlo.co/) ，可以在 GitHub issues 和 Trello 之间进行双向同步。
-* 晨间日记/每日回顾：as Stand-Up，只用关注 Timeline/Done/Todo/Blocker 以及当天的心情/天气等等，使用 @[格志日记](http://griddiaryapp.com/zh/)的一个特点就是可以通过问答的方式对一天进行回顾。
-* 时间记录：@[时间块](http://timeblocks-simple-daily-activi.appstor.io/zh/)的优点在于记录起来非常简单、快捷，是用户评论中最省时间的时间记录工具，没有之一，推荐新手试试。但由于个人需要更加详细的记录细节和报告分析，以及多平台（包括 Chrome Extension）的支持，从而选择了 @[Toggl](https://toggl.com/app/timer)。
-* 白噪声：作为一款时间记录工具，@[Toggl](https://toggl.com/app/timer) 本身就支持 Pomodoro 的 25 分钟提示。而作为专注力辅助的白噪声软件我在手机上用的 @[潮汐](https://itunes.apple.com/tw/app/chao-xi-mei-hao-fan-jia-zhong/id1077776989?l=zh&mt=8)，电脑上则选择了 @[Noizio](http://noiz.io/)。
+- 看板：as Jira/[Trello](https://trello.com/)，可视化当前进度 => GitHub Issues group by @Projects / 日历 in @滴答清单；如果你不想用 ZenHub ，可以试试 [Gitlo](http://gitlo.co/) ，可以在 GitHub issues 和 Trello 之间进行双向同步。
+- 晨间日记/每日回顾：as Stand-Up，只用关注 Timeline/Done/Todo/Blocker 以及当天的心情/天气等等，使用 @[格志日记](http://griddiaryapp.com/zh/)的一个特点就是可以通过问答的方式对一天进行回顾。
+- 时间记录：@[时间块](http://timeblocks-simple-daily-activi.appstor.io/zh/)的优点在于记录起来非常简单、快捷，是用户评论中最省时间的时间记录工具，没有之一，推荐新手试试。但由于个人需要更加详细的记录细节和报告分析，以及多平台（包括 Chrome Extension）的支持，从而选择了 @[Toggl](https://toggl.com/app/timer)。
+- 白噪声：作为一款时间记录工具，@[Toggl](https://toggl.com/app/timer) 本身就支持 Pomodoro 的 25 分钟提示。而作为专注力辅助的白噪声软件我在手机上用的 @[潮汐](https://itunes.apple.com/tw/app/chao-xi-mei-hao-fan-jia-zhong/id1077776989?l=zh&mt=8)，电脑上则选择了 @[Noizio](http://noiz.io/)。
 
 ### 后话
 

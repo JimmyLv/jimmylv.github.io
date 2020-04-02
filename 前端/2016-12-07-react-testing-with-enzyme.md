@@ -62,16 +62,16 @@ describe('Enzyme Shallow', () => {
 mount 方法则会将 React 组件渲染为真实的 DOM 节点，特别是在你依赖真实的 DOM 结构必须存在的情况下，比如说按钮的点击事件。完全的 DOM 渲染需要在全局范围内提供完整的 DOM API， 这也就意味着它必须在至少“看起来像”浏览器环境的环境中运行，如果不想在浏览器中运行测试，推荐使用 mount 的方法是依赖于一个名为 jsdom 的库，它本质上是一个完全在 JavaScript 中实现的 headless 浏览器。
 
 ```javascript
-import { mount } from 'enzyme'
+import { mount } from "enzyme";
 
-describe('Enzyme Mount', () => {
-  it('should delete Todo when click button', () => {
-    const app = mount(<App />)
-    const todoLength = app.find('li').length
-    app.find('button.delete').at(0).simulate('click')
-    expect(app.find('li').length).to.equal(todoLength - 1)
-  })
-})
+describe("Enzyme Mount", () => {
+  it("should delete Todo when click button", () => {
+    const app = mount(<App />);
+    const todoLength = app.find("li").length;
+    app.find("button.delete").at(0).simulate("click");
+    expect(app.find("li").length).to.equal(todoLength - 1);
+  });
+});
 ```
 
 ### **`render(node[, options]) => CheerioWrapper`**
@@ -79,15 +79,15 @@ describe('Enzyme Mount', () => {
 render 方法则会将 React 组件渲染成静态的 HTML 字符串，返回的是一个 Cheerio 实例对象，采用的是一个第三方的 HTML 解析库 Cheerio，官方的解释是「我们相信 Cheerio 可以非常好地处理 HTML 的解析和遍历，再重复造轮子只能算是一种损失」。这个 CheerioWrapper 可以用于分析最终结果的 HTML 代码结构，它的 API 跟 shallow 和 mount 方法的 API 都保持基本一致。
 
 ```javascript
-import { render } from 'enzyme'
+import { render } from "enzyme";
 
-describe('Enzyme Render', () => {
-  it('Todo item should not have todo-done class', () => {
-    const app = render(<App />)
-    expect(app.find('.todo-done').length).to.equal(0)
-    expect(app.contains(<div className="todo" />)).to.equal(true)
-  })
-})
+describe("Enzyme Render", () => {
+  it("Todo item should not have todo-done class", () => {
+    const app = render(<App />);
+    expect(app.find(".todo-done").length).to.equal(0);
+    expect(app.contains(<div className="todo" />)).to.equal(true);
+  });
+});
 ```
 
 ## Enzyme 的 API 方法
@@ -100,30 +100,30 @@ Enzyme 中的 Selectors 即选择器类似于 CSS 选择器，但是只支持非
 
 ```javascript
 /* CSS Selector */
-wrapper.find('.foo') //class syntax
-wrapper.find('input') //tag syntax
-wrapper.find('#foo') //id syntax
-wrapper.find('[htmlFor="foo"]') //prop syntax
+wrapper.find(".foo"); //class syntax
+wrapper.find("input"); //tag syntax
+wrapper.find("#foo"); //id syntax
+wrapper.find('[htmlFor="foo"]'); //prop syntax
 ```
 
 Selectors 也可以是许多其他的东西，以便于在 Enzyme 的 wrapper 中可以轻松地指定想要查找的节点，在下面的示例中，我们可以通过 React 组件构造函数的引用找到该组件，也可以基于 React 的 `displayName` 来查找组件，如果一个组件存在于渲染树中，其中设置了 `displayName` 并且它的第一个字符为大写字母，就能通过字符串找到它，与此同时也可以基于 React 组件属性的子集来查找组件和节点。
 
 ```javascript
 /* Component Constructor */
-wrapper.find(ChildrenComponent)
-myComponent.displayName = 'ChildrenComponent'
-wrapper.find('ChildrenComponent')
+wrapper.find(ChildrenComponent);
+myComponent.displayName = "ChildrenComponent";
+wrapper.find("ChildrenComponent");
 
 /* Object Property Selector */
 const wrapper = mount(
   <div>
     <span foo={3} bar={false} title="baz" />
   </div>
-)
+);
 
-wrapper.find({ foo: 3 })
-wrapper.find({ bar: false })
-wrapper.find({ title: 'baz'})
+wrapper.find({ foo: 3 });
+wrapper.find({ bar: false });
+wrapper.find({ title: "baz" });
 ```
 
 ### 测试组件的交互行为
@@ -133,17 +133,15 @@ wrapper.find({ title: 'baz'})
 Sinon 则是一个可以用来 Mock 和 Stub 数据代码的第三方测试工具库，当我们需要检查一个组件当中某个特定的函数是否被调用时，我们可以使用 `sinon.spy()` 方法监视所传入该组件作为 prop 的 onButtonClick 方法，然后再通过 wrapper 的 simulate 方法模拟一个 Click 事件，最终验证这个被 spy 的 onButtonClick 函数是否被调用。
 
 ```javascript
-it('simulates click events', () => {
-  const onButtonClick = sinon.spy()
-  const wrapper = shallow(
-    <Foo onButtonClick={onButtonClick} />
-  )
-  wrapper.find('button').simulate('click')
-  expect(onButtonClick.calledOnce).to.be.true
-})
+it("simulates click events", () => {
+  const onButtonClick = sinon.spy();
+  const wrapper = shallow(<Foo onButtonClick={onButtonClick} />);
+  wrapper.find("button").simulate("click");
+  expect(onButtonClick.calledOnce).to.be.true;
+});
 ```
 
-##  如何测试 React Native？
+## 如何测试 React Native？
 
 前面我们所谈论的都是如何测试使用 react-dom 所构建的 React 组件，即最终渲染的结果是浏览器当中的 DOM 结构，但对于 React Native 来说，JavaScript 代码最终会被编译并用于调用 iOS 或 Android 上的 Native 代码，因此无法再使用基于 DOM 的测试工具了。与此同时，React Native 还有特别多的 Mobile 环境依赖，所以在没有真实设备的情况下很难对其运行环境进行模拟，特别是当你希望在持续集成服务器（如 Jenkins、Travis CI）运行单元测试的时候。
 
@@ -154,24 +152,23 @@ const mockComponent = (type) => {
   return React.createClass({
     displayName: type,
     propTypes: {
-      children: React.PropTypes.node
+      children: React.PropTypes.node,
     },
     render() {
-      return <div {...this.props}>{this.props.children}</div>
-    }
-  })
-}
+      return <div {...this.props}>{this.props.children}</div>;
+    },
+  });
+};
 
-RN.View = mockComponent("View")
-RN.Text = mockComponent("Text")
-RN.Image = mockComponent("Image")
+RN.View = mockComponent("View");
+RN.Text = mockComponent("Text");
+RN.Image = mockComponent("Image");
 ```
 
 Enzyme 推荐在测试环境中使用 [react-native-mock](https://github.com/RealOrangeOne/react-native-mock) 这个辅助库，这是一个使用纯 JavaScript 将全部的 React Native 组件进行 mock 的第三方库，只需要导入这个库就可以对 React Native 组件进行渲染和测试。
 
 ## 总结
 
-> **技术雷达**：我们非常享受Enzyme为React.js应用提供的快速组件级UI测试功能。与许多其他基于快照的测试框架不同，Enzyme允许开发者在不进行设备渲染的情况下做测试，从而实现速度更快，粒度更小的测试。在开发React应用时，我们经常需要做大量的功能测试，而Enzyme可以在大规模地减少功能测试数量上做出贡献。
+> **技术雷达**：我们非常享受 Enzyme 为 React.js 应用提供的快速组件级 UI 测试功能。与许多其他基于快照的测试框架不同，Enzyme 允许开发者在不进行设备渲染的情况下做测试，从而实现速度更快，粒度更小的测试。在开发 React 应用时，我们经常需要做大量的功能测试，而 Enzyme 可以在大规模地减少功能测试数量上做出贡献。
 
 ![TechRadar](https://raw.githubusercontent.com/JimmyLv/images/master/2016/1481128632569.png)
-

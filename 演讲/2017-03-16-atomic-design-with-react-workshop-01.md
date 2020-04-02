@@ -16,7 +16,7 @@ published: True
 
 # Atomic Design with React
 
-Total Time: 2 hours 
+Total Time: 2 hours
 
 via **JimmyLv**
 
@@ -24,10 +24,10 @@ via **JimmyLv**
 
 # 0. 💻 Env Setup
 
-* [ ] reminder/reading material in invitation mail
-* [ ] join wechat group to share info easily
+- [ ] reminder/reading material in invitation mail
+- [ ] join wechat group to share info easily
 
--------
+---
 
 ```
 git clone git@github.com:JimmyLv/atomic-design-react-workshop.git
@@ -105,30 +105,28 @@ demo: [Pattern Lab | Build Atomic Design Systems](http://patternlab.io/)
 ![](https://raw.githubusercontent.com/JimmyLv/images/master/2017/03/1489660500667.png)
 
 [slide]
- 
-# 🌲 DOM Tree -> Functions 
+
+# 🌲 DOM Tree -> Functions
 
 ```jsx
-
 function warn(msg) {
-  alert(msg)
+  alert(msg);
 }
 
 function App(data) {
   (function Header(menu) {
     (function Menu(menu, func) {
-      (function Text(text) {return <li>{text}</li>})(menu[0])
-      (function Text(text) {return <li onClick={() => func(text)}>{text}</li>})(menu[1])
-    })(menu, warn)
-  })(data.menu)
-  
-  (function Content(content) {
-    return <section>{content}</section>
-  })(data.content)
-  
-  (function Footer() {
-    return <footer>I am footer!</footer>
-  })()
+      (function Text(text) {
+        return <li>{text}</li>;
+      })(menu[0])(function Text(text) {
+        return <li onClick={() => func(text)}>{text}</li>;
+      })(menu[1]);
+    })(menu, warn);
+  })(data.menu)(function Content(content) {
+    return <section>{content}</section>;
+  })(data.content)(function Footer() {
+    return <footer>I am footer!</footer>;
+  })();
 }
 ```
 
@@ -140,14 +138,16 @@ In
 
 ```jsx
 function Profile(props) {
-  return <div>
-    <img src="avatar.png" className="profile" />
-    <h3>{props.title}</h3>
-  </div>
+  return (
+    <div>
+      <img src="avatar.png" className="profile" />
+      <h3>{props.title}</h3>
+    </div>
+  );
 }
 ```
 
-------
+---
 
 Out
 
@@ -157,18 +157,14 @@ function Profile(props) {
     "div",
     null,
     React.createElement("img", { src: "avatar.png", className: "profile" }),
-    React.createElement(
-      "h3",
-      null,
-      props.title
-    )
-  )
+    React.createElement("h3", null, props.title)
+  );
 }
 ```
 
 [slide]
 
-# Virtual DOM 
+# Virtual DOM
 
 ```js
 function DeleteAccount() {
@@ -207,7 +203,7 @@ function DeleteAccount() {
 
 [slide]
 
-# () => Virtual DOM Objects 
+# () => Virtual DOM Objects
 
 ```js
 function DeleteAccount() {
@@ -244,10 +240,10 @@ function DeleteAccount() {
 const DeleteAccount = (props) => (
   <div>
     <p>Are you sure?</p>
-    <Button type='danger'>Yep</Button>
-    <Button color='blue'>Cancel</Button>
+    <Button type="danger">Yep</Button>
+    <Button color="blue">Cancel</Button>
   </div>
-)
+);
 ```
 
 [slide]
@@ -262,10 +258,10 @@ const DeleteAccount = (props) => (
 
 [![](https://cdn-images-1.medium.com/max/800/1*YUVIg5jdB-pUUszWhTkgdw.gif)](https://blog.hichroma.com/component-driven-development-ce1109d56c8e#.68tcwmv7p)
 
-------
+---
 
 1.  Focus development {:&.moveIn}
-2.  Increase UI coverage 
+2.  Increase UI coverage
 3.  Target feedback
 4.  Build a component library
 5.  Parallelize development
@@ -289,7 +285,7 @@ const DeleteAccount = (props) => (
 
 ![](https://raw.githubusercontent.com/JimmyLv/images/master/2017/03/1489581902209.png)
 
--------
+---
 
 - type:`primary` `default` `danger` `dashed`
 - color: `blue`, `white`, `red`, `border`
@@ -310,24 +306,20 @@ const DeleteAccount = (props) => (
 ```jsx
 class Contacts extends React.Component {
   constructor(props) {
-    super(props)
-    this.state = {
+    super(props);
+    this.state = {};
+  }
 
-    }
-  }
-  
   handleClick(e) {
-      console.log(this) // React Component instance
+    console.log(this); // React Component instance
   }
-  
+
   render() {
-    return (
-      <button onClick={(e) => this.handleClick(e)}></button>
-    )
+    return <button onClick={(e) => this.handleClick(e)}></button>;
   }
 }
 
-export default Contacts
+export default Contacts;
 ```
 
 [slide]
@@ -365,5 +357,4 @@ export default Contacts
 
 [slide]
 
-# Thanks,  Q&A❓
-
+# Thanks, Q&A❓

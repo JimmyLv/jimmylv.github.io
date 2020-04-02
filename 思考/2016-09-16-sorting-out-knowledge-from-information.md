@@ -4,7 +4,6 @@ title: 不断革新，不断改进：去伪存真的知识管理之路
 categories: [思考]
 tags: [学习, Rethink, PKM, 效率, 笔记, 印象笔记, Diigo]
 published: True
-
 ---
 
 > 「不断革新，不断改进。」—— via. 敏捷学习宣言
@@ -21,7 +20,7 @@ published: True
 
 让我们再次回到人为什么会要收集书签这个话题，可能是因为人人都有收藏癖，遇到了好玩的、有用的都想把它们收藏起来，以便今后会用到。然而！经过这么久的使用之后，我发现很多书签其实并没有被用到，用到的场景也仅限于搜索栏。那么，**还不如在最开始的就一次性将其纳入我的整理箱，从而更快速地归于整体的知识结构体系的一部分**，而如何又将这些碎片进行整理得出框架，则是另外一个话题。
 
-> [书签 (万维网) - 维基百科，自由的百科全书](https://zh.wikipedia.org/wiki/%E6%9B%B8%E7%B1%A4_(%E7%80%8F%E8%A6%BD%E5%99%A8))：**书签**是[浏览器](https://zh.wikipedia.org/wiki/%E7%80%8F%E8%A6%BD%E5%99%A8 "浏览器")中用以存储[网址](https://zh.wikipedia.org/wiki/%E7%B6%B2%E5%9D%80 "网址")的一个设计，方便用户不须以纸笔抄写或记住网址即能迅速链接至网站。所有现代网页浏览器都有书签功能。书签在[Internet Explorer](https://zh.wikipedia.org/wiki/Internet_Explorer "Internet Explorer")中叫**收藏夹**（简体中文）或**我的最爱**（繁体中文）。
+> [书签 (万维网) - 维基百科，自由的百科全书](<https://zh.wikipedia.org/wiki/%E6%9B%B8%E7%B1%A4_(%E7%80%8F%E8%A6%BD%E5%99%A8)>)：**书签**是[浏览器](https://zh.wikipedia.org/wiki/%E7%80%8F%E8%A6%BD%E5%99%A8 "浏览器")中用以存储[网址](https://zh.wikipedia.org/wiki/%E7%B6%B2%E5%9D%80 "网址")的一个设计，方便用户不须以纸笔抄写或记住网址即能迅速链接至网站。所有现代网页浏览器都有书签功能。书签在[Internet Explorer](https://zh.wikipedia.org/wiki/Internet_Explorer "Internet Explorer")中叫**收藏夹**（简体中文）或**我的最爱**（繁体中文）。
 
 从 Wiki 的解释就可以看出，书签在最初被设计时（可想而知当时的门户网页其实很少）的功能应当更加偏向于如何**让用户更快抵达某一网站**，作为用户所收藏的网页集合而不至于每次都要重新输入链接。从这个角度来理解现在网络环境下的书签功能，则更应当只是把它**作为常用网站首页（即主站）的索引，而不是存储资料的方式**，毕竟保存的链接是有可能失效的，而保存的内容则永远不会发生变化。
 
@@ -87,16 +86,15 @@ published: True
 - `I want` 快速收集并**去伪存真**地整理出 TypeScript 相关知识体系结构
 - `So that` 我能够掌握 TypeScript 并将其运用到我的 React 项目当中去
 
-Scenario | **Action**
----------|--------
-Goggle 搜索 `typescript` 关键字从而发现了 GitHub 地址和 TypeScript [官方文档](https://www.typescriptlang.org/docs/tutorial.html) | 加书签作为搜索索引！（更推荐 Dash 统一查看文档）
-在给 DA 上工作的时候偶然一篇看起来还不错的文章，但是马上要开会而且手头上还有事儿 | Instapaper 收！
-在刷知乎的时候刷到一篇 TypeScript 的好文章，方方面面都说得挺详细的 | Instapaper 收！值得再读一遍
-在实际应用的时候遇到一个坑，找了好久终于在 GitHub 的某个 Issue 里面发现了解决方案 | Diigo 高亮+标注！并且备注自己所遇到的详细问题
-在手机上阅读 Reeder 时发现 RSS 中有一篇关于 React 的文章， 发现里面讲了 TSX 但是马上就要吃饭了 | 直接存进 Instapaper！
-接着空闲的时候再次阅读，发现很好地介绍了 TSX 的作用以及所带来的好处，但是其他关于 React 的部分写得不咋地或者自己已经知道了 | 存进 Diigo 进行高亮！
+| Scenario                                                                                                                         | **Action**                                       |
+| -------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ |
+| Goggle 搜索 `typescript` 关键字从而发现了 GitHub 地址和 TypeScript [官方文档](https://www.typescriptlang.org/docs/tutorial.html) | 加书签作为搜索索引！（更推荐 Dash 统一查看文档） |
+| 在给 DA 上工作的时候偶然一篇看起来还不错的文章，但是马上要开会而且手头上还有事儿                                                 | Instapaper 收！                                  |
+| 在刷知乎的时候刷到一篇 TypeScript 的好文章，方方面面都说得挺详细的                                                               | Instapaper 收！值得再读一遍                      |
+| 在实际应用的时候遇到一个坑，找了好久终于在 GitHub 的某个 Issue 里面发现了解决方案                                                | Diigo 高亮+标注！并且备注自己所遇到的详细问题    |
+| 在手机上阅读 Reeder 时发现 RSS 中有一篇关于 React 的文章， 发现里面讲了 TSX 但是马上就要吃饭了                                   | 直接存进 Instapaper！                            |
+| 接着空闲的时候再次阅读，发现很好地介绍了 TSX 的作用以及所带来的好处，但是其他关于 React 的部分写得不咋地或者自己已经知道了       | 存进 Diigo 进行高亮！                            |
 
 最后会发现 Diigo 里面汇总了很多关于 TypeScript 的文章，那么接下来的事情就是如何使用 Diigo 整理出有价值的知识体系结构……
 
 欲知后续如何，且听下回分解。（待我试用过后，挖掘深入之后便来安利！）
-

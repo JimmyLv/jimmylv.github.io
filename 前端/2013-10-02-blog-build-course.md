@@ -7,7 +7,6 @@ keywords: markdown
 description:
 ---
 
-
 关键词：**Git+github+jekyll+.tk+DNS.LA+markdown**
 
 ## 前言：搭建博客的几大要素
@@ -16,10 +15,9 @@ description:
 - 一个服务器（即博客的代码存放的地方，这里选用 github）
 - 一个 Blog 生成工具（这里选用 jekyll，类似 WordPress）
 
-## 第一部分：使用GitHub Pages快速生成博客
+## 第一部分：使用 GitHub Pages 快速生成博客
 
-
-### 一、介绍Git和Github
+### 一、介绍 Git 和 Github
 
 Git，一个非常强大的版本管理工具。
 
@@ -27,12 +25,12 @@ Github 则是一个基于 Git 的日益流行的开源项目托管库，也就�
 
 你可以在本地或者网上对自己的代码进行修改，而 Github 就是一个将你对代码的任何修改和更改说明（commit）进行同步的一个工具，并且可以进行版本管理。在我们搭建博客的过程中，它就扮演着一个“云仓库”服务器的角色，存放我们的博客代码。
 
-### 二、Github的安装和配置
+### 二、Github 的安装和配置
 
 1. 注册，这个总会吧，官网（[https://github.com/](https://github.com/)）
 2. 下载安装（[https://help.github.com/articles/set-up-git](https://help.github.com/articles/set-up-git)）
 3. 安装完成后，桌面出现两个图标：
- ![](https://lh4.googleusercontent.com/-muAVO81BsfM/Ukwf1vepLzI/AAAAAAAAAFc/20AHhLdbK8U/s0/GIT.jpg)
+   ![](https://lh4.googleusercontent.com/-muAVO81BsfM/Ukwf1vepLzI/AAAAAAAAAFc/20AHhLdbK8U/s0/GIT.jpg)
 
 [[https://lh4.googleusercontent.com/-muAVO81BsfM/Ukwf1vepLzI/AAAAAAAAAFc/20AHhLdbK8U/s0/GIT.jpg]]
 
@@ -48,15 +46,15 @@ git config --global user.email "your_email@example.com"# Sets the default email 
 
 更多关于 Github 的设置可以看[这里](http://www.cnblogs.com/sprying/p/3276984.html)
 
-### 三、使用Github Pages生成博客
+### 三、使用 Github Pages 生成博客
 
->**说明：**
+> **说明：**
 
->先前就介绍过Github是一个跨平台的“云仓库”，所以我们既可以在网上操作，也可以在本地操作再推送到云端。
+> 先前就介绍过 Github 是一个跨平台的“云仓库”，所以我们既可以在网上操作，也可以在本地操作再推送到云端。
 
->我先介绍一下在Github网站上怎么直接用Github Pages快速生成一个博客，再介绍在本地利用Git Shell新建一个，同时可以熟悉一下git的操作流程。
+> 我先介绍一下在 Github 网站上怎么直接用 Github Pages 快速生成一个博客，再介绍在本地利用 Git Shell 新建一个，同时可以熟悉一下 git 的操作流程。
 
-1、在[Github网站](https://github.com)上新建一个仓库（repository），网站右上角：
+1、在[Github 网站](https://github.com)上新建一个仓库（repository），网站右上角：
 
 ![](https://lh5.googleusercontent.com/-eQD90D5qlfY/UkwsyUt3ZHI/AAAAAAAAAFw/xSU3QCTUZPs/s0/%E5%88%9B%E5%BB%BArepository.jpg)
 
@@ -80,11 +78,11 @@ git config --global user.email "your_email@example.com"# Sets the default email 
 
 当然输入http://yourname.github.com/也可以，它会自动跳转到http://yourname.github.io/
 
-### 四、在本地上新建一个Github项目
+### 四、在本地上新建一个 Github 项目
 
- > 其实到以上为止我们已经创建好了一个属于自己的博客，接下来我们再新建一个其他项目，用来熟悉github的整个操作流程，你会发现它真的超好用。
+> 其实到以上为止我们已经创建好了一个属于自己的博客，接下来我们再新建一个其他项目，用来熟悉 github 的整个操作流程，你会发现它真的超好用。
 
-#### 4.1 利用GitHub图形界面
+#### 4.1 利用 GitHub 图形界面
 
 1、跟上面一样，在网站上新建一个 repository，这里我们把名字命名为 myBlog，（其实随意啦）
 
@@ -102,7 +100,7 @@ git config --global user.email "your_email@example.com"# Sets the default email 
 
 之后点击上方的 publish 按钮就可以把本地的更改发布上去了，这里 publish 的概念应该就是发布一个新版本，在右边它会让你填写 commit，应该是对此版本的一个说明。
 
-#### 4.2 利用Git Shell命令行
+#### 4.2 利用 Git Shell 命令行
 
 1、也可以选择在 Shell 下完成整个过程，虽然比较麻烦，但是有一种程序员的感觉有木有：
 
@@ -144,7 +142,5 @@ git push -u origin master     //将本地项目更新到github项目上去
 
 > 发现还是图形界面好用吗？只需要用鼠标点击几个按钮就行了？
 > 但是程序员可不一样，他们喜欢一直用键盘敲啊敲，这样的场景在电视电影中太常见了而且很酷炫有木有。
-> 而且啊？！你有米有发现在Shell下完全不用切换界面了!!!
+> 而且啊？！你有米有发现在 Shell 下完全不用切换界面了!!!
 > 所有工作都在一个黑底白字的框框里面完成了，当你熟悉过后你就会发现图形界面才是更难用的。
-
-

@@ -4,10 +4,9 @@ title: 【译】使用Spring Boot开发RESTful Web服务
 categories: [编程]
 tags: [RESTful, Spring]
 published: True
-
 ---
 
-# 使用Spring Boot开发RESTful Web服务
+# 使用 Spring Boot 开发 RESTful Web 服务
 
 原文地址：[Developing a RESTful Web Service Using Spring Boot](http://kielczewski.eu/2014/04/developing-restful-web-service-with-spring-boot/)
 
@@ -17,23 +16,23 @@ Tag: [Spring](http://kielczewski.eu/tag/Spring/), [Spring Boot](http://kielczews
 
 我对[Spring Boot](http://projects.spring.io/spring-boot/)的印象非常深刻。它的主要目的就是为了减少以往所需要的大部分初始化配置，从而采用一些默认的设置来代替。可能有人会说，这将会使开发者失去控制，而将控制权让给了一些黑暗魔法。这可能是正确的，但在这种情况下，仙子却是来帮忙的，而且他们也可以很容易得从这些特定的事情脱离开来。它只是像以往一样，做你亲历而为的那些事情，与此同时，通过`@ConditionalOn...`可以设置 Spring Boot 的自动配置的启动。
 
-> In the following article I will explore the way of employing Spring Boot to create a very basic, restful web service. As usual the source code can be found [here on GitHub](https://github.com/bkielczewski/example-spring-boot-rest) to play around. 
+> In the following article I will explore the way of employing Spring Boot to create a very basic, restful web service. As usual the source code can be found [here on GitHub](https://github.com/bkielczewski/example-spring-boot-rest) to play around.
 
 在接下来的文章里，我将会尝试使用 Spring Boot，来创建一个基本的 RESTful Web 服务。像往常一样，源代码放在[GitHub](https://github.com/bkielczewski/example-spring-boot-rest)上。
 
 ## Service overview | 服务概述
 
 > The goal will be to create a simple web service with the following requirements:
-> * Given no user with same id exists, it should store a new user in the database and immediately return the stored object.
-> * Given there exists a user with same id, it should not store, but return error status with the message.
-> * Given there are previously stored users, it should be able to retrieve the list of them.
+>
+> - Given no user with same id exists, it should store a new user in the database and immediately return the stored object.
+> - Given there exists a user with same id, it should not store, but return error status with the message.
+> - Given there are previously stored users, it should be able to retrieve the list of them.
 
 目标就是构建一个简单的 web 服务，需求如下：
 
 - 给一个具有 ID 的不存在的用户，这将在数据库中存储一个新的用户，并立即返回存储的对象。
 - 给一个具有 ID 的已存在的用户，将不会存储，而是返回错误码信息。
 - 给定已存储的用户，将拿到用户的列表。
-
 
 ## Maven
 
@@ -172,9 +171,12 @@ Tag: [Spring](http://kielczewski.eu/tag/Spring/), [Spring Boot](http://kielczews
 
 这个插件做了两件事：
 
-> * It provides spring-boot:run goal for Maven, so the application can be easily run without packaging.
+> - It provides spring-boot:run goal for Maven, so the application can be easily run without packaging.
+
     - 为Maven提供了spring-boot:run命令，所以应用不用打包就可以轻松运行。
-> * It hooks into `package` goal to produce executable JAR file with all the dependencies included, similar to maven-shade-plugin, but in less messy way.
+
+> - It hooks into `package` goal to produce executable JAR file with all the dependencies included, similar to maven-shade-plugin, but in less messy way.
+
     - 同时也提供了`package`命令，可以将所有依赖打包到一个可执行的JAR文件中，和maven-shade-plugin很像，但是采取的方式更加简洁。
 
 ## Writing the main() method | 编写 main() 方法
@@ -204,15 +206,24 @@ public class Application extends SpringBootServletInitializer {
 
 这个类有如下特性：
 
->   * It acts as a `@Configuration` class for Spring.
+> - It acts as a `@Configuration` class for Spring.
+
       - `@Configuration`表示这是一个Spring的类
->   * As such it has `@ComponentScan` annotation that enables scanning for another Spring components in current package and its subpackages.
+
+> - As such it has `@ComponentScan` annotation that enables scanning for another Spring components in current package and its subpackages.
+
       - 同样地，`@ComponentScan`注解可以从当前package和子package中自动加载其他的Spring组件。
->   * Another annotation is `@EnableAutoConfiguration` which tells Spring Boot to run autoconfiguration.
+
+> - Another annotation is `@EnableAutoConfiguration` which tells Spring Boot to run autoconfiguration.
+
       - 另外一个注解就是`@EnableAutoConfiguration`，告诉Spring Boot采用自动配置。
->   * It also extends `SpringBootServletInitializer` which will configure Spring servlet for us, and overrides the `configure()` method to point to itself, so Spring can find the main configuration.
+
+> - It also extends `SpringBootServletInitializer` which will configure Spring servlet for us, and overrides the `configure()` method to point to itself, so Spring can find the main configuration.
+
       - 这个类还继承了`SpringBootServletInitializer`，这就帮我们配置了Spring Servlet，重写`configure()`方法指向自己，Spring就可以自动配置了。
->   * Finally, the `main()` method consists of single static call to `SpringApplication.run()`.
+
+> - Finally, the `main()` method consists of single static call to `SpringApplication.run()`.
+
       - 最后，`main()`方法直接调用了`SpringApplication.run()`静态方法。
 
 > At this point this is all that is required to configure the application, so we can start implementing.
@@ -271,7 +282,7 @@ public class UserControllerTest {
 从 REST 的角度来说，它将会和`/user` resource 的 POST 方法联系起来。
 
 > So let's implement it:
-    
+
 所以让我们来实现它：
 
 ```java
@@ -297,15 +308,24 @@ public class UserController {
 
 注意以下几点：
 
->   * It's annotated with `@RestController`. The difference between this and `@Controller` annotation is the former also implies `@ResponseBody` on every method, which means there is less to write since from a RESTful web service we are returning JSON objects anyway.
+> - It's annotated with `@RestController`. The difference between this and `@Controller` annotation is the former also implies `@ResponseBody` on every method, which means there is less to write since from a RESTful web service we are returning JSON objects anyway.
+
       - `@RestController`注解和`@Controller`的不同就在，前者会将`@ResponseBody`传到每个方法，这就意味着可以少写一些代码，因为我们总是会从RESTful的Web Service返回JSON对象。
->   * `@RequestMapping` maps the `createUser()` to the POST request on the `/user` url.
+
+> - `@RequestMapping` maps the `createUser()` to the POST request on the `/user` url.
+
       - `@RequestMapping`里的值表示`createUser()`方法的url是`/user`，请求方法为POST。
->   * Method takes the `User` object as a parameter. It is created from the body of the request thanks to `@RequestBody` annotation. It is then validated, which is enforced by `@Valid`.
+
+> - Method takes the `User` object as a parameter. It is created from the body of the request thanks to `@RequestBody` annotation. It is then validated, which is enforced by `@Valid`.
+
       - 这个方法将`User`对象作为参数，通过`@RequestBody`注解可以从request body中拿出来并且创建对象，`@Valid`表示它会被验证。
->   * The `UserService` will be injected to the constructor, and `User` object is passed to its `save()` method for storage.
+
+> - The `UserService` will be injected to the constructor, and `User` object is passed to its `save()` method for storage.
+
       - `UserService`将会被注入到构造函数中，`User`对象将被传到`save()`方法中保存。
->   * After storing, the stored `User` object will be returned. Spring will convert it back to JSON automatically, even without `@ResponseBody` annotation which is default for `@RestController`.
+
+> - After storing, the stored `User` object will be returned. Spring will convert it back to JSON automatically, even without `@ResponseBody` annotation which is default for `@RestController`.
+
       - `User`对象在保存之后就会被返回，Spring将会将其自动转成JSON，哪怕没有`@ResponseBody`，这是`@RestController`的功能。
 
 > How about UserService and User then? For the test to pass we need only an interface for UserService, because it is not even created, but merely mocked. It should take `User` objects into the `save()` methods which will be used to save them, then it should return saved `User` object back to the caller.
@@ -388,7 +408,7 @@ public class UserServiceImplTest {
 假设`UserService`将会使用`UserRepository`来进行实际的数据存储，首先将它 Mock，然后 Stub 返回一个已存储的`User`对象。然后我就可以验证从`save()`返回回来的对象是否就是被存储的那个`User`，还有就是`UserRepository`有没有被实际调用一次。
 
 > As previously, at this point all we need is the interface for `UserRepository`, but thanks to Spring Data JPA it's also everything that we'll ever need for this project. The interface looks like this:
-    
+
 像以前一样，我们需要做的就是一个`UserRepository`接口。而多亏了 Spring Data JPA，已经为我们准备了项目所需要的所有东西。接口就像这样：
 
 ```java
@@ -455,7 +475,7 @@ public class User {
     // getters
 
 }
-```    
+```
 
 > Notice the `@Entity`, `@Column`, and `@Id` annotations that appeared. The first one tells the object is a JPA entity. The second tells JPA how fields should be mapped to a column and what can be done with them - what the column name will be, whether it's allowed for a column to be updated or have null value. Whereas the `@Id` indicates a primary key for database record - it needs to be non null and unique, so our `User.id` fits here perfectly.
 
@@ -464,7 +484,7 @@ public class User {
 ## Getting this to work | 让它跑起来
 
 > It's now possible to run and test the whole thing. Type:
-    
+
 现在就可以运行和测试整个程序了，输入：
 
 ```bash
@@ -498,7 +518,7 @@ curl -X POST -d '{ "id": "test_id", "password": "test_password" }' http://localh
 
 ```json
 { "id": "test_id", "password": "test_password" }
-```    
+```
 
 > Which should be our inserted object.
 
@@ -551,7 +571,7 @@ public User save(final User user) {
     }
     return repository.save(user);
 }
-``` 
+```
 
 > It clearly has the logic the test requires. The `findOne(id)` method already exists in `UserRepository` and returns null if no object could be found.
 

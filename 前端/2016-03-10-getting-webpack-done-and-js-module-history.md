@@ -4,7 +4,6 @@ title: 搞定 Webpack (1)：前端模块化实践小史与 Webpack 入门
 categories: [前端]
 tags: [Webpack, 工程化, JavaScript]
 published: True
-
 ---
 
 ## JavaScript 模块化管理
@@ -13,11 +12,11 @@ published: True
 
 via [《ECMAScript 6 入门》 —— 阮一峰](http://es6.ruanyifeng.com/#docs/module)：
 
-> 历史上，JavaScript一直没有模块（module）体系，无法将一个大程序拆分成互相依赖的小文件，再用简单的方法拼装起来。其他语言都有这项功能，比如Ruby的require、Python的import，甚至就连CSS都有@import，但是JavaScript任何这方面的支持都没有，这对开发大型的、复杂的项目形成了巨大障碍。
+> 历史上，JavaScript 一直没有模块（module）体系，无法将一个大程序拆分成互相依赖的小文件，再用简单的方法拼装起来。其他语言都有这项功能，比如 Ruby 的 require、Python 的 import，甚至就连 CSS 都有@import，但是 JavaScript 任何这方面的支持都没有，这对开发大型的、复杂的项目形成了巨大障碍。
 
-> 在ES6之前，社区制定了一些模块加载方案，最主要的有CommonJS和AMD两种。前者用于服务器，后者用于浏览器。ES6在语言规格的层面上，实现了模块功能，而且实现得相当简单，完全可以取代现有的CommonJS和AMD规范，成为浏览器和服务器通用的模块解决方案。
+> 在 ES6 之前，社区制定了一些模块加载方案，最主要的有 CommonJS 和 AMD 两种。前者用于服务器，后者用于浏览器。ES6 在语言规格的层面上，实现了模块功能，而且实现得相当简单，完全可以取代现有的 CommonJS 和 AMD 规范，成为浏览器和服务器通用的模块解决方案。
 
-> ES6模块的设计思想，是尽量的静态化，使得编译时就能确定模块的依赖关系，以及输入和输出的变量。CommonJS和AMD模块，都只能在运行时确定这些东西。比如，CommonJS模块就是对象，输入时必须查找对象属性。
+> ES6 模块的设计思想，是尽量的静态化，使得编译时就能确定模块的依赖关系，以及输入和输出的变量。CommonJS 和 AMD 模块，都只能在运行时确定这些东西。比如，CommonJS 模块就是对象，输入时必须查找对象属性。
 
     // profile.js
     var firstName = 'Michael';
@@ -29,9 +28,9 @@ via [《ECMAScript 6 入门》 —— 阮一峰](http://es6.ruanyifeng.com/#docs
     // main.js
     import {firstName, lastName, year} from './profile';
 
----*然而那是未来，我们来看看过去，以及现在*---
+---_然而那是未来，我们来看看过去，以及现在_---
 
-### CommonJS，AMD，以及 UMD 
+### CommonJS，AMD，以及 UMD
 
 CommonJS 和 AMD 就在在 JavaScript 还没有模块管理的情况下民间所制定的两大规范，前者定义的是模块的同步加载，主要用于 NodeJS；而后者则是异步加载，通过 RequireJS 等工具适用于浏览器。
 
@@ -181,8 +180,8 @@ UMD 的实现其实很简单：
 Webpack 最酷的就是按「模块」预处理，最终按需打包，官方提供了很多很好用的 [loader](http://webpack.github.io/docs/list-of-loaders.html) 和 [plugins](https://webpack.github.io/docs/list-of-plugins.html)。化繁为简，结合 NPM Script 及其庞大的生态圈就可以搞定几乎全部的前端构建需求了，从而大幅度提升了开发体验。前端也在工程化的道路上越走越远，刀耕火种的时代正在慢慢改善，能够见证并参与其中享受着创造的乐趣，真是一件幸事。
 
 - [Getting Started - Webpack](http://webpack.github.io/docs/tutorials/getting-started/)
-- [如何使用webpack —— webpack-howto](http://qiutc.me/post/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8webpack%E2%80%94webpack-howto.html)
-- [Webpack，101入门体验](http://www.html-js.com/article/Webpack%203009)
+- [如何使用 webpack —— webpack-howto](http://qiutc.me/post/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8webpack%E2%80%94webpack-howto.html)
+- [Webpack，101 入门体验](http://www.html-js.com/article/Webpack%203009)
 - [详解前端模块化工具 Webpack](https://segmentfault.com/a/1190000003970448)
 - [Webpack 入门指迷 —— 题叶](https://segmentfault.com/a/1190000002551952)
-- [基于webpack的前端工程化开发之多页站点篇（一）](https://segmentfault.com/a/1190000004511992)
+- [基于 webpack 的前端工程化开发之多页站点篇（一）](https://segmentfault.com/a/1190000004511992)

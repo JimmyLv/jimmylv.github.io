@@ -4,10 +4,9 @@ title: GitHub开源项目源码十阅(1)：getAwesomeness
 categories: [前端]
 tags: [开源项目, JavaScript, Express, GitHub]
 published: True
-
 ---
 
-# GitHub开源项目：getAwesomeness
+# GitHub 开源项目：getAwesomeness
 
 ![](https://raw.githubusercontent.com/JimmyLv/images/master/images/getAwesome.png)
 
@@ -45,26 +44,26 @@ time: 2 days
 ### 0x01. Express.js
 
 - express 配置 app 的过程
-    + `var app = express();`
-    + `routes` & `views`
-    + `app.listen(3000)`
+  - `var app = express();`
+  - `routes` & `views`
+  - `app.listen(3000)`
 - nodejs 的模块：`module.exports`与`require('./config/express')`
 - `app.use([path,] function [, function...])` API
-    + Mounts the middleware function(s) at the path. If path is not specified, it defaults to “/”.
-    + `app.use(express.static(config.root + '/public'));`
-    + `app.use(locale(supported));` & `var supported = ["en", "zh-CN"];`
+  - Mounts the middleware function(s) at the path. If path is not specified, it defaults to “/”.
+  - `app.use(express.static(config.root + '/public'));`
+  - `app.use(locale(supported));` & `var supported = ["en", "zh-CN"];`
 - `app.engine('html', swig.renderFile);`
 - `app.set('views', config.root + '/app/views');`
 
-### 0x02. Routes路由
+### 0x02. Routes 路由
 
 ```js
-  app.use(function (req, res, next) {
-    res.status(404).render('404', {
-      url: req.originalUrl,
-      error: 'Not found'
-    });
+app.use(function (req, res, next) {
+  res.status(404).render("404", {
+    url: req.originalUrl,
+    error: "Not found",
   });
+});
 ```
 
 ![](https://raw.githubusercontent.com/JimmyLv/images/master/images/swig_404.png)
@@ -72,12 +71,12 @@ time: 2 days
 当然可以再次分层，把具体的`res.render()`函数放到不同的地方。
 
 ```js
-var sites = require('../app/sites');
-app.get('/', sites.index);
-app.get('/get/:awe', sites.get);
+var sites = require("../app/sites");
+app.get("/", sites.index);
+app.get("/get/:awe", sites.get);
 ```
 
-### 0x03. Sites视图
+### 0x03. Sites 视图
 
     exports.index = function (req, res){
       res.render('index', {
@@ -125,7 +124,7 @@ app.get('/get/:awe', sites.get);
         res.cookie('aweCookie', JSON.stringify(arr), { maxAge: maxAge, httpOnly: true });
     }
 
-### 0x05. lowdb库
+### 0x05. lowdb 库
 
 <https://github.com/typicode/lowdb>
 
@@ -149,7 +148,7 @@ Database is automatically saved to db.json
       ]
     }
 
-### 0x06. request库
+### 0x06. request 库
 
 <https://github.com/request/request>
 
@@ -162,9 +161,9 @@ Database is automatically saved to db.json
         }
     }
 
-### 0x07. Swig模板引擎
+### 0x07. Swig 模板引擎
 
-使用[swig模板引擎](http://paularmstrong.github.io/swig/docs/)，和 Express.js 搭配良好，可以传入函数这点很酷。
+使用[swig 模板引擎](http://paularmstrong.github.io/swig/docs/)，和 Express.js 搭配良好，可以传入函数这点很酷。
 
 比如：
 
@@ -188,7 +187,7 @@ Use getAwesomeness() to retrieve all amazing awesomeness (README.md is markdown 
       return marked(text);
     }
 
-### 0x08. Search功能
+### 0x08. Search 功能
 
     $.get('/json/list', function(data){
         $("#typeahead").typeahead({ source:data });
@@ -204,7 +203,7 @@ Use getAwesomeness() to retrieve all amazing awesomeness (README.md is markdown 
         }
     });
 
-### 0x09. toTop功能
+### 0x09. toTop 功能
 
     <a href="#top" id="toTop" class="btn btn-lg btn-primary" title="Back to top">&uarr;</a>
 

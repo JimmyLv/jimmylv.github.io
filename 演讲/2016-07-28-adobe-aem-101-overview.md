@@ -11,10 +11,12 @@ theme: green
 published: True
 ---
 
-30 min = 15 min * 2
+30 min = 15 min \* 2
 
 [slide]
+
 # AEM 101 Overview
+
 <small>by <strong>Jimmy Lv</strong></small>
 
 [slide]
@@ -22,18 +24,18 @@ published: True
 # Agenda
 
 - Part 1: AEM Overview
-    +  AEM 在 Adobe 中的地位
-    +  AEM 是什么？业务价值 👏
-    +  AEM 的历史，顺带解释 Day 公司的贡献
+  - AEM 在 Adobe 中的地位
+  - AEM 是什么？业务价值 👏
+  - AEM 的历史，顺带解释 Day 公司的贡献
 - Part 2: AEM Functionality Preview
-    -  从使用端来讲，拖拖拽拽
-    -  从角色分工来讲
+  - 从使用端来讲，拖拖拽拽
+  - 从角色分工来讲
 - Part 3: AEM 背后实现原理的相关概念
-    -  一堆名词，根据官方文档顺序讲就是了
-    -  组件化改变 Web（延伸到现在的 React） via 徐飞讲 [十年来感受的前端技术变化 · Issue #28 · xufei/blog](https://github.com/xufei/blog/issues/28)
+  - 一堆名词，根据官方文档顺序讲就是了
+  - 组件化改变 Web（延伸到现在的 React） via 徐飞讲 [十年来感受的前端技术变化 · Issue #28 · xufei/blog](https://github.com/xufei/blog/issues/28)
 - One more things...
-    - 自己的想法，学习总结
-    - Learning RoadMap
+  - 自己的想法，学习总结
+  - Learning RoadMap
 
 [slide]
 
@@ -184,7 +186,7 @@ Apache HTTP 服务器的核心开发者 Roy Fielding,他还是 Apache 软件基�
 
 [slide]
 
-#  Touch UI Customizations
+# Touch UI Customizations
 
 [![](https://raw.githubusercontent.com/JimmyLv/images/master/2016/1469772544746.png)](http://blogs.adobe.com/experiencedelivers/experience-management/touch-ui-customizations-part-1/)
 
@@ -261,7 +263,7 @@ Apache HTTP 服务器的核心开发者 Roy Fielding,他还是 Apache 软件基�
 
 1.  **Web Application Server**: 可以单独集成 Jetty web server，也可以用于第三方
 2.  **Web Application Framework**: 简化 RESTful 面向对象的 Web 应用，即内容优先
-4.  **Content Repository**: AEM 引入了 JCR，用于处理非结构化或半结构化的数据；不仅包含内容，还有相关代码、模板等所有内部数据
+3.  **Content Repository**: AEM 引入了 JCR，用于处理非结构化或半结构化的数据；不仅包含内容，还有相关代码、模板等所有内部数据
 
 [slide]
 
@@ -286,7 +288,7 @@ Apache HTTP 服务器的核心开发者 Roy Fielding,他还是 Apache 软件基�
 ![](https://raw.githubusercontent.com/JimmyLv/images/master/2016/1469776814871.png)
 
 > OSGi 的作用在于 Runtime，之所以为动态模块加载，用于管理复杂度，并可以动态扩展其依赖。（类 JavaScript 的 Require.js ？）
-> 该规范和核心部分是一个框架，其中定义了**应用程序的生命周期模式和服务注册**。基于这个框架定义了大量的OSGi服务：日志、配置管理、偏好，HTTP（运行servlet）、XML分析、设备访问、软件包管理、许可管理、星级、用户管理、IO连接、连线管理、Jini和UPnP。
+> 该规范和核心部分是一个框架，其中定义了**应用程序的生命周期模式和服务注册**。基于这个框架定义了大量的 OSGi 服务：日志、配置管理、偏好，HTTP（运行 servlet）、XML 分析、设备访问、软件包管理、许可管理、星级、用户管理、IO 连接、连线管理、Jini 和 UPnP。
 
 [slide]
 
@@ -294,11 +296,11 @@ Apache HTTP 服务器的核心开发者 Roy Fielding,他还是 Apache 软件基�
 
 注解形式实现 OSGi 标准 bundle，在 AEM 中成为 Module。
 
-* [@Component](http://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html#component)
-* [@Activate, @Deactivate, and @Modified](http://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html#activate-deactivate-and-modified)
-* [@Service](http://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html#service)
-* [@Property](http://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html#property)
-* [@Reference](http://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html#reference)
+- [@Component](http://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html#component)
+- [@Activate, @Deactivate, and @Modified](http://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html#activate-deactivate-and-modified)
+- [@Service](http://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html#service)
+- [@Property](http://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html#property)
+- [@Reference](http://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html#reference)
 
 ```java
 @Property(name = "sample",
@@ -340,7 +342,6 @@ Apache HTTP 服务器的核心开发者 Roy Fielding,他还是 Apache 软件基�
 # 做一个照片 CMS
 
 ![](https://raw.githubusercontent.com/JimmyLv/images/master/2016/1469707517793.png)
-
 
 [slide]
 
@@ -385,4 +386,3 @@ Sling 背后靠着 CRX 吃饭：
 [slide]
 
 # One more thing...
-

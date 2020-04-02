@@ -4,7 +4,6 @@ title: 【译】使用微服务构建原生云端应用 - 第一部分
 categories: [编程]
 tags: [Microservices, Cloud]
 published: True
-
 ---
 
 # 使用微服务构建原生云端应用 - 第一部分
@@ -107,8 +106,8 @@ published: True
 
 到这里已经很多了，对吧？猜猜怎么着，这只是其中的一部分。我的应用就使用了微服务架构，虽然并不完美而且依然存在问题，但是现在看起来确实好多了。我想我会让大家先消化完这篇博客，然后再进入到第二部分来讨论其中的问题。
 
-* * *
+---
 
 > For more detailed information on microservices I suggest you read [Marin Fowlers and James Lewis post on the topic](http://martinfowler.com/articles/microservices.html). There are many other resources on the internet that discuss the topic in great detail. If you are one of those people that fancies reading books, I suggest you check out this [one on microservices](http://shop.oreilly.com/product/0636920033158.do). I haven’t read the whole thing yet, but so far so good in my opinion. There is also a recently released [RedBook from IBM on microservices](http://www.redbooks.ibm.com/redpieces/abstracts/sg248275.html?Open), I have not read this one yet so can’t offer any thoughts on it. In addition to the RedBook there is a nice interview with[Constant Contact](http://www.constantcontact.com/home-page?s_tnt=68097:20:0) done by my colleague [Carlos M Ferreira](https://bluemixstirred.wordpress.com/) where they discuss how Constant Contact is using microservices.
 
-有关于微服务的更多信息，我推荐你去阅读[Marin Fowlers和James Lewis有关于这个话题的文章](http://martinfowler.com/articles/microservices.html)。在网络上有很多其他有关于此话题细节的资源。如果你是热衷于读书的人，我向你推荐这本书[one on microservices](http://shop.oreilly.com/product/0636920033158.do)。我还没有完全读完，但是目前为止我感觉非常不错。这还有一本刚发布的[RedBook from IBM on microservices](http://www.redbooks.ibm.com/redpieces/abstracts/sg248275.html?Open)，我还没读过，所以无法提供任何意见。除了这本 RedBook 以外还有一个非常不错的访谈[Constant Contact](http://www.constantcontact.com/home-page?s_tnt=68097:20:0)，这是在我的大学[Carlos M Ferreira](https://bluemixstirred.wordpress.com/)中他们所讨论的 Constant Contact 是如何使用微服务的。
+有关于微服务的更多信息，我推荐你去阅读[Marin Fowlers 和 James Lewis 有关于这个话题的文章](http://martinfowler.com/articles/microservices.html)。在网络上有很多其他有关于此话题细节的资源。如果你是热衷于读书的人，我向你推荐这本书[one on microservices](http://shop.oreilly.com/product/0636920033158.do)。我还没有完全读完，但是目前为止我感觉非常不错。这还有一本刚发布的[RedBook from IBM on microservices](http://www.redbooks.ibm.com/redpieces/abstracts/sg248275.html?Open)，我还没读过，所以无法提供任何意见。除了这本 RedBook 以外还有一个非常不错的访谈[Constant Contact](http://www.constantcontact.com/home-page?s_tnt=68097:20:0)，这是在我的大学[Carlos M Ferreira](https://bluemixstirred.wordpress.com/)中他们所讨论的 Constant Contact 是如何使用微服务的。

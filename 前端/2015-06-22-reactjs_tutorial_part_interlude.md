@@ -4,7 +4,6 @@ title: 【译】React.js教程 番外篇（一）：使用Bower包管理工具
 categories: [前端]
 tags: [React, Bower]
 published: True
-
 ---
 
 技术系列笔记均已迁移至 GitBook，更多`React`的内容请到：[http://jimmylv.gitbooks.io/learning-react-js/content/reactjs_tutorial/reactjs_tutorial_part_1.html](http://jimmylv.gitbooks.io/learning-react-js/content/reactjs_tutorial/reactjs_tutorial_part_1.html)
@@ -78,7 +77,6 @@ $ bower init
       ]
     }
 
-
 ## Twitter Bootstrap and SASS Setup | 安装 Twitter Bootstrap 和 SASS
 
 > The next bit of setup we are going to do for our web app is to install [Twitter Bootstrap](http://getbootstrap.com/) using its official [SASS](http://sass-lang.com/) bower package. You can see what packages are available through bower using its search function: `bower search` Searching for `bootstrap` brings up many, many packages, but also shows us the package we want. Here is an excerpt from the search:
@@ -115,7 +113,7 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
 }
 ```
 
@@ -165,8 +163,8 @@ link(rel='stylesheet', href='/stylesheets/css/style.css')
 在介绍 Twitter Bootstrap 之后，我们还需要加入新的 JavaScript 库：jQuery。由于我们已经可以将 JSX 代码编译成 JavaScript，让我们花点时间把 JavaScript 连接到单个`app.js`中。只需要告诉 JSX 导入相应的库即可，由于我们已经使用了 browserify，所以很简单就可以加入到`app.jsx`文件：
 
 ```js
-var $ = jQuery = require('../../libraries/jquery/dist/jquery');
-var bootstrap = require('../../libraries/bootstrap-sass-official/assets/javascripts/bootstrap');
+var $ = (jQuery = require("../../libraries/jquery/dist/jquery"));
+var bootstrap = require("../../libraries/bootstrap-sass-official/assets/javascripts/bootstrap");
 ```
 
 > Doing this points both `jQuery ($)` and `bootstrap` to the appropriate file which were installed via Bower. When we re-run our browserify gulp task, these two libraries get pulled in! Simple as that.
@@ -223,4 +221,3 @@ body
 完成之后的效果：
 
 ![](http://www.joshfinnie.com/assets/images/blog/bootstrapped-hello-react.png)
-

@@ -11,7 +11,7 @@ theme: green
 published: True
 ---
 
-30 min = 15 min * 2
+30 min = 15 min \* 2
 
 [slide data-on-enter="incallback"]
 
@@ -19,15 +19,17 @@ published: True
 
 ```js
 function incallback() {
-    setTimeout(function(){
-        alert('Done is better than perfect.  -  via Facebook');
-        document.getElementById('incallback').innerHTML = 'Welcome to my session!';
-    }, 300)
+  setTimeout(function () {
+    alert("Done is better than perfect.  -  via Facebook");
+    document.getElementById("incallback").innerHTML = "Welcome to my session!";
+  }, 300);
 }
 ```
 
 [slide]
+
 # 前端模块化小~~屎~~史，Webpack 入门
+
 <small>by <strong>Jimmy Lv</strong></small>
 
 [slide]
@@ -38,12 +40,12 @@ function incallback() {
 
 # JavaScript 模块化
 
-------
+---
 
-* ES6 Module {:&.fadeIn}
-* CommonJS
-* AMD
-* UMD
+- ES6 Module {:&.fadeIn}
+- CommonJS
+- AMD
+- UMD
 
 [slide data-on-leave="outcallback"]
 
@@ -51,22 +53,22 @@ function incallback() {
 
 ```js
 // profile.js
-var firstName = 'Michael';
-var lastName = 'Jackson';
+var firstName = "Michael";
+var lastName = "Jackson";
 
 var sayHi = () => {
-    console.info('I am '+ firstName + ',' + lastName + '!');
-    console.info(`I am ${firstName}, ${lastName}!`);
-}
+  console.info("I am " + firstName + "," + lastName + "!");
+  console.info(`I am ${firstName}, ${lastName}!`);
+};
 
-export {firstName, lastName, sayHi};
+export { firstName, lastName, sayHi };
 ```
 
 ```js
 // main.js
-import {firstName, lastName, sayHi} from './profile';
+import { firstName, lastName, sayHi } from "./profile";
 
-import * as profile from './profile';
+import * as profile from "./profile";
 profile.sayHi();
 ```
 
@@ -90,7 +92,7 @@ var firstModule = require("firstModule");
 
 //playing code...
 
-module.export = anotherModule
+module.export = anotherModule;
 ```
 
 [slide]
@@ -105,24 +107,23 @@ module.export = anotherModule
 
 # 过去式：AMD 规范
 
-> 即 (Asynchronous Module Definition) {:&.pull-right} 
+> 即 (Asynchronous Module Definition) {:&.pull-right}
 
-------
+---
 
 ```js
-define(['firstModule'], function(module) {
+define(["firstModule"], function (module) {
+  //playing code...
 
-    //playing code...
-
-    return anotherModule
-})
+  return anotherModule;
+});
 ```
 
 [slide]
 
-# Browserify.js 
+# Browserify.js
 
-> 🐒🐒🐒🐒🐒：要是能在浏览器使用 *require* 同步语法加载 NPM 模块就好了！
+> 🐒🐒🐒🐒🐒：要是能在浏览器使用 _require_ 同步语法加载 NPM 模块就好了！
 
 <br/>
 
@@ -131,44 +132,43 @@ var firstModule = require("firstModule");
 
 //playing code...
 
-module.export = anotherModule
+module.export = anotherModule;
 ```
 
 ```js
-define(['firstModule'], function(module) {
+define(["firstModule"], function (module) {
+  //playing code...
 
-    //playing code...
-
-    return anotherModule
-})
+  return anotherModule;
+});
 ```
 
 [slide]
 
 # 「通用」模式：UMD
 
-> 即 (Universal Module Definition) {:&.pull-right} 
+> 即 (Universal Module Definition) {:&.pull-right}
 
-------
+---
 
 ```js
 (function (root, factory) {
-    if (typeof define === 'function' && define.amd) {
-        // AMD
-        define(['jquery'], factory);
-    } else if (typeof exports === 'object') {
-        // Node, CommonJS
-        module.exports = factory(require('jquery'));
-    } else {
-        // 浏览器全局变量(root 即 window)
-        root.returnExports = factory(root.jQuery);
-    }
-}(this, function ($) {
-    //    方法
-    function myFunc(){};
-    //    暴露公共方法
-    return myFunc;
-}));
+  if (typeof define === "function" && define.amd) {
+    // AMD
+    define(["jquery"], factory);
+  } else if (typeof exports === "object") {
+    // Node, CommonJS
+    module.exports = factory(require("jquery"));
+  } else {
+    // 浏览器全局变量(root 即 window)
+    root.returnExports = factory(root.jQuery);
+  }
+})(this, function ($) {
+  //    方法
+  function myFunc() {}
+  //    暴露公共方法
+  return myFunc;
+});
 ```
 
 [slide]
@@ -180,7 +180,7 @@ define(['firstModule'], function(module) {
 <br/>
 
 - 依赖管理 {:&.rollIn}
-- 按需加载 
+- 按需加载
 - 请求合并
 
 [slide]
@@ -224,14 +224,12 @@ define(['firstModule'], function(module) {
 
 ```js
 // hello.js
-import React, {Component} from 'react';
+import React, { Component } from "react";
 
 class Hello extends Component {
-    render(){
-        return (
-            <div>Hello, {this.props.name}!</div>
-        );
-    }
+  render() {
+    return <div>Hello, {this.props.name}!</div>;
+  }
 }
 
 export default Hello;
@@ -239,8 +237,8 @@ export default Hello;
 
 ```js
 // entry.js
-import React from 'react';
-import Hello from './hello';
+import React from "react";
+import Hello from "./hello";
 
 React.render(<Hello name="Jimmy" />, document.body);
 ```
@@ -251,24 +249,24 @@ React.render(<Hello name="Jimmy" />, document.body);
 
 ```js
 // webpack.config.js
-var path = require('path');
+var path = require("path");
 
 module.exports = {
-    entry: path.resolve(__dirname, './src/entry.js'),
-    output: {
-        path: path.resolve(__dirname, './assets'),
-        filename: 'bundle.js'
-    },
+  entry: path.resolve(__dirname, "./src/entry.js"),
+  output: {
+    path: path.resolve(__dirname, "./assets"),
+    filename: "bundle.js",
+  },
 
-    module: {
-        loaders: [
-            { test: /\.js?$/, loaders: 'babel-loader', exclude: /node_modules/ },
-        ]
-    },
+  module: {
+    loaders: [
+      { test: /\.js?$/, loaders: "babel-loader", exclude: /node_modules/ },
+    ],
+  },
 
-    resolve:{
-        extensions:['','.js','.json']
-    },
+  resolve: {
+    extensions: ["", ".js", ".json"],
+  },
 };
 ```
 
@@ -350,22 +348,21 @@ npm run build # 输出 production 环境下的压缩打包代码
 ```json
 module: {
     loaders: [
-      {test: /\.js$/, exclude: /node_modules/, 
+      {test: /\.js$/, exclude: /node_modules/,
         loader: 'ng-annotate!babel?presets=es2015'}
     ]
 }
 ```
 
-
 ```js
-require ('./style/base.less');
+require("./style/base.less");
 
-import angular from 'angular'
-import ngRoute from 'angular-route'
+import angular from "angular";
+import ngRoute from "angular-route";
 
-import githubService from './app/services/githubService'
-import MainCtrl from './app/controllers/mainController'
-import Components from './app/components/components.module'
+import githubService from "./app/services/githubService";
+import MainCtrl from "./app/controllers/mainController";
+import Components from "./app/components/components.module";
 ```
 
 [slide]
@@ -395,17 +392,17 @@ controller:["$http","$routeParams","base64",function(e,t,n){"ngInject" ...}]
 ```js
 {test: /\.less$/, loader: "style!css!less"},
 
-{test: /\.(eot|woff|woff2|ttf|svg)(\?\S*)?$/, 
+{test: /\.(eot|woff|woff2|ttf|svg)(\?\S*)?$/,
     loader: 'url?limit=100000&name=./fonts/[name].[ext]'},
-{test: /\.(png|jpe?g|gif)$/, 
+{test: /\.(png|jpe?g|gif)$/,
     loader: 'url-loader?limit=8192&name=./images/[hash].[ext]'}
 ```
 
 ```js
-import '../../node_modules/font-awesome/css/font-awesome.css'
-import '../../assets/styles/bootstrap.css'
-import '../../assets/styles/yue.css'
-import '../../assets/styles/base.less'
+import "../../node_modules/font-awesome/css/font-awesome.css";
+import "../../assets/styles/bootstrap.css";
+import "../../assets/styles/yue.css";
+import "../../assets/styles/base.less";
 ```
 
 [slide]
@@ -431,10 +428,9 @@ export default {
 ```
 
 ```js
-import post from './post/post'
+import post from "./post/post";
 
-export default angular.module('app.note', [])
-  .component('post', post);
+export default angular.module("app.note", []).component("post", post);
 ```
 
 [slide]
@@ -487,50 +483,57 @@ app/
 # 「越痛苦的事情越要早做」
 
 ```js
-var path = require('path');
-var webpack = require('webpack');
+var path = require("path");
+var webpack = require("webpack");
 
 module.exports = {
   context: __dirname,
   entry: {
-    app: ['webpack/hot/dev-server', './app/app.js']
+    app: ["webpack/hot/dev-server", "./app/app.js"],
   },
   output: {
-    path: './dist',
-    filename: 'bundle.js'
+    path: "./dist",
+    filename: "bundle.js",
   },
 
   module: {
     loaders: [
-      {test: /\.js$/, exclude: /node_modules/, loader: 'ng-annotate?add=true!babel-loader'},
-      {test: /\.css$/, loader: "style!css"},
-      {test: /\.less$/, loader: "style!css!less"},
-      {test: /\.(eot|woff|woff2|ttf|svg)(\?\S*)?$/, loader: 'url?limit=100000&name=./fonts/[name].[ext]'},
-      {test: /\.(png|jpe?g|gif)$/, loader: 'url-loader?limit=8192&name=./images/[hash].[ext]'},
-      {test: /\.html$/, loader: 'ngtemplate!html?attrs[]=img:src img:ng-src'}
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: "ng-annotate?add=true!babel-loader",
+      },
+      { test: /\.css$/, loader: "style!css" },
+      { test: /\.less$/, loader: "style!css!less" },
+      {
+        test: /\.(eot|woff|woff2|ttf|svg)(\?\S*)?$/,
+        loader: "url?limit=100000&name=./fonts/[name].[ext]",
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/,
+        loader: "url-loader?limit=8192&name=./images/[hash].[ext]",
+      },
+      { test: /\.html$/, loader: "ngtemplate!html?attrs[]=img:src img:ng-src" },
     ],
-    noParse: []
+    noParse: [],
   },
 
-  plugins: [
-    new webpack.HotModuleReplacementPlugin()
-  ],
+  plugins: [new webpack.HotModuleReplacementPlugin()],
 
   resolve: {
-    extensions: ['', '.js', '.json'],
+    extensions: ["", ".js", ".json"],
     alias: {
-      'react': './pages/build/react'
+      react: "./pages/build/react",
     },
-    modulesDirectories: ['node_modules', 'bower_components']
-  }
+    modulesDirectories: ["node_modules", "bower_components"],
+  },
 };
 ```
+
 [slide]
 
 # [NoBackend Website](http://nobackend.website)
 
-----
+---
 
 <iframe data-src="http://nobackend.website" src="about:blank;"></iframe>
-
-

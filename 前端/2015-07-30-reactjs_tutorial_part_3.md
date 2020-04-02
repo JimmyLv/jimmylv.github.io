@@ -4,7 +4,6 @@ title: 【译】React.js教程 第三部分：一个真实的React组件
 categories: [前端]
 tags: [React]
 published: True
-
 ---
 
 技术系列笔记均已迁移至 GitBook，更多`React`的内容请到：[http://jimmylv.gitbooks.io/learning-react-js/content/reactjs_tutorial/reactjs_tutorial_part_1.html](http://jimmylv.gitbooks.io/learning-react-js/content/reactjs_tutorial/reactjs_tutorial_part_1.html)
@@ -21,7 +20,7 @@ published: True
 
 > From the [React Documentation](https://facebook.github.io/react/docs/why-react.html), "React is all about building reusable components. In fact, with React the only thing you do is build components. Since they're so encapsulated, components make code reuse, testing, and separation of concerns easy." This is what drew me to React in the first place, coming from [Angular.js](https://angularjs.org/) the idea of components spoke to me. It seemed like React's components were the next logical step in the progression of Javascript's MVCs. Here we are going to try our hardest to stay true to the definition of a React Component and try to truly encapsulate a single idea of our web application per React component. First, let's see what this means in regards to our job board web application.
 
-根据[React文档](https://facebook.github.io/react/docs/why-react.html)所述：“React 一切都是为了组件重用，事实上，使用 React 你唯一需要做的就是构建组件。由于封装性，组件使得代码具有可复用性，可测试性，并且易于分离。”这是 React 在最开始吸引我的地方，这在[Angular.js](https://angularjs.org/)中是从来没有的，看起来 React 组件是属于 Javascript 的 MVCs 模型的逻辑部分。我们将尽力保持 React 组件的定义，并尽量使 web 应用的每一个 React 组件都保持单一想法的封装性。首先，让我们看看这对于我们的「工作布告栏」程序意味着什么。
+根据[React 文档](https://facebook.github.io/react/docs/why-react.html)所述：“React 一切都是为了组件重用，事实上，使用 React 你唯一需要做的就是构建组件。由于封装性，组件使得代码具有可复用性，可测试性，并且易于分离。”这是 React 在最开始吸引我的地方，这在[Angular.js](https://angularjs.org/)中是从来没有的，看起来 React 组件是属于 Javascript 的 MVCs 模型的逻辑部分。我们将尽力保持 React 组件的定义，并尽量使 web 应用的每一个 React 组件都保持单一想法的封装性。首先，让我们看看这对于我们的「工作布告栏」程序意味着什么。
 
 ## The Job Component | Job 组件
 
@@ -30,14 +29,12 @@ published: True
 第一个封装的模块就是工作的发布功能，首先新建一个组件，简单列出所有的发布信息。让我们为 React 组件新建一个`Job.jsx`文件，放到`public/javascripts/scr/`文件夹：
 
 ```js
-var React = require('react');
+var React = require("react");
 
 module.exports = React.createClass({
-    render: function() {
-        return (
-            <h1>Job Title</h1>
-        )
-    }
+  render: function () {
+    return <h1>Job Title</h1>;
+  },
 });
 ```
 
@@ -46,15 +43,12 @@ module.exports = React.createClass({
 这个文件看起来就跟之前的`HelloWorld.jsx`文件易于。当然我们需要为`Job`组件加上一些功能，当然首先需要连接到我们的应用。稍微修改一下`app.jsx`，将`HelloWorld`组件替换为`Job`组件。
 
 ```js
-var $ = jQuery = require('../../libraries/jquery/dist/jquery');
-var bootstrap = require('../../libraries/bootstrap-sass-official/assets/javascripts/bootstrap');
-var React = require('react');
-var HelloWorld = require('./Job.jsx');
+var $ = (jQuery = require("../../libraries/jquery/dist/jquery"));
+var bootstrap = require("../../libraries/bootstrap-sass-official/assets/javascripts/bootstrap");
+var React = require("react");
+var HelloWorld = require("./Job.jsx");
 
-React.render(
-    <HelloWorld />,
-    document.getElementById('job-post')
-);
+React.render(<HelloWorld />, document.getElementById("job-post"));
 ```
 
 > **Please note** we also changed the HTML element we are attaching our React app to from `example` to `job-post` so make sure to adjust your `index.jade` file to match. Running `gulp` and then serving your application, you should see a header title of "Job Title" instead of our "Hello World" text from the last couple of tutorials. Now let's add some information to this component and really make it look like a job posting!
@@ -68,34 +62,36 @@ React.render(
 为了给我们的`Job`组件添加一些有用信息，我们需要为组件新建一个“初始状态”。这是在简化组件获取数据的任务，但是现在它为我们所用。在`Job.jsx`这个文件，我们新建一个`getInitialState`函数，然后返回一个字典，其中包括我们想要组件在最开始时所需要的一些信息。一旦我们完成这些，我们就可以使用初始 state 数据来改变渲染的原色。从以下的内容可以看到我们对`Job.jsx`所做的修改：
 
 ```js
-var React = require('react');
+var React = require("react");
 
 module.exports = React.createClass({
-    getInitialState: function() {
-        return {
-            company: 'TrackMaven',
-            position: 'Software Maven',
-            local: 'Washington, DC, USA',
-            lookingFor: 'Angular.js, Django, ElasticSearch',
-            postedDate: '4 April 2015',
-            description: '',
-            category: 'Engineer'
-        };
-    },
+  getInitialState: function () {
+    return {
+      company: "TrackMaven",
+      position: "Software Maven",
+      local: "Washington, DC, USA",
+      lookingFor: "Angular.js, Django, ElasticSearch",
+      postedDate: "4 April 2015",
+      description: "",
+      category: "Engineer",
+    };
+  },
 
-    render: function() {
-        return (
-            <div>
-                <h2 class="listing-company">
-                    <span class="listing-company-name">{ this.state.company }</span>
-                    <span class="listing-location">{ this.state.local }</span>
-                </h2>
-                <span class="listing-job-type">Looking for: { this.state.lookingFor }</span>
-                <span class="listing-posted">Posted: { this.state.postedDate }</span>
-                <span class="listing-company-category">{ this.state.category }</span>
-            </div>
-        );
-    }
+  render: function () {
+    return (
+      <div>
+        <h2 class="listing-company">
+          <span class="listing-company-name">{this.state.company}</span>
+          <span class="listing-location">{this.state.local}</span>
+        </h2>
+        <span class="listing-job-type">
+          Looking for: {this.state.lookingFor}
+        </span>
+        <span class="listing-posted">Posted: {this.state.postedDate}</span>
+        <span class="listing-company-category">{this.state.category}</span>
+      </div>
+    );
+  },
 });
 ```
 
@@ -116,54 +112,54 @@ module.exports = React.createClass({
 在`Jobs`组件中，我们 map 出所有单独的`Job`组件。但是在教程的这个部分，我们依然会很难为数据编程。首先，我们要新建“初始化 state 数据”，看起来就像我们将来的 API 形式。为`Jobs`组件添加`getInitialState`方法，在 React.js 中循环渲染很多组件很容易，但也不完全靠直觉。我们想要在 JavaScript 中使用`map()`函数 map 将每一个"job"渲染到`Job`组件。以下是最终的`Jobs.jsx`：
 
 ```js
-var React = require('react');
-var Job = require('./Job.jsx');
+var React = require("react");
+var Job = require("./Job.jsx");
 
 module.exports = React.createClass({
-    getInitialState: function() {
-        // This will be an API call eventually...
-        return {
-            data: [
-                {
-                    company: 'TrackMaven',
-                    position: 'Software Maven',
-                    local: 'Washington, DC, USA',
-                    lookingFor: 'Angular.js, Django, ElasticSearch',
-                    postedDate: '4 April 2015',
-                    description: '',
-                    category: 'Engineering'
-                },
-                {
-                    company: 'TrackMaven',
-                    position: 'Junior Software Maven',
-                    local: 'Washington, DC, USA',
-                    lookingFor: 'Javascript, Python',
-                    postedDate: '4 April 2015',
-                    description: '',
-                    category: 'Engineering'
-                }
-            ]
-        };
-    },
-    render: function(){
-        return (
-            <div className="list-group">
-                {this.state.data.map(function(job){
-                    return (
-                        <Job
-                            company={job.company}
-                            position={job.position}
-                            local={job.local}
-                            lookingFor={job.lookingFor}
-                            postedDate={job.postedDate}
-                            description={job.description}
-                            category={job.category}
-                        />
-                    )
-                })}
-            </div>
-        )
-    }
+  getInitialState: function () {
+    // This will be an API call eventually...
+    return {
+      data: [
+        {
+          company: "TrackMaven",
+          position: "Software Maven",
+          local: "Washington, DC, USA",
+          lookingFor: "Angular.js, Django, ElasticSearch",
+          postedDate: "4 April 2015",
+          description: "",
+          category: "Engineering",
+        },
+        {
+          company: "TrackMaven",
+          position: "Junior Software Maven",
+          local: "Washington, DC, USA",
+          lookingFor: "Javascript, Python",
+          postedDate: "4 April 2015",
+          description: "",
+          category: "Engineering",
+        },
+      ],
+    };
+  },
+  render: function () {
+    return (
+      <div className="list-group">
+        {this.state.data.map(function (job) {
+          return (
+            <Job
+              company={job.company}
+              position={job.position}
+              local={job.local}
+              lookingFor={job.lookingFor}
+              postedDate={job.postedDate}
+              description={job.description}
+              category={job.category}
+            />
+          );
+        })}
+      </div>
+    );
+  },
 });
 ```
 
@@ -172,27 +168,33 @@ module.exports = React.createClass({
 这样使我们保证`Job`组件的整洁性，最重要的变化是将`state`换成了`props`，因为我们需要将数据传递到`Job`组件，而不是使用`getInitialState`方法。大部分都是一样的，但是我们在`return`方法中需要做出一点改变。首先，注意到`class`换成了`className`，这是由于 React.js 的一些 issue，因为这涉及到`class`的命名空间。第二，注意到我们不需要`getInitialState`方法了，因为我们现在是从`Jobs`组件中拿到的数据。
 
 ```js
-var React = require('react');
+var React = require("react");
 
 module.exports = React.createClass({
-    render: function() {
-        return (
-            <a href="#" className="list-group-item">
-                <h4 class="list-group-item-heading listing-company">
-                    <span className="listing-position-name">{ this.props.position }</span>
-                    <small className="listing-company-name">{ this.props.company }</small>
-                    <small className="listing-location">{ this.props.local }</small>
-                </h4>
-                <p className="list-group-item-text">
-                    <span className="listing-job-type">Looking for: { this.props.lookingFor }</span>
-                </p>
-                <p className="list-group-item-text">
-                    <span className="listing-posted">Posted: { this.props.postedDate }</span>
-                    <span className="listing-company-category">{ this.props.category }</span>
-                </p>
-            </a>
-        );
-    }
+  render: function () {
+    return (
+      <a href="#" className="list-group-item">
+        <h4 class="list-group-item-heading listing-company">
+          <span className="listing-position-name">{this.props.position}</span>
+          <small className="listing-company-name">{this.props.company}</small>
+          <small className="listing-location">{this.props.local}</small>
+        </h4>
+        <p className="list-group-item-text">
+          <span className="listing-job-type">
+            Looking for: {this.props.lookingFor}
+          </span>
+        </p>
+        <p className="list-group-item-text">
+          <span className="listing-posted">
+            Posted: {this.props.postedDate}
+          </span>
+          <span className="listing-company-category">
+            {this.props.category}
+          </span>
+        </p>
+      </a>
+    );
+  },
 });
 ```
 
@@ -209,11 +211,11 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
 }
 
 #jobs {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 
 .listing-location {
@@ -240,5 +242,3 @@ a {
 > In this tutorial we went through how to create a real component and how to loop over that component with data. Our application is looking more and more like a real web app! Next time we will work through how we are going to build out our Express.js app to return some JSON jobs data and how we can make our React.js app talk to that API. See you then!
 
 在本次教程中，我们学习了如何创建一个真实的 React 组件和如何循环渲染组件并且传递数据。我们的应用看起来越来越像一个 web 应用！下一次我们会继续学习如何构建 Express.js 应用来返回 JSON 格式的工作信息数据，以及 React.js 应用如何与 API 进行交互。See you then！
-
-

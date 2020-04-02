@@ -1,6 +1,6 @@
 ---
 layout: iframe
-title: 'JSConf 2016 (Ning)'
+title: "JSConf 2016 (Ning)"
 categories: [演讲]
 tags: [JavaScript, Conf, DX, FullStack]
 speaker: Jimmy Lv

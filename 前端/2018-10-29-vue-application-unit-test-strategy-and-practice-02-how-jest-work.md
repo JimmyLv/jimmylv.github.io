@@ -12,20 +12,20 @@ published: True
 
 ```md
 // Given
-一个完全没有UT基础的新人🚶
+一个完全没有 UT 基础的新人 🚶
 // When
-当他🚶阅读和练习本文的Jest的部分
+当他 🚶 阅读和练习本文的 Jest 的部分
 // Then
-他能够把Given/When/Then的套路学会
-他能够学会Jest的基本用法，包括测试suite和断言等语法
-他能够学会Jest中测试异步的几种方式
+他能够把 Given/When/Then 的套路学会
+他能够学会 Jest 的基本用法，包括测试 suite 和断言等语法
+他能够学会 Jest 中测试异步的几种方式
 ```
 
 ## 单元测试基础
 
 在[上一篇文章](https://blog.jimmylv.info/2018-09-19-vue-application-unit-test-strategy-and-practice-01-introduction/)当中我们介绍了单元测试的意义，以及为何选择 Facebook 的 Jest 作为我们的测试框架。现在就让我们一起来学习如何编写最基础的单元测试。
 
->  如果你已经有了使用 Jest 编写单元测试的经验，可以选择直接跳到第二段。
+> 如果你已经有了使用 Jest 编写单元测试的经验，可以选择直接跳到第二段。
 
 ### 第一个 Jest 实例
 
@@ -40,27 +40,27 @@ yarn add jest -D #--dev
 然后创建一个 `math.js` 文件，输入一个我们稍后测试的 `sum` 函数:
 
 ```js
-const sum = (a, b) => a + b
+const sum = (a, b) => a + b;
 
-module.exports = { sum }
+module.exports = { sum };
 ```
 
 接下来，让我们写第一个测试。在同一个文件夹中创建一个 `math.test.js` 文件，在这里我们将使用 Jest 来测试 `math.js` 中定义的函数:
 
 ```js
-const { sum } = require('./math')
+const { sum } = require("./math");
 
-describe('Math module', () => {
+describe("Math module", () => {
   it("should return sum result when one number plus another number", () => {
     // Given
-    const number = 1
-    const anotherNumber = 2
+    const number = 1;
+    const anotherNumber = 2;
     // When
-    const result = sum(number, anotherNumber)
+    const result = sum(number, anotherNumber);
     // Then
-    expect(result).toBe(2)
-  })
-})
+    expect(result).toBe(2);
+  });
+});
 ```
 
 然后运行 `yarn test` （添加 NPM Script）你就可以看到相应的结果。
@@ -73,17 +73,17 @@ describe('Math module', () => {
 
 首先我们看到的是一个由 `it` 包裹的测试主体最小单元，采用了 Given When Then 的经典格式，我们常常称之为测试三部曲，也可以解释为 3A 即：
 
-GWT | 3A |说明
---|--|--
-**Given**|Arrange|准备测试测试数据，有时可以抽取到 `beforeEach`
-**When** |Act|采取行动，一般来说就是调用相应的模块执行对应的函数或方法
-**Then** |Assert|断言，这时需要借助的就是 Matchers 的能力，Jest 还可以扩展自己的 Matcher
+| GWT       | 3A      | 说明                                                                    |
+| --------- | ------- | ----------------------------------------------------------------------- |
+| **Given** | Arrange | 准备测试测试数据，有时可以抽取到 `beforeEach`                           |
+| **When**  | Act     | 采取行动，一般来说就是调用相应的模块执行对应的函数或方法                |
+| **Then**  | Assert  | 断言，这时需要借助的就是 Matchers 的能力，Jest 还可以扩展自己的 Matcher |
 
-在 `expect` 后面的  `toBe`称之为 Matcher，是断言时的判断语句以验证正确性 ✅，在后面的文章中我们还会接触更多 Matchers，甚至可以扩展一些特别定制的 Matchers。
+在 `expect` 后面的 `toBe`称之为 Matcher，是断言时的判断语句以验证正确性 ✅，在后面的文章中我们还会接触更多 Matchers，甚至可以扩展一些特别定制的 Matchers。
 
 ```js
-expect(1+1).toBe(2)
-expect(1+1).not.toBe(3)
+expect(1 + 1).toBe(2);
+expect(1 + 1).not.toBe(3);
 ```
 
 修改断言的结果，就可以看到成功后的结果了：
@@ -98,23 +98,23 @@ expect(1+1).not.toBe(3)
 
 现实世界里，我们在写代码和单元测试时，常常遇到的一些需要替身的对象包括：
 
-* Database 数据库
-* Network requests 网络请求
-* access to Files 存取文件
-* any External system 任何外部系统
+- Database 数据库
+- Network requests 网络请求
+- access to Files 存取文件
+- any External system 任何外部系统
 
-其实在 Jest 当中，Fake/Stub/Mock/Spy 这些概念或许会有所混淆，而这跟 JavaScript 语言本身的特点有一定关系，但是我觉得 Jest 通过统一的 `fn()` 方法把问题解决得还比较恰当，让我们来一块儿看看实例🌰：
+其实在 Jest 当中，Fake/Stub/Mock/Spy 这些概念或许会有所混淆，而这跟 JavaScript 语言本身的特点有一定关系，但是我觉得 Jest 通过统一的 `fn()` 方法把问题解决得还比较恰当，让我们来一块儿看看实例 🌰：
 
 ### Mock 用于替代整个模块
 
 ```js
-import SoundPlayer from './sound-player';
+import SoundPlayer from "./sound-player";
 
 const mockPlaySoundFile = jest.fn();
 
-jest.mock('./sound-player', () => {
+jest.mock("./sound-player", () => {
   return jest.fn().mockImplementation(() => {
-    return {playSoundFile: mockPlaySoundFile};
+    return { playSoundFile: mockPlaySoundFile };
   });
 });
 ```
@@ -140,15 +140,15 @@ console.log(returnsTrue()); // true;
 > Spy packages without affecting the functions code
 
 ```js
-const video = require('./video');
+const video = require("./video");
 
-it('plays video', () => {
-  const spy = jest.spyOn(video, 'play');
+it("plays video", () => {
+  const spy = jest.spyOn(video, "play");
   const isPlaying = video.play();
 
   expect(spy).toHaveBeenCalled();
   expect(isPlaying).toBe(true);
-})
+});
 ```
 
 Spy 并不会影响到原有模块的功能代码，而只是充当一个监护人的作用，“你可以继续我型我秀上课讲小话，但是老师会偷偷告诉你妈妈，看你放学后老妈不打断你的腿”。比如说上文中的 `video` 模块中的 `play()` 方法已经被 `spy` 过，那么之后 `play()` 方法只要被调用过，我们就能判断其是否执行，甚至执行的次数。
@@ -158,7 +158,7 @@ Spy 并不会影响到原有模块的功能代码，而只是充当一个监护�
 把全局的数据 Mock 掉很简单，只需要像 `window.document.title = undefined` 这样简单 Fake 赋值就很完美。而像 `matchMedia` 这样的方法在 jsdom 里面并没有被实现，这时候我们当然就需要去把它 Mock 掉，简单把要用到的一些对象属性赋值就好，总之不至于在运行时报错。
 
 ```js
-window.matchMedia = jest.fn().mockImplementation(query => {
+window.matchMedia = jest.fn().mockImplementation((query) => {
   return {
     matches: false,
     media: query,
@@ -179,7 +179,7 @@ window.matchMedia = jest.fn().mockImplementation(query => {
 
 异步是 JavaScript 中绕不开的永恒话题，多亏了 ES6+ 高级语法所提供的多种优雅的异步代码方式，让我们写测试代码的方式也多了好多种。（逃
 
-让我们先来看一下什么是异步请求，这里有一个通过 Chrome API 获取当前位置的实例，可想而知 Chrome 要根据 GPS 信号才能算出当前的经纬度，相当于从卫星🛰来回走了一遭，怎么不会异步（代表有延时，延迟返回）呢？
+让我们先来看一下什么是异步请求，这里有一个通过 Chrome API 获取当前位置的实例，可想而知 Chrome 要根据 GPS 信号才能算出当前的经纬度，相当于从卫星 🛰 来回走了一遭，怎么不会异步（代表有延时，延迟返回）呢？
 
 ```js
 navigator.geolocation.getCurrentPostion() # chrome API 异步获取当前位置
@@ -188,9 +188,9 @@ navigator.geolocation.getCurrentPostion() # chrome API 异步获取当前位置
 ### Callback 回调函数
 
 ```js
-it('the data is peanut butter', done => {
+it("the data is peanut butter", (done) => {
   function callback(data) {
-    expect(data).toBe('peanut butter');
+    expect(data).toBe("peanut butter");
     done();
   }
 
@@ -203,18 +203,18 @@ it('the data is peanut butter', done => {
 ### Promise 让爱 `then()` 到底
 
 ```js
-it('the data is peanut butter', () => {
+it("the data is peanut butter", () => {
   expect.assertions(1);
-  return fetchData().then(data => {
-    expect(data).toBe('peanut butter');
+  return fetchData().then((data) => {
+    expect(data).toBe("peanut butter");
   });
 });
 ```
 
 ```js
-expect(Promise.resolve('lemon')).resolves.toBe('lemon')
+expect(Promise.resolve("lemon")).resolves.toBe("lemon");
 
-expect(Promise.reject(new Error('octopus'))).rejects.toThrow('octopus')
+expect(Promise.reject(new Error("octopus"))).rejects.toThrow("octopus");
 ```
 
 其实这种方式也好不到哪去，无非就是把 `done()` 方式换成了 `then()` 又一次充斥在整个 expect 当中，混乱了 When 和 Then 两种本该分开的时刻。但也有一个不错的点，可以通过 Promise 的 `.resolve()` 和 `.reject()` 方法使测试分别验证正常或异常的情况。
@@ -222,10 +222,10 @@ expect(Promise.reject(new Error('octopus'))).rejects.toThrow('octopus')
 ### Async/Await 让异步变得同步
 
 ```js
-test('the data is peanut butter', async () => {
+test("the data is peanut butter", async () => {
   expect.assertions(1);
   const data = await fetchData();
-  expect(data).toBe('peanut butter');
+  expect(data).toBe("peanut butter");
 });
 ```
 
@@ -237,25 +237,25 @@ Async/Await 语法糖在业务代码当中就特别好使了，好处不多说�
 
 **## 单元测试基础**
 
-* [x] ### 单元测试与自动化的意义
-* [x] ### 为什么选择 Jest
-* [x] ### Jest 的基本用法
-* [x] ### 该如何测试异步代码？
+- [x] ### 单元测试与自动化的意义
+- [x] ### 为什么选择 Jest
+- [x] ### Jest 的基本用法
+- [x] ### 该如何测试异步代码？
 
 **## Vue 单元测试**
 
-* [ ] ### Vue 组件的渲染方式
-* [ ] ### Wrapper `find()` 方法与选择器
-* [ ] ### UI 组件交互行为的测试  
+- [ ] ### Vue 组件的渲染方式
+- [ ] ### Wrapper `find()` 方法与选择器
+- [ ] ### UI 组件交互行为的测试
 
 **## Vuex 单元测试**
 
-* [ ] ### CQRS 与 `Redux-like` 架构
-* [ ] ### 如何对 Vuex 进行单元测试
-* [ ] ### Vue组件和Vuex store的交互  
+- [ ] ### CQRS 与 `Redux-like` 架构
+- [ ] ### 如何对 Vuex 进行单元测试
+- [ ] ### Vue 组件和 Vuex store 的交互
 
 **## Vue 应用测试策略**
 
-* [ ] ### 单元测试的特点及其位置
-* [ ] ### 单元测试的关注点
-* [ ] ### 应用测试的测试策略
+- [ ] ### 单元测试的特点及其位置
+- [ ] ### 单元测试的关注点
+- [ ] ### 应用测试的测试策略

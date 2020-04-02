@@ -4,7 +4,6 @@ title: 【译】Redux + React 应用程序架构的 3 条规范（内附实例�
 categories: [前端]
 tags: [Redux, React, FED, DX, Architecture]
 published: True
-
 ---
 
 原文地址：<http://jaysoo.ca/2016/02/28/organizing-redux-application/>
@@ -20,7 +19,6 @@ published: True
 > I hope that these tips will prove useful for developers who want to improve their application structure, but don’t know where to start.
 
 我希望这些建议，可以给那些想要改善应用结构却不知从何入手的开发者们提供帮助。
-
 
 ## Three rules for project structure | 项目结构的三条规则
 
@@ -69,7 +67,6 @@ app/
   models/
   views/
 ```
-
 
 > It may seem reasonable to group similar objects together like this (controllers with controllers, components with components), however as the application grows this structure does not scale.
 
@@ -123,9 +120,9 @@ Rich Hickey 在他的 Ruby Conf 2012 演讲 [Simplicity Matters](https://www.you
 
 项目结构的复杂相关度就是，当你把一个对象**靠近于**另外一个对象，将其**耦合到一起的障碍**就会显著减少。
 
-> As an example, let’s say that we want to add a new feature to our TODO app: We want the ability to manage TODO lists by *project*. That means we will create a new module called projects.
+> As an example, let’s say that we want to add a new feature to our TODO app: We want the ability to manage TODO lists by _project_. That means we will create a new module called projects.
 
-作为示例，让我们来给 TODO 应用添加一个新特性：我们想要根据 *project* 来管理 TODO 列表。这就意味着我们将要创建一个名为 `projects` 的新模块。
+作为示例，让我们来给 TODO 应用添加一个新特性：我们想要根据 _project_ 来管理 TODO 列表。这就意味着我们将要创建一个名为 `projects` 的新模块。
 
 ```
 projects/
@@ -138,27 +135,27 @@ todos/
 index.js
 ```
 
-> Now, it is obvious that the *projects* module will have a dependency on todos. In this situation, it is important that we exercise discipline and only couple to the “public” API exposed in `todos/index.js`.
+> Now, it is obvious that the _projects_ module will have a dependency on todos. In this situation, it is important that we exercise discipline and only couple to the “public” API exposed in `todos/index.js`.
 
-现在，*`projects`* 模块显然会依赖于 `todos`。在这种情况下，严格约束，以及仅耦合于由 `todos/index.js` 所暴露的「公共」接口就变得非常重要。
+现在，_`projects`_ 模块显然会依赖于 `todos`。在这种情况下，严格约束，以及仅耦合于由 `todos/index.js` 所暴露的「公共」接口就变得非常重要。
 
 **BAD**
 
 ```js
-import actions from '../todos/actions';
-import TodoItem from '../todos/components/TodoItem';
+import actions from "../todos/actions";
+import TodoItem from "../todos/components/TodoItem";
 ```
 
 **GOOD**
 
 ```js
-import todos from '../todos';
+import todos from "../todos";
 const { actions, TodoItem } = todos;
 ```
 
 > Another thing to **avoid is coupling to the state of another module**. For example, say that within the projects module, we need to grab information out of todos state in order to render a component. It is better that the todos module exposes an interface for projects to query this information, rather than complecting the component with todos state.
 
-另外一件事就是**避免跟其他模块的状态相耦合**。比如说，在 `projects` 模块内部，我们需要从 `todos` 的状态里面获取信息从而渲染组件。那么 `todos` 模块就最好能给 `projects` 模块暴露一个接口用于查询信息，而不是让这个组件和 `todos`  状态交织在一起。
+另外一件事就是**避免跟其他模块的状态相耦合**。比如说，在 `projects` 模块内部，我们需要从 `todos` 的状态里面获取信息从而渲染组件。那么 `todos` 模块就最好能给 `projects` 模块暴露一个接口用于查询信息，而不是让这个组件和 `todos` 状态交织在一起。
 
 **BAD**
 
@@ -224,9 +221,9 @@ const ProjectTodosContainer = connect(
 
 通过人为地设计严格的模块边界，我们可以简化应用代码，并且反过来增加应用的可维护性。**无需涉及其他模块的内部，我们应当思考模块之间契约的形式和维护。**
 
-> Now that the projects are organized by features, and we have explicit boundaries between each feature, there is one last thing I want to cover: *circular dependencies*.
+> Now that the projects are organized by features, and we have explicit boundaries between each feature, there is one last thing I want to cover: _circular dependencies_.
 
-既然项目已经根据特性组织而成，并且在每个特性之间也有了清晰的边界，那么接下来就是我想要涉及的最后一件事：*循环依赖*。
+既然项目已经根据特性组织而成，并且在每个特性之间也有了清晰的边界，那么接下来就是我想要涉及的最后一件事：_循环依赖_。
 
 ### Rule #3: Avoid circular dependencies | 规则 #3: 避免循环依赖 id:42
 
@@ -234,7 +231,7 @@ const ProjectTodosContainer = connect(
 
 「循环依赖是很糟糕的」，这应该不用太费口舌就能让你相信我说的话。但是，如果没有适当的项目结构的话，还是会很容易就掉进了这个坑里。
 
-> Most of the time, dependencies start out innoculously. We may *think* that the projects module need to reduce some state based on todos actions. If we are not grouping by features, and we see a large manifest of all action types within a global `actionTypes.js` file, it is all too easy for us to just reach in and grab what we need (at the time) without a second thought.
+> Most of the time, dependencies start out innoculously. We may _think_ that the projects module need to reduce some state based on todos actions. If we are not grouping by features, and we see a large manifest of all action types within a global `actionTypes.js` file, it is all too easy for us to just reach in and grab what we need (at the time) without a second thought.
 
 大多数时候，依赖在一开始的时候都是无害的。我们可能会*认为* `projects` 模块需要根据 `todos` 的 actions 来 reduce 一些状态。如果我们没有根据特性分组的话，然后我们就会在一个全局的 `actionTypes.js` 文件当中看到一个包含所有 action 类型的清单，这对我们来说，就很容易找到并且无需考虑就可以获取我们所需要的（在当时）。
 
@@ -278,9 +275,9 @@ a(); // ???
 
 我们可能会期待 “Hello Alice!” 会被打印出来，但其实 `a()` 会输出 “Hello undefined!”。这是因为 `a` 的命名导出，在 `a` 是由 `b` 引入的时候并不可用（由于循环引用）。
 
-> The implication here is that we **cannot both have projects depend on action types within todos *and* todos depend on action types within projects.** You can get around restriction in clever ways, but if you go down this road I can guarantee you that it will come to bite you later on!
+> The implication here is that we **cannot both have projects depend on action types within todos _and_ todos depend on action types within projects.** You can get around restriction in clever ways, but if you go down this road I can guarantee you that it will come to bite you later on!
 
-这里隐含的意思就是，我们**不能同时让 `projects` 依赖于 `todos` 内部的 action 类型，*并且* `todos` 又依赖于 `projects` 内部的 action 类型**。你可以使用聪明的方式绕过这种限制，但要是你继续这样下去的话，我保证你会在将来的时候被坑的！
+这里隐含的意思就是，我们**不能同时让 `projects` 依赖于 `todos` 内部的 action 类型，_并且_ `todos` 又依赖于 `projects` 内部的 action 类型**。你可以使用聪明的方式绕过这种限制，但要是你继续这样下去的话，我保证你会在将来的时候被坑的！
 
 #### Don’t make hairballs! | 不要制造毛团！
 
@@ -290,7 +287,7 @@ a(); // ???
 
 ![](https://raw.githubusercontent.com/JimmyLv/images/master/2016/1467640142143.png)
 
-> Whenever you want to use a small module within the hairball, you will have no choice but to pull in the giant mess. And even worse, when you change something inside the hairball, it would be hard *not* to break something else.
+> Whenever you want to use a small module within the hairball, you will have no choice but to pull in the giant mess. And even worse, when you change something inside the hairball, it would be hard _not_ to break something else.
 
 不论什么时候，你想要使用这块毛团中的一个小模块，你都别无选择只能陷入这种巨大的混乱当中。而且更糟糕的是，当你需要修改毛团当中的某些东西，要想*不*破坏其他东西的话就变得很难了。
 
@@ -340,16 +337,16 @@ rootReducer.js
 // todos/constants.js
 
 // This will be used later in our root reducer and selectors
-export const NAME = 'todos';
+export const NAME = "todos";
 ```
 
 ```js
 // todos/index.js
-import * as actions from './actions';
-import * as components from './components';
-import * as constants from './constants';
-import reducer from './reducer';
-import * as selectors from './selectors';
+import * as actions from "./actions";
+import * as components from "./components";
+import * as constants from "./constants";
+import reducer from "./reducer";
+import * as selectors from "./selectors";
 
 export default { actions, components, constants, reducer, selectors };
 ```
@@ -415,18 +412,18 @@ todos.actions.add('Do that thing');
 ```js
 // todos/model.js
 export type Todo = {
-  id?: number;
-  text: string;
-  completed: boolean;
+  id?: number,
+  text: string,
+  completed: boolean,
 };
 
 // This is the model of our module state (e.g. return type of the reducer)
 export type State = Todo[];
 
 // Some utility functions that operates on our model
-export const filterCompleted = todos => todos.filter(t => t.completed);
+export const filterCompleted = (todos) => todos.filter((t) => t.completed);
 
-export const filterActive = todos => todos.filter(t => !t.completed);
+export const filterActive = (todos) => todos.filter((t) => !t.completed);
 ```
 
 ### Reducers
@@ -445,15 +442,15 @@ export const filterActive = todos => todos.filter(t => !t.completed);
 
 ```js
 // rootReducer.js
-import { combineReducers } from 'redux';
-import todos from './todos';
+import { combineReducers } from "redux";
+import todos from "./todos";
 
 export default combineReducers({
-  [todos.constants.NAME]: todos.reducer
+  [todos.constants.NAME]: todos.reducer,
 });
 ```
 
-> This removes the coupling between our todos module and root reducer. Of course, you don’t *have* to do it this way. Other options include relying on naming conventions (e.g. todos module state is mounted under “todos” key in the state atom), or you can use module factory functions instead of relying on a static key.
+> This removes the coupling between our todos module and root reducer. Of course, you don’t _have_ to do it this way. Other options include relying on naming conventions (e.g. todos module state is mounted under “todos” key in the state atom), or you can use module factory functions instead of relying on a static key.
 
 这就可以移除我们的 `todos` 模块和根 reducer 之间的耦合。当然，你也*不一定*要通过这种方式。其他的选择也包括依赖命名约定（比如，将 `todos` 模块状态装载到使用 todos 作为 key 的状态原子底下），或者你也可以使用模块工厂函数而不是依赖于静态 key。
 
@@ -461,7 +458,7 @@ export default combineReducers({
 
 然后 reducer 就可能长得跟下面一样。
 
-``` js
+```js
 // todos/reducer.js
 import t from './actionTypes';
 import { State } from './model';
@@ -503,12 +500,12 @@ connect 的第一个参数就是一个 selector，从状态原子当中**选择*
 
 ```js
 // todos/selectors.js
-import { createSelector } from 'reselect';
-import _ from 'lodash';
-import { NAME } from './constants';
-import { filterActive, filterCompleted } from './model';
+import { createSelector } from "reselect";
+import _ from "lodash";
+import { NAME } from "./constants";
+import { filterActive, filterCompleted } from "./model";
 
-export const getAll = state => state[NAME];
+export const getAll = (state) => state[NAME];
 
 export const getCompleted = _.compose(filterCompleted, getAll);
 
@@ -521,7 +518,7 @@ export const getCounts = createSelector(
   (allTodos, completedTodos, activeTodos) => ({
     all: allTodos.length,
     completed: completedTodos.length,
-    active: activeTodos.length
+    active: activeTodos.length,
   })
 );
 ```
@@ -597,4 +594,3 @@ export default connect(
 > Whether you are using Redux and React or not, I highly recommend following these rules on your software projects.
 
 无论你是否正在使用 React 和 Redux，我都非常推荐你在自己的软件项目当中遵循这些规则。
-

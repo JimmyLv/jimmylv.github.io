@@ -4,22 +4,21 @@ title: 【译】React.js教程 第四部分：Express路由
 categories: [前端]
 tags: [React, Express]
 published: True
-
 ---
 
 技术系列笔记均已迁移至 GitBook，更多`React`的内容请到：<http://jimmylv.gitbooks.io/learning-react-js/content/reactjs_tutorial/reactjs_tutorial_part_4.html>
 
-# *React*.js Tutorial Part 4
+# _React_.js Tutorial Part 4
 
 原文地址：<http://www.joshfinnie.com/blog/reactjs-tutorial-part-4/>
 
-> Welcome to part 4 of my *React*.js/Express.js app tutorial. In this blog post, we are going to create the necessary Express routes to serve `json` code to our *React*.js frontend application. We are also going to very rudimentarily hook up these calls to our server it our *React*.js component so that the `json` can be rendered.
+> Welcome to part 4 of my _React_.js/Express.js app tutorial. In this blog post, we are going to create the necessary Express routes to serve `json` code to our _React_.js frontend application. We are also going to very rudimentarily hook up these calls to our server it our _React_.js component so that the `json` can be rendered.
 
 欢迎来到 React.js/Express.js 教程的第四部分。在这篇博客文章里，我们将会创建必要的 Express 路由来将`json`代码提供给我们的*React*.js 前端应用程序使用。我们也准备让*React*.js 组件得以初步调用我们的服务器，以便于`json`数据可以被渲染。
 
 ## Express Routes | Express 路由
 
-> The first thing we want to do is to create an Express.js route that will serve a `json` response when a certain URL is hit. This is actually very easy to accomplish within the Express.js framework. The setup of the Express.js website, which was auto-generated for us in [Part 1 of this tutorial](http://www.joshfinnie.com/blog/reactjs-tutorial-part-1/) does a good job of getting us started, but to continue, we want to add some more files to help keep things organized for us. 
+> The first thing we want to do is to create an Express.js route that will serve a `json` response when a certain URL is hit. This is actually very easy to accomplish within the Express.js framework. The setup of the Express.js website, which was auto-generated for us in [Part 1 of this tutorial](http://www.joshfinnie.com/blog/reactjs-tutorial-part-1/) does a good job of getting us started, but to continue, we want to add some more files to help keep things organized for us.
 
 我们想要做的第一件事情就是创建一个 Express.js 路由，以便于一个具体的 URL 被点击的时候返回一个`json`。通过 Express.js 框架很轻松就可以达成目标。关于安装 Express.js 网站，在[教程的第一部分](http://www.joshfinnie.com/blog/reactjs-tutorial-part-1/)已经为我们自动生成了，可以很好地用于入门。但是接下来，我们想要添加一些文件来保持组织性。
 
@@ -28,17 +27,16 @@ published: True
 所以在其他事情开始之前，我们想要创建另外的文件来存放 API 路由。这个文件叫做`routes/api.js`就可以了，然后我们就需要稍微改变一下`app.js`来保证我们可以使用新文件。在`app.js`中，我们把`var routes = require('./routes/index');`修改成其他更有用的形式：`var index = require('./routes/index');`。然后直接在底下添加想要的新的 API 路由：`var api = require('./routes/api');`。最后，把这些东西添加至`app`：`app.use('/api/', api);`。我们的`app.js`就应该有点模样了：
 
     ...
-    
+
     var index = require('./routes/index');
     var api = require('./routes/api');
-    
+
     ...
-    
+
     app.use('/', index);
     app.use('/api/', api);
-    
+
     ...
-    
 
 > Now we can add a `jobs` route to our `routes/api.js` and start serving `json` through our Express.js app.
 
@@ -50,46 +48,45 @@ published: True
 
 这儿有很多关于"Restful" API 架构的资源，而[Tuts+](http://code.tutsplus.com/tutorials/a-beginners-guide-to-http-and-rest--net-16340)就是一个非常棒的教程，我不想再花费太多时间去解释它了。本教程的这部分其实也不需要非常多的 REST 端口。
 
-> But let's write our first `GET` endpoint which will list out all the jobs we have available. First, we want to steal the `jobs` object from our *React*.js code and move it into `routes/api.js` then we want an endpoint that will return that object is `json` form. This is done by the following code:
+> But let's write our first `GET` endpoint which will list out all the jobs we have available. First, we want to steal the `jobs` object from our _React_.js code and move it into `routes/api.js` then we want an endpoint that will return that object is `json` form. This is done by the following code:
 
 但是让我们来写第一个`GET`端口，用于列举已有的所有工作信息。首先，我们想要从*React*.js 代码中把`jobs`对象拿出来，然后放到`routes/api.js`里，从而我们就需要一个端口可以返回`json`形式的对象。通过以下代码可以实现：
-    
-    var express = require('express');
-    var router = express.Router();
-    
-    var jobs = {
-        jobs: [
-            {
-                job_id: 1,
-                company: 'TrackMaven',
-                position: 'Software Maven',
-                local: 'Washington, DC, USA',
-                lookingFor: '*Angular*.js, Django, ElasticSearch',
-                postedDate: '4 April 2015',
-                description: '',
-                category: 'Engineering'
-            },
-            {
-                job_id: 2,
-                company: 'TrackMaven',
-                position: 'Junior Software Maven',
-                local: 'Washington, DC, USA',
-                lookingFor: 'Javascript, Python',
-                postedDate: '4 April 2015',
-                description: '',
-                category: 'Engineering'
-            }
-        ]
-    }
-    
-    router.get('/jobs', function(req, res) {
-        res.json({data: jobs});
-    });
-    
-    module.exports = router;
-    
 
-> The object is almost a direct copy that we had hardcoded within our *React*.js app, with a few modifications. Most importantly, we added the `job_id` variable. This will allow us to use our REST endpoints to return only one job posting, if we want to... which of course we do.
+var express = require('express');
+var router = express.Router();
+
+var jobs = {
+jobs: [
+{
+job_id: 1,
+company: 'TrackMaven',
+position: 'Software Maven',
+local: 'Washington, DC, USA',
+lookingFor: '*Angular*.js, Django, ElasticSearch',
+postedDate: '4 April 2015',
+description: '',
+category: 'Engineering'
+},
+{
+job_id: 2,
+company: 'TrackMaven',
+position: 'Junior Software Maven',
+local: 'Washington, DC, USA',
+lookingFor: 'Javascript, Python',
+postedDate: '4 April 2015',
+description: '',
+category: 'Engineering'
+}
+]
+}
+
+router.get('/jobs', function(req, res) {
+res.json({data: jobs});
+});
+
+module.exports = router;
+
+> The object is almost a direct copy that we had hardcoded within our _React_.js app, with a few modifications. Most importantly, we added the `job_id` variable. This will allow us to use our REST endpoints to return only one job posting, if we want to... which of course we do.
 
 这个对象几乎就是一个直接拷贝，在*React*.js 应用进行硬编码的基础之上带有一点儿修改。最重要的是，我们添加了`job_id`变量。这可以让我们使用 REST 端口，只返回唯一的工作岗位，如果我们想要……当然我们也做了。
 
@@ -114,24 +111,23 @@ published: True
 > With these two routes, we should be able to `curl` these two endpoints and get the following results:
 
 通过这两个路由，我们就应该可以使用`curl`来访问这两个端口，得到以下结果：
-    
-    $ curl localhost:3000/api/jobs
+
+$ curl localhost:3000/api/jobs
     {"data":{"jobs":[{"job_id":1,"company":"TrackMaven","position":"Software Maven","local":"Washington, DC, USA","lookingFor":"*Angular*.js, Django, ElasticSearch","postedDate":"4 April 2015","description":"","category":"Engineering"},{"job_id":2,"company":"TrackMaven","position":"Junior Software Maven","local":"Washington, DC, USA","lookingFor":"Javascript, Python","postedDate":"4 April 2015","description":"","category":"Engineering"}]}}
     
     $ curl localhost:3000/api/jobs/1
-    {"data":{"job_id":1,"company":"TrackMaven","position":"Software Maven","local":"Washington, DC, USA","lookingFor":"*Angular*.js, Django, ElasticSearch","postedDate":"4 April 2015","description":"","category":"Engineering"}}
-    
-    $ curl localhost:3000/api/jobs/2
-    {"data":{"job_id":2,"company":"TrackMaven","position":"Junior Software Maven","local":"Washington, DC, USA","lookingFor":"Javascript, Python","postedDate":"4 April 2015","description":"","category":"Engineering"}}
-    
+{"data":{"job*id":1,"company":"TrackMaven","position":"Software Maven","local":"Washington, DC, USA","lookingFor":"\_Angular*.js, Django, ElasticSearch","postedDate":"4 April 2015","description":"","category":"Engineering"}}
 
-> That's it! We have a very basic API that we can now have our *React*.js code talk to.
+\$ curl localhost:3000/api/jobs/2
+{"data":{"job_id":2,"company":"TrackMaven","position":"Junior Software Maven","local":"Washington, DC, USA","lookingFor":"Javascript, Python","postedDate":"4 April 2015","description":"","category":"Engineering"}}
+
+> That's it! We have a very basic API that we can now have our _React_.js code talk to.
 
 就是这样！我们有了一个非常基础的 API，现在我们可以让*React*.js 代码与之交互了。
 
-## *React*.js and APIs | *React.js* 和 APIs
+## _React_.js and APIs | _React.js_ 和 APIs
 
-> When first interacting with APIs using *React*.js, I recommend just using the `request` packages. We will need to add this to our application, but that's as easy as running `npm install request --save`.
+> When first interacting with APIs using _React_.js, I recommend just using the `request` packages. We will need to add this to our application, but that's as easy as running `npm install request --save`.
 
 第一次使用*React*.js 与 APIs 交互的时候，我推荐使用`request`包就好了。我们需要把它添加至应用程序，但是只要简单运行一下`npm install request --save`。
 
@@ -139,55 +135,58 @@ published: True
 
 只要我们安装好了`request`库，我们还需要为`public/javascripts/scr/Jobs.jsx`文件做一些修改，得以从 API 中获取数据。为此，我们需要小小地修改一下`getInitialState`函数，并且添加`componentDidMount`函数。我们不再需要完整的初始化状态（就像我们需要的 API 标本那样），因为我们期望组件在装配到应用程序的时候就从 API 中获取数据。我们整个`public/javascripts/scr/Jobs.jsx`文件现在长这样：
 
-```jsx    
-    var React = require('react');
-    var request = require('request');
+```jsx
+var React = require("react");
+var request = require("request");
 
-    var Job = require('./Job.jsx');
+var Job = require("./Job.jsx");
 
-    module.exports = React.createClass({
-        getInitialState: function() {
-            return {jobs: []}
-        },
+module.exports = React.createClass({
+  getInitialState: function () {
+    return { jobs: [] };
+  },
 
-        componentDidMount: function() {
-            request('http://localhost:3000/api/jobs/', function(error, response, body) {
-                var result = JSON.parse(body);
-                if (this.isMounted()) {
-                    this.setState(result.data);
-                }
-            }.bind(this));
-        },
-
-        render: function(){
-            return (
-                <div className="list-group">
-                    {this.state.jobs.map(function(job){
-                        return (
-                            <Job
-                                key={job.job_id}
-                                company={job.company}
-                                position={job.position}
-                                local={job.local}
-                                lookingFor={job.lookingFor}
-                                postedDate={job.postedDate}
-                                description={job.description}
-                                category={job.category}
-                            />
-                        )
-                    })}
-                </div>
-            );
+  componentDidMount: function () {
+    request(
+      "http://localhost:3000/api/jobs/",
+      function (error, response, body) {
+        var result = JSON.parse(body);
+        if (this.isMounted()) {
+          this.setState(result.data);
         }
-    });
+      }.bind(this)
+    );
+  },
+
+  render: function () {
+    return (
+      <div className="list-group">
+        {this.state.jobs.map(function (job) {
+          return (
+            <Job
+              key={job.job_id}
+              company={job.company}
+              position={job.position}
+              local={job.local}
+              lookingFor={job.lookingFor}
+              postedDate={job.postedDate}
+              description={job.description}
+              category={job.category}
+            />
+          );
+        })}
+      </div>
+    );
+  },
+});
 ```
 
-> In the file above, you can see how we are using the `request` library to reach out to our newly created API and populate the `state` with the response. You can also see the modifications we made to `render` to allow for us to use the API. And that's it, we should still have a working website that renders these two jobs, but now we are getting data from an API versus hardcoding it within our *React*.js component (even though we are still just hardcoding it within our API).
+> In the file above, you can see how we are using the `request` library to reach out to our newly created API and populate the `state` with the response. You can also see the modifications we made to `render` to allow for us to use the API. And that's it, we should still have a working website that renders these two jobs, but now we are getting data from an API versus hardcoding it within our _React_.js component (even though we are still just hardcoding it within our API).
 
 在上面的文件里，你可以看到我们如何使用`request`库从新建的 API 中获取到数据，并将返回值放入`state`中。你也可以看到我们在`render`中做了修改，使我们可以使用这个 API。就是这样，我们还是拥有一个可工作的网站，并且渲染了这两个工作信息，但是现在我们的*React*.js 组件是从 API 中获取数据，而不再是硬编码的（尽管我们的 API 里面还是硬编码的）。
 
 ## Conclusion | 结论
 
-> With this part of our tutorial, we have our app now using the API to populate its data. We have a long road ahead before this actually becomes useful, but it's a great start. Next time we will be introducing a way of routing in *React*.js so that we can not only see all the job posts, but we can drill down to each specific job post. We also need to hook up a database and start collecting data from *React* too. Please stay tuned!
+> With this part of our tutorial, we have our app now using the API to populate its data. We have a long road ahead before this actually becomes useful, but it's a great start. Next time we will be introducing a way of routing in _React_.js so that we can not only see all the job posts, but we can drill down to each specific job post. We also need to hook up a database and start collecting data from _React_ too. Please stay tuned!
 
 通过这部分的教程，我们让应用程序通过 API 来获取它的数据。长路漫漫，其修远兮，但这是一个非常棒的开始。下一次我们会介绍在*React*.js 里的路由方式，以便于我们不仅可以看到所有的工作岗位，还可以进一步查看每个特定的工作信息。我们还需要连接到数据库，并且从*React*中收集数据。请保持步调一致哟！

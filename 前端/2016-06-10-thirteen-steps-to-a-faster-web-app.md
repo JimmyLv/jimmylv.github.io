@@ -4,7 +4,6 @@ title: 【译】唯快不破：Web 应用的 13 个优化步骤
 categories: [前端]
 tags: [Web, FED, Optimization, JavaScript]
 published: True
-
 ---
 
 原文地址: [12 Steps to a Faster Web App -- Auth0](https://auth0.com/blog/2016/02/22/12-steps-to-a-faster-web-app/)
@@ -13,7 +12,7 @@ published: True
 
 时过境迁，Web 应用比以往任何时候都更具交互性。搞定性能可以帮助你极大地改善终端用户的体验。阅读以下的技巧并学以致用，看看哪些可以用来改善延迟，渲染时间以及整体性能吧！
 
-- - - - - - - - - - -
+---
 
 ## A Faster Web App | 更快的 Web 应用
 
@@ -21,15 +20,15 @@ published: True
 
 优化 Web 应用是一项费劲的工作。Web 应用不仅处于客户端和服务器端的两部分组件当中，通常来说也是由多种多样的技术栈构建而成：数据库，后端组件（一般也是搭建在不同技术架构之上的），以及前端（HTML + JavaScript + CSS + 转化器）。运行时也是变化多端的：iOS，Android，Chrome，Firefox，Edge。如果你曾经工作在一个不同的单一庞大的平台之上，通过来说优化就只是针对于单一的目标（甚至只是目标的单一版本而已），你可能会意识到现在的任务复杂度要远超于此。这就对了。但是这儿也有一些通用的优化指南可以大大改进一个应用。我们将会在接下来的章节中探讨这些指南的内容。
 
-> > A Bing study found that a 10ms increase in page load time costs the site $250K in revenue annually. - **Rob Trace and David Walp, Senior Program Managers at Microsoft**
+> > A Bing study found that a 10ms increase in page load time costs the site \$250K in revenue annually. - **Rob Trace and David Walp, Senior Program Managers at Microsoft**
 
 > 一份 Bing 的研究表明，页面加载时间每增加 10ms，网站的年收入就会减少 25 万美元。 —— **Rob Trace 和 David Walp，微软高级程序经理**
 
 ### Premature Optimization? | 过早优化？
 
-> The hard thing about optimization is finding the right point in the development life-cycle to do it. Donald Knuth famously said *"premature optimization is the root of all evil"*. The reasoning behind these words is quite simple: it is quite easy to lose time gaining that last 1% of performance in places where it won't make a significant impact. At the same time, some optimizations hinder readability or maintainability, or even introduce newer bugs. In other words, optimization should not be considered a "means to get the best performance out of an application", but "the search for the *right way* to optimize an app and get the *biggest benefits*". In other words, blind optimization can result in lost productivity and small gains. Keep this in mind when applying the following tips. Your biggest friend is the profiler: find the performance hotspots you can optimize to get the biggest improvements without impairing the development or maintainability of your app.
+> The hard thing about optimization is finding the right point in the development life-cycle to do it. Donald Knuth famously said _"premature optimization is the root of all evil"_. The reasoning behind these words is quite simple: it is quite easy to lose time gaining that last 1% of performance in places where it won't make a significant impact. At the same time, some optimizations hinder readability or maintainability, or even introduce newer bugs. In other words, optimization should not be considered a "means to get the best performance out of an application", but "the search for the _right way_ to optimize an app and get the _biggest benefits_". In other words, blind optimization can result in lost productivity and small gains. Keep this in mind when applying the following tips. Your biggest friend is the profiler: find the performance hotspots you can optimize to get the biggest improvements without impairing the development or maintainability of your app.
 
-优化最难的地方就是如何在开发生命周期中最适当的时候去做优化。Donald Knuth 有一句名言：*「过早优化乃万恶之源」*。这句话背后的原因非常简单：因为一不小心就会浪费时间去优化某个 1% 的地方，但是结果却并不会对性能造成什么重大影响。与此同时，一些优化还妨碍了可读性或者是可维护性，甚至还会引入新的 Bug。换句话说，优化不应当被认为是「意味着得到应用程序的最佳性能」，而是「探索优化应用的*正确的方式*，并得到*最大的效益*」。再换句话说，盲目的优化可能会导致效率的丢失，而收益却很小。在你应用以下技巧的时候请将此铭记在心。你最好的朋友就是分析工具：找到你可以进行通过优化获得最大程度改善的性能点，而不用损害应用开发的进程或者可维护性。
+优化最难的地方就是如何在开发生命周期中最适当的时候去做优化。Donald Knuth 有一句名言：_「过早优化乃万恶之源」_。这句话背后的原因非常简单：因为一不小心就会浪费时间去优化某个 1% 的地方，但是结果却并不会对性能造成什么重大影响。与此同时，一些优化还妨碍了可读性或者是可维护性，甚至还会引入新的 Bug。换句话说，优化不应当被认为是「意味着得到应用程序的最佳性能」，而是「探索优化应用的*正确的方式*，并得到*最大的效益*」。再换句话说，盲目的优化可能会导致效率的丢失，而收益却很小。在你应用以下技巧的时候请将此铭记在心。你最好的朋友就是分析工具：找到你可以进行通过优化获得最大程度改善的性能点，而不用损害应用开发的进程或者可维护性。
 
 > > Programmers waste enormous amounts of time thinking about, or worrying about, the speed of noncritical parts of their programs, and these attempts at efficiency actually have a strong negative impact when debugging and maintenance are considered. We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil. Yet we should not pass up our opportunities in that critical 3%. - **Donald Knuth**
 
@@ -39,7 +38,7 @@ published: True
 
 > parsing JavaScript apps are distributed in source-code form. Source-code parsing is less efficient than bytecode . For short scripts, the difference is negligible. For bigger apps, however, script size can have a negative impact in application startup time. In fact, one of the biggest improvements expected from the use of [WebAssembly](https://auth0.com/blog/2015/10/14/7-things-you-should-know-about-web-assembly/) are better startup times. Minification is the process of processing source-code to remove all unnecessary characters without changing functionality. This results in (unreadable) shorter code that can be parsed faster.
 
-JavaScript 应用是以源码形式进行分发的，而源码解析的效率是要比字节码低的。对于一小段脚本来说，区别可以忽略不计。但是对于更大型的应用，脚本的大小会对应用启动时间有着负面的影响。事实上，寄期望于使用 [WebAssembly](https://auth0.com/blog/2015/10/14/7-things-you-should-know-about-web-assembly/)  而获得最大程度的改善，其中之一就是可以得到更快的启动时间。
+JavaScript 应用是以源码形式进行分发的，而源码解析的效率是要比字节码低的。对于一小段脚本来说，区别可以忽略不计。但是对于更大型的应用，脚本的大小会对应用启动时间有着负面的影响。事实上，寄期望于使用 [WebAssembly](https://auth0.com/blog/2015/10/14/7-things-you-should-know-about-web-assembly/) 而获得最大程度的改善，其中之一就是可以得到更快的启动时间。
 
 > On the other hand, module bundling deals with taking different scripts and bundling them together in a single file. Fewer HTTP requests and a single file to parse reduces load times. Usually, a single tool can handle bundling and minification. [Webpack](https://webpack.github.io/) is one of those tools.
 
@@ -51,11 +50,11 @@ JavaScript 应用是以源码形式进行分发的，而源码解析的效率是
 
 ```js
 function insert(i) {
-    document.write("Sample " + i);
+  document.write("Sample " + i);
 }
 
-for(var i = 0; i < 30; ++i) {
-    insert(i);
+for (var i = 0; i < 30; ++i) {
+  insert(i);
 }
 ```
 
@@ -64,7 +63,22 @@ for(var i = 0; i < 30; ++i) {
 结果如下：
 
 ```js
-!function(r){function t(o){if(e[o])return e[o].exports;var n=e[o]={exports:{},id:o,loaded:!1};return r[o].call(n.exports,n,n.exports,t),n.loaded=!0,n.exports}var e={};return t.m=r,t.c=e,t.p="",t(0)}([function(r,t){function e(r){document.write("Sample "+r)}for(var o=0;30>o;++o)e(o)}]);
+!(function (r) {
+  function t(o) {
+    if (e[o]) return e[o].exports;
+    var n = (e[o] = { exports: {}, id: o, loaded: !1 });
+    return r[o].call(n.exports, n, n.exports, t), (n.loaded = !0), n.exports;
+  }
+  var e = {};
+  return (t.m = r), (t.c = e), (t.p = ""), t(0);
+})([
+  function (r, t) {
+    function e(r) {
+      document.write("Sample " + r);
+    }
+    for (var o = 0; 30 > o; ++o) e(o);
+  },
+]);
 //# sourceMappingURL=bundle.min.js.map
 ```
 
@@ -72,11 +86,11 @@ for(var i = 0; i < 30; ++i) {
 
 > You can also bundle CSS files and combine images with Webpack. These features can also help improve startup times. Explore the [docs](http://webpack.github.io/docs/) and run some tests!
 
-你也可以使用 Webpack 打包 CSS 文件以及合并图片。这些特性都可以有助于改善启动时间。研究一下 [Webpack  文档](http://webpack.github.io/docs/)来做些测试吧！
+你也可以使用 Webpack 打包 CSS 文件以及合并图片。这些特性都可以有助于改善启动时间。研究一下 [Webpack 文档](http://webpack.github.io/docs/)来做些测试吧！
 
 ## 2. On-demand loading of assets | 2. 按需加载资源
 
-> On-demand or *lazy loading* of assets (images in particular) can help greatly in achieving better general performance of your web app. There are three benefits to lazy loading for image-heavy pages:
+> On-demand or _lazy loading_ of assets (images in particular) can help greatly in achieving better general performance of your web app. There are three benefits to lazy loading for image-heavy pages:
 
 资源（特别是图片）的按需加载或者说*惰性加载*，可以有助于你的 Web 应用在整体上获得更好的性能。对于使用大量图片的页面来说惰性加载有着显著的三个好处：
 
@@ -129,7 +143,7 @@ const MyComponent = () => (
 
 简而言之，在 Web 应用中使用缓存是一种改善响应时间和减少 CPU 使用的绝佳方式。难点就在于搞清楚哪里才是在架构中存放缓存的地方。再一次，答案就是性能分析：常见的瓶颈在哪里？数据或者结果可缓存吗？他们都太容易失效吗？这都是一些棘手的问题，需要从原理上来一点一点回答。
 
-> Uses of caches can get creative in web environments. For example, there is [basket.js](https://addyosmani.com/basket.js/), a library that uses *Local Storage* to cache scripts for your app. So the second time your web app runs scripts are loaded almost instantaneously.
+> Uses of caches can get creative in web environments. For example, there is [basket.js](https://addyosmani.com/basket.js/), a library that uses _Local Storage_ to cache scripts for your app. So the second time your web app runs scripts are loaded almost instantaneously.
 
 缓存的使用在 Web 环境中富有创造性。比如，[basket.js](https://addyosmani.com/basket.js/) 就是一个使用*Local Storage* 来缓存应用脚本的库。所以你的 Web 应用在第二次运行脚本的时候就可以几乎瞬间加载了。
 
@@ -144,7 +158,6 @@ const MyComponent = () => (
 越来越多的浏览器都开始支持 HTTP/2。这可能听起来没有必要，但是 HTTP/2 为同一服务器的并发连接问题带来了很多好处。换句话说，如果有很多小型资源需要加载（如果你打包过的话就没有必要了），在延迟和性能方面 HTTP/2 秒杀 HTTP/1。试试 [Akamai 的 HTTP/2 demo](https://http2.akamai.com/demo)，可以在最新的浏览器中看到区别。
 
 ![](https://raw.githubusercontent.com/JimmyLv/images/master/2016/1465566806854.png)
-
 
 ## 6. Profile Your App | 6. 应用性能分析
 
@@ -221,20 +234,18 @@ CPU 性能分析也可以在 Chrome Dev Tools 中找到。看看这篇来自 Goo
 改善 Web 应用程序观感的方式之一，就是减少启动时间或者减少首页渲染时间。这对于新兴的单页面应用尤为重要，其需要在客户端执行大量任务。在客户端做更多事情通常就意味着，在第一次渲染被执行之前就需要下载更多的信息。同构 JavaScript 可以解决这个问题：自从 JavaScript 可以同时运行在客户端和服务器端，这就让在服务器端来执行页面的首次渲染成为可能，先把已渲染的页面发送出去然后再由客户端的脚本接管。这限制了所使用的后端（必须使用支持该特性的 JavaScript 框架），但却能获得更好的用户体验。举例来说，React 就很[适合于](https://github.com/DavidWells/isomorphic-react-example)做这个，就像以下代码所示：
 
 ```js
-var React = require('react/addons');
-var ReactApp = React.createFactory(require('../components/ReactApp').ReactApp);
+var React = require("react/addons");
+var ReactApp = React.createFactory(require("../components/ReactApp").ReactApp);
 
-module.exports = function(app) {
-
-    app.get('/', function(req, res){
-        // React.renderToString takes your component
-        // and generates the markup
-        var reactHtml = React.renderToString(ReactApp({}));
-        // Output html rendered by react
-        // console.log(myAppHtml);
-        res.render('index.ejs', {reactOutput: reactHtml});
-    });
-
+module.exports = function (app) {
+  app.get("/", function (req, res) {
+    // React.renderToString takes your component
+    // and generates the markup
+    var reactHtml = React.renderToString(ReactApp({}));
+    // Output html rendered by react
+    // console.log(myAppHtml);
+    res.render("index.ejs", { reactOutput: reactHtml });
+  });
 };
 ```
 
@@ -249,11 +260,10 @@ if (Meteor.isClient) {
   };
 
   Template.hello.events({
-    'click input': function () {
+    "click input": function () {
       // template data, if any, is available in 'this'
-      if (typeof console !== 'undefined')
-        console.log("You pressed the button");
-    }
+      if (typeof console !== "undefined") console.log("You pressed the button");
+    },
   });
 }
 
@@ -269,7 +279,7 @@ if (Meteor.isServer) {
 但是，为了支持服务器端渲染，需要像 [meteor-ssr](https://github.com/meteorhacks/meteor-ssr) 这样的插件。
 
 > > Thanks to gabrielpoca for pointing this out in the comments.
- If you have a complex or mid-sized app that supports isomorphic deployments, give this a try. You might be surprised.
+> > If you have a complex or mid-sized app that supports isomorphic deployments, give this a try. You might be surprised.
 
 > 谢谢 gabrielpoca 在评论中指出这一点。如果你有复杂的或者中等大小的应用需要支持同构部署，试试这个，你可能会感到惊讶的。
 
@@ -285,7 +295,7 @@ if (Meteor.isServer) {
 
 ## 10. Use faster transpiling solutions | 10. 使用更快的转译方案
 
-> The JavaScript software stack is as complex as ever. This has increased the need for improvements to the language. Unfortunately, JavaScript as a target platform is limited by the runtime of its users. Although improvements have been implemented in form of ECMAScript 2015 (with 2016 in progress) it is usually not possible to depend on this version for client side code. This trend has spurred a series of *transpilers*: tools that process ECMAScript 2015 code and implement missing features using only ECMAScript 5 constructs. At the same time, module bundling and minification have been integrated into the process to produce what could be called *built-for-release* versions of the code. These tools transform the code, and can, in a limited fashion, affect the performance of the resulting code. Google developer Paul Irish [spent some time](https://github.com/paulirish/The-cost-of-transpiling-es2015-in-2016) looking at how different transpiling solutions affect the performance and size of the resulting code. Although in most cases gains can be small, it is worth having a look at the data before committing to any toolstack. For big applications, the difference might be significant.
+> The JavaScript software stack is as complex as ever. This has increased the need for improvements to the language. Unfortunately, JavaScript as a target platform is limited by the runtime of its users. Although improvements have been implemented in form of ECMAScript 2015 (with 2016 in progress) it is usually not possible to depend on this version for client side code. This trend has spurred a series of _transpilers_: tools that process ECMAScript 2015 code and implement missing features using only ECMAScript 5 constructs. At the same time, module bundling and minification have been integrated into the process to produce what could be called _built-for-release_ versions of the code. These tools transform the code, and can, in a limited fashion, affect the performance of the resulting code. Google developer Paul Irish [spent some time](https://github.com/paulirish/The-cost-of-transpiling-es2015-in-2016) looking at how different transpiling solutions affect the performance and size of the resulting code. Although in most cases gains can be small, it is worth having a look at the data before committing to any toolstack. For big applications, the difference might be significant.
 
 JavaScript 软件技术栈一如既往的复杂。而改善语言本身的需求则又增加了复杂度。不幸地是，JavaScript 作为目标平台又会被用户的运行时所限制。尽管很多改进已经以 ECMAScript 2015（2016 正在进行）的形式实现了，但是通常情况下，对客户端代码来说又不可能依赖于这个版本。这种趋势促使了一系列的*转译器*：用于处理 ECMAScript 2015 代码的工具和只使用 ECMAScript 5 结构实现其中所缺失的特性。与此同时，模块绑定和压缩处理也已经被集成到这个生产过程中，被称为*为发布而构建*的代码版本。这些工具可以转化代码，并且能够以有限的方式影响到最终代码的性能。Google 开发者 Paul Irish [花了一些时间](https://github.com/paulirish/The-cost-of-transpiling-es2015-in-2016)来寻找这些转译方案会如何影响性能和最终代码的大小。尽管大多数情况下收益会很小，但也值得在正式采用某个工具栈之前看看这些数据。对于大型应用程序来说，这种区别可能会影响重大。
 
@@ -304,14 +314,19 @@ JavaScript 和 CSS 资源都会阻塞页面的渲染。通过采取某些的规�
 媒体查询可以被设置成 `<link>` 标签属性：
 
 ```html
-<link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="mobile-device.css" />
+<link
+  rel="stylesheet"
+  type="text/css"
+  media="only screen and (max-device-width: 480px)"
+  href="mobile-device.css"
+/>
 ```
 
 > When it comes to JavaScript, the key lies in following certain rules for inline JavaScript (i.e. code that is inlined in the HTML file). Inline JavaScript should be as short as possible and put in places where it won't stop the parsing of the rest of the page. In other words, inline HTML that is put in the middle of an HTML tree stops the parser at that point and forces it to wait until the script is done executing. This can be a killer for performance if there are big blocks of code or many small blocks littered through the HTML file. Inlining can be helpful to prevent additional network fetches for specific scripts. For repeatedly used scripts or big blocks of code this advantage is eliminated.
 
 轮到 JavaScript 了，关键就在于遵循某些用于内联 JavaScript 的规则（比如内联在 HTML 文件当中的代码）。内联 JavaScript 应该尽可能短，并将其放在不会阻塞页面剩余部分解析的地方。换句话说，被放在 HTML 树中间的内联 JavaScript 将会在这个地方阻塞解析器，并强制其等待直到脚本被执行完毕。如果在 HTML 文件中随意放了一些大的代码块或者很多小的代码块，对于性能来说这会成为性能杀手。内联可以有效减少额外对于某些特定脚本的网络请求。但是对于重复使用的脚本或者大的代码块来说，这个好处就可以忽略不计了。
 
-> A way to prevent JavaScript from blocking the parser and renderer is to mark the `<script>` tag as *asynchronous*. This limits our access to the DOM (no document.write) but lets the browser continue parsing and rendering the site regardless of the execution status of the script. In other words, to get the best startup times, make sure that non-essential scripts for rendering are correctly marked as asynchronous via the async attribute.
+> A way to prevent JavaScript from blocking the parser and renderer is to mark the `<script>` tag as _asynchronous_. This limits our access to the DOM (no document.write) but lets the browser continue parsing and rendering the site regardless of the execution status of the script. In other words, to get the best startup times, make sure that non-essential scripts for rendering are correctly marked as asynchronous via the async attribute.
 
 防止 JavaScript 阻塞解析器和渲染器的一种方法就是将 `<script>` 标签标记为*异步的*。这限制了我们对于 DOM 的访问但是可以让浏览器不管脚本的执行状态而继续解析和渲染页面。换句话说，为了获得最佳的启动时间，确保那些对于渲染不重要的脚本已经通过异步属性的方式标记成异步的了。
 
@@ -367,7 +382,7 @@ JavaScript 和 CSS 资源都会阻塞页面的渲染。通过采取某些的规�
 
 我们是一个 Web 公司。就以这种身份来说，我们为我们的基础设施的某些部分部署了一些特定的优化。举例来说，在登录页面你可以发现，在我们域名的 `/learn` 路径下（比如，[登录页面的单点登录](https://auth0.com/learn/how-to-implement-single-sign-on/)），我们采用了一种特别的优化：为了方便我们使用 CMS 来创建每篇文章。因为文章都没有中心索引，但是为了能够被搜索引擎发现，使用了 [webtask](https://webtask.io) 的爬虫来预渲染每个页面并生成了一个静态版本然后上传到我们 CDN。这减少了我们在服务器端上的压力，因为无须为每个访客都生成动态的服务器端内容。与此同时还改善了延迟（并且隔离了我们发现与 CMS 相关的安全问题）。
 
-> For the [docs area](https://auth0.com/docs) we are using *isomorphic JavaScript* which gives us great startup times and easy integration between our backend and frontend teams.
+> For the [docs area](https://auth0.com/docs) we are using _isomorphic JavaScript_ which gives us great startup times and easy integration between our backend and frontend teams.
 
 对于[文档部分](https://auth0.com/docs)，我们正在使用*同构 JavaScript*，这让我们获得了非常棒的启动时间，并且使我们的后端和前端团队能够轻松集成。
 

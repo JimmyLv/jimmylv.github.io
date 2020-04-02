@@ -6,10 +6,9 @@ tags: [React, 总结, 最佳实践]
 published: True
 ---
 
-> React.js 作为前端框架的后起之秀，却在2015年携着虚拟 DOM，组件化，单向数据流等利器，给前端 UI 构建掀起了一波声势浩大的函数式新潮流。新鲜出炉的一篇 React.js 最佳实践，基本涵盖了所有的 React.js 生态周边，可用于实践参考。文章不仅表明了 Flux 经常被滥用的观点，也推荐开发者使用 Redux 作为 JavaScript 的可预测状态容器，并且提出保持状态扁平化和使用 Immutable.js 等数据处理解决方案。与此同时，也从高阶组件，组件测试以及组件级别热重载等方面提供了建议，当然也涉及了 Webpack，HTTP 2，使用 ES2015 乃至 Linters 等代码层面的建议。
+> React.js 作为前端框架的后起之秀，却在 2015 年携着虚拟 DOM，组件化，单向数据流等利器，给前端 UI 构建掀起了一波声势浩大的函数式新潮流。新鲜出炉的一篇 React.js 最佳实践，基本涵盖了所有的 React.js 生态周边，可用于实践参考。文章不仅表明了 Flux 经常被滥用的观点，也推荐开发者使用 Redux 作为 JavaScript 的可预测状态容器，并且提出保持状态扁平化和使用 Immutable.js 等数据处理解决方案。与此同时，也从高阶组件，组件测试以及组件级别热重载等方面提供了建议，当然也涉及了 Webpack，HTTP 2，使用 ES2015 乃至 Linters 等代码层面的建议。
 
-
-# 【译】展望2016，React.js 最佳实践
+# 【译】展望 2016，React.js 最佳实践
 
 原文地址：<https://blog.risingstack.com/react-js-best-practices-for-2016/>
 
@@ -35,7 +34,7 @@ published: True
 
 ### Flux
 
-根据我们的经验，Flux 经常被滥用，*（这意味着大家总是在不需要的时候就用上它）*。
+根据我们的经验，Flux 经常被滥用，_（这意味着大家总是在不需要的时候就用上它）_。
 
 Flux 提供了一种非常清晰的方式来存储和更新应用状态，并且只会在必要的时候才触发页面渲染。
 
@@ -43,7 +42,7 @@ Flux 致力于**应用的全局状态管理**，比如：管理已登录用户�
 
 我们不推荐使用 Flux 来管理路由相关的数据，比如 `/items/:itemId`。而只是获取路由数据并存储在组件的 state 之中。在这种情况下，它会在组件消失之后一起被销毁。
 
-*如果你想了解更多关于 Flux 的信息，[The Evolution of Flux Frameworks](https://medium.com/@dan_abramov/the-evolution-of-flux-frameworks-6c16ad26bb31#.90lamiv5l) 非常值得一读。*
+_如果你想了解更多关于 Flux 的信息，[The Evolution of Flux Frameworks](https://medium.com/@dan_abramov/the-evolution-of-flux-frameworks-6c16ad26bb31#.90lamiv5l) 非常值得一读。_
 
 #### 使用 Redux
 
@@ -63,11 +62,11 @@ API 经常会返回嵌套资源。这在 Flux 或基于 Redux 的架构中处理
 
     state = _.merge(state, data.entities)
 
-*（我们使用 [isomorphic-fetch](https://www.npmjs.com/package/isomorphic-fetch) 来与 APIs 进行交互）*
+_（我们使用 [isomorphic-fetch](https://www.npmjs.com/package/isomorphic-fetch) 来与 APIs 进行交互）_
 
 ### 使用 immutable 状态
 
-> 共享的可变性状态乃万恶之源。 —— *Pete Hunt, React.js Conf 2015*
+> 共享的可变性状态乃万恶之源。 —— _Pete Hunt, React.js Conf 2015_
 
 ![](https://risingstack-blog.s3.amazonaws.com/2016/Jan/immutable_logo_for_react_js_best_practices-1453211749818.png)
 
@@ -106,10 +105,10 @@ Immutable.js 非常之快，背后理念也异常漂亮。哪怕你并不想使�
 
 如果你不喜欢 Flux/Redux 或者只是想要更加 reactive，不要失望！这儿有很多其他数据处理的解决方案。这就有一个相关库的简要列表供你参考：
 
-  * [cycle.js](http://cycle.js.org/) *("A functional and reactive *JavaScript* framework for cleaner code")*
-  * [rx-flux](https://github.com/fdecampredon/rx-flux) *("The Flux architecture with RxJS")*
-  * [redux-rx](https://github.com/acdlite/redux-rx) *("RxJS utilities for Redux.")*
-  * [mobservable](https://mweststrate.github.io/mobservable/) *("Observable data. Reactive functions. Simple code.")*
+- [cycle.js](http://cycle.js.org/) *("A functional and reactive *JavaScript* framework for cleaner code")*
+- [rx-flux](https://github.com/fdecampredon/rx-flux) _("The Flux architecture with RxJS")_
+- [redux-rx](https://github.com/acdlite/redux-rx) _("RxJS utilities for Redux.")_
+- [mobservable](https://mweststrate.github.io/mobservable/) _("Observable data. Reactive functions. Simple code.")_
 
 ## 路由
 
@@ -125,7 +124,7 @@ Redux 用户可以通过 [redux-simple-router](https://github.com/rackt/redux-si
 
 #### 代码分割，惰性加载
 
-只有一小部分 `webpack` 用户知道应用代码是可以分割的，将 bundler 的输出拆分成多个 *JavaScript* 块：
+只有一小部分 `webpack` 用户知道应用代码是可以分割的，将 bundler 的输出拆分成多个 _JavaScript_ 块：
 
     require.ensure([], () => {
       const Profile = require('./Profile.js')
@@ -148,11 +147,11 @@ react-router 的下个版本就将在代码分割这方面提供更多帮助。
 
 大部分人都对 JSX 存有怨言。首先，你需要知道的是这在 React 中并不是必须的。
 
-在最后，JSX 都会通过 Babel 被编译成 *JavaScript*。你可以直接编写 *JavaScript* 来替代 JSX，但是在处理 HTML 的时候使用 JSX 会感觉更加自然。
+在最后，JSX 都会通过 Babel 被编译成 _JavaScript_。你可以直接编写 _JavaScript_ 来替代 JSX，但是在处理 HTML 的时候使用 JSX 会感觉更加自然。
 
 特别是对于不懂技术的人来说，他们依然可以理解和修改必要的部分。
 
-> JSX 是一种与 XML 类似的 *JavaScript* 语法扩展。你可以通过一个简单的 JSX 语法转换器来编译 React。 —— [JSX in depth](https://facebook.github.io/react/docs/jsx-in-depth.html)
+> JSX 是一种与 XML 类似的 _JavaScript_ 语法扩展。你可以通过一个简单的 JSX 语法转换器来编译 React。 —— [JSX in depth](https://facebook.github.io/react/docs/jsx-in-depth.html)
 
 如果你想要了解更多关于 JSX 的信息，可以查看 [JSX Looks Like An Abomination - But it’s Good for You](https://medium.com/javascript-scene/jsx-looks-like-an-abomination-1c1ec351a918#.ca28nvee6) 这篇文章。
 
@@ -191,7 +190,7 @@ React 和 ES2015 的 Class 语法搭配完美。
 
     PassData({ foo: 'bar' })(MyComponent)
 
-本质上来说，你可以由原始组件创造一个新的组件并且扩展它的行为。你可以在多种情况下使用它，比如授权：`requireAuth({ role: 'admin' })(MyComponent)` *（检查上层组件中的用户，若是未登录则需要重定向）*，或者是连接你的组件和 Flux/Redux 仓库。
+本质上来说，你可以由原始组件创造一个新的组件并且扩展它的行为。你可以在多种情况下使用它，比如授权：`requireAuth({ role: 'admin' })(MyComponent)` _（检查上层组件中的用户，若是未登录则需要重定向）_，或者是连接你的组件和 Flux/Redux 仓库。
 
 在 RisingStack，我们也将数据获取和类似 Controller 的逻辑分割成高阶组件，并保持视图层尽可能简单。
 
@@ -249,7 +248,7 @@ React 和 ES2015 的 Class 语法搭配完美。
 
 虽然 React.js 并不依赖代码打包工具就可以很好地工作，但我们还是推荐使用 [Webpack](https://webpack.github.io/) 或者 [Browserify](http://browserify.org/) 来发挥 [npm](https://www.npmjs.com/) 的能力。Npm 上满是高质量的 React.js 包，还可以帮你非常优雅地管理依赖。
 
-*（请不要忘记复用你自己的组件，这是一种绝佳的代码优化方式。）*
+_（请不要忘记复用你自己的组件，这是一种绝佳的代码优化方式。）_
 
 ### Bundle 大小
 
@@ -271,7 +270,7 @@ React 和 ES2015 的 Class 语法搭配完美。
 
 我们也喜欢将代码分离出至少 `vendors.js` 和 `app.js` 两个文件，因为 vendors 相对于我们的代码库来说更新不是那么频繁。
 
-将输出文件名称进行哈希化处理 *(Webpack 中的 chunk hash)*，并使用长缓存，我们可以大大减少用户需要下载的代码大小。结合惰性加载，优化效果可想而知。
+将输出文件名称进行哈希化处理 _(Webpack 中的 chunk hash)_，并使用长缓存，我们可以大大减少用户需要下载的代码大小。结合惰性加载，优化效果可想而知。
 
 如果你还不太熟悉 Webpack，可以查看这本优秀的 [React webpack 手册](https://christianalfoni.github.io/react-webpack-cookbook)。
 
@@ -283,7 +282,7 @@ React 和 ES2015 的 Class 语法搭配完美。
 
 关于如何搭建热重载，可以参考 [react-transform-boilerplate](https://github.com/gaearon/react-transform-boilerplate)。
 
-### 使用ES2015
+### 使用 ES2015
 
 ![](https://risingstack-blog.s3.amazonaws.com/2016/Jan/babel_logo_in_react_js_best_practices_2016-1453212218011.png)
 
@@ -293,13 +292,13 @@ React 和 ES2015 的 Class 语法搭配完美。
 
 ### Linters
 
-或许你已经给你的 *JavaScript* 代码制定了代码规范，但是你知道也有用于 React 的代码规范了吗？我们强烈推荐挑选一个并开始遵循它。
+或许你已经给你的 _JavaScript_ 代码制定了代码规范，但是你知道也有用于 React 的代码规范了吗？我们强烈推荐挑选一个并开始遵循它。
 
 在 RisingStack，我们也将 linters 强制运行在 CI 系统上，`git push` 亦然。可以试试 [pre-push](https://www.npmjs.com/package/pre-push) 或者 [pre-commit](https://www.npmjs.com/package/pre-commit)。
 
-我们使用标准的 *JavaScript* 代码风格，并使用了 [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)对 React.js 代码进行规范 。
+我们使用标准的 _JavaScript_ 代码风格，并使用了 [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)对 React.js 代码进行规范 。
 
-*（就是，我们不再使用分号。）*
+_（就是，我们不再使用分号。）_
 
 ## GraphQL 和 Relay
 
@@ -313,9 +312,9 @@ GraphQL 和 Relay 相对而言属于新技术，在 RisingStack，目前我们�
 
 有些突出的技术和库其实跟 React.js 并不相关 —— 但是保持视野开阔，关注社区的其他人都在做些什么。React 社区在 2015 年里就受到了 [Elm 架构](https://github.com/evancz/elm-architecture-tutorial/) 的很多启发。
 
-> 如果你知道其它在2016年必不可少的 React.js 工具，请留言让我们知道！
+> 如果你知道其它在 2016 年必不可少的 React.js 工具，请留言让我们知道！
 
-------
+---
 
 #### 原作者: [Péter Márton](https://blog.risingstack.com/author/peter-marton/)
 

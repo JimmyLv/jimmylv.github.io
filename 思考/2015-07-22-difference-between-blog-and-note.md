@@ -4,7 +4,6 @@ title: 安利 GitBook：兼谈笔记与博客的区别
 categories: [思考]
 tags: [React, 写作]
 published: True
-
 ---
 
 ## 笔记与博客的区别
@@ -17,7 +16,7 @@ published: True
 
 与 GitHub 绑定之后只要发布到 GitHub 上 GitBook 就会自动更新书本内容，还有很多相关插件可以添加评论、书的封面等等。
 
-## Jimmy Lv's React学习笔记
+## Jimmy Lv's React 学习笔记
 
 Welcome, React is Awesome!
 

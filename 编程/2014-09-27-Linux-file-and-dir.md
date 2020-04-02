@@ -18,7 +18,7 @@ published: true
 - PRINT: 桌面截图
 - ALT + PRINT：窗口截图
 
-### 2. Dash面板
+### 2. Dash 面板
 
 在 Dash 面板中按 CTRL + TAB: 切换到下一个子面板（可搜索不同类型项目，如程序、文件、音乐）
 
@@ -26,7 +26,7 @@ published: true
 - WIN + F: 搜索或浏览文件（File）
 - WIN + M: 搜索或浏览音乐文件（Music）
 
-### 3. Terminal终端
+### 3. Terminal 终端
 
 - CTRL + ALT + T: 打开终端
 - TAB: 自动补全命令或文件名
@@ -43,6 +43,7 @@ published: true
 ## 文件与目录管理
 
 ### 1. 目录表示
+
 ```
 .         #代表此层目录
 ..        #代表上一层目录
@@ -53,7 +54,7 @@ published: true
 
 ### 2. 常见的文件目录处理命令
 
-1) 目录处理
+1. 目录处理
 
 - cd：变换目录，cd 是 Change Directory 的缩写
 - pwd：显示目前的目录，pwd 是 Print Working Directory 的缩写
@@ -67,7 +68,7 @@ mkdir -p test1/test2   #-p：直接将所需要的目录(包含上一级目录)�
 PATH="$PATH":/root     #将/root路径加入PATH环境变量中
 ```
 
-2) 文件处理
+2. 文件处理
 
 - mv：移走目录或者改文件名
 - cp：拷贝文件
@@ -79,12 +80,12 @@ PATH="$PATH":/root     #将/root路径加入PATH环境变量中
 - clear：清屏，相当与 DOS 下的 cls
 - date：显示当前时间
 
-
 ## 文件权限与目录配置
 
-> Linux最优秀的地方之一，就在于它的多用户、多任务环境。Linux一般将文件可存取访问的身份分为3个类别，分别是owner（用户）、group（用户组）、others（其他人），且3种身份都各自有自己的read，write，execute等权限。
+> Linux 最优秀的地方之一，就在于它的多用户、多任务环境。Linux 一般将文件可存取访问的身份分为 3 个类别，分别是 owner（用户）、group（用户组）、others（其他人），且 3 种身份都各自有自己的 read，write，execute 等权限。
 
 ### 1. 文件权限概念
+
 当屏幕前面出现“Permission deny”的时候，肯定是权限设置错误。
 
 ```sh
@@ -111,6 +112,7 @@ chgrp       #改变文件所属用户组，具体句法记得使用 man page 查
 chown       #改变文件所有者
 chmod       #改变文件的权限
 ```
+
 其中，chmod 修改权限的方法有两种，分别是符号法与数字法，数字法中 r，w，x 的数值分别是 4，2，1。
 
 要开放“目录”（注意不是“文件”）给任何人看，应该至少同时给予 r 和 x 权限，但 w 权限不可随便给予。
@@ -121,17 +123,17 @@ chmod       #改变文件的权限
 
 ```
 [root@localhost ~]# cp install.log LAYtest.log     #若复制文件夹，用cp -r
-[root@localhost ~]# ls -al LAYtest.log 
+[root@localhost ~]# ls -al LAYtest.log
 -rw-r--r-- 1 root root 62826 9月  17 15:19 LAYtest.log     #虽然完成了复制，但仍然是root的文件
-[root@localhost ~]# chown linanya LAYtest.log 
-[root@localhost ~]# ls -al LAYtest.log       
+[root@localhost ~]# chown linanya LAYtest.log
+[root@localhost ~]# ls -al LAYtest.log
 -rw-r--r-- 1 linanya root 62826 9月  17 15:19 LAYtest.log  #文件变成linanya的
-[root@localhost ~]# 
+[root@localhost ~]#
 ```
 
 ## 其他有用的种种
 
-### 1. 查询命令功能 
+### 1. 查询命令功能
 
 ```
 man command  #command是要查询的命令名称

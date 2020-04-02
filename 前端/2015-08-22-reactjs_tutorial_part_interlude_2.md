@@ -4,7 +4,6 @@ title: 【译】React.js教程 番外篇（二）：如何升级NPM依赖的版�
 categories: [前端]
 tags: [NodeJS, React]
 published: True
-
 ---
 
 技术系列笔记均已迁移至 GitBook，更多`React`的内容请到：[http://jimmylv.gitbooks.io/learning-react-js/content/reactjs_tutorial/reactjs_tutorial_part_1.html](http://jimmylv.gitbooks.io/learning-react-js/content/reactjs_tutorial/reactjs_tutorial_part_1.html)
@@ -53,7 +52,6 @@ published: True
             "vinyl-source-stream": "^1.0.0"
       }
     }
-    
 
 > Here, we have the list of `dependencies` and `dev-dependencies` for our application. To see what needs to be upgraded, we can use a super-handly Node.js module called [npm-check-updates](https://www.npmjs.com/package/npm-check-updates). Using this application is easy; first, install it globally (I recommend installing it globally, since you should be using this for all your projects which rely on NPM!) by running `npm install -g npm-check-updates`, and second, run `ncu` within the `jobs.nodedc.com` directory.
 
@@ -62,22 +60,20 @@ published: True
 > What this application will do is go to NPM and check to see if there's an update to your required packages (regardless of whether or not you have pinned your versions in `package.json`) and return with a nice list of what needs to be upgraded. When we run this application for `jobs.nodedc.com` we get the following list:
 
 应用程序将会到 NPM 去检查项目所依赖的包是否有更新（不管你是否在`package.json`有没有添加版本信息），然后会返回一个需要升级的列表。
-    
-     $ ncu
-    
-     body-parser    ~1.10.1  →  ~1.13.3
-     debug           ~2.1.1  →   ~2.2.0
-     express        ~4.10.6  →  ~4.13.3
-     jade            ~1.8.2  →  ~1.11.0
-     morgan          ~1.5.1  →   ~1.6.1
-     serve-favicon   ~2.2.0  →   ~2.3.0
-     browserify      ^8.1.3  →  ^11.0.1
-     gulp-sass       ^1.3.3  →   ^2.0.4
-     react          ^0.12.2  →  ^0.13.3
-    
-    Run with -u to upgrade your package.json
-    
 
+\$ ncu
+
+body-parser ~1.10.1 → ~1.13.3
+debug ~2.1.1 → ~2.2.0
+express ~4.10.6 → ~4.13.3
+jade ~1.8.2 → ~1.11.0
+morgan ~1.5.1 → ~1.6.1
+serve-favicon ~2.2.0 → ~2.3.0
+browserify ^8.1.3 → ^11.0.1
+gulp-sass ^1.3.3 → ^2.0.4
+react ^0.12.2 → ^0.13.3
+
+Run with -u to upgrade your package.json
 
 > The `npm-check-updates` application gives you a nice flag, `-u`, to automatically update your `package.json` which is a nice feature and the main reason I prefer this app over just using `npm outdated`, but, FYI, it can be dangerous if you have major version jumps like we do here. Looking at the list above, we see two important upgrades which we will be handling in this blog post. First, `browserify` has gone from `8.1.3` to `11.0.1` and second, `react` has gone from `0.12.2` to `0.13.3`.
 
@@ -98,7 +94,6 @@ published: True
     gulp-sass        1.3.3   1.3.3   2.0.4  gulp-sass
     express         4.10.8  4.10.8  4.13.3  express
     browserify       8.1.3   8.1.3  11.0.1  browserify
-    
 
 > You can use this if you'd like and save the global download!
 
@@ -108,17 +103,17 @@ published: True
 
 > There are a few steps you want to take when upgrading a package that you rely on for your application. The first thing I do in read the release notes for each of the releases between where I am currently and where `npm-check-updates` wants me to be. Let's take a look at [React.js's release notes](https://github.com/facebook/react/blob/master/CHANGELOG.md). I am chosing to review React's changelog here since it is a shorter upgrade path than `browserify`'s...
 
-当你升级应用程序所依赖的包的时候，需要这么几个步骤。首先就是查看在`npm-check-updates`想要升级的已经 release 的版本和当前版本之间相关信息。让我们看看[React.js的发布信息](https://github.com/facebook/react/blob/master/CHANGELOG.md)，我选择查看 React 的 changelog 是因为它的更新没有`browserify`那么多。
+当你升级应用程序所依赖的包的时候，需要这么几个步骤。首先就是查看在`npm-check-updates`想要升级的已经 release 的版本和当前版本之间相关信息。让我们看看[React.js 的发布信息](https://github.com/facebook/react/blob/master/CHANGELOG.md)，我选择查看 React 的 changelog 是因为它的更新没有`browserify`那么多。
 
 > When we take a look at the `changelog` we see it broken down into a few categories; "Breaking Changes", "New Features", and "Deprecations". I have to say that the React.js `changelog` is one of the nicer ones out there and with other projects you might not be so lucky. Anyways, we want to read through all the changes taking special care with the "Breaking Changes" and "Deprecations" sections as this is what is likely going to break our app when we upgrade. Do make sure to read the "New Features" section too so we know what cool things we can add to our app as well!
 
 我们可以看到`changelog`中分为了几个类别，"Breaking Changes"、"New Features"以及"Deprecations"。不得不说 React.js 的`changelog`做得非常好，如果是其它项目可能就没有这么幸运了。Anyways，我们通读一遍所有的改变，特别注意一下"Breaking Changes"和"Deprecations"这两部分，因为这最可能在升级的时候搞崩我们的 App。再次确认"New Features"部分，以便于我们可以给 App 添加一些酷的新功能。
 
-> *I'll wait...*
+> _I'll wait..._
 
 等等……
 
-> Now that we have read React's `changelog` we can comfortably move forward with upgrading. At this point in time, if there was any breaking changes that would affect our app, we'd want to take note to make sure we revisit that section of code after the upgrade. 
+> Now that we have read React's `changelog` we can comfortably move forward with upgrading. At this point in time, if there was any breaking changes that would affect our app, we'd want to take note to make sure we revisit that section of code after the upgrade.
 
 既然我们已经读了 React 的`changelog`，我们就可以舒舒服服得升级了。在这个时候，如果有任何影响我们的 App 的改变，我们一定要特别小心并且在升级之后，重新看一下`changelog`的代码部分。
 
@@ -129,19 +124,18 @@ published: True
 > Upgrading a NPM package is really simple. First you want to update your `package.json` file to represent the version of the package you want to upgrade:
 
 升级 NPM 包非常简单，首先更新一下`package.json`文件，改成你想要升级的那个版本：
-    
-    ...
-    "react": "^0.13.3",
-    ...
+
+...
+"react": "^0.13.3",
+...
 
 > Then you need to run `npm upgrade` which will upgrade all the packages to the latest version found in `package.json`. The output looks like this:
 
 然后运行`npm upgrade`就可以把所有的库都升级到`package.json`中的最新版本了。
-    
-    $ npm upgrade
-    react@0.13.3 node_modules/react
-    └── envify@3.4.0 (through@2.3.8, jstransform@10.1.0)
-    
+
+\$ npm upgrade
+react@0.13.3 node_modules/react
+└── envify@3.4.0 (through@2.3.8, jstransform@10.1.0)
 
 > That's it. We have successfully upgraded a NPM module. Now let's see if our application is still working!
 

@@ -4,7 +4,6 @@ title: 【译】React.js教程 第一部分：Hello World!
 categories: [前端]
 tags: [React, Express]
 published: True
-
 ---
 
 技术系列笔记均已迁移至 GitBook，更多`React`的内容请到：[http://jimmylv.gitbooks.io/learning-react-js/content/reactjs_tutorial/reactjs_tutorial_part_1.html](http://jimmylv.gitbooks.io/learning-react-js/content/reactjs_tutorial/reactjs_tutorial_part_1.html)
@@ -77,7 +76,7 @@ run the app:
 
 我建议查看已生成的代码，然后清除一些不必要的东西。我们不需要`user`路由就删掉，然后需要在`package.json`中添加一些描述、关键字和版本，使之更加合理。
 
-## Adding React.js | 添加 React.js 
+## Adding React.js | 添加 React.js
 
 > Now that we have a pretty basic express application as our backend, we are now going to jump into adding react. Adding react is not that difficult, but there are a few ways of doing things. Since we are already within a node.js app, I am going to go down the route of building our jsx scripts into javascript. To get ready for this, we need to install the `react-tools` node package. You can do that by the following command:
 
@@ -141,8 +140,8 @@ block content
 
 ```js
 React.render(
-<h1>Hello, world from React.js!</h1>,
-document.getElementById('example')
+  <h1>Hello, world from React.js!</h1>,
+  document.getElementById("example")
 );
 ```
 

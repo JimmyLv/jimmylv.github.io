@@ -12,13 +12,13 @@ published: True
 
 ```md
 // Given
-一个有基本的UT知识和Vue组件单元测试经验的开发者🚶
+一个有基本的 UT 知识和 Vue 组件单元测试经验的开发者 🚶
 // When
-当他🚶阅读和练习本文的Vuex单元测试的部分
+当他 🚶 阅读和练习本文的 Vuex 单元测试的部分
 // Then
-他能够对Vuex概念的理解更加深入，且知道 `Redux-like` 架构的好处
-他能够合理测试vuex store的mutation、getter中的业务逻辑和异步action
-他能够测试组件如何正确读取store中的state以及dispatch action
+他能够对 Vuex 概念的理解更加深入，且知道 `Redux-like` 架构的好处
+他能够合理测试 vuex store 的 mutation、getter 中的业务逻辑和异步 action
+他能够测试组件如何正确读取 store 中的 state 以及 dispatch action
 ```
 
 ## 如何理解 Vuex 模式？
@@ -47,8 +47,8 @@ MVC 和 Flux 最大的不同就是查询和更新的分离。在 MVC 中，Model
 
 以上所描述的模式非常接近于由 Greg Young 第一次所提出的 CQRS：
 
-1. 如果一个方法修改了这个对象的状态，那就是一个 *command*（命令），并且一定不能返回值。
-2. 如果一个方法返回了一些值，那就是一个 *query*（查询），并且一定不能修改状态。
+1. 如果一个方法修改了这个对象的状态，那就是一个 _command_（命令），并且一定不能返回值。
+2. 如果一个方法返回了一些值，那就是一个 _query_（查询），并且一定不能修改状态。
 
 ### Vuex 背后的基本思想
 
@@ -56,8 +56,8 @@ MVC 和 Flux 最大的不同就是查询和更新的分离。在 MVC 中，Model
 
 另外，隔离状态管理能够获得很多好处，当然也需要强制遵守一定的规则：
 
-1. Vuex 的状态存储是响应式的。当 Vue 组件从 store 中读取状态的时候，若 store 中的状态发生变化，那么相应的组件也会相应地得到高效更新。这也就是 CQRS 中 *query*（查询）的一种实现。
-2. 你不能直接改变 store 中的状态。改变 store 中的状态的唯一途径就是显式地**提交 (commit) mutation**，这样使得我们可以方便地跟踪每一个状态的变化。这也就是 CQRS 中 *command*（命令）的一种实现。
+1. Vuex 的状态存储是响应式的。当 Vue 组件从 store 中读取状态的时候，若 store 中的状态发生变化，那么相应的组件也会相应地得到高效更新。这也就是 CQRS 中 _query_（查询）的一种实现。
+2. 你不能直接改变 store 中的状态。改变 store 中的状态的唯一途径就是显式地**提交 (commit) mutation**，这样使得我们可以方便地跟踪每一个状态的变化。这也就是 CQRS 中 _command_（命令）的一种实现。
 
 ## 如何对 Vuex 进行单元测试
 
@@ -66,7 +66,6 @@ MVC 和 Flux 最大的不同就是查询和更新的分离。在 MVC 中，Model
 ### mutations 测试
 
 Mutation 很容易被测试，因为它们仅仅是一些完全依赖参数的函数。最为简单的 mutation 测试，仅一一对应保存数据切片。此种 mutation 可以不需要测试覆盖，因为基本由架构简单和逻辑简单保证，不需要靠读测试用例来理解。而一个较为复杂、具备测试价值的 mutation 在保存数据的同时，还可能进行了合并、去重等操作。
-
 
 ```js
 // count.js
@@ -99,16 +98,16 @@ Action 应对起来略微棘手，因为它们可能需要调用外部的 API。
 
 ```js
 // product.js
-import shop from '../api/shop'
+import shop from "../api/shop";
 
 export const actions = {
   getAllProducts({ commit }) {
-    commit('REQUEST_PRODUCTS')
-    shop.getProducts(products => {
-      commit('RECEIVE_PRODUCTS', products)
-    })
-  }
-}
+    commit("REQUEST_PRODUCTS");
+    shop.getProducts((products) => {
+      commit("RECEIVE_PRODUCTS", products);
+    });
+  },
+};
 ```
 
 ```js
@@ -121,9 +120,9 @@ describe('actions', () => {
   it('getAllProducts', () => {
     const commit = jest.spy()
     const state = {}
-    
+
     actions.getAllProducts({ commit, state })
-    
+
     expect(commit.args).toEqual([
       ['REQUEST_PRODUCTS'],
       ['RECEIVE_PRODUCTS', { /* mocked response */ }]
@@ -139,42 +138,42 @@ getter 的测试与 mutation 一样直截了当。getters 也是比较重逻辑�
 ```js
 // product.js
 export const getters = {
-  filteredProducts (state, { filterCategory }) {
-    return state.products.filter(product => {
-      return product.category === filterCategory
-    })
-  }
-}
+  filteredProducts(state, { filterCategory }) {
+    return state.products.filter((product) => {
+      return product.category === filterCategory;
+    });
+  },
+};
 ```
 
 ```js
 // product.test.js
-import { expect } from 'chai'
-import { getters } from './getters'
+import { expect } from "chai";
+import { getters } from "./getters";
 
-describe('getters', () => {
-  it('filteredProducts', () => {
+describe("getters", () => {
+  it("filteredProducts", () => {
     // 模拟状态
     const state = {
       products: [
-        { id: 1, title: 'Apple', category: 'fruit' },
-        { id: 2, title: 'Orange', category: 'fruit' },
-        { id: 3, title: 'Carrot', category: 'vegetable' }
-      ]
-    }
+        { id: 1, title: "Apple", category: "fruit" },
+        { id: 2, title: "Orange", category: "fruit" },
+        { id: 3, title: "Carrot", category: "vegetable" },
+      ],
+    };
     // 模拟 getter
-    const filterCategory = 'fruit'
+    const filterCategory = "fruit";
 
     // 获取 getter 的结果
-    const result = getters.filteredProducts(state, { filterCategory })
+    const result = getters.filteredProducts(state, { filterCategory });
 
     // 断言结果
     expect(result).to.deep.equal([
-      { id: 1, title: 'Apple', category: 'fruit' },
-      { id: 2, title: 'Orange', category: 'fruit' }
-    ])
-  })
-})
+      { id: 1, title: "Apple", category: "fruit" },
+      { id: 2, title: "Orange", category: "fruit" },
+    ]);
+  });
+});
 ```
 
 ## Vue 组件和 Vuex store 的交互
@@ -192,66 +191,64 @@ describe('getters', () => {
 </template>
 
 <script>
-import { mapActions } from 'vuex'
-export default {
-  methods: {
-    ...mapActions([
-      'actionClick'
-    ]),
-  }
-}
+  import { mapActions } from "vuex";
+  export default {
+    methods: {
+      ...mapActions(["actionClick"]),
+    },
+  };
 </script>
 ```
 
 在单元测试的时候，shallowMount（浅渲染）方法接受一个挂载 options，可以用来给 Vue 组件传递一个伪造的 store。然后我们就可以使用 Jest 模拟一个 action 的行为再传给 store，而 actionClick 这个伪造函数能够让我们去断言该 action 是否被调用过。所以我们在测试 action 的时候就可以只关心 action 的触发，而至于触发之后对 store 做了什么事情我们就不需要再关心了，因为 Vuex 的单元测试会涵盖相关的代码逻辑。
 
 ```js
-import { shallowMount, createLocalVue } from '@vue/test-utils'
-import Vuex from 'vuex'
+import { shallowMount, createLocalVue } from "@vue/test-utils";
+import Vuex from "vuex";
 
-const localVue = createLocalVue()
-localVue.use(Vuex)
+const localVue = createLocalVue();
+localVue.use(Vuex);
 
 const fakeStore = new Vuex.Store({
   state: {},
   actions: {
-    actionClick: jest.fn()
-  }
-})
+    actionClick: jest.fn(),
+  },
+});
 
-it('当按钮被点击时候调用“actionClick”的 action', () => {
-    const wrapper = shallowMount(Actions, { store: fakeStore, localVue })
-    wrapper.find('button').trigger('click')
-    expect(actions.actionClick).toHaveBeenCalled()
-})
+it("当按钮被点击时候调用“actionClick”的 action", () => {
+  const wrapper = shallowMount(Actions, { store: fakeStore, localVue });
+  wrapper.find("button").trigger("click");
+  expect(actions.actionClick).toHaveBeenCalled();
+});
 ```
 
-需要注意的是，在这里我们是把 Vuex store 传递给一个 localVue，而不是传递给基础的 Vue 构造函数。这是因为我们不想影响到全局的 Vue 构造函数，如果直接使用 `Vue.use(Vuex)` 会让 Vue 的原型上会增加 $store 属性从而影响到其他的单元测试。而 localVue 则是一个独立作用域的 Vue 构造函数，我们可以对其进行任意的改动。
+需要注意的是，在这里我们是把 Vuex store 传递给一个 localVue，而不是传递给基础的 Vue 构造函数。这是因为我们不想影响到全局的 Vue 构造函数，如果直接使用 `Vue.use(Vuex)` 会让 Vue 的原型上会增加 \$store 属性从而影响到其他的单元测试。而 localVue 则是一个独立作用域的 Vue 构造函数，我们可以对其进行任意的改动。
 
 当然咯，除了 mock 掉 actions，Vuex store 里面的任何内容我们都可以将其模拟出来，比如 state 或者 getters：
 
 ```js
-import { shallowMount, createLocalVue } from '@vue/test-utils'
-import Vuex from 'vuex'
+import { shallowMount, createLocalVue } from "@vue/test-utils";
+import Vuex from "vuex";
 
-const localVue = createLocalVue()
-localVue.use(Vuex)
+const localVue = createLocalVue();
+localVue.use(Vuex);
 
 const fakeStore = new Vuex.Store({
   state: {
-    price: '998'
+    price: "998",
   },
   getters: {
     clicks: () => 2,
-    inputValue: () => 'input'
-  }
-})
+    inputValue: () => "input",
+  },
+});
 
-it('在app中渲染价格和“inputValue”', () => {
-  const wrapper = shallowMount(Components, { store: fakeStore, localVue })
-  expect(wrapper.find('p').text()).toBe('input')  
-  expect(wrapper.find('.price').text()).stringContaining('$998')
-})
+it("在app中渲染价格和“inputValue”", () => {
+  const wrapper = shallowMount(Components, { store: fakeStore, localVue });
+  expect(wrapper.find("p").text()).toBe("input");
+  expect(wrapper.find(".price").text()).stringContaining("$998");
+});
 ```
 
 ## 总结一下
@@ -262,25 +259,25 @@ it('在app中渲染价格和“inputValue”', () => {
 
 **## 单元测试基础**
 
-* [x] ### 单元测试与自动化的意义
-* [x] ### 为什么选择 Jest
-* [x] ### Jest 的基本用法
-* [x] ### 该如何测试异步代码？
+- [x] ### 单元测试与自动化的意义
+- [x] ### 为什么选择 Jest
+- [x] ### Jest 的基本用法
+- [x] ### 该如何测试异步代码？
 
 **## Vue 单元测试**
 
-* [x] ### Vue 组件的渲染方式
-* [x] ### Wrapper `find()` 方法与选择器
-* [x] ### UI 组件交互行为的测试  
+- [x] ### Vue 组件的渲染方式
+- [x] ### Wrapper `find()` 方法与选择器
+- [x] ### UI 组件交互行为的测试
 
 **## Vuex 单元测试**
 
-* [x] ### CQRS 与 `Redux-like` 架构
-* [x] ### 如何对 Vuex 进行单元测试
-* [x] ### Vue组件和Vuex store的交互  
+- [x] ### CQRS 与 `Redux-like` 架构
+- [x] ### 如何对 Vuex 进行单元测试
+- [x] ### Vue 组件和 Vuex store 的交互
 
 **## Vue 应用测试策略**
 
-* [ ] ### 单元测试的特点及其位置
-* [ ] ### 单元测试的关注点
-* [ ] ### 应用测试的测试策略
+- [ ] ### 单元测试的特点及其位置
+- [ ] ### 单元测试的关注点
+- [ ] ### 应用测试的测试策略

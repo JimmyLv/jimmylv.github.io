@@ -11,13 +11,16 @@ theme: green
 published: True
 ---
 
-30 min = 15 min * 2
+30 min = 15 min \* 2
 
 [slide]
+
 # 「Done is better than perfect.」
 
 [slide]
+
 # Web 前端开发模式演变
+
 <small>by Jimmy Lv</small>
 
 [slide]
@@ -41,9 +44,9 @@ published: True
 ## 两次巨大革命
 
 - PC 和因特网革命
-    + 35 年, -> 21 亿台设备 {:&.moveIn}
+  - 35 年, -> 21 亿台设备 {:&.moveIn}
 - 移动互联网革命
-    + 5 年, -> 60 亿台设备 {:&.moveIn}
+  - 5 年, -> 60 亿台设备 {:&.moveIn}
 
 [slide]
 
@@ -53,13 +56,12 @@ published: True
 
 [slide]
 
-
 [slide]
 
-## JavaScript与Netscape
+## JavaScript 与 Netscape
 
-- Sun, Java 
-- Brendan Eich, Scheme 
+- Sun, Java
+- Brendan Eich, Scheme
 - Mircosoft, JScript
 - ECMAScript
 
@@ -67,33 +69,33 @@ published: True
 
 [slide]
 
-## Web 1.0时代
+## Web 1.0 时代
 
 - 服务端生成，浏览器负责展现 {:&.moveIn}
-    - Java + JSP | ASP
-    - Tomcat、Apache
+  - Java + JSP | ASP
+  - Tomcat、Apache
 - 缺点：
-    + JSP 代码 越来越多，灰色地带 可维护性差
+  - JSP 代码 越来越多，灰色地带 可维护性差
 
 ![Web 1.0](https://camo.githubusercontent.com/90850e93b917cd3c958dff1c7d0197f819167343/687474703a2f2f696d672e68622e616963646e2e636f6d2f63333639616163633864613338616638653432326664323935313438633537643162353831376666666335362d4f636250646c5f6677363538)
 
 [slide]
 
-## 后端MVC时代
+## 后端 MVC 时代
 
--  Structs、Spring MVC {:&.moveIn}
--  View 层变得简单：模板引擎（ Velocity、Freemaker）
--  缺点：
-    *  纠缠不清的 Controller
-    *  前端开发重度绑定后端环境
+- Structs、Spring MVC {:&.moveIn}
+- View 层变得简单：模板引擎（ Velocity、Freemaker）
+- 缺点：
+  - 纠缠不清的 Controller
+  - 前端开发重度绑定后端环境
 
 ![后端MVC](https://camo.githubusercontent.com/b9e16b0b3ff3361a481badaca7d408e8fa6b404f/687474703a2f2f696d672e68622e616963646e2e636f6d2f3961366266353237646162626462396237393563353862306237616636633761313864653963653331316136312d3975697578545f6677363538)
 
 [slide]
 
-## Web 2.0时代：AJAX
+## Web 2.0 时代：AJAX
 
-- Gmail 横空出世，Web Application 
+- Gmail 横空出世，Web Application
 - Ajax，XMLHttpRequest 接口
 - jQuery，JS 操作网页 DOM 结构变得非常容易
 
@@ -104,24 +106,24 @@ published: True
 ## 单页面应用
 
 - `#` 无需刷新页面 {:&.moveIn}
-    + 前端路由，展现
-    + 后端路由，数据
+  - 前端路由，展现
+  - 后端路由，数据
 - 挑战：
-    + 前后端接口的约定，前端的数据绑定
-    + JavaScript 代码越来越多
+  - 前后端接口的约定，前端的数据绑定
+  - JavaScript 代码越来越多
 
 ![SPA](https://camo.githubusercontent.com/f064bc7a5b06ea9a39cf039a5dec0ca6675141ff/687474703a2f2f696d672e68622e616963646e2e636f6d2f3135383839323134336263363430333364323264643865643765373533366537316530373063346131336335372d6850673150635f6677363538)
 
 [slide]
 
-## MV** 时代
+## MV\*\* 时代
 
 - Knockout、Backbone、Angular 1.x {:&.moveIn}
 - 前后端分离，职责清晰
 - 缺点：
-    - 代码不能复用（数据校验）
-    - 不利于 SEO，搜索引擎爬虫不会执行 JS
-    - 性能并非最佳，移动端网络是个渣
+  - 代码不能复用（数据校验）
+  - 不利于 SEO，搜索引擎爬虫不会执行 JS
+  - 性能并非最佳，移动端网络是个渣
 
 ![](https://camo.githubusercontent.com/2ab0e0e247dfae7b74760b7d57056a680204874d/687474703a2f2f696d672e68622e616963646e2e636f6d2f3536663463656530653663376166363165323464626633316534626531376631343264353930326331313039612d42637852696d5f6677363538)
 
@@ -161,6 +163,6 @@ published: True
 
 ## Atwood's Law
 
-Any application that can be written in JavaScript, 
+Any application that can be written in JavaScript,
 
 will eventually be written in JavaScript.

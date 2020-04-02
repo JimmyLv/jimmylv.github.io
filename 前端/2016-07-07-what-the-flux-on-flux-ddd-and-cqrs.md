@@ -4,7 +4,6 @@ title: 【译】什么是 Flux 架构？（兼谈 DDD 和 CQRS）
 categories: [前端]
 tags: [Flux, DDD, CQRS, Architecture, MVC]
 published: True
-
 ---
 
 > [Flux](http://facebook.github.io/flux/docs/overview.html) is an application architecture designed by Facebook for their JavaScript applications. It was first introduced by Facebook in May 2014, and it has since garnered much interest in the JavaScript community.
@@ -61,7 +60,7 @@ Flux 试图通过强制单向数据流来解决这个复杂度。在这种架构
 
 ![](https://raw.githubusercontent.com/JimmyLv/images/master/2016/1467895448296.png)
 
-> The main difference between MVC and Flux is the separation of queries and updates. In MVC, the Model is both updated by the Controller *and* queried by the View. In Flux, the data that a View gets from a Store is read-only. Stores can only be updated through Actions, which would affect the Stores themselves *not* the read-only data.
+> The main difference between MVC and Flux is the separation of queries and updates. In MVC, the Model is both updated by the Controller _and_ queried by the View. In Flux, the data that a View gets from a Store is read-only. Stores can only be updated through Actions, which would affect the Stores themselves _not_ the read-only data.
 
 MVC 和 Flux 最大的不同就是查询和更新的分离。在 MVC 中，Model 同时可以被 Controller 更新*并且*被 View 所查询。在 Flux 里，View 从 Store 获取的数据是只读的。而 Stores 只能通过 Actions 被更新，这就会影响 Store 本身*而不是*那些只读的数据。
 
@@ -77,13 +76,13 @@ MVC 和 Flux 最大的不同就是查询和更新的分离。在 MVC 中，Model
 
 > CQS at an object level means:
 
-> 1. If a method mutates the state of the object, it is a *command*, and it must not return a value.
-> 2. If the method returns some value, it is a *query*, and it must not mutate state.
+> 1. If a method mutates the state of the object, it is a _command_, and it must not return a value.
+> 2. If the method returns some value, it is a _query_, and it must not mutate state.
 
 CQS 在一个对象的层面上意味着：
 
-1. 如果一个方法修改了这个对象的状态，那就是一个 *command*（命令），并且一定不能返回值。
-2. 如果一个方法返回了一些值，那就是一个 *query*（查询），并且一定不能修改状态。
+1. 如果一个方法修改了这个对象的状态，那就是一个 _command_（命令），并且一定不能返回值。
+2. 如果一个方法返回了一些值，那就是一个 _query_（查询），并且一定不能修改状态。
 
 > In normal DDD, Aggregate objects are used for both command and query. We will also have Repositories that contain methods to find and persist Aggregate objects.
 
@@ -99,13 +98,13 @@ CQRS 仅仅是让 CQS 进一步将命令和查询拆分到不同的对象当中�
 
 ### Query Model | 查询模型
 
-> The *Query Model* is a pure data model, and is not meant to deliver domain behaviour. These models are denormalized, and meant for display and reporting.
+> The _Query Model_ is a pure data model, and is not meant to deliver domain behaviour. These models are denormalized, and meant for display and reporting.
 
-*查询模型* 就是一个纯数据模型，并且不再提供领域行为。这些模型都是[反规范化](http://www.searchdatabase.com.cn/whatis/word_5893.htm)的，用于显示和报告。
+_查询模型_ 就是一个纯数据模型，并且不再提供领域行为。这些模型都是[反规范化](http://www.searchdatabase.com.cn/whatis/word_5893.htm)的，用于显示和报告。
 
 ### Query Processor | 查询处理器
 
-> Query Models are usually retrieved by performing a query. The queries can be handled by a *Query Processor* that knows how to look up data, say from a database table.
+> Query Models are usually retrieved by performing a query. The queries can be handled by a _Query Processor_ that knows how to look up data, say from a database table.
 
 查询模型通常是在执行查询时获取到的。这些查询将被一个*查询处理器*所处理，这个处理器知道如何从一个数据库表中查找数据。
 
@@ -121,9 +120,9 @@ CQRS 仅仅是让 CQS 进一步将命令和查询拆分到不同的对象当中�
 
 ### Domain Event | 领域事件
 
-> Domain Events lets Event Subscribers know that something has changed in the corresponding Command Model. They contain the *name* of the event, and a *payload* containing sufficient information for subscribers to correctly update Query Models.
+> Domain Events lets Event Subscribers know that something has changed in the corresponding Command Model. They contain the _name_ of the event, and a _payload_ containing sufficient information for subscribers to correctly update Query Models.
 
-领域事件会让「事件订阅者」（Event Subscribers）知道在相应的命令模型中发生了一些变化。它们包含着这个事件的*名字*，并且附带一个 *payload*，里面包含了能让订阅者正确更新查询模型的有效信息。
+领域事件会让「事件订阅者」（Event Subscribers）知道在相应的命令模型中发生了一些变化。它们包含着这个事件的*名字*，并且附带一个 _payload_，里面包含了能让订阅者正确更新查询模型的有效信息。
 
 > > **Note:** Domain Events are always in past tense since they describe what has already occurred (e.g. `'ITEM_ADDED_TO_CART'`).
 
@@ -131,13 +130,13 @@ CQRS 仅仅是让 CQS 进一步将命令和查询拆分到不同的对象当中�
 
 ### Event Subscriber | 事件订阅者
 
-> An *Event Subscriber* receives all Domain Events published by the Command Model. When an event occurs, it updates the Query Model accordingly.
+> An _Event Subscriber_ receives all Domain Events published by the Command Model. When an event occurs, it updates the Query Model accordingly.
 
 一个*事件订阅者*接受由命令模型所发布的所有领域事件。当一个事件发生时，它就会相应地更新查询模型。
 
 ### Command | 命令
 
-> *Commands* are submitted as the means of executing behaviour on Command Models. A command contains the *name* of the behaviour to execute and a *payload* necessary to carry it out.
+> _Commands_ are submitted as the means of executing behaviour on Command Models. A command contains the _name_ of the behaviour to execute and a _payload_ necessary to carry it out.
 
 命令模型所执行的行为就意味着所提交的*命令*。一个命令包含这个要被执行的行为的*名字*和需要携带的*负载*。
 
@@ -147,7 +146,7 @@ CQRS 仅仅是让 CQS 进一步将命令和查询拆分到不同的对象当中�
 
 ### Command Handler | 命令处理器
 
-> The submission of a Command is received by a *Command Handler*, which usually fetches an Command Model from its Repository, and executes a Command method on it.
+> The submission of a Command is received by a _Command Handler_, which usually fetches an Command Model from its Repository, and executes a Command method on it.
 
 提交的命令会被一个*命令处理器*接收，通常来说会从它的 Repository 当中取出一个命令模型，然后执行其中的命令方法。
 
@@ -166,8 +165,12 @@ CQRS 仅仅是让 CQS 进一步将命令和查询拆分到不同的对象当中�
 ```js
 // The Aggregate model
 class ShoppingCart {
-  constructor({id: id, cartItems: cartItems, taxPercentage: taxPercentage,
-                shippingAndHandling: shippingAndHandling}) {
+  constructor({
+    id: id,
+    cartItems: cartItems,
+    taxPercentage: taxPercentage,
+    shippingAndHandling: shippingAndHandling,
+  }) {
     this.id = id;
     this.cartItems = cartItems || [];
     this.taxPercentage = this.taxPercentage;
@@ -191,7 +194,12 @@ class ShoppingCart {
 
 // A child of the Aggregate
 class CartItem {
-  constructor({sku: sku, description: description, price: price, quantity: quantity}) {
+  constructor({
+    sku: sku,
+    description: description,
+    price: price,
+    quantity: quantity,
+  }) {
     this.sku = sku;
     this.description = description;
     this.price = price;
@@ -201,11 +209,21 @@ class CartItem {
 
 // Repository to perform CRUD operations
 class ShoppingCartRepository {
-  all() { /* … */ }
-  findById(id) { /* … */ }
-  create(cart) { /* … */ }
-  update(cart) { /* … */ }
-  destroy(cart) { /* … */ }
+  all() {
+    /* … */
+  }
+  findById(id) {
+    /* … */
+  }
+  create(cart) {
+    /* … */
+  }
+  update(cart) {
+    /* … */
+  }
+  destroy(cart) {
+    /* … */
+  }
 }
 ```
 
@@ -252,20 +270,20 @@ class ShoppingCart {
   }
   addItem(cartItem) {
     // …
-    DomainEventPublisher.publish('CART_ITEM_ADDED', {
+    DomainEventPublisher.publish("CART_ITEM_ADDED", {
       cartId: this.id,
       sku: cartItem.sku,
       price: cartItem.price,
-      quantity: cartItem.quantity
+      quantity: cartItem.quantity,
     });
   }
   removeItem(cartItem) {
     // …
-    DomainEventPublisher.publish('CART_ITEM_REMOVED', {
+    DomainEventPublisher.publish("CART_ITEM_REMOVED", {
       cartId: this.id,
       sku: cartItem.sku,
       price: cartItem.price,
-      quantity: cartItem.quantity
+      quantity: cartItem.quantity,
     });
   }
 }
@@ -277,27 +295,33 @@ class CartTotalStore {
     this.totals = {};
 
     // Subscribe to events that allows this store to update its Query Models.
-    DomainEventPublisher.subscribeTo('ITEM_ADDED_TO_CART', this.handleItemAdded);
-    DomainEventPublisher.subscribeTo('ITEM_REMOVED_FROM_CART', this.handleItemRemoved);
+    DomainEventPublisher.subscribeTo(
+      "ITEM_ADDED_TO_CART",
+      this.handleItemAdded
+    );
+    DomainEventPublisher.subscribeTo(
+      "ITEM_REMOVED_FROM_CART",
+      this.handleItemRemoved
+    );
   }
 
   // Query method
   forCart(cartId) {
     return {
       cartId: cartId,
-      total: this.totals[id]
+      total: this.totals[id],
     };
   }
 
   // Methods to update Query Models.
-  handleItemAdded({cartId: cartId, cartItem: cartItem}) {
+  handleItemAdded({ cartId: cartId, cartItem: cartItem }) {
     var total = this.totals[cartId] || 0;
-    var newTotal = total + cartItem.price * cartItem.quantity
+    var newTotal = total + cartItem.price * cartItem.quantity;
     this.totals[cartId] = newTotal;
   }
-  handleItemRemoved({cartId: cartId, cartItem: cartItem}) {
+  handleItemRemoved({ cartId: cartId, cartItem: cartItem }) {
     var total = this.totals[cartId] || 0;
-    var newTotal = total - cartItem.price * cartItem.quantity
+    var newTotal = total - cartItem.price * cartItem.quantity;
     this.totals[cartId] = newTotal;
   }
 }
@@ -372,11 +396,11 @@ e.g. `ShoppingCartActionCreators.addItem(…)`
 
 我不认为这种架构模式适用于所有情况。就像我们面对过的其他工具一样，不要盲目地在所有地方都运用同一种模式。
 
-> In particular, Flux *may be inappropriate* if your views map well to your domain models. For example, in a simple CRUD application, you may have exactly three views for each model: index, show, and edit + delete. In this system, you will likely have just one controller and one view for each CRUD operation on your model, making the data flow very simple.
+> In particular, Flux _may be inappropriate_ if your views map well to your domain models. For example, in a simple CRUD application, you may have exactly three views for each model: index, show, and edit + delete. In this system, you will likely have just one controller and one view for each CRUD operation on your model, making the data flow very simple.
 
 特别的是，Flux *可能不适用于*视图和领域模型合理映射的情况。比如说，在一个简单的 CRUD 应用程序里，对于每种模型来说，你都可能有三种视图：index，show，以及 edit 和 delete。在这种系统里，你可能只需要给每个模型的 CRUD 操作配备一个控制器和视图就可以了，数据流就已经足够简单。
 
-> Where Flux *shines* is in a system where you present multiple views that don’t map directly to your domain models. The views may be presenting data aggregated across multiple models and model classes.
+> Where Flux _shines_ is in a system where you present multiple views that don’t map directly to your domain models. The views may be presenting data aggregated across multiple models and model classes.
 
 在一个系统中，在你需要描述多个视图并且不能直接映射到领域模型的地方，Flux 能够*大展宏图*。这些视图可能需要来自于多个模型和不同种类的聚合数据。
 
@@ -406,25 +430,25 @@ e.g. `ShoppingCartActionCreators.addItem(…)`
 
 > There are several object roles in CQRS.
 
-> * Query Model
-> * Query Processor
-> * Command Model (Aggregate)
-> * Commands
-> * Command Handler
-> * Domain Event
-> * Domain Event Publisher
-> * Event Subscriber
+> - Query Model
+> - Query Processor
+> - Command Model (Aggregate)
+> - Commands
+> - Command Handler
+> - Domain Event
+> - Domain Event Publisher
+> - Event Subscriber
 
 这是一些 CQRS 当中的对象角色。
 
-* Query Model - 查询模型
-* Query Processor - 查询处理器
-* Command Model (Aggregate) - 命令模型（聚合）
-* Commands - 命令
-* Command Handler - 命令处理器
-* Domain Event - 领域事件
-* Domain Event Publisher - 领域事件发布者
-* Event Subscriber - 事件订阅者
+- Query Model - 查询模型
+- Query Processor - 查询处理器
+- Command Model (Aggregate) - 命令模型（聚合）
+- Commands - 命令
+- Command Handler - 命令处理器
+- Domain Event - 领域事件
+- Domain Event Publisher - 领域事件发布者
+- Event Subscriber - 事件订阅者
 
 > In Facebook Flux some objects take on more than one role. This is perfectly reasonable to do! When we encounter other Flux implementations, we could also discuss them using the different object roles in CQRS.
 
@@ -436,6 +460,6 @@ e.g. `ShoppingCartActionCreators.addItem(…)`
 
 ### Further Readings | 扩展阅读
 
-* [The State of Flux](https://reactjsnews.com/the-state-of-flux/)
-* [Domain-Driven Design Quicky](http://www.infoq.com/minibooks/domain-driven-design-quickly) (ebook)
-* [CQRS writeup by Martin Fowler](http://martinfowler.com/bliki/CQRS.html)
+- [The State of Flux](https://reactjsnews.com/the-state-of-flux/)
+- [Domain-Driven Design Quicky](http://www.infoq.com/minibooks/domain-driven-design-quickly) (ebook)
+- [CQRS writeup by Martin Fowler](http://martinfowler.com/bliki/CQRS.html)

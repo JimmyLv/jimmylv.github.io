@@ -14,6 +14,7 @@ published: True
 [slide]
 
 # Th Wo - Bookshelf
+
 <small>by Jimmy Lv</small>
 
 [slide]
@@ -24,7 +25,7 @@ published: True
 
 ### Step 0:
 
-GET: hello {name}! 
+GET: hello {name}!
 
 via [Spring Web MVC DispatcherServlet](http://docs.spring.io/spring/docs/current/spring-framework-reference/html/mvc.html#mvc-servlet).
 
@@ -76,9 +77,8 @@ Edit / Delete / ...
 ## 作业
 
 - 先把书架 CURD 的功能，使用**后端 MVC**的形式完善。
-    + 当然你可以改用其他模板语言，比如 Jade 什么的，这儿用的是 Thymeleadf。
+  - 当然你可以改用其他模板语言，比如 Jade 什么的，这儿用的是 Thymeleadf。
 - 然后再改用**JSON 格式**返回，而不再需要后端模板。
-    + 为了前后端分离，😂 以下形式就 Okay：
+  - 为了前后端分离，😂 以下形式就 Okay：
 
 ![](https://raw.githubusercontent.com/JimmyLv/images/master/json-format.jpg)
-

@@ -4,12 +4,11 @@ title: 【译】在 Webstorm 中使用 ReactJS：编码辅助、代码规范、�
 categories: [前端]
 tags: [React, Intellij, IDE, DX]
 published: True
-
 ---
 
 ## 1. [Working with ReactJS in WebStorm: Coding Assistance](https://blog.jetbrains.com/webstorm/2015/10/working-with-reactjs-in-webstorm-coding-assistance/)
 
-Posted on *October 5, 2015* by [Ekaterina Prigara](https://blog.jetbrains.com/webstorm/author/ekaterina-prigara/)
+Posted on _October 5, 2015_ by [Ekaterina Prigara](https://blog.jetbrains.com/webstorm/author/ekaterina-prigara/)
 
 > [ReactJS](https://facebook.github.io/react/) is no doubt one of the trendiest JavaScript libraries released recently and as such is seeing wide adoption.
 
@@ -23,33 +22,33 @@ Posted on *October 5, 2015* by [Ekaterina Prigara](https://blog.jetbrains.com/we
 
 React 首次引入了 **JSX**，一种可以直接在 JavaScript 代码当中直接使用的类 XML 语法，但是你也可以使用纯 JavaScript 的方式使用 React。
 
-> If you’re using JSX, WebStorm will suggest switching language version to *JSX Harmony* so that it may understand JSX syntax in *.js* files. That’s it, now you can write JSX code and enjoy **code** **completion** for JSX tags,**navigation** and **code analysis**.
+> If you’re using JSX, WebStorm will suggest switching language version to _JSX Harmony_ so that it may understand JSX syntax in _.js_ files. That’s it, now you can write JSX code and enjoy **code** **completion** for JSX tags,**navigation** and **code analysis**.
 
-如果你正在使用 JSX，WebStorm 将会建议你将语言版本切换至 *JSX Harmony*，从而 IDE 可以在 *.js* 文件当中理解 JSX 语法。就是这种，现在你可以愉快得编写 JSX 代码，并且享受 JSX 标签的**代码补全**，**导航**，**代码分析**等功能。
+如果你正在使用 JSX，WebStorm 将会建议你将语言版本切换至 _JSX Harmony_，从而 IDE 可以在 _.js_ 文件当中理解 JSX 语法。就是这种，现在你可以愉快得编写 JSX 代码，并且享受 JSX 标签的**代码补全**，**导航**，**代码分析**等功能。
 
 ![](https://d3nmt5vlzunoa1.cloudfront.net/webstorm/files/2015/10/jsx_language_level.png)
 
-> You can also switch language version to *JSX Harmony* manually in *`Preferences | Languages & Frameworks | JavaScript`*.
+> You can also switch language version to _JSX Harmony_ manually in _`Preferences | Languages & Frameworks | JavaScript`_.
 
-你可以手动地在 *`Preferences | Languages & Frameworks | JavaScript`* 当中切换语言版本到 *JSX Harmony*。
+你可以手动地在 _`Preferences | Languages & Frameworks | JavaScript`_ 当中切换语言版本到 _JSX Harmony_。
 
-> **NB:** Once you have *react.js* library file somewhere in your project, WebStorm will provide you code completion for **React methods** and **React-specific attributes**. By default, the code completion popup displays automatically as you type. For example:
+> **NB:** Once you have _react.js_ library file somewhere in your project, WebStorm will provide you code completion for **React methods** and **React-specific attributes**. By default, the code completion popup displays automatically as you type. For example:
 
-**注意：**只要你在项目的任何地方有了 *react.js* 的库文件，WebStorm 就会为你提供 **React 方法**和 **React 特定属性**提供代码自动补全。默认情况下，代码补全会根据你的输入自动显示弹出框。比如：
+**注意：**只要你在项目的任何地方有了 _react.js_ 的库文件，WebStorm 就会为你提供 **React 方法**和 **React 特定属性**提供代码自动补全。默认情况下，代码补全会根据你的输入自动显示弹出框。比如：
 
 ![](https://d3nmt5vlzunoa1.cloudfront.net/webstorm/files/2015/10/react_code_completion.png)
 
-> From your code you can jump to the method definition in the library with *Cmd-click (Ctrl+click)*.
+> From your code you can jump to the method definition in the library with _Cmd-click (Ctrl+click)_.
 
-使用 *Cmd-click (Ctrl+click)* 可以从你的代码直接跳转到库中的方法定义。
+使用 _Cmd-click (Ctrl+click)_ 可以从你的代码直接跳转到库中的方法定义。
 
 > To enhance code completion with typed parameter information we recommend that you add a TypeScript definition file for [react.d.ts](https://github.com/borisyankov/DefinitelyTyped/blob/master/react/react.d.ts) as a JavaScript library for the project.
 
 为了增强代码补全的类型参数信息，我们推荐你可以添加一个 TypeScript 类型定义文件 [react.d.ts](https://github.com/borisyankov/DefinitelyTyped/blob/master/react/react.d.ts)，作为当前项目的 JavaScript 库。
 
-> Go to *`Preferences | Languages & Frameworks | JavaScript | Libraries`*, click *Download…*, search for *react* and click Download. The file will be added as [JavaScript library](http://blog.jetbrains.com/webstorm/2014/07/how-webstorm-works-completion-for-javascript-libraries/) for WebStorm to use in coding assistance.
+> Go to _`Preferences | Languages & Frameworks | JavaScript | Libraries`_, click _Download…_, search for _react_ and click Download. The file will be added as [JavaScript library](http://blog.jetbrains.com/webstorm/2014/07/how-webstorm-works-completion-for-javascript-libraries/) for WebStorm to use in coding assistance.
 
-到 *`Preferences | Languages & Frameworks | JavaScript | Libraries`* 选项下，点击 *Download…*，搜索 *react* 并点击下载。这个文件将会被添加作为 [JavaScript 库](http://blog.jetbrains.com/webstorm/2014/07/how-webstorm-works-completion-for-javascript-libraries/)，给 WebStorm 用来做为编码辅助。
+到 _`Preferences | Languages & Frameworks | JavaScript | Libraries`_ 选项下，点击 _Download…_，搜索 _react_ 并点击下载。这个文件将会被添加作为 [JavaScript 库](http://blog.jetbrains.com/webstorm/2014/07/how-webstorm-works-completion-for-javascript-libraries/)，给 WebStorm 用来做为编码辅助。
 
 > Now when you type, you’ll also see information on parameters that you can use in this method:
 
@@ -57,9 +56,9 @@ React 首次引入了 **JSX**，一种可以直接在 JavaScript 代码当中直
 
 ![](https://d3nmt5vlzunoa1.cloudfront.net/webstorm/files/2015/10/react_param_info.png)
 
-> Press *Cmd-P* to invoke a popup with information about arguments and types again.
+> Press _Cmd-P_ to invoke a popup with information about arguments and types again.
 
-按住 *Cmd-P* 就可以重新调出参数和类型相关信息的弹出框。
+按住 _Cmd-P_ 就可以重新调出参数和类型相关信息的弹出框。
 
 > WebStorm can also provide code completion for HTML tags and component names that you have defined inside methods in JavaScript or inside other components.
 
@@ -73,15 +72,15 @@ WebStorm 也可以为 HTML 标签和组件名称提供代码补全，只要你�
 
 ![](https://d3nmt5vlzunoa1.cloudfront.net/webstorm/files/2015/10/react_imported_component_completion.png)
 
-> From there you can also jump to the component definition with *Cmd-click* (*Ctrl+click* on Windows and Linux) on component name or see a definition in a popup with *Cmd-Y* (*Ctrl+Shift+I*).
+> From there you can also jump to the component definition with _Cmd-click_ (_Ctrl+click_ on Windows and Linux) on component name or see a definition in a popup with _Cmd-Y_ (_Ctrl+Shift+I_).
 
-当然这里你也可以用使用 *Cmd-click* (*Ctrl+click* on Windows and Linux) 点击组件名称跳转到组件定义的地方，或者可以使用 *Cmd-Y* (*Ctrl+Shift+I*) 直接在弹出框中查看定义。
+当然这里你也可以用使用 _Cmd-click_ (_Ctrl+click_ on Windows and Linux) 点击组件名称跳转到组件定义的地方，或者可以使用 _Cmd-Y_ (_Ctrl+Shift+I_) 直接在弹出框中查看定义。
 
 ![](https://d3nmt5vlzunoa1.cloudfront.net/webstorm/files/2015/10/react_quick_definition.png)
 
-> In JSX tags, the IDE provides coding assistance for [React-specific attributes](https://facebook.github.io/react/docs/tags-and-attributes.html#html-attributes) such as *className* or classID. Moreover, for class names you can autocomplete classes defined in the project’s CSS files.
+> In JSX tags, the IDE provides coding assistance for [React-specific attributes](https://facebook.github.io/react/docs/tags-and-attributes.html#html-attributes) such as _className_ or classID. Moreover, for class names you can autocomplete classes defined in the project’s CSS files.
 
-在 JSX 标签中，IDE 给[特定的 React 属性](https://facebook.github.io/react/docs/tags-and-attributes.html#html-attributes) 提供代码辅助，比如 *className* 或 *classID*。而且对于 class 来说还可以自动补全那些项目 CSS 文件中已有的 class 名。
+在 JSX 标签中，IDE 给[特定的 React 属性](https://facebook.github.io/react/docs/tags-and-attributes.html#html-attributes) 提供代码辅助，比如 _className_ 或 _classID_。而且对于 class 来说还可以自动补全那些项目 CSS 文件中已有的 class 名。
 
 ![](https://d3nmt5vlzunoa1.cloudfront.net/webstorm/files/2015/10/react_classname.gif)
 
@@ -93,17 +92,17 @@ WebStorm 也可以为 HTML 标签和组件名称提供代码补全，只要你�
 
 ### Emmet in JSX | 在 JSX 中使用 Emmet
 
-> With [Emmet](http://docs.emmet.io/cheat-sheet/) support in WebStorm, you can generate HTML markup really fast. You type an abbreviation that expands to HTML code when you press Tab. You can also use Emmet in JSX code, and that brings us to some special React twists. For example, the abbreviation *div.my-class* would expand in JSX to **`<div className=”my-class></div>`** and not to **`<div class=”my-class></div>`** like it would in HTML.
+> With [Emmet](http://docs.emmet.io/cheat-sheet/) support in WebStorm, you can generate HTML markup really fast. You type an abbreviation that expands to HTML code when you press Tab. You can also use Emmet in JSX code, and that brings us to some special React twists. For example, the abbreviation _div.my-class_ would expand in JSX to **`<div className=”my-class></div>`** and not to **`<div class=”my-class></div>`** like it would in HTML.
 
-通过 WebStrom 中的 [Emmet](http://docs.emmet.io/cheat-sheet/) 支持，可以让你非常迅速地生成 HTML 标记。你可以在输入缩写后再按 Tab 键就可以自动扩展至 HTML 代码。你也可以在 JSX 代码中使用 Emmet，给我们带来一些专用于 React 的特殊扩展。比如，*`div.my-class`* 缩写就可以展开成 `<div className=”my-class></div>` 而不是像 HTML 中的 `<div class=”my-class></div>`。
+通过 WebStrom 中的 [Emmet](http://docs.emmet.io/cheat-sheet/) 支持，可以让你非常迅速地生成 HTML 标记。你可以在输入缩写后再按 Tab 键就可以自动扩展至 HTML 代码。你也可以在 JSX 代码中使用 Emmet，给我们带来一些专用于 React 的特殊扩展。比如，_`div.my-class`_ 缩写就可以展开成 `<div className=”my-class></div>` 而不是像 HTML 中的 `<div class=”my-class></div>`。
 
 ![](https://d3nmt5vlzunoa1.cloudfront.net/webstorm/files/2015/10/react_emmet.gif)
 
 ### Live templates | 动态模板
 
-> Live templates work very similar to Emmet – type a special abbreviation and it will expand into a code snippet. WebStorm has a predefined set of templates for JavaScript and HTML, and you can also create your custom templates for React in *`Preferences | Editor | Live templates`*.
+> Live templates work very similar to Emmet – type a special abbreviation and it will expand into a code snippet. WebStorm has a predefined set of templates for JavaScript and HTML, and you can also create your custom templates for React in _`Preferences | Editor | Live templates`_.
 
-动态模板和 Emmet 工作方式很像 —— 输入特殊缩写就可以自动展开成代码片段。WebStorm 有着一系列预先定义好的 JavaScript 和 HTML 模板，而且你也可以在 *`Preferences | Editor | Live templates`* 中为 React 创建自己的自定义模板。
+动态模板和 Emmet 工作方式很像 —— 输入特殊缩写就可以自动展开成代码片段。WebStorm 有着一系列预先定义好的 JavaScript 和 HTML 模板，而且你也可以在 _`Preferences | Editor | Live templates`_ 中为 React 创建自己的自定义模板。
 
 > As an example let’s create a live template for creating a new React component:
 
@@ -117,9 +116,9 @@ WebStorm 也可以为 HTML 标签和组件名称提供代码补全，只要你�
         }
     });
 
-> Let’s set the abbreviation to *rC*. With *$variable_name$* syntax, we can set the edit points for variable and function names (we have multiple edit points in one template), and with *$END$* we specify a location of the cursor at the end.
+> Let’s set the abbreviation to _rC_. With _$variable_name$_ syntax, we can set the edit points for variable and function names (we have multiple edit points in one template), and with _$END$_ we specify a location of the cursor at the end.
 
-让我们将缩写设为 *rC*。通过 *$variable_name$* 语法，我们可以给变量和函数名字预留一些编辑点（我们可以在同一个模板中有多个编辑点），然后通过 *$END$* 我们可以给光标在最后特别指定一个位置。
+让我们将缩写设为 _rC_。通过 _$variable_name$_ 语法，我们可以给变量和函数名字预留一些编辑点（我们可以在同一个模板中有多个编辑点），然后通过 _$END$_ 我们可以给光标在最后特别指定一个位置。
 
 ![](https://d3nmt5vlzunoa1.cloudfront.net/webstorm/files/2015/10/new_live_template.png)
 
@@ -127,9 +126,9 @@ WebStorm 也可以为 HTML 标签和组件名称提供代码补全，只要你�
 
 我们还需要指定哪些文件可以调用这些模板，这种情况当然就是 JSX。
 
-> Now when you type *rC* and press *Tab*, the code snippet will expand. Type the component name and press *Tab* again to jump to the end edit location:
+> Now when you type _rC_ and press _Tab_, the code snippet will expand. Type the component name and press _Tab_ again to jump to the end edit location:
 
-现在当你输入 *rC* 并且按 *Tab* 的时候，代码片段就会展开。输入组件名称并再次按 *Tab* 键既可以跳到编辑的最后位置：
+现在当你输入 _rC_ 并且按 _Tab_ 的时候，代码片段就会展开。输入组件名称并再次按 _Tab_ 键既可以跳到编辑的最后位置：
 
 ![](https://d3nmt5vlzunoa1.cloudfront.net/webstorm/files/2015/10/react_live_template1.gif)
 
@@ -143,7 +142,7 @@ WebStorm 也可以为 HTML 标签和组件名称提供代码补全，只要你�
 
 ## 2. [Working with ReactJS in WebStorm: Linting, refactoring and compiling](http://blog.jetbrains.com/webstorm/2015/12/working-with-reactjs-in-webstorm-linting-refactoring-and-compiling/)
 
-Posted on *December 30, 2015* by [Ekaterina Prigara](http://blog.jetbrains.com/webstorm/author/ekaterina-prigara/)
+Posted on _December 30, 2015_ by [Ekaterina Prigara](http://blog.jetbrains.com/webstorm/author/ekaterina-prigara/)
 
 > We recently explored [coding assistance](http://blog.jetbrains.com/webstorm/2015/10/working-with-reactjs-in-webstorm-coding-assistance/) that WebStorm provides for React and JSX. Now we would like to talk a bit about the tools in the React ecosystem. In this area it’s not easy to provide a complete overview as tools are developing at a crazy pace. So right now we’ll focus on linters (code quality tools), refactoring and tools that can help us compile code.
 
@@ -161,9 +160,9 @@ Posted on *December 30, 2015* by [Ekaterina Prigara](http://blog.jetbrains.com/w
 
 ![](http://d3nmt5vlzunoa1.cloudfront.net/webstorm/files/2015/12/react-inspection.png)
 
-> You can customize the list of inspections in *`Preferences | Editor | Inspections`*. Disable those you don’t want to see, or change severity level from warning to error or vice versa.
+> You can customize the list of inspections in _`Preferences | Editor | Inspections`_. Disable those you don’t want to see, or change severity level from warning to error or vice versa.
 
-你可以在 *`Preferences | Editor | Inspections`* 中定制这一系列的检查。禁掉那些你并不想看到的，或者将安全等级从警告改成错误，反之亦然。
+你可以在 _`Preferences | Editor | Inspections`_ 中定制这一系列的检查。禁掉那些你并不想看到的，或者将安全等级从警告改成错误，反之亦然。
 
 > On top of such inspections, you can also use linters like ESLint and JSCS for the JSX code. Let’s talk about these in more detail.
 
@@ -175,13 +174,13 @@ Posted on *December 30, 2015* by [Ekaterina Prigara](http://blog.jetbrains.com/w
 
 **[ESLint**](http://eslint.org/) 是一种规范工具，提供了非常广泛的 linting 规则，并可以通过插件的方式进行扩展。WebStorm 集成了 ESLint， 并且让你在输入的时候就可以在编辑器中看到 ESLint 所报告的警告和错误。
 
-> While ESLint itself understands JSX syntax, authors [recommend](https://github.com/eslint/eslint#does-eslint-support-jsx) using [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) if you are working with React. To get started, add *eslint* and *eslint-plugin-react* modules to your project via npm, then add an ESLint configuration file *.eslintrc*.
+> While ESLint itself understands JSX syntax, authors [recommend](https://github.com/eslint/eslint#does-eslint-support-jsx) using [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) if you are working with React. To get started, add _eslint_ and _eslint-plugin-react_ modules to your project via npm, then add an ESLint configuration file _.eslintrc_.
 
-ESLint 本身就可以理解 JSX 语法，如果你在使用 React 的话，作者[推荐](https://github.com/eslint/eslint#does-eslint-support-jsx)使用 [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)。通过 npm 安装 *eslint* 和 *eslint-plugin-react* 模块到你的项目就可以上手了，然后添加一个 ESLint 的配置文件 *.eslintrc*。
+ESLint 本身就可以理解 JSX 语法，如果你在使用 React 的话，作者[推荐](https://github.com/eslint/eslint#does-eslint-support-jsx)使用 [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)。通过 npm 安装 _eslint_ 和 _eslint-plugin-react_ 模块到你的项目就可以上手了，然后添加一个 ESLint 的配置文件 _.eslintrc_。
 
-> Here’s what *.eslint* file structure looks like when using ESLint 1.x and react plugin:
+> Here’s what _.eslint_ file structure looks like when using ESLint 1.x and react plugin:
 
-这儿有一个使用 ESLint 1.x 和 React 的 *.eslint* 文件结构示例：
+这儿有一个使用 ESLint 1.x 和 React 的 _.eslint_ 文件结构示例：
 
     {
         "ecmaFeatures": {
@@ -191,7 +190,7 @@ ESLint 本身就可以理解 JSX 语法，如果你在使用 React 的话，作�
             "react"
         ],
         "rules": {}
-    }                    
+    }
 
 > In [ecmaFeatures](http://eslint.org/docs/2.0.0/user-guide/configuring.html#specifying-parser-options) object you can specify additional language features you’d like to use, for example ES6 classes, modules, etc.
 
@@ -207,21 +206,21 @@ ESLint 本身就可以理解 JSX 语法，如果你在使用 React 的话，作�
 
 ![](http://d3nmt5vlzunoa1.cloudfront.net/webstorm/files/2015/12/eslint-react.png)
 
-> To enable ESLint, go to *`Preferences | Languages & Frameworks | JavaScript | Code quality | ESLint`* (or simply search for ESLint in Preferences) and check the *Enable* checkbox. WebStorm will automatically locate ESLint in your project’s node_modules folder and then use *.eslintrc* configuration by default.
+> To enable ESLint, go to _`Preferences | Languages & Frameworks | JavaScript | Code quality | ESLint`_ (or simply search for ESLint in Preferences) and check the _Enable_ checkbox. WebStorm will automatically locate ESLint in your project’s node*modules folder and then use *.eslintrc\_ configuration by default.
 
-为了启用 ESLint，可以到 *`Preferences | Languages & Frameworks | JavaScript | Code quality | ESLint`* （或者直接在 Preferences 中搜索 ESLint）然后选中 *Enable* 选项。WebStorm 将会自动找到项目 node_modules 文件夹下的 ESLint 并默认使用 *.eslintrc* 配置。
+为了启用 ESLint，可以到 _`Preferences | Languages & Frameworks | JavaScript | Code quality | ESLint`_ （或者直接在 Preferences 中搜索 ESLint）然后选中 _Enable_ 选项。WebStorm 将会自动找到项目 node*modules 文件夹下的 ESLint 并默认使用 *.eslintrc\_ 配置。
 
 ![](http://d3nmt5vlzunoa1.cloudfront.net/webstorm/files/2015/12/eslint-enable.png)
 
 ## Refactoring | 重构
 
-> WebStorm offers lots of different refactorings to modify and maintain your code. For example, when you rename a file with *Refactor -> Rename*, all the references will be renamed automatically. Or, you can easily rename a variable, class or method throughout your whole project.
+> WebStorm offers lots of different refactorings to modify and maintain your code. For example, when you rename a file with _Refactor -> Rename_, all the references will be renamed automatically. Or, you can easily rename a variable, class or method throughout your whole project.
 
-WebStorm 提供了种类繁多的重构方式来修改和维护你的代码。比如，当你使用 *Refactor -> Rename* 重命名一个文件的时候，所有的引用都会自动被重新命名。或者是，你可以轻松重命名一个贯穿整个项目的变量，类，或者方法。
+WebStorm 提供了种类繁多的重构方式来修改和维护你的代码。比如，当你使用 _Refactor -> Rename_ 重命名一个文件的时候，所有的引用都会自动被重新命名。或者是，你可以轻松重命名一个贯穿整个项目的变量，类，或者方法。
 
-> For React applications, WebStorm can also help you rename components. Place the cursor on the component name and press **Ctrl+T** to open the *Refactor This* popup. Select *Rename…*, type the new name and press Enter. Done!
+> For React applications, WebStorm can also help you rename components. Place the cursor on the component name and press **Ctrl+T** to open the _Refactor This_ popup. Select _Rename…_, type the new name and press Enter. Done!
 
-对于 React 应用来说，WebStorm 也可以帮助你重命名组件。只要把光标放到组件的名字上，并按 **Ctrl+T** 打开 *Refactor This* 弹出框，然后选择 *Rename…*，输入新的名字并按 Enter 键，完成！
+对于 React 应用来说，WebStorm 也可以帮助你重命名组件。只要把光标放到组件的名字上，并按 **Ctrl+T** 打开 _Refactor This_ 弹出框，然后选择 _Rename…_，输入新的名字并按 Enter 键，完成！
 
 > Here’s an example of renaming a component that is refined and used in only one file:
 
@@ -247,15 +246,15 @@ WebStorm 提供了种类繁多的重构方式来修改和维护你的代码。�
 
 `npm install --save react react-dom browserify babelify babel-preset-es2015 babel-preset-react`
 
-> To automate the build process a little bit, let’s add the command suggested in the tutorial to the scripts section of the project’s *package.json* file:
+> To automate the build process a little bit, let’s add the command suggested in the tutorial to the scripts section of the project’s _package.json_ file:
 
-为了更加自动化构建的过程，让我们来添加教程中所建议的命令，作为项目 *package.json* 文件中的脚本部分：
+为了更加自动化构建的过程，让我们来添加教程中所建议的命令，作为项目 _package.json_ 文件中的脚本部分：
 
     "scripts": {    "build": "browserify -t [ babelify --presets [ react ] ] main.js -o bundle.js"}
 
-> where *main.js* is the main app file and *bundle.js* is the output file.
+> where _main.js_ is the main app file and _bundle.js_ is the output file.
 
-*main.js* 文件作为应用的主文件，*bundle.js* 作为输出文件。
+_main.js_ 文件作为应用的主文件，_bundle.js_ 作为输出文件。
 
 > WebStorm displays npm tasks listed in package.json in a separate tool window. Just double-click on the task name to run it. No need to run commands in the terminal.
 
@@ -271,5 +270,5 @@ WebStorm 可以在单独的工具窗口显示在 package.json 中所定义好的
 
 你也可以在 WebStorm 中给 Babel 和 Browserify 装一个文件监听器，用来执行相似命令（你可以阅读[这里](http://blog.jetbrains.com/webstorm/2015/05/ecmascript-6-in-webstorm-transpiling/)），但是如果你需要很多步骤的话，通过 npm 脚本或者 Gulp 的方式就可以给你更多的可扩展性。
 
-*Develop with pleasure!
-– JetBrains WebStorm Team*
+_Develop with pleasure!
+– JetBrains WebStorm Team_

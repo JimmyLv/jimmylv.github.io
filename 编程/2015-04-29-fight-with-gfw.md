@@ -6,9 +6,9 @@ tags: [GFW]
 published: true
 ---
 
-## 伟大的HTTPS
+## 伟大的 HTTPS
 
-他们的实现原理各不相同，区别大致在于走的路径不同，比如 GoAgent 借助免费的 GAE，那是谷歌自己在亚洲拉的光缆，所以说还是有一些可用的 Google hosts，可以选择适合自己的、速度最快的 Google 可用 IP 段。[快速找到Google可用Hosts的方法 - 月光博客](http://www.williamlong.info/archives/3878.html)、[XX-Net自动搜索可用IP的代码 - GitHub](https://github.com/XX-net/XX-Net)、甚至于[访问Google的神器：Chrome的QUIC协议 - 月光博客](http://www.williamlong.info/archives/3879.html)。而 ShadowSocks 要自己先搭一个 VPS，然后再通过走 Socks5 的方式走出去，相同的技术点就是使用 HTTPS，这是加密的 HTTP 协议，GFW 是没有那个能力知道其中传输的是什么东西。
+他们的实现原理各不相同，区别大致在于走的路径不同，比如 GoAgent 借助免费的 GAE，那是谷歌自己在亚洲拉的光缆，所以说还是有一些可用的 Google hosts，可以选择适合自己的、速度最快的 Google 可用 IP 段。[快速找到 Google 可用 Hosts 的方法 - 月光博客](http://www.williamlong.info/archives/3878.html)、[XX-Net 自动搜索可用 IP 的代码 - GitHub](https://github.com/XX-net/XX-Net)、甚至于[访问 Google 的神器：Chrome 的 QUIC 协议 - 月光博客](http://www.williamlong.info/archives/3879.html)。而 ShadowSocks 要自己先搭一个 VPS，然后再通过走 Socks5 的方式走出去，相同的技术点就是使用 HTTPS，这是加密的 HTTP 协议，GFW 是没有那个能力知道其中传输的是什么东西。
 
 ## 先决条件
 
@@ -28,7 +28,7 @@ published: true
 
 ![image](https://raw.githubusercontent.com/JimmyLv/images/master/images/tech/fight-with-gfw/Auto-Switch.png)
 
-## HTTPS错误
+## HTTPS 错误
 
 然后这里有一个从根本上杜绝 HTTPS 请求错误的方法。原先，一边解决该问题的方法是用 GoAgent 里面的 CA 证书替换原有站点的证书，如果你没有导入根证书，你用打开 twitter 这类强制 https 的站点就会被浏览器阻止并收到警告。
 
@@ -44,6 +44,6 @@ published: true
 
 已知 GoAgent 使用本地端口 8103，而 Shadowsocks 本地端口为 1080。从而 HTTP、FTP 为未加密连接可填入 GoAgent 的代理端口配置，而在 SOCKS 代理中填入 ShadowSocks 的端口号，如此一来，HTTPS 就会自动走 ShadowSocks，未加密流量就会走 GoAgent，从而不用导入 GoAgent CA 证书。不过使用此方法带来的问题就是 HTTPS 的降速，除非你有速度良好的国外 VPS 用来设置 ShadowSocks，因为大部分国外服务器代理速度都拼不过 GAE 的，毕竟 Google 足够强大啊。
 
-## 公司VPN
+## 公司 VPN
 
 其实到头来，目前对我来说最好的翻墙方式就是使用公司的 VPN，简直太爽！但是偶尔也连不上北京的服务器，还有不能上 Facebook 的时候开一个 GA&SS 代理就行了。

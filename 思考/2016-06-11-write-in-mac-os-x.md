@@ -4,9 +4,8 @@ title: 敏捷写作：macOS 环境下写作系统的最优配置
 categories: [思考]
 tags: [写作, Mac, 学习, PKM, 个人成长, 敏捷, 效率]
 published: True
-
 ---
- 
+
 ## 敏捷与个人成长
 
 工具不再多，而是要定制化，深度适应个人需求，并应当 `infrastructure as assets`，每个程序员都应该有属于自己的一套工具箱，这些基础设施的配置是伴随一个人最珍贵的资产，这绝对是这个成长期需要注重的事情。
@@ -47,8 +46,8 @@ published: True
 
 ![](https://raw.githubusercontent.com/JimmyLv/images/master/2019/006tNbRwgy1fw2b9a4booj31kw14ptd2.jpg)
 
-+ 通过 Alfred 和快捷键，就可以尽可能得减少切换成本，所以 [Hocus Focus - A Mac menu bar utility that hides your inactive windows](http://hocusfoc.us/) 自动隐藏其他窗口，大概是个伪需求。
-+ 再比如全局可显示，即每个 Desktop 都能随处打开的窗口就是一个痒点，比如 `F12` 之下的 iTerm2，以及 `Cmd + Space` 打开 Alfred 和 `^ + Cmd + N` 打开 Evernote 通知栏小窗口。很爽，随时随地就是干。
+- 通过 Alfred 和快捷键，就可以尽可能得减少切换成本，所以 [Hocus Focus - A Mac menu bar utility that hides your inactive windows](http://hocusfoc.us/) 自动隐藏其他窗口，大概是个伪需求。
+- 再比如全局可显示，即每个 Desktop 都能随处打开的窗口就是一个痒点，比如 `F12` 之下的 iTerm2，以及 `Cmd + Space` 打开 Alfred 和 `^ + Cmd + N` 打开 Evernote 通知栏小窗口。很爽，随时随地就是干。
 
 自动整理，这是一个高阶话题，也就是达到自动化工作流的最高境界，在必要的时候输出固定规则下的内容，但此时也会出现很多没有经过大脑处理过滤的内容，所以只发生在外部索引而缺失了内部索引。但这个话题下的自动整理更倾向于自动化处理那些根本不值得要经过大脑处理的内容，也就是繁杂的琐事并不能够产生价值。
 
@@ -62,17 +61,17 @@ published: True
 ### Evernote 和 Sublime 的无缝链接
 
 - Markdown 编辑端：Sublime 依旧是目前来说的最佳编辑方式
-    + 除了不能再中文词组间跳转以外（这个可以在 Evernote 中做到）
-    + 放弃在 Evernote 编辑 Markdown 并预览的想法（通常有借助 [AppleScript](https://github.com/sandai/madever) 实现）
-    + 进一步学习 Sublime 中 [MarkdownEditing](https://github.com/SublimeText-Markdown/MarkdownEditing) 的快捷键，好用到哭，以及完美格式高亮。
+  - 除了不能再中文词组间跳转以外（这个可以在 Evernote 中做到）
+  - 放弃在 Evernote 编辑 Markdown 并预览的想法（通常有借助 [AppleScript](https://github.com/sandai/madever) 实现）
+  - 进一步学习 Sublime 中 [MarkdownEditing](https://github.com/SublimeText-Markdown/MarkdownEditing) 的快捷键，好用到哭，以及完美格式高亮。
 - 富文本编辑端：
-    + Evernote 作为富文本编辑的一端，主要功能更多在于预览显示（其中图片无法缩成 md link，故遮挡了视线）
-    + check 一下 Evernote 在 [Mac OS X 下的文件系统](https://www.zhihu.com/question/20651262)是怎么样的，可以打开看到在 content 目录下。
+  - Evernote 作为富文本编辑的一端，主要功能更多在于预览显示（其中图片无法缩成 md link，故遮挡了视线）
+  - check 一下 Evernote 在 [Mac OS X 下的文件系统](https://www.zhihu.com/question/20651262)是怎么样的，可以打开看到在 content 目录下。
 - 版本管理：
-    + 经过实际使用效果来说，并没有什么情况下是需要用到这个功能的，若一切都是同步到 Evernote 的，就并不会出现误删除的情况了，还有就是 Evernote 付费账号是有历史版本的。 [How to access and use note history – Evernote Help & Learning](https://help.evernote.com/hc/en-us/articles/208313858-How-to-access-and-use-note-history)
-    + 而最近在用的 MarkEditor 是有自带的版本管理的，右键文件名就可以查看 History Versions。
-    + 至于非自我产出的内容，比如 Session PPT，电子书，这些都可以到互联网上随时可找的，并不担心丢失。
-    + 还有物理备份，即 TimeMachine 是同步到移动硬盘的，所以有了多重保障。
+  - 经过实际使用效果来说，并没有什么情况下是需要用到这个功能的，若一切都是同步到 Evernote 的，就并不会出现误删除的情况了，还有就是 Evernote 付费账号是有历史版本的。 [How to access and use note history – Evernote Help & Learning](https://help.evernote.com/hc/en-us/articles/208313858-How-to-access-and-use-note-history)
+  - 而最近在用的 MarkEditor 是有自带的版本管理的，右键文件名就可以查看 History Versions。
+  - 至于非自我产出的内容，比如 Session PPT，电子书，这些都可以到互联网上随时可找的，并不担心丢失。
+  - 还有物理备份，即 TimeMachine 是同步到移动硬盘的，所以有了多重保障。
 
 ![](https://raw.githubusercontent.com/JimmyLv/images/master/2019/006tNbRwgy1fw2b9chfxaj31kw1040zi.jpg)
 
@@ -91,7 +90,7 @@ published: True
 
 - 换了个截图工具，[腾讯出品](http://sspai.com/33021)，可以直接截图后编辑，但是窗口截图的时候没办法消除阴影（虽然我觉得阴影挺好看的）。
 - 于是我自己设了一个 Alfred 的 WorkFlow 用来关闭和打开系统自带截图的阴影。参考：[一篇文章，解决 Mac 截图的所有问题 - 爱范儿](http://www.ifanr.com/app/546621)
-- 另外用上了一个好用 Alfred 的 WorkFlow，[tiann/markdown-img-upload: markdown图片实用工具](https://github.com/tiann/markdown-img-upload)，可以直接快捷键上传文件并生成 Markdown 格式的图片链接。
+- 另外用上了一个好用 Alfred 的 WorkFlow，[tiann/markdown-img-upload: markdown 图片实用工具](https://github.com/tiann/markdown-img-upload)，可以直接快捷键上传文件并生成 Markdown 格式的图片链接。
 - 进一步考虑 GIF 的录制，感觉小功能需要演示才倍感酸爽啊。我已经下载过的有 Gifrocket，是将视频转成 GIF 的，而[Mac 上怎么能少了一款好用的 GIF 录制工具？ - Pinapps - 感谢那些赐予我们力量的 apps - 知乎专栏](https://zhuanlan.zhihu.com/p/20732038?refer=pinapps)
 
 ![](https://raw.githubusercontent.com/JimmyLv/images/master/2019/006tNbRwgy1fw2b9f3hkij317c12ijt0.jpg)
@@ -105,7 +104,7 @@ published: True
 下一篇我就会根据应用场景来详细总结描述一下使用 MarkEditor 进行写作的过程，类似问答的形式会比较好，方便于初学者能够更好地理解。然后还要介绍一下 Reflection 在个人生活中是如何应用起来的，比如一些 App（如 Evernote 配合 reflectapp、Google 配合 Kifi）以及 Pocket 和 Kindle 的高阶用法。
 
 > **后续更新：**
-> 
+>
 > - MarkEditor 的设计确实非常好，若是初入写作这一大坑的人，我必然会大力推荐他直接用上 MarkEditor 而不用再去折腾其他乱七八糟的 Markdown 编辑器。但是由于我已然养成的操作习惯，我还是依赖于文件系统和 Alfred 直接对 Markdown 文件进行预览（Markoff）和编辑（Sublime），而且打开神速以及满足了我的可定制化需求，所以之前购买 MarkEditor 就权当对于美好事物的赞赏吧。
 > - 对于 Reflection 还得说上几句，Kifi 已经被 Google 收购并且停止运营了，reflectapp 至今未支持 Evernote 中国版即印象笔记，从 Pocket 定期发到 Kindle 的文章也没能坚持阅读下去。现在的方案大概就是，输入端全靠 Diigo 大杀器（已付费），哪怕 PDF 也是可以收录并且评注的，然后标注的内容会通过 RSS 订阅的方式在手机端进行阅读，当然标注的内容也会随着 Google 的搜索关键词出现在页面右边。
 > - 已经将 Pocket 替换为 Instapaper，Pocket 随着版本迭代已经越来越花哨，而 Instapaper 可以说依然保持着极致的阅读体验，并且在被 Pinterest 收购之后现在已经宣布所有付费功能（比如搜索和标注）全部免费。其实 Diigo 也有对应的 Read it later 的保存项，但是由于 Read it later 的时机往往都出现在碎片阅读时间即需要在移动端进行阅读，而 Diigo 现在的移动端就不说赶不上 Instapaper 的阅读体验吧，就连 Read it later 这一项都没有专门划分出来，不过也坐等 Diigo 更新移动端并且足够好得能够取代 Instapaper，现有的 IFTTT 方案减少了互相连通所需的操作，但也依然有其弊端即不能把 Instapaper 的标注内容同步到 Diigo。

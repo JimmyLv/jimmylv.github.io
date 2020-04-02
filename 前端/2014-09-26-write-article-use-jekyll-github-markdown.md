@@ -6,11 +6,11 @@ tags: [Jekyll, 写作, Git]
 published: true
 ---
 
-## 搭建Jekyll环境
+## 搭建 Jekyll 环境
 
 [官方文档](http://jekyllcn.com/docs/installation/)
 
-### 1. 安装RubyGems
+### 1. 安装 RubyGems
 
 `apt-get install rubygems`
 
@@ -42,7 +42,7 @@ $ jekyll -v
 jekyll 2.4.0
 ```
 
-### 3. 测试Jekyll
+### 3. 测试 Jekyll
 
 ```sh
 $ jekyll new my-awesome-site
@@ -54,13 +54,12 @@ $ cd my-awesome-site
 打开浏览器可以看到：
 ![3](https://raw.githubusercontent.com/JimmyLv/images/master/images/tech/0926-3.png)
 
-
 ## 使用[「JekyllBootstrap」](http://jekyllbootstrap.com/)
 
 > The Quickest Way to Blog on GitHub Pages.
 > Jekyll Generates Static Websites
 
-### 1. 使用Jekyll + GitHub Pages快速生成博客
+### 1. 使用 Jekyll + GitHub Pages 快速生成博客
 
 - JekyllBootstrap 提供了一个界面：[Host on GitHub in 3 Minutes](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
 
@@ -70,7 +69,7 @@ $ cd my-awesome-site
 
 > 3. Profit
 
-### 2. 利用Jekyll进行本地调试
+### 2. 利用 Jekyll 进行本地调试
 
 - 直接下载 jekyll-bootstrap 模板
 
@@ -102,14 +101,13 @@ CNAME already taken: ......
 
 这个错误是因为 CNAME 文件的原因，是用来指定自定义域名的，和本地调试地址冲突。如果你没有自定义域名，那就不需要删除。
 
-
-### 3. Markdown写作
+### 3. Markdown 写作
 
 > [Markdown: Basics （快速入门）](http://wowubuntu.com/markdown/basic.html)
 
-> [阳志平：Markdown写作浅谈](http://www.yangzhiping.com/tech/r-markdown-knitr.html)
+> [阳志平：Markdown 写作浅谈](http://www.yangzhiping.com/tech/r-markdown-knitr.html)
 
-1) **本地写作**
+1. **本地写作**
 
 - [UberWriter](http://jonathanmh.com/uberwriter-a-markdown-editor-for-linux/): a MarkDown Editor for Linux
 
@@ -119,9 +117,9 @@ sudo apt-get update
 sudo apt-get install uberwriter
 ```
 
-- 只需要在_posts 文件夹下添加相应博文的.md 文件即可。
+- 只需要在\_posts 文件夹下添加相应博文的.md 文件即可。
 
-> 注意命名格式一定要是yy-mm-dd-title.md，title是你文章的标题。（也可以卸载.md文件开头）
+> 注意命名格式一定要是 yy-mm-dd-title.md，title 是你文章的标题。（也可以卸载.md 文件开头）
 
 - 每篇文章的开头都要指定一定的格式，如本文：
 
@@ -135,7 +133,7 @@ description: null
 published: true
 ```
 
-layout: post 指的是博文格式要按照_layouts 文件夹下的
+layout: post 指的是博文格式要按照\_layouts 文件夹下的
 
 post.html 指定的格式来显示。
 
@@ -145,11 +143,11 @@ tags: 指定博文标签。
 
 published: 表示发布与否
 
-2) **线上写作**
+2. **线上写作**
 
 - 在线 Md 编辑器：
 
-> 1.[马克飞象](http://maxiang.info)- 专为印象笔记打造的Markdown
+> 1.[马克飞象](http://maxiang.info)- 专为印象笔记打造的 Markdown
 
 > 2.[StackEdit](https://stackedit.io/) – In-browser markdown editor
 
@@ -162,7 +160,6 @@ published: 表示发布与否
 最终就选择了 Prose.io 直接在线编辑修改 GitHub 上的文章，无比方便。
 
 ![5](https://raw.githubusercontent.com/JimmyLv/images/master/images/tech/0926-5.png)
-
 
 ## 其他的快速「博客」方案
 
@@ -177,12 +174,12 @@ Connect and post using Evernote, Dropbox and Pocket.
 ### 2. [Farbox](https://www.farbox.com/)
 
 The Best Blog Platform on Cloud
- 
-> Realtime and dynamic, Folder is a database, FarBox is a webserver. Simple is Everything. 
+
+> Realtime and dynamic, Folder is a database, FarBox is a webserver. Simple is Everything.
 
 ### 3. [Medium](https://medium.com/about/welcome-to-medium-9e53ca408c48)
 
-> Medium is a new place on the Internet where people share ideas and stories that are longer than 140 characters and not just for friends. 
+> Medium is a new place on the Internet where people share ideas and stories that are longer than 140 characters and not just for friends.
 
 ### 4. [简书](http://www.jianshu.com/)
 

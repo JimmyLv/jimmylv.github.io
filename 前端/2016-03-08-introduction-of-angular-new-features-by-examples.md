@@ -4,9 +4,7 @@ title: 升级 AngularJS 1.5：新特性对比与最佳实践
 categories: [前端]
 tags: [AngularJS, JavaScript]
 published: True
-
 ---
-
 
 ## 图谋不轨：帮助（~~勾引~~）开发者过渡到 Angular 2.0
 
@@ -83,11 +81,11 @@ published: True
       };
     }
 
-当然，这也更加便于用户向  Angular 2.0 迁移，如果你对 Angular 2.0 的[生命周期](https://angular.io/docs/ts/latest/guide/lifecycle-hooks.html)有所了解的话，这里的 `$onInit()` 其实就等同于 `ngOnInit` 函数。
+当然，这也更加便于用户向 Angular 2.0 迁移，如果你对 Angular 2.0 的[生命周期](https://angular.io/docs/ts/latest/guide/lifecycle-hooks.html)有所了解的话，这里的 `$onInit()` 其实就等同于 `ngOnInit` 函数。
 
 ### ControllerAs 语法是什么鬼？
 
-AngularJS 在早些版本引入了 `controllerAs` 语法，相当于给 ViewModel 定义了一个命名空间，从而避免了不同层级 Scope 关系的混淆不清。并且，`controllerAs`语法也更加从语法层面上体现了 Controller 初始化 ViewModel 数据的单一职责，若把 `as` 看做面向对象编程当中的 `new`，其实就相当于将 Controller 这个 Function() 进行实例化，从而我们就拥有了 ViewModel 这么一个可以在模板当中直接使用的对象。而其实现原理，则是直接把这个对象再次挂在当前 Controller 所对应的 $scope 之上，可以试着在 `link` 方法里边儿判断一下 `$ctrl === $scope.vm`，其结果为 `true`。
+AngularJS 在早些版本引入了 `controllerAs` 语法，相当于给 ViewModel 定义了一个命名空间，从而避免了不同层级 Scope 关系的混淆不清。并且，`controllerAs`语法也更加从语法层面上体现了 Controller 初始化 ViewModel 数据的单一职责，若把 `as` 看做面向对象编程当中的 `new`，其实就相当于将 Controller 这个 Function() 进行实例化，从而我们就拥有了 ViewModel 这么一个可以在模板当中直接使用的对象。而其实现原理，则是直接把这个对象再次挂在当前 Controller 所对应的 \$scope 之上，可以试着在 `link` 方法里边儿判断一下 `$ctrl === $scope.vm`，其结果为 `true`。
 
     <div ng-controller="MainCtrl as main">
         <my-component
@@ -125,7 +123,7 @@ AngularJS 在早些版本引入了 `controllerAs` 语法，相当于给 ViewMode
       controllerAs: 'ctrl'
     });
 
-当某一个变量需要双向绑定的时候，我们不得已重新使用只有挂载在 $scope 底下的 `$watch()` 方法来动态监测这个值在指令当中是否发生了改变，好不容易消失的 $scope 又出来丢人现眼了。也就是因为这个原因，Angular 又加入新的 `bindToController` 语法，从字面上就很容易看懂它的意思，即将这个变量直接绑定到指令自带的 Controller，从而也就不用 `$watch()` 方法了，至此，彻底摆脱了 $scope。
+当某一个变量需要双向绑定的时候，我们不得已重新使用只有挂载在 \$scope 底下的 `$watch()` 方法来动态监测这个值在指令当中是否发生了改变，好不容易消失的 \$scope 又出来丢人现眼了。也就是因为这个原因，Angular 又加入新的 `bindToController` 语法，从字面上就很容易看懂它的意思，即将这个变量直接绑定到指令自带的 Controller，从而也就不用 `$watch()` 方法了，至此，彻底摆脱了 \$scope。
 
 ### 再论 Scope 黑魔法
 

@@ -3,7 +3,7 @@ layout: post
 title: Ubuntu下的程序安装与卸载
 category: 编程
 tags: [Ubuntu, 软件]
-description: 
+description:
 ---
 
 ## 程序安装与卸载`apt-get`
@@ -30,11 +30,11 @@ sudo add-apt-repository ppa:ubuntu-wine/ppa
 
 #更新源
 
-sudo apt-get update 
+sudo apt-get update
 
 #更新已安装的包
 
-sudo apt-get upgrade 
+sudo apt-get upgrade
 
 ```
 
@@ -44,19 +44,19 @@ sudo apt-get upgrade
 
 #搜索包
 
-apt-cache search package 
+apt-cache search package
 
 #获取包的相关信息，如说明、大小、版本等
 
-apt-cache show package 
+apt-cache show package
 
 #安装包
 
-sudo apt-get install package 
+sudo apt-get install package
 
 #重新安装包
 
-sudo apt-get install package - - reinstall 
+sudo apt-get install package - - reinstall
 
 ```
 
@@ -84,11 +84,10 @@ dpkg --force-all --purge packagename
 
 #清除已经卸载的软件包的.deb文件
 
-sudo apt-get autoclean 
+sudo apt-get autoclean
 
 #将已安装软件包的.deb文件一并删除
 
-sudo apt-get clean 
+sudo apt-get clean
 
 ```
-

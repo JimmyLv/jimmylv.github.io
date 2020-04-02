@@ -89,6 +89,7 @@ Promise.all([
   )
 );
 ```
+
 ```ejs
 # views/index.ejs
   <head>
@@ -116,28 +117,42 @@ Promise.all([
 
 ```html
 <body>
-  <iframe width="100%" height="200" src="https://microfrontends-header.herokuapp.com/"></iframe>
-  <iframe width="100%" height="200" src="https://microfrontends-products-list.herokuapp.com/"></iframe>
-  <iframe width="100%" height="200" src="https://microfrontends-cart.herokuapp.com/"></iframe>
+  <iframe
+    width="100%"
+    height="200"
+    src="https://microfrontends-header.herokuapp.com/"
+  ></iframe>
+  <iframe
+    width="100%"
+    height="200"
+    src="https://microfrontends-products-list.herokuapp.com/"
+  ></iframe>
+  <iframe
+    width="100%"
+    height="200"
+    src="https://microfrontends-cart.herokuapp.com/"
+  ></iframe>
 </body>
 ```
 
 我们也可以将每个子应用程序嵌入到各自的 `<iframe>` 中，这使得每个模块能够使用任何他们需要的框架，而无需与其他团队协调工具和依赖关系，依然可以借助于一些库或者 `Window.postMessageAPI` 来进行交互。
 
 - **优点**：
-  * 最强大的是隔离了组件和应用程序部分的运行时环境，因此每个模块都可以独立开发，并且可以与其他部分的技术无关
-  * 可以各自使用完全不同的前端框架，可以在 React 中开发一部分，在 Angular 中开发一部分，然后使用原生 JavaScript 开发其他部分或任何其他技术。
-  * 只要每个 iframe 来自同一个来源，消息传递也就相当直接和强大。参考文档 [`Window.postMessageAPI`](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage)
+  - 最强大的是隔离了组件和应用程序部分的运行时环境，因此每个模块都可以独立开发，并且可以与其他部分的技术无关
+  - 可以各自使用完全不同的前端框架，可以在 React 中开发一部分，在 Angular 中开发一部分，然后使用原生 JavaScript 开发其他部分或任何其他技术。
+  - 只要每个 iframe 来自同一个来源，消息传递也就相当直接和强大。参考文档 [`Window.postMessageAPI`](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage)
 - **缺点**：
-  * Bundle 的大小非常明显，因为可能最终会多次发送相同的库，并且由于应用程序是分开的，所以在构建时也不能提取公共依赖关系。
-  * 至于浏览器的支持，基本上不可能嵌套两层以上的 iframe（`parent - > iframe - > iframe`）。
-  * 如果任何嵌套的框架需要能够滚动或具有 Form 表单域，那样的情况处理起来就会变得特别痛苦。
+  - Bundle 的大小非常明显，因为可能最终会多次发送相同的库，并且由于应用程序是分开的，所以在构建时也不能提取公共依赖关系。
+  - 至于浏览器的支持，基本上不可能嵌套两层以上的 iframe（`parent - > iframe - > iframe`）。
+  - 如果任何嵌套的框架需要能够滚动或具有 Form 表单域，那样的情况处理起来就会变得特别痛苦。
 
 #### Option 3: 客户端 JavaScript 异步加载
 
 ```js
-function loadPage (element) {
-  [].forEach.call(element.querySelectorAll('script'), function (nonExecutableScript) {
+function loadPage(element) {
+  [].forEach.call(element.querySelectorAll("script"), function (
+    nonExecutableScript
+  ) {
     var script = document.createElement("script");
     script.setAttribute("src", nonExecutableScript.src);
     script.setAttribute("type", "text/javascript");
@@ -145,7 +160,7 @@ function loadPage (element) {
   });
 }
 
-document.querySelectorAll('.load-app').forEach(loadPage);
+document.querySelectorAll(".load-app").forEach(loadPage);
 ```
 
 ```html
@@ -164,10 +179,10 @@ Web Components 是一个 Web 标准，所以像 Angular、React/Preact、Vue 或
 
 Web Components 由以下四种技术组成（尽管每种技术都可以独立使用）：
 
-* [自定义元素（Custom Elements）](https://developer.mozilla.org/zh-CN/docs/Web/Web_Components/Custom_Elements)对外提供组件的标签，实现自定义标签：可以创建自己的自定义 HTML 标签和元素。每个元素可以有自己的脚本和 CSS 样式。还包括生命周期回调，它们允许我们定义正在加载的组件特定行为。
-* [HTML 模板（HTML `<template>`）](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/template)定义组件的 HTML 模板能力：一种用于保存客户端内容的机制，该内容在页面加载时不被渲染，但可以在运行时使用 JavaScript 进行实例化。可以将一个模板视为正在被存储以供随后在文档中使用的一个内容片段。
-* [影子 DOM（Shadow DOM）](https://developer.mozilla.org/zh-CN/docs/Web/Web_Components/Shadow_DOM)封装组件的内部结构，并且保持其独立性：允许我们在 Web 组件中封装 JavaScript，CSS 和 HTML。在组件内部时，这些东西与主文档的 DOM 分离。
-* [HTML 导入（HTML Imports）](https://developer.mozilla.org/zh-CN/docs/Web/Web_Components/HTML_Imports)解决组件组合和依赖加载：在微前端的上下文中，可以是包含我们要使用的组件在服务器上的远程位置。
+- [自定义元素（Custom Elements）](https://developer.mozilla.org/zh-CN/docs/Web/Web_Components/Custom_Elements)对外提供组件的标签，实现自定义标签：可以创建自己的自定义 HTML 标签和元素。每个元素可以有自己的脚本和 CSS 样式。还包括生命周期回调，它们允许我们定义正在加载的组件特定行为。
+- [HTML 模板（HTML `<template>`）](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/template)定义组件的 HTML 模板能力：一种用于保存客户端内容的机制，该内容在页面加载时不被渲染，但可以在运行时使用 JavaScript 进行实例化。可以将一个模板视为正在被存储以供随后在文档中使用的一个内容片段。
+- [影子 DOM（Shadow DOM）](https://developer.mozilla.org/zh-CN/docs/Web/Web_Components/Shadow_DOM)封装组件的内部结构，并且保持其独立性：允许我们在 Web 组件中封装 JavaScript，CSS 和 HTML。在组件内部时，这些东西与主文档的 DOM 分离。
+- [HTML 导入（HTML Imports）](https://developer.mozilla.org/zh-CN/docs/Web/Web_Components/HTML_Imports)解决组件组合和依赖加载：在微前端的上下文中，可以是包含我们要使用的组件在服务器上的远程位置。
 
 ```js
 # src/index.js
@@ -178,11 +193,12 @@ class Header extends HTMLElement {
 }
 document.registerElement('microfrontends-header', Header);
 ```
+
 ```html
 <body>
-    <microfrontends-header></microfrontends-header>
-    <microfrontends-products-list></microfrontends-products-list>
-    <microfrontends-cart></microfrontends-cart>
+  <microfrontends-header></microfrontends-header>
+  <microfrontends-products-list></microfrontends-products-list>
+  <microfrontends-cart></microfrontends-cart>
 </body>
 ```
 
@@ -194,9 +210,9 @@ document.registerElement('microfrontends-header', Header);
 - 创建可被导入到 Web 应用程序中的可重用组件，它们就像可以导入任何网页的用户界面小部件。
 
 ```html
-<link rel="import" href="/components/microfrontends/header.html">
-<link rel="import" href="/components/microfrontends/products-list.html">
-<link rel="import" href="/components/microfrontends/cart.html">
+<link rel="import" href="/components/microfrontends/header.html" />
+<link rel="import" href="/components/microfrontends/products-list.html" />
+<link rel="import" href="/components/microfrontends/cart.html" />
 ```
 
 - 优点
@@ -209,7 +225,6 @@ document.registerElement('microfrontends-header', Header);
   - 我们需要在整个 Web 应用程序上做出改变，把它们全部转换成 Web Components。
   - 社区不够活跃，Web Components 还没有真正流行起来，也许永远也不会。
 
-
 ### 不同 App 模块之间如何交互？
 
 ```js
@@ -217,6 +232,7 @@ document.registerElement('microfrontends-header', Header);
 const event = new CustomEvent('addToCart', { detail: item });
 window.dispatchEvent(event);
 ```
+
 ```js
 # reactComponent.js
 componentDidMount() {
@@ -248,38 +264,46 @@ componentDidMount() {
 
 ![](https://raw.githubusercontent.com/JimmyLv/images/master/2017/12/1514122411683.png)
 
-- **提取共同依赖作为 externals 加载**：虽然说不同 App 模块之间不能直接共享相同的第三方模块，当我们依然可以将常用的依赖比如 `lodash`、`moment.js`等公共库，或者跨多个团队共同使用的 `react` 和 `react-dom`。通过 Webpack 等构建工具就可以把打包的时候将这些共同模块排除掉，而只需要在 HTML `<header>` 中的 `<script>`中直接通过 CDN  加载 externals 依赖。
+- **提取共同依赖作为 externals 加载**：虽然说不同 App 模块之间不能直接共享相同的第三方模块，当我们依然可以将常用的依赖比如 `lodash`、`moment.js`等公共库，或者跨多个团队共同使用的 `react` 和 `react-dom`。通过 Webpack 等构建工具就可以把打包的时候将这些共同模块排除掉，而只需要在 HTML `<header>` 中的 `<script>`中直接通过 CDN 加载 externals 依赖。
 
 ```html
 <script
   src="https://cdnjs.cloudflare.com/ajax/libs/react/16.2.0/react.min.js"
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous"
+></script>
 <script
   src="https://cdnjs.cloudflare.com/ajax/libs/react/16.2.0/react-dom.min.js"
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous"
+></script>
 ```
 
 ### 微前端在 AEM（CMS）项目的应用
 
 我们在「三靠谱」（~~已和谐客户名称~~）的 Marketplace 项目当中也曾经探索过 AEM + React 混合开发的解决方案，其中就涉及到如何在 AEM 当中嵌入 React 组件，甚至将 AEM 组件又强行转化为 React 组件进行嵌套。现在回过头来其实也算是微前端的一种实践：
 
-* AEM 仅仅包含网页内容，不包含 domain 相关的结构化数据。
-* React 组件被托管在 AEM 组件当中，再经由 AEM 传递给组件所需要的属性，比如 IDs 或 APIs 的 URL 等等
-* 后端微服务则包含 domain 结构化数据，由对应的 React 组件通过 Ajax 进行数据查询。
+- AEM 仅仅包含网页内容，不包含 domain 相关的结构化数据。
+- React 组件被托管在 AEM 组件当中，再经由 AEM 传递给组件所需要的属性，比如 IDs 或 APIs 的 URL 等等
+- 后端微服务则包含 domain 结构化数据，由对应的 React 组件通过 Ajax 进行数据查询。
 
 ```html
-  <div id="cms-container-1">
-    <div id="react-input-container"></div>
-    <script>
-      ReactDOM.render(React.createElement(Input, { ...injectProps }), document.getElementById('react-input-container'));
-    </script>
-  </div>
-  <div id="cms-container-2">
-    <div id="react-button-container"></div>
-    <script>
-      ReactDOM.render(React.createElement(Button, {}), document.getElementById('react-button-container'));
-    </script>
-  </div>
+<div id="cms-container-1">
+  <div id="react-input-container"></div>
+  <script>
+    ReactDOM.render(
+      React.createElement(Input, { ...injectProps }),
+      document.getElementById("react-input-container")
+    );
+  </script>
+</div>
+<div id="cms-container-2">
+  <div id="react-button-container"></div>
+  <script>
+    ReactDOM.render(
+      React.createElement(Button, {}),
+      document.getElementById("react-button-container")
+    );
+  </script>
+</div>
 ```
 
 ### 现成解决方案：[Single-SPA “meta framework”](https://single-spa.surge.sh/)
@@ -288,21 +312,21 @@ componentDidMount() {
 
 开源的 [`single-spa`](https://github.com/CanopyTax/single-spa) 自称为「元框架」，可以实现在一个页面将多个不同的框架整合，甚至在切换的时候都不需要刷新页面（支持 React、Vue、Angular 1、Angular 2、Ember 等等）：
 
-* Build micro frontends that coexist and can each be written with their own framework.
-* Use multiple frameworks on the same page without refreshing the page (React, AngularJS, Angular, Ember, or whatever you're using)
-* Write code using a new framework, without rewriting your existing app
-* Lazy load code for improved initial load time.
-* Hot reload entire chunks of your overall application (instead of individual files).
+- Build micro frontends that coexist and can each be written with their own framework.
+- Use multiple frameworks on the same page without refreshing the page (React, AngularJS, Angular, Ember, or whatever you're using)
+- Write code using a new framework, without rewriting your existing app
+- Lazy load code for improved initial load time.
+- Hot reload entire chunks of your overall application (instead of individual files).
 
 **请看示例代码，所提供的 API 非常简单：**
 
 ```js
-import * as singleSpa from 'single-spa';
+import * as singleSpa from "single-spa";
 
-const appName = 'app1';
+const appName = "app1";
 
-const loadingFunction = () => import('./app1/app1.js');
-const activityFunction = location => location.hash.startsWith('#/app1');
+const loadingFunction = () => import("./app1/app1.js");
+const activityFunction = (location) => location.hash.startsWith("#/app1");
 
 singleSpa.declareChildApplication(appName, loadingFunction, activityFunction);
 singleSpa.start();
@@ -330,36 +354,36 @@ start();
 
 ![](https://raw.githubusercontent.com/JimmyLv/images/master/2016/1515998280875.png)
 
-> 摘自技术雷达：SINGLE-SPA 是一个 JavaScript 元框架，它允许我们使用不同的框架构建微前端，而这些框架可以共存于单个应用中。一般来说，我们不建议在单个应用中使用多个框架，但有时却不得不这么做。例如当你在开发遗留系统时，你希望使用现有框架的新版本或完全不同的框架来开发新功能，single-spa 就能派上用场了。鉴于很多 JavaScript框架 都昙花一现，我们需要一个解决方案来应对未来框架的变化，以及在不影响整个应用的前提下进行局部尝试。在这个方向上，single-spa 是一个不错的开始。
+> 摘自技术雷达：SINGLE-SPA 是一个 JavaScript 元框架，它允许我们使用不同的框架构建微前端，而这些框架可以共存于单个应用中。一般来说，我们不建议在单个应用中使用多个框架，但有时却不得不这么做。例如当你在开发遗留系统时，你希望使用现有框架的新版本或完全不同的框架来开发新功能，single-spa 就能派上用场了。鉴于很多 JavaScript 框架 都昙花一现，我们需要一个解决方案来应对未来框架的变化，以及在不影响整个应用的前提下进行局部尝试。在这个方向上，single-spa 是一个不错的开始。
 
 ## 总结与思考：微前端的优缺点
 
 ### 微前端的优点
 
-* 敏捷性 - 独立开发和更快的部署周期：
+- 敏捷性 - 独立开发和更快的部署周期：
   - 开发团队可以选择自己的技术并及时更新技术栈。
   - 一旦完成其中一项就可以部署，而不必等待所有事情完毕。
-* 降低错误和回归问题的风险，相互之间的依赖性急剧下降。
-* 更简单快捷的测试，每一个小的变化不必再触碰整个应用程序。
-* 更快交付客户价值，有助于持续集成、持续部署以及持续交付。
-* 维护和 bugfix 非常简单，每个团队都熟悉所维护特定的区域。
+- 降低错误和回归问题的风险，相互之间的依赖性急剧下降。
+- 更简单快捷的测试，每一个小的变化不必再触碰整个应用程序。
+- 更快交付客户价值，有助于持续集成、持续部署以及持续交付。
+- 维护和 bugfix 非常简单，每个团队都熟悉所维护特定的区域。
 
 ### 微前端的缺点
 
-* 开发与部署环境分离
-    * 本地需要一个更为复杂的开发环境。
-    * 每个 App 模块有一个孤立的部署周期。
-    * 最终应用程序需要在**同一个**孤立的环境中运行。
-* 复杂的集成
-    * 需要考虑隔离 JS，避免 CSS 冲突，并考虑按需加载资源
-    * 处理数据获取并考虑用户的初始化加载状态
-    * 如何有效测试，微前端模块之间的 Contract Testing？
-* 第三方模块重叠
-    * 依赖冗余增加了管理的复杂性
-    * 在团队之间共享公共资源的机制
-* 影响最终用户的体验
-    * 初始 Loading 时间可能会增加
-    * HTML 会需要服务器端的渲染
+- 开发与部署环境分离
+  - 本地需要一个更为复杂的开发环境。
+  - 每个 App 模块有一个孤立的部署周期。
+  - 最终应用程序需要在**同一个**孤立的环境中运行。
+- 复杂的集成
+  - 需要考虑隔离 JS，避免 CSS 冲突，并考虑按需加载资源
+  - 处理数据获取并考虑用户的初始化加载状态
+  - 如何有效测试，微前端模块之间的 Contract Testing？
+- 第三方模块重叠
+  - 依赖冗余增加了管理的复杂性
+  - 在团队之间共享公共资源的机制
+- 影响最终用户的体验
+  - 初始 Loading 时间可能会增加
+  - HTML 会需要服务器端的渲染
 
 ### 持续思考…
 
@@ -379,7 +403,7 @@ start();
 - 软件架构到底在解决什么问题？—— 跨团队沟通的问题
   - 在正常情况下，每个团队拥有开发和维护其特性所需的一切，都应该有自己的能力来完成自己的特性，并最大限度地减少团队要求其他部门获得许可和/或帮助。
   - 当引入 library 或 framework 时的好处是只需要少数人讨论，而不用涉及超过 100 人的决策和他们的各种需求。这样一场大讨论不仅会耗费时间和精力，而且会迫使我们采用最不起眼的方法来选择 library，而不是选择专门针对每个 team 的问题领域的方案。
-  > 所谓架构，其实是解决人的问题；所谓敏捷，其实是解决沟通的问题；
+    > 所谓架构，其实是解决人的问题；所谓敏捷，其实是解决沟通的问题；
 
 ## 附：参考资料
 

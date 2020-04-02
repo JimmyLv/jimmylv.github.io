@@ -4,7 +4,6 @@ title: "【译】Facebook 正式发布 ReactJS v15.0 稳定版"
 categories: [前端]
 tags: [React, Release]
 published: True
-
 ---
 
 原文地址：[React v15.0 (April 7, 2016 by Dan Abramov)](https://facebook.github.io/react/blog/2016/04/07/react-v15.html)
@@ -21,17 +20,17 @@ published: True
 
 React 15 在如何与 DOM 进行交互这方面提供了重大改善：
 
->   * We are now using `document.createElement` instead of setting `innerHTML` when mounting components. This allows us to get rid of the `data-reactid` attribute on every node and make the DOM lighter. Using `document.createElement` is also faster in modern browsers and fixes a number of edge cases related to SVG elements and running multiple copies of React on the same page.
+> - We are now using `document.createElement` instead of setting `innerHTML` when mounting components. This allows us to get rid of the `data-reactid` attribute on every node and make the DOM lighter. Using `document.createElement` is also faster in modern browsers and fixes a number of edge cases related to SVG elements and running multiple copies of React on the same page.
 
-  * 现在我们在装载组件的时候将使用 `document.createElement` 而不是去设置 `innerHTML` 。这使得我们摆脱了每个节点上的 `data-reactid` 属性，从而保持 DOM 更加轻量级。在现代浏览器中使用 `document.createElement` 性能也会更快，与此同时修复了与 SVG 元素相关的一系列边缘问题，以及支持在同一页面同时运行多个 React 拷贝。
+- 现在我们在装载组件的时候将使用 `document.createElement` 而不是去设置 `innerHTML` 。这使得我们摆脱了每个节点上的 `data-reactid` 属性，从而保持 DOM 更加轻量级。在现代浏览器中使用 `document.createElement` 性能也会更快，与此同时修复了与 SVG 元素相关的一系列边缘问题，以及支持在同一页面同时运行多个 React 拷贝。
 
->   * Historically our support for SVG has been incomplete, and many tags and attributes were missing. We heard you, and in React 15 we [added support for all the SVG attributes that are recognized by today’s browsers](https://github.com/facebook/react/pull/6243). If we missed any of the attributes you’d like to use, please [let us know](https://github.com/facebook/react/issues/1657). As a bonus, thanks to using `document.createElement`, we no longer need to maintain a list of SVG tags, so any SVG tags that were previously unsupported should work just fine in React 15.
+> - Historically our support for SVG has been incomplete, and many tags and attributes were missing. We heard you, and in React 15 we [added support for all the SVG attributes that are recognized by today’s browsers](https://github.com/facebook/react/pull/6243). If we missed any of the attributes you’d like to use, please [let us know](https://github.com/facebook/react/issues/1657). As a bonus, thanks to using `document.createElement`, we no longer need to maintain a list of SVG tags, so any SVG tags that were previously unsupported should work just fine in React 15.
 
-  * 过往我们对 SVG 的支持不够完善，缺失了很多标签和属性。我们听从意见，所以在 React 15 当中[添加了对当今浏览器所识别的所有 SVG 属性的支持](https://github.com/facebook/react/pull/6243)。如果我们遗漏了任何你可能会用到的属性，麻烦[告知我们](https://github.com/facebook/react/issues/1657)。作为奖励，得益于使用 `document.createElement`，我们将不再需要维护一连串的 SVG 标签了，所以任何之前无法被支持的 SVG 标签在 React 15 当中都可以很好地工作。
+- 过往我们对 SVG 的支持不够完善，缺失了很多标签和属性。我们听从意见，所以在 React 15 当中[添加了对当今浏览器所识别的所有 SVG 属性的支持](https://github.com/facebook/react/pull/6243)。如果我们遗漏了任何你可能会用到的属性，麻烦[告知我们](https://github.com/facebook/react/issues/1657)。作为奖励，得益于使用 `document.createElement`，我们将不再需要维护一连串的 SVG 标签了，所以任何之前无法被支持的 SVG 标签在 React 15 当中都可以很好地工作。
 
->   * We received some amazing contributions from the community in this release, and we would like to highlight [this pull request](https://github.com/facebook/react/pull/5753) by [Michael Wiencek](https://github.com/mwiencek) in particular. Thanks to Michael’s work, React 15 no longer emits extra `<span>` nodes around the text, making the DOM output much cleaner. This was a longstanding annoyance for React users so it’s exciting to accept this as an outside contribution.
+> - We received some amazing contributions from the community in this release, and we would like to highlight [this pull request](https://github.com/facebook/react/pull/5753) by [Michael Wiencek](https://github.com/mwiencek) in particular. Thanks to Michael’s work, React 15 no longer emits extra `<span>` nodes around the text, making the DOM output much cleaner. This was a longstanding annoyance for React users so it’s exciting to accept this as an outside contribution.
 
-  * 我们本次版本发布当中，也得到了一些非常优秀的社区贡献，我们觉得应当特别强调一下由 [Michael Wiencek](https://github.com/mwiencek) 所提供的这个 [pull request](https://github.com/facebook/react/pull/5753)。归功于 Michael，React 15 不再需要为文本单独包裹一层额外的 `<span>` 节点，这使得 DOM 输出更加整洁了。这是一个困扰 React 用户已久的问题，所以这是所采纳的一个非常令人兴奋的外部贡献。
+- 我们本次版本发布当中，也得到了一些非常优秀的社区贡献，我们觉得应当特别强调一下由 [Michael Wiencek](https://github.com/mwiencek) 所提供的这个 [pull request](https://github.com/facebook/react/pull/5753)。归功于 Michael，React 15 不再需要为文本单独包裹一层额外的 `<span>` 节点，这使得 DOM 输出更加整洁了。这是一个困扰 React 用户已久的问题，所以这是所采纳的一个非常令人兴奋的外部贡献。
 
 > While this isn’t directly related to the release, we understand that in order to receive more community contributions like Michael’s, we need to communicate our goals and priorities more openly, and review pull requests more decisively. As a first step towards this, we started publishing [React core team weekly meeting notes](https://github.com/reactjs/core-notes) again. We also intend to introduce an RFC process inspired by [Ember RFCs](https://github.com/emberjs/rfcs) so external contributors can have more insight and influence in the future development of React. We will keep you updated about this on our blog.
 
@@ -54,4 +53,3 @@ React 15 在如何与 DOM 进行交互这方面提供了重大改善：
 > See the changelog below for more details.
 
 （从原文）查看 [changelog](https://facebook.github.io/react/blog/#installation) 以便得知更多详情。
-

@@ -4,14 +4,13 @@ title: 什么才是真正的 RESTful 架构？
 categories: [编程]
 tags: [REST, API, HTTP]
 published: True
-
 ---
 
 更多内容请看我最近在写的一本小书：[《Microservice 最佳实践之路》](https://jimmylv.gitbooks.io/learning-microservices/content/)，实为项目上的踩坑手册。
 
 ## What?
 
-> Wikipedia: 表征性状态传输（英文：Representational State Transfer，简称REST）是Roy Fielding博士于2000年在他的博士论文中提出来的一种软件架构风格。
+> Wikipedia: 表征性状态传输（英文：Representational State Transfer，简称 REST）是 Roy Fielding 博士于 2000 年在他的博士论文中提出来的一种软件架构风格。
 
 Roy Fielding 是 HTTP 协议（1.0 版和 1.1 版）的主要设计者，事实上 HTTP 1.1 规范正是基于 REST 架构风格的指导原理来设计的。需要注意的是，REST 是一种设计风格而不是标准，如果一个架构符合 REST 原则，我们就称它为 RESTful 架构。
 
@@ -19,7 +18,7 @@ Roy Fielding 是 HTTP 协议（1.0 版和 1.1 版）的主要设计者，事实�
 
 ![](https://raw.githubusercontent.com/JimmyLv/images/master/2016/1471531874674.png)
 
-在「远古时代」前端后端是融合在一起的，比如之前的 PHP，JSP，ASP 等等（参考我之前做过的一场演讲：[Web前端开发模式演变](http://blog.jimmylv.info/2015-11-02-history-about-web-development-evolution/)）。近年来随着移动互联网的飞速发展，各种类型的 Client 端层出不穷，就需要通过一套统一的接口分别为 Web，iOS 和 Android 乃至桌面端提供服务。另外对于广大平台来说，比如 Facebook platform，微博开放平台，微信公共平台等，它们不需要有显式的前端，只需要一套提供服务的接口，于是 RESTful 更是它们最好的选择。
+在「远古时代」前端后端是融合在一起的，比如之前的 PHP，JSP，ASP 等等（参考我之前做过的一场演讲：[Web 前端开发模式演变](http://blog.jimmylv.info/2015-11-02-history-about-web-development-evolution/)）。近年来随着移动互联网的飞速发展，各种类型的 Client 端层出不穷，就需要通过一套统一的接口分别为 Web，iOS 和 Android 乃至桌面端提供服务。另外对于广大平台来说，比如 Facebook platform，微博开放平台，微信公共平台等，它们不需要有显式的前端，只需要一套提供服务的接口，于是 RESTful 更是它们最好的选择。
 
 而要理解 RESTful 架构，最好的方法就是去理解**Representational State Transfer**这个词组，直译过来就是「表现层状态转化」，其实它省略了主语。「表现层」其实指的是「资源」的「表现层」，所以通俗来讲就是：资源在网络中以某种表现形式进行状态转移。分解开来：
 
@@ -48,12 +47,12 @@ Roy Fielding 是 HTTP 协议（1.0 版和 1.1 版）的主要设计者，事实�
 
 HTTP 请求方法在 RESTful API 中的典型应用：
 
-|资源 | GET | PUT | POST | DELETE|
-|----|-----|-----|------|-------|
-|一组资源的 URI，比如`http://example.com/resources/`|列出 URI，以及该资源组中每个资源的详细信息（后者可选）。|使用给定的一组资源替换当前整组资源。|在本组资源中创建/追加一个新的资源。该操作往往返回新资源的 URL。|删除整组资源。|
-|单个资源的 URI，比如`http://example.com/resources/142`|获取指定的资源的详细信息，格式可以自选一个合适的网络媒体类型（比如：XML、JSON 等）|替换/创建指定的资源。并将其追加到相应的资源组中。|把指定的资源当做一个资源组，并在其下创建/追加一个新的元素，使其隶属于当前资源。|删除指定的元素。|
+| 资源                                                   | GET                                                                                | PUT                                               | POST                                                                            | DELETE           |
+| ------------------------------------------------------ | ---------------------------------------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------------------------------------- | ---------------- |
+| 一组资源的 URI，比如`http://example.com/resources/`    | 列出 URI，以及该资源组中每个资源的详细信息（后者可选）。                           | 使用给定的一组资源替换当前整组资源。              | 在本组资源中创建/追加一个新的资源。该操作往往返回新资源的 URL。                 | 删除整组资源。   |
+| 单个资源的 URI，比如`http://example.com/resources/142` | 获取指定的资源的详细信息，格式可以自选一个合适的网络媒体类型（比如：XML、JSON 等） | 替换/创建指定的资源。并将其追加到相应的资源组中。 | 把指定的资源当做一个资源组，并在其下创建/追加一个新的元素，使其隶属于当前资源。 | 删除指定的元素。 |
 
-## REST的误解
+## REST 的误解
 
 现在看来，REST 在 2000 年那个时代，确实是超前于时代的。Web 开发者社区对于 HTTP 的设计意图存在着大量的误解，由此导致了对于 HTTP 的大量低效率的误用。这个情况持续一直到 2005 年 Web 2.0 的崛起。那个时候，DCOM、EJB、SOAP/WSDL 这些 DO 风格的架构由于难以满足互联网环境对分布式应用架构设计的约束，与 Web 自身的架构风格 REST 相冲突，很难融入到 Web 之中。所谓的「Web
 Services」，其实除了将 HTTP 作为底层的传输协议外，跟（互联网环境中的）真正的 Web 没有什么关系。
@@ -69,7 +68,7 @@ buzzword 的挂羊头卖狗肉者也是如此之多，以至于 REST 的创造�
 客，做出了一个非常明确的断言：[REST APIs must be hypertext-driven!](http://roy.gbiv.com/untangled/2008/rest-apis-must-be-hypertext-driven)（REST API 必须是超文本驱动的！）超文本驱动这个理念变成了一个缩写词 HATEOAS，这个缩写词来自于当初 Fielding 博士论文中的一句话：
 hypermedia as the engine of application state（将超媒体作为应用状态的引擎）。其实超文本驱动（Hypertext Driven）的理念才是 REST 架构风格最核心的理念，也是 REST 风格的架构达到松耦合目标的根本原因。
 
-## REST设计进阶
+## REST 设计进阶
 
 当谈及 REST 成熟度时，一些人常常会引用 Richardson 所提出来的 REST 成熟度模型（[Maturity Model](http://restcookbook.com/Miscellaneous/richardsonmaturitymodel/)），并视之为正确的度量方法。
 
@@ -77,11 +76,11 @@ hypermedia as the engine of application state（将超媒体作为应用状态�
 
 ### 第一级：在架构中引入资源（Resource）的概念。
 
-大多数 WS-*服务和 POX 都只是使用一个 URI 作为一个服务端口，也只使用一个 HTTP 方法传输数据。这种做法相当于把 HTTP 这个应用层协议降级为传输层协议用，《REST 实战》也一再强调 HTTP 是一种应用协议而不是传输协议。再好一点就是使用多个 URI，然而不同的 URI 只是作为不同的调用入口，与此同时只使用同一个 HTTP 方法传输数据。最常见的错误就是在 URI 中包含动词，比如 URI `http://example.com/getOrder?orderId=1234`，其实「资源」表示一种实体，所以应该是名词，动词应该放在 HTTP 协议中。而与此同时 URI 也有可能破坏 HTTP GET 的安全性和幕等性，比如某个客户端在`http://example.com/updateOrder?id=1234&coffee=latte`上执行 GET（而不是 POST），就能创建一笔新的咖啡订单（一个资源），按理来说 GET 请求不能改变服务的任何状态。
+大多数 WS-\*服务和 POX 都只是使用一个 URI 作为一个服务端口，也只使用一个 HTTP 方法传输数据。这种做法相当于把 HTTP 这个应用层协议降级为传输层协议用，《REST 实战》也一再强调 HTTP 是一种应用协议而不是传输协议。再好一点就是使用多个 URI，然而不同的 URI 只是作为不同的调用入口，与此同时只使用同一个 HTTP 方法传输数据。最常见的错误就是在 URI 中包含动词，比如 URI `http://example.com/getOrder?orderId=1234`，其实「资源」表示一种实体，所以应该是名词，动词应该放在 HTTP 协议中。而与此同时 URI 也有可能破坏 HTTP GET 的安全性和幕等性，比如某个客户端在`http://example.com/updateOrder?id=1234&coffee=latte`上执行 GET（而不是 POST），就能创建一笔新的咖啡订单（一个资源），按理来说 GET 请求不能改变服务的任何状态。
 
-### 第二级：每一个URI代表一种资源，支持HTTP动词。
+### 第二级：每一个 URI 代表一种资源，支持 HTTP 动词。
 
-此时使用多个 URI 的话，需要让不同的 URI 代表不同的资源（注意[多个URI可能指向同一个Resource，而一个URI不能指向不同Resource](http://www.ibm.com/developerworks/cn/webservices/1101_mace_restservicePart1/1101_mace_restservicePart1.html)。），同时使用多个 HTTP 方法操作这些资源，例如使用 POST/GET/PUT/DELET 分别进行 CRUD 操作。这时候 HTTP 头和有效载荷都包含业务逻辑，例如 HTTP 方法对应 CRUD 操作，HTTP 状态码对应操作结果的状态。我们现在看到的大多数所谓 RESTful API 做到的也就是这个级别。《REST 实战》的译者也谈到：悟性差的人，理解到 CRUD 式 Web 服务就满足了。而悟性好的人，可以彻底理解超文本驱动，甚至是与 REST 关系密切的语义网，最终达到
+此时使用多个 URI 的话，需要让不同的 URI 代表不同的资源（注意[多个 URI 可能指向同一个 Resource，而一个 URI 不能指向不同 Resource](http://www.ibm.com/developerworks/cn/webservices/1101_mace_restservicePart1/1101_mace_restservicePart1.html)。），同时使用多个 HTTP 方法操作这些资源，例如使用 POST/GET/PUT/DELET 分别进行 CRUD 操作。这时候 HTTP 头和有效载荷都包含业务逻辑，例如 HTTP 方法对应 CRUD 操作，HTTP 状态码对应操作结果的状态。我们现在看到的大多数所谓 RESTful API 做到的也就是这个级别。《REST 实战》的译者也谈到：悟性差的人，理解到 CRUD 式 Web 服务就满足了。而悟性好的人，可以彻底理解超文本驱动，甚至是与 REST 关系密切的语义网，最终达到
 REST 开发的最高境界。
 
 ### 第三级：HATEOAS，使用超媒体（hypermedia）作为应用状态引擎。
@@ -114,13 +113,13 @@ GET https://api.example.com/profile
 ## Reference
 
 - [What Is REST? -- Learn REST: A RESTful Tutorial](http://www.restapitutorial.com/lessons/whatisrest.html)
-- [什么是REST与Go语言的RESTful实现](https://github.com/astaxie/build-web-application-with-golang/blob/master/zh/08.3.md)
-- [理解RESTful架构 -- 阮一峰](http://www.ruanyifeng.com/blog/2011/09/restful.html)
+- [什么是 REST 与 Go 语言的 RESTful 实现](https://github.com/astaxie/build-web-application-with-golang/blob/master/zh/08.3.md)
+- [理解 RESTful 架构 -- 阮一峰](http://www.ruanyifeng.com/blog/2011/09/restful.html)
 - [REST 架构该怎么生动地理解？ -- 知乎](http://www.zhihu.com/question/27785028)
-- [深入浅出REST - InfoQ](http://www.infoq.com/cn/articles/rest-introduction)
-- [面向资源的架构 -- 《RESTful Web Services中文版》](http://www.cnblogs.com/heartstill/archive/2010/12/23/1915029.html)
-- [《REST实战》](http://book.douban.com/subject/6854551/)
+- [深入浅出 REST - InfoQ](http://www.infoq.com/cn/articles/rest-introduction)
+- [面向资源的架构 -- 《RESTful Web Services 中文版》](http://www.cnblogs.com/heartstill/archive/2010/12/23/1915029.html)
+- [《REST 实战》](http://book.douban.com/subject/6854551/)
 - [怎么样才算是 RESTful？读 REST in Practice](https://book.douban.com/review/5450803/)
 - [Richardson Maturity Model -- Martin Fowler](http://martinfowler.com/articles/richardsonMaturityModel.html)
 - [实现超媒体](http://www.infoq.com/cn/articles/implementing-hypermedia)
-- [GitHub API文档](https://developer.github.com/v3/)
+- [GitHub API 文档](https://developer.github.com/v3/)

@@ -4,22 +4,21 @@ title: 【译】使用 Meteor 构建「积极的用户界面」
 categories: [前端]
 tags: [Meteor, JavaScript]
 published: True
-
 ---
 
 # Optimistic UI with Meteor
 
 原文地址：<http://info.meteor.com/blog/optimistic-ui-with-meteor-latency-compensation>
 
-May 27, 2015  By [Sashko Stubailo](http://info.meteor.com/blog/author/sashko-stubailo)
+May 27, 2015 By [Sashko Stubailo](http://info.meteor.com/blog/author/sashko-stubailo)
 
 > In this post we'll look at the collection of technologies that Meteor provides to enable 'Optimistic UI' updating. This capability is crucial to user expectations for modern web apps and is fundamental to Meteor.
 
 在这篇博文中，我们就来看看 Meteor 为实现「积极 UI 更新」所提供的一系列技术。从用户对于现代 web 应用的期望来说，这种能力非常重要，而这在 Meteor 当中也是最基本的。
 
-> Meteor is a full-stack *JavaScript* platform with default technologies for every layer of the stack, starting with the database and ending with reactive UI re-rendering. You can swap these technologies out to suit your preference; for instance you can exchange the default [Blaze](https://www.meteor.com/blaze) front-end for [React](https://github.com/reactjs/react-meteor), *[Angular](http://angular-meteor.com/?__hstc=256467284.fe209fe52e5c6f2f467c8fba76fdf5a5.1436786287820.1454516487610.1454572978838.27&__hssc=256467284.2.1454572978838&__hsfp=1792478999)*, or a native [iOS front-end](https://github.com/martijnwalraven/meteor-ios).
+> Meteor is a full-stack _JavaScript_ platform with default technologies for every layer of the stack, starting with the database and ending with reactive UI re-rendering. You can swap these technologies out to suit your preference; for instance you can exchange the default [Blaze](https://www.meteor.com/blaze) front-end for [React](https://github.com/reactjs/react-meteor), _[Angular](http://angular-meteor.com/?__hstc=256467284.fe209fe52e5c6f2f467c8fba76fdf5a5.1436786287820.1454516487610.1454572978838.27&__hssc=256467284.2.1454572978838&__hsfp=1792478999)_, or a native [iOS front-end](https://github.com/martijnwalraven/meteor-ios).
 
-Meteor 是一个全栈 *JavaScript* 平台，在从数据库到响应式 UI 渲染的每一层技术架构上，都提供了默认的解决方案。当然你也可以将其替换成适合于自己的选择，比如说你可以将默认的 [Blaze](https://www.meteor.com/blaze) 前端换成 [React](https://github.com/reactjs/react-meteor)，*[Angular](http://angular-meteor.com/?__hstc=256467284.fe209fe52e5c6f2f467c8fba76fdf5a5.1436786287820.1454516487610.1454572978838.27&__hssc=256467284.2.1454572978838&__hsfp=1792478999)*，或者是原生的 [iOS 前端](https://github.com/martijnwalraven/meteor-ios)。
+Meteor 是一个全栈 _JavaScript_ 平台，在从数据库到响应式 UI 渲染的每一层技术架构上，都提供了默认的解决方案。当然你也可以将其替换成适合于自己的选择，比如说你可以将默认的 [Blaze](https://www.meteor.com/blaze) 前端换成 [React](https://github.com/reactjs/react-meteor)，_[Angular](http://angular-meteor.com/?__hstc=256467284.fe209fe52e5c6f2f467c8fba76fdf5a5.1436786287820.1454516487610.1454572978838.27&__hssc=256467284.2.1454572978838&__hsfp=1792478999)_，或者是原生的 [iOS 前端](https://github.com/martijnwalraven/meteor-ios)。
 
 > But there's one part that represents the core of the Meteor platform: full-stack data integration with [DDP](https://www.meteor.com/ddp), [LiveQuery](https://www.meteor.com/livequery), and [Minimongo](https://www.meteor.com/mini-databases). In this case the full-stack integration provides real value that would be hard to rebuild from separate components. Let me tell you why.
 
@@ -45,17 +44,17 @@ Meteor 是一个全栈 *JavaScript* 平台，在从数据库到响应式 UI 渲�
 
 ## 1\. To have your app respond instantly, you need to render the UI on the client | 为了应用即时响应，需要在客户端渲染 UI
 
-> This is one explanation for the rise of client-side rendering frameworks like *Angular* and React — you need to be able to compute your HTML directly in the browser to be able to update the view without doing a round trip to the server. Whenever the user takes an action, you need to first update your UI to make things look fast, then send a request to the server to do that modification on the real database. At Meteor, we call this Optimistic UI, or latency compensation.
+> This is one explanation for the rise of client-side rendering frameworks like _Angular_ and React — you need to be able to compute your HTML directly in the browser to be able to update the view without doing a round trip to the server. Whenever the user takes an action, you need to first update your UI to make things look fast, then send a request to the server to do that modification on the real database. At Meteor, we call this Optimistic UI, or latency compensation.
 
-这是 *Angular* 和 React 等客户端渲染框架兴起的一种解释 —— 你需要在浏览器中直接计算 HTML，而不是从服务器端重新走了一圈再来更新视图。无论何时用户触发了一个操作，你需要优先更新 UI 使之看起来反应迅速，然后再发送给服务器端去做真正的数据库修改操作。在 Meteor 中，我们称之为「积极的 UI」，或者是延时补偿。
+这是 _Angular_ 和 React 等客户端渲染框架兴起的一种解释 —— 你需要在浏览器中直接计算 HTML，而不是从服务器端重新走了一圈再来更新视图。无论何时用户触发了一个操作，你需要优先更新 UI 使之看起来反应迅速，然后再发送给服务器端去做真正的数据库修改操作。在 Meteor 中，我们称之为「积极的 UI」，或者是延时补偿。
 
 > In order to make optimistic updates and be able to predict the state of the UI after some user action, you will need to keep some of your application data on the client.
 
 为了达到「积极更新」，并且能够预测用户操作后的 UI 状态，你需要在客户端保存一些应用数据。
 
-> One option is to directly store things inside the front-end framework's local state — *Angular*'s `$scope` or React's component state — but you can imagine how this would easily result in duplication of data or inconsistency. If you have two widgets on the page showing the same data in different ways, then they will each have one copy of the data, and worse those copies might not be consistent. Having two UI elements on your page showing inconsistent results sounds like a great way to end up with confused users.
+> One option is to directly store things inside the front-end framework's local state — _Angular_'s `$scope` or React's component state — but you can imagine how this would easily result in duplication of data or inconsistency. If you have two widgets on the page showing the same data in different ways, then they will each have one copy of the data, and worse those copies might not be consistent. Having two UI elements on your page showing inconsistent results sounds like a great way to end up with confused users.
 
-其中一种选项就是直接将其存储到前端框架的本地状态当中 —— 比如 *Angular* 的 `$scope` 或者是 React 的组件状态 —— 但可想而知，这很容易就会导致数据的重复和不一致。如果你在同一页面的两个地方分别使用不同的方式显示相同的数据，然后他们都会有这个数据的一份拷贝，更糟糕的是这些拷贝很可能不一致。在页面上拥有两个显示不同结果的 UI 元素，这会使用户非常困惑，从而导致用户流失。
+其中一种选项就是直接将其存储到前端框架的本地状态当中 —— 比如 _Angular_ 的 `$scope` 或者是 React 的组件状态 —— 但可想而知，这很容易就会导致数据的重复和不一致。如果你在同一页面的两个地方分别使用不同的方式显示相同的数据，然后他们都会有这个数据的一份拷贝，更糟糕的是这些拷贝很可能不一致。在页面上拥有两个显示不同结果的 UI 元素，这会使用户非常困惑，从而导致用户流失。
 
 > So what's the solution - how do we keep all of our UI state de-duplicated and internally consistent?
 
@@ -75,9 +74,9 @@ Meteor 是唯一的框架对此问题提供了一流的解决方案，称之为 
 
 ### Run the same queries on the client and server | 在客户端和服务器端执行相同的查询操作
 
-> As you might be able to tell from the name, Minimongo uses a direct clone of MongoDB's query language to client-side *JavaScript*. This is nice because you can use the same code on the client and the server to get and update your data, making it even easier to write optimistic UI update code. Meteor has had this component since day one — it's a core part of how Meteor's magic works.
+> As you might be able to tell from the name, Minimongo uses a direct clone of MongoDB's query language to client-side _JavaScript_. This is nice because you can use the same code on the client and the server to get and update your data, making it even easier to write optimistic UI update code. Meteor has had this component since day one — it's a core part of how Meteor's magic works.
 
-可能你已经从名字中猜到，Minimongo 在客户端 *JavaScript* 中直接使用了与 MongoDB 完全相同的查询语言。这非常棒，因为你可以在客户端和服务器端使用同样的代码来获取和更新数据，这使得编写 「积极 UI 更新」的代码变得更加容易。Meteor 自打第一天开始就拥有了这个部件 —— 这是 Meteor 魔法如何工作的一个核心部分。
+可能你已经从名字中猜到，Minimongo 在客户端 _JavaScript_ 中直接使用了与 MongoDB 完全相同的查询语言。这非常棒，因为你可以在客户端和服务器端使用同样的代码来获取和更新数据，这使得编写 「积极 UI 更新」的代码变得更加容易。Meteor 自打第一天开始就拥有了这个部件 —— 这是 Meteor 魔法如何工作的一个核心部分。
 
 ## 3\. To populate your data cache, you need a protocol for data subscriptions | 为了实现数据缓存，需要数据订阅协议
 
@@ -123,9 +122,9 @@ Meteor 的方法，是依托于 Minimongo 所优先运行在客户端中的函�
 
 ## Meteor provides these benefits no matter which front-end framework you are using | 不论你使用何种前端框架，都能享受 Meteor 所提供的这些好处。
 
-> As you may have noticed throughout this article, none of these features depend on your rendering framework. You can use Meteor's integrated rendering engine Blaze, the Meteor-*Angular* project, or one of several React integrations, and still get all of the benefits of Meteor's data caching and optimistic UI updates. If you are writing a native iOS app, you can also use the excellent [iOS-DDP](https://github.com/martijnwalraven/meteor-ios) project, which implements the same front-end logic but switches out Minimongo for iOS CoreData, letting you write your app in a completely native style.
+> As you may have noticed throughout this article, none of these features depend on your rendering framework. You can use Meteor's integrated rendering engine Blaze, the Meteor-_Angular_ project, or one of several React integrations, and still get all of the benefits of Meteor's data caching and optimistic UI updates. If you are writing a native iOS app, you can also use the excellent [iOS-DDP](https://github.com/martijnwalraven/meteor-ios) project, which implements the same front-end logic but switches out Minimongo for iOS CoreData, letting you write your app in a completely native style.
 
-通过这篇文章，就像你可能已经注意到的那样，没有任何特性中会依赖于你的渲染框架。你可以使用 Meteor 已集成的渲染引擎 Blaze，也可以是 Meteor-*Angular* 项目，或者是某种 React 的集成方案，都依然能够获得 Meteor 的数据缓存和「积极 UI 更新」所带来的好处。如果你正在编写原生 iOS 应用，你也可以使用非常棒的 [iOS-DDP](https://github.com/martijnwalraven/meteor-ios) 项目，这个项目实现了同样的前端逻辑，只是为了 iOS 将 Minimongo 换成了 CoreData，从而让你能够使用一种完全原生的方式编写应用。
+通过这篇文章，就像你可能已经注意到的那样，没有任何特性中会依赖于你的渲染框架。你可以使用 Meteor 已集成的渲染引擎 Blaze，也可以是 Meteor-_Angular_ 项目，或者是某种 React 的集成方案，都依然能够获得 Meteor 的数据缓存和「积极 UI 更新」所带来的好处。如果你正在编写原生 iOS 应用，你也可以使用非常棒的 [iOS-DDP](https://github.com/martijnwalraven/meteor-ios) 项目，这个项目实现了同样的前端逻辑，只是为了 iOS 将 Minimongo 换成了 CoreData，从而让你能够使用一种完全原生的方式编写应用。
 
 ## Try it out for yourself | 为自己试一试吧！
 

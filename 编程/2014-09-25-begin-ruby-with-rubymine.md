@@ -6,9 +6,9 @@ tags: [Ruby]
 published: true
 ---
 
-## 搭建Ruby环境（RVM+Ruby+Rails+Gems）
+## 搭建 Ruby 环境（RVM+Ruby+Rails+Gems）
 
-### 1. 安装RVM
+### 1. 安装 RVM
 
 - Ruby 版本管理工具，一个命令行工具，它允许你在同一台电脑上安装并管理和切换多个 Ruby 版本。
 - cURL 是一个利用 URL 语法在命令行下工作的文件传输工具，它支持文件上传和下载，所以是综合传输工具。
@@ -20,7 +20,7 @@ $ source ~/.bashrc
 $ source ~/.bash_profile
 ```
 
-### 2.1 利用RVM安装Ruby
+### 2.1 利用 RVM 安装 Ruby
 
 - 安装 Ruby
 
@@ -31,27 +31,27 @@ $ sed -i -e 's/ftp\.ruby-lang\.org\/pub\/ruby/ruby\.taobao\.org\/mirrors\/ruby/g
 $ rvm list known
 #安装/使用/设置ruby默认版本
 $ rvm install ruby-1.9.3-p547
-$ rvm use 1.9.3 --default 
+$ rvm use 1.9.3 --default
 ```
 
 - use RVM to install gems
- 
+
 `rvm rubygems current`
 
-### 2.2 Ubuntu下apt-get直接安装Ruby[*不推荐*]
+### 2.2 Ubuntu 下 apt-get 直接安装 Ruby[*不推荐*]
 
 - 安装 ruby
 
 `sudo apt-get install ruby irb rdoc`
 
->这样安装之后rvm和ruby似乎是分开的，rvm无法使用和管理该版本的ruby
+> 这样安装之后 rvm 和 ruby 似乎是分开的，rvm 无法使用和管理该版本的 ruby
 
 - 安装 Rubygems
 
 `sudo apt-get rubygems`
 
 > RubyGems 是什么？
-> RubyGems（简称 gems）是一个用于对 Ruby组件进行打包的Ruby打包系统。它提供一个分发 Ruby 程序和库的标准格式，还提供一个管理程序包安装的工具，功能类似于Linux下的apt-get。
+> RubyGems（简称 gems）是一个用于对 Ruby 组件进行打包的 Ruby 打包系统。它提供一个分发 Ruby 程序和库的标准格式，还提供一个管理程序包安装的工具，功能类似于 Linux 下的 apt-get。
 
 使用它可以方便第从远程服务器下载并安装 Rails。输入执行命令：
 
@@ -74,10 +74,9 @@ $ rails -v
 Rails 4.1.6
 ```
 
+## 安装 RubyMine
 
-## 安装RubyMine
-
-### 1. 安装Oracle SDK
+### 1. 安装 Oracle SDK
 
 [百度经验](http://jingyan.baidu.com/article/7f766daf5e20944101e1d02b.html)
 
@@ -96,10 +95,10 @@ $ sudo apt-get install oracle-java7-installer
 $ sudo apt-get install oracle-java7-set-default
 ```
 
-### 2. 安装RubyMine
+### 2. 安装 RubyMine
 
 - 下载.tar.gz 文件
-[Ruby on Rails IDE :: JetBrains RubyMine](http://www.jetbrains.com/ruby/)
+  [Ruby on Rails IDE :: JetBrains RubyMine](http://www.jetbrains.com/ruby/)
 
 - 解压并安装
 
@@ -118,7 +117,7 @@ run
 - 激活
 
 > 输入序列号验证：
-[JetBrain 软件注册码](http://peter2009.iteye.com/blog/1975994)
+> [JetBrain 软件注册码](http://peter2009.iteye.com/blog/1975994)
 
 - 右键锁定到启动器
 

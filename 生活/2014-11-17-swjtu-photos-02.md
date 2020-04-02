@@ -3,7 +3,7 @@ layout: photo
 title: 西南交大摄影集【二】
 category: [生活]
 tags: [大学, 摄影]
-description: 
+description:
 ---
 
 ![8](https://raw.githubusercontent.com/JimmyLv/images/master/2019/006tNbRwgy1fw2as793kmj30sg0iz4qp.jpg)

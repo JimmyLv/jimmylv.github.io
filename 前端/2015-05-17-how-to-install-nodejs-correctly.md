@@ -4,7 +4,6 @@ title: Node.js的正确安装与相关工具（Mac OS X）
 categories: [前端]
 tags: [JavaScript, NodeJS]
 published: True
-
 ---
 
 ## 版本分裂
@@ -49,15 +48,15 @@ $ ll /usr/local/bin/{node,io.js}
     0 lrwxrwxrwx. 1 root root        4 Jan 14 08:29 /usr/local/bin/node -> iojs
 ```
 
-## Mac OS X下如何正确安装node
+## Mac OS X 下如何正确安装 node
 
-### 通过brew安装nvm
+### 通过 brew 安装 nvm
 
 先使用 brew 安装好 nvm（此时你还没有 node 呢，怎么`npm install nvm -g`）:
 
 ```bash
 brew update #更新软件源（就像sudo apt-get update）
-brew install nvm 
+brew install nvm
 ```
 
 在安装完毕之后需要根据 terminal 里的提示做一下操作：
@@ -74,7 +73,7 @@ export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh #实际上的目录是/usr/local/opt/nvm/nvm.sh
 ```
 
-### 通过nvm安装node
+### 通过 nvm 安装 node
 
 ```bash
 nvm install 0.12.3 #首先安装好想要的版本
@@ -83,8 +82,7 @@ nvm alias default 0.12.3 #然后设置默认的node版本以便于在所有shell
 
 通过`npm config get prefix`命令可以看到安装的路径是`/Users/Thoughtworks/.nvm/versions/node/v0.12.3`，所以 nvm 是直接把不同的 node 版本安装在先前所建立的.nvm 文件夹中，易于管理。
 
-
-### 通过npm安装依赖库
+### 通过 npm 安装依赖库
 
 ```bash
 npm install -g npm@latest #首先更新一下npm到最新版
@@ -113,10 +111,9 @@ cnpm install [package] #使用cnpm来安装对应的库
 
 - [Mac 下如何删除 卸载 nodejs](http://www.freair.com/bbs/read.php?tid=1039)
 - [Introduction to npm - How To Node - NodeJS](http://howtonode.org/introduction-to-npm)
-- [03 - Fixing npm permissions _ npm Documentation](https://docs.npmjs.com/getting-started/fixing-npm-permissions)
+- [03 - Fixing npm permissions \_ npm Documentation](https://docs.npmjs.com/getting-started/fixing-npm-permissions)
 - [How to use npm global without sudo on OSX](http://www.johnpapa.net/how-to-use-npm-global-without-sudo-on-osx/)
 - [node.js - nvm keeps _forgetting_ node in new terminal session - Stack Overflow](http://stackoverflow.com/questions/24585261/nvm-keeps-forgetting-node-in-new-terminal-session)
-- [osx - What is the suggested way to install brew, node.js, io.js, nvm, npm on OS X_ - Stack Overflow](http://stackoverflow.com/questions/28017374/what-is-the-suggested-way-to-install-brew-node-js-io-js-nvm-npm-on-os-x)
+- [osx - What is the suggested way to install brew, node.js, io.js, nvm, npm on OS X\_ - Stack Overflow](http://stackoverflow.com/questions/28017374/what-is-the-suggested-way-to-install-brew-node-js-io-js-nvm-npm-on-os-x)
 - [How to uninstall io.js (or io.js and Node.js together)](https://www.binarysludge.com/2015/01/14/how-to-uninstall-io-js-or-io-js-and-node-js-together/)
 - [Install Node.js and io.js Together (safely)](http://blog.modulus.io/install-nodejs-and-iojs-together-safely)
-

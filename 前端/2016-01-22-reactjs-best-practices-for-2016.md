@@ -10,7 +10,7 @@ published: True
 
 原文地址：<https://blog.risingstack.com/react-js-best-practices-for-2016/>
 
-Tags: [React](https://blog.risingstack.com/tag/react/) · [ReactJS](https://blog.risingstack.com/tag/reactjs/) · [best practices](https://blog.risingstack.com/tag/best-practices/) 
+Tags: [React](https://blog.risingstack.com/tag/react/) · [ReactJS](https://blog.risingstack.com/tag/reactjs/) · [best practices](https://blog.risingstack.com/tag/best-practices/)
 
 > **2015 was the year of [React](https://facebook.github.io/react/)** with tons of new releases and developer conferences dedicated to the topic all over the world. For a detailed list of the most important milestones of last year, check out our [React in 2015](https://blog.risingstack.com/react-in-2015/) wrap up.
 
@@ -24,7 +24,7 @@ Tags: [React](https://blog.risingstack.com/tag/react/) · [ReactJS](https://blog
 
 > 作为一名长时间使用 React.js 的开发者来说，我对这个问题有自己的答案以及最佳实践，但也有可能你不会完全认同。我也非常乐于倾听你的想法和观点：请留言以便讨论。
 
-![](https://risingstack-blog.s3.amazonaws.com/2016/Jan/react_best_practices-1453211146748.png)    
+![](https://risingstack-blog.s3.amazonaws.com/2016/Jan/react_best_practices-1453211146748.png)
 
 > If you are just getting started with React.js, check out our [React.js tutorial](https://blog.risingstack.com/the-react-way-getting-started-tutorial/), or the [React howto](https://github.com/petehunt/react-howto) by Pete Hunt.
 
@@ -32,7 +32,7 @@ Tags: [React](https://blog.risingstack.com/tag/react/) · [ReactJS](https://blog
 
 ## Dealing with data | 数据处理
 
-> Handling data in a React.js application is super easy, but challenging at the same time.   
+> Handling data in a React.js application is super easy, but challenging at the same time.
 
 在 React.js 应用中处理数据轻而易举，与此同时亦充满挑战。
 
@@ -50,9 +50,9 @@ Tags: [React](https://blog.risingstack.com/tag/react/) · [ReactJS](https://blog
 
 ### Flux
 
-> According to our experience, Flux is often overused *(meaning that people use it even if they don't even need it)*.
+> According to our experience, Flux is often overused _(meaning that people use it even if they don't even need it)_.
 
-根据我们的经验，Flux 经常被滥用，*（这意味着大家总是在不需要的时候就用上它）*。
+根据我们的经验，Flux 经常被滥用，_（这意味着大家总是在不需要的时候就用上它）_。
 
 > Flux provides a clean way to store and update your application's state and trigger rendering when it's needed.
 
@@ -66,13 +66,13 @@ Flux 致力于**应用的全局状态管理**，比如：管理已登录用户�
 
 我们不推荐使用 Flux 来管理路由相关的数据，比如 `/items/:itemId`。而只是获取路由数据并存储在组件的 state 之中。在这种情况下，它会在组件消失之后一起被销毁。
 
-> *If you need more info about Flux, [The Evolution of Flux Frameworks](https://medium.com/@dan_abramov/the-evolution-of-flux-frameworks-6c16ad26bb31#.90lamiv5l) is a great read.*
+> _If you need more info about Flux, [The Evolution of Flux Frameworks](https://medium.com/@dan_abramov/the-evolution-of-flux-frameworks-6c16ad26bb31#.90lamiv5l) is a great read._
 
-*如果你想了解更多关于 Flux 的信息，[The Evolution of Flux Frameworks](https://medium.com/@dan_abramov/the-evolution-of-flux-frameworks-6c16ad26bb31#.90lamiv5l) 非常值得一读。*
+_如果你想了解更多关于 Flux 的信息，[The Evolution of Flux Frameworks](https://medium.com/@dan_abramov/the-evolution-of-flux-frameworks-6c16ad26bb31#.90lamiv5l) 非常值得一读。_
 
 #### Use Redux | 使用 Redux
 
-> > Redux is a predictable state container for *JavaScript* apps.
+> > Redux is a predictable state container for _JavaScript_ apps.
 
 > Redux 是一个 JavaScript 应用的可预测状态容器。
 
@@ -90,23 +90,23 @@ Flux 致力于**应用的全局状态管理**，比如：管理已登录用户�
 
 API 经常会返回嵌套资源。这在 Flux 或基于 Redux 的架构中处理起来会非常困难。我们推荐使用 [normalizr](https://github.com/gaearon/normalizr) 之类的库将数据进行扁平化处理，**保持状态尽可能地扁平化**。
 
-> Hint for pros: 
+> Hint for pros:
 
 示意：
 
     const data = normalize(response, arrayOf(schema.user))
-    
-    state = _.merge(state, data.entities)  
 
-> *(we use [isomorphic-fetch](https://www.npmjs.com/package/isomorphic-fetch) to communicate with our APIs)*
+    state = _.merge(state, data.entities)
 
-*（我们使用 [isomorphic-fetch](https://www.npmjs.com/package/isomorphic-fetch) 来与 APIs 进行交互）*
+> _(we use [isomorphic-fetch](https://www.npmjs.com/package/isomorphic-fetch) to communicate with our APIs)_
+
+_（我们使用 [isomorphic-fetch](https://www.npmjs.com/package/isomorphic-fetch) 来与 APIs 进行交互）_
 
 ### Use immutable states | 使用 immutable 状态
 
-> > Shared mutable state is the root of all evil - *Pete Hunt, React.js Conf 2015*
+> > Shared mutable state is the root of all evil - _Pete Hunt, React.js Conf 2015_
 
-> 共享的可变性状态乃万恶之源。 —— *Pete Hunt, React.js Conf 2015*
+> 共享的可变性状态乃万恶之源。 —— _Pete Hunt, React.js Conf 2015_
 
 ![](https://risingstack-blog.s3.amazonaws.com/2016/Jan/immutable_logo_for_react_js_best_practices-1453211749818.png)
 
@@ -117,39 +117,39 @@ API 经常会返回嵌套资源。这在 Flux 或基于 Redux 的架构中处理
 > Immutable objects can save us all a headache and **improve the rendering performance** with their reference-level equality checks. Like in the `shouldComponentUpdate`:
 
 不可变对象可以让我们免于痛楚，并通过引用级别的比对检查来**改善渲染性能** 。比如说在 `shouldComponentUpdate` 中：
-    
-    shouldComponentUpdate(nexProps) {  
-     // instead of object deep comparsion
-     return this.props.immutableFoo !== nexProps.immutableFoo
-    }
 
-> **How to achieve immutability in *JavaScript*?**   
+shouldComponentUpdate(nexProps) {  
+ // instead of object deep comparsion
+return this.props.immutableFoo !== nexProps.immutableFoo
+}
+
+> **How to achieve immutability in _JavaScript_?**
 
 **如何在 JavaScript 中实现不可变呢？**
 
-> The hard way is to be careful and write code like the example below, which you should always check in your unit tests with [deep-freeze-node](https://www.npmjs.com/package/deep-freeze-node) *(freeze before the mutation and verify the result after it)*. 
+> The hard way is to be careful and write code like the example below, which you should always check in your unit tests with [deep-freeze-node](https://www.npmjs.com/package/deep-freeze-node) _(freeze before the mutation and verify the result after it)_.
 
 最痛苦的方式就是小心为之，示例代码如下，你需要在单元测试中通过 [deep-freeze-node](https://www.npmjs.com/package/deep-freeze-node) 来反复验证。（在修改之前冻结，并在结束后验证结果。）
-    
-    return {  
-      ...state,
-      foo
-    }
-    
-    return arr1.concat(arr2)  
+
+return {  
+ ...state,
+foo
+}
+
+return arr1.concat(arr2)
 
 > Believe me, these were the pretty obvious examples.
 
 相信我，这是最平淡无奇的例子了。
 
 > The less complicated way but also less natural one is to use [Immutable.js](https://facebook.github.io/immutable-js/).
-    
+
 更简单也更自然的方式就是使用 [Immutable.js](https://facebook.github.io/immutable-js/)。
 
     import { fromJS } from 'immutable'
-    
-    const state = fromJS({ bar: 'biz' })  
-    const newState = foo.set('bar', 'baz')  
+
+    const state = fromJS({ bar: 'biz' })
+    const newState = foo.set('bar', 'baz')
 
 > Immutable.js is fast, and the idea behind it is beautiful. I recommend watching the [Immutable Data and React](https://www.youtube.com/watch?v=I7IdS-PbEgI) video by [Lee Byron](https://twitter.com/leeb) even if you don't want to use it. It will give deep insight to understand how it works.
 
@@ -161,10 +161,10 @@ Immutable.js 非常之快，背后理念也异常漂亮。哪怕你并不想使�
 
 如果你不喜欢 Flux/Redux 或者只是想要更加 reactive，不要失望！这儿有很多其他数据处理的解决方案。这就有一个相关库的简要列表供你参考：
 
-  * [cycle.js](http://cycle.js.org/) *("A functional and reactive *JavaScript* framework for cleaner code")*
-  * [rx-flux](https://github.com/fdecampredon/rx-flux) *("The Flux architecture with RxJS")*
-  * [redux-rx](https://github.com/acdlite/redux-rx) *("RxJS utilities for Redux.")*
-  * [mobservable](https://mweststrate.github.io/mobservable/) *("Observable data. Reactive functions. Simple code.")*
+- [cycle.js](http://cycle.js.org/) *("A functional and reactive *JavaScript* framework for cleaner code")*
+- [rx-flux](https://github.com/fdecampredon/rx-flux) _("The Flux architecture with RxJS")_
+- [redux-rx](https://github.com/acdlite/redux-rx) _("RxJS utilities for Redux.")_
+- [mobservable](https://mweststrate.github.io/mobservable/) _("Observable data. Reactive functions. Simple code.")_
 
 ## Routing | 路由
 
@@ -190,16 +190,16 @@ Redux 用户可以通过 [redux-simple-router](https://github.com/rackt/redux-si
 
 #### Code splitting, lazy loading | 代码分割，惰性加载
 
-> Only a few of `webpack` users know that it's possible to split your application’s code to separate the bundler's output to multiple *JavaScript* chunks:
+> Only a few of `webpack` users know that it's possible to split your application’s code to separate the bundler's output to multiple _JavaScript_ chunks:
 
-只有一小部分 `webpack` 用户知道应用代码是可以分割的，将 bundler 的输出拆分成多个 *JavaScript* 块：
-    
-    require.ensure([], () => {  
-      const Profile = require('./Profile.js')
-      this.setState({
-        currentComponent: Profile
-      })
-    })
+只有一小部分 `webpack` 用户知道应用代码是可以分割的，将 bundler 的输出拆分成多个 _JavaScript_ 块：
+
+require.ensure([], () => {  
+ const Profile = require('./Profile.js')
+this.setState({
+currentComponent: Profile
+})
+})
 
 > It can be extremely useful in large applications because the user's browser **doesn't have to download rarely used codes** like the profile page after every deploy.
 
@@ -227,17 +227,17 @@ react-router 的下个版本就将在代码分割这方面提供更多帮助。
 
 大部分人都对 JSX 存有怨言。首先，你需要知道的是这在 React 中并不是必须的。
 
-> At the end of the day, it will be compiled to *JavaScript* with Babel. You can write *JavaScript* instead of JSX, but it feels more natural to use JSX while you are working with HTML.   
+> At the end of the day, it will be compiled to _JavaScript_ with Babel. You can write _JavaScript_ instead of JSX, but it feels more natural to use JSX while you are working with HTML.
 
-在最后，JSX 都会通过 Babel 被编译成 *JavaScript*。你可以直接编写 *JavaScript* 来替代 JSX，但是在处理 HTML 的时候使用 JSX 会感觉更加自然。
+在最后，JSX 都会通过 Babel 被编译成 _JavaScript_。你可以直接编写 _JavaScript_ 来替代 JSX，但是在处理 HTML 的时候使用 JSX 会感觉更加自然。
 
 > Especially because even less technical people could still understand and modify the required parts.
 
 特别是对于不懂技术的人来说，他们依然可以理解和修改必要的部分。
 
-> > JSX is a *JavaScript* syntax extension that looks similar to XML. You can use a simple JSX syntactic transform with React. - [JSX in depth](https://facebook.github.io/react/docs/jsx-in-depth.html)
+> > JSX is a _JavaScript_ syntax extension that looks similar to XML. You can use a simple JSX syntactic transform with React. - [JSX in depth](https://facebook.github.io/react/docs/jsx-in-depth.html)
 
-> JSX 是一种与 XML 类似的 *JavaScript* 语法扩展。你可以通过一个简单的 JSX 语法转换器来编译 React。 —— [JSX in depth](https://facebook.github.io/react/docs/jsx-in-depth.html)
+> JSX 是一种与 XML 类似的 _JavaScript_ 语法扩展。你可以通过一个简单的 JSX 语法转换器来编译 React。 —— [JSX in depth](https://facebook.github.io/react/docs/jsx-in-depth.html)
 
 > If you want to read more about JSX check out the [JSX Looks Like An Abomination - But it’s Good for You](https://medium.com/javascript-scene/jsx-looks-like-an-abomination-1c1ec351a918#.ca28nvee6) article.
 
@@ -249,7 +249,7 @@ react-router 的下个版本就将在代码分割这方面提供更多帮助。
 
 React 和 ES2015 的 Class 语法搭配完美。
 
-    class HelloMessage extends React.Component {  
+    class HelloMessage extends React.Component {
       render() {
         return <div>Hello {this.props.name}</div>
       }
@@ -265,7 +265,7 @@ React 和 ES2015 的 Class 语法搭配完美。
 
 如果你在 2016 年依然没有检查 properties，那么你应该从现在开始做起，这将为你节省大量时间，相信我。
 
-    MyComponent.propTypes = {  
+    MyComponent.propTypes = {
       isLoading: PropTypes.bool.isRequired,
       items: ImmutablePropTypes.listOf(
         ImmutablePropTypes.contains({
@@ -288,11 +288,11 @@ React 和 ES2015 的 Class 语法搭配完美。
 
 **那什么是高阶组件呢？**
 
-    PassData({ foo: 'bar' })(MyComponent)  
+    PassData({ foo: 'bar' })(MyComponent)
 
-> Basically, you compose a new component from your original one and extend its behaviour. You can use it in various situations like authentication: `requireAuth({ role: 'admin' })(MyComponent)` *(check for a user in higher component and redirect if the user is not logged in)* or connecting your component with Flux/Redux store.
+> Basically, you compose a new component from your original one and extend its behaviour. You can use it in various situations like authentication: `requireAuth({ role: 'admin' })(MyComponent)` _(check for a user in higher component and redirect if the user is not logged in)_ or connecting your component with Flux/Redux store.
 
-本质上来说，你可以由原始组件创造一个新的组件并且扩展它的行为。你可以在多种情况下使用它，比如授权：`requireAuth({ role: 'admin' })(MyComponent)` *（检查上层组件中的用户，若是未登录则需要重定向）*，或者是连接你的组件和 Flux/Redux 仓库。
+本质上来说，你可以由原始组件创造一个新的组件并且扩展它的行为。你可以在多种情况下使用它，比如授权：`requireAuth({ role: 'admin' })(MyComponent)` _（检查上层组件中的用户，若是未登录则需要重定向）_，或者是连接你的组件和 Flux/Redux 仓库。
 
 > At RisingStack, we also like to separate data fetching and controller-like logic to higher order components and keep our views as simple as possible.
 
@@ -300,7 +300,7 @@ React 和 ES2015 的 Class 语法搭配完美。
 
 ## Testing | 测试
 
-> Testing with good test coverage must be an important part of your development cycle. Luckily, the React.js community came up with excellent libraries to help us achieve this. 
+> Testing with good test coverage must be an important part of your development cycle. Luckily, the React.js community came up with excellent libraries to help us achieve this.
 
 在开发周期中，维持测试的高覆盖率是非常重要的一部分。幸运的是， React.js 社区诞生了很多优秀的库可以帮助我们达到这一点。
 
@@ -310,7 +310,7 @@ React 和 ES2015 的 Class 语法搭配完美。
 
 我们最喜爱的库之一是由 AirBnb 所开发的 [enzyme](https://github.com/airbnb/enzyme)，可用于组件测试。非常神奇的是，它的浅渲染特性可以对组件的逻辑及其渲染输出进行测试。尽管它还不能替代你的 selenium 测试，但是将前端测试提升到了一个新的水平。
 
-    it('simulates click events', () => {  
+    it('simulates click events', () => {
       const onButtonClick = sinon.spy()
       const wrapper = shallow(
         <Foo onButtonClick={onButtonClick} />
@@ -333,12 +333,12 @@ React 和 ES2015 的 Class 语法搭配完美。
 
 **测试一个 reducer** 非常简单，它响应新到来的 actions，并且将原来的状态进行更新：
 
-    it('should set token', () => {  
+    it('should set token', () => {
       const nextState = reducer(undefined, {
         type: USER_SET_TOKEN,
         token: 'my-token'
       })
-    
+
       // immutable.js state output
       expect(nextState.toJS()).to.be.eql({
         token: 'my-token'
@@ -349,11 +349,11 @@ React 和 ES2015 的 Class 语法搭配完美。
 
 **测试 actions** 也很简单，但是异步 actions 就不太一样了。对于测试异步的 Redux actions 来说，我们推荐使用 [redux-mock-store](https://www.npmjs.com/package/redux-mock-store)，非常有帮助。
 
-    it('should dispatch action', (done) => {  
+    it('should dispatch action', (done) => {
       const getState = {}
       const action = { type: 'ADD_TODO' }
       const expectedActions = [action]
-    
+
       const store = mockStore(getState, expectedActions, done)
       store.dispatch(action)
     })
@@ -368,9 +368,9 @@ React 和 ES2015 的 Class 语法搭配完美。
 
 虽然 React.js 并不依赖代码打包工具就可以很好地工作，但我们还是推荐使用 [Webpack](https://webpack.github.io/) 或者 [Browserify](http://browserify.org/) 来发挥 [npm](https://www.npmjs.com/) 的能力。Npm 上满是高质量的 React.js 包，还可以帮你非常优雅地管理依赖。
 
-> *(Please don’t forget to reuse your own components, it’s an excellent way to optimize your code.)*
+> _(Please don’t forget to reuse your own components, it’s an excellent way to optimize your code.)_
 
-*（请不要忘记复用你自己的组件，这是一种绝佳的代码优化方式。）*
+_（请不要忘记复用你自己的组件，这是一种绝佳的代码优化方式。）_
 
 ### Bundle size | Bundle 大小
 
@@ -382,29 +382,29 @@ React 和 ES2015 的 Class 语法搭配完美。
 
 当你打包源代码的时候，时刻警惕打包后的文件大小。为了**保持体积最小化**，你应该考虑如何 require/import 依赖。
 
-> Check the following code snippet, the two different way can make a huge difference in the output: 
+> Check the following code snippet, the two different way can make a huge difference in the output:
 
 对比以下代码片段，这两种不同的方式对输出的影响区别巨大：
 
     import { concat, sortBy, map, sample } from 'lodash'
-    
+
     // vs.
-    import concat from 'lodash/concat';  
-    import sortBy from 'lodash/sortBy';  
-    import map from 'lodash/map';  
-    import sample from 'lodash/sample';  
+    import concat from 'lodash/concat';
+    import sortBy from 'lodash/sortBy';
+    import map from 'lodash/map';
+    import sample from 'lodash/sample';
 
 > Check out the [Reduce Your bundle.js File Size By Doing This One Thing](https://lacke.mn/reduce-your-bundle-js-file-size/) for more details.
 
 可以查看这篇文章 [Reduce Your bundle.js File Size By Doing This One Thing](https://lacke.mn/reduce-your-bundle-js-file-size/) 获取更多详情。
 
-> We also like to split our code to least `vendors.js` and `app.js` because vendors updates less frequently than our code base.  
+> We also like to split our code to least `vendors.js` and `app.js` because vendors updates less frequently than our code base.
 
 我们也喜欢将代码分离出至少 `vendors.js` 和 `app.js` 两个文件，因为 vendors 相对于我们的代码库来说更新不是那么频繁。
 
-> With hashing the output file names *(chunk hash in WebPack)* and caching them for the long term, we can dramatically reduce the size of the code what needs to be downloaded by returning visitors on the site. Combining it with lazy loading you can imagine how optimal can it be.
+> With hashing the output file names _(chunk hash in WebPack)_ and caching them for the long term, we can dramatically reduce the size of the code what needs to be downloaded by returning visitors on the site. Combining it with lazy loading you can imagine how optimal can it be.
 
-将输出文件名称进行哈希化处理 *(Webpack 中的 chunk hash)*，并使用长缓存，我们可以大大减少用户需要下载的代码大小。结合惰性加载，优化效果可想而知。
+将输出文件名称进行哈希化处理 _(Webpack 中的 chunk hash)_，并使用长缓存，我们可以大大减少用户需要下载的代码大小。结合惰性加载，优化效果可想而知。
 
 > If you are new to Webpack, check out this excellent [React webpack cookbook](https://christianalfoni.github.io/react-webpack-cookbook).
 
@@ -424,8 +424,8 @@ React 和 ES2015 的 Class 语法搭配完美。
 
 关于如何搭建热重载，可以参考 [react-transform-boilerplate](https://github.com/gaearon/react-transform-boilerplate)。
 
-### Use ES2015 | 使用ES2015
- 
+### Use ES2015 | 使用 ES2015
+
 ![](https://risingstack-blog.s3.amazonaws.com/2016/Jan/babel_logo_in_react_js_best_practices_2016-1453212218011.png)
 
 > I mentioned that we use JSX in our React.js components what we transpile with [Babel.js](https://babeljs.io/).
@@ -438,21 +438,21 @@ React 和 ES2015 的 Class 语法搭配完美。
 
 ### Linters
 
-> Maybe you already use a style guide for your *JavaScript* code but did you know that there are style guides for React as well? We highly recommend to pick one and start following it.
+> Maybe you already use a style guide for your _JavaScript_ code but did you know that there are style guides for React as well? We highly recommend to pick one and start following it.
 
-或许你已经给你的 *JavaScript* 代码制定了代码规范，但是你知道也有用于 React 的代码规范了吗？我们强烈推荐挑选一个并开始遵循它。
+或许你已经给你的 _JavaScript_ 代码制定了代码规范，但是你知道也有用于 React 的代码规范了吗？我们强烈推荐挑选一个并开始遵循它。
 
 > At RisingStack, we also enforce our linters to run on the CI system and for `git push` as well. Check out [pre-push](https://www.npmjs.com/package/pre-push) or [pre-commit](https://www.npmjs.com/package/pre-commit).
 
 在 RisingStack，我们也将 linters 强制运行在 CI 系统上，`git push` 亦然。可以试试 [pre-push](https://www.npmjs.com/package/pre-push) 或者 [pre-commit](https://www.npmjs.com/package/pre-commit)。
 
-> We use *JavaScript* Standard Style for *JavaScript* with [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) to lint our React.js code.
+> We use _JavaScript_ Standard Style for _JavaScript_ with [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) to lint our React.js code.
 
-我们使用标准的 *JavaScript* 代码风格，并使用了 [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)对 React.js 代码进行规范 。
+我们使用标准的 _JavaScript_ 代码风格，并使用了 [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)对 React.js 代码进行规范 。
 
-> *(That's right, we do not use semicolons anymore.)*
+> _(That's right, we do not use semicolons anymore.)_
 
-*（就是，我们不再使用分号。）*
+_（就是，我们不再使用分号。）_
 
 ## GraphQL and Relay | GraphQL 和 Relay
 
@@ -460,7 +460,7 @@ React 和 ES2015 的 Class 语法搭配完美。
 
 GraphQL 和 Relay 相对而言属于新技术，在 RisingStack，目前我们还没有在产品环境中使用它们，暂时保持关注。
 
-> We wrote a library called [graffiti](https://github.com/risingstack/graffiti) which is a MongoDB ORM for Relay and makes it possible to create a GraphQL server from your existing mongoose models.   
+> We wrote a library called [graffiti](https://github.com/risingstack/graffiti) which is a MongoDB ORM for Relay and makes it possible to create a GraphQL server from your existing mongoose models.
 
 我们曾经写过一个 Relay 的 MongoDB ORM 库，叫做 [graffiti](https://github.com/risingstack/graffiti)，可以使用已有的 mongoose 模型直接创建一个 GraphQL 服务器。
 
@@ -476,14 +476,12 @@ GraphQL 和 Relay 相对而言属于新技术，在 RisingStack，目前我们�
 
 > > If you know about other essential React.js tools that people should use in 2016, let us know in the comments!
 
-> 如果你知道其它在2016年必不可少的 React.js 工具，请留言让我们知道！
+> 如果你知道其它在 2016 年必不可少的 React.js 工具，请留言让我们知道！
 
-------
+---
 
 #### 原作者: [Péter Márton](https://blog.risingstack.com/author/peter-marton/)
 
 CTO at RisingStack, brewing beer with Node.js
 
 <https://twitter.com/slashdotpeter>
-
-

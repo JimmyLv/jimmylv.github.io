@@ -9,13 +9,16 @@ theme: green
 published: True
 ---
 
-30 min = 15 min * 2
+30 min = 15 min \* 2
 
 [slide]
+
 # 「Done is better than perfect.」
 
 [slide]
+
 # Angular in Action
+
 <small>by Jimmy Lv</small>
 
 [slide]
@@ -44,9 +47,9 @@ content Editable
 
 "single-source-of-truth" 其实只需要关注 data，易测试，灵活性高
 
-双向数据绑定，dirty check -> $watch -> 影响性能
+双向数据绑定，dirty check -> \$watch -> 影响性能
 
-View 和 Model 应该分开? 
+View 和 Model 应该分开?
 
 React: 数据只会由 parent 流向 children，只会由逻辑流向页面，更好理解和维护。
 
@@ -94,7 +97,7 @@ $scope.message = 'hello';
 
 to expose data to our view via $scope & add functions to $scope
 
-nested or multiple nested controllers 可以继承，每 ng-controller 指令会创建新的子级 scope，三层 div 结构，也就对应有三层 scope 继承关系的层级结构 
+nested or multiple nested controllers 可以继承，每 ng-controller 指令会创建新的子级 scope，三层 div 结构，也就对应有三层 scope 继承关系的层级结构
 
 不要操作具体的 DOM 和 filter 等其他事情，专注单个 view 的业务逻辑
 
@@ -106,9 +109,9 @@ old? > controller as syntax : -> this = self . create a reference to this so tha
 
 [slide]
 
-## $scope
+## \$scope
 
-不显式注入$scope 了，语法是这样：
+不显式注入\$scope 了，语法是这样：
 
 ```
 function CtrlB() {
@@ -120,24 +123,24 @@ function CtrlB() {
 <div ng-controller="CtrlB as instanceB"></div>
 ```
 
-在任意一个已有的作用域上调用$new()，就能创建一个新的作用域：
+在任意一个已有的作用域上调用\$new()，就能创建一个新的作用域：
 
 var newScope = scope.$new();
-刚创建出来的作用域是一个“悬空”的作用域，也就是说，它跟任何界面模板都不存在绑定关系，创建它的作用域会成为它的$parent。这种作用域可以经过$compile 阶段，与某视图模板进行融合。
+刚创建出来的作用域是一个“悬空”的作用域，也就是说，它跟任何界面模板都不存在绑定关系，创建它的作用域会成为它的$parent。这种作用域可以经过\$compile 阶段，与某视图模板进行融合。
 
 [slide]
 
 ## Service
 
-to share data 
+to share data
 
 singletons that can be injected into controllers and other services: reusable
 
-like $http
+like \$http
 
 最明显的 DI 体现
 
-Lazily instantiated:  not registering a service instance, but rather a factory function ->  angular.module('myModule', []).factory('serviceId',
+Lazily instantiated: not registering a service instance, but rather a factory function -> angular.module('myModule', []).factory('serviceId',
 
 [slide]
 
@@ -159,13 +162,13 @@ form 可以直接用 css
 
 [slide]
 
-## Promise $q
+## Promise \$q
 
 Deferred:
 
-$q.defer()  resolve(), reject(), and notify()
+\$q.defer() resolve(), reject(), and notify()
 
-$q(function(resolve, reject) {
+\$q(function(resolve, reject) {
 
 ```
   $timeout(function() {
@@ -183,23 +186,23 @@ then().then().finally()
 
 catch(errorCallback) – shorthand for promise.then(null, errorCallback)
 
-$http - success() error()
+\$http - success() error()
 
 [slide]
 
 ## Filters
 
-Chaining built-in filters: `<p ng-repeat="person in test.people | filter:search | orderBy:'name'  | limitTo: 5">`
+Chaining built-in filters: `<p ng-repeat="person in test.people | filter:search | orderBy:'name' | limitTo: 5">`
 
 [slide]
 
 ## Directive
 
-add things like behaviors: 
+add things like behaviors:
 
 - "A" is for attribute `<div welcome></div>` (default restrict property）
 - "E" is for element `<welcome></welcome>`
-- "C" is for class ` <div class="welcome"></div>`
+- "C" is for class `<div class="welcome"></div>`
 - "M" for comment `<!-- directive: welcome -->`
 
 functionalities:
@@ -219,7 +222,7 @@ can be used in controller
 
 [slide]
 
-## $Route
+## \$Route
 
 ```
 $routeProvider.when("/:firstName/:middleName/:lastName",
@@ -231,7 +234,7 @@ $routeProvider.when("/:firstName/:middleName/:lastName",
   );
 ```
 
-$routeParams.firstName + " " + $routeParams.middleName + " " + $routeParams.lastName;
+$routeParams.firstName + " " + $routeParams.middleName + " " + \$routeParams.lastName;
 
 [slide]
 

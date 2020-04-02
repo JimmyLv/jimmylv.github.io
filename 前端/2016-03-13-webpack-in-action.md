@@ -4,7 +4,6 @@ title: 搞定 Webpack (2)：使用 Webpack 大幅提升前端开发体验
 categories: [前端]
 tags: [Webpack, Angular, 重构, 工程化, DX]
 published: True
-
 ---
 
 ## 安装，运行，热加载
@@ -103,7 +102,7 @@ published: True
     import MainCtrl from './app/controllers/mainController'
     import Components from './app/components/components.module'
 
-虽说 Webpack 对 CommonJS，AMD 和 ES6 模块都做了兼容，但依然有一些只使用 Angular 模块所定义的插件，这就没办法通过 `require` 或者 `import` 导入了，还是只能通过 HTML 脚本的传统方式引入，待我再想想解决办法，好像 Webpack 还可以对模块做 [Shimming 处理](https://webpack.github.io/docs/shimming-modules.html) 摊手 ┑(￣Д ￣)┍
+虽说 Webpack 对 CommonJS，AMD 和 ES6 模块都做了兼容，但依然有一些只使用 Angular 模块所定义的插件，这就没办法通过 `require` 或者 `import` 导入了，还是只能通过 HTML 脚本的传统方式引入，待我再想想解决办法，好像 Webpack 还可以对模块做 [Shimming 处理](https://webpack.github.io/docs/shimming-modules.html) 摊手 ┑(￣ Д ￣)┍
 
 ### ng-annotate-loader 确保依赖安全注入
 
@@ -181,4 +180,3 @@ Webpack 最棒的一点就是将 JavaScript、CSS、 字体、图片等资源文
 - [dmachat/angular-webpack-cookbook](https://github.com/dmachat/angular-webpack-cookbook/wiki)
 - [Using Angular 1.x With ES6 and Webpack](http://angular-tips.com/blog/2015/06/using-angular-1-dot-x-with-es6-and-webpack/)
 - [AngularClass/NG6-starter](https://github.com/AngularClass/NG6-starter/blob/master/webpack.config.js)
-
