@@ -103,5 +103,5 @@ notebook: 0.0 Inbox
 
 ---
 
-[^1]: 这更多的是我自己所理解的「个人知识管理」流程，可以参考我之前所做过的一个 Session：[PKM：个人知识管理 - By Jimmy Lv](http://blog.jimmylv.info/slides/2015-08-29-personal-knowledge-management.htm)，还有这篇文章：[个人知识管理：知识的三种形态 - 吕立青的博客](http://blog.jimmylv.info/2015-10-09-three-types-of-knowledge/)
+[^1]: 这更多的是我自己所理解的「个人知识管理」流程，可以参考我之前所做过的一个 Session：[PKM：个人知识管理 - By Jimmy Lv](http://blog.jimmylv.info/2015-08-29-personal-knowledge-management)，还有这篇文章：[个人知识管理：知识的三种形态 - 吕立青的博客](http://blog.jimmylv.info/2015-10-09-three-types-of-knowledge/)
 [^2]: 拼音输入出错概率最大的就是同音字，而读音一样的字在大段文字当中会使人无法理解，因为人脑在阅读理解的时候首先映射的是字形而不是字音。在拼音输入的时候，我们脑袋里想的也许是一句话，但却习惯于只输入两三个字就按下空格键，以人为保证输入正确。但其实，机器更强大的强功能是把你一连串的输入进行智能分析并且纠正过来。所以若每次只是输入一两个词，那么再强大的拼音输入法也没有足够的上下文来进行修正。这基本上是用拼音打字的最大一个弊端了，连续输入会由于删除成本过高而怕出错，但是短了却又丧失了机器辅助输入的最大好处。
