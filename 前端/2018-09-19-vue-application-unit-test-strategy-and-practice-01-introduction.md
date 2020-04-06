@@ -208,5 +208,5 @@ ps: 除此之外，还有很多开发者体验亦值得细细品味与发现，�
 [6]: https://www.thoughtworks.com/talks/developer-exp-tech-radar-summit-05-2017
 [7]: https://developers.facebook.com/videos/f8-2017/building-high-quality-javascript-tools/
 [image-1]: https://user-images.githubusercontent.com/11895199/40921436-03152e66-6842-11e8-9c24-920ba5d8dd27.png
-[image-2]: https://raw.githubusercontent.com/JimmyLv/images/master/2018/20181029222614.png
-[image-3]: https://raw.githubusercontent.com/JimmyLv/images/master/images/jest.png
+[image-2]: https://jimmylv.github.io/images/2018/20181029222614.png
+[image-3]: https://jimmylv.github.io/images/images/jest.png

@@ -31,13 +31,13 @@ published: True
 
 ## 被误解的前端
 
-![](https://raw.githubusercontent.com/JimmyLv/images/master/css.jpeg)
+![](https://jimmylv.github.io/images/css.jpeg)
 
 [slide]
 
 ## 热门的前端
 
-![](https://raw.githubusercontent.com/JimmyLv/images/master/money.png)
+![](https://jimmylv.github.io/images/money.png)
 
 [slide]
 
@@ -52,7 +52,7 @@ published: True
 
 ## 语言排行榜
 
-![](https://raw.githubusercontent.com/JimmyLv/images/master/hot_language.jpg)
+![](https://jimmylv.github.io/images/hot_language.jpg)
 
 [slide]
 

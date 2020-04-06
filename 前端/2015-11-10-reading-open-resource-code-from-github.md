@@ -8,7 +8,7 @@ published: True
 
 # GitHub 开源项目：getAwesomeness
 
-![](https://raw.githubusercontent.com/JimmyLv/images/master/images/getAwesome.png)
+![](https://jimmylv.github.io/images/images/getAwesome.png)
 
 repo url: <https://github.com/panzhangwang/getawesomeness/>
 
@@ -66,7 +66,7 @@ app.use(function (req, res, next) {
 });
 ```
 
-![](https://raw.githubusercontent.com/JimmyLv/images/master/images/swig_404.png)
+![](https://jimmylv.github.io/images/images/swig_404.png)
 
 当然可以再次分层，把具体的`res.render()`函数放到不同的地方。
 

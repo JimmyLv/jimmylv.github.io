@@ -114,7 +114,7 @@ it("should return summed up total amount 1000 when there are three products pric
     }
 ```
 
-![](https://raw.githubusercontent.com/JimmyLv/images/master/2019/20190219135917.png)
+![](https://jimmylv.github.io/images/2019/20190219135917.png)
 
 ### 6. TDD，最好的写单元测试的方式
 

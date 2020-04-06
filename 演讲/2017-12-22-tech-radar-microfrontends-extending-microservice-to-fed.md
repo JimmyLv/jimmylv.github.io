@@ -30,7 +30,7 @@ published: True
 3. Demo
 4. 优缺点总结与思考
 
-[slide style="background-image:url('https://raw.githubusercontent.com/JimmyLv/images/master/2017/12/1513920317188.png')"]
+[slide style="background-image:url('https://jimmylv.github.io/images/2017/12/1513920317188.png')"]
 
 # The Majestic Monolith
 
@@ -48,7 +48,7 @@ published: True
 
 ---
 
-![](https://raw.githubusercontent.com/JimmyLv/images/master/2017/12/1513908599811.png)
+![](https://jimmylv.github.io/images/2017/12/1513908599811.png)
 
     * 复杂性：服务可以更好地分离。 {:&.moveIn}
     * 可扩展性：服务可以独立伸缩。
@@ -66,7 +66,7 @@ _ 引入微服务体系结构的重大好处，它允许团队扩展独立部署
 
 # 💡 | 那么前端的现状呢？ —— 臃肿的前端
 
-![](https://raw.githubusercontent.com/JimmyLv/images/master/2017/12/1513877114486.png)
+![](https://jimmylv.github.io/images/2017/12/1513877114486.png)
 
 ---
 
@@ -92,7 +92,7 @@ _ 引入微服务体系结构的重大好处，它允许团队扩展独立部署
 
 # 微前端的定义 - 将微服务理念扩展到前端开发
 
-![](https://raw.githubusercontent.com/JimmyLv/images/master/2017/12/1513877768959.png)
+![](https://jimmylv.github.io/images/2017/12/1513877768959.png)
 
 ---
 
@@ -135,7 +135,7 @@ ThoughtWorks 的同志们最擅长举一反三，包装概念啦！
 
 # 微前端的核心思想
 
-![](https://raw.githubusercontent.com/JimmyLv/images/master/2017/12/1513878936981.png)
+![](https://jimmylv.github.io/images/2017/12/1513878936981.png)
 
 ---
 
@@ -230,7 +230,7 @@ There are some cases where things take a while to load on the back-end, maybe yo
 
 ## Option 1.1: Progressive loading from the back-end
 
-![](https://raw.githubusercontent.com/JimmyLv/images/master/2017/12/1513879504186.png)
+![](https://jimmylv.github.io/images/2017/12/1513879504186.png)
 
 [slide]
 
@@ -417,7 +417,7 @@ componentDidMount() {
 
 # 页面加载的问题与优化建议
 
-## ![](https://raw.githubusercontent.com/JimmyLv/images/master/2017/12/1513881261010.png)
+## ![](https://jimmylv.github.io/images/2017/12/1513881261010.png)
 
 - 响应式布局：使用 skeleton screen
 - 加快初始渲染：浏览器异步加载
@@ -544,7 +544,7 @@ start();
 
 # 💡 | 持续思考…
 
-![](https://raw.githubusercontent.com/JimmyLv/images/master/2017/12/1513909558428.png)
+![](https://jimmylv.github.io/images/2017/12/1513909558428.png)
 
 - （变幻莫测）前端的技术选型？
 - 在 Mobile/Mobile Web 上的悖论
