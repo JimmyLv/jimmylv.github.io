@@ -50,11 +50,11 @@ JavaScript 应用是以源码形式进行分发的，而源码解析的效率是
 
 ```js
 function insert(i) {
-  document.write("Sample " + i);
+  document.write('Sample ' + i)
 }
 
 for (var i = 0; i < 30; ++i) {
-  insert(i);
+  insert(i)
 }
 ```
 
@@ -65,20 +65,20 @@ for (var i = 0; i < 30; ++i) {
 ```js
 !(function (r) {
   function t(o) {
-    if (e[o]) return e[o].exports;
-    var n = (e[o] = { exports: {}, id: o, loaded: !1 });
-    return r[o].call(n.exports, n, n.exports, t), (n.loaded = !0), n.exports;
+    if (e[o]) return e[o].exports
+    var n = (e[o] = { exports: {}, id: o, loaded: !1 })
+    return r[o].call(n.exports, n, n.exports, t), (n.loaded = !0), n.exports
   }
-  var e = {};
-  return (t.m = r), (t.c = e), (t.p = ""), t(0);
+  var e = {}
+  return (t.m = r), (t.c = e), (t.p = ''), t(0)
 })([
   function (r, t) {
     function e(r) {
-      document.write("Sample " + r);
+      document.write('Sample ' + r)
     }
-    for (var o = 0; 30 > o; ++o) e(o);
+    for (var o = 0; 30 > o; ++o) e(o)
   },
-]);
+])
 //# sourceMappingURL=bundle.min.js.map
 ```
 
@@ -234,19 +234,19 @@ CPU 性能分析也可以在 Chrome Dev Tools 中找到。看看这篇来自 Goo
 改善 Web 应用程序观感的方式之一，就是减少启动时间或者减少首页渲染时间。这对于新兴的单页面应用尤为重要，其需要在客户端执行大量任务。在客户端做更多事情通常就意味着，在第一次渲染被执行之前就需要下载更多的信息。同构 JavaScript 可以解决这个问题：自从 JavaScript 可以同时运行在客户端和服务器端，这就让在服务器端来执行页面的首次渲染成为可能，先把已渲染的页面发送出去然后再由客户端的脚本接管。这限制了所使用的后端（必须使用支持该特性的 JavaScript 框架），但却能获得更好的用户体验。举例来说，React 就很[适合于](https://github.com/DavidWells/isomorphic-react-example)做这个，就像以下代码所示：
 
 ```js
-var React = require("react/addons");
-var ReactApp = React.createFactory(require("../components/ReactApp").ReactApp);
+var React = require('react/addons')
+var ReactApp = React.createFactory(require('../components/ReactApp').ReactApp)
 
 module.exports = function (app) {
-  app.get("/", function (req, res) {
+  app.get('/', function (req, res) {
     // React.renderToString takes your component
     // and generates the markup
-    var reactHtml = React.renderToString(ReactApp({}));
+    var reactHtml = React.renderToString(ReactApp({}))
     // Output html rendered by react
     // console.log(myAppHtml);
-    res.render("index.ejs", { reactOutput: reactHtml });
-  });
-};
+    res.render('index.ejs', { reactOutput: reactHtml })
+  })
+}
 ```
 
 > [Meteor.js](https://www.meteor.com/) has great support for mixing client side with server side JavaScript:
@@ -256,21 +256,21 @@ module.exports = function (app) {
 ```js
 if (Meteor.isClient) {
   Template.hello.greeting = function () {
-    return "Welcome to myapp.";
-  };
+    return 'Welcome to myapp.'
+  }
 
   Template.hello.events({
-    "click input": function () {
+    'click input': function () {
       // template data, if any, is available in 'this'
-      if (typeof console !== "undefined") console.log("You pressed the button");
+      if (typeof console !== 'undefined') console.log('You pressed the button')
     },
-  });
+  })
 }
 
 if (Meteor.isServer) {
   Meteor.startup(function () {
     // code to run on server at startup
-  });
+  })
 }
 ```
 
@@ -314,12 +314,7 @@ JavaScript 和 CSS 资源都会阻塞页面的渲染。通过采取某些的规�
 媒体查询可以被设置成 `<link>` 标签属性：
 
 ```html
-<link
-  rel="stylesheet"
-  type="text/css"
-  media="only screen and (max-device-width: 480px)"
-  href="mobile-device.css"
-/>
+<link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="mobile-device.css" />
 ```
 
 > When it comes to JavaScript, the key lies in following certain rules for inline JavaScript (i.e. code that is inlined in the HTML file). Inline JavaScript should be as short as possible and put in places where it won't stop the parsing of the rest of the page. In other words, inline HTML that is put in the middle of an HTML tree stops the parser at that point and forces it to wait until the script is done executing. This can be a killer for performance if there are big blocks of code or many small blocks littered through the HTML file. Inlining can be helpful to prevent additional network fetches for specific scripts. For repeatedly used scripts or big blocks of code this advantage is eliminated.

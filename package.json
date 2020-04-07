@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "format": "yarn prettier --write **/*.md",
+    "format": "prettier --write **/*.md",
     "lint": "textlint **/*.md",
     "lint:fix": "yarn lint --fix"
   },

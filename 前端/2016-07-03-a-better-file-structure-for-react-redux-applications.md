@@ -129,17 +129,17 @@ export default function Product({ name, description }) {
       <h1>{name}</h1>
       <div className="description">{description}</div>
     </div>
-  );
+  )
 }
 
 // in ProductContainer.js
-import { bindActionCreators } from "redux";
-import { connect } from "react-redux";
-import * as ProductActions from "./ProductActions";
-import Product from "./Product";
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
+import * as ProductActions from './ProductActions'
+import Product from './Product'
 
 function mapStateToProps(state) {
-  return { ...state };
+  return { ...state }
 }
 
 function mapDispatchToProps(dispatch) {
@@ -147,11 +147,11 @@ function mapDispatchToProps(dispatch) {
     {
       ...ProductActions,
     },
-    dispatch
-  );
+    dispatch,
+  )
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Product);
+export default connect(mapStateToProps, mapDispatchToProps)(Product)
 ```
 
 > The only practical interest to separate component and container is to facilitate the unit tests of the component (without using Redux at all). In 99% of the cases, the component is never used outside of the container. Well, ES6 allows to export more than one element, right? Then I can merge those two scripts into a single file, where the export default is the container, and export Product is the component:
@@ -160,9 +160,9 @@ export default connect(mapStateToProps, mapDispatchToProps)(Product);
 
 ```jsx
 // in Product.js
-import { bindActionCreators } from "redux";
-import { connect } from "react-redux";
-import * as ProductActions from "./ProductActions";
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
+import * as ProductActions from './ProductActions'
 
 // component part
 export function Product({ name, description }) {
@@ -171,12 +171,12 @@ export function Product({ name, description }) {
       <h1>{name}</h1>
       <div className="description">{description}</div>
     </div>
-  );
+  )
 }
 
 // container part
 function mapStateToProps(state) {
-  return { ...state };
+  return { ...state }
 }
 
 function mapDispatchToProps(dispatch) {
@@ -184,11 +184,11 @@ function mapDispatchToProps(dispatch) {
     {
       ...ProductActions,
     },
-    dispatch
-  );
+    dispatch,
+  )
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Product);
+export default connect(mapStateToProps, mapDispatchToProps)(Product)
 ```
 
 > That way, a unit test on the component can simply `import { Product } from './Product.js'`. Now the directory structure counts one less file per directory:

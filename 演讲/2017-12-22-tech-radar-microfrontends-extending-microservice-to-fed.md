@@ -238,21 +238,9 @@ There are some cases where things take a while to load on the back-end, maybe yo
 
 ```html
 <body>
-  <iframe
-    width="100%"
-    height="200"
-    src="https://microfrontends-header.herokuapp.com/"
-  ></iframe>
-  <iframe
-    width="100%"
-    height="200"
-    src="https://microfrontends-products-list.herokuapp.com/"
-  ></iframe>
-  <iframe
-    width="100%"
-    height="200"
-    src="https://microfrontends-cart.herokuapp.com/"
-  ></iframe>
+  <iframe width="100%" height="200" src="https://microfrontends-header.herokuapp.com/"></iframe>
+  <iframe width="100%" height="200" src="https://microfrontends-products-list.herokuapp.com/"></iframe>
+  <iframe width="100%" height="200" src="https://microfrontends-cart.herokuapp.com/"></iframe>
 </body>
 ```
 
@@ -279,10 +267,10 @@ There are some cases where things take a while to load on the back-end, maybe yo
 # Option 3: Client-Side JavaScript
 
 ```js
-var script = document.createElement("script");
-script.setAttribute("src", nonExecutableScript.src);
-script.setAttribute("type", "text/javascript");
-element.appendChild(script);
+var script = document.createElement('script')
+script.setAttribute('src', nonExecutableScript.src)
+script.setAttribute('type', 'text/javascript')
+element.appendChild(script)
 ```
 
 ---
@@ -470,15 +458,15 @@ componentDidMount() {
 # 🐒 SHOW ME THE CODE!
 
 ```js
-import * as singleSpa from "single-spa";
+import * as singleSpa from 'single-spa'
 
-const appName = "app1";
+const appName = 'app1'
 
-const loadingFunction = () => import("./app1/app1.js");
-const activityFunction = (location) => location.hash.startsWith("#/app1");
+const loadingFunction = () => import('./app1/app1.js')
+const activityFunction = (location) => location.hash.startsWith('#/app1')
 
-singleSpa.declareChildApplication(appName, loadingFunction, activityFunction);
-singleSpa.start();
+singleSpa.declareChildApplication(appName, loadingFunction, activityFunction)
+singleSpa.start()
 ```
 
 ```js
@@ -534,10 +522,7 @@ start();
 ---
 
 ```html
-<script
-  src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.min.js"
-  crossorigin="anonymous"
-></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.min.js" crossorigin="anonymous"></script>
 ```
 
 [slide]

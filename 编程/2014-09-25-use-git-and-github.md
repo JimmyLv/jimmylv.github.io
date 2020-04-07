@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Git安装笔记与如何连接GitHub远程仓库"
+title: 'Git安装笔记与如何连接GitHub远程仓库'
 category: 编程
 tags: [Ubuntu, Git]
 published: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "配置Python开发环境和Sublime Text 3编辑器"
+title: '配置Python开发环境和Sublime Text 3编辑器'
 category: 编程
 tags: [Ubuntu, Sublime, Python]
 published: true

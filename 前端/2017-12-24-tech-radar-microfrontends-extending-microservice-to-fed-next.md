@@ -117,21 +117,9 @@ Promise.all([
 
 ```html
 <body>
-  <iframe
-    width="100%"
-    height="200"
-    src="https://microfrontends-header.herokuapp.com/"
-  ></iframe>
-  <iframe
-    width="100%"
-    height="200"
-    src="https://microfrontends-products-list.herokuapp.com/"
-  ></iframe>
-  <iframe
-    width="100%"
-    height="200"
-    src="https://microfrontends-cart.herokuapp.com/"
-  ></iframe>
+  <iframe width="100%" height="200" src="https://microfrontends-header.herokuapp.com/"></iframe>
+  <iframe width="100%" height="200" src="https://microfrontends-products-list.herokuapp.com/"></iframe>
+  <iframe width="100%" height="200" src="https://microfrontends-cart.herokuapp.com/"></iframe>
 </body>
 ```
 
@@ -150,17 +138,15 @@ Promise.all([
 
 ```js
 function loadPage(element) {
-  [].forEach.call(element.querySelectorAll("script"), function (
-    nonExecutableScript
-  ) {
-    var script = document.createElement("script");
-    script.setAttribute("src", nonExecutableScript.src);
-    script.setAttribute("type", "text/javascript");
-    element.appendChild(script);
-  });
+  ;[].forEach.call(element.querySelectorAll('script'), function (nonExecutableScript) {
+    var script = document.createElement('script')
+    script.setAttribute('src', nonExecutableScript.src)
+    script.setAttribute('type', 'text/javascript')
+    element.appendChild(script)
+  })
 }
 
-document.querySelectorAll(".load-app").forEach(loadPage);
+document.querySelectorAll('.load-app').forEach(loadPage)
 ```
 
 ```html
@@ -267,14 +253,8 @@ componentDidMount() {
 - **提取共同依赖作为 externals 加载**：虽然说不同 App 模块之间不能直接共享相同的第三方模块，当我们依然可以将常用的依赖比如 `lodash`、`moment.js`等公共库，或者跨多个团队共同使用的 `react` 和 `react-dom`。通过 Webpack 等构建工具就可以把打包的时候将这些共同模块排除掉，而只需要在 HTML `<header>` 中的 `<script>`中直接通过 CDN 加载 externals 依赖。
 
 ```html
-<script
-  src="https://cdnjs.cloudflare.com/ajax/libs/react/16.2.0/react.min.js"
-  crossorigin="anonymous"
-></script>
-<script
-  src="https://cdnjs.cloudflare.com/ajax/libs/react/16.2.0/react-dom.min.js"
-  crossorigin="anonymous"
-></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.2.0/react.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.2.0/react-dom.min.js" crossorigin="anonymous"></script>
 ```
 
 ### 微前端在 AEM（CMS）项目的应用
@@ -289,19 +269,13 @@ componentDidMount() {
 <div id="cms-container-1">
   <div id="react-input-container"></div>
   <script>
-    ReactDOM.render(
-      React.createElement(Input, { ...injectProps }),
-      document.getElementById("react-input-container")
-    );
+    ReactDOM.render(React.createElement(Input, { ...injectProps }), document.getElementById('react-input-container'))
   </script>
 </div>
 <div id="cms-container-2">
   <div id="react-button-container"></div>
   <script>
-    ReactDOM.render(
-      React.createElement(Button, {}),
-      document.getElementById("react-button-container")
-    );
+    ReactDOM.render(React.createElement(Button, {}), document.getElementById('react-button-container'))
   </script>
 </div>
 ```
@@ -321,15 +295,15 @@ componentDidMount() {
 **请看示例代码，所提供的 API 非常简单：**
 
 ```js
-import * as singleSpa from "single-spa";
+import * as singleSpa from 'single-spa'
 
-const appName = "app1";
+const appName = 'app1'
 
-const loadingFunction = () => import("./app1/app1.js");
-const activityFunction = (location) => location.hash.startsWith("#/app1");
+const loadingFunction = () => import('./app1/app1.js')
+const activityFunction = (location) => location.hash.startsWith('#/app1')
 
-singleSpa.declareChildApplication(appName, loadingFunction, activityFunction);
-singleSpa.start();
+singleSpa.declareChildApplication(appName, loadingFunction, activityFunction)
+singleSpa.start()
 ```
 
 ```js

@@ -142,15 +142,15 @@ index.js
 **BAD**
 
 ```js
-import actions from "../todos/actions";
-import TodoItem from "../todos/components/TodoItem";
+import actions from '../todos/actions'
+import TodoItem from '../todos/components/TodoItem'
 ```
 
 **GOOD**
 
 ```js
-import todos from "../todos";
-const { actions, TodoItem } = todos;
+import todos from '../todos'
+const { actions, TodoItem } = todos
 ```
 
 > Another thing to **avoid is coupling to the state of another module**. For example, say that within the projects module, we need to grab information out of todos state in order to render a component. It is better that the todos module exposes an interface for projects to query this information, rather than complecting the component with todos state.
@@ -337,18 +337,18 @@ rootReducer.js
 // todos/constants.js
 
 // This will be used later in our root reducer and selectors
-export const NAME = "todos";
+export const NAME = 'todos'
 ```
 
 ```js
 // todos/index.js
-import * as actions from "./actions";
-import * as components from "./components";
-import * as constants from "./constants";
-import reducer from "./reducer";
-import * as selectors from "./selectors";
+import * as actions from './actions'
+import * as components from './components'
+import * as constants from './constants'
+import reducer from './reducer'
+import * as selectors from './selectors'
 
-export default { actions, components, constants, reducer, selectors };
+export default { actions, components, constants, reducer, selectors }
 ```
 
 > **Note:** This is similar to the [Ducks](https://github.com/erikras/ducks-modular-redux) structure.
@@ -415,15 +415,15 @@ export type Todo = {
   id?: number,
   text: string,
   completed: boolean,
-};
+}
 
 // This is the model of our module state (e.g. return type of the reducer)
-export type State = Todo[];
+export type State = Todo[]
 
 // Some utility functions that operates on our model
-export const filterCompleted = (todos) => todos.filter((t) => t.completed);
+export const filterCompleted = (todos) => todos.filter((t) => t.completed)
 
-export const filterActive = (todos) => todos.filter((t) => !t.completed);
+export const filterActive = (todos) => todos.filter((t) => !t.completed)
 ```
 
 ### Reducers
@@ -442,12 +442,12 @@ export const filterActive = (todos) => todos.filter((t) => !t.completed);
 
 ```js
 // rootReducer.js
-import { combineReducers } from "redux";
-import todos from "./todos";
+import { combineReducers } from 'redux'
+import todos from './todos'
 
 export default combineReducers({
   [todos.constants.NAME]: todos.reducer,
-});
+})
 ```
 
 > This removes the coupling between our todos module and root reducer. Of course, you don’t _have_ to do it this way. Other options include relying on naming conventions (e.g. todos module state is mounted under “todos” key in the state atom), or you can use module factory functions instead of relying on a static key.
@@ -500,27 +500,22 @@ connect 的第一个参数就是一个 selector，从状态原子当中**选择*
 
 ```js
 // todos/selectors.js
-import { createSelector } from "reselect";
-import _ from "lodash";
-import { NAME } from "./constants";
-import { filterActive, filterCompleted } from "./model";
+import { createSelector } from 'reselect'
+import _ from 'lodash'
+import { NAME } from './constants'
+import { filterActive, filterCompleted } from './model'
 
-export const getAll = (state) => state[NAME];
+export const getAll = (state) => state[NAME]
 
-export const getCompleted = _.compose(filterCompleted, getAll);
+export const getCompleted = _.compose(filterCompleted, getAll)
 
-export const getActive = _.compose(filterActive, getAll);
+export const getActive = _.compose(filterActive, getAll)
 
-export const getCounts = createSelector(
-  getAll,
-  getCompleted,
-  getActive,
-  (allTodos, completedTodos, activeTodos) => ({
-    all: allTodos.length,
-    completed: completedTodos.length,
-    active: activeTodos.length,
-  })
-);
+export const getCounts = createSelector(getAll, getCompleted, getActive, (allTodos, completedTodos, activeTodos) => ({
+  all: allTodos.length,
+  completed: completedTodos.length,
+  active: activeTodos.length,
+}))
 ```
 
 ### Components

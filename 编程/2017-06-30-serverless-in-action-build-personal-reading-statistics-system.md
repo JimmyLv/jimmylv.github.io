@@ -60,8 +60,8 @@ wt init <YOUR-EMAIL>
 
 ```js
 module.exports = function (cb) {
-  cb(null, "Hello World");
-};
+  cb(null, 'Hello World')
+}
 ```
 
 然后在该目录中运行以下命令进行应用程序部署之后，点击控制台中输出的 URL 就能看到编程史上最有名气没有之一的 `HelloWorld!`：
@@ -77,17 +77,17 @@ wt create index
 Webtask 有一个实用工具 `webtask-tools` 可以将应用程序绑定到 Webtask 上下文，让我们将之前所 export 的简单函数修改为绑定到 Webtask 的 Express app，然后就可以愉快地使用 Express 进行开发，一切就又回到了熟悉的味道：
 
 ```js
-const Express = require("express");
-const Webtask = require("webtask-tools");
-const bodyParser = require("body-parser");
-const app = Express();
+const Express = require('express')
+const Webtask = require('webtask-tools')
+const bodyParser = require('body-parser')
+const app = Express()
 
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
 
-require("./routes/reading")(app);
+require('./routes/reading')(app)
 
-module.exports = Webtask.fromExpress(app);
+module.exports = Webtask.fromExpress(app)
 ```
 
 Webtask context 还有一个非常重要的用途就是在部署时传输一些敏感信息比如安全 Token，从而在应用程序当中可以随时使用它们。下面的部署命令中 `--secret` 后面所传入的 `ACCESS_TOKEN` 都会在后续与 GitHub 和 ZenHub APIs 交互时被用到。
@@ -123,16 +123,16 @@ module.exports = (app) => {
 所以我们的 Webtask 就需要处理 GitHub Webhook 所转发的 POST 请求，其中包括了 Issue 的类型和内容，在拿到 `'opened'` 即新建 Issue 类型的 action 之后我们可以对其进行相应的处理即添加到 Milestone 当中：
 
 ```js
-if (action === "opened") {
+if (action === 'opened') {
   fetch(`${url}?access_token=${GITHUB_ACCESS_TOKEN}`, {
-    method: "PATCH",
-    headers: { "Content-Type": "application/json" },
+    method: 'PATCH',
+    headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
       milestone: 1,
     }),
   })
     .then(() => console.info(`[END] set milestone successful! ${html_url}`))
-    .catch((err) => res.json(err));
+    .catch((err) => res.json(err))
 }
 ```
 
@@ -147,28 +147,28 @@ if (action === "opened") {
 GitHub Issue 的任何变动都会触发 Webhook，从而我们可以在 Issue 被加入 Milestone 之后再处理下一个 `'milestoned'` action，即：
 
 ```js
-if (action === "milestoned") {
+if (action === 'milestoned') {
   fetch(
     `https://api.zenhub.io/p1/repositories/${REPO_ID}/issues/${number}/estimate?access_token=${ZENHUB_ACCESS_TOKEN}`,
     {
-      method: "PUT",
-      headers: { "Content-Type": "application/json" },
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ estimate: 1 }),
-    }
+    },
   )
     .then(() => {
-      console.info(`[END] set estimate successful! ${html_url}`);
+      console.info(`[END] set estimate successful! ${html_url}`)
       return fetch(
         `https://api.zenhub.io/v4/reports/release/591dc19e81a6781f839705b9/items/issues?access_token=${ZENHUB_ACCESS_TOKEN_V4}`,
         {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
           body: `add_issues%5B0%5D%5Bissue_number%5D=${number}&add_issues%5B0%5D%5Brepo_id%5D=${REPO_ID}`,
-        }
-      );
+        },
+      )
     })
     .then(() => console.info(`[END] set release successful! ${html_url}`))
-    .catch((err) => res.json(err));
+    .catch((err) => res.json(err))
 }
 ```
 

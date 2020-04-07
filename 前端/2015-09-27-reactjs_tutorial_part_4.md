@@ -136,26 +136,26 @@ $ curl localhost:3000/api/jobs
 只要我们安装好了`request`库，我们还需要为`public/javascripts/scr/Jobs.jsx`文件做一些修改，得以从 API 中获取数据。为此，我们需要小小地修改一下`getInitialState`函数，并且添加`componentDidMount`函数。我们不再需要完整的初始化状态（就像我们需要的 API 标本那样），因为我们期望组件在装配到应用程序的时候就从 API 中获取数据。我们整个`public/javascripts/scr/Jobs.jsx`文件现在长这样：
 
 ```jsx
-var React = require("react");
-var request = require("request");
+var React = require('react')
+var request = require('request')
 
-var Job = require("./Job.jsx");
+var Job = require('./Job.jsx')
 
 module.exports = React.createClass({
   getInitialState: function () {
-    return { jobs: [] };
+    return { jobs: [] }
   },
 
   componentDidMount: function () {
     request(
-      "http://localhost:3000/api/jobs/",
+      'http://localhost:3000/api/jobs/',
       function (error, response, body) {
-        var result = JSON.parse(body);
+        var result = JSON.parse(body)
         if (this.isMounted()) {
-          this.setState(result.data);
+          this.setState(result.data)
         }
-      }.bind(this)
-    );
+      }.bind(this),
+    )
   },
 
   render: function () {
@@ -173,12 +173,12 @@ module.exports = React.createClass({
               description={job.description}
               category={job.category}
             />
-          );
+          )
         })}
       </div>
-    );
+    )
   },
-});
+})
 ```
 
 > In the file above, you can see how we are using the `request` library to reach out to our newly created API and populate the `state` with the response. You can also see the modifications we made to `render` to allow for us to use the API. And that's it, we should still have a working website that renders these two jobs, but now we are getting data from an API versus hardcoding it within our _React_.js component (even though we are still just hardcoding it within our API).

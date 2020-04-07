@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "【译】Redux 和 命令模式"
+title: '【译】Redux 和 命令模式'
 categories: [前端]
 tags: [React, Redux, Design Pattern]
 published: True

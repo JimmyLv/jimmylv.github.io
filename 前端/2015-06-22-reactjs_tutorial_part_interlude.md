@@ -105,11 +105,11 @@ $ bower install bootstrap-sass-official --save
 现在`bootstrap-sass-official`库已经安装好，我们可以将我们想要使用的 Bootstrap 更新到`style.scss`。到现在为止，我们直接导入整个 bootstrap 库，让我们更新`style.scss`如下所示：
 
 ```css
-@import "../../libraries/bootstrap-sass-official/assets/stylesheets/bootstrap";
+@import '../../libraries/bootstrap-sass-official/assets/stylesheets/bootstrap';
 
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -163,8 +163,8 @@ link(rel='stylesheet', href='/stylesheets/css/style.css')
 在介绍 Twitter Bootstrap 之后，我们还需要加入新的 JavaScript 库：jQuery。由于我们已经可以将 JSX 代码编译成 JavaScript，让我们花点时间把 JavaScript 连接到单个`app.js`中。只需要告诉 JSX 导入相应的库即可，由于我们已经使用了 browserify，所以很简单就可以加入到`app.jsx`文件：
 
 ```js
-var $ = (jQuery = require("../../libraries/jquery/dist/jquery"));
-var bootstrap = require("../../libraries/bootstrap-sass-official/assets/javascripts/bootstrap");
+var $ = (jQuery = require('../../libraries/jquery/dist/jquery'))
+var bootstrap = require('../../libraries/bootstrap-sass-official/assets/javascripts/bootstrap')
 ```
 
 > Doing this points both `jQuery ($)` and `bootstrap` to the appropriate file which were installed via Bower. When we re-run our browserify gulp task, these two libraries get pulled in! Simple as that.

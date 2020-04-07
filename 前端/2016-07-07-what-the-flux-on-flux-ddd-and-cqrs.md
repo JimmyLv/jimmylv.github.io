@@ -171,39 +171,34 @@ class ShoppingCart {
     taxPercentage: taxPercentage,
     shippingAndHandling: shippingAndHandling,
   }) {
-    this.id = id;
-    this.cartItems = cartItems || [];
-    this.taxPercentage = this.taxPercentage;
-    this.shippingAndHandling = shippingAndHandling;
+    this.id = id
+    this.cartItems = cartItems || []
+    this.taxPercentage = this.taxPercentage
+    this.shippingAndHandling = shippingAndHandling
   }
 
   // Command methods
   addItem(cartItem) {
-    this.cartItems.push(cartItem);
+    this.cartItems.push(cartItem)
   }
   removeItem(cartItem) {
-    this.cartItems = cartItems.filter((item) => item.sku !== cartItem.sku);
+    this.cartItems = cartItems.filter((item) => item.sku !== cartItem.sku)
   }
 
   // Query method
   total() {
-    var prices = this.shoppingCart.cartItems.map((item) => item.price);
-    return prices.reduce((total, price) => total + price, 0);
+    var prices = this.shoppingCart.cartItems.map((item) => item.price)
+    return prices.reduce((total, price) => total + price, 0)
   }
 }
 
 // A child of the Aggregate
 class CartItem {
-  constructor({
-    sku: sku,
-    description: description,
-    price: price,
-    quantity: quantity,
-  }) {
-    this.sku = sku;
-    this.description = description;
-    this.price = price;
-    this.quantity = quantity;
+  constructor({ sku: sku, description: description, price: price, quantity: quantity }) {
+    this.sku = sku
+    this.description = description
+    this.price = price
+    this.quantity = quantity
   }
 }
 
@@ -270,21 +265,21 @@ class ShoppingCart {
   }
   addItem(cartItem) {
     // …
-    DomainEventPublisher.publish("CART_ITEM_ADDED", {
+    DomainEventPublisher.publish('CART_ITEM_ADDED', {
       cartId: this.id,
       sku: cartItem.sku,
       price: cartItem.price,
       quantity: cartItem.quantity,
-    });
+    })
   }
   removeItem(cartItem) {
     // …
-    DomainEventPublisher.publish("CART_ITEM_REMOVED", {
+    DomainEventPublisher.publish('CART_ITEM_REMOVED', {
       cartId: this.id,
       sku: cartItem.sku,
       price: cartItem.price,
       quantity: cartItem.quantity,
-    });
+    })
   }
 }
 
@@ -292,17 +287,11 @@ class ShoppingCart {
 class CartTotalStore {
   constructor() {
     // Holds Query Models in memory.
-    this.totals = {};
+    this.totals = {}
 
     // Subscribe to events that allows this store to update its Query Models.
-    DomainEventPublisher.subscribeTo(
-      "ITEM_ADDED_TO_CART",
-      this.handleItemAdded
-    );
-    DomainEventPublisher.subscribeTo(
-      "ITEM_REMOVED_FROM_CART",
-      this.handleItemRemoved
-    );
+    DomainEventPublisher.subscribeTo('ITEM_ADDED_TO_CART', this.handleItemAdded)
+    DomainEventPublisher.subscribeTo('ITEM_REMOVED_FROM_CART', this.handleItemRemoved)
   }
 
   // Query method
@@ -310,38 +299,38 @@ class CartTotalStore {
     return {
       cartId: cartId,
       total: this.totals[id],
-    };
+    }
   }
 
   // Methods to update Query Models.
   handleItemAdded({ cartId: cartId, cartItem: cartItem }) {
-    var total = this.totals[cartId] || 0;
-    var newTotal = total + cartItem.price * cartItem.quantity;
-    this.totals[cartId] = newTotal;
+    var total = this.totals[cartId] || 0
+    var newTotal = total + cartItem.price * cartItem.quantity
+    this.totals[cartId] = newTotal
   }
   handleItemRemoved({ cartId: cartId, cartItem: cartItem }) {
-    var total = this.totals[cartId] || 0;
-    var newTotal = total - cartItem.price * cartItem.quantity;
-    this.totals[cartId] = newTotal;
+    var total = this.totals[cartId] || 0
+    var newTotal = total - cartItem.price * cartItem.quantity
+    this.totals[cartId] = newTotal
   }
 }
 
 // This Command Handler maps Commands to command methods ShoppingCart.
 class ShoppingCartCommandHandler extends CommandHandler {
   constructor(repo) {
-    this.repo = repo;
+    this.repo = repo
 
     // Assumes commands implement subscribe that appends the handler to themselves.
-    AddItemToCart.subscribe(this.addItemToCart);
-    RemoveItemFromCart.subscribe(this.removeItemFromCart);
+    AddItemToCart.subscribe(this.addItemToCart)
+    RemoveItemFromCart.subscribe(this.removeItemFromCart)
   }
   addItemToCart(payload) {
-    var cart = this.repo.find(payload.cartId);
-    cart.addItem(payload.cartItem); // This publishes a Domain Event
+    var cart = this.repo.find(payload.cartId)
+    cart.addItem(payload.cartItem) // This publishes a Domain Event
   }
   removeItemToCart(payload) {
-    var cart = this.repo.find(payload.cartId);
-    cart.removeItem(payload.cartItem); // This publishes a Domain Event
+    var cart = this.repo.find(payload.cartId)
+    cart.removeItem(payload.cartItem) // This publishes a Domain Event
   }
 }
 ```

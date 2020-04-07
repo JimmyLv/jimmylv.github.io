@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Vue 应用单元测试的策略与实践 04 - Vuex 单元测试"
+title: 'Vue 应用单元测试的策略与实践 04 - Vuex 单元测试'
 categories: [前端]
 tags: [Tutorial, UnitTest, ES6, Vue, Vuex, Jest, CQRS, TDD]
 published: True
@@ -98,16 +98,16 @@ Action 应对起来略微棘手，因为它们可能需要调用外部的 API。
 
 ```js
 // product.js
-import shop from "../api/shop";
+import shop from '../api/shop'
 
 export const actions = {
   getAllProducts({ commit }) {
-    commit("REQUEST_PRODUCTS");
+    commit('REQUEST_PRODUCTS')
     shop.getProducts((products) => {
-      commit("RECEIVE_PRODUCTS", products);
-    });
+      commit('RECEIVE_PRODUCTS', products)
+    })
   },
-};
+}
 ```
 
 ```js
@@ -140,40 +140,40 @@ getter 的测试与 mutation 一样直截了当。getters 也是比较重逻辑�
 export const getters = {
   filteredProducts(state, { filterCategory }) {
     return state.products.filter((product) => {
-      return product.category === filterCategory;
-    });
+      return product.category === filterCategory
+    })
   },
-};
+}
 ```
 
 ```js
 // product.test.js
-import { expect } from "chai";
-import { getters } from "./getters";
+import { expect } from 'chai'
+import { getters } from './getters'
 
-describe("getters", () => {
-  it("filteredProducts", () => {
+describe('getters', () => {
+  it('filteredProducts', () => {
     // 模拟状态
     const state = {
       products: [
-        { id: 1, title: "Apple", category: "fruit" },
-        { id: 2, title: "Orange", category: "fruit" },
-        { id: 3, title: "Carrot", category: "vegetable" },
+        { id: 1, title: 'Apple', category: 'fruit' },
+        { id: 2, title: 'Orange', category: 'fruit' },
+        { id: 3, title: 'Carrot', category: 'vegetable' },
       ],
-    };
+    }
     // 模拟 getter
-    const filterCategory = "fruit";
+    const filterCategory = 'fruit'
 
     // 获取 getter 的结果
-    const result = getters.filteredProducts(state, { filterCategory });
+    const result = getters.filteredProducts(state, { filterCategory })
 
     // 断言结果
     expect(result).to.deep.equal([
-      { id: 1, title: "Apple", category: "fruit" },
-      { id: 2, title: "Orange", category: "fruit" },
-    ]);
-  });
-});
+      { id: 1, title: 'Apple', category: 'fruit' },
+      { id: 2, title: 'Orange', category: 'fruit' },
+    ])
+  })
+})
 ```
 
 ## Vue 组件和 Vuex store 的交互
@@ -191,36 +191,36 @@ describe("getters", () => {
 </template>
 
 <script>
-  import { mapActions } from "vuex";
+  import { mapActions } from 'vuex'
   export default {
     methods: {
-      ...mapActions(["actionClick"]),
+      ...mapActions(['actionClick']),
     },
-  };
+  }
 </script>
 ```
 
 在单元测试的时候，shallowMount（浅渲染）方法接受一个挂载 options，可以用来给 Vue 组件传递一个伪造的 store。然后我们就可以使用 Jest 模拟一个 action 的行为再传给 store，而 actionClick 这个伪造函数能够让我们去断言该 action 是否被调用过。所以我们在测试 action 的时候就可以只关心 action 的触发，而至于触发之后对 store 做了什么事情我们就不需要再关心了，因为 Vuex 的单元测试会涵盖相关的代码逻辑。
 
 ```js
-import { shallowMount, createLocalVue } from "@vue/test-utils";
-import Vuex from "vuex";
+import { shallowMount, createLocalVue } from '@vue/test-utils'
+import Vuex from 'vuex'
 
-const localVue = createLocalVue();
-localVue.use(Vuex);
+const localVue = createLocalVue()
+localVue.use(Vuex)
 
 const fakeStore = new Vuex.Store({
   state: {},
   actions: {
     actionClick: jest.fn(),
   },
-});
+})
 
-it("当按钮被点击时候调用“actionClick”的 action", () => {
-  const wrapper = shallowMount(Actions, { store: fakeStore, localVue });
-  wrapper.find("button").trigger("click");
-  expect(actions.actionClick).toHaveBeenCalled();
-});
+it('当按钮被点击时候调用“actionClick”的 action', () => {
+  const wrapper = shallowMount(Actions, { store: fakeStore, localVue })
+  wrapper.find('button').trigger('click')
+  expect(actions.actionClick).toHaveBeenCalled()
+})
 ```
 
 需要注意的是，在这里我们是把 Vuex store 传递给一个 localVue，而不是传递给基础的 Vue 构造函数。这是因为我们不想影响到全局的 Vue 构造函数，如果直接使用 `Vue.use(Vuex)` 会让 Vue 的原型上会增加 \$store 属性从而影响到其他的单元测试。而 localVue 则是一个独立作用域的 Vue 构造函数，我们可以对其进行任意的改动。
@@ -228,27 +228,27 @@ it("当按钮被点击时候调用“actionClick”的 action", () => {
 当然咯，除了 mock 掉 actions，Vuex store 里面的任何内容我们都可以将其模拟出来，比如 state 或者 getters：
 
 ```js
-import { shallowMount, createLocalVue } from "@vue/test-utils";
-import Vuex from "vuex";
+import { shallowMount, createLocalVue } from '@vue/test-utils'
+import Vuex from 'vuex'
 
-const localVue = createLocalVue();
-localVue.use(Vuex);
+const localVue = createLocalVue()
+localVue.use(Vuex)
 
 const fakeStore = new Vuex.Store({
   state: {
-    price: "998",
+    price: '998',
   },
   getters: {
     clicks: () => 2,
-    inputValue: () => "input",
+    inputValue: () => 'input',
   },
-});
+})
 
-it("在app中渲染价格和“inputValue”", () => {
-  const wrapper = shallowMount(Components, { store: fakeStore, localVue });
-  expect(wrapper.find("p").text()).toBe("input");
-  expect(wrapper.find(".price").text()).stringContaining("$998");
-});
+it('在app中渲染价格和“inputValue”', () => {
+  const wrapper = shallowMount(Components, { store: fakeStore, localVue })
+  expect(wrapper.find('p').text()).toBe('input')
+  expect(wrapper.find('.price').text()).stringContaining('$998')
+})
 ```
 
 ## 总结一下

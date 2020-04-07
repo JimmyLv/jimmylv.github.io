@@ -35,11 +35,11 @@ $ npm install --save-dev gulp
 Gulp 安装好之后，我们建立一个`gulpfile.js`文件：
 
 ```js
-var gulp = require("gulp");
+var gulp = require('gulp')
 
-gulp.task("default", function () {
+gulp.task('default', function () {
   // place code for your default task here
-});
+})
 ```
 
 > Now we need to install the Gulp packages that we will need to build our application. To start, let's install [browserify](https://www.npmjs.com/package/browserify), [reactify](https://www.npmjs.com/package/reactify) and [vinyl-source-stream](https://www.npmjs.com/package/vinyl-source-stream). To install these packages, run the following command:
@@ -71,21 +71,21 @@ $ npm install --save-dev react browserify reactify vinyl-source-stream
 下一步就是编写 Gulp 任务来将`.jsx`文件自动编译成可用的 JavaScript 文件。一个 Gulp 任务就是一个函数，包含编译文件的一系列步骤。我们需要修改`gulpfile.js`：
 
 ```js
-var gulp = require("gulp");
+var gulp = require('gulp')
 
-var browserify = require("browserify");
-var reactify = require("reactify");
-var source = require("vinyl-source-stream");
+var browserify = require('browserify')
+var reactify = require('reactify')
+var source = require('vinyl-source-stream')
 
-gulp.task("js", function () {
-  browserify("./public/javascripts/src/app.jsx")
+gulp.task('js', function () {
+  browserify('./public/javascripts/src/app.jsx')
     .transform(reactify)
     .bundle()
-    .pipe(source("app.js"))
-    .pipe(gulp.dest("public/javascripts/build/"));
-});
+    .pipe(source('app.js'))
+    .pipe(gulp.dest('public/javascripts/build/'))
+})
 
-gulp.task("default", ["js"]);
+gulp.task('default', ['js'])
 ```
 
 > Now running `gulp` from the command line will trigger the build of our React app; however, there are some things we need to do to our react app first!
@@ -103,10 +103,10 @@ gulp.task("default", ["js"]);
 首先，我们需要为 browersify 创建一个入口，建立一个`app.jsx`文件就可以了：
 
 ```js
-var React = require("react");
-var HelloWorld = require("./HelloWorld.jsx");
+var React = require('react')
+var HelloWorld = require('./HelloWorld.jsx')
 
-React.render(<HelloWorld />, document.getElementById("example"));
+React.render(<HelloWorld />, document.getElementById('example'))
 ```
 
 > This file is taking our `HelloWorld` component and rendering it in the div with id "example". This code is taken from our original `helloworld.jsx` file from last tutorial. Instead of doing everything in that file, we are now requiring a module `HelloWorld` and rendering it in `app.jsx`. The reason for this is that as our application gets more complex, we have more control of how our files are broken out.
@@ -118,13 +118,13 @@ React.render(<HelloWorld />, document.getElementById("example"));
 下一件事是已有的`helloworld.jsx`文件修改成 React 组件，`HelloWorld.jsx`：
 
 ```js
-var React = require("react");
+var React = require('react')
 
 module.exports = React.createClass({
   render: function () {
-    return <h1>Hello, world from a React.js Component!</h1>;
+    return <h1>Hello, world from a React.js Component!</h1>
   },
-});
+})
 ```
 
 > Notice that the `HelloWorld.jsx` and `app.jsx` files are combined to be very similar to how the 'helloworld.jsx' looked. Again, the reason for breaking our app into these two files are for future modules to be added.
@@ -159,9 +159,9 @@ body
 为了更好得使用 Gulp，我们可以实现一个内建的`watch`功能，能够自动监测和编译`.jsx`文件。添加任务：
 
 ```js
-gulp.task("watch", function () {
-  gulp.watch("public/javascripts/src/**/*.jsx", ["js"]);
-});
+gulp.task('watch', function () {
+  gulp.watch('public/javascripts/src/**/*.jsx', ['js'])
+})
 ```
 
 > Also add that task to your default Gulp task:
@@ -169,7 +169,7 @@ gulp.task("watch", function () {
 同时将`watch`任务添加到默认任务中：
 
 ```js
-gulp.task("default", ["js", "watch"]);
+gulp.task('default', ['js', 'watch'])
 ```
 
 > Now when we run `gulp` it will watch for changes in our `.jsx` and rebuild our javascript with that change! Awesome!

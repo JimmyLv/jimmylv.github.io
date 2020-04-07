@@ -23,7 +23,7 @@ published: true
 ```js
 class UserSettings {
   constructor(user) {
-    this.user = user;
+    this.user = user
   }
 
   changeSettings(settings) {
@@ -43,7 +43,7 @@ class UserSettings {
 ```js
 class UserAuth {
   constructor(user) {
-    this.user = user;
+    this.user = user
   }
 
   verifyCredentials() {
@@ -53,8 +53,8 @@ class UserAuth {
 
 class UserSettings {
   constructor(user) {
-    this.user = user;
-    this.auth = new UserAuth(user);
+    this.user = user
+    this.auth = new UserAuth(user)
   }
 
   changeSettings(settings) {
@@ -79,7 +79,7 @@ class AjaxRequester {
   constructor() {
     // What if we wanted another HTTP Method, like DELETE? We would have to
     // open this file up and modify this and put it in manually.
-    this.HTTP_METHODS = ["POST", "PUT", "GET"];
+    this.HTTP_METHODS = ['POST', 'PUT', 'GET']
   }
 
   get(url) {
@@ -93,7 +93,7 @@ class AjaxRequester {
 ```js
 class AjaxRequester {
   constructor() {
-    this.HTTP_METHODS = ["POST", "PUT", "GET"];
+    this.HTTP_METHODS = ['POST', 'PUT', 'GET']
   }
 
   get(url) {
@@ -101,7 +101,7 @@ class AjaxRequester {
   }
 
   addHTTPMethod(method) {
-    this.HTTP_METHODS.push(method);
+    this.HTTP_METHODS.push(method)
   }
 }
 ```
@@ -121,8 +121,8 @@ class AjaxRequester {
 ```js
 class Rectangle {
   constructor() {
-    this.width = 0;
-    this.height = 0;
+    this.width = 0
+    this.height = 0
   }
 
   setColor(color) {
@@ -134,45 +134,45 @@ class Rectangle {
   }
 
   setWidth(width) {
-    this.width = width;
+    this.width = width
   }
 
   setHeight(height) {
-    this.height = height;
+    this.height = height
   }
 
   getArea() {
-    return this.width * this.height;
+    return this.width * this.height
   }
 }
 
 class Square extends Rectangle {
   constructor() {
-    super();
+    super()
   }
 
   setWidth(width) {
-    this.width = width;
-    this.height = width;
+    this.width = width
+    this.height = width
   }
 
   setHeight(height) {
-    this.width = height;
-    this.height = height;
+    this.width = height
+    this.height = height
   }
 }
 
 function renderLargeRectangles(rectangles) {
   rectangles.forEach((rectangle) => {
-    rectangle.setWidth(4);
-    rectangle.setHeight(5);
-    let area = rectangle.getArea(); // BAD: Will return 25 for Square. Should be 20.
-    rectangle.render(area);
-  });
+    rectangle.setWidth(4)
+    rectangle.setHeight(5)
+    let area = rectangle.getArea() // BAD: Will return 25 for Square. Should be 20.
+    rectangle.render(area)
+  })
 }
 
-let rectangles = [new Rectangle(), new Rectangle(), new Square()];
-renderLargeRectangles(rectangles);
+let rectangles = [new Rectangle(), new Rectangle(), new Square()]
+renderLargeRectangles(rectangles)
 ```
 
 **Good**:
@@ -192,56 +192,56 @@ class Shape {
 
 class Rectangle extends Shape {
   constructor() {
-    super();
-    this.width = 0;
-    this.height = 0;
+    super()
+    this.width = 0
+    this.height = 0
   }
 
   setWidth(width) {
-    this.width = width;
+    this.width = width
   }
 
   setHeight(height) {
-    this.height = height;
+    this.height = height
   }
 
   getArea() {
-    return this.width * this.height;
+    return this.width * this.height
   }
 }
 
 class Square extends Shape {
   constructor() {
-    super();
-    this.length = 0;
+    super()
+    this.length = 0
   }
 
   setLength(length) {
-    this.length = length;
+    this.length = length
   }
 
   getArea() {
-    return this.length * this.length;
+    return this.length * this.length
   }
 }
 
 function renderLargeShapes(shapes) {
   shapes.forEach((shape) => {
     switch (shape.constructor.name) {
-      case "Square":
-        shape.setLength(5);
-      case "Rectangle":
-        shape.setWidth(4);
-        shape.setHeight(5);
+      case 'Square':
+        shape.setLength(5)
+      case 'Rectangle':
+        shape.setWidth(4)
+        shape.setHeight(5)
     }
 
-    let area = shape.getArea();
-    shape.render(area);
-  });
+    let area = shape.getArea()
+    shape.render(area)
+  })
 }
 
-let shapes = [new Rectangle(), new Rectangle(), new Square()];
-renderLargeShapes(shapes);
+let shapes = [new Rectangle(), new Rectangle(), new Square()]
+renderLargeShapes(shapes)
 ```
 
 ### [Interface Segregation Principle (ISP)](https://github.com/ryanmcdermott/clean-code-javascript#interface-segregation-principle-isp) | 接口隔离原则
@@ -265,13 +265,13 @@ ISP 的表述是「不应该强制客户端去依赖于他们不需要的接口�
 ```js
 class DOMTraverser {
   constructor(settings) {
-    this.settings = settings;
-    this.setup();
+    this.settings = settings
+    this.setup()
   }
 
   setup() {
-    this.rootNode = this.settings.rootNode;
-    this.animationModule.setup();
+    this.rootNode = this.settings.rootNode
+    this.animationModule.setup()
   }
 
   traverse() {
@@ -280,10 +280,10 @@ class DOMTraverser {
 }
 
 let $ = new DOMTraverser({
-  rootNode: document.getElementsByTagName("body"),
+  rootNode: document.getElementsByTagName('body'),
   animationModule: function () {}, // Most of the time, we won't need to animate when traversing.
   // ...
-});
+})
 ```
 
 **Good**:
@@ -291,14 +291,14 @@ let $ = new DOMTraverser({
 ```js
 class DOMTraverser {
   constructor(settings) {
-    this.settings = settings;
-    this.options = settings.options;
-    this.setup();
+    this.settings = settings
+    this.options = settings.options
+    this.setup()
   }
 
   setup() {
-    this.rootNode = this.settings.rootNode;
-    this.setupOptions();
+    this.rootNode = this.settings.rootNode
+    this.setupOptions()
   }
 
   setupOptions() {
@@ -313,11 +313,11 @@ class DOMTraverser {
 }
 
 let $ = new DOMTraverser({
-  rootNode: document.getElementsByTagName("body"),
+  rootNode: document.getElementsByTagName('body'),
   options: {
     animationModule: function () {},
   },
-});
+})
 ```
 
 ### [Dependency Inversion Principle (DIP)](https://github.com/ryanmcdermott/clean-code-javascript#dependency-inversion-principle-dip) | 依赖反转原则
@@ -346,23 +346,23 @@ let $ = new DOMTraverser({
 ```js
 class InventoryTracker {
   constructor(items) {
-    this.items = items;
+    this.items = items
 
     // BAD: We have created a dependency on a specific request implementation.
     // We should just have requestItems depend on a request method: `request`
-    this.requester = new InventoryRequester();
+    this.requester = new InventoryRequester()
   }
 
   requestItems() {
     this.items.forEach((item) => {
-      this.requester.requestItem(item);
-    });
+      this.requester.requestItem(item)
+    })
   }
 }
 
 class InventoryRequester {
   constructor() {
-    this.REQ_METHODS = ["HTTP"];
+    this.REQ_METHODS = ['HTTP']
   }
 
   requestItem(item) {
@@ -370,8 +370,8 @@ class InventoryRequester {
   }
 }
 
-let inventoryTracker = new InventoryTracker(["apples", "bananas"]);
-inventoryTracker.requestItems();
+let inventoryTracker = new InventoryTracker(['apples', 'bananas'])
+inventoryTracker.requestItems()
 ```
 
 **Good**:
@@ -379,20 +379,20 @@ inventoryTracker.requestItems();
 ```js
 class InventoryTracker {
   constructor(items, requester) {
-    this.items = items;
-    this.requester = requester;
+    this.items = items
+    this.requester = requester
   }
 
   requestItems() {
     this.items.forEach((item) => {
-      this.requester.requestItem(item);
-    });
+      this.requester.requestItem(item)
+    })
   }
 }
 
 class InventoryRequesterV1 {
   constructor() {
-    this.REQ_METHODS = ["HTTP"];
+    this.REQ_METHODS = ['HTTP']
   }
 
   requestItem(item) {
@@ -402,7 +402,7 @@ class InventoryRequesterV1 {
 
 class InventoryRequesterV2 {
   constructor() {
-    this.REQ_METHODS = ["WS"];
+    this.REQ_METHODS = ['WS']
   }
 
   requestItem(item) {
@@ -412,9 +412,6 @@ class InventoryRequesterV2 {
 
 // By constructing our dependencies externally and injecting them, we can easily
 // substitute our request module for a fancy new one that uses WebSockets.
-let inventoryTracker = new InventoryTracker(
-  ["apples", "bananas"],
-  new InventoryRequesterV2()
-);
-inventoryTracker.requestItems();
+let inventoryTracker = new InventoryTracker(['apples', 'bananas'], new InventoryRequesterV2())
+inventoryTracker.requestItems()
 ```

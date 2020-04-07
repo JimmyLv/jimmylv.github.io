@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Vue 应用单元测试的策略与实践 02 - 单元测试基础"
+title: 'Vue 应用单元测试的策略与实践 02 - 单元测试基础'
 categories: [前端]
 tags: [Tutorial, UnitTest, ES6, Vue, Jest, Agile, TDD]
 published: True
@@ -40,27 +40,27 @@ yarn add jest -D #--dev
 然后创建一个 `math.js` 文件，输入一个我们稍后测试的 `sum` 函数:
 
 ```js
-const sum = (a, b) => a + b;
+const sum = (a, b) => a + b
 
-module.exports = { sum };
+module.exports = { sum }
 ```
 
 接下来，让我们写第一个测试。在同一个文件夹中创建一个 `math.test.js` 文件，在这里我们将使用 Jest 来测试 `math.js` 中定义的函数:
 
 ```js
-const { sum } = require("./math");
+const { sum } = require('./math')
 
-describe("Math module", () => {
-  it("should return sum result when one number plus another number", () => {
+describe('Math module', () => {
+  it('should return sum result when one number plus another number', () => {
     // Given
-    const number = 1;
-    const anotherNumber = 2;
+    const number = 1
+    const anotherNumber = 2
     // When
-    const result = sum(number, anotherNumber);
+    const result = sum(number, anotherNumber)
     // Then
-    expect(result).toBe(2);
-  });
-});
+    expect(result).toBe(2)
+  })
+})
 ```
 
 然后运行 `yarn test` （添加 NPM Script）你就可以看到相应的结果。
@@ -82,8 +82,8 @@ describe("Math module", () => {
 在 `expect` 后面的 `toBe`称之为 Matcher，是断言时的判断语句以验证正确性 ✅，在后面的文章中我们还会接触更多 Matchers，甚至可以扩展一些特别定制的 Matchers。
 
 ```js
-expect(1 + 1).toBe(2);
-expect(1 + 1).not.toBe(3);
+expect(1 + 1).toBe(2)
+expect(1 + 1).not.toBe(3)
 ```
 
 修改断言的结果，就可以看到成功后的结果了：
@@ -108,15 +108,15 @@ expect(1 + 1).not.toBe(3);
 ### Mock 用于替代整个模块
 
 ```js
-import SoundPlayer from "./sound-player";
+import SoundPlayer from './sound-player'
 
-const mockPlaySoundFile = jest.fn();
+const mockPlaySoundFile = jest.fn()
 
-jest.mock("./sound-player", () => {
+jest.mock('./sound-player', () => {
   return jest.fn().mockImplementation(() => {
-    return { playSoundFile: mockPlaySoundFile };
-  });
-});
+    return { playSoundFile: mockPlaySoundFile }
+  })
+})
 ```
 
 我们可以看到 `jest.mock()` 方法中的第二个参数是一个函数，那么我们就可以完全接管整个 `./sound-player` JavaScript 模块，比如说这里的 `playSoundFile` 本来应该是从 `./sound-player` 这个文件当中 `export` 出来的，而被 Mock 之后我们的测试就可以使用 Mock 所返回的数据或方法，从而保证模块所返回的内容是我们所期望的。但这时需要注意的是，该模板的所有功能都已经被 Mock 掉，而不会再从原模块当中返回，所以我们就需要重新实现该模块中的所有功能。可别一不小心就成了张艺谋导演《影》片中的影子，被完全“取而代之”，连夫人也被 Mock 所吸引。
@@ -124,13 +124,13 @@ jest.mock("./sound-player", () => {
 ### Stub 用于模拟特定行为
 
 ```js
-const mockFn = jest.fn();
-mockFn();
-expect(mockFn).toHaveBeenCalled();
+const mockFn = jest.fn()
+mockFn()
+expect(mockFn).toHaveBeenCalled()
 
 // With a mock implementation:
-const returnsTrue = jest.fn(() => true);
-console.log(returnsTrue()); // true;
+const returnsTrue = jest.fn(() => true)
+console.log(returnsTrue()) // true;
 ```
 
 这里的特定行为也可以是没有行为，`jest.fn()` 代表着我就是一个 Stub（桩），“你来我就在这里，你走我也依然在这里，风雨无阻”。不需要什么输入输出，只要能在测试的时候验证到 Stub 被调用过就行，也就能够断言到某处代码被执行，从而确定代码被测试所覆盖。而另一种特定行为就是返回特定的数据，即 Stub 也可以根据输入模拟返回一种输出，作为某些模块的替身帮它演戏，比如“小鲜肉们”遇到要跳车啦、要~~卿卿我我~~（误）的时候就要找替身，“一二三四五六七八”连台词都不用背还需要配音。
@@ -140,15 +140,15 @@ console.log(returnsTrue()); // true;
 > Spy packages without affecting the functions code
 
 ```js
-const video = require("./video");
+const video = require('./video')
 
-it("plays video", () => {
-  const spy = jest.spyOn(video, "play");
-  const isPlaying = video.play();
+it('plays video', () => {
+  const spy = jest.spyOn(video, 'play')
+  const isPlaying = video.play()
 
-  expect(spy).toHaveBeenCalled();
-  expect(isPlaying).toBe(true);
-});
+  expect(spy).toHaveBeenCalled()
+  expect(isPlaying).toBe(true)
+})
 ```
 
 Spy 并不会影响到原有模块的功能代码，而只是充当一个监护人的作用，“你可以继续我型我秀上课讲小话，但是老师会偷偷告诉你妈妈，看你放学后老妈不打断你的腿”。比如说上文中的 `video` 模块中的 `play()` 方法已经被 `spy` 过，那么之后 `play()` 方法只要被调用过，我们就能判断其是否执行，甚至执行的次数。
@@ -165,8 +165,8 @@ window.matchMedia = jest.fn().mockImplementation((query) => {
     onchange: null,
     addListener: jest.fn(),
     removeListener: jest.fn(),
-  };
-});
+  }
+})
 ```
 
 ### 代码模块的易测性
@@ -188,14 +188,14 @@ navigator.geolocation.getCurrentPostion() # chrome API 异步获取当前位置
 ### Callback 回调函数
 
 ```js
-it("the data is peanut butter", (done) => {
+it('the data is peanut butter', (done) => {
   function callback(data) {
-    expect(data).toBe("peanut butter");
-    done();
+    expect(data).toBe('peanut butter')
+    done()
   }
 
-  fetchData(callback);
-});
+  fetchData(callback)
+})
 ```
 
 这是最最普通的方式，也是各大框架都支持的一种写法， `done()` 作为异步代码结束的结束标志，从而让测试框架“知道”在结束时进行断言。但这种方式侵入性比较强，对测试语句不友好且违背了 Given/When/Then 的三段式套路，就像回调地狱一样的道理，如果让 `done()` 充斥着测试那么代码也就变得混乱。
@@ -203,18 +203,18 @@ it("the data is peanut butter", (done) => {
 ### Promise 让爱 `then()` 到底
 
 ```js
-it("the data is peanut butter", () => {
-  expect.assertions(1);
+it('the data is peanut butter', () => {
+  expect.assertions(1)
   return fetchData().then((data) => {
-    expect(data).toBe("peanut butter");
-  });
-});
+    expect(data).toBe('peanut butter')
+  })
+})
 ```
 
 ```js
-expect(Promise.resolve("lemon")).resolves.toBe("lemon");
+expect(Promise.resolve('lemon')).resolves.toBe('lemon')
 
-expect(Promise.reject(new Error("octopus"))).rejects.toThrow("octopus");
+expect(Promise.reject(new Error('octopus'))).rejects.toThrow('octopus')
 ```
 
 其实这种方式也好不到哪去，无非就是把 `done()` 方式换成了 `then()` 又一次充斥在整个 expect 当中，混乱了 When 和 Then 两种本该分开的时刻。但也有一个不错的点，可以通过 Promise 的 `.resolve()` 和 `.reject()` 方法使测试分别验证正常或异常的情况。
@@ -222,11 +222,11 @@ expect(Promise.reject(new Error("octopus"))).rejects.toThrow("octopus");
 ### Async/Await 让异步变得同步
 
 ```js
-test("the data is peanut butter", async () => {
-  expect.assertions(1);
-  const data = await fetchData();
-  expect(data).toBe("peanut butter");
-});
+test('the data is peanut butter', async () => {
+  expect.assertions(1)
+  const data = await fetchData()
+  expect(data).toBe('peanut butter')
+})
 ```
 
 Async/Await 语法糖在业务代码当中就特别好使了，好处不多说直接看得见：原本需要 `done()` 或 `then()` 的地方都不再混乱，又一次回归到了正常的 Given/When/Then 三段式套路，让测试代码变得非常清晰易读。唯一需要注意的是， 额外的`expect.assertions(number)` 其实是验证在测试期间所调用的断言数量，这在测试多层异步代码时很有用，以确保实际调用回调中的断言次数。

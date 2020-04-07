@@ -108,8 +108,7 @@ $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a}.    s = ut + \frac{1}{2}at^2 $$
 ---
 
 ```html
-使用：.class{:.class} 使用：#id{:#id} 组合使用：{:.class.class2 width="200px"}
-父元素样式使用&：{:&.class}
+使用：.class{:.class} 使用：#id{:#id} 组合使用：{:.class.class2 width="200px"} 父元素样式使用&：{:&.class}
 ```
 
 [slide]
@@ -493,7 +492,7 @@ nodeppt：https://github.com/ksky521/nodePPT
 
 ---
 
-![小萝莉](https://jimmylv.github.io/images/girl.jpg "小萝莉")
+![小萝莉](https://jimmylv.github.io/images/girl.jpg '小萝莉')
 
 [slide][note] ##这里是 note
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "【译】《React 学习之道》The Road to learn React (简体中文版) 最简单，且最实用的 React 实战教程"
+title: '【译】《React 学习之道》The Road to learn React (简体中文版) 最简单，且最实用的 React 实战教程'
 categories: [前端]
 tags: [Tutorial, Roadmap, ES6, React]
 published: True

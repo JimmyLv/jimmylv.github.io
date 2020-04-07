@@ -23,8 +23,8 @@ React 的创建是为了数据的频繁交互：通过组件化轻松展现数�
 声明变量采用首字母小写
 
 ```js
-var myDivElement = <div className="foo" />;
-React.render(myDivElement, document.body);
+var myDivElement = <div className="foo" />
+React.render(myDivElement, document.body)
 ```
 
 ### 渲染 React 组件
@@ -34,9 +34,9 @@ React.render(myDivElement, document.body);
 ```js
 var MyComponent = React.createClass({
   /*...*/
-});
-var myElement = <MyComponent someProperty={true} />;
-React.render(myElement, document.body);
+})
+var myElement = <MyComponent someProperty={true} />
+React.render(myElement, document.body)
 ```
 
 ## 关于 JSX
@@ -97,11 +97,11 @@ var Component = React.createClass({
       <div {...this.props} title="zzz">
         this is a div
       </div>
-    );
+    )
   },
-});
+})
 
-React.render(<Component name="xxx" title="yyy" />, document.body);
+React.render(<Component name="xxx" title="yyy" />, document.body)
 ```
 
 ### style 属性
@@ -109,7 +109,7 @@ React.render(<Component name="xxx" title="yyy" />, document.body);
 在 React 中写行内样式时，要这样写，不能采用引号的书写方式
 
 ```js
-React.render(<div style={{ color: "red" }}>xxxxx</div>, document.body);
+React.render(<div style={{ color: 'red' }}>xxxxx</div>, document.body)
 ```
 
 ## UI 交互
@@ -119,14 +119,11 @@ React.render(<div style={{ color: "red" }}>xxxxx</div>, document.body);
 ```js
 var HelloWorld = React.createClass({
   render: function () {
-    return <div data-title={this.props.title}>{this.props.content}</div>;
+    return <div data-title={this.props.title}>{this.props.content}</div>
   },
-});
+})
 
-React.render(
-  <HelloWorld title="this is title" content="this is content" />,
-  document.body
-);
+React.render(<HelloWorld title="this is title" content="this is content" />, document.body)
 ```
 
 通过`this.props`我们可以拿到组件被使用时的属性，this.props 就是组件的属性集合。React 将组件的子节点封装到了 children 属性中，当子节点只有一个的时候直接通过`this.props.children`获取子节点的内容。当子节点的个数大于 1 时，`this.props.children`返回的是一个数组。
@@ -138,25 +135,22 @@ React.render(
 ```js
 var ColorButton = React.createClass({
   getInitialState: function () {
-    return { bColor: "green" };
+    return { bColor: 'green' }
   },
   render: function () {
     return (
-      <button
-        onClick={this.handleClick}
-        style={{ backgroundColor: this.state.bColor }}
-      >
+      <button onClick={this.handleClick} style={{ backgroundColor: this.state.bColor }}>
         click
       </button>
-    );
+    )
   },
   // 点击按钮，切换按钮的颜色：
   handleClick: function (event) {
-    this.setState({ bColor: this.state.bColor === "green" ? "red" : "green" });
+    this.setState({ bColor: this.state.bColor === 'green' ? 'red' : 'green' })
   },
-});
+})
 
-React.render(<ColorButton />, document.body);
+React.render(<ColorButton />, document.body)
 ```
 
 `getInitialState`是用来初始化 state，`handleClick`是用来处理我们点击事件的，如果想要拿到当前操作的 DOM，通过参数 event 获取。
@@ -172,17 +166,17 @@ var RenderComponent = React.createClass({
   render: function () {
     return (
       <ul>
-        {this.props["data-list"].map(function (item) {
-          return <li>{item}</li>;
+        {this.props['data-list'].map(function (item) {
+          return <li>{item}</li>
         })}
       </ul>
-    );
+    )
   },
-});
+})
 
 var StateComponent = React.createClass({
   getInitialState: function () {
-    return { list: ["xxx", "yyy"] };
+    return { list: ['xxx', 'yyy'] }
   },
   render: function () {
     return (
@@ -190,14 +184,14 @@ var StateComponent = React.createClass({
         <button onClick={this.handleClick}>click</button>
         <RenderComponent data-list={this.state.list} />
       </div>
-    );
+    )
   },
   handleClick: function () {
-    this.setState({ list: [1, 2, 3] });
+    this.setState({ list: [1, 2, 3] })
   },
-});
+})
 
-React.render(<StateComponent />, document.body);
+React.render(<StateComponent />, document.body)
 ```
 
 React 还允许我们下面的方式自定义属性的默认值：
@@ -206,11 +200,11 @@ React 还允许我们下面的方式自定义属性的默认值：
 var ComponentWithDefaultProps = React.createClass({
   getDefaultProps: function () {
     return {
-      value: "default value",
-    };
+      value: 'default value',
+    }
   },
   /* ... */
-});
+})
 ```
 
 `getDefaultProps()`的值将会被缓存，当`this.props.value`的值没有被父组件指定时，将会使用这个默认值。
@@ -227,31 +221,23 @@ var Avatar = React.createClass({
         <ProfilePic username={this.props.username} />
         <ProfileLink username={this.props.username} />
       </div>
-    );
+    )
   },
-});
+})
 
 var ProfilePic = React.createClass({
   render: function () {
-    return (
-      <img
-        src={"http://graph.facebook.com/" + this.props.username + "/picture"}
-      />
-    );
+    return <img src={'http://graph.facebook.com/' + this.props.username + '/picture'} />
   },
-});
+})
 
 var ProfileLink = React.createClass({
   render: function () {
-    return (
-      <a href={"http://www.facebook.com/" + this.props.username}>
-        {this.props.username}
-      </a>
-    );
+    return <a href={'http://www.facebook.com/' + this.props.username}>{this.props.username}</a>
   },
-});
+})
 
-React.render(<Avatar username="pwh" />, document.getElementById("example"));
+React.render(<Avatar username="pwh" />, document.getElementById('example'))
 ```
 
 上面的例子中，组件 Avatar 包含了组件 ProfilePic 和 ProfileLink。在 React 当中，**所有者就是可以设置其他组件 props 的组件**。说的通俗点：如果组件 X 出现在了组件 Y 的 render()方法中，那么组件 Y 就是所有者。正如我们之前所讨论的，组件不能改变 props—props 应同所有者初始化它们时保持一致。
@@ -269,16 +255,16 @@ React.render(<Avatar username="pwh" />, document.getElementById("example"));
 ```js
 var Component = React.createClass({
   render: function () {
-    var results = this.props.results;
+    var results = this.props.results
     return (
       <ol>
         {results.map(function (result) {
-          return <li key={result.id}>{result.text}</li>;
+          return <li key={result.id}>{result.text}</li>
         })}
       </ol>
-    );
+    )
   },
-});
+})
 ```
 
 ### 单向数据流

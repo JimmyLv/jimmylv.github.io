@@ -29,13 +29,13 @@ published: True
 第一个封装的模块就是工作的发布功能，首先新建一个组件，简单列出所有的发布信息。让我们为 React 组件新建一个`Job.jsx`文件，放到`public/javascripts/scr/`文件夹：
 
 ```js
-var React = require("react");
+var React = require('react')
 
 module.exports = React.createClass({
   render: function () {
-    return <h1>Job Title</h1>;
+    return <h1>Job Title</h1>
   },
-});
+})
 ```
 
 > This file might look surprisingly similar to our `HelloWorld.jsx` file and that is because it is! Of course we want to add some functionality to our `Job` component, but first let's get it hooked up into our application. To do this, we will need to modify our `app.jsx` file slightly to use the `Job` component instead of the `HelloWorld` component. To do this, modify the `app.jsx` file to read as the following:
@@ -43,12 +43,12 @@ module.exports = React.createClass({
 这个文件看起来就跟之前的`HelloWorld.jsx`文件易于。当然我们需要为`Job`组件加上一些功能，当然首先需要连接到我们的应用。稍微修改一下`app.jsx`，将`HelloWorld`组件替换为`Job`组件。
 
 ```js
-var $ = (jQuery = require("../../libraries/jquery/dist/jquery"));
-var bootstrap = require("../../libraries/bootstrap-sass-official/assets/javascripts/bootstrap");
-var React = require("react");
-var HelloWorld = require("./Job.jsx");
+var $ = (jQuery = require('../../libraries/jquery/dist/jquery'))
+var bootstrap = require('../../libraries/bootstrap-sass-official/assets/javascripts/bootstrap')
+var React = require('react')
+var HelloWorld = require('./Job.jsx')
 
-React.render(<HelloWorld />, document.getElementById("job-post"));
+React.render(<HelloWorld />, document.getElementById('job-post'))
 ```
 
 > **Please note** we also changed the HTML element we are attaching our React app to from `example` to `job-post` so make sure to adjust your `index.jade` file to match. Running `gulp` and then serving your application, you should see a header title of "Job Title" instead of our "Hello World" text from the last couple of tutorials. Now let's add some information to this component and really make it look like a job posting!
@@ -62,19 +62,19 @@ React.render(<HelloWorld />, document.getElementById("job-post"));
 为了给我们的`Job`组件添加一些有用信息，我们需要为组件新建一个“初始状态”。这是在简化组件获取数据的任务，但是现在它为我们所用。在`Job.jsx`这个文件，我们新建一个`getInitialState`函数，然后返回一个字典，其中包括我们想要组件在最开始时所需要的一些信息。一旦我们完成这些，我们就可以使用初始 state 数据来改变渲染的原色。从以下的内容可以看到我们对`Job.jsx`所做的修改：
 
 ```js
-var React = require("react");
+var React = require('react')
 
 module.exports = React.createClass({
   getInitialState: function () {
     return {
-      company: "TrackMaven",
-      position: "Software Maven",
-      local: "Washington, DC, USA",
-      lookingFor: "Angular.js, Django, ElasticSearch",
-      postedDate: "4 April 2015",
-      description: "",
-      category: "Engineer",
-    };
+      company: 'TrackMaven',
+      position: 'Software Maven',
+      local: 'Washington, DC, USA',
+      lookingFor: 'Angular.js, Django, ElasticSearch',
+      postedDate: '4 April 2015',
+      description: '',
+      category: 'Engineer',
+    }
   },
 
   render: function () {
@@ -84,15 +84,13 @@ module.exports = React.createClass({
           <span class="listing-company-name">{this.state.company}</span>
           <span class="listing-location">{this.state.local}</span>
         </h2>
-        <span class="listing-job-type">
-          Looking for: {this.state.lookingFor}
-        </span>
+        <span class="listing-job-type">Looking for: {this.state.lookingFor}</span>
         <span class="listing-posted">Posted: {this.state.postedDate}</span>
         <span class="listing-company-category">{this.state.category}</span>
       </div>
-    );
+    )
   },
-});
+})
 ```
 
 > Note that with the `getInitialState` function, the `render` function now has access to a useful state. We can cycle through the state to render the data in our app. Our web application should now look like this:
@@ -112,8 +110,8 @@ module.exports = React.createClass({
 在`Jobs`组件中，我们 map 出所有单独的`Job`组件。但是在教程的这个部分，我们依然会很难为数据编程。首先，我们要新建“初始化 state 数据”，看起来就像我们将来的 API 形式。为`Jobs`组件添加`getInitialState`方法，在 React.js 中循环渲染很多组件很容易，但也不完全靠直觉。我们想要在 JavaScript 中使用`map()`函数 map 将每一个"job"渲染到`Job`组件。以下是最终的`Jobs.jsx`：
 
 ```js
-var React = require("react");
-var Job = require("./Job.jsx");
+var React = require('react')
+var Job = require('./Job.jsx')
 
 module.exports = React.createClass({
   getInitialState: function () {
@@ -121,25 +119,25 @@ module.exports = React.createClass({
     return {
       data: [
         {
-          company: "TrackMaven",
-          position: "Software Maven",
-          local: "Washington, DC, USA",
-          lookingFor: "Angular.js, Django, ElasticSearch",
-          postedDate: "4 April 2015",
-          description: "",
-          category: "Engineering",
+          company: 'TrackMaven',
+          position: 'Software Maven',
+          local: 'Washington, DC, USA',
+          lookingFor: 'Angular.js, Django, ElasticSearch',
+          postedDate: '4 April 2015',
+          description: '',
+          category: 'Engineering',
         },
         {
-          company: "TrackMaven",
-          position: "Junior Software Maven",
-          local: "Washington, DC, USA",
-          lookingFor: "Javascript, Python",
-          postedDate: "4 April 2015",
-          description: "",
-          category: "Engineering",
+          company: 'TrackMaven',
+          position: 'Junior Software Maven',
+          local: 'Washington, DC, USA',
+          lookingFor: 'Javascript, Python',
+          postedDate: '4 April 2015',
+          description: '',
+          category: 'Engineering',
         },
       ],
-    };
+    }
   },
   render: function () {
     return (
@@ -155,12 +153,12 @@ module.exports = React.createClass({
               description={job.description}
               category={job.category}
             />
-          );
+          )
         })}
       </div>
-    );
+    )
   },
-});
+})
 ```
 
 > This allows us to clean up the `Job` component a little bit, most importantly switching from using `state` to `props` since we are now passing in the data to the `Job` component and not using our `getInitialState` function. Most of this is the same, but we made some small changes to the return function. First note the change from `class` to `className` due to some issue with React.js and how it handles the `class` namespace. Second, note we got rid of the `getInitialState` function since we now pass in the data through our `Jobs` component.
@@ -168,7 +166,7 @@ module.exports = React.createClass({
 这样使我们保证`Job`组件的整洁性，最重要的变化是将`state`换成了`props`，因为我们需要将数据传递到`Job`组件，而不是使用`getInitialState`方法。大部分都是一样的，但是我们在`return`方法中需要做出一点改变。首先，注意到`class`换成了`className`，这是由于 React.js 的一些 issue，因为这涉及到`class`的命名空间。第二，注意到我们不需要`getInitialState`方法了，因为我们现在是从`Jobs`组件中拿到的数据。
 
 ```js
-var React = require("react");
+var React = require('react')
 
 module.exports = React.createClass({
   render: function () {
@@ -180,22 +178,16 @@ module.exports = React.createClass({
           <small className="listing-location">{this.props.local}</small>
         </h4>
         <p className="list-group-item-text">
-          <span className="listing-job-type">
-            Looking for: {this.props.lookingFor}
-          </span>
+          <span className="listing-job-type">Looking for: {this.props.lookingFor}</span>
         </p>
         <p className="list-group-item-text">
-          <span className="listing-posted">
-            Posted: {this.props.postedDate}
-          </span>
-          <span className="listing-company-category">
-            {this.props.category}
-          </span>
+          <span className="listing-posted">Posted: {this.props.postedDate}</span>
+          <span className="listing-company-category">{this.props.category}</span>
         </p>
       </a>
-    );
+    )
   },
-});
+})
 ```
 
 > Next let's add some simple SCSS in our `public/stylesheets/scss/style.scss` file to make our application look a little better. Below is all the SCSS I have added:
@@ -203,11 +195,11 @@ module.exports = React.createClass({
 接下来让我们在`public/stylesheets/scss/style.scss`文件中添加一些简单的 SCSS，这会使我们的应用看起来更漂亮一些。如下所示：
 
 ```css
-@import "../../libraries/bootstrap-sass-official/assets/stylesheets/bootstrap";
+@import '../../libraries/bootstrap-sass-official/assets/stylesheets/bootstrap';
 
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
 }
 
 a {

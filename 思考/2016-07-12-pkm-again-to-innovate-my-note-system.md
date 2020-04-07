@@ -73,7 +73,7 @@ published: True
 ```md
 ---
 title: 革新我的笔记系统。
-tags: ["noteton"]
+tags: ['noteton']
 notebook: 0.0 Inbox
 ---
 ```

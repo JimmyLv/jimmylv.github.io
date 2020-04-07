@@ -59,11 +59,11 @@ time: 2 days
 
 ```js
 app.use(function (req, res, next) {
-  res.status(404).render("404", {
+  res.status(404).render('404', {
     url: req.originalUrl,
-    error: "Not found",
-  });
-});
+    error: 'Not found',
+  })
+})
 ```
 
 ![](https://jimmylv.github.io/images/images/swig_404.png)
@@ -71,9 +71,9 @@ app.use(function (req, res, next) {
 当然可以再次分层，把具体的`res.render()`函数放到不同的地方。
 
 ```js
-var sites = require("../app/sites");
-app.get("/", sites.index);
-app.get("/get/:awe", sites.get);
+var sites = require('../app/sites')
+app.get('/', sites.index)
+app.get('/get/:awe', sites.get)
 ```
 
 ### 0x03. Sites 视图

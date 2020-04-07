@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Vue 应用单元测试的策略与实践 06 - 如何落地的几点建议"
+title: 'Vue 应用单元测试的策略与实践 06 - 如何落地的几点建议'
 categories: [前端]
 tags: [Tutorial, UnitTest, Team, Vue, Vuex, Jest, CQRS, TDD]
 published: True
@@ -51,24 +51,24 @@ published: True
 ```js
 // production code
 const computeTotalAmount = (products) => {
-  return products.reduce((total, product) => total + product.price, 0);
-};
+  return products.reduce((total, product) => total + product.price, 0)
+}
 
 // testing code
-it("should return summed up total amount 1000 when there are three products priced 200, 300, 500", () => {
+it('should return summed up total amount 1000 when there are three products priced 200, 300, 500', () => {
   // given - 准备数据
   const products = [
-    { name: "nike", price: 200 },
-    { name: "adidas", price: 300 },
-    { name: "lining", price: 500 },
-  ];
+    { name: 'nike', price: 200 },
+    { name: 'adidas', price: 300 },
+    { name: 'lining', price: 500 },
+  ]
 
   // when - 调用被测函数
-  const result = computeTotalAmount(products);
+  const result = computeTotalAmount(products)
 
   // then - 断言结果
-  expect(result).toBe(1000);
-});
+  expect(result).toBe(1000)
+})
 ```
 
 这个测试的例子虽小，但五脏俱全。就是一个最简单的 输入/输出 function，这就是最方便测试的地方，也最具测试价值，因为这都是最重要的业务数据逻辑。想一想你的 Vue 项目中哪些地方会有这样的纯函数呢？

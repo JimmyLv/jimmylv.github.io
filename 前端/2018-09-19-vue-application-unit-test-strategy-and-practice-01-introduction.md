@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Vue 应用单元测试的策略与实践 01 - 前言和目标"
+title: 'Vue 应用单元测试的策略与实践 01 - 前言和目标'
 categories: [前端]
 tags: [Tutorial, UnitTest, ES6, Vue, Jest, Agile, TDD]
 published: True

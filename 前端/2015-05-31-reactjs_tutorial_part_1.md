@@ -139,10 +139,7 @@ block content
 接下来我们在`public/javascripts/src/`目录中创建一个简单的 react.js 组件，`helloworld.jsx`：
 
 ```js
-React.render(
-  <h1>Hello, world from React.js!</h1>,
-  document.getElementById("example")
-);
+React.render(<h1>Hello, world from React.js!</h1>, document.getElementById('example'))
 ```
 
 > Because we are using the `react-tools` node package, we want to add the compiled javascript code to our templates. Change you `views/layout.jade` file to the following:

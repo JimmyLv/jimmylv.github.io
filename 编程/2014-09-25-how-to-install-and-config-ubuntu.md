@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ubuntu系统的安装与优化"
+title: 'Ubuntu系统的安装与优化'
 category: 编程
 tags: [Ubuntu, OS]
 published: true

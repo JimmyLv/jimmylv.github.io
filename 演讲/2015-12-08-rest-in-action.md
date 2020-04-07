@@ -1,6 +1,6 @@
 ---
 layout: iframe
-title: "REST IN ACTION"
+title: 'REST IN ACTION'
 categories: [演讲]
 tags: [REST, AngularJS, Architecture]
 speaker: Jimmy Lv

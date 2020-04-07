@@ -110,23 +110,23 @@ demo: [Pattern Lab | Build Atomic Design Systems](http://patternlab.io/)
 
 ```jsx
 function warn(msg) {
-  alert(msg);
+  alert(msg)
 }
 
 function App(data) {
-  (function Header(menu) {
-    (function Menu(menu, func) {
-      (function Text(text) {
-        return <li>{text}</li>;
+  ;(function Header(menu) {
+    ;(function Menu(menu, func) {
+      ;(function Text(text) {
+        return <li>{text}</li>
       })(menu[0])(function Text(text) {
-        return <li onClick={() => func(text)}>{text}</li>;
-      })(menu[1]);
-    })(menu, warn);
+        return <li onClick={() => func(text)}>{text}</li>
+      })(menu[1])
+    })(menu, warn)
   })(data.menu)(function Content(content) {
-    return <section>{content}</section>;
+    return <section>{content}</section>
   })(data.content)(function Footer() {
-    return <footer>I am footer!</footer>;
-  })();
+    return <footer>I am footer!</footer>
+  })()
 }
 ```
 
@@ -143,7 +143,7 @@ function Profile(props) {
       <img src="avatar.png" className="profile" />
       <h3>{props.title}</h3>
     </div>
-  );
+  )
 }
 ```
 
@@ -154,11 +154,11 @@ Out
 ```jsx
 function Profile(props) {
   return React.createElement(
-    "div",
+    'div',
     null,
-    React.createElement("img", { src: "avatar.png", className: "profile" }),
-    React.createElement("h3", null, props.title)
-  );
+    React.createElement('img', { src: 'avatar.png', className: 'profile' }),
+    React.createElement('h3', null, props.title),
+  )
 }
 ```
 
@@ -243,7 +243,7 @@ const DeleteAccount = (props) => (
     <Button type="danger">Yep</Button>
     <Button color="blue">Cancel</Button>
   </div>
-);
+)
 ```
 
 [slide]
@@ -306,20 +306,20 @@ const DeleteAccount = (props) => (
 ```jsx
 class Contacts extends React.Component {
   constructor(props) {
-    super(props);
-    this.state = {};
+    super(props)
+    this.state = {}
   }
 
   handleClick(e) {
-    console.log(this); // React Component instance
+    console.log(this) // React Component instance
   }
 
   render() {
-    return <button onClick={(e) => this.handleClick(e)}></button>;
+    return <button onClick={(e) => this.handleClick(e)}></button>
   }
 }
 
-export default Contacts;
+export default Contacts
 ```
 
 [slide]
