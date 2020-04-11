@@ -1,35 +1,14 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
-**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
-
-- [[[Home]]](#home)
-- [[[About]]](#about)
-- [Title3](#title3)
-- [Title4](#title4)
-- [Title5](#title5)
-- [Title6](#title6)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 [[https://blog.jimmylv.info/public/img/gavatar.jpg]]
 
-Welcome to the jimmylv.github.io wiki!
+Welcome to the [jimmylv.github.io](jimmylv.github.io) wiki!
 
-[[_TOC_]]
-
-<<GlobalTOC()>>
-
-[[Test]]
-
-## [[Home]]
+已迁移至：https://wiki.jimmylv.info/ （通过 Notion 整理）
 
 ## [[About]]
 
-## Title3
-
-## Title4
-
-## Title5
-
-## Title6
+- https://book.jimmylv.info 我的书籍 📚
+- https://keynote.jimmylv.info 我的演讲 🗣
+- https://wiki.jimmylv.info 我的 Wiki 🌲
+- https://blog.jimmy.info 我的博客 📝
+- https://idea.jimmylv.info 我的想法 💡
+- https://photo.jimmylv.info 我的照片 📷
