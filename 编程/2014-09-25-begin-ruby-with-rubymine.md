@@ -38,7 +38,7 @@ $ rvm use 1.9.3 --default
 
 `rvm rubygems current`
 
-### 2.2 Ubuntu 下 apt-get 直接安装 Ruby[*不推荐*]
+### 2.2 Ubuntu 下 apt-get 直接安装 Ruby (_不推荐_)
 
 - 安装 ruby
 
