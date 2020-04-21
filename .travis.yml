@@ -44,7 +44,7 @@ script:
   #  - ../qshell_linux_amd64 qupload scripts/qiniu.conf.json
 after_success:
   - |
-    script: netlify deploy -s $NETLIFY_SITE_ID --auth $NETLIFY_ACCESS_TOKEN -p --dir ./_site
+    netlify deploy -s $NETLIFY_SITE_ID --auth $NETLIFY_ACCESS_TOKEN -p --dir ./_site
   - |
     cd _site
     touch .nojekyll
