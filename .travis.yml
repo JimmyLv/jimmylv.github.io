@@ -31,6 +31,7 @@ before_install:
   #  - ./qshell_linux_amd64 account $QiNiuAK $QiNiuSK
 install:
   - npm install nodeppt@1 -g
+  - npm install netlify-cli -g
 script:
   - nodeppt generate ./演讲 ./slides -a
   - cd jekyll-blog
@@ -42,6 +43,8 @@ script:
   #  - cat ./public/css/base.css # just for verify changes
   #  - ../qshell_linux_amd64 qupload scripts/qiniu.conf.json
 after_success:
+  - |
+    netlify deploy -s $NETLIFY_SITE_ID -t $NETLIFY_ACCESS_TOKEN -p ./_site
   - |
     cd _site
     touch .nojekyll
