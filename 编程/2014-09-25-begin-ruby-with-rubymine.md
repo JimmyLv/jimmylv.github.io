@@ -65,10 +65,10 @@ gem install rails--include-dependencies
 ```sh
 $ gem source -r https://rubygems.org/
 $ gem source -a https://ruby.taobao.org
-#手动更新下RubyGems 和其他需要更新的 Gem
+# 手动更新下RubyGems 和其他需要更新的 Gem
 $ gem update --system
 $ gem update
-#使用 RubyGems 安装 Rails
+# 使用 RubyGems 安装 Rails
 $ gem install rails
 $ rails -v
 Rails 4.1.6
@@ -81,14 +81,14 @@ Rails 4.1.6
 [百度经验](http://jingyan.baidu.com/article/7f766daf5e20944101e1d02b.html)
 
 ```sh
-#因为版权问题，在Ubuntu的APT仓库中不提供Oracle Java下载
+# 因为版权问题，在Ubuntu的APT仓库中不提供Oracle Java下载
 $ apt-cache search oracle-java　
 ---搜索不到任何包
 $ apt-cache search java7
 ---只可以搜索到OpenJDK的相关包
 #添加PPA：Personal Package Archive
 $ sudo add-apt-repository ppa:webupd8team/java
-#更新完成后，选择安装Java7
+# 更新完成后，选择安装Java7
 $ sudo apt-get update
 $ sudo apt-get install oracle-java7-installer
 #设置环境变量
@@ -103,7 +103,7 @@ $ sudo apt-get install oracle-java7-set-default
 - 解压并安装
 
 ```sh
-#进入软件包目录
+# 进入软件包目录
 $ ./bin/rubymine.sh
 bash: ./bin/rubymine.sh: Permission denied
 $ sudo chmod 777 Soft
@@ -121,7 +121,7 @@ run
 
 - 右键锁定到启动器
 
-###3. 第一次使用
+### 3. 第一次使用
 
 - 选择配色
 
