@@ -24,8 +24,8 @@ via **JimmyLv**
 
 # 0. 💻 Env Setup
 
-- [ ] reminder/reading material in invitation mail
-- [ ] join wechat group to share info easily
+- [x] reminder/reading material in invitation mail
+- [x] join wechat group to share info easily
 
 ---
 
