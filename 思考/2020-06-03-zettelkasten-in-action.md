@@ -19,7 +19,7 @@ TLDR 太长不读版本：
 
 ![外文阅读体验](https://jimmylv.github.io/images/2020/外文阅读体验.jpg)
 
-[Zettelkasten — How One German Scholar Was So Freakishly Productive](https://writingcooperative.com/zettelkasten-how-one-german-scholar-was-so-freakishly-productive-997e4e0ca125) 这篇文章炒鸡无敌棒，德国社会学 Niklas Luhmann 卢曼使用 Zettelkasten 记笔记方法写了 70 多本书和 400 多篇学术文章。简单来说，Zettelkasten 是一种比标签更高级的一种笔记方法，且听我给你**费曼**一下。😂
+[Zettelkasten — How One German Scholar Was So Freakishly Productive](https://writingcooperative.com/zettelkasten-how-one-german-scholar-was-so-freakishly-productive-997e4e0ca125) 这篇文章炒鸡无敌棒，德国社会学家 Niklas Luhmann 卢曼使用 Zettelkasten 记笔记方法写了 70 多本书和 400 多篇学术文章。简单来说，Zettelkasten 是一种比标签更高级的一种笔记方法，且听我给你**费曼**一下。😂
 
 ## Zettelkasten 卡片盒笔记法的背后缘由
 
@@ -81,7 +81,7 @@ TLDR 太长不读版本：
 
 间隔重复绝对是被认知科学证明是有效的，而对于一个笔记系统来说意料之外的不断重复即 see-also 其实就是一个概念的社交场，我们寄希望于不同的知识点能够相互关联又相互碰撞，在合适的时候出现在我们的面前，唤起或发现可能潜在的一些联系。
 
-通过 mdanki 自动把卡片笔记转化为 anki.apkg 格式并自动打开，即可导入 Anki，然后就可以尽情重复和背诵啦~ ✌️
+通过 [mdanki](https://github.com/ashlinchak/mdanki) 自动把卡片笔记转化为 anki.apkg 格式并自动打开，即可导入 Anki，然后就可以尽情重复和背诵啦~ ✌️
 
 ```bash
 cdd #alias "cdd=cd ~/Library/Mobile\ Documents/iCloud~co~fluder~fsnotes/Documents"
