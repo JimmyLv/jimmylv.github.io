@@ -1,12 +1,21 @@
 ---
 layout: post
-title: 我的 Zettelkasten 卡片盒笔记法实践
+title: 基于 Obsidian 的 Zettelkasten 卡片盒笔记法实践
 categories: [思考]
 tags: [PKM, Zettelkasten, 认知, 效率, 笔记, 卡片, 写作, 极简主义]
 published: True
 ---
 
 # 我的 Zettelkasten 卡片盒笔记法实践
+
+TLDR 太长不读版本：
+
+- 1️⃣ 第一步：必须用自己的话写笔记卡片，以确保你将来能够理解。
+- 2️⃣ 第二步：无论何时添加新笔记，主动查找可链接到的已有笔记。
+- 3️⃣ 第三步：通过添加新记录并联系起来，延续这一系列的连续思考。
+- 4️⃣ 第四步：使用 Anki 间隔重复加深记忆，主动由大脑触发远程联想。
+
+---
 
 ![外文阅读体验](https://jimmylv.github.io/images/2020/外文阅读体验.jpg)
 
@@ -18,7 +27,7 @@ published: True
 
 如果我们以文件夹、或文件（A4 纸）的形式来组织我们的笔记，总会遇到这样一个问题：所有笔记会铸成一种僵硬的结构，不可能重新排列。（可能是按照书本目录组织，或者是随着时间不断新增按照时间线组织，对吧？）
 
-![图二：使用 Chunk 卡片拆分知识点](https://jimmylv.github.io/images/2020/使用 Chunk 卡片拆分知识点.jpg)
+![图二：使用 Chunk 卡片拆分知识点](https://jimmylv.github.io/images/2020/使用%20Chunk%20卡片拆分知识点.jpg)
 
 所以第一步，我们需要把每个块（chunk）打散，其实这些笔记本来就应该是自由浮动的，但问题随之而来：我们就不可能追踪它们之间的相互关系了。
 
@@ -54,13 +63,13 @@ published: True
 
 ![图五：使用网络管理笔记](https://jimmylv.github.io/images/2020/使用网络管理笔记.jpg)
 
-## 前方高能预警！卡片网状链接！
+## 前方高能预警！卡片网状链接图！
 
 ![图七：卡片知识点的网状链接](https://jimmylv.github.io/images/2020/卡片知识点的网状链接.jpg)
 
 当我回到原来的 `[[Zettelkasten]]` 卡片笔记时，我能够看到 `[[Zettelkasten]]` 在整个卡片网络中的位置（①），以及其相互关联的卡片；② 即卡片主体；最右边 ③ 则是跟这张卡片相关的 双向链接（Backlinks），从而这就触发了笔记的第三步
 
-3️⃣ 第三步：Zettelkasten 可以储存一系列思想。Zettelkasten 就是关于连接想法的。 因此，今天你可以有一系列的思想，把它们作为一系列相互联系的记录存储在你的卡片盒当中；然后，在未来的任何时候，你可以通过添加新的记录并将它们与以前的记录联系起来，继续这一系列的思想。
+3️⃣ 第三步：Zettelkasten 可以储存一系列想法。Zettelkasten 就是关于连接想法的。 因此，今天你可以有一系列的想法，把它们作为一系列相互联系的记录存储在你的卡片盒当中；然后，在未来的任何时候，你可以通过添加新的记录并将它们与以前的记录联系起来，延续这一系列的思考。
 
 ![图八：主动联想其他卡片知识点](https://jimmylv.github.io/images/2020/主动联想其他卡片知识点.jpg)
 
@@ -79,9 +88,9 @@ cdd #alias "cdd=cd ~/Library/Mobile\ Documents/iCloud~co~fluder~fsnotes/Document
 mdanki Zettelkasten.md ~/Desktop/Anki\ QA\ 笔记本/mdanki.apkg && open ~/Desktop/Anki\ QA\ 笔记本/mdanki.apkg
 ```
 
-![图九：使用 mdanki 创建 Anki 卡片](https://jimmylv.github.io/images/2020/使用 mdanki 创建 Anki 卡片.jpg)
+![图九：使用 mdanki 创建 Anki 卡片](https://jimmylv.github.io/images/2020/使用%20mdanki%20创建%20Anki%20卡片.jpg)
 
-## 快来试一试吧！
+## 黑曜石，快来试一试吧！
 
 以往大家好像习惯了整理是基于分类，但其实那仍然是没有整理的笔记，不是有连接的笔记。而 Zettelkasten 卡片盒笔记法确实是构建了一个类似互联网的 Web 网状结构，不断点链接了解更多。在大脑中穿梭，好像很神奇的感觉，期待你的亲自体验。
 
@@ -102,7 +111,7 @@ mdanki Zettelkasten.md ~/Desktop/Anki\ QA\ 笔记本/mdanki.apkg && open ~/Deskt
 > 我敢说整理绝不困难，是因为整理的对象都是物品。丢弃物品，移动物品，这是谁都能胜任的简单工作。
 > 除此之外，整理一定会有个终点。当你拥有的所有物品都有了固定的位置时，你就达到了整理的终点。 —— 《怦然心动的人生整理魔法》
 
-其实我觉得日本的书可能有个问题，就是人均居住空间太小了，只能整理整理再整理 🌝 （只是提供一个可能的角度，没有半点揶揄的意思）。还有从欧美流行过来的极简主义也是，都是因为美国/西方国家中产阶级近 30 年收入水平毫无提高，然后才不得已寻求的极简之道，参考：[【Netflix】极简主义：记录生命中的重要事物 官方双语字幕 Minimalism\_哔哩哔哩 (゜-゜)つロ 干杯~-bilibili](https://www.bilibili.com/video/BV1xE41147ak?from=search&seid=3314784422011127111)
+其实我觉得日本的书可能有个问题，就是人均居住空间太小了，只能整理整理再整理 🌝 （只是提供一个可能的角度，没有半点揶揄的意思）。还有从欧美流行过来的极简主义也是，都是因为美国/西方国家中产阶级近 30 年收入水平毫无提高，然后才不得已寻求的极简之道，参考：[【Netflix】极简主义：记录生命中的重要事物 官方双语字幕 Minimalism](https://www.bilibili.com/video/BV1xE41147ak?from=search&seid=3314784422011127111)
 
 当然这是不得忽视的大背景，我只是批判性得思考了一下。中国 30 年改革开放，人均收入和幸福感，以及居住环境，不知道好到哪里去了。只是说现在经济增长又陷入了瓶颈，大家都很焦虑很浮躁，又开始寻求断舍离或极简主义之类的心灵滋养，当然不是说好与坏，而是认识到这一点之后我会觉得自己就没那么浮躁了。
 
@@ -110,4 +119,13 @@ mdanki Zettelkasten.md ~/Desktop/Anki\ QA\ 笔记本/mdanki.apkg && open ~/Deskt
 
 ![卡片：知止而后有定](https://jimmylv.github.io/images/2020/卡片-知止而后有定.png)
 
-可能就是要找到真正的志向，才是时间管理的终点吧。否则就是，闲的！（😂 闲得你整天折腾这些。）
+可能就是要找到真正的志向，才是时间管理的终点吧。
+
+否则，说白了就是，闲的！（😂 闲得你整天折腾这些。）
+
+## 参考资料
+
+- [真正的思考技术：来自德国社会学 Niklas Luhmann 的 Zettelkasten 方法](https://mp.weixin.qq.com/s/XveXTT8GDjFv2rt9iMU2RQ)
+- [How to take smart notes，方法及工具 - 少数派](https://sspai.com/post/60466)
+- [Zettelkasten — How One German Scholar Was So Freakishly Productive](https://writingcooperative.com/zettelkasten-how-one-german-scholar-was-so-freakishly-productive-997e4e0ca125)
+- [一个笔记系统——如何把 MarginNote3, DEVONThink3, TheBrain11 和 nvALT 当一个 App 使用](https://www.bilibili.com/video/BV147411A7CP)
