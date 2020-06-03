@@ -70,24 +70,27 @@ published: True
 
 4️⃣ 第四步：其实我还有 Anki 处理的第四步，刚刚描述的是新建卡片和如何链接卡片，其实对于卡片本身来说，我会用 Anki 来特意间隔重复加深记忆，从而在写卡片时能够更加主动得由大脑（而不是由  Zettelkasten 编辑器）来触发我的联想。
 
-以往大家好像习惯了整理是基于分类，但其实那仍然是没有整理的笔记，不是有连接的笔记。而 Zettelkasten 卡片盒笔记法确实是构建了一个类似互联网的 Web 网状结构，不断点链接了解更多。在大脑中穿梭，好像很神奇的感觉，期待你的亲自体验。
+间隔重复绝对是被认知科学证明是有效的，而对于一个笔记系统来说意料之外的不断重复即 see-also 其实就是一个概念的社交场，我们寄希望于不同的知识点能够相互关联又相互碰撞，在合适的时候出现在我们的面前，唤起或发现可能潜在的一些联系。
 
-![图九：使用 mdanki 创建 Anki 卡片](https://jimmylv.github.io/images/2020/使用 mdanki 创建 Anki 卡片.jpg)
-
-通过 mdanki 自动把卡片笔记转化为 `anki.apkg` 格式并自动打开，即可导入 Anki，然后就可以尽情背诵啦~ ✌️
+通过 mdanki 自动把卡片笔记转化为 anki.apkg 格式并自动打开，即可导入 Anki，然后就可以尽情重复和背诵啦~ ✌️
 
 ```bash
 cdd #alias "cdd=cd ~/Library/Mobile\ Documents/iCloud~co~fluder~fsnotes/Documents"
 mdanki Zettelkasten.md ~/Desktop/Anki\ QA\ 笔记本/mdanki.apkg && open ~/Desktop/Anki\ QA\ 笔记本/mdanki.apkg
 ```
 
+![图九：使用 mdanki 创建 Anki 卡片](https://jimmylv.github.io/images/2020/使用 mdanki 创建 Anki 卡片.jpg)
+
 ## 快来试一试吧！
+
+以往大家好像习惯了整理是基于分类，但其实那仍然是没有整理的笔记，不是有连接的笔记。而 Zettelkasten 卡片盒笔记法确实是构建了一个类似互联网的 Web 网状结构，不断点链接了解更多。在大脑中穿梭，好像很神奇的感觉，期待你的亲自体验。
 
 来，[Obsidian.app](https://github.com/obsidianmd/obsidian-releases/releases/download/v0.6.5/Obsidian-0.6.5.dmg) 安装包给到，你可以尝试一下。
 
 ![obsidian-screenshot](https://jimmylv.github.io/images/2020/obsidian-screenshot.png)
 
 或者试一下 online 编辑器：https://roamresearch.com/#/app/Note-Tasking
+
 还有国内同款：https://roamedit.com/jx/home.php?plugin=outline/sandbox
 
 ## 再抛个问题：你觉得时间管理的终点是什么？
@@ -105,6 +108,6 @@ mdanki Zettelkasten.md ~/Desktop/Anki\ QA\ 笔记本/mdanki.apkg && open ~/Deskt
 
 关于时间管理，其实我更愿意按照稻和盛夫的方式去思考吧，就是一场修行。而这一步步修行，就是 **格物、致知、诚意、正心、修身、齐家、治国、平天下**。
 
-![卡片：知止而后有定](https://jimmylv.github.io/images/2020/卡片：知止而后有定.jpg)
+![卡片：知止而后有定](https://jimmylv.github.io/images/2020/卡片-知止而后有定.png)
 
 可能就是要找到真正的志向，才是时间管理的终点吧。否则就是，闲的！（😂 闲得你整天折腾这些。）
