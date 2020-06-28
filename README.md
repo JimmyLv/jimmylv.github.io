@@ -18,6 +18,7 @@
 
 ## Continuous Progressive Ideology Revolution
 
+- [基于 Obsidian 的 Zettelkasten 卡片盒笔记法实践](https://blog.jimmylv.info/2020-06-03-zettelkasten-in-action/)
 - [Serverless 实战：打造个人阅读追踪系统](https://blog.jimmylv.info/2017-06-30-serverless-in-action-build-personal-reading-statistics-system/)
 - [《搞定》最佳实践：如何利用滴答清单（TickTick）实践 GTD 理念？](https://blog.jimmylv.info/2017-02-20-gtd-best-practice-137/)
 - [基于 GitHub 的敏捷学习方法之道与术](http://blog.jimmylv.info/2016-12-04-agile-learning-based-on-github-issues/)
