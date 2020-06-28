@@ -11,7 +11,7 @@ node_js:
 
 before_install:
   # 安装 ruby 环境
-  - rvm install 2.1.5
+  - rvm install 2.5
   - gem install bundler -v 1.17.3
   - openssl aes-256-cbc -K $encrypted_68227d46cd32_key -iv $encrypted_68227d46cd32_iv -in .travis/id_rsa.enc -out ~/.ssh/id_rsa -d
   # 改变文件权限
