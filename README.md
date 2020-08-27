@@ -35,11 +35,11 @@
 
 ## **BIG CHANGE!!! MOVED TO DISTRIBUTED GITHUB REPO**
 
-### Focus 
+### Focus
 
 This repo will only record ideas and posts, which means I will focus on writing and learning in [jimmylv.github.io](https://github.com/JimmyLv/jimmylv.github.io) and other features will be support by other individual GitHub repo: `jimmylv.github.io/xxx`.
 
-Actually the biggest benefits is that you can use this repo as git submodules of other repos, which can make things more flexible and make our life easier. 
+Actually the biggest benefits is that you can use this repo as git submodules of other repos, which can make things more flexible and make our life easier.
 
 ### APIs
 
@@ -49,11 +49,11 @@ As you can see in [JimmyLv/api](https://github.com/JimmyLv/api) repo which will 
 
 #TODO: add more details in wiki, and also update md images url from qiniu to github id:50
 
-* [x] [JimmyLv/jekyll-blog](https://github.com/JimmyLv/jekyll-blog): `jekyll` version, which is the default blog to be published on <https://blog.jimmylv.info> | <http://jekyll.jimmylv.info>..
-* [ ] [JimmyLv/hexo-blog](https://github.com/JimmyLv/hexo-blog): `hexo` version, which is another alternative of `jekyll` and you can play with `nodejs` easily, <http://hexo.jimmylv.info>.
-* [x] [JimmyLv/Haiku](https://github.com/JimmyLv/Haiku)：`react` version, which be invoke the markdown raw files from GitHub repo, and we can easily enjoy the frontend deployment, <https://haiku.jimmylv.info>
-* [x] [JimmyLv/nobackend.website](https://github.com/JimmyLv/nobackend.website)：`angular 1.5x` version, also created for frontend but gave up because of `AngularJS` <http://nobackend.website/_ng>  
-* [ ] [JimmyLv/gitbook](https://github.com/JimmyLv/GitBook)：`gitbook` version, which can be used to generate beautiful e-book and also you just put all markdown files together. <https://www.gitbook.com/@jimmylv>
+- [x] [JimmyLv/jekyll-blog](https://github.com/JimmyLv/jekyll-blog): `jekyll` version, which is the default blog to be published on <https://blog.jimmylv.info> | <http://jekyll.jimmylv.info>..
+- [ ] [JimmyLv/hexo-blog](https://github.com/JimmyLv/hexo-blog): `hexo` version, which is another alternative of `jekyll` and you can play with `nodejs` easily, <http://hexo.jimmylv.info>.
+- [x] [JimmyLv/Haiku](https://github.com/JimmyLv/Haiku)：`react` version, which be invoke the markdown raw files from GitHub repo, and we can easily enjoy the frontend deployment, <https://haiku.jimmylv.info>
+- [x] [JimmyLv/nobackend.website](https://github.com/JimmyLv/nobackend.website)：`angular 1.5x` version, also created for frontend but gave up because of `AngularJS` <http://nobackend.website/_ng>
+- [ ] [JimmyLv/gitbook](https://github.com/JimmyLv/GitBook)：`gitbook` version, which can be used to generate beautiful e-book and also you just put all markdown files together. <https://www.gitbook.com/@jimmylv>
 
 ### Slides
 
@@ -67,7 +67,6 @@ nodeppt generate ./演讲 ./slides -a
 
 - `default`: GitHub Pages with `jekyll`, so easy and no configuration need and whatever the repo you are in.
 - `travis-ci`: Try whatever you want, I prefer to use Node to do all these stuff in one place, <https://travis-ci.org/JimmyLv/jimmylv.github.io>.
-
 
 ## Related Tools
 
@@ -89,4 +88,3 @@ nodeppt generate ./演讲 ./slides -a
 ## GitHub Stargazers over time
 
 [![Stargazers over time](https://starchart.cc/JimmyLv/jimmylv.github.io.svg)](https://starchart.cc/JimmyLv/jimmylv.github.io)
- 

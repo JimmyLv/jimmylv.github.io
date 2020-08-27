@@ -22,25 +22,25 @@ published: True
 
 在 [Zettelkasten — How One German Scholar Was So Freakishly Productive](https://writingcooperative.com/zettelkasten-how-one-german-scholar-was-so-freakishly-productive-997e4e0ca125) 这篇文章当中介绍了德国学者卢曼为何如此高产的秘密武器 —— Zettelkasten 卡片盒笔记法，而作者对**知识工作者**的效率分析炒鸡无敌棒，底下的配图就来自于原文：
 
-![img](https://jimmylv.github.io/images/2020/%E4%BD%BF%E7%94%A8%E6%96%87%E4%BB%B6%E7%9A%84%E5%BD%A2%E5%BC%8F%E7%BB%84%E7%BB%87%E7%AC%94%E8%AE%B0.jpg)
+![img](https://cdn.jsdelivr.net/gh/jimmylv/images/2020/%E4%BD%BF%E7%94%A8%E6%96%87%E4%BB%B6%E7%9A%84%E5%BD%A2%E5%BC%8F%E7%BB%84%E7%BB%87%E7%AC%94%E8%AE%B0.jpg)
 
 如果我们以文件夹、或文件（A4 纸）的形式来组织我们的笔记，总会遇到这样一个问题：所有笔记会铸成一种僵硬的结构，不可能重新排列。（可能是按照书本目录组织，或者是随着时间不断新增按照时间线组织，对吧？）
 
-![img](https://jimmylv.github.io/images/2020/%E4%BD%BF%E7%94%A8%20Chunk%20%E5%8D%A1%E7%89%87%E6%8B%86%E5%88%86%E7%9F%A5%E8%AF%86%E7%82%B9.jpg)
+![img](https://cdn.jsdelivr.net/gh/jimmylv/images/2020/%E4%BD%BF%E7%94%A8%20Chunk%20%E5%8D%A1%E7%89%87%E6%8B%86%E5%88%86%E7%9F%A5%E8%AF%86%E7%82%B9.jpg)
 
 所以第一步，我们需要把每个块（chunk）打散，其实这些笔记本来就应该是自由浮动的，但问题随之而来：我们就不可能追踪它们之间的相互关系了。
 
-![jpg](https://jimmylv.github.io/images/2020/%E4%BD%BF%E7%94%A8%E6%96%87%E4%BB%B6%E5%A4%B9%E7%AE%A1%E7%90%86%E7%AC%94%E8%AE%B0.jpg)
+![jpg](https://cdn.jsdelivr.net/gh/jimmylv/images/2020/%E4%BD%BF%E7%94%A8%E6%96%87%E4%BB%B6%E5%A4%B9%E7%AE%A1%E7%90%86%E7%AC%94%E8%AE%B0.jpg)
 
 为了表达每个知识点之间的关系，大部分人都采用了文件夹或者列表的方式，把这些卡片分门别类归档到不同的文件夹里面，比如印象笔记的笔记本，或笔记本组。
 
 但其实，基于文件夹的方法很难在不同文件夹中归档的想法之间建立联系，特别是现实世界的复杂问题，其实不可能在某一个领域（即文件夹）内找到合适的答案；另外一个方面，这大大限制了所谓“创意”/“灵感”的产生，而我们现在常常说要“跨界”，对吧？
 
-![img](https://jimmylv.github.io/images/2020/%E4%BD%BF%E7%94%A8%E6%A0%87%E7%AD%BE%E7%AE%A1%E7%90%86%E7%AC%94%E8%AE%B0.jpg)
+![img](https://cdn.jsdelivr.net/gh/jimmylv/images/2020/%E4%BD%BF%E7%94%A8%E6%A0%87%E7%AD%BE%E7%AE%A1%E7%90%86%E7%AC%94%E8%AE%B0.jpg)
 
 那没关系呀，我加上标签不就行了嘛？标签是一个很大的改进，而且现在大部分 App 都已经支持。但事实上，每个标签有成千上万的笔记，我个人经验是收集的笔记打上标签之后，就再也没用到过了，还不如没有任何组织的时候，每个标签只会产生一大堆乱七八糟的东西。
 
-![img](https://jimmylv.github.io/images/2020/%E4%BD%BF%E7%94%A8%E7%BD%91%E7%BB%9C%E7%AE%A1%E7%90%86%E7%AC%94%E8%AE%B0.jpg)
+![img](https://cdn.jsdelivr.net/gh/jimmylv/images/2020/%E4%BD%BF%E7%94%A8%E7%BD%91%E7%BB%9C%E7%AE%A1%E7%90%86%E7%AC%94%E8%AE%B0.jpg)
 
 所以更好的办法是：我们应该用 Web（网络结构）来组织我们的笔记 —— 不仅仅依靠标签，还要把所有笔记连接在一起。
 
@@ -54,7 +54,7 @@ Zettelkasten 卡片盒方法突出了“建立联系”的重要性，其实有�
 
 - Literature Notes 是 a) 简短地 b) 用自己的话（而非“复制粘贴”）记录你在看的文献笔记，迫使你真正理解原文的意思。
 
-- Bibliographical Notes 则需要你添加参考信息，将上面的Literature Notes跟原文联系起来。而这一步，恰恰是 Roam 或 Obsidian 工具发挥价值最大的地方，甚至做到了完全自动化。（稍后会进一步解释我的工作流。
+- Bibliographical Notes 则需要你添加参考信息，将上面的 Literature Notes 跟原文联系起来。而这一步，恰恰是 Roam 或 Obsidian 工具发挥价值最大的地方，甚至做到了完全自动化。（稍后会进一步解释我的工作流。
 
 - Permanent Notes 是最重要的一步，回顾每一个卡片笔记，同时思考它们与你所学的内容、你的兴趣、思考或研究的关系。你的目标不是收集尽可能多的笔记，而是为你现有的想法、论点和讨论增加新的价值。
 
@@ -66,7 +66,7 @@ Zettelkasten 卡片盒方法突出了“建立联系”的重要性，其实有�
 
 所以接下来，我来介绍一款神器，[Obsidian.app](https://obsidian.md/) 编辑器（借鉴于 Roam Research），相较于 Roam 最大的好处就是：能够跟我基于文件系统的本地化任务管理和知识管理系统相结合。
 
-![一个卡片知识点.jpg (3584×2194)](https://jimmylv.github.io/images/2020/%E4%B8%80%E4%B8%AA%E5%8D%A1%E7%89%87%E7%9F%A5%E8%AF%86%E7%82%B9.jpg)
+![一个卡片知识点.jpg (3584×2194)](https://cdn.jsdelivr.net/gh/jimmylv/images/2020/%E4%B8%80%E4%B8%AA%E5%8D%A1%E7%89%87%E7%9F%A5%E8%AF%86%E7%82%B9.jpg)
 
 于是我创建了一个卡片笔记 `[[提高认知能力的外部辅助设备]]`，摘录了原文英文部分，底下的中文则是我的 `[[Literature Notes]]` 。当然，特别想要提醒你注意的是文中的紫色部分，`[[唐·诺曼]]` 和 `[[Zettelkasten]]`，当然还有右边标注的 Backlinks 部分。
 
@@ -78,15 +78,15 @@ Zettelkasten 卡片盒方法突出了“建立联系”的重要性，其实有�
 
 `[[唐·诺曼]]` 和 `[[Zettelkasten]]` 都是我之前创建过的词条，此时就能把不同卡片中连接在一起了，看看上面的 图五：Web（网络结构）示意图
 
-![img](https://jimmylv.github.io/images/2020/%E4%BD%BF%E7%94%A8%E7%BD%91%E7%BB%9C%E7%AE%A1%E7%90%86%E7%AC%94%E8%AE%B0.jpg)
+![img](https://cdn.jsdelivr.net/gh/jimmylv/images/2020/%E4%BD%BF%E7%94%A8%E7%BD%91%E7%BB%9C%E7%AE%A1%E7%90%86%E7%AC%94%E8%AE%B0.jpg)
 
 ## How Good | 前方高能预警！卡片网状链接！
 
-![img](https://jimmylv.github.io/images/2020/%E5%8D%A1%E7%89%87%E7%9F%A5%E8%AF%86%E7%82%B9%E7%9A%84%E7%BD%91%E7%8A%B6%E9%93%BE%E6%8E%A5.jpg)当我回到原来的 `[[Zettelkasten]]` 卡片笔记时，我能够看到 `[[Zettelkasten]]` 在整个卡片网络中的位置（①），以及其相互关联的卡片；② 即卡片主体；最右边 ③ 则是跟这张卡片相关的 双向链接（Backlinks），从而这就触发了笔记的第三步
+![img](https://cdn.jsdelivr.net/gh/jimmylv/images/2020/%E5%8D%A1%E7%89%87%E7%9F%A5%E8%AF%86%E7%82%B9%E7%9A%84%E7%BD%91%E7%8A%B6%E9%93%BE%E6%8E%A5.jpg)当我回到原来的 `[[Zettelkasten]]` 卡片笔记时，我能够看到 `[[Zettelkasten]]` 在整个卡片网络中的位置（①），以及其相互关联的卡片；② 即卡片主体；最右边 ③ 则是跟这张卡片相关的 双向链接（Backlinks），从而这就触发了笔记的第三步
 
 3️⃣ 第三步：Zettelkasten 可以储存一系列想法。Zettelkasten 就是关于连接想法的。 因此，今天你可以有一系列的想法，把它们作为一系列相互联系的记录存储在你的卡片盒当中；然后，在未来的任何时候，你可以通过添加新的记录并将它们与以前的记录联系起来，延续这一系列的思考。
 
-![img](https://jimmylv.github.io/images/2020/%E4%B8%BB%E5%8A%A8%E8%81%94%E6%83%B3%E5%85%B6%E4%BB%96%E5%8D%A1%E7%89%87%E7%9F%A5%E8%AF%86%E7%82%B9.jpg)
+![img](https://cdn.jsdelivr.net/gh/jimmylv/images/2020/%E4%B8%BB%E5%8A%A8%E8%81%94%E6%83%B3%E5%85%B6%E4%BB%96%E5%8D%A1%E7%89%87%E7%9F%A5%E8%AF%86%E7%82%B9.jpg)
 
 而且，除了我在第二步当中已经绑定好的 `[[]]` 双向链接，它还能发现 Unlinked mentions 即未主动链接的想法（文本自动链接），从而我可以选择是否主动双向链接。当然这个时候是最有趣的，因为这主动触发了我之前的卡片笔记，从而以一种新的方式链接到了一起，有一种 🧠 大脑被联通的感觉，类似神经元的连接方式。
 
@@ -94,7 +94,7 @@ Zettelkasten 卡片盒方法突出了“建立联系”的重要性，其实有�
 
 4️⃣ 第四步：其实我还有 Anki 处理的第四步，刚刚描述的是新建卡片和如何链接卡片，其实对于卡片本身来说，我会用 Anki 来特意间隔重复加深记忆，从而在写卡片时能够更加主动得由大脑（而不是由 Zettelkasten 编辑器）来触发我的联想。
 
-间隔重复绝对是被认知科学证明是有效的，而对于一个笔记系统来说意料之外的不断重复即see-also其实就是一个概念的社交场，我们寄希望于不同的知识点能够相互关联又相互碰撞，在合适的时候出现在我们的面前，唤起或发现可能潜在的一些联系。
+间隔重复绝对是被认知科学证明是有效的，而对于一个笔记系统来说意料之外的不断重复即 see-also 其实就是一个概念的社交场，我们寄希望于不同的知识点能够相互关联又相互碰撞，在合适的时候出现在我们的面前，唤起或发现可能潜在的一些联系。
 
 通过 [mdanki](https://github.com/ashlinchak/mdanki) 自动把卡片笔记转化为 `anki.apkg` 格式并自动打开，即可导入 Anki，然后就可以尽情重复和背诵啦~ ✌️
 
@@ -103,7 +103,7 @@ cdd #alias "cdd=cd ~/Library/Mobile\ Documents/iCloud~co~fluder~fsnotes/Document
 mdanki Zettelkasten.md ~/Desktop/Anki\ QA\ 笔记本/mdanki.apkg && open ~/Desktop/Anki\ QA\ 笔记本/mdanki.apkg
 ```
 
-![图九：使用 mdanki 创建 Anki 卡片](https://jimmylv.github.io/images/2020/%E4%BD%BF%E7%94%A8%20mdanki%20%E5%88%9B%E5%BB%BA%20Anki%20%E5%8D%A1%E7%89%87.jpg)
+![图九：使用 mdanki 创建 Anki 卡片](https://cdn.jsdelivr.net/gh/jimmylv/images/2020/%E4%BD%BF%E7%94%A8%20mdanki%20%E5%88%9B%E5%BB%BA%20Anki%20%E5%8D%A1%E7%89%87.jpg)
 
 ## Where | 在哪儿可以亲自尝试 Zettelkasten？
 
@@ -111,7 +111,7 @@ mdanki Zettelkasten.md ~/Desktop/Anki\ QA\ 笔记本/mdanki.apkg && open ~/Deskt
 
 来，[Obsidian.app](https://github.com/obsidianmd/obsidian-releases/releases/download/v0.6.5/Obsidian-0.6.5.dmg) 安装包给到，你可以尝试一下。
 
-![obsidian-screenshot.png (2055×1343)](https://jimmylv.github.io/images/2020/obsidian-screenshot.png)
+![obsidian-screenshot.png (2055×1343)](https://cdn.jsdelivr.net/gh/jimmylv/images/2020/obsidian-screenshot.png)
 
 或者试一下 online 编辑器：https://roamresearch.com/#/app/Note-Tasking
 
@@ -160,7 +160,7 @@ mdanki Zettelkasten.md ~/Desktop/Anki\ QA\ 笔记本/mdanki.apkg && open ~/Deskt
 
 > 我敢说整理绝不困难，是因为整理的对象都是物品。丢弃物品，移动物品，这是谁都能胜任的简单工作。 除此之外，整理一定会有个终点。当你拥有的所有物品都有了固定的位置时，你就达到了整理的终点。 —— 《怦然心动的人生整理魔法》
 
-其实我觉得日本的书可能有个问题，就是人均居住空间太小了，只能整理整理再整理 🌝 （只是提供一个可能的角度，没有半点揶揄的意思）。还有从欧美流行过来的极简主义也是，都是因为美国/西方国家中产阶级近 30 年收入水平毫无提高，然后才不得已寻求的极简之道，参考：[【Netflix】极简主义：记录生命中的重要事物 官方双语字幕 Minimalism_哔哩哔哩 (゜-゜)つロ 干杯~-bilibili](https://www.bilibili.com/video/BV1xE41147ak?from=search&seid=3314784422011127111)
+其实我觉得日本的书可能有个问题，就是人均居住空间太小了，只能整理整理再整理 🌝 （只是提供一个可能的角度，没有半点揶揄的意思）。还有从欧美流行过来的极简主义也是，都是因为美国/西方国家中产阶级近 30 年收入水平毫无提高，然后才不得已寻求的极简之道，参考：[【Netflix】极简主义：记录生命中的重要事物 官方双语字幕 Minimalism\_哔哩哔哩 (゜-゜)つロ 干杯~-bilibili](https://www.bilibili.com/video/BV1xE41147ak?from=search&seid=3314784422011127111)
 
 当然这是不得忽视的大背景，我只是批判性得思考了一下。中国 30 年改革开放，人均收入和幸福感，以及居住环境，不知道好到哪里去了。只是说现在经济增长又陷入了瓶颈，大家都很焦虑很浮躁，又开始寻求断舍离或极简主义之类的心灵滋养，当然不是说好与坏，而是认识到这一点之后我会觉得自己就没那么浮躁了。
 
@@ -196,5 +196,5 @@ mdanki Zettelkasten.md ~/Desktop/Anki\ QA\ 笔记本/mdanki.apkg && open ~/Deskt
 
 - [真正的思考技术：来自德国社会学 Niklas Luhmann 的 Zettelkasten 方法](https://mp.weixin.qq.com/s/XveXTT8GDjFv2rt9iMU2RQ)
 - [How to take smart notes，方法及工具 - 少数派](https://sspai.com/post/60466)
-- [Zettelkasten — How One German Scholar Was So Freakishly Productive](https://writingcooperative.com/zettelkasten-how-one-german-scholar-was-so-freakishly-productive-997e4e0ca125) 
+- [Zettelkasten — How One German Scholar Was So Freakishly Productive](https://writingcooperative.com/zettelkasten-how-one-german-scholar-was-so-freakishly-productive-997e4e0ca125)
 - [一个笔记系统——如何把 MarginNote3, DEVONThink3, TheBrain11 和 nvALT 当一个 App 使用](https://www.bilibili.com/video/BV147411A7CP)

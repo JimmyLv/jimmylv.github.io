@@ -49,13 +49,13 @@ published: True
 
 # How's Your Customer Experience?
 
-[![](https://jimmylv.github.io/images/2016/1469770434690.png)](https://www.youtube.com/watch?v=HGb6NQMeZ-c)
+[![](https://cdn.jsdelivr.net/gh/jimmylv/images/2016/1469770434690.png)](https://www.youtube.com/watch?v=HGb6NQMeZ-c)
 
 [slide]
 
 # Adobe Marketing Cloud
 
-[![](https://jimmylv.github.io/images/2016/1469750403141.png)](http://www.adobe.com/)
+[![](https://cdn.jsdelivr.net/gh/jimmylv/images/2016/1469750403141.png)](http://www.adobe.com/)
 
 <br/>
 
@@ -76,13 +76,13 @@ To be an experience business, it takes a leader.
 
 # AEM in Adobe Marketing Cloud
 
-![](https://jimmylv.github.io/images/2016/1469675204327.png)
+![](https://cdn.jsdelivr.net/gh/jimmylv/images/2016/1469675204327.png)
 
 [slide]
 
 # Adobe Experience Manager
 
-[![](https://jimmylv.github.io/images/2016/1469750678577.png)](http://www.adobe.com/marketing-cloud/enterprise-content-management.html#x)
+[![](https://cdn.jsdelivr.net/gh/jimmylv/images/2016/1469750678577.png)](http://www.adobe.com/marketing-cloud/enterprise-content-management.html#x)
 
 > AEM is a comprehensive **content management** solution for building websites, mobile apps, and forms. And it makes it easy to manage your marketing content and assets.
 
@@ -123,7 +123,7 @@ Date | Product
 
 # Google Trending
 
-[![](https://jimmylv.github.io/images/2016/1469768209884.png)
+[![](https://cdn.jsdelivr.net/gh/jimmylv/images/2016/1469768209884.png)
 ](https://www.google.com/trends/explore#q=%22adobe%20cq%22%2C%20adobe%20cq5%2C%20adobe%20aem%2C%20Adobe%20Experience%20Manager&cmpt=q&tz=Etc%2FGMT-8)
 
 [note]
@@ -160,19 +160,19 @@ Apache HTTP 服务器的核心开发者 Roy Fielding,他还是 Apache 软件基�
 
 # 能做啥？
 
-![](https://jimmylv.github.io/images/2016/1469776743596.png)
+![](https://cdn.jsdelivr.net/gh/jimmylv/images/2016/1469776743596.png)
 
 [slide]
 
 # 功能演示
 
-[![](https://jimmylv.github.io/images/2016/1468060034522.png)](http://localhost:4505/projects.html/content/projects)
+[![](https://cdn.jsdelivr.net/gh/jimmylv/images/2016/1468060034522.png)](http://localhost:4505/projects.html/content/projects)
 
 [slide]
 
 # 角色分工 之 Content Editor
 
-![](https://jimmylv.github.io/images/2016/1469772633873.png)
+![](https://cdn.jsdelivr.net/gh/jimmylv/images/2016/1469772633873.png)
 
 [slide]
 
@@ -182,19 +182,19 @@ Apache HTTP 服务器的核心开发者 Roy Fielding,他还是 Apache 软件基�
 编辑也有几种模式，视角不同。
 [/note]
 
-![](https://jimmylv.github.io/images/2016/1469716451473.png)
+![](https://cdn.jsdelivr.net/gh/jimmylv/images/2016/1469716451473.png)
 
 [slide]
 
 # Touch UI Customizations
 
-[![](https://jimmylv.github.io/images/2016/1469772544746.png)](http://blogs.adobe.com/experiencedelivers/experience-management/touch-ui-customizations-part-1/)
+[![](https://cdn.jsdelivr.net/gh/jimmylv/images/2016/1469772544746.png)](http://blogs.adobe.com/experiencedelivers/experience-management/touch-ui-customizations-part-1/)
 
 [slide]
 
 # 组件 构成 页面
 
-![](https://jimmylv.github.io/images/2016/1469716589609.png)
+![](https://cdn.jsdelivr.net/gh/jimmylv/images/2016/1469716589609.png)
 
 [note]
 开发，完全组件化看起来好爽！（两者本质都是 HTML）
@@ -204,7 +204,7 @@ Apache HTTP 服务器的核心开发者 Roy Fielding,他还是 Apache 软件基�
 
 # 角色分工 之 PIM Editor
 
-![](https://jimmylv.github.io/images/2016/1469772945441.png)
+![](https://cdn.jsdelivr.net/gh/jimmylv/images/2016/1469772945441.png)
 
 [note]
 电子商务，改改价格什么的
@@ -214,13 +214,13 @@ Apache HTTP 服务器的核心开发者 Roy Fielding,他还是 Apache 软件基�
 
 # Developing
 
-![](https://jimmylv.github.io/images/2016/1469716527090.png)
+![](https://cdn.jsdelivr.net/gh/jimmylv/images/2016/1469716527090.png)
 
 [slide]
 
 # 角色分工 之 Componets Developer
 
-![](https://jimmylv.github.io/images/2016/1469716341707.png)
+![](https://cdn.jsdelivr.net/gh/jimmylv/images/2016/1469716341707.png)
 
 [slide]
 
@@ -230,11 +230,11 @@ Apache HTTP 服务器的核心开发者 Roy Fielding,他还是 Apache 软件基�
 
 # Rio Olympics: 'Welcome to hell'
 
-![](https://jimmylv.github.io/images/2016/1469772248011.png)
+![](https://cdn.jsdelivr.net/gh/jimmylv/images/2016/1469772248011.png)
 
 [slide]
 
-![](https://jimmylv.github.io/images/2016/1469776281516.png)
+![](https://cdn.jsdelivr.net/gh/jimmylv/images/2016/1469776281516.png)
 
 <br/>
 
@@ -243,23 +243,23 @@ Apache HTTP 服务器的核心开发者 Roy Fielding,他还是 Apache 软件基�
 
 [slide]
 
-![](https://jimmylv.github.io/images/2016/1469776380542.png)
+![](https://cdn.jsdelivr.net/gh/jimmylv/images/2016/1469776380542.png)
 
 [slide]
 
 # 技术架构
 
-![](https://jimmylv.github.io/images/2016/1469749733269.png)
+![](https://cdn.jsdelivr.net/gh/jimmylv/images/2016/1469749733269.png)
 
 [slide]
 
 # Architechture
 
-![](https://jimmylv.github.io/images/2016/1469614691277.png)
+![](https://cdn.jsdelivr.net/gh/jimmylv/images/2016/1469614691277.png)
 
 [slide]
 
-![](https://jimmylv.github.io/images/2016/1469613962134.png)
+![](https://cdn.jsdelivr.net/gh/jimmylv/images/2016/1469613962134.png)
 
 1.  **Web Application Server**: 可以单独集成 Jetty web server，也可以用于第三方
 2.  **Web Application Framework**: 简化 RESTful 面向对象的 Web 应用，即内容优先
@@ -267,7 +267,7 @@ Apache HTTP 服务器的核心开发者 Roy Fielding,他还是 Apache 软件基�
 
 [slide]
 
-![](https://jimmylv.github.io/images/2016/1469776708150.png)
+![](https://cdn.jsdelivr.net/gh/jimmylv/images/2016/1469776708150.png)
 
 <br/>
 
@@ -281,11 +281,11 @@ Apache HTTP 服务器的核心开发者 Roy Fielding,他还是 Apache 软件基�
 
 目前该平台逐渐成为一个为室内、交通工具、移动电话和其他环境下的所有类型的网络设备的应用程序和服务进行传递和远程管理的开放式服务平台。
 
-![](https://jimmylv.github.io/images/2016/1469539342406.png)
+![](https://cdn.jsdelivr.net/gh/jimmylv/images/2016/1469539342406.png)
 
 [slide]
 
-![](https://jimmylv.github.io/images/2016/1469776814871.png)
+![](https://cdn.jsdelivr.net/gh/jimmylv/images/2016/1469776814871.png)
 
 > OSGi 的作用在于 Runtime，之所以为动态模块加载，用于管理复杂度，并可以动态扩展其依赖。（类 JavaScript 的 Require.js ？）
 > 该规范和核心部分是一个框架，其中定义了**应用程序的生命周期模式和服务注册**。基于这个框架定义了大量的 OSGi 服务：日志、配置管理、偏好，HTTP（运行 servlet）、XML 分析、设备访问、软件包管理、许可管理、星级、用户管理、IO 连接、连线管理、Jini 和 UPnP。
@@ -315,7 +315,7 @@ Apache HTTP 服务器的核心开发者 Roy Fielding,他还是 Apache 软件基�
 
 # JCR （[JSR-170](https://jcp.org/en/jsr/detail?id=170) & [JSR-283](https://jcp.org/en/jsr/detail?id=283) Specification）
 
-![](https://jimmylv.github.io/images/2016/1469777086086.png)
+![](https://cdn.jsdelivr.net/gh/jimmylv/images/2016/1469777086086.png)
 
 [slide]
 
@@ -323,42 +323,42 @@ Apache HTTP 服务器的核心开发者 Roy Fielding,他还是 Apache 软件基�
 
 > CRX is short for **C**ontent **R**epository e**X**treme, Day's JCR-compliant repository. CRX allows you to store, manage, and access data using a standardized Java interface.
 
-![](https://jimmylv.github.io/images/2016/1469709908396.png)
+![](https://cdn.jsdelivr.net/gh/jimmylv/images/2016/1469709908396.png)
 
 [slide]
 
 # Sling 背后靠着 CRX 吃饭
 
-![](https://jimmylv.github.io/images/2016/1469777354485.png)
+![](https://cdn.jsdelivr.net/gh/jimmylv/images/2016/1469777354485.png)
 
 [slide]
 
 # Sling & REST
 
-![](https://jimmylv.github.io/images/2016/1469777407980.png)
+![](https://cdn.jsdelivr.net/gh/jimmylv/images/2016/1469777407980.png)
 
 [slide]
 
 # 做一个照片 CMS
 
-![](https://jimmylv.github.io/images/2016/1469707517793.png)
+![](https://cdn.jsdelivr.net/gh/jimmylv/images/2016/1469707517793.png)
 
 [slide]
 
 Sling 背后靠着 CRX 吃饭：
 
-![](https://jimmylv.github.io/images/2016/1469710299369.png)
+![](https://cdn.jsdelivr.net/gh/jimmylv/images/2016/1469710299369.png)
 [slide]
 
 对比传统 Controller，直接对应 JCR 节点，并且包含相关信息。
 
-![](https://jimmylv.github.io/images/2016/1469710389235.png)
+![](https://cdn.jsdelivr.net/gh/jimmylv/images/2016/1469710389235.png)
 [slide]
 
-![](https://jimmylv.github.io/images/2016/1469710400998.png)
+![](https://cdn.jsdelivr.net/gh/jimmylv/images/2016/1469710400998.png)
 [slide]
 
-![](https://jimmylv.github.io/images/2016/1469710435546.png)
+![](https://cdn.jsdelivr.net/gh/jimmylv/images/2016/1469710435546.png)
 
 [note]
 不是直接对应文件目录，但是也完全可以这样。
@@ -366,22 +366,22 @@ Sling 背后靠着 CRX 吃饭：
 
 [slide]
 
-![](https://jimmylv.github.io/images/2016/1469710511007.png)
+![](https://cdn.jsdelivr.net/gh/jimmylv/images/2016/1469710511007.png)
 [slide]
 
-![](https://jimmylv.github.io/images/2016/1469710571268.png)
+![](https://cdn.jsdelivr.net/gh/jimmylv/images/2016/1469710571268.png)
 
 [slide]
 
 # URI Decomposition
 
-![](https://jimmylv.github.io/images/2016/1469777634817.png)
+![](https://cdn.jsdelivr.net/gh/jimmylv/images/2016/1469777634817.png)
 
 [slide]
 
 # From URL to Content and Scripts
 
-![](https://jimmylv.github.io/images/2016/1469777621445.png)
+![](https://cdn.jsdelivr.net/gh/jimmylv/images/2016/1469777621445.png)
 
 [slide]
 

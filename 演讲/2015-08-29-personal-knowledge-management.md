@@ -77,7 +77,7 @@ published: True
 
 - RSS：<http://feedly.com>
 
-![feedly](https://jimmylv.github.io/images/images/feedly.png)
+![feedly](https://cdn.jsdelivr.net/gh/jimmylv/images/images/feedly.png)
 
 [slide]
 
@@ -85,7 +85,7 @@ published: True
 
 - 稍后阅读：<http://getpocket.com>
 
-![](https://jimmylv.github.io/images/images/pocket.png)
+![](https://cdn.jsdelivr.net/gh/jimmylv/images/images/pocket.png)
 
 [slide]
 

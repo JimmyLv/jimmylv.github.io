@@ -324,18 +324,18 @@ nodeppt：https://github.com/ksky521/nodePPT
 ---
 
 <div class="columns3">
-    <img src="https://jimmylv.github.io/images/girl.jpg" height="450">
-    <img src="https://jimmylv.github.io/images/girl.jpg" height="450">
-    <img src="https://jimmylv.github.io/images/girl.jpg" height="450">
+    <img src="https://cdn.jsdelivr.net/gh/jimmylv/images/girl.jpg" height="450">
+    <img src="https://cdn.jsdelivr.net/gh/jimmylv/images/girl.jpg" height="450">
+    <img src="https://cdn.jsdelivr.net/gh/jimmylv/images/girl.jpg" height="450">
 </div>
 ========
 ## 演示earthquake转场效果
 -----
 <div class="columns4">
-    <img src="https://jimmylv.github.io/images/girl.jpg" height="320">
-    <img src="https://jimmylv.github.io/images/girl.jpg" height="320">
-    <img src="https://jimmylv.github.io/images/girl.jpg" height="320">
-    <img src="https://jimmylv.github.io/images/girl.jpg" height="320">
+    <img src="https://cdn.jsdelivr.net/gh/jimmylv/images/girl.jpg" height="320">
+    <img src="https://cdn.jsdelivr.net/gh/jimmylv/images/girl.jpg" height="320">
+    <img src="https://cdn.jsdelivr.net/gh/jimmylv/images/girl.jpg" height="320">
+    <img src="https://cdn.jsdelivr.net/gh/jimmylv/images/girl.jpg" height="320">
 </div>
 [/magic]
 
@@ -345,9 +345,9 @@ nodeppt：https://github.com/ksky521/nodePPT
 
 ---
 
-# ![](https://jimmylv.github.io/images/girl.jpg)
+# ![](https://cdn.jsdelivr.net/gh/jimmylv/images/girl.jpg)
 
-![](https://jimmylv.github.io/images/girl.jpg)
+![](https://cdn.jsdelivr.net/gh/jimmylv/images/girl.jpg)
 [/magic]
 
 [slide]
@@ -492,7 +492,7 @@ nodeppt：https://github.com/ksky521/nodePPT
 
 ---
 
-![小萝莉](https://jimmylv.github.io/images/girl.jpg '小萝莉')
+![小萝莉](https://cdn.jsdelivr.net/gh/jimmylv/images/girl.jpg '小萝莉')
 
 [slide][note] ##这里是 note
 

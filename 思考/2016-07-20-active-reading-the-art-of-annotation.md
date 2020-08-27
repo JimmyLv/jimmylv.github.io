@@ -74,4 +74,4 @@ published: true
 
 **评注内容样例：**
 
-![](https://jimmylv.github.io/images/2019/006tNbRwgy1fw2b90bv9gj30zk0s6aia.jpg)
+![](https://cdn.jsdelivr.net/gh/jimmylv/images/2019/006tNbRwgy1fw2b90bv9gj30zk0s6aia.jpg)

@@ -52,7 +52,7 @@ $ cd my-awesome-site
 ```
 
 打开浏览器可以看到：
-![3](https://jimmylv.github.io/images/images/tech/0926-3.png)
+![3](https://cdn.jsdelivr.net/gh/jimmylv/images/images/tech/0926-3.png)
 
 ## 使用[「JekyllBootstrap」](http://jekyllbootstrap.com/)
 
@@ -92,7 +92,7 @@ Error:  Address already in use - bind(2)
 
 这个错误是因为在另外一个在和终端里面也运行了 jekyll serve，关掉之后在打开就可以看到自己的博客了。
 
-![4](https://jimmylv.github.io/images/images/tech/0926-4.png)
+![4](https://cdn.jsdelivr.net/gh/jimmylv/images/images/tech/0926-4.png)
 
 ```sh
 $ jekyll serve
@@ -159,7 +159,7 @@ published: 表示发布与否
 
 最终就选择了 Prose.io 直接在线编辑修改 GitHub 上的文章，无比方便。
 
-![5](https://jimmylv.github.io/images/images/tech/0926-5.png)
+![5](https://cdn.jsdelivr.net/gh/jimmylv/images/images/tech/0926-5.png)
 
 ## 其他的快速「博客」方案
 
