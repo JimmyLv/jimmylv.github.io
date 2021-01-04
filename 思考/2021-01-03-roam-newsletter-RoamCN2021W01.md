@@ -15,7 +15,7 @@ published: True
 
 1/ 如何将 ePUB 电子书导入 Roam Research
 
-{% twitter https://twitter.com/Jimmy_JingLv/status/1342843717250531337?s=20 %}
+{% twitter https://twitter.com/zsviczian/status/1342834541103370240?s=20 %}
 
 2/ Roam 官方支持了 roam/templates 😁 通过 `;;` 符号即可触发插入模板，终于知道为什么 #Roam42 为什么把触发关键词改成了 `jj`
 
