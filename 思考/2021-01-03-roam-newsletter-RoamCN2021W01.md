@@ -57,7 +57,7 @@ published: True
 
 {% twitter https://twitter.com/rcvd_io/status/1343502818414645254?s=20 %}
 
-10/ Roam Research 新的隐藏功能 `{{=: | tags you want to hide}}` 可用于类 Anki 挖空复习，甚至可以重复执行
+10/ Roam Research 新的隐藏功能 `{``{=: | tags you want to hide}``}` 可用于类 Anki 挖空复习，甚至可以重复执行
 
 {% twitter https://twitter.com/Jeanvaljean689/status/1343384641508528128?s=20 %}
 
