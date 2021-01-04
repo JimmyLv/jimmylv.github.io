@@ -30,7 +30,7 @@ published: True
 
 4/ 支持 [[]] 链接的 All-in-one 无限笔记本 [@cloverappco](https://twitter.com/cloverappco) [pic.twitter.com/xElieETO1O]
 
-{% twitter https://twitter.com/Jimmy_JingLv/status/1343212749875150848/video/1 %}
+{% twitter https://twitter.com/Jimmy_JingLv/status/1343212749875150848 %}
 
 5/ 官方出品 Roam Research 文化衫，🎄
 
