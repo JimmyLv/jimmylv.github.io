@@ -8,6 +8,8 @@ published: True
 
 [Tweet](https://twitter.com/i/status/1342843410021900289) by [@Jimmy_JingLv](https://twitter.com/Jimmy_JingLv) on December 26th, 2020:
 
+{% twitter https://twitter.com/i/status/1342843410021900289 %}
+
 📮 Roam Newsletter 漫游研究所周报 #2021W01
 
 - #RoamCN2021W01 RoamCN WeeklyNewsletter
