@@ -65,65 +65,86 @@ published: True
 
 #RoamCN2020W47 RoamCN WeeklyNewsletter roamcult @cn_roam
 
-- 1/ 使用 markdown 作为 CSS style 选择器，通过 a[style="xxx"] 来定位指定元素
-  {% twitter https://twitter.com/CatoMinor3/status/1255727586598105090 %}
+1/ 使用 markdown 作为 CSS style 选择器，通过 a[style="xxx"] 来定位指定元素
 
-- 2/ Roam Research 的强大之处在于排除干扰，保持专注力，而这是你最应该培养的核心习惯。
-  {% twitter https://twitter.com/cortexfutura/status/1328345006860607488 %}
+{% twitter https://twitter.com/CatoMinor3/status/1255727586598105090 %}
 
-- 3/ 连接的不应该只是笔记，而应该是知识。
-  {% twitter https://twitter.com/Steve_Yang331/status/1328292760768573441 %}
+2/ Roam Research 的强大之处在于排除干扰，保持专注力，而这是你最应该培养的核心习惯。
 
-- 4/ 如何使用 Roam Research SRS ∆ 功能记忆一首诗
-  {% twitter https://twitter.com/Conaw/status/1328568982002077697 %}
+{% twitter https://twitter.com/cortexfutura/status/1328345006860607488 %}
 
-- 5/ 未来的教科书可能就像一个拼图游戏：由读者来主动寻找 Block 之间的连接，并将知识结构最终拼成一块完整的拼图。
-  {% twitter https://twitter.com/azlenelza/status/1328594861575049220 %}
+3/ 连接的不应该只是笔记，而应该是知识。
 
-- 6/ RoamBookClub Roam 读书会所用的 CSS 样式清晰地显示了 Block 类型和读者名字。
-  {% twitter https://twitter.com/beauhaan/status/1328259434267570177 %}
+{% twitter https://twitter.com/Steve_Yang331/status/1328292760768573441 %}
 
-- 7/ Roam Research 桌面端的 Quick Capture 功能即将到来，加快捕获想法的速度，而不用缓慢加载整个数据库造成想法流逝。
-  {% twitter https://twitter.com/Conaw/status/1328177988366520320 %}
+4/ 如何使用 Roam Research SRS ∆ 功能记忆一首诗
 
-- 8/ 作者在实践超过 500 条笔记 8w 字卡片盒笔记法后的经验反思
-  {% twitter https://twitter.com/alexkehayias/status/1325868481925951488 %}
+{% twitter https://twitter.com/Conaw/status/1328568982002077697 %}
 
-- 9/ 我们的大脑每天会产生多达 70,000 个想法，而大部分都并非基于事实。 #贝叶斯脑
-  {% twitter https://twitter.com/Kpaxs/status/1328409571052883969 %}
+5/ 未来的教科书可能就像一个拼图游戏：由读者来主动寻找 Block 之间的连接，并将知识结构最终拼成一块完整的拼图。
 
-- 10/ 随着 macOS 新系统的发布，可以搭配一个 macOS Big Sur-style 的 Roam 新图标
-  {% twitter https://twitter.com/logansavs/status/1280155201589194753?s=20 %}
+{% twitter https://twitter.com/azlenelza/status/1328594861575049220 %}
 
-- 11/ Roam Research 的 Mobile PWA 版本安装方式
-  {% twitter https://twitter.com/rroudt/status/1279393365545672704?s=20 %}
+6/ RoamBookClub Roam 读书会所用的 CSS 样式清晰地显示了 Block 类型和读者名字。
 
-- 12/ Roam Research 的 Desktop PWA 版本安装方式
-  {% twitter https://twitter.com/rroudt/status/1280131882852679688?s=20 %}
+{% twitter https://twitter.com/beauhaan/status/1328259434267570177 %}
 
-- 14/ 通过全局 Filter 来快速开/关 roam/css 自定义主题
-  {% twitter https://twitter.com/ViktorTabori/status/1328751112451657730?s=20 %}
+7/ Roam Research 桌面端的 Quick Capture 功能即将到来，加快捕获想法的速度，而不用缓慢加载整个数据库造成想法流逝。
 
-- 15/ 如何使用 Roam Research 快速写作，万物皆可 Block，像乐高一样 Compose 搭积木。
-  {% twitter https://twitter.com/shuomi3/status/1329055613259681792?s=20 %}
+{% twitter https://twitter.com/Conaw/status/1328177988366520320 %}
 
-- 16/ 使用 @RoamResearch 最好的时机是 20 个月之前，其次是现在。
-  {% twitter https://twitter.com/rickmanelius/status/1326540677811851267?s=20 %}
+8/ 作者在实践超过 500 条笔记 8w 字卡片盒笔记法后的经验反思
 
-- 17/ 将 Hill Charts 📈 带入 Roam Research
-  {% twitter https://twitter.com/austinbirch/status/1329025821466570753 %}
+{% twitter https://twitter.com/alexkehayias/status/1325868481925951488 %}
 
-- 18/ http://roamjs.com 新扩展，支持线形图和饼图
-  {% twitter https://twitter.com/dvargas92495/status/1329196176625848321 %}
+9/ 我们的大脑每天会产生多达 70,000 个想法，而大部分都并非基于事实。 #贝叶斯脑
 
-- 19/ http://roamjs.com 新扩展，支持自定义循环标签，就像使用 Roam Research 原生的 TODO/DONE 一样。
-  {% twitter https://twitter.com/dvargas92495/status/1329922652669169666?s=20 %}
+{% twitter https://twitter.com/Kpaxs/status/1328409571052883969 %}
 
-- 20/ Roam Research Control-( 快捷键现在支持“查找或创建”功能，可以引用其他 Page 中的 Block，并且能够沿着特定路径缩进来查找，如果没找到还能快速新建 Block。
-  {% twitter https://twitter.com/Conaw/status/1330124156122374146?s=20 %}
+10/ 随着 macOS 新系统的发布，可以搭配一个 macOS Big Sur-style 的 Roam 新图标
 
-- 21/ 自定义 Twitter 标签的图标
-  {% twitter https://twitter.com/beauhaan/status/1330248438622064645?s=20 %}
+{% twitter https://twitter.com/logansavs/status/1280155201589194753?s=20 %}
 
-- 22/ 如何创作有影响力的在线课程
-  {% twitter https://twitter.com/rroudt/status/1328641462242832384 %}
+11/ Roam Research 的 Mobile PWA 版本安装方式
+
+{% twitter https://twitter.com/rroudt/status/1279393365545672704?s=20 %}
+
+12/ Roam Research 的 Desktop PWA 版本安装方式
+
+{% twitter https://twitter.com/rroudt/status/1280131882852679688?s=20 %}
+
+14/ 通过全局 Filter 来快速开/关 roam/css 自定义主题
+
+{% twitter https://twitter.com/ViktorTabori/status/1328751112451657730?s=20 %}
+
+15/ 如何使用 Roam Research 快速写作，万物皆可 Block，像乐高一样 Compose 搭积木。
+
+{% twitter https://twitter.com/shuomi3/status/1329055613259681792?s=20 %}
+
+16/ 使用 @RoamResearch 最好的时机是 20 个月之前，其次是现在。
+
+{% twitter https://twitter.com/rickmanelius/status/1326540677811851267?s=20 %}
+
+17/ 将 Hill Charts 📈 带入 Roam Research
+
+{% twitter https://twitter.com/austinbirch/status/1329025821466570753 %}
+
+18/ http://roamjs.com 新扩展，支持线形图和饼图
+
+{% twitter https://twitter.com/dvargas92495/status/1329196176625848321 %}
+
+19/ http://roamjs.com 新扩展，支持自定义循环标签，就像使用 Roam Research 原生的 TODO/DONE 一样。
+
+{% twitter https://twitter.com/dvargas92495/status/1329922652669169666?s=20 %}
+
+20/ Roam Research Control-( 快捷键现在支持“查找或创建”功能，可以引用其他 Page 中的 Block，并且能够沿着特定路径缩进来查找，如果没找到还能快速新建 Block。
+
+{% twitter https://twitter.com/Conaw/status/1330124156122374146?s=20 %}
+
+21/ 自定义 Twitter 标签的图标
+
+{% twitter https://twitter.com/beauhaan/status/1330248438622064645?s=20 %}
+
+22/ 如何创作有影响力的在线课程
+
+{% twitter https://twitter.com/rroudt/status/1328641462242832384 %}

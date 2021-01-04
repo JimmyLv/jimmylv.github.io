@@ -9,6 +9,7 @@ published: True
 [Tweet](https://twitter.com/i/status/1342843410021900289) by [@Jimmy_JingLv](https://twitter.com/Jimmy_JingLv) on December 26th, 2020:
 
 📮 Roam Newsletter 漫游研究所周报 #2021W01
+
 - #RoamCN2021W01 RoamCN WeeklyNewsletter
 - roamcult LearnInPublic LearnWithJimmy Zettelkasten
 - [@cn_roam](https://twitter.com/cn_roam) [@RoamResearch](https://twitter.com/RoamResearch) [吕立青的博客](http://roamcult.vip)
@@ -57,7 +58,7 @@ published: True
 
 {% twitter https://twitter.com/rcvd_io/status/1343502818414645254?s=20 %}
 
-10/ Roam Research 新的隐藏功能 `{``{=: | tags you want to hide}``}` 可用于类 Anki 挖空复习，甚至可以重复执行
+10/ Roam Research 新的隐藏功能 ` {``{=: | tags you want to hide}``} ` 可用于类 Anki 挖空复习，甚至可以重复执行
 
 {% twitter https://twitter.com/Jeanvaljean689/status/1343384641508528128?s=20 %}
 
@@ -161,4 +162,4 @@ published: True
 
 35/ 结合 SmartBlocks 制定决策，使用模板拉动做决定的效率和质量
 
-{% twitter https://twitter.com/krzem_m/status/1345377338582831107?s=20 %}  
+{% twitter https://twitter.com/krzem_m/status/1345377338582831107?s=20 %}
