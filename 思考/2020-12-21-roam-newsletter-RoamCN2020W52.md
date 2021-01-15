@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Roam Newsletter 漫游研究所周报 2020W52
+title: 阻挡你进步的最大障碍是自我认同 | Roam Newsletter 漫游研究所周报 2020W52
 categories: [思考]
 tags: [RoamNewsletter, 认知, 效能, 生产力, RoamCN, roamcult, 自我管理, 知识创造, RoamResearch]
 published: True
@@ -80,13 +80,9 @@ published: True
 
 17/ [Roam JS](http://roamjs.com) 新扩展 {{presentation}} 演讲模式，Roam Newsletter 漫游研究所周报又可以迭代啦！
 
-- 论点 1
-- 结论 2
-- 总结
+{% twitter https://twitter.com/dvargas92495/status/1342202005603962880?s=20 %}
 
-{% twitter   https://twitter.com/dvargas92495/status/1342202005603962880?s=20 %}
-
-{% twitter   https://twitter.com/dvargas92495/status/1342200461391224837?s=20 %}
+{% twitter https://twitter.com/dvargas92495/status/1342200461391224837?s=20 %}
 
 18/ Obsidian 2020 主题和插件一览，快来投票，选择你的最爱。看来程序员还是比较偏爱 Obsidian，各种工具插件的开发来得更加迅猛。
 

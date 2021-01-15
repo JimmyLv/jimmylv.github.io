@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Roam Newsletter 漫游研究所周报 2020W46
+title: 双向链接和思维碰撞，达芬奇记笔记的现代版本 | Roam Newsletter 漫游研究所周报 2020W46
 categories: [思考]
 tags: [RoamNewsletter, 认知, 效能, 生产力, RoamCN, roamcult, 自我管理, 知识创造, RoamResearch]
 published: True

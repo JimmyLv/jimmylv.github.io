@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Roam Newsletter 漫游研究所周报 2020W47
+title: 知识体系 树状结构 vs 网状结构 | Roam Newsletter 漫游研究所周报 2020W47
 categories: [思考]
 tags: [RoamNewsletter, 认知, 效能, 生产力, RoamCN, roamcult, 自我管理, 知识创造, RoamResearch]
 published: True

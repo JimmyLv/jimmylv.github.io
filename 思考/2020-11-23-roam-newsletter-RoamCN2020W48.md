@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Roam Newsletter 漫游研究所周报 2020W48
+title: 迭代 10000 次，而不是 10000 小时 | Roam Newsletter 漫游研究所周报 2020W48
 categories: [思考]
 tags: [RoamNewsletter, 认知, 效能, 生产力, RoamCN, roamcult, 自我管理, 知识创造, RoamResearch]
 published: True

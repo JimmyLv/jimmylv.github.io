@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Roam Newsletter 漫游研究所周报 2020W49
+title: 知识工作者从想法到现实的生产体系 | Roam Newsletter 漫游研究所周报 2020W49
 categories: [思考]
 tags: [RoamNewsletter, 认知, 效能, 生产力, RoamCN, roamcult, 自我管理, 知识创造, RoamResearch]
 published: True

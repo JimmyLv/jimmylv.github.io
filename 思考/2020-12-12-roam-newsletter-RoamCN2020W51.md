@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Roam Newsletter 漫游研究所周报 2020W51
+title: 降低信息噪声，提高信噪比 | Roam Newsletter 漫游研究所周报 2020W51
 categories: [思考]
 tags: [RoamNewsletter, 认知, 效能, 生产力, RoamCN, roamcult, 自我管理, 知识创造, RoamResearch]
 published: True
@@ -30,7 +30,7 @@ published: True
 
 {% twitter https://twitter.com/plidezus/status/1337918366581866496?s=20 %}
 
-5/  http://super.so  可以直接将 Notion 页面变成网站，且做了很多图片和预渲染的优化。
+5/ https://super.so 可以直接将 Notion 页面变成网站，且做了很多图片和预渲染的优化。
 
 {% twitter https://twitter.com/rauchg/status/1337965600430178306?s=20 %}
 

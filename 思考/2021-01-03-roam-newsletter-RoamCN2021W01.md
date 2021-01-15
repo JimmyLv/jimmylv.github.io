@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Roam Newsletter 漫游研究所周报 2021W01
+title: 理解内容，如何写一个好的间隔重复提示？| Roam Newsletter 漫游研究所周报 2021W01
 categories: [思考]
 tags: [RoamNewsletter, 认知, 效能, 生产力, RoamCN, roamcult, 自我管理, 知识创造, RoamResearch]
 published: True
@@ -40,7 +40,7 @@ published: True
 
 {% twitter https://twitter.com/jackbutcher/status/1283130350864982016?s=20 %}
 
-7/ 如何使用 SmartBlocks 做任务管理
+7/ 如何使用 SmartBlocks 做任务管理？
 
 {% twitter https://twitter.com/JESSCATE93/status/1343109605644111873?s=20 %}
 
@@ -130,7 +130,7 @@ published: True
 
 {% twitter https://twitter.com/AbhayPrasanna/status/1344034192183746560?s=20 %}
 
-27/ 更灵活也更强大的 roam/templates 更新
+27/ 更灵活也更强大的 [[roam/templates]] 更新
 
 {% twitter https://twitter.com/roamresearch/status/1344340252945575936?s=21 %}
 
