@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 笔记不是写作，写作才是思考的结果 | Roam Newsletter 漫游研究所周报 2021W02
+title: 笔记不是写作，写作是思考的结果 | Roam Newsletter 漫游研究所周报 2021W02
 categories: [思考]
 tags: [RoamNewsletter, 认知, 效能, 生产力, RoamCN, roamcult, 自我管理, 知识创造, RoamResearch]
 published: True
