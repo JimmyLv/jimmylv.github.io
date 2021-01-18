@@ -34,7 +34,7 @@ Vim Navigation 模式
 
 #[[Roam 洞见]] 你的关注点，如何决定了你的生活？
 
-{% twitter https://twitter.com/Julian/status/1348723963438923778?s=20 %}
+{% twitter https://twitter.com/Julian/status/1348001394104537089?s=20 %}
 
 #[[Roam 用例]] 使用 Roam Research `query` 功能打造你的编年史
 
