@@ -10,7 +10,8 @@
   "scripts": {
     "format": "prettier --write **/*.md",
     "lint": "textlint **/*.md",
-    "lint:fix": "yarn lint --fix"
+    "lint:fix": "yarn lint --fix",
+    "ppt": "nodeppt generate ./演讲 ./slides -a && hs slides"
   },
   "lint-staged": {
     "*.md": [

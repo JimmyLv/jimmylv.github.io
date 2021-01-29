@@ -63,7 +63,7 @@ published: True
 - Mircosoft, JScript
 - ECMAScript
 
-![Netscape](http://image.beekka.com/blog/201106/bg2011062401.jpg)
+![Netscape](https://i.redd.it/wb5pj2keomm21.jpg)
 
 [slide]
 
@@ -159,10 +159,10 @@ published: True
 
 [slide]
 
-## Atwood's Law
+## [Atwood's Law](https://en.wikipedia.org/wiki/Jeff_Atwood)
 
 Any application that can be written in JavaScript,
-凡可 JavaScript，
 
 Will eventually be written in JavaScript.
-终将 JavaScript。
+
+凡可 JavaScript，终将 JavaScript。
