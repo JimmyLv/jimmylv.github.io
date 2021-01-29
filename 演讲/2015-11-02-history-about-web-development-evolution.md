@@ -56,8 +56,6 @@ published: True
 
 [slide]
 
-[slide]
-
 ## JavaScript 与 Netscape
 
 - Sun, Java
@@ -164,5 +162,7 @@ published: True
 ## Atwood's Law
 
 Any application that can be written in JavaScript,
+凡可 JavaScript，
 
-will eventually be written in JavaScript.
+Will eventually be written in JavaScript.
+终将 JavaScript。

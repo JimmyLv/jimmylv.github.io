@@ -7,13 +7,16 @@ _drafts/
 Inbox/
 Archive/
 _Archive/
-Trash/
-.cache/
 
 # NotePlan
 Notes/
 Calendar/
 Filters/
+
+# Artifact
+Trash/
+.cache/
+slides/
 
 # IDE
 .idea/
