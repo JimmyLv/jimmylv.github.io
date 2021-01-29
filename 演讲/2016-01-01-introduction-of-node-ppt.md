@@ -98,7 +98,7 @@ usemathjax: yes 启用MathJax渲染公式
 
 ## 使用 LaTex 公式：
 
-$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a}.    s = ut + \frac{1}{2}at^2 $$
+$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a}. s = ut + \frac{1}{2}at^2 $$
 矩阵：\\( x = {\begin{bmatrix} 1 & 2 & 3 \\\\ 4 & 5 & 6 \end{bmatrix}} \\)
 
 [slide]
@@ -132,10 +132,10 @@ nodeppt：https://github.com/ksky521/nodePPT
 ---
 
 | Less      |                 Sass                  |                                                                                                                                                                                                           Stylus |
-| :-------- | :-----------------------------------: | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| :-------- | :-----------------------------------: | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | -------------------------- |
 | 环境      |               js/nodejs               |                                                                                                                                                                                                 Ruby(这列右对齐) | nodejs(高亮) {:.highlight} |
-| 扩展名    |                 .less                 |                                                                                                                                                                                                      .scss/.sass | .styl |
-| 特点      |      老牌，用户多，支持 js 解析       |                                                                                                                                                                                       功能全，有成型框架，发展快 | 语法多样，小众 |
+| 扩展名    |                 .less                 |                                                                                                                                                                                                      .scss/.sass | .styl                      |
+| 特点      |      老牌，用户多，支持 js 解析       |                                                                                                                                                                                       功能全，有成型框架，发展快 | 语法多样，小众             |
 | 案例/框架 | [Bootstrap](http://getbootstrap.com/) | [Compass](http://beta.compass-style.org) [Bootstrap](http://getbootstrap.com/css/#sass) [Foundation](http://foundation.zurb.com/) [Bourbon](http://bourbon.io) [Base.Sass](https://github.com/jsw0528/base.sass) |
 
 [slide]
@@ -324,18 +324,18 @@ nodeppt：https://github.com/ksky521/nodePPT
 ---
 
 <div class="columns3">
-    <img src="https://cdn.jsdelivr.net/gh/jimmylv/images/girl.jpg" height="450">
-    <img src="https://cdn.jsdelivr.net/gh/jimmylv/images/girl.jpg" height="450">
-    <img src="https://cdn.jsdelivr.net/gh/jimmylv/images/girl.jpg" height="450">
+    <img src="https://raw.staticdn.net/JimmyLv/images/master/images/girl.jpg" height="450">
+    <img src="https://raw.staticdn.net/JimmyLv/images/master/images/girl.jpg" height="450">
+    <img src="https://raw.staticdn.net/JimmyLv/images/master/images/girl.jpg" height="450">
 </div>
 ========
 ## 演示earthquake转场效果
 -----
 <div class="columns4">
-    <img src="https://cdn.jsdelivr.net/gh/jimmylv/images/girl.jpg" height="320">
-    <img src="https://cdn.jsdelivr.net/gh/jimmylv/images/girl.jpg" height="320">
-    <img src="https://cdn.jsdelivr.net/gh/jimmylv/images/girl.jpg" height="320">
-    <img src="https://cdn.jsdelivr.net/gh/jimmylv/images/girl.jpg" height="320">
+    <img src="https://raw.staticdn.net/JimmyLv/images/master/images/girl.jpg" height="320">
+    <img src="https://raw.staticdn.net/JimmyLv/images/master/images/girl.jpg" height="320">
+    <img src="https://raw.staticdn.net/JimmyLv/images/master/images/girl.jpg" height="320">
+    <img src="https://raw.staticdn.net/JimmyLv/images/master/images/girl.jpg" height="320">
 </div>
 [/magic]
 
@@ -345,9 +345,9 @@ nodeppt：https://github.com/ksky521/nodePPT
 
 ---
 
-# ![](https://cdn.jsdelivr.net/gh/jimmylv/images/girl.jpg)
+# ![](https://raw.staticdn.net/JimmyLv/images/master/images/girl.jpg)
 
-![](https://cdn.jsdelivr.net/gh/jimmylv/images/girl.jpg)
+![](https://raw.staticdn.net/JimmyLv/images/master/images/girl.jpg)
 [/magic]
 
 [slide]
@@ -492,7 +492,7 @@ nodeppt：https://github.com/ksky521/nodePPT
 
 ---
 
-![小萝莉](https://cdn.jsdelivr.net/gh/jimmylv/images/girl.jpg '小萝莉')
+![小萝莉](https://raw.staticdn.net/JimmyLv/images/master/images/girl.jpg '小萝莉')
 
 [slide][note] ##这里是 note
 
@@ -538,10 +538,10 @@ markdown 语法如下：
 按下键盘【W】键，切换到更宽的页面看效果，第二次按键返回
 
 | less      |                 sass                  |                                                           stylus |
-| :-------- | :-----------------------------------: | ---------------------------------------------------------------: |
+| :-------- | :-----------------------------------: | ---------------------------------------------------------------: | -------------------------- |
 | 环境      |               js/nodejs               |                                                 Ruby(这列右对齐) | nodejs(高亮) {:.highlight} |
-| 扩展名    |                 .less                 |                                                      .sass/.scss | .styl |
-| 特点      |      老牌，用户多，支持 js 解析       |                                       功能全，有成型框架，发展快 | 语法多样，小众 |
+| 扩展名    |                 .less                 |                                                      .sass/.scss | .styl                      |
+| 特点      |      老牌，用户多，支持 js 解析       |                                       功能全，有成型框架，发展快 | 语法多样，小众             |
 | 案例/框架 | [Bootstrap](http://getbootstrap.com/) | [compass](http://compass-style.org) [bourbon](http://bourbon.io) |
 
 [slide]
@@ -598,9 +598,7 @@ markdown 语法如下：
 <script>
   function globalFunc() {}
 </script>
-<button onclick="Slide.proxyFn('globalFunc')" class="btn btn-default">
-  远程执行函数
-</button>
+<button onclick="Slide.proxyFn('globalFunc')" class="btn btn-default">远程执行函数</button>
 ```
 
 <button onclick="Slide.proxyFn('globalFunc','args')" class="btn btn-default">测试远程执行函数</button>

@@ -96,7 +96,7 @@ published: True
 
 [/note]
 
-[slide style="background-image:url('https://cdn.jsdelivr.net/gh/jimmylv/images/2017/12/1513920317188.png')"]
+[slide style="background-image:url('https://raw.staticdn.net/JimmyLv/images/master/images/2017/12/1513920317188.png')"]
 
 # 世界，本来是一个整体。
 
@@ -145,7 +145,7 @@ published: True
 
 ---
 
-![](https://cdn.jsdelivr.net/gh/jimmylv/images/2016/1523444746311.png)
+![](https://raw.staticdn.net/JimmyLv/images/master/images/2016/1523444746311.png)
 
 [slide]
 

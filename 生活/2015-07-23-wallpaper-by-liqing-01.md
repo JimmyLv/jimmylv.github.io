@@ -6,9 +6,9 @@ tags: [爱情, 摄影]
 published: True
 ---
 
-![](https://cdn.jsdelivr.net/gh/jimmylv/images/images/S50615-150245.jpg)
-![](https://cdn.jsdelivr.net/gh/jimmylv/images/images/S50616-152521.jpg)
-![](https://cdn.jsdelivr.net/gh/jimmylv/images/images/S50616-160623.jpg)
-![](https://cdn.jsdelivr.net/gh/jimmylv/images/images/S50616-160636.jpg)
-![](https://cdn.jsdelivr.net/gh/jimmylv/images/images/S50616-160846.jpg)
-![](https://cdn.jsdelivr.net/gh/jimmylv/images/images/S50616-160912.jpg)
+![](https://raw.staticdn.net/JimmyLv/images/master/images/S50615-150245.jpg)
+![](https://raw.staticdn.net/JimmyLv/images/master/images/S50616-152521.jpg)
+![](https://raw.staticdn.net/JimmyLv/images/master/images/S50616-160623.jpg)
+![](https://raw.staticdn.net/JimmyLv/images/master/images/S50616-160636.jpg)
+![](https://raw.staticdn.net/JimmyLv/images/master/images/S50616-160846.jpg)
+![](https://raw.staticdn.net/JimmyLv/images/master/images/S50616-160912.jpg)

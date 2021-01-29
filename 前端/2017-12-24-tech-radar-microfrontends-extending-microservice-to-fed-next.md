@@ -111,7 +111,7 @@ Promise.all([
 
 当然，我们也可以通过修改一些后端代码来渐进式地（Progressive）往前端发送 HTML，但与此同时却徒增了后端复杂度，并且又将前端的渲染控制权交回了后端服务器。而且我们的优化也取决于每个模块加载的速度，若是进行优化就必须按一定顺序进行加载。
 
-![](https://cdn.jsdelivr.net/gh/jimmylv/images/2017/12/1513879504186.png)
+![](https://raw.staticdn.net/JimmyLv/images/master/images/2017/12/1513879504186.png)
 
 #### Option 2: 使用 IFrame 隔离运行时
 
@@ -241,14 +241,14 @@ componentDidMount() {
 
 ### 多模块页面加载问题与优化建议
 
-![](https://cdn.jsdelivr.net/gh/jimmylv/images/2017/12/1513881261010.png)
+![](https://raw.staticdn.net/JimmyLv/images/master/images/2017/12/1513881261010.png)
 
 - **使用 skeleton screen 响应式布局**：如上图 LinkedIn 所做的那样，首先展现给用户一个页面的空白版本，然后在这个页面中逐渐加载和填充相应的信息。否则中间的信息流部分的内容最初是空白的，然后在 JavaScript 被加载和执行过后，信息流就会因为需要占用更多的空间而推动整个页面的布局。虽然我们可以控制页面来固定中间部分的高度，但在响应式网站上，确定一个确切的高度往往很难，而且不同的屏幕尺寸可能会有所不同。但更重要的问题是，这种高度尺寸的约定会让不同团队之间产生紧密的联系，从而违背了微前端的初衷。
 - **使用浏览器异步加载加快初始渲染**：对于加载成本高且难以缓存的碎片，将其从初始渲染中排除是一个好主意。比如说 LinkedIn 首页的信息流就是一个很好的例子。
 - **共享 UI 组件库保证视觉体验一致**：在前端设计中，必须向用户呈现外观和感觉一致的用户界面。建议可以建立一个共享组件库（包含 CSS、字体和 JavaScript）。将这些资源托管在 CDN，每个微前端就可以在其 HTML 输出中引用它们的位置。每个组件库的版本都正确地对资源进行版本控制，而每个微前端都指定要使用的组件库的版本和显式更新依赖关系。
 - **使用集中式服务（Router）来管理 URL**：可以理解为前端的 Gateway，不同的 URL 对应不同应用程序所包含的内容。建议通过一个集中式的 URLs Router 来为应用程序提供一个 API 来注册他们自己的 URL，Router 将会位于 Web 应用程序的前面，根据不同的用户请求指向不同的 App 模块组合。
 
-![](https://cdn.jsdelivr.net/gh/jimmylv/images/2017/12/1514122411683.png)
+![](https://raw.staticdn.net/JimmyLv/images/master/images/2017/12/1514122411683.png)
 
 - **提取共同依赖作为 externals 加载**：虽然说不同 App 模块之间不能直接共享相同的第三方模块，当我们依然可以将常用的依赖比如 `lodash`、`moment.js`等公共库，或者跨多个团队共同使用的 `react` 和 `react-dom`。通过 Webpack 等构建工具就可以把打包的时候将这些共同模块排除掉，而只需要在 HTML `<header>` 中的 `<script>`中直接通过 CDN 加载 externals 依赖。
 
@@ -282,7 +282,7 @@ componentDidMount() {
 
 ### 现成解决方案：[Single-SPA “meta framework”](https://single-spa.surge.sh/)
 
-[![点击图片可查看实例](https://cdn.jsdelivr.net/gh/jimmylv/images/2017/12/1514123775500.png)](https://single-spa.surge.sh/)
+[![点击图片可查看实例](https://raw.staticdn.net/JimmyLv/images/master/images/2017/12/1514123775500.png)](https://single-spa.surge.sh/)
 
 开源的 [`single-spa`](https://github.com/CanopyTax/single-spa) 自称为「元框架」，可以实现在一个页面将多个不同的框架整合，甚至在切换的时候都不需要刷新页面（支持 React、Vue、Angular 1、Angular 2、Ember 等等）：
 
@@ -326,7 +326,7 @@ start();
 
 值得一提的是，[single-spa](https://github.com/CanopyTax/single-spa) 已经进入到最新一期技术雷达的**评估**阶段。这意味着 single-spa 会是值得研究一番的技术，以确认它将对你产生何种影响，你应该投入一些精力来确定它是否会对你所在的组织产生影响。
 
-![](https://cdn.jsdelivr.net/gh/jimmylv/images/2016/1515998280875.png)
+![](https://raw.staticdn.net/JimmyLv/images/master/images/2016/1515998280875.png)
 
 > 摘自技术雷达：SINGLE-SPA 是一个 JavaScript 元框架，它允许我们使用不同的框架构建微前端，而这些框架可以共存于单个应用中。一般来说，我们不建议在单个应用中使用多个框架，但有时却不得不这么做。例如当你在开发遗留系统时，你希望使用现有框架的新版本或完全不同的框架来开发新功能，single-spa 就能派上用场了。鉴于很多 JavaScript 框架 都昙花一现，我们需要一个解决方案来应对未来框架的变化，以及在不影响整个应用的前提下进行局部尝试。在这个方向上，single-spa 是一个不错的开始。
 
@@ -361,7 +361,7 @@ start();
 
 ### 持续思考…
 
-![](https://cdn.jsdelivr.net/gh/jimmylv/images/2017/12/1513909558428.png)
+![](https://raw.staticdn.net/JimmyLv/images/master/images/2017/12/1513909558428.png)
 
 - （变幻莫测）前端的技术选型？
   - 前端 JavaScript 框架工具穷出不穷，过几个月就要重写前端项目？比如最近又出来了声称要取代 Webpack（[Parcel](https://github.com/parcel-bundler/parcel)）和 Yarn（[Turbo](https://medium.com/@ericsimons/introducing-turbo-5x-faster-than-yarn-npm-and-runs-natively-in-browser-cc2c39715403)）的工具。伴随着前端框架的更新换代，如果整个项目一起升级/重构的话压力大、风险高，那不如拆分微前端直接支持多 framework，或者同一 framework 的不同版本？
@@ -383,7 +383,7 @@ start();
 
 > 本次技术雷达「微前端」主题的宣讲 Slides 可以在我的博客找到：[「技术雷达」之 Micro Frontends：微前端 - 将微服务理念扩展到前端开发 - 吕立青的博客](https://blog.jimmylv.info/2017-12-22-tech-radar-microfrontends-extending-microservice-to-fed/)
 
-![](https://cdn.jsdelivr.net/gh/jimmylv/images/2017/12/1514125808768.png)
+![](https://raw.staticdn.net/JimmyLv/images/master/images/2017/12/1514125808768.png)
 
 - 在做 Slides 之前所整理的 XMind 思维导图：<https://www.xmind.net/m/e3dv>
 - 本人所整理的所有关于「微前端」的资料：<https://www.diigo.com/user/jimmylv?query=%23microfrontends>

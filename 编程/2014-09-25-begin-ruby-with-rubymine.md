@@ -129,6 +129,6 @@ run
 
 - 开始一个 Rails 项目
 
-![1](https://cdn.jsdelivr.net/gh/jimmylv/images/images/tech/0926-1.png)
+![1](https://raw.staticdn.net/JimmyLv/images/master/images/tech/0926-1.png)
 
-![2](https://cdn.jsdelivr.net/gh/jimmylv/images/images/tech/0926-2.png)
+![2](https://raw.staticdn.net/JimmyLv/images/master/images/tech/0926-2.png)
