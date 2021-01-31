@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 与过去的自己一起，共同迎接挑战 | Roam Newsletter 漫游研究所周报 2021W03
+title: 与过去的自己一起，共同迎接挑战 | Roam Newsletter 漫游研究所周报 2021W04
 categories: [思考]
 tags: [RoamNewsletter, 认知, 效能, 生产力, RoamCN, roamcult, 自我管理, 知识创造, RoamResearch]
 published: True

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 你的灵感水龙头干了吗？如何应对创意倦怠 | Roam Newsletter 漫游研究所周报 2021W03
+title: 你的灵感水龙头干了吗？如何应对创意倦怠 | Roam Newsletter 漫游研究所周报 2021W05
 categories: [思考]
 tags: [RoamNewsletter, 认知, 效能, 生产力, RoamCN, roamcult, 自我管理, 知识创造, RoamResearch]
 published: True
