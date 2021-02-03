@@ -16,7 +16,7 @@ Roy Fielding 是 HTTP 协议（1.0 版和 1.1 版）的主要设计者，事实�
 
 ## Why？
 
-![](https://raw.staticdn.net/JimmyLv/images/master/images/2016/1471531874674.png)
+![](https://raw.githack.com/JimmyLv/images/master/2016/1471531874674.png)
 
 在「远古时代」前端后端是融合在一起的，比如之前的 PHP，JSP，ASP 等等（参考我之前做过的一场演讲：[Web 前端开发模式演变](http://blog.jimmylv.info/2015-11-02-history-about-web-development-evolution/)）。近年来随着移动互联网的飞速发展，各种类型的 Client 端层出不穷，就需要通过一套统一的接口分别为 Web，iOS 和 Android 乃至桌面端提供服务。另外对于广大平台来说，比如 Facebook platform，微博开放平台，微信公共平台等，它们不需要有显式的前端，只需要一套提供服务的接口，于是 RESTful 更是它们最好的选择。
 

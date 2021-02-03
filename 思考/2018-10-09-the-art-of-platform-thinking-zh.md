@@ -88,7 +88,7 @@ Our Digital Platform Strategy framework is a blueprint for platform building tha
 - Experiment Infrastructure and Telemetry
 - Customer Touchpoint Technology
 
-![Digital Platform Strategy - a blueprint](https://raw.staticdn.net/JimmyLv/images/master/images/2019/006tNbRwgy1fw2b5m83dtj318g0i2acf.jpg)
+![Digital Platform Strategy - a blueprint](https://raw.githack.com/JimmyLv/images/master/2019/006tNbRwgy1fw2b5m83dtj318g0i2acf.jpg)
 
 我们的数字平台战略框架是由五个主要支柱（重点领域）所组成的平台建设蓝图。打破企业平台复杂度，通过基础技术能力建设提供有针对性的商业价值交付。为了消除技术摩擦与打造生态系统，我们专注于交付的关键领域（核心部分）：
 
@@ -98,7 +98,7 @@ Our Digital Platform Strategy framework is a blueprint for platform building tha
 - 创新实验基础设施和监控体系
 - 客户触点技术
 
-![DPS](https://raw.staticdn.net/JimmyLv/images/master/images/2018/20181016213732.png)
+![DPS](https://raw.githack.com/JimmyLv/images/master/2018/20181016213732.png)
 
 **Delivery Infrastructure:** We take a holistic approach to infrastructure, build and release support, and observability. Elastic infrastructure and related tooling, coupled with simplified build, deployment, and monitoring enables engineers to deliver rapidly and safely, with appropriate controls and audit support. This pillar directly addresses delivery friction, reducing your time to market for new products and services.
 
@@ -126,7 +126,7 @@ A Digital Platform Strategy engagement begins with a discovery to understand you
 
 数字平台战略始于探索，以理解客户的业务优先级、组织复杂性或是技术成熟度。然后，我们再将其与我们的企业平台构建的模式、实践和原则相结合。这将会是为企业业务需求而量身定制优先级的精益技术战略和平台路线图。
 
-![Digital Platform Strategy - the approach](https://raw.staticdn.net/JimmyLv/images/master/images/2019/006tNbRwgy1fw2b8vb2goj318g0g4k3z.jpg)
+![Digital Platform Strategy - the approach](https://raw.githack.com/JimmyLv/images/master/2019/006tNbRwgy1fw2b8vb2goj318g0g4k3z.jpg)
 
 Moving into the execution phase, the partnership of strategy and delivery moves into high gear. We begin with the highest priority platform capabilities to vet strategy against reality. At this stage, we test our assumptions about organizational delivery capabilities, degree of technical debt, and remediation complexity. This allows us to deliver early platform value that underpins your key business priorities. As the engagement continues, insights from execution are fed back into continuous strategy development and review to inform the path of execution. This feedback loop fine-tunes the short- and medium-term tactical moves, while platform thinking maintains the strategic vision of meeting your business objectives.
 

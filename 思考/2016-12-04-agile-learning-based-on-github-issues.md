@@ -18,7 +18,7 @@ published: True
 
 在我们一生所能做的事情里，睡眠占去 1/3，此生只剩 2/3，除去非做不可的[基本生活维护成本](http://blog.jimmylv.info/2015-09-05-periodically-anxiety/#title0)之外，剩下的时间要么选择浪费而荒度此生，要么瞄准目标而奋力向前，让这一生不留遗憾。Follow your heart，你需要找到一些愿意为其付诸终身的「目标」，以这样的姿态「生活在这世界上」。
 
-[![img](https://raw.staticdn.net/JimmyLv/images/master/2021/0-follow-your-heart-1024x683.jpg)](http://insights.thoughtworkers.org/wp-content/uploads/2017/05/0-follow-your-heart.jpg)
+[![img](https://raw.githack.com/JimmyLv/images/master/2021/0-follow-your-heart-1024x683.jpg)](http://insights.thoughtworkers.org/wp-content/uploads/2017/05/0-follow-your-heart.jpg)
 
 ### 敏捷与个人成长
 
@@ -41,13 +41,13 @@ published: True
 
 首先你可以给自己建一个 GitHub 仓库作为主页，比如我的 [JimmyLv/jimmylv.github.io: Agile Learning based on GitHub issues](https://github.com/JimmyLv/jimmylv.github.io) ，最开始就是从[个人博客](http://blog.jimmylv.info/)的主仓库发展而来。那么，如何快速收纳自己的想法呢？以解决问题为导向，就是有什么需求就直接给自己的 repo 建一个 issue 作为 Story Card，了却这个需求的最终形态就是 close 掉这个 Issue，比如我要写这篇文章就始于这个 issue：[基于 GitHub 的敏捷学习方法总结 · Issue #36](https://github.com/JimmyLv/jimmylv.github.io/issues/36)。
 
-[![img](https://raw.staticdn.net/JimmyLv/images/master/2021/1-GitHub-README-1024x580.png)](http://insights.thoughtworkers.org/wp-content/uploads/2017/05/1-GitHub-README.png)
+[![img](https://raw.githack.com/JimmyLv/images/master/2021/1-GitHub-README-1024x580.png)](http://insights.thoughtworkers.org/wp-content/uploads/2017/05/1-GitHub-README.png)
 
 #### GitHub issues 的进阶用法
 
 与此同时，新建 issue 还有更高级的用法，也就是通过 [ISSUE_TEMPLATE](https://help.github.com/articles/creating-an-issue-template-for-your-repository/) 这样一个模板来新建某个 issue，从而更快地定位问题所在和解析自己的想法，最主要的是能够输出更具体的 TODOs，即下一步行动的具体内容，这个还会在后面详细解释。
 
-[![img](https://raw.staticdn.net/JimmyLv/images/master/2021/2-New-issue-1-1024x634.png)](http://insights.thoughtworkers.org/wp-content/uploads/2017/05/2-New-issue-1.png)
+[![img](https://raw.githack.com/JimmyLv/images/master/2021/2-New-issue-1-1024x634.png)](http://insights.thoughtworkers.org/wp-content/uploads/2017/05/2-New-issue-1.png)
 
 - issue 和 issue 之间是可以通过 `#` 相互连接，甚至可以跨仓库，被 reference 的 issue 也会出现在另外一边的 issue 里面；
 - 而通过 `#!` 符号是可以在 comments 里面直接新建一个 issue ，这在思维爆炸的时候来得特别爽快；
@@ -56,23 +56,23 @@ published: True
 
 这种方式仿佛学习中的大脑，神经网络被连通了的感觉。
 
-[![img](https://raw.staticdn.net/JimmyLv/images/master/2021/3-Intellij-Issues-1024x495.png)](http://insights.thoughtworkers.org/wp-content/uploads/2017/05/3-Intellij-Issues.png)
+[![img](https://raw.githack.com/JimmyLv/images/master/2021/3-Intellij-Issues-1024x495.png)](http://insights.thoughtworkers.org/wp-content/uploads/2017/05/3-Intellij-Issues.png)
 
 #### 移动端的解决方案
 
 而在移动端则可以通过 [GitDo](http://gitdo.io/) 这个 App 来轻松新建和管理自己的 Issues，没错，就是有人把 GitHub issues 做成了一个 Todos 类 App，还做得很漂亮功能很完善。只是不知为何这软件最近被下架了，伤感，我就又重新把滴答清单（TickTick）作为自己的万能收集箱了，之后再把比较重要的、需要进一步追踪的事项添加到 GitHub issues 里面来。
 
-[![img](https://raw.staticdn.net/JimmyLv/images/master/2021/4-GitDo-20210203174301099.png)](http://insights.thoughtworkers.org/wp-content/uploads/2017/05/4-GitDo.png)
+[![img](https://raw.githack.com/JimmyLv/images/master/2021/4-GitDo-20210203174301099.png)](http://insights.thoughtworkers.org/wp-content/uploads/2017/05/4-GitDo.png)
 
 ### 整理你的 GitHub Issues
 
 大胆地把 issues 作为你的个人需求列表吧，需要解决的问题可以大到做一个开源项目，或者小到读一本书、写一篇文章。对于比较大的需求，你还可以将其转化为 Epic 然后把拆分过后的小 issues 们加入到这个列表里面来。
 
-[![img](https://raw.staticdn.net/JimmyLv/images/master/2021/5-Epic-1024x532.png)](http://insights.thoughtworkers.org/wp-content/uploads/2017/05/5-Epic.png)
+[![img](https://raw.githack.com/JimmyLv/images/master/2021/5-Epic-1024x532.png)](http://insights.thoughtworkers.org/wp-content/uploads/2017/05/5-Epic.png)
 
 而 GitHub (with [ZenHub](https://www.zenhub.com/)) 强大的 issues 管理能力绝对会让你的迭代工作变得井井有条，使用 GitHub 新出的 [Projects](https://github.com/JimmyLv/jimmylv.github.io/projects/1) 特性或者使用 ZenHub 的 [Boards](https://github.com/JimmyLv/jimmylv.github.io/issues/100#boards?repos=13273392) 就可以让你瞬间拥有日常敏捷工作的感觉了吧！
 
-[![img](https://raw.staticdn.net/JimmyLv/images/master/2021/6-ZenHub-piepline-1024x526.png)](http://insights.thoughtworkers.org/wp-content/uploads/2017/05/6-ZenHub-piepline.png)
+[![img](https://raw.githack.com/JimmyLv/images/master/2021/6-ZenHub-piepline-1024x526.png)](http://insights.thoughtworkers.org/wp-content/uploads/2017/05/6-ZenHub-piepline.png)
 
 ### 计划与执行具体任务
 
@@ -80,11 +80,11 @@ published: True
 
 首先，让我们新建一个 [Milestone](https://github.com/JimmyLv/jimmylv.github.io/milestones?state=open) 来制定计划，也就是决定在一个 Iteration 里面你需要完成哪些 issues。在这里我所制定的阶段性计划周期为一个月，当然你也可以勤快一点，以 2 周作为一个 Iteration，享受一下自己的计划要完成不了、这个 Milestone 就要废了，没法向「时间」这个一生的朋友交付所有需求的快感吧 ：）
 
-[![img](https://raw.staticdn.net/JimmyLv/images/master/2021/7-Milestone.png)](http://insights.thoughtworkers.org/wp-content/uploads/2017/05/7-Milestone.png)
+[![img](https://raw.githack.com/JimmyLv/images/master/2021/7-Milestone.png)](http://insights.thoughtworkers.org/wp-content/uploads/2017/05/7-Milestone.png)
 
 当然咯，一般我会在月初做计划的时候给自己准备专门的时间来做 Elaboration，把 Backlog 里面的卡拖到 Rethink/Plan 这一列，经过分析和详细输出 TODOs 以及所对应的估点 points 之后便可以将其拖到 Ready For Todo 了，一般我给自己估的点数就是完成这件事情所需要的时间，一小时即对应一个 point。
 
-[![img](https://raw.staticdn.net/JimmyLv/images/master/2021/8-Iteration-1024x490.png)](http://insights.thoughtworkers.org/wp-content/uploads/2017/05/8-Iteration.png)
+[![img](https://raw.githack.com/JimmyLv/images/master/2021/8-Iteration-1024x490.png)](http://insights.thoughtworkers.org/wp-content/uploads/2017/05/8-Iteration.png)
 
 这样你就可以愉快的选择 Filter Issues by Milestone 专注于当前 Iteration，专注于 In Progress 这一列所要做的事情，并且垂涎于 Ready For Todo 里面将要做的事情，每次做完还可以放到 Review/SignOff，在里面写写对这件事情的总结和感想什么的，每次挪卡都充满了敏捷的仪式感（认真脸）。
 
@@ -94,23 +94,23 @@ GitHub 在 issues 里面直接集成了 Markdown 的 TODO 语法，甚至于可�
 
 比如说拿来作为读书列表的记录就很不错，每本书作为一个 issue，还可以把章节划分为具体的 TODOs，结合估点追踪自己看书的进度和速度，顺便在 comments 底下做个笔记也不错啊！
 
-[![img](https://raw.staticdn.net/JimmyLv/images/master/2021/9-TODOs-1024x710.png)](http://insights.thoughtworkers.org/wp-content/uploads/2017/05/9-TODOs.png)
+[![img](https://raw.githack.com/JimmyLv/images/master/2021/9-TODOs-1024x710.png)](http://insights.thoughtworkers.org/wp-content/uploads/2017/05/9-TODOs.png)
 
 #### 专注当下
 
 ZenHub 还提供了一个基于 GitHub Issues 的 To do List，你可以只关注 Today 这一个列表，专心于当前要完成的任务。而且更有趣的是这个 list 可以加入 GitHub 的任何 issues，也就是说它是全局的，所以你可以加入很多在 GitHub 上通过 issues 写的 blog，比如徐飞的这篇文章[流动的数据——使用 RxJS 构造复杂单页应用的数据逻辑 · Issue #38 · xufei/blog](https://github.com/xufei/blog/issues/38)，被我加入到了 Reading 列表当中。
 
-[![img](https://raw.staticdn.net/JimmyLv/images/master/2021/10-Things-to-do-1024x481.png)](http://insights.thoughtworkers.org/wp-content/uploads/2017/05/10-Things-to-do.png)
+[![img](https://raw.githack.com/JimmyLv/images/master/2021/10-Things-to-do-1024x481.png)](http://insights.thoughtworkers.org/wp-content/uploads/2017/05/10-Things-to-do.png)
 
 与此同时我还会使用 [Toggl](https://toggl.com/) 来记录每个 issue 具体实施的时间，以便于在时间花费上能够获得及时的反馈。这样做会让你真切地感受到时间的流逝，而在回顾记录的时候也能够进行总结分析，从而在下一次的计划当中更精确地预估时间（点数）。比方说这篇文章我估了 5 个点现在已经写了 4.5 hours 了，不过这是另外一个大话题，可以参考 [记录时间这件小事儿](https://github.com/JimmyLv/jimmylv.github.io/issues/85) 这个 issue。
 
-[![img](https://raw.staticdn.net/JimmyLv/images/master/2021/11-Toggl-1024x309.png)](http://insights.thoughtworkers.org/wp-content/uploads/2017/05/11-Toggl.png)
+[![img](https://raw.githack.com/JimmyLv/images/master/2021/11-Toggl-1024x309.png)](http://insights.thoughtworkers.org/wp-content/uploads/2017/05/11-Toggl.png)
 
 ### 迭代回顾与总结分析
 
 ZenHub 也提供了 Burndown 和 Velocity tracking 图，可以得出这个迭代总体的完成情况，看看跟预期有何不同；也可以跟其他迭代进行对比，看看有何不同的地方，然后进行下一步的具体分析。
 
-[![img](https://raw.staticdn.net/JimmyLv/images/master/2021/12-Burndown-20210203174334222.png)](http://insights.thoughtworkers.org/wp-content/uploads/2017/05/12-Burndown.png)
+[![img](https://raw.githack.com/JimmyLv/images/master/2021/12-Burndown-20210203174334222.png)](http://insights.thoughtworkers.org/wp-content/uploads/2017/05/12-Burndown.png)
 
 还可以根据 GitHub 和 Toggl 里面的数据进行汇总和分析，下面这个表格就是我在 11 月这个迭代完成后一部分 issues 的具体 Estimation Points 和 Time Efforts，再结合 issues 里面所记录下的各种笔记和 references，来得到一个比较直观的总结和复盘。
 
