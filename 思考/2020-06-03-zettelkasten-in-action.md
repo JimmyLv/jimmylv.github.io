@@ -50,11 +50,11 @@ published: True
 
 ### Zettelkasten 本质上是一种渐进式总结方法
 
-Zettelkasten 卡片盒方法突出了“建立联系”的重要性，其实有刻意区分了三种类型的卡片笔记：Literature Notes、Bibliographical Notes、Permanent Notes。
+Zettelkasten 卡片盒方法突出了“建立联系”的重要性，其实有刻意区分了三种类型的卡片笔记：Literature Notes、Reference Notes、Permanent Notes。
 
 - Literature Notes 是 a) 简短地 b) 用自己的话（而非“复制粘贴”）记录你在看的文献笔记，迫使你真正理解原文的意思。
 
-- Bibliographical Notes 则需要你添加参考信息，将上面的 Literature Notes 跟原文联系起来。而这一步，恰恰是 Roam 或 Obsidian 工具发挥价值最大的地方，甚至做到了完全自动化。（稍后会进一步解释我的工作流。
+- Reference Notes 则需要你添加参考信息，将上面的 Literature Notes 跟原文联系起来。而这一步，恰恰是 Roam 或 Obsidian 工具发挥价值最大的地方，甚至做到了完全自动化。（稍后会进一步解释我的工作流。
 
 - Permanent Notes 是最重要的一步，回顾每一个卡片笔记，同时思考它们与你所学的内容、你的兴趣、思考或研究的关系。你的目标不是收集尽可能多的笔记，而是为你现有的想法、论点和讨论增加新的价值。
 
@@ -124,7 +124,7 @@ mdanki Zettelkasten.md ~/Desktop/Anki\ QA\ 笔记本/mdanki.apkg && open ~/Deskt
 1. 原文（或书籍），一边阅读一边划线“高亮”
 2. 保存所有“高亮”部分（含链接）至笔记文件
 3. 新建 Literature Notes，用自己的话解释“高亮部分”
-4. 增加 Bibliographical Notes，跟原文“高亮”或书籍页码关联起来
+4. 增加 Reference Notes，跟原文“高亮”或书籍页码关联起来
 5. 创建 Permanent Notes，跟“卡片盒”中已存在的卡片笔记融合起来
 6. 当然，最后更重要的是要重复 Review 卡片笔记，能够通过 Anki 间隔重复加强记忆
 
@@ -186,7 +186,7 @@ mdanki Zettelkasten.md ~/Desktop/Anki\ QA\ 笔记本/mdanki.apkg && open ~/Deskt
 
 1️⃣ 第一步：必须用自己的话写笔记卡片，以确保你将来能够理解。[[Literature Notes]]
 
-2️⃣ 第二步：无论何时添加新笔记，主动查找可链接到的已有笔记。[[Bibliographical Notes]]
+2️⃣ 第二步：无论何时添加新笔记，主动查找可链接到的已有笔记。[[Reference Notes]]
 
 3️⃣ 第三步：通过添加新笔记并联系旧笔记，延续之前的连续性思考。[[Permanent Notes]]
 
