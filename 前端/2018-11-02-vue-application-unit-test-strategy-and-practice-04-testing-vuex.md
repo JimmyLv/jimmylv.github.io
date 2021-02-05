@@ -27,7 +27,7 @@ published: True
 
 > Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化。
 
-![](https://raw.githack.com/JimmyLv/images/master/2018/20181102201926.png)
+![](https://raw.sevencdn.com/JimmyLv/images/master/2018/20181102201926.png)
 
 古人说「读史让人明智」，学习历史是为了更好得前行，为了能够认识现在，看清未来。让我们来看看 Vuex 的历史，Vuex 借鉴于 Redux，而 Redux 的实现构想则最初出身于 [Flux](http://facebook.github.io/flux/docs/overview.html) ，这是一个由 Facebook 为其应用所设计的应用程序架构。Flux 模式在 JavaScript 应用里像是找到了新家一样，但其实只是借鉴了**领域驱动设计** (DDD) 和**命令-查询职责分离** (CQRS)。
 

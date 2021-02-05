@@ -16,7 +16,7 @@ published: True
 
 刚刚保存文件的时候 tag 系统把我吓尿了，简直就是梦想中的功能，如图所示：
 
-![OS X Tag](https://raw.githack.com/JimmyLv/images/master/2019/006tNbRwgy1fw2b8ybg78j319s174gsd.jpg)
+![OS X Tag](https://raw.sevencdn.com/JimmyLv/images/master/2019/006tNbRwgy1fw2b8ybg78j319s174gsd.jpg)
 
 OS X 原生支持为每个文件建立 tag 的功能，所以纯文本+标签的笔记系统完美建立起来啦，哈哈哈，根本不需要依赖任何一个大型软件，各个功能都解耦成功，都可以切换和选用在该领域做得最好的产品。
 

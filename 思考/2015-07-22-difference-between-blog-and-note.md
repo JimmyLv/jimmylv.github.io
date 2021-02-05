@@ -12,7 +12,7 @@ published: True
 
 另外不得不说 GitBook 是个非常好的书籍编写工具，可以用 Markdown 语法写作，git 管理，网页与客户端都做得不错，甚至可以甩其他的一些原生 Markdown 编辑器几条街。
 
-![](https://raw.githack.com/JimmyLv/images/master/2019/006tNbRwgy1fw2b91wj1wj31kw0vutp6.jpg)
+![](https://raw.sevencdn.com/JimmyLv/images/master/2019/006tNbRwgy1fw2b91wj1wj31kw0vutp6.jpg)
 
 与 GitHub 绑定之后只要发布到 GitHub 上 GitBook 就会自动更新书本内容，还有很多相关插件可以添加评论、书的封面等等。
 
@@ -28,4 +28,4 @@ Welcome, React is Awesome!
 
 更多内容请看 GitBook：[http://jimmylv.gitbooks.io/learning-react-js/content/index.html](http://jimmylv.gitbooks.io/learning-react-js/content/index.html)
 
-![](https://raw.githack.com/JimmyLv/images/master/2019/006tNbRwgy1fw2b938wx3j31kw0zkqm4.jpg)
+![](https://raw.sevencdn.com/JimmyLv/images/master/2019/006tNbRwgy1fw2b938wx3j31kw0zkqm4.jpg)
