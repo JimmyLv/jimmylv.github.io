@@ -672,9 +672,11 @@ export function renderWithRouter(
 
 # 📚 推荐书籍
 
-- 《重构2：改善既有代码的设计》
-- 《Clean Code 代码整洁之道》
-- 《Test-Driven Development 测试驱动开发》
-- 《Refactoring to Patterns 重构与模式》
-- 《设计模式: 可复用面向对象软件的基础》
-- 《SICP：计算机程序的构造和解释》
+* [React 官方中文文档 – 用于构建用户界面的 JavaScript 库](https://zh-hans.reactjs.org/)
+* [React Testing Library | Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+* 《深入 React 技术栈》
+* 《深入浅出React和Redux》
+* 《重构2：改善既有代码的设计》
+* 《Clean Code 代码整洁之道》
+* 《Refactoring to Patterns 重构与模式》
+* 《SICP 计算机程序的构造和解释》
