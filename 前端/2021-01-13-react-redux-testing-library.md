@@ -1,4 +1,10 @@
-# React + Redux Testing Library 单元测试
+---
+layout: post
+title: 'React + Redux Testing Library 单元测试'
+categories: [前端]
+tags: [Tutorial, UnitTest, CICD, TestingLibrary, React, Redux, Router, CQRS, TDD]
+published: True
+---
 
 > PPT 内容: https://jimmylv.gitee.io/slides/react-test
 
