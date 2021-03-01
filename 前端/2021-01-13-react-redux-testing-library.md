@@ -679,7 +679,7 @@ export function renderWithRouter(
 # 📚 推荐书籍
 
 * [React 官方中文文档 – 用于构建用户界面的 JavaScript 库](https://zh-hans.reactjs.org/)
-* [React Testing Library | Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+* [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 * 《深入 React 技术栈》
 * 《深入浅出React和Redux》
 * 《重构2：改善既有代码的设计》
