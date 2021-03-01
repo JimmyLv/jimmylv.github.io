@@ -17,9 +17,9 @@ published: True
 
 不谈论的包括：
 
-- ATT 验收测试 或 E2E 端到端测试，这个是我想进一步探索的话题，特别是在 TDD 的语境下。[^322](https://github.com/JimmyLv/jimmylv.github.io/issues/322)
+- ATT 验收测试 或 E2E 端到端测试，这个是我想进一步探索的话题，特别是在 TDD 的语境下。[#322](https://github.com/JimmyLv/jimmylv.github.io/issues/322)
 - 为什么要 TDD？但是我会讲为什么要 UT 单元测试。测试和 TDD 是两码事，而光是自动化测试的好处就已经足够多，但是如何做到更好的自动化和持续集成，那就需要 TDD 来指引方向。
-- Snapshot Testing 快照测试，其实我是很认可快照这种形式，但需要改进其工作流，至少结合 Image Snapshot 和 Storybook 等工具，甚至更应该放到 CI 上去。[^311](https://github.com/JimmyLv/jimmylv.github.io/issues/311)
+- Snapshot Testing 快照测试，其实我是很认可快照这种形式，但需要改进其工作流，至少结合 Image Snapshot 和 Storybook 等工具，甚至更应该放到 CI 上去。[#311](https://github.com/JimmyLv/jimmylv.github.io/issues/311)
 
 下面我就来结合具体场景，进一步实例化这些问题，举几个 🌰：
 
@@ -197,8 +197,6 @@ ps: 除此之外，还有很多开发者体验亦值得细细品味与发现，�
 - [ ] ### 单元测试的特点及其位置
 - [ ] ### 单元测试的关注点
 - [ ] ### 应用测试的测试策略
-
-我的博客即将同步至腾讯云+社区，邀请大家一同入驻：https://cloud.tencent.com/developer/support-plan?invite_code=5jtaw8aqdjnd
 
 [1]: https://github.com/linesh-simplicity/linesh-simplicity.github.io/issues/122
 [2]: https://www.martinfowler.com/bliki/DefinitionOfRefactoring.html
