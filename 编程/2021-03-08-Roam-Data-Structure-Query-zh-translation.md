@@ -7,6 +7,7 @@ published: True
 ---
 
 > 随着 [Roam Research](https://roamresearch.com/) 的大热，双向链接和基于 Block 的笔记软件层出不穷，而他们（[葫芦笔记](https://hulunote.com/)、[logseq](https://logseq.com/)、[Athens](https://github.com/athensresearch/athens)）无一例外都采用了 Clojure 技术栈的 [Datomic](https://docs.datomic.com/on-prem/query/query.html) [Datalog](https://zh.wikipedia.org/wiki/Datalog) 数据库，这不免让我感到好奇想要深入探索一番，本文就将硬核解析 Roam 背后原理，发掘 Roam 基于 Block 的深层技术优势，帮助你迎接 Roam API 时代的到来！
+> 
 > 原文地址：[Deep Dive Into Roam's Data Structure - Why Roam is Much More Than a Note Taking App](https://www.zsolt.blog/2021/01/Roam-Data-Structure-Query.html) —— Zsolt Viczián
 
 你想不想知道？
