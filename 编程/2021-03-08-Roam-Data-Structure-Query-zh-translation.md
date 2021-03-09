@@ -7,7 +7,7 @@ published: True
 ---
 
 > 随着 [Roam Research](https://roamresearch.com/) 的大热，双向链接和基于 Block 的笔记软件层出不穷，而他们（[葫芦笔记](https://hulunote.com/)、[logseq](https://logseq.com/)、[Athens](https://github.com/athensresearch/athens)）无一例外都采用了 Clojure 技术栈的 [Datomic](https://docs.datomic.com/on-prem/query/query.html)/[datascript](https://github.com/tonsky/datascript) [Datalog](https://zh.wikipedia.org/wiki/Datalog) 数据库，这不免让我感到好奇想要深入探索一番。本文就将硬核解析 Roam 背后原理，发掘 Roam 基于 Block 的深层技术优势，帮助你迎接 Roam API 时代的到来！
-> 
+>
 > 原文地址：[Deep Dive Into Roam's Data Structure - Why Roam is Much More Than a Note Taking App](https://www.zsolt.blog/2021/01/Roam-Data-Structure-Query.html) —— Zsolt Viczián
 
 你想不想知道以下问题的答案？
@@ -19,7 +19,7 @@ published: True
 
 （译注：问题 1 可通过 [Roam Portal Chrome 插件](https://chrome.google.com/webstore/category/extensions?hl=en) 查看，问题 2 可查看 [#Roam42](https://roam42.com) DB Stats，但本文将帮助你深入理解插件背后的原理。）
 
-Roam Research 是一个全功能型数据库，相信你已经用上了 `{``{query:}``}` 的查询方法，但其实远不止如此，你还可以问它更多的问题。这篇文章会让你对 Roam 的底层数据结构基础有一个很好的理解。
+Roam Research 是一个全功能型数据库，相信你已经用上了 ` {``{query:}``} ` 的查询方法，但其实远不止如此，你还可以问它更多的问题。这篇文章会让你对 Roam 的底层数据结构基础有一个很好的理解。
 
 上周我一直在深入研究 Roam 的数据结构，玩得非常开心，也学到了很多。这篇总结写给我自己，也分享给你，我尝试通过写作来加深我对 Roam 的理解程度。如果你发现这太过于技术向了，很抱歉，我会尽力用一种容易理解的方式来传达信息，从最基本的概念慢慢过渡到更为复杂的概念。
 
@@ -75,7 +75,7 @@ Roam 基于 Datomic 数据库构建。简而言之，一个 Datom 是一个独�
 
 具有相同 **entity-id** 的 Datoms 就是同一个 Block 的 facts。
 
-如果你想基于块引来查询一个 Block 的 **entity-id**，你就可以写:
+如果你想基于块引用来查询一个 Block 的 **entity-id**，你就可以写:
 
 ```clojure
 [:find ?e-id
@@ -106,13 +106,9 @@ Roam 使用 `:block/` 属性来存储关于**段落（paragraphs）**和**页面
 每个块都有以下属性：
 
 - `:block/uid` 公共 ID，即 9 个字符长的块引用
-
 - `:create/email` 创建块的作者 Email 地址
-
 - `:create/time` 以毫秒为单位的时间，纪元计时(1970 年 1 月 1 日 UTC/GMT 午夜)
-
 - `:edit/email` 编辑该块的作者 Email 地址
-
 - `:edit/time` 最新一次块的编辑时间
 
 ```clojure
@@ -125,7 +121,7 @@ Roam 使用 `:block/` 属性来存储关于**段落（paragraphs）**和**页面
 
 #### 森林中的树木（Trees in the forest）
 
-**Roam 数据库就像一片森林**。每一页都是一棵树。树的根是**页面（page）**，树的枝干是更高层次的**段落（paragraphs）**；树的叶子就是嵌套在**页面（page）**最深层次的**段落（paragraphs）**。
+**Roam 数据库就像一片森林**。每一页都是一棵树。树的根是**页面（page）**，树的枝干是更高层次的**段落（paragraphs）**；树的**叶子（block）**就是嵌套在**页面（page）**最深层次的**段落（paragraphs）**。
 
 ```shell
 Page
