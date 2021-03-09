@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'React + Redux Testing Library 单元测试'
+title: '前端单元测试实战：React + Redux Testing Library'
 categories: [前端]
 tags: [Tutorial, UnitTest, CICD, TestingLibrary, React, Redux, Router, CQRS, TDD]
 published: True
