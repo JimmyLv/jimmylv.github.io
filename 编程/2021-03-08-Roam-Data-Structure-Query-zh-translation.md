@@ -337,7 +337,7 @@ let results = window.roamAlphaAPI.q(query)
 
 Aggregates，则可以像预期的那样工作。有许多可用的 Aggregates，包括`sum、max、min、avg、count`。你可以在[这里](https://souffle-lang.github.io/aggregates)阅读更多关于 Aggregates 的信息。
 
-例如，如果你不知道某个属性的用途，或者不知道允许使用哪些值，只需查询数据库就可以找到现有的值。下一个例子列出了`:children/view-type`的值。需要注意的是，如果你只在 Graph 中使用 bullet，查询将只返回一个值："bullet"。我使用了独特的 Aggregates 函数，如果没有这个函数，我将得到一个可能有数千个值的列表，每个指定了视图类型的块都有一行。
+例如，如果你不知道某个属性的用途，或者不知道允许使用哪些值，只需查询数据库就可以找到现有的值。下一个例子列出了`:children/view-type`的值。需要注意的是，如果你只在 Graph 中使用 bullet 列表模式，查询将只返回一个值："bullet"。我使用了独特的 Aggregates 函数，如果没有这个函数，我将得到一个可能有数千个值的列表，每个指定了视图类型的块都有一行。
 
 ```clojure
 [:find (distinct ?type)
