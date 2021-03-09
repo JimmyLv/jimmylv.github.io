@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 【译】深入 Roam 数据结构 —— 为什么 Roam 远不只是一个笔记应用
+title: 【译】深度解析 Roam 数据结构 —— 为什么 Roam 远不只是一个笔记应用
 categories: [编程]
 tags: [Clojure, Datomic, Datalog, RoamCN, roamcult, 数据结构]
 published: True
@@ -10,12 +10,14 @@ published: True
 
 你想不想知道？
 
-- 你的 Roam Research 笔记库 Graph 最长的段落是那一段？
-- 上周你编辑或者创建了哪些页面？ （译注：可借助于 [Roam Portal Chrome Extension](https://chrome.google.com/webstore/category/extensions?hl=en)）
-- 你的数据库中总共有多少段文字？（译注：可查看 [#Roam42](https://roam42.com) DB Stats）
-- 在某个给定的命名空间下你总共有哪些页面？（例如：`meetings/`）
+1. 你的 Graph 笔记库中最长的段落是那一段？
+2. 上周你编辑或者创建了哪些页面？
+3. 你的笔记库中总共有多少段文字？
+4. 在某个给定的命名空间下你总共有哪些页面？（例如：`meetings/`）
 
-Roam Research 是一个全功能型数据库，相信你已经用上了 `{{query:}}` 的查询方法，但其实远不止如此，你还可以问它更多的问题。这篇文章会让你对 Roam 的底层数据结构基础有一个很好的理解。
+（译注：问题 1 可通过 [Roam Portal Chrome 插件](https://chrome.google.com/webstore/category/extensions?hl=en) 查看，问题 2 可查看 [#Roam42](https://roam42.com) DB Stats，但本文将帮助你深入理解插件背后的原理。）
+
+Roam Research 是一个全功能型数据库，相信你已经用上了 `{``{query:}``}` 的查询方法，但其实远不止如此，你还可以问它更多的问题。这篇文章会让你对 Roam 的底层数据结构基础有一个很好的理解。
 
 上周我一直在深入研究 Roam 的数据结构，玩得很开心，也学到了很多。这篇总结写给我自己，也分享给你，我尝试通过写作来加深我对 Roam 的理解程度。如果你发现这太过于技术向了，很抱歉，我会尽力用一种容易理解的方式来传达信息，从最基本的概念慢慢过渡到更为复杂的概念。
 
@@ -28,11 +30,11 @@ Roam Research 是一个全功能型数据库，相信你已经用上了 `{{query
 - [Learn Datalog Today!](http://www.learndatalogtoday.org/) by Jonas Enlund
 - [Introduction to the Roam Alpha API - Put Your Left Foot](https://www.putyourleftfoot.in/introduction-to-the-roam-alpha-api)
 - [Datalog Queries for Roam Research](https://davidbieber.com/snippets/2020-12-22-datalog-queries-for-roam-research/) by David Bieber
-- [Datomic Queries and Rules | Datomic](https://docs.datomic.com/on-prem/query.html)
+- [Datomic Queries and Rules - Datomic](https://docs.datomic.com/on-prem/query.html)
 - [The Datomic Information Model (infoq.com)](https://www.infoq.com/articles/Datomic-Information-Model/) by Rich Hickey, the author of Clojure and designer of Datomic
 - [Roam42 Source Code](https://roam42.glitch.me/common/commonDatalog.js), by [@RoamHacker](https://twitter.com/roamhacker)
-- [clojure.core namespace | ClojureDoc](https://clojuredocs.org/clojure.core)
-- [clojure.string namespace | ClojureDocs](https://clojuredocs.org/clojure.string)
+- [clojure.core namespace - ClojureDoc](https://clojuredocs.org/clojure.core)
+- [clojure.string namespace - ClojureDocs](https://clojuredocs.org/clojure.string)
 
 而这篇文章，将会提到以上文章都没有涵盖的两个点：
 
@@ -41,7 +43,7 @@ Roam Research 是一个全功能型数据库，相信你已经用上了 `{{query
 
 让我们开始吧！期望你像我一样享受这次旅程！
 
-# Basic Concepts 基本概念
+## 基本概念
 
 Roam 基于 Datomic 数据库构建。简而言之，一个 Datom 是一个独立的 fact，它是一个带值的属性，包括四个元素：
 
@@ -81,11 +83,11 @@ Roam 基于 Datomic 数据库构建。简而言之，一个 Datom 是一个独�
 
 从上面的数据可以看出，这个查询将返回值 5。
 
-## Attributes 属性
+### Attributes 属性
 
 Roam 使用 `:block/` 属性来存储关于**段落（paragraphs）**和**页面（pages）**的 facts。**页面**和**段落**之间有一些细微的差别，我在一分钟内就会解释。但是，你必须理解的基本概念是，**页面**只是一种特殊类型的**块（block）**。大多数情况下，Roam 将**页面（page）**和**段落（paragraph）**一视同仁。两者都是 **Blocks**。
 
-### Blocks have 2 IDs 区块有两个 IDs
+#### 区块 Block 的两个 ID
 
 - Hidden ID 隐藏 ID：
 
@@ -97,7 +99,7 @@ Roam 使用 `:block/` 属性来存储关于**段落（paragraphs）**和**页面
 
 （译者注：比如现在这篇文章在 Roam Research URL 中的 `/page/mdz6JIWDD` [https://roamresearch.com/#/app/Note-Tasking/page/mdz6JIWDD](https://roamresearch.com/#/app/Note-Tasking/page/mdz6JIWDD)）
 
-### Common attributes for all blocks 所有块的公共属性
+#### 所有区块的公共属性
 
 每个块都有以下属性：
 
@@ -119,7 +121,7 @@ Roam 使用 `:block/` 属性来存储关于**段落（paragraphs）**和**页面
 [10 :edit/time		1611058996600   536870949]
 ```
 
-### Trees in the forest 森林中的树木
+#### 森林中的树木（Trees in the forest）
 
 **Roam 数据库就像一片森林**。每一页都是一棵树。树的根是**页面（page）**，树的枝干是更高层次的**段落（paragraphs）**；树的叶子就是嵌套在**页面（page）**最深层次的**段落（paragraphs）**。
 
@@ -145,11 +147,11 @@ Page
 [5	:block/parents	4	536870918]
 ```
 
-父级会在 `:block/children` 属性中保留其子级的列表。这个列表***只会***包含其直系后代的 **entity-id**，而不包括隔代的孙辈。一个 Page 只会将 Page 顶层的段落（paragraphs）作为子段落列出来，而不会列出嵌套的段落（paragraphs）。类似地，段落将只列出嵌套在它下面的块（block），而不是嵌套在嵌套块下面的块。嵌套中最低层级的 Block 块（叶子）则没有 `:block/children` 属性。
+父级会在 `:block/children` 属性中保留其子级的列表。这个列表**_只会_**包含其直系后代的 **entity-id**，而不包括隔代的孙辈。一个 Page 只会将 Page 顶层的段落（paragraphs）作为子段落列出来，而不会列出嵌套的段落（paragraphs）。类似地，段落将只列出嵌套在它下面的块（block），而不是嵌套在嵌套块下面的块。嵌套中最低层级的 Block 块（叶子）则没有 `:block/children` 属性。
 
-子级同样会在 `:block/parents` 属性中保留其父级的列表。与 `:block/children` 相反的是，父级列表包括***所有***祖先的 **entity-id**，即祖父母、曾祖父母等。嵌套的**段落（paragraphs）**将包含对父**段落（paragraphs）**和**页面（page）**的引用。**页面**的顶层**段落（paragraphs）**在 `:block/parents` 属性中具有**页面（page）**的 **entity-id**，而嵌套在另一段落下的**段落（paragraphs）**将具有更高层级段落的 **entity-id** 和当前**页面（page）**的 **entity-id**。
+子级同样会在 `:block/parents` 属性中保留其父级的列表。与 `:block/children` 相反的是，父级列表包括**_所有_**祖先的 **entity-id**，即祖父母、曾祖父母等。嵌套的**段落（paragraphs）**将包含对父**段落（paragraphs）**和**页面（page）**的引用。**页面**的顶层**段落（paragraphs）**在 `:block/parents` 属性中具有**页面（page）**的 **entity-id**，而嵌套在另一段落下的**段落（paragraphs）**将具有更高层级段落的 **entity-id** 和当前**页面（page）**的 **entity-id**。
 
-### Page-only attributes 页面的独有属性
+#### 页面 Page 独有属性
 
 所有的页面都有标题属性，而没有任何段落会有标题。
 
@@ -168,7 +170,7 @@ Page
         [?p :block/uid ?uid]]
 ```
 
-### Paragraph-only attributes 段落的独有属性
+#### 段落 Paragraph 的独有属性
 
 每个段落都有以下属性：
 
@@ -192,7 +194,7 @@ Roam 只会在你改变特定块的默认值时才会设置这些属性（只存
 
 - `:block/text-align` 段落对齐的方式。值为“左”、“中间”、“右”、“对齐”
 
-### The Roam data-structure Roam 数据结构
+#### Roam 数据结构
 
 如果你想知道如何查找数据库中存在哪些属性，我有一个好消息！使用一个简单的查询，你就可以列出数据库中的所有属性：
 
@@ -241,7 +243,7 @@ Roam 只会在你改变特定块的默认值时才会设置这些属性（只存
 | window    | filters        | :window/filters         |
 | window    | id             | :window/id              |
 
-# Queries 查询
+## Queries 查询
 
 如果你对如何编写 Roam 查询语句感兴趣，那么你应该仔细阅读 [Learn Datalog Today](http://www.learndatalogtoday.org/) 的九个章节。它的内容非常有趣，且包含对应的练习。
 
@@ -249,9 +251,9 @@ Roam 只会在你改变特定块的默认值时才会设置这些属性（只存
 
 我还推荐以下 Stuart Halloway 的 YouTube 视频，它在 11 分钟内总结了 Datomic Datalog 查询语言的关键特性。
 
-{{video: https://www.youtube.com/watch?v=bAilFQdaiHk}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bAilFQdaiHk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Core concepts 核心概念
+### 核心概念
 
 查询是一个以 `:find` 关键字开头的矢量，后面跟着一个或多个模式变量(以 ? 符号开头，e.g. `?title`)。`find` 子句之后是 `:where` 子句，它将查询限制在与给定的数据模式（data patterns）相匹配的 datoms 上。而使用 `_` 符号作为通配符，则表示你希望忽略的数据模式部分。
 
@@ -296,7 +298,7 @@ Roam 只会在你改变特定块的默认值时才会设置这些属性（只存
 
 现在我将跳过本教程，以涵盖在 Roam 中稍有不同的几个主题。如果你对你错过了什么感兴趣，请阅读我[跳过](http://www.learndatalogtoday.org/chapter/3)的详细教程。有一个关于元组、集合和关系（Tuples, Collections, and Relations）非常有用的讨论，它们提供了执行逻辑 OR 和 AND 操作的方法。
 
-## Predicates 断言
+### Predicates 断言
 
 断言子句可以过滤结果集，只包括断言返回 true 的结果。在 Datalog 中，你可以使用任何 Clojure 函数或 Java 方法作为谓词函数。根据我的经验，在 Roam JavaScript 的实现中，Java 函数是不可用的，只有少数 Clojure 函数可以使用。
 
@@ -323,7 +325,7 @@ Roam 只会在你改变特定块的默认值时才会设置这些属性（只存
         [?b :block/string ?string]]
 ```
 
-## Transformation functions 转换函数
+### Transformation 转换函数
 
 遗憾的是，我无法让转换功能在 JavaScript 中工作。只有当您在桌面上安装了 Datalog 数据库，并加载 Roam.EDN 进行进一步的操作时，这些功能才有可能工作。
 
@@ -339,7 +341,7 @@ let results = window.roamAlphaAPI.q(query)
                      .sorta,b) => a[0].localeCompare(b[0];;
 ```
 
-## Aggregates 聚合
+### Aggregates 聚合
 
 Aggregates，则可以像预期的那样工作。有许多可用的 Aggregates，包括`sum、max、min、avg、count`。你可以在[这里](https://souffle-lang.github.io/aggregates)阅读更多关于 Aggregates 的信息。
 
@@ -351,7 +353,7 @@ Aggregates，则可以像预期的那样工作。有许多可用的 Aggregates�
  [_ :children/view-type ?type]]
 ```
 
-## Rules 规则
+### Rules 规则
 
 你可以将查询的可重用部分抽象为规则，给它们起有意义的名称，然后忘记其实现细节，就像你可以使用自己喜欢的编程语言编写函数一样。
 
@@ -422,7 +424,7 @@ window.roamAlphaAPI.q(`
          [?block :block/parents ?ancestor]]
 ```
 
-## Pull 拉
+### Pull 拉
 
 这篇文章已经太长，而且技术性太强。出于这个原因，我完全省略了关于(pull ) requests 的讨论 —— 尽管在 roam.json 中的例子中，我将会提到一部分。`(pull ?e [*])`是一种强大的从数据库中获取数据的方法。如果你想了解更多，这里有两个值得阅读的参考文献。
 
@@ -430,9 +432,9 @@ window.roamAlphaAPI.q(`
 
 [Introduction to the Roam Alpha API](https://www.putyourleftfoot.in/introduction-to-the-roam-alpha-api) on Put Your Left Foot.
 
-# Roam query SmartBlock Roam 查询 SmartBlock
+## Roam 查询 SmartBlock
 
-{{video: https://www.youtube.com/watch?v=wjIMRD-JKfU}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wjIMRD-JKfU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 我们可以在 SmartBlocks 内和浏览器中的开发者工具控制台中运行查询。然而，结果很难查看，因为它们是以嵌套的 JSONs 等晦涩的数据结构返回的。
 
@@ -446,7 +448,7 @@ window.roamAlphaAPI.q(`
 
 它不会像我的 SmartBlock 一样显示拉动或有页面链接，但仍然非常酷......
 
-**2021 年 2 月 22 日的进一步更新**：
+**2021 年 2 月 22 日进一步更新**：
 
 我使用 `:q` 创建了一个长长的统计查询样本清单。你可以在[这里](https://roamresearch.com/#/app/Zsolt-Blog/page/WUn5PuTDV)找到它们。
 
@@ -458,7 +460,7 @@ window.roamAlphaAPI.q(`
 
 你可以选择简单查询和高级查询。简单查询不接受输入参数，也不能包含规则。当然，你可以直接在查询中包含输入参数，你可以在下面的例子中看到。高级查询可以给你充分的灵活性。
 
-## Page links, date links 网页链接，日期链接
+### 页面链接与日期链接
 
 我的 SmartBlock 将把查询结果格式化为表格，以便于使用。它使用`::hiccup`在单个块中返回结果。这样我就可以避免在你的 Graph 中出现不必要的块数。额外的方便之处在于，我已经建立了一些简单的逻辑，将**page titles** 转换为可点击的页面链接，将时间转换为相应的 Daily Notes 页面的链接。
 
@@ -480,16 +482,13 @@ window.roamAlphaAPI.q(`
 
 ![Query example](https://1.bp.blogspot.com/-VNB4S3MOD_g/YA0io8W56uI/AAAAAAAAxTk/LGE9q7Bk0ycEolXBq8x4BlzFsOmz7AOVwCLcBGAsYHQ/s16000/query%2Bexample.png)
 
-## Pull statements Pull 语句
+### Pull 表达式
 
 SmartBlock 也会将嵌套的结果整齐地显示为一个表，在表中，在表中。当执行包含`(pull )`语句的查询时，结果将是一棵树，而不是一张表。我按照以下逻辑来呈现查询结果。
 
 - 我将把结果集的顶层显示为表的行，值为列。
-
 - 结果集中的嵌套层会交替以列或行的方式呈现。
-
 - 为了避免结果集过大，MAXROWS 默认设置为 40。在高级查询中，你可以更改这个数字。
-
 - 在嵌套层，我使用 MAXROWS/4 来限制显示的行数。即使这样设置，生成的表也可以达到数百行。(40x10x10x...)
 
 这是一个 `(pull )` 结果的样子。拉取 1 个层级的深度：
@@ -500,7 +499,7 @@ SmartBlock 也会将嵌套的结果整齐地显示为一个表，在表中，在
 
 ![Pull 2 levels deep](https://1.bp.blogspot.com/-RQNXGtfv4Ow/YA01Ud0L2cI/AAAAAAAAxT4/SeFvXSug7noxbfO3AzrPP83ssjIvdVzFQCLcBGAsYHQ/w600-h640/pull%2Bexample%2B-%2Bfull%2Bdepth.png)
 
-## Query templates 查询模板
+### Query 查询模板
 
 要为你的查询生成模板，请运行相应的 Roam42 SmartBlock。
 
@@ -510,7 +509,7 @@ SmartBlock 也会将嵌套的结果整齐地显示为一个表，在表中，在
 
 一旦准备好你的查询，只需按下嵌套在查询下的按钮即可执行。
 
-# Closing thoughts 结束语
+## 结束语
 
 经过一周的时间，我还没有成为这方面的专家。如果我写的东西很傻，比如我的查询或 SmartBlock 有错误的话，请告诉我。你可以在下面的评论中联系我，或者在 Twitter 上[@zsviczian](https://twitter.com/zsviczian)。
 
