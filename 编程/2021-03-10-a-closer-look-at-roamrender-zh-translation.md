@@ -6,7 +6,7 @@ tags: [Clojure, ClojureScript, Datomic, Datalog, React, Reagent, RoamCN, roamcul
 published: True
 ---
 
-> [Roam Research](https://roamresearch.com/) 采用的是 Clojure 技术栈的 [Datomic](https://docs.datomic.com/on-prem/query/query.html)/[datascript](https://github.com/tonsky/datascript) [Datalog](https://zh.wikipedia.org/wiki/Datalog) 数据库，能够将内容同步到不同的设备，并管理非常复杂的撤销操作，还能够支持各种程度的自定义组件和插件功能定制，方便开发者利用 Reagent 渲染组件，并支持与 JavaScript 互操作。本文就将硬核解析 Roam 背后原理，发掘 Roam 基于 Block 的深层技术优势，帮助你迎接 Roam API 时代的到来！
+> [Roam Research](https://roamresearch.com/) 采用的是 Clojure 技术栈的 [Datomic](https://docs.datomic.com/on-prem/query/query.html)/[datascript](https://github.com/tonsky/datascript) [Datalog](https://zh.wikipedia.org/wiki/Datalog) 数据库，能够将内容同步到不同的设备，并管理非常复杂的撤销操作，还能够支持各种程度的自定义组件和插件功能定制，方便开发者利用 [Reagent](https://reagent-project.github.io/) 渲染组件，并支持与 JavaScript 互操作。本文就将硬核解析 Roam 背后原理，发掘 Roam 基于 Block 的深层技术优势，帮助你迎接 Roam API 时代的到来！
 >
 > 原文地址：[A closer look at {roam/render}](https://www.zsolt.blog/2021/02/a-closer-look-at-roamrender.html) —— Zsolt Viczián
 
@@ -18,7 +18,7 @@ Roam 就好像一把优秀的瑞士军刀，竟然包含一个完整的 ClojureS
 
 这篇文章是针对开发者和 Roam 黑客的。如果你还不属于这些阵营，你很可能会对这些内容感到吃力。
 
-我并不是一个 Web 开发者，React、Clojure、Reagent 和 Datalog 对我来说完全是全新的。我是一个典型的无知者无畏的终端用户，我知道足够的知识来构建一个 macro 的怪物，但却无法保持其健壮/可测试/可维护。在玩`roam/render`的过程中，有一次我几乎把我的整个 roam 数据库都毁掉了--这与`roam/render`无关，一切都是因为我太笨了。请谨慎尝试我的结论和例子，欢迎在评论中分享更好的解决方案，或者联系我进行勘误。
+我并不是一个 Web 开发者，React、Clojure、Reagent 和 Datalog 对我来说完全是全新的。我是一个典型的无知者无畏的终端用户，我知道足够的知识来构建一个 macro 的怪物，但却无法保持其健壮/可测试/可维护。在玩`roam/render`的过程中，有一次我几乎把我的整个 roam 数据库都毁掉了 —— 这与`roam/render`无关，一切都是因为我太笨了。请谨慎尝试我的结论和例子，欢迎在评论中分享更好的解决方案，或者联系我进行勘误。
 
 ## 什么是 roam/render?
 
@@ -77,7 +77,7 @@ Roam 就好像一把优秀的瑞士军刀，竟然包含一个完整的 ClojureS
 
 我花了好几天的时间才发现如何做到这一点。我想让你省点力气! 当一个组件被调用时，Roam 会把 block-id 作为第 0 个参数传递给主函数（注意：你代码块中的最后一个函数）。当然，Roam 还会传递当你调用组件时，所输入的其他任何参数。
 
-执行下面的脚本，输入新的一行`{{roam/render:Vy8uEQJiL 10 "input 1" ["input" "vector" "with" 5 "elements"] {:key1 "this is a map" "key2" "value 2" :key3 15}。(1 2 3) #{"a""b""c"}}`将产生以下输出。(当然，请注意，当你在自己的图中尝试这个脚本时，Block 的 ID `Vy8uEQJiL`会有所不同，所以 "eR7tRno7B "也会不同。)
+执行下面的脚本，输入新的一行`{{roam/render:((Vy8uEQJiL)) 10 "input 1" ["input" "vector" "with" 5 "elements"] {:key1 "this is a map" "key2" "value 2" :key3 15}。(1 2 3) #{"a""b""c"}}`将产生以下输出。(当然，请注意，当你在自己的图中尝试这个脚本时，Block 的 ID `((Vy8uEQJiL))`会有所不同，所以 "eR7tRno7B "也会不同。)
 
 ![datatypes / arguments example](https://1.bp.blogspot.com/-pD3eddnuTxM/YD0yQX3I1WI/AAAAAAAAxu0/-b0LRqDcc8I0b_f4wNc9hm31Uk89QwdiACLcBGAsYHQ/s16000/Arguments%2Bexample.jpg)
 
