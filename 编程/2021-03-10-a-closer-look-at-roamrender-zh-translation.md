@@ -1,12 +1,12 @@
 ---
 layout: post
-title: 【译】跟 {roam/render} 来一次亲密接触！
+title: 【译】跟 {roam/render} 自定义组件来一次亲密接触！
 categories: [编程]
-tags: [Clojure, Datomic, Datalog, RoamCN, roamcult, 数据结构]
+tags: [Clojure, ClojureScript, Datomic, Datalog, React, Reagent, RoamCN, roamcult, 组件化]
 published: True
 ---
 
-> 随着 [Roam Research](https://roamresearch.com/) 的大热，双向链接和基于 Block 的笔记软件层出不穷，而他们（[葫芦笔记](https://hulunote.com/)、[logseq](https://logseq.com/)、[Athens](https://github.com/athensresearch/athens)）无一例外都采用了 Clojure 技术栈的 [Datomic](https://docs.datomic.com/on-prem/query/query.html)/[datascript](https://github.com/tonsky/datascript) [Datalog](https://zh.wikipedia.org/wiki/Datalog) 数据库，这不免让我感到好奇想要深入探索一番。本文就将硬核解析 Roam 背后原理，发掘 Roam 基于 Block 的深层技术优势，帮助你迎接 Roam API 时代的到来！
+> [Roam Research](https://roamresearch.com/) 采用的是 Clojure 技术栈的 [Datomic](https://docs.datomic.com/on-prem/query/query.html)/[datascript](https://github.com/tonsky/datascript) [Datalog](https://zh.wikipedia.org/wiki/Datalog) 数据库，能够将内容同步到不同的设备，并管理非常复杂的撤销操作，还能够支持各种程度的自定义组件和插件功能定制，方便开发者利用 Reagent 渲染组件，并支持与 JavaScript 互操作。本文就将硬核解析 Roam 背后原理，发掘 Roam 基于 Block 的深层技术优势，帮助你迎接 Roam API 时代的到来！
 >
 > 原文地址：[A closer look at {roam/render}](https://www.zsolt.blog/2021/02/a-closer-look-at-roamrender.html) —— Zsolt Viczián
 
@@ -39,7 +39,7 @@ Roam 就好像一把优秀的瑞士军刀，竟然包含一个完整的 ClojureS
 
 ## 入门指南
 
-### 启用自定义组件
+### 开启自定义组件
 
 自定义组件功能默认是禁用的。在你搞事情之前，你必须在用户设置中启用它。
 
@@ -53,7 +53,7 @@ Roam 就好像一把优秀的瑞士军刀，竟然包含一个完整的 ClojureS
 
 ![Hello World Roam Render Demo](https://1.bp.blogspot.com/-MYRuH2resf0/YDqxC6MnBbI/AAAAAAAAxss/aOXSimG-DIsC9wVDRuszOIIhIfRQJmwBwCLcBGAsYHQ/w640-h360/HelloWorldRoamRender.gif)
 
-### 按步前进:
+### 按步前进
 
 1. 在一个新的 Block 中输入：`{{roam/render：...}`。
 2. 当你开始在双括号之间打字时，Roam 会弹出 "search for blocks"。选择 "Create as block below"。这将在你当前 Block 下面创建一个 Block，并自动在括号之间放置一个块引用。
@@ -162,7 +162,7 @@ Reagent 是表单交互的关键。它们允许你根据用户输入的数据，
 
 以上是由[Conor](https://twitter.com/Conaw?s=20)的一个例子改编的。你可以在 Roam help 数据库 [这里](https://roamresearch.com/#/app/help/page/Tbl1U8OFT) 找到 Conor 的版本。我的解决方案和 Conor 的解决方案之间的一个关键区别是，他使用的是`roam.datascript.reactive`，而不是仅仅使用`roam.datascript`。在这个具体的例子中，从我的理解来看它们是没有区别。如果我的理解是正确的，Datascript reactive 提供了一种创建查询的方法，当其结果集发生变化时，它可以自动识别。它们可以用于创建交互式组件，比如`{{table}}`。
 
-## 存储组件的属性
+## 如何存储组件的属性值
 
 当你重新打开页面或关闭并重新打开 Roam 时，组件会被重新初始化。在大多数情况下，你会希望以某种方式存储组件的属性，这样当你下次打开页面时，你会发现组件处于你离开时的状态。
 
@@ -215,7 +215,7 @@ Reagent 是表单交互的关键。它们允许你根据用户输入的数据，
 
 似乎还有一种方法，可以使用 Reagent 在 Form-3 Components 中所提供的`:component-will-unmount`事件处理器，来触发保存组件。虽然我还没有尝试过这种方法，但根据文档，这应该提供了一种方法来存储组件的属性，当你导航到不同的页面时，它就会从当前视图中消失。如果你对此感兴趣，你可以阅读[这里](https://purelyfunctional.tv/guide/reagent/what-is-reagent)。
 
-## 与 Javascript 互操作
+## 如何与 Javascript 互操作
 
 ClojureScript 提供了一种调用 JavaScript 函数的简单方法。当你想访问 DOM document 属性或函数时，这就非常实用了。比如调用 roam42 函数或创建一个 JavaScript 钩子来处理`roam/render`组件的数据（可以节省你学习 Clojure 的时间）。
 
@@ -275,7 +275,7 @@ window['myDemoFunction'] = function (x) {
 
 如果你想把多个变量传给 JavaScript，你可以在函数调用`(.myFunction js/window variable-1, @an-atom, block-uid)`之后简单地列出这些变量。
 
-## Roam 命名空间（namespaces）
+## Roam 已有的命名空间
 
 在 `roam/render` 中有以下命名空间。
 
