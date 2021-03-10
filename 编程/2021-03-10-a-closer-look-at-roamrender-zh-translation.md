@@ -160,7 +160,7 @@ Reagent 是表单交互的关键。它们允许你根据用户输入的数据，
 - 依然是 `query-list` 函数，请注意我们没有在函数的结尾有一个类似于 JavaScript 的 `return`的语句。在 Clojure 中，函数中最后一次调用的结果总是被返回。由于`query-list`只包含一次调用，所以在执行 query 时，将直接返回`rd/q`的结果。
 - 请注意，在`main`函数中，`x` 被定义为一个初始值为 "TODO" 的 Reagent atom。将声明放在`(fn[]`后面的匿名函数之外，可以确保在创建组件时，只会设置一次 atom，而不是在每一次往 INPUT 框输入任何文本时，都将其重置为默认值。
 
-以上是由[Conor](https://twitter.com/Conaw?s=20)的一个例子改编的。你可以在 Roam help 数据库 [这里](https://roamresearch.com/#/app/help/page/Tbl1U8OFT) 找到 Conor 的版本。我的解决方案和 Conor 的解决方案之间的一个关键区别是，他使用的是`roam.datascript.reactive`，而不是仅仅使用`roam.datascript`。在这个具体的例子中，从我的理解来看它们是没有区别。如果我的理解是正确的，Datascript reactive 提供了一种创建查询的方法，当其结果集发生变化时，它可以自动识别。它们可以用于创建交互式组件，比如`{{table}}`。
+以上是由[Conor](https://twitter.com/Conaw?s=20)的一个例子改编的。你可以在 Roam help 数据库 [这里](https://roamresearch.com/#/app/help/page/Tbl1U8OFT) 找到 Conor 的版本。我的解决方案和 Conor 的解决方案之间的一个关键区别是，他使用的是`roam.datascript.reactive`，而不是仅仅使用`roam.datascript`。在这个具体的例子中，从我的理解来看它们是没有区别。如果我的理解是正确的，Datascript reactive 提供了一种创建查询的方法，当其结果集发生变化时，它可以自动识别。它们可以用于创建交互式组件，比如`{``{table}}`。
 
 ## 如何存储组件的属性值
 
@@ -343,7 +343,7 @@ window['myDemoFunction'] = function (x) {
 
 最简单的方法是使用`roamAlphaAPI`创建一个 Block，并在这个 Block 字符串中放置一个`page link`或`block-ref`。这将转换为一个正确的 Roam 链接。
 
-另一种方法是创建一个包含 Roam 查询的 Block，并在查询参数中包含你想显示的链接：`{{query: {or: page linkblock-ref}}`。
+另一种方法是创建一个包含 Roam 查询的 Block，并在查询参数中包含你想显示的链接：`{``{query: {or: page linkblock-ref}}`。
 
 由于 Roam 在几天前发布了`roam.right-sidebar`命名空间，现在可以完全模仿 Roam 原生链接了。我还没有时间去试验这第三个选项，但它看起来是可行的。
 
