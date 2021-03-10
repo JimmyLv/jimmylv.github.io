@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 【译】跟 {roam/render} 自定义组件来一次亲密接触！
+title: '【译】跟 {{roam/render}} 自定义组件来一次亲密接触！'
 categories: [编程]
 tags: [Clojure, ClojureScript, Datomic, Datalog, React, Reagent, RoamCN, roamcult, 组件化]
 published: True
