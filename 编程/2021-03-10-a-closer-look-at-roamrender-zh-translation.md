@@ -53,7 +53,7 @@ Roam 就好像一把优秀的瑞士军刀，竟然包含一个完整的 ClojureS
 
 ![Hello World Roam Render Demo](https://1.bp.blogspot.com/-MYRuH2resf0/YDqxC6MnBbI/AAAAAAAAxss/aOXSimG-DIsC9wVDRuszOIIhIfRQJmwBwCLcBGAsYHQ/w640-h360/HelloWorldRoamRender.gif)
 
-### 按步前进
+### 一步一步来
 
 1. 在一个新的 Block 中输入：`{{roam/render：...}`。
 2. 当你开始在双括号之间打字时，Roam 会弹出 "search for blocks"。选择 "Create as block below"。这将在你当前 Block 下面创建一个 Block，并自动在括号之间放置一个块引用。
