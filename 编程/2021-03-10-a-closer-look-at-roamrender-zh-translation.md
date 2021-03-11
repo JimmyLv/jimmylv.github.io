@@ -77,7 +77,11 @@ Roam 就好像一把优秀的瑞士军刀，竟然包含一个完整的 ClojureS
 
 我花了好几天的时间才发现如何做到这一点。我想让你省点力气! 当一个组件被调用时，Roam 会把 block-id 作为第 0 个参数传递给主函数（注意：你代码块中的最后一个函数）。当然，Roam 还会传递当你调用组件时，所输入的其他任何参数。
 
-执行下面的脚本，输入新的一行`{``{roam/render:((Vy8uEQJiL)) 10 "input 1" ["input" "vector" "with" 5 "elements"] {:key1 "this is a map" "key2" "value 2" :key3 15}。(1 2 3) #{"a""b""c"}``}`将产生以下输出。(当然，请注意，当你在自己的图中尝试这个脚本时，Block 的 ID `((Vy8uEQJiL))`会有所不同，所以 "eR7tRno7B "也会不同。)
+在新的 Block 输入下面的脚本，将产生以下输出。(当然，请注意，当你在自己的 Graph 中尝试这个脚本时，Block 的 ID `((Vy8uEQJiL))`会有所不同，所以对应的 `block-uid` "eR7tRno7B "也会不同。)
+
+```bash
+{{roam/render: ((Vy8uEQJiL)) 10 "input 1" ["input" "vector" "with" 5 "elements"] {:key1 "this is a map" "key2" "value 2" :key3 15} (1 2 3) #{"a" "b" "c"}}} 
+```
 
 ![datatypes / arguments example](https://1.bp.blogspot.com/-pD3eddnuTxM/YD0yQX3I1WI/AAAAAAAAxu0/-b0LRqDcc8I0b_f4wNc9hm31Uk89QwdiACLcBGAsYHQ/s16000/Arguments%2Bexample.jpg)
 
