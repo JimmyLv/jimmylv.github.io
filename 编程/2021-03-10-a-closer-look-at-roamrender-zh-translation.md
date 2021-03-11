@@ -80,7 +80,7 @@ Roam 就好像一把优秀的瑞士军刀，竟然包含一个完整的 ClojureS
 在新的 Block 输入下面的脚本，将产生以下输出。(当然，请注意，当你在自己的 Graph 中尝试这个脚本时，Block 的 ID `((Vy8uEQJiL))`会有所不同，所以对应的 `block-uid` "eR7tRno7B "也会不同。)
 
 ```bash
-{{roam/render: ((Vy8uEQJiL)) 10 "input 1" ["input" "vector" "with" 5 "elements"] {:key1 "this is a map" "key2" "value 2" :key3 15} (1 2 3) #{"a" "b" "c"}}} 
+{ { roam/render: ((Vy8uEQJiL)) 10 "input 1" ["input" "vector" "with" 5 "elements"] {:key1 "this is a map" "key2" "value 2" :key3 15} (1 2 3) #{"a" "b" "c"} } }
 ```
 
 ![datatypes / arguments example](https://1.bp.blogspot.com/-pD3eddnuTxM/YD0yQX3I1WI/AAAAAAAAxu0/-b0LRqDcc8I0b_f4wNc9hm31Uk89QwdiACLcBGAsYHQ/s16000/Arguments%2Bexample.jpg)
