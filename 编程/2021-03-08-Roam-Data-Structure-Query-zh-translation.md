@@ -450,19 +450,17 @@ window.roamAlphaAPI.q(`
 
 这里是可以导入到 Roam Graph 中的 [DatomicQuery.JSON](https://zsviczian.github.io/DatomicQuery.zip) 文件链接。包括两个页面，SmartBlocks 和大量查询示例。继续阅读，可以了解如何使用它们。
 
-你可以选择简单查询和高级查询。简单查询不接受输入参数，也不能包含规则。当然，你可以直接在查询中包含输入参数，你可以在下面的例子中看到。高级查询可以给你充分的灵活性。
+你可以选择简单查询和高级查询。简单查询不接受输入参数，也不能包含规则。当然，你可以直接在查询中包含输入参数，你可以在下面的例子中看到。而高级查询则可以给你更充分的灵活性。
 
 ### 页面链接与日期链接
 
-我的 SmartBlock 将把查询结果格式化为表格，以便于使用。它使用`::hiccup`在单个块中返回结果。这样我就可以避免在你的 Graph 中出现不必要的块数。额外的方便之处在于，我已经建立了一些简单的逻辑，将**page titles** 转换为可点击的页面链接，将时间转换为相应的 Daily Notes 页面的链接。
+我做的 SmartBlock 可以把 query 查询结果格式化变成表格。它使用`::hiccup`在单个 Block 中返回结果，这样就可以避免在 Graph 中创建不必要的 Block。还有个额外的好处是，我加上了一些简单的显示逻辑，将页面标题（**page titles**）转换为可点击的页面链接（URL），可以将时间转成相对应的 Daily Notes 页面的链接。
 
-对于页面链接功能，你需要以一种特殊的方式生成查询。
+要使用页面链接功能，你需要以一种特殊的方式生成查询：
 
-在字段名的末尾加上**:name**来指定归档的标题，例如：`?title:name`。
-
-将 uid 放在紧接`?title:name`字段的后面，并在字段名的末尾加上**:uid**，指定相应的 uid。例如：`?title:uid`
-
-在字段末尾添加**:日期**，指定一个您想转换为每日笔记页面链接的字段，例如：`?时间:日期`
+- 通过在字段名后面添加`:name`来指定标题字段，例如：`?title:name`。
+- 将 uid 放在紧跟`?title:name`字段的后面，并在字段名的末尾加上**:uid**，指定相应的 uid。例如：`?title:uid`
+- 在字段末尾添加**:date**，指定一个你想转换为 Daily Notes 页面链接的字段，例如：`?time:date`
 
 ```clojure
 [:find ?title:name ?title:uid ?time:date
@@ -476,14 +474,14 @@ window.roamAlphaAPI.q(`
 
 ### Pull 表达式
 
-SmartBlock 也会将嵌套的结果整齐地显示为一个表，在表中，在表中。当执行包含`(pull )`语句的查询时，结果将是一棵树，而不是一张表。我按照以下逻辑来呈现查询结果。
+SmartBlock 还会将嵌套的结果显示为一个表格，在表格里显示得更整齐。当你执行包含`(pull )`语句的查询时，它的结果其实是一棵树，而不是一张表。所以我按照下面的逻辑来呈现查询结果。
 
-- 我将把结果集的顶层显示为表的行，值为列。
+- 我会把结果集的顶层显示为表格的行，值为列。
 - 结果集中的嵌套层会交替以列或行的方式呈现。
 - 为了避免结果集过大，MAXROWS 默认设置为 40。在高级查询中，你可以更改这个数字。
-- 在嵌套层，我使用 MAXROWS/4 来限制显示的行数。即使这样设置，生成的表也可以达到数百行。(40x10x10x...)
+- 在嵌套层，我使用 MAXROWS/4 来限制显示的行数。即使这样设置，生成的表格也可以达到数百行。(40x10x10x...)
 
-这是一个 `(pull )` 结果的样子。拉取 1 个层级的深度：
+这是一个 `(pull )` 结果所显示的表格。只拉取 1 个层级的深度：
 
 ![Pull example - 1 level deep](https://1.bp.blogspot.com/-isR-Snvo9Vg/YA00iDSvjBI/AAAAAAAAxTw/MRQeXRwN0Dkfwbcz7vw8LlsbHNuefQ_4QCLcBGAsYHQ/w640-h418/pull%2Bexample%2B-%2Bon%2Blevel.png)
 
@@ -493,7 +491,7 @@ SmartBlock 也会将嵌套的结果整齐地显示为一个表，在表中，在
 
 ### Query 查询模板
 
-要为你的查询生成模板，请运行相应的 Roam42 SmartBlock。
+要为你的查询生成模板，请运行相应的 [Roam42 SmartBlock](https://roamresearch.com/#/app/Zsolt-Blog/page/WUn5PuTDV)。
 
 - Datomic simple-template 简单模板
 - Datomic advanced-template 高级模板
