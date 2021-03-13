@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 为什么说 Roam 远不只是一个笔记应用 | Roam Newsletter 漫游研究所周报 2021W10
+title: 事物间丰富的关联，是我们抽象、感知和思考的重要部分 | Roam Newsletter 漫游研究所周报 2021W11
 categories: [思考]
 tags: [RoamNewsletter, 认知, 效能, 生产力, RoamCN, roamcult, 自我管理, 知识创造, RoamResearch]
 published: True
