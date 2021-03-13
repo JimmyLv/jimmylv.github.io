@@ -151,7 +151,8 @@ published: True
 ---
 
 ### #[[Roam ]] #roamcult 学术界 Discord 社区，Academia Roamana
-    - [roamresearch.com/#/app/Academia…](https://roamresearch.com/#/app/AcademiaRoamana)
+
+https://roamresearch.com/#/app/AcademiaRoamana
     
 {% twitter https://twitter.com/cortexfutura/status/1369740588015378433?s=20 %}
 
