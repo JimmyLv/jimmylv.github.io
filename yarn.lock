@@ -2178,10 +2178,10 @@ pretty-format@^23.6.0:
     ansi-regex "^3.0.0"
     ansi-styles "^3.2.0"
 
-pretty-quick@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.npm.taobao.org/pretty-quick/download/pretty-quick-2.0.1.tgz#417ee605ade98ecc686e72f63b5d28a2c35b43e9"
-  integrity sha1-QX7mBa3pjsxobnL2O10oosNbQ+k=
+pretty-quick@2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/pretty-quick/-/pretty-quick-2.0.2.tgz#4e44d6489ed513ef111bee501f63688d854584e6"
+  integrity sha512-aLb6vtOTEfJDwi1w+MBTeE20GwPVUYyn6IqNg6TtGpiOB1W3y6vKcsGFjqGeaaEtQgMLSPXTWONqh33UBuwG8A==
   dependencies:
     chalk "^2.4.2"
     execa "^2.1.0"
