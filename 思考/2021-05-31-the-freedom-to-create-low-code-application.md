@@ -14,13 +14,14 @@ published: True
 
 “谁是我们的敌人？谁是我们的朋友？” 周末在读毛选，一开篇就被震撼了！区分敌人和朋友，就是要抓主要矛盾，现在中国社会的主要矛盾是科技创新的速度（vs 美国） 赶不上人口红利的下降速度。每年都在下降的劳动力，反而倒逼产业创新，企业数字化、工业机器人和人工智能替换大量劳动力，才能加快或保持之前的生产效率。
 
-![Image](https://res.craft.do/user/full/98bc5ddd-065d-16cd-a57f-317aefefea72/doc/CD6F1F04-0767-453E-93D8-4B229A7466A7/998A1A01-B18E-47FE-B3F9-D9D8736A741A_2/Image)
+![image](https://user-images.githubusercontent.com/4997466/120144391-6257fc80-c214-11eb-826f-6435377deab5.png)
+
 
 （*劳动年龄人口持续减少，劳动力成本快速提升）*
 
 在互联网应用领域，特别是移动互联网，我们走在了世界和时代的最前沿。然而在面向传统企业的数字化转型时，广大中小企业依旧停留在纸质化流程办公阶段，稍有信息化意识的企业，也仅是在大量使用 Excel 或类 Excel 软件。“未来十年，最大的确定性就是数字化技术的普及，整个社会经济和生活必将全面数字化。”
 
-![Image](https://res.craft.do/user/full/98bc5ddd-065d-16cd-a57f-317aefefea72/doc/CD6F1F04-0767-453E-93D8-4B229A7466A7/0D2A03D1-E243-475D-9391-9E97AE065979_2/Image)
+![image](https://user-images.githubusercontent.com/4997466/120144400-6552ed00-c214-11eb-895d-ab37f7481cbb.png)
 
 ## 我们需要更多软件的搭建者，而不仅仅是软件的用户
 
@@ -155,7 +156,7 @@ Roam Research 将笔记的最小单元视为 Block，而这种基于 Block 的�
 
 对于个人来说，比较有趣的是@空谷在 [Airtable + Wolai：打造量身定制的价值投资系统 - 少数派](https://sspai.com/post/65406) 这篇文章中提到了使用 Airtable 的 Query 和 CURD 等API的配合使用来追踪股票涨跌，帮助自己从数据库中发现价值洼地，让本来静态的笔记变成变成一个「活」的页面。
 
-![Image](https://res.craft.do/user/full/98bc5ddd-065d-16cd-a57f-317aefefea72/doc/CD6F1F04-0767-453E-93D8-4B229A7466A7/7AE89681-294B-40D2-B411-7F28E4EE2C49_2/Image)
+![](https://cdn.sspai.com/2021/03/08/fc575a768e4fdc9a11f14356794c62b8.gif)
 
 ### 作为行业从业者，最后的感叹（总结）
 
