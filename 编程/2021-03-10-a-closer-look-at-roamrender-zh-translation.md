@@ -14,7 +14,7 @@ published: True
 
 ![Swiss Army Knife](https://1.bp.blogspot.com/-gYoZl5j7qPc/YDqm3n30tJI/AAAAAAAAxsU/ngw1DveOti8V8CmcNI2hqP44zI1Vd6dIwCLcBGAsYHQ/w640-h548/swiss-army-knife.jpg)
 
-Roam 就好像一把优秀的瑞士军刀，竟然包含一个完整的 ClojureScript 开发环境。在过去两周里，我逐渐熟悉了 `{``{roam/render}``}`。这篇文章可以算作我自己的笔记，总结整理一下我的所见所学。
+Roam 就好像一把优秀的瑞士军刀，竟然包含一个完整的 ClojureScript 开发环境。在过去两周里，我逐渐熟悉了 ` {``{roam/render}``} `。这篇文章可以算作我自己的笔记，总结整理一下我的所见所学。
 
 这篇文章是针对开发者和 Roam 黑客的。如果你还不属于这些阵营，你很可能会对这些内容感到吃力。
 
@@ -22,7 +22,7 @@ Roam 就好像一把优秀的瑞士军刀，竟然包含一个完整的 ClojureS
 
 ## 什么是 roam/render?
 
-`{``{roam/render}``}`是[Roam](https://www.roamresearch.com/)中用于构建自定义组件的原生特性。这些组件可以是简单的表格、计算器、滑块，也可以是复杂的交互式工具，比如数据透视表、图表、流程图等。
+` {``{roam/render}``} `是[Roam](https://www.roamresearch.com/)中用于构建自定义组件的原生特性。这些组件可以是简单的表格、计算器、滑块，也可以是复杂的交互式工具，比如数据透视表、图表、流程图等。
 
 `roam/render` 也是一个使用 Reagent 在 ClojureScript 中实现的 React 组件。你可以使用 Datalog 在 Roam 的 Datomic Graph 中访问你的数据。
 
@@ -47,7 +47,7 @@ Roam 就好像一把优秀的瑞士军刀，竟然包含一个完整的 ClojureS
 
 ### Hello World!
 
-你可以通过在 Block 中添加以下代码来嵌入 roam/render: `{``{roam/render: ((block-ref))}``}` 其中 `block-ref` 指的是你的脚本代码的块引用。脚本代码必须至少有一个函数。如果这个 Block 有多个函数，那么在组件创建时只会调用最后一个函数。
+你可以通过在 Block 中添加以下代码来嵌入 roam/render: ` {``{roam/render: ((block-ref))}``} ` 其中 `block-ref` 指的是你的脚本代码的块引用。脚本代码必须至少有一个函数。如果这个 Block 有多个函数，那么在组件创建时只会调用最后一个函数。
 
 被引用的代码块必须包含一个设置为 Clojure 类型的代码块。代码块的创建是通过使用三个反引号 ` ``` ` 来完成的。如果你不知道键盘上的反引号键在哪里，你也可以使用`/`菜单，然后选择 Clojure Code Block。
 
@@ -55,7 +55,7 @@ Roam 就好像一把优秀的瑞士军刀，竟然包含一个完整的 ClojureS
 
 ### 一步一步来
 
-1. 在一个新的 Block 中输入：`{``{roam/render：((...))}}`。
+1. 在一个新的 Block 中输入：` {``{roam/render：((...))}} `。
 2. 当你开始在双括号之间打字时，Roam 会弹出 "search for blocks"。选择 "Create as block below"。这将在你当前 Block 下面创建一个 Block，并自动在括号之间放置一个块引用。
 3. 导航到新的 Block，并添加两个额外的反引号``来创建一个代码块。
 4. 将代码的语言设置为 Clojure。
@@ -158,13 +158,13 @@ Reagent 是表单交互的关键。它们允许你根据用户输入的数据，
 - 依然是 `query-list` 函数，请注意我们没有在函数的结尾有一个类似于 JavaScript 的 `return`的语句。在 Clojure 中，函数中最后一次调用的结果总是被返回。由于`query-list`只包含一次调用，所以在执行 query 时，将直接返回`rd/q`的结果。
 - 请注意，在`main`函数中，`x` 被定义为一个初始值为 "TODO" 的 Reagent atom。将声明放在`(fn[]`后面的匿名函数之外，可以确保在创建组件时，只会设置一次 atom，而不是在每一次往 INPUT 框输入任何文本时，都将其重置为默认值。
 
-以上是由[Conor](https://twitter.com/Conaw?s=20)的一个例子改编的。你可以在 Roam help 数据库 [这里](https://roamresearch.com/#/app/help/page/Tbl1U8OFT) 找到 Conor 的版本。我的解决方案和 Conor 的解决方案之间的一个关键区别是，他使用的是`roam.datascript.reactive`，而不是仅仅使用`roam.datascript`。在这个具体的例子中，从我的理解来看它们是没有区别。如果我的理解是正确的，Datascript reactive 提供了一种创建查询的方法，当其结果集发生变化时，它可以自动识别。它们可以用于创建交互式组件，比如`{``{table}``}`。
+以上是由[Conor](https://twitter.com/Conaw?s=20)的一个例子改编的。你可以在 Roam help 数据库 [这里](https://roamresearch.com/#/app/help/page/Tbl1U8OFT) 找到 Conor 的版本。我的解决方案和 Conor 的解决方案之间的一个关键区别是，他使用的是`roam.datascript.reactive`，而不是仅仅使用`roam.datascript`。在这个具体的例子中，从我的理解来看它们是没有区别。如果我的理解是正确的，Datascript reactive 提供了一种创建查询的方法，当其结果集发生变化时，它可以自动识别。它们可以用于创建交互式组件，比如` {``{table}``} `。
 
 ## 如何存储组件的属性值
 
 当你重新打开页面或关闭并重新打开 Roam 时，组件会被重新初始化。在大多数情况下，你会希望以某种方式存储组件的属性，这样当你下次打开页面时，你会发现组件处于你离开时的状态。
 
-你可以选择将信息写入 Block 中，并决定写入哪一个 Block。你可以写到嵌套在组件下的 Block ，或者写到一个工具页面上的 Block 里面，例如`[[my component/data]]` 或者更新执行组件的那个 Block。最后一种选择涉及更新`{``{roam/render: ((block-UID)) }``}`与 input 参数，这与我们在前面的例子中打印 input 参数的方式有些类似。我将在一个非常简单的例子中演示如何做到这一点。
+你可以选择将信息写入 Block 中，并决定写入哪一个 Block。你可以写到嵌套在组件下的 Block ，或者写到一个工具页面上的 Block 里面，例如`[[my component/data]]` 或者更新执行组件的那个 Block。最后一种选择涉及更新` {``{roam/render: ((block-UID)) }``} `与 input 参数，这与我们在前面的例子中打印 input 参数的方式有些类似。我将在一个非常简单的例子中演示如何做到这一点。
 
 顺便说一下，我用`datascript.core`做了一个实验，将自定义实体写入到 Roam 数据库。我也能够执行查询，但是没有找到一种方法让 Roam 保存更改。手动编辑自定义实体到 EDN 文件中是可行的（[演示](https://twitter.com/zsviczian/status/1353772383186923520?s=20)），所以使用`datascript`添加自定义实体应该也是可行的。
 
@@ -200,11 +200,11 @@ Reagent 是表单交互的关键。它们允许你根据用户输入的数据，
 
 这个组件将保存 `some-value` 的值。在这个例子中，为了简单起见，它是硬编码的，但当然，你可以构建任何你想要的数据结构来代替 `some-value`。请注意以下几点：
 
-- 我的 `save` 函数是在 main 函数中按钮的`:on-click`事件中调用的。在我的实验中，每次组件改变其值时自动调用 save 的效果并不好，因为每次覆盖`{``{roam/render: ((block-UID))}``}`的时候，组件都会重新初始化，使得无法填写表单，或者通过交互的方式使用组件。
+- 我的 `save` 函数是在 main 函数中按钮的`:on-click`事件中调用的。在我的实验中，每次组件改变其值时自动调用 save 的效果并不好，因为每次覆盖` {``{roam/render: ((block-UID))}``} `的时候，组件都会重新初始化，使得无法填写表单，或者通过交互的方式使用组件。
 - 我在 `save` 函数中定义了三个变量。`code-ref`、`arg-str`和`render-string`。
 - `code-ref`将保存 `block-string` 的当前值，因为我在执行 datalog 查询的时候，会读取`:block/string`属性的当前值，并通过`block-uid`过滤。
 - `->>`是一个函数，它通过一组 `(str)`和`(re-find)` 的形式来执行表达式。它的唯一目的是让代码更易读。
-- `re-find`中的正则表达式会找到`{``{roam/render:`后面的`((block-UID))`。
+- `re-find`中的正则表达式会找到` {``{roam/render: `后面的`((block-UID))`。
 - 一旦`render-string`准备好了，我就调用`roamAlphaAPI` 的`block/update` 将 Block 更新为我的 string 文本。
 
 下面是这段代码的运行情况：
@@ -260,7 +260,7 @@ ClojureScript 提供了一种调用 JavaScript 函数的简单方法。当你想
       (.myDemoFunction js/window @x)])))
 ```
 
-以及 `{``{roam/js}``}` 的代码。
+以及 ` {``{roam/js}``} ` 的代码。
 
 ```clojure
 window['myDemoFunction'] = function (x) {
@@ -325,11 +325,11 @@ window['myDemoFunction'] = function (x) {
 
 ### 调用组件
 
-`{``{roam/render: ((block-UID))}``}`引用组件的形式不是很友好。它需要点击几次才能得到 `block-uid` 并将其插入到渲染的 Block 中。我发现了两种选择。
+` {``{roam/render: ((block-UID))}``} `引用组件的形式不是很友好。它需要点击几次才能得到 `block-uid` 并将其插入到渲染的 Block 中。我发现了两种选择。
 
 你可以在 roam/templates 中创建一个简单的本地漫游模板，然后在那里用一个友好的名字添加你的组件。然后，当你需要它时，你可以使用`;;template-name`将组件插入到你的文档中。
 
-你也可以 Hack 一下 block 的 UIDs。我在[这里](https://twitter.com/zsviczian/status/1365606725924044808?s=20)提供了一个解决方案。这将允许你用更友好的名字来创建组件，比如我的 query 查询组件。 `{``{roam/render: ((str_query))}``}`。
+你也可以 Hack 一下 block 的 UIDs。我在[这里](https://twitter.com/zsviczian/status/1365606725924044808?s=20)提供了一个解决方案。这将允许你用更友好的名字来创建组件，比如我的 query 查询组件。 ` {``{roam/render: ((str_query))}``} `。
 
 ### 前置声明
 
@@ -341,7 +341,7 @@ window['myDemoFunction'] = function (x) {
 
 最简单的方法是使用`roamAlphaAPI`创建一个 Block，并在这个 Block 字符串中放置一个`page link`或`block-ref`。这将转换为一个正确的 Roam 链接。
 
-另一种方法是创建一个包含 Roam 查询的 Block，并在查询参数中包含你想显示的链接：`{``{query: {or: page linkblock-ref}``}`。
+另一种方法是创建一个包含 Roam 查询的 Block，并在查询参数中包含你想显示的链接：` {``{query: {or: page linkblock-ref}``} `。
 
 由于 Roam 在几天前发布了`roam.right-sidebar`命名空间，现在可以完全模仿 Roam 原生链接了。我还没有时间去试验这第三个选项，但它看起来是可行的。
 

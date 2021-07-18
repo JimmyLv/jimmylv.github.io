@@ -10,7 +10,7 @@ published: True
 
 # 为什么要有单元测试？
 
-## 走🚶 vs 🏃 跑
+## 走 🚶 vs 🏃 跑
 
 ![img](https://jimmylv.gitee.io/slides/images/busy.jpeg)
 
@@ -88,7 +88,7 @@ module.exports = { sum }
 const { sum } = require('./math')
 
 describe('Math module', () => {
-  test("should return sum result when one number plus another number", () => {
+  test('should return sum result when one number plus another number', () => {
     // Given
     const number = 1
     const anotherNumber = 2
@@ -112,14 +112,14 @@ describe('Math module', () => {
 
 麻雀虽小五脏俱全，在上面的例子当中，我们可以看到很多的测试元素，下面将会一一介绍：
 
-首先我们看到的是一个由 it 包裹的测试主体最小单元，采用了Given When Then的经典格式，我们常常称之为测试三部曲，也可以解释为 3A 即：
+首先我们看到的是一个由 it 包裹的测试主体最小单元，采用了 Given When Then 的经典格式，我们常常称之为测试三部曲，也可以解释为 3A 即：
 
 ```js
-expect(1+1).toBe(2)
-expect(1+1).not.toBe(3)
+expect(1 + 1).toBe(2)
+expect(1 + 1).not.toBe(3)
 ```
 
-在 expect 后面的 toBe称之为 Matcher，是断言时的判断语句以验证正确性 ✅，在后面的文章中我们还会接触更多 Matchers，甚至可以扩展一些特别定制的 Matchers。
+在 expect 后面的 toBe 称之为 Matcher，是断言时的判断语句以验证正确性 ✅，在后面的文章中我们还会接触更多 Matchers，甚至可以扩展一些特别定制的 Matchers。
 
 ![image-20210228183057426](/Users/Jing/Library/Application Support/typora-user-images/image-20210228183057426.png)
 
@@ -136,20 +136,20 @@ expect(1+1).not.toBe(3)
 - access to Files 存取文件
 - any External system 任何外部系统
 
-其实在 Jest 当中，Fake/Stub/Mock/Spy 这些概念或许会有所混淆，而这跟 JavaScript 语言本身的特点有一定关系，但是我觉得 Jest 通过统一的 fn() 方法把问题解决得还比较恰当，让我们来一块儿看看实例🌰：
+其实在 Jest 当中，Fake/Stub/Mock/Spy 这些概念或许会有所混淆，而这跟 JavaScript 语言本身的特点有一定关系，但是我觉得 Jest 通过统一的 fn() 方法把问题解决得还比较恰当，让我们来一块儿看看实例 🌰：
 
 ## Mock 用于替代整个模块
 
 ```js
-import SoundPlayer from './sound-player';
+import SoundPlayer from './sound-player'
 
-const mockPlaySoundFile = jest.fn();
+const mockPlaySoundFile = jest.fn()
 
 jest.mock('./sound-player', () => {
   return jest.fn().mockImplementation(() => {
-    return {playSoundFile: mockPlaySoundFile};
-  });
-});
+    return { playSoundFile: mockPlaySoundFile }
+  })
+})
 ```
 
 我们可以看到 jest.mock() 方法中的第二个参数是一个函数，那么我们就可以完全接管整个 ./sound-player JavaScript 模块，比如说这里的 playSoundFile 本来应该是从 ./sound-player 这个文件当中 export 出来的，而被 Mock 之后我们的测试就可以使用 Mock 所返回的数据或方法，从而保证模块所返回的内容是我们所期望的。但这时需要注意的是，该模板的所有功能都已经被 Mock 掉，而不会再从原模块当中返回，所以我们就需要重新实现该模块中的所有功能。可别一不小心就成了张艺谋导演《影》片中的影子，被完全“取而代之”，连夫人也被 Mock 所吸引。
@@ -157,13 +157,13 @@ jest.mock('./sound-player', () => {
 ## Stub 用于模拟特定行为
 
 ```js
-const mockFn = jest.fn();
-mockFn();
-expect(mockFn).toHaveBeenCalled();
+const mockFn = jest.fn()
+mockFn()
+expect(mockFn).toHaveBeenCalled()
 
 // With a mock implementation:
-const returnsTrue = jest.fn(() => true);
-console.log(returnsTrue()); // true;
+const returnsTrue = jest.fn(() => true)
+console.log(returnsTrue()) // true;
 ```
 
 这里的特定行为也可以是没有行为，jest.fn() 代表着我就是一个 Stub（桩），“你来我就在这里，你走我也依然在这里，风雨无阻”。不需要什么输入输出，只要能在测试的时候验证到 Stub 被调用过就行，也就能够断言到某处代码被执行，从而确定代码被测试所覆盖。而另一种特定行为就是返回特定的数据，即 Stub 也可以根据输入模拟返回一种输出，作为某些模块的替身帮它演戏，比如“小鲜肉们”遇到要跳车啦、要卿卿我我（误）的时候就要找替身，“一二三四五六七八”连台词都不用背还需要配音。
@@ -173,14 +173,14 @@ console.log(returnsTrue()); // true;
 > Spy packages without affecting the functions code
 
 ```js
-const video = require('./video');
+const video = require('./video')
 
 it('plays video', () => {
-  const spy = jest.spyOn(video, 'play');
-  const isPlaying = video.play();
+  const spy = jest.spyOn(video, 'play')
+  const isPlaying = video.play()
 
-  expect(spy).toHaveBeenCalled();
-  expect(isPlaying).toBe(true);
+  expect(spy).toHaveBeenCalled()
+  expect(isPlaying).toBe(true)
 })
 ```
 
@@ -189,15 +189,15 @@ Spy 并不会影响到原有模块的功能代码，而只是充当一个监护�
 ## 如何 Mock 全局的方法？
 
 ```js
-window.matchMedia = jest.fn().mockImplementation(query => {
+window.matchMedia = jest.fn().mockImplementation((query) => {
   return {
     matches: false,
     media: query,
     onchange: null,
     addListener: jest.fn(),
     removeListener: jest.fn(),
-  };
-});
+  }
+})
 ```
 
 把全局的数据 Mock 掉很简单，只需要像 window.document.title = undefined 这样简单 Fake 赋值就很完美。而像 matchMedia 这样的方法在 jsdom 里面并没有被实现，这时候我们当然就需要去把它 Mock 掉，简单把要用到的一些对象属性赋值就好，总之不至于在运行时报错。
@@ -218,19 +218,19 @@ navigator.geolocation.getCurrentPostion() // chrome API 异步获取当前位置
 
 异步是 JavaScript 中绕不开的永恒话题，多亏了 ES6+ 高级语法所提供的多种优雅的异步代码方式，让我们写测试代码的方式也多了好多种。（逃
 
-让我们先来看一下什么是异步请求，这里有一个通过 Chrome API 获取当前位置的实例，可想而知 Chrome 要根据 GPS 信号才能算出当前的经纬度，相当于从卫星🛰来回走了一遭，怎么不会异步（代表有延时，延迟返回）呢？
+让我们先来看一下什么是异步请求，这里有一个通过 Chrome API 获取当前位置的实例，可想而知 Chrome 要根据 GPS 信号才能算出当前的经纬度，相当于从卫星 🛰 来回走了一遭，怎么不会异步（代表有延时，延迟返回）呢？
 
 ## Callback 回调函数
 
 ```js
-it('the data is peanut butter', done => {
+it('the data is peanut butter', (done) => {
   function callback(data) {
-    expect(data).toBe('peanut butter');
-    done();
+    expect(data).toBe('peanut butter')
+    done()
   }
 
-  fetchData(callback);
-});
+  fetchData(callback)
+})
 ```
 
 这是最最普通的方式，也是各大框架都支持的一种写法， done() 作为异步代码结束的结束标志，从而让测试框架“知道”在结束时进行断言。但这种方式侵入性比较强，对测试语句不友好且违背了 Given/When/Then 的三段式套路，就像回调地狱一样的道理，如果让 done() 充斥着测试那么代码也就变得混乱。
@@ -239,11 +239,11 @@ it('the data is peanut butter', done => {
 
 ```js
 it('the data is peanut butter', () => {
-  expect.assertions(1);
-  return fetchData().then(data => {
-    expect(data).toBe('peanut butter');
-  });
-});
+  expect.assertions(1)
+  return fetchData().then((data) => {
+    expect(data).toBe('peanut butter')
+  })
+})
 
 expect(Promise.resolve('lemon')).resolves.toBe('lemon')
 
@@ -260,14 +260,14 @@ test('the data is peanut butter', async () => {
   const params = {}
 
   // when
-  const data = await fetchData(params);
+  const data = await fetchData(params)
 
   // then
-  expect(data).toBe('peanut butter');
-});
+  expect(data).toBe('peanut butter')
+})
 ```
 
-Async/Await 语法糖在业务代码当中就特别好使了，好处不多说直接看得见：原本需要 done() 或 then() 的地方都不再混乱，又一次回归到了正常的 Given/When/Then 三段式套路，让测试代码变得非常清晰易读。唯一需要注意的是， 额外的expect.assertions(number) 其实是验证在测试期间所调用的断言数量，这在测试多层异步代码时很有用，以确保实际调用回调中的断言次数。
+Async/Await 语法糖在业务代码当中就特别好使了，好处不多说直接看得见：原本需要 done() 或 then() 的地方都不再混乱，又一次回归到了正常的 Given/When/Then 三段式套路，让测试代码变得非常清晰易读。唯一需要注意的是， 额外的 expect.assertions(number) 其实是验证在测试期间所调用的断言数量，这在测试多层异步代码时很有用，以确保实际调用回调中的断言次数。
 
 # React 组件测试
 
@@ -289,7 +289,7 @@ Async/Await 语法糖在业务代码当中就特别好使了，好处不多说�
 
 ## 测试金字塔
 
-> 为了维持金字塔形状，一个健康、快速、可维护的测试组合应该是这样的：写许多小而快的单元测试。适当写一些更粗粒度的测试，写很少高层次的端到端测试。注意不要让你的测试变成冰淇淋那样子，这对维护来说将是一个噩梦，并且跑一遍也需要太多时间。（via [测试金字塔实战 – ThoughtWorks洞见]([https://insights.thoughtworks.cn/practical-test-pyramid/)）](https://insights.thoughtworks.cn/practical-test-pyramid/)
+> 为了维持金字塔形状，一个健康、快速、可维护的测试组合应该是这样的：写许多小而快的单元测试。适当写一些更粗粒度的测试，写很少高层次的端到端测试。注意不要让你的测试变成冰淇淋那样子，这对维护来说将是一个噩梦，并且跑一遍也需要太多时间。（via [测试金字塔实战 – ThoughtWorks 洞见]([https://insights.thoughtworks.cn/practical-test-pyramid/)）](https://insights.thoughtworks.cn/practical-test-pyramid/)
 
 ![img](https://raw.staticdn.net/JimmyLv/images/master/2018/20181030211424.png)
 
@@ -332,10 +332,9 @@ describe('Enzyme Mount', () => {
 
 mount 方法则会将 React 组件和所有子组件渲染为真实的 DOM 节点，特别是在你依赖真实的 DOM 结构必须存在的情况下，比如说按钮的点击事件。完全的 DOM 渲染需要在全局范围内提供完整的 DOM API， 这也就意味着 React Test Utils 依赖于浏览器环境。
 
-从技术上讲，你可以在真实的浏览器中运行，但由于在不同平台上启动真实浏览器的复杂性，更建议使用 JSDOM 在虚拟浏览器环境中运行 Node 中的测试。推荐使用 mount 的方法是依赖于一个名为 jsdom的库，它本质上是一个完全在 JavaScript 中实现的 headless 浏览器。
+从技术上讲，你可以在真实的浏览器中运行，但由于在不同平台上启动真实浏览器的复杂性，更建议使用 JSDOM 在虚拟浏览器环境中运行 Node 中的测试。推荐使用 mount 的方法是依赖于一个名为 jsdom 的库，它本质上是一个完全在 JavaScript 中实现的 headless 浏览器。
 
 ## Testing Library vs Enzyme
-
 
 React Testing Library 的 API 明显优于 Enzyme，不至于陷入细节，是用于测试 React 应用的一大利器。前端 UI 组件测试的最佳实践，使得我们可以使用它来更有效地测试组件。
 
@@ -356,11 +355,11 @@ test('should show h1 title', () => {
 
 ## [**Which query should I use?**](https://testing-library.com/docs/guide-which-query)
 
-| **type**       | ***No Match*** | ***1 Match*** | ***1+ Match*** | ***Await?*** |
+| **type**       | **_No Match_** | **_1 Match_** | **_1+ Match_** | **_Await?_** |
 | -------------- | -------------- | ------------- | -------------- | ------------ |
-| ***getBy***    | *throw*        | *return*      | *throw*        | *No*         |
-| ***findBy***   | *throw*        | *return*      | *throw*        | *Yes*        |
-| ***queryBy***  | *null*         | *return*      | *throw*        | *No*         |
+| **_getBy_**    | _throw_        | _return_      | _throw_        | _No_         |
+| **_findBy_**   | _throw_        | _return_      | _throw_        | _Yes_        |
+| **_queryBy_**  | _null_         | _return_      | _throw_        | _No_         |
 | **getAllBy**   | throw          | array         | array          | No           |
 | **findAllBy**  | throw          | array         | array          | Yes          |
 | **queryAllBy** | []             | array         | array          | No           |
@@ -428,8 +427,8 @@ MVC 和 Flux 最大的不同就是查询和更新的分离。在 MVC 中，Model
 
 ## CQRS 命令-查询职责分离
 
-1. 如果一个方法修改了这个对象的状态，那就是一个 *command*（命令），并且一定不能返回值。
-2. 如果一个方法返回了一些值，那就是一个 *query*（查询），并且一定不能修改状态。
+1. 如果一个方法修改了这个对象的状态，那就是一个 _command_（命令），并且一定不能返回值。
+2. 如果一个方法返回了一些值，那就是一个 _query_（查询），并且一定不能修改状态。
 
 ![Redux data flow diagram](https://redux.js.org/assets/images/ReduxDataFlowDiagram-49fa8c3968371d9ef6f2a1486bd40a26.gif)
 
@@ -443,7 +442,7 @@ MVC 和 Flux 最大的不同就是查询和更新的分离。在 MVC 中，Model
 
 ### 1. 单一数据源
 
-整个应用的 [state](https://cn.redux.js.org/docs/Glossary.html#state) 被储存在一棵 object tree 中，并且这个 object tree 只存在于唯一一个 [store](https://cn.redux.js.org/docs/Glossary.html#store) 中。任何组件都能直接获取 store 状态，这也就是 CQRS 中 *query*（查询）的一种实现。
+整个应用的 [state](https://cn.redux.js.org/docs/Glossary.html#state) 被储存在一棵 object tree 中，并且这个 object tree 只存在于唯一一个 [store](https://cn.redux.js.org/docs/Glossary.html#store) 中。任何组件都能直接获取 store 状态，这也就是 CQRS 中 _query_（查询）的一种实现。
 
 ### 2. State 是只读的
 
@@ -451,7 +450,7 @@ MVC 和 Flux 最大的不同就是查询和更新的分离。在 MVC 中，Model
 
 ### 3. 使用纯函数来执行修改
 
-为了描述 action 如何改变 state tree ，你需要编写 [reducers](https://cn.redux.js.org/docs/Glossary.html#reducer)。这也就是 CQRS 中 *command*（命令）的一种实现。
+为了描述 action 如何改变 state tree ，你需要编写 [reducers](https://cn.redux.js.org/docs/Glossary.html#reducer)。这也就是 CQRS 中 _command_（命令）的一种实现。
 
 # 如何对 Redux 进行单元测试
 
@@ -517,16 +516,15 @@ Action 应对起来略微棘手，因为它们可能需要调用外部的 API。
 ```js
 // product.test.js
 jest.mock('../api/book', () => ({
-  getBookList: jest.fn(() => { data: [{ name: '你不知道的JavaScript' }] }),
+  getBookList: jest.fn(() => {
+    data: [{ name: '你不知道的JavaScript' }]
+  }),
 }))
 
 test('should fetch book list', async () => {
   const payload = { category: '文学' }
 
-  const { storeState } = await expectSaga(sagas)
-    .withReducer(reducer)
-    .dispatch({ type: types.FETCH, payload })
-    .run()
+  const { storeState } = await expectSaga(sagas).withReducer(reducer).dispatch({ type: types.FETCH, payload }).run()
 
   expect(service.getAllBooks).toBeCalledWith(payload)
   expect(storeState).toEqual({
@@ -541,12 +539,12 @@ test('should fetch book list', async () => {
 
 ```js
 // book.js
-export const getBookList = state => state.book.list
+export const getBookList = (state) => state.book.list
 
 export const getBooksByCategory = createSelector(
   getBookList,
   (_, category) => category,
-  (books, category) => books.filter(book => book.category === category)
+  (books, category) => books.filter((book) => book.category === category),
 )
 ```
 
@@ -557,10 +555,8 @@ Note: selector 的测试与 mutation 一样直截了当。selectors 也是比较
 test('should get book by category', () => {
   const category = '前端'
 
-  expect(getBooksByCategory(state, category)).toEqual([
-    { name: '你不知道的JavaScript' }
-  ])
-});
+  expect(getBooksByCategory(state, category)).toEqual([{ name: '你不知道的JavaScript' }])
+})
 ```
 
 # React 组件和 Redux store 的交互
@@ -572,12 +568,8 @@ export function BookList({ category }) {
   const location = useLocation()
   const { tag } = queryString.parse(location.search)
 
-  const booksByCategory = useSelector(state =>
-    getBooksByCategory(state, category)
-  )
-  const books = tag
-    ? booksByCategory.filter(book => book.tags.includes(tag))
-    : booksByCategory
+  const booksByCategory = useSelector((state) => getBooksByCategory(state, category))
+  const books = tag ? booksByCategory.filter((book) => book.tags.includes(tag)) : booksByCategory
 
   return <>...</>
 }
@@ -588,23 +580,16 @@ export function BookList({ category }) {
 ## ReduxWrapper renderWithRedux()
 
 ```js
-export function ReduxWrapper({
-   initialState,
-   store = mockStore(initialState),
-   children,
- }) {
+export function ReduxWrapper({ initialState, store = mockStore(initialState), children }) {
   return <Provider store={store}>{children}</Provider>
 }
 
-export function renderWithRedux(
-  ui,
-  { initialState, store = mockStore(initialState) } = {}
-) {
+export function renderWithRedux(ui, { initialState, store = mockStore(initialState) } = {}) {
   return {
     ...render(
       <ReduxWrapper initialState={initialState} store={store}>
         {ui}
-      </ReduxWrapper>
+      </ReduxWrapper>,
     ),
     store,
   }
@@ -617,23 +602,17 @@ export function renderWithRedux(
 
 ```js
 export const RouterWrapper = ({
-    route = '/',
-    history = createMemoryHistory({ initialEntries: [route] }),
-    children,
-  }) => <Router history={history}>{children}</Router>
+  route = '/',
+  history = createMemoryHistory({ initialEntries: [route] }),
+  children,
+}) => <Router history={history}>{children}</Router>
 
-export function renderWithRouter(
-  ui,
-  {
-    route = '/',
-    history = createMemoryHistory({ initialEntries: [route] }),
-  } = {}
-) {
+export function renderWithRouter(ui, { route = '/', history = createMemoryHistory({ initialEntries: [route] }) } = {}) {
   return {
     ...render(
       <RouterWrapper route={route} history={history}>
         {ui}
-      </RouterWrapper>
+      </RouterWrapper>,
     ),
     history,
   }
@@ -678,11 +657,11 @@ export function renderWithRouter(
 
 # 📚 推荐书籍
 
-* [React 官方中文文档 – 用于构建用户界面的 JavaScript 库](https://zh-hans.reactjs.org/)
-* [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
-* 《深入 React 技术栈》
-* 《深入浅出React和Redux》
-* 《重构2：改善既有代码的设计》
-* 《Clean Code 代码整洁之道》
-* 《Refactoring to Patterns 重构与模式》
-* 《SICP 计算机程序的构造和解释》
+- [React 官方中文文档 – 用于构建用户界面的 JavaScript 库](https://zh-hans.reactjs.org/)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+- 《深入 React 技术栈》
+- 《深入浅出 React 和 Redux》
+- 《重构 2：改善既有代码的设计》
+- 《Clean Code 代码整洁之道》
+- 《Refactoring to Patterns 重构与模式》
+- 《SICP 计算机程序的构造和解释》

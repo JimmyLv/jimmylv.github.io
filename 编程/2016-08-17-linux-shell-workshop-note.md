@@ -48,10 +48,10 @@ published: True
 ![](https://raw.sevencdn.com/JimmyLv/images/master/2016/1471427513741.png)
 
 | 命令/快捷键                     | 解释/作用/备注                  |
-| ------------------------------- | ------------------------------- | ---------------- |
+| ------------------------------- | ------------------------------- |
 | `grep -v ^# .README.md`         | 找出非注释消息                  |
 | `lsof -i:8080`                  | 查找特定端口进程                |
-| `ps -ef                         | grep java`                      | 查找特定程序进程 |
+| `ps -ef | grep java`            | 查找特定程序进程                |
 | `sudo systemctl restart tomcat` | systemctl 是系统命令，需要 sudo |
 | `cat /proc/version`             | 查看当前系统信息                |
 

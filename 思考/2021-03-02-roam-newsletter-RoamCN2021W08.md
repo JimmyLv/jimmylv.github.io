@@ -88,7 +88,7 @@ published: True
 
 ---
 
-### #[[Roam 插件]] MarginNote 高亮导出至 Roam Research，赏金 $150
+### #[[Roam 插件]] MarginNote 高亮导出至 Roam Research，赏金 \$150
 
 {% twitter https://twitter.com/RoamBounties/status/1366506981926735880?s=20 %}
 
@@ -208,7 +208,7 @@ published: True
 
 ---
 
-### #[[Roam 周边]] [@NetNewsWire](https://twitter.com/NetNewsWire) 6.0 测试版试用体验报告，无法取代我的刷推体验
+### #[[Roam 周边]][@netnewswire](https://twitter.com/NetNewsWire) 6.0 测试版试用体验报告，无法取代我的刷推体验
 
 {% twitter https://twitter.com/Jimmy_JingLv/status/1364214900466196482?s=20 %}
 

@@ -8,10 +8,7 @@ published: True
 
 [Tweet](https://twitter.com/i/status/1358420097279291392) by [@Jimmy_JingLv](https://twitter.com/Jimmy_JingLv) on [[February 7th, 2021]]:
 
-📮 Roam Newsletter 漫游研究所周报 #2021W07
-    - #RoamCN2021W07 #RoamCN #WeeklyNewsletter
-    - #roamcult #LearnInPublic #LearnWithJimmy #Zettelkasten
-    - [@cn_roam](https://twitter.com/cn_roam) [@RoamResearch](https://twitter.com/RoamResearch) [roam-cn/roamcult.vip](http://roamcult.vip)
+📮 Roam Newsletter 漫游研究所周报 #2021W07 - #RoamCN2021W07 #RoamCN #WeeklyNewsletter - #roamcult #LearnInPublic #LearnWithJimmy #Zettelkasten - [@cn_roam](https://twitter.com/cn_roam) [@RoamResearch](https://twitter.com/RoamResearch) [roam-cn/roamcult.vip](http://roamcult.vip)
 
 ---
 
@@ -77,7 +74,7 @@ published: True
 
 ---
 
-### #[[Roam 插件]] [roamjs.com](http://roamjs.com) Twitter 插件现在支持直接从Roam Research 发送Tweet，并且支持嵌入式附件，比如图片甚至GIF动图
+### #[[Roam 插件]][roamjs.com](http://roamjs.com) Twitter 插件现在支持直接从 Roam Research 发送 Tweet，并且支持嵌入式附件，比如图片甚至 GIF 动图
 
 {% twitter https://twitter.com/dvargas92495/status/1362188518202765313?s=20 %}
 

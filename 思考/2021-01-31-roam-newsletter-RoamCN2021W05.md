@@ -52,11 +52,11 @@ published: True
 
 {% twitter https://twitter.com/darshna_rekha/status/1352914167108276224?s=20 %}
 
-#[[Roam 互动]] Roam 官方挑战，共计 10k 奖励给  #RoamGames 标签下的最佳推文
+#[[Roam 互动]] Roam 官方挑战，共计 10k 奖励给 #RoamGames 标签下的最佳推文
 
 {% twitter https://twitter.com/Conaw/status/1353623250132078592?s=20 %}
 
-#[[Roam 周边]] [@logseq](https://twitter.com/logseq) 已经率先支持 alias 别名
+#[[Roam 周边]][@logseq](https://twitter.com/logseq) 已经率先支持 alias 别名
 
 {% twitter https://twitter.com/CatoMinor3/status/1355624942637821965?s=20 %}
 
@@ -72,7 +72,7 @@ published: True
 
 {% twitter https://twitter.com/DiagramCodes/status/1355516922117447680?s=20 %}
 
-#[[Roam 生态]] [@logseq](https://twitter.com/logseq) 通过插件支持看板模式
+#[[Roam 生态]][@logseq](https://twitter.com/logseq) 通过插件支持看板模式
 
 {% twitter https://twitter.com/logseq/status/1355757458669506567?s=20 %}
 
@@ -80,7 +80,7 @@ published: True
 
 {% twitter https://twitter.com/roamhacker/status/1355408834941038595?s=20 %}
 
-#[[Roam 社区]] 来自Roam Research社区的愿望清单
+#[[Roam 社区]] 来自 Roam Research 社区的愿望清单
 
 {% twitter https://twitter.com/RoamFm/status/1355354155259289602?s=20 %}
 
@@ -100,7 +100,7 @@ published: True
 
 {% twitter https://twitter.com/roamhacker/status/1355058908746932226?s=20 %}
 
-#[[Roam 插件]] Roam Research 移动端优化，通过双击打开Block的右键菜单
+#[[Roam 插件]] Roam Research 移动端优化，通过双击打开 Block 的右键菜单
 
 {% twitter https://twitter.com/ViktorTabori/status/1303125320728555522?s=20 %}
 

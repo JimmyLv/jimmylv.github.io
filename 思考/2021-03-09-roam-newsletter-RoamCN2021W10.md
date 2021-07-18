@@ -60,7 +60,7 @@ published: True
 
 ---
 
-### #[[Roam 技术]] [@craftdocsapp](https://twitter.com/craftdocsapp) 写作软件的实现非常优秀，基于 macOS Catalyst 跨平台原生应用
+### #[[Roam 技术]][@craftdocsapp](https://twitter.com/craftdocsapp) 写作软件的实现非常优秀，基于 macOS Catalyst 跨平台原生应用
 
 {% twitter https://twitter.com/andy_matuschak/status/1324769586697269249?s=20 %}
 
@@ -104,7 +104,7 @@ published: True
 
 ---
 
-### #[[Roam 插件]] [roamjs.com](http://roamjs.com) 新扩展：Timeline 模式 [[roam/js/timeline]] 可用来可视化特殊标签的事件时间线，比如 #Deadline
+### #[[Roam 插件]][roamjs.com](http://roamjs.com) 新扩展：Timeline 模式 [[roam/js/timeline]] 可用来可视化特殊标签的事件时间线，比如 #Deadline
 
 {% twitter https://twitter.com/dvargas92495/status/1367249990171656192?s=20 %}
 

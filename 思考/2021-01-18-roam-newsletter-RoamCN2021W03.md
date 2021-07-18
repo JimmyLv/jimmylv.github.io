@@ -44,7 +44,7 @@ Vim Navigation 模式
 
 {% twitter https://twitter.com/EMSLimerick/status/1348570979992293377?s=20 %}
 
-#[[Roam 生态]] [roamjs.com](http://roamjs.com) 新扩展：Filter Embeds 支持块嵌入内的标签 Filter 筛选
+#[[Roam 生态]][roamjs.com](http://roamjs.com) 新扩展：Filter Embeds 支持块嵌入内的标签 Filter 筛选
 
 {% twitter https://twitter.com/dvargas92495/status/1348410288542986246?s=20 %}
 
@@ -108,7 +108,7 @@ Vim Navigation 模式
 
 {% twitter https://twitter.com/Julian/status/1350523091508576256?s=20 %}
 
-#[[Roam 生态]] [roamjs.com](http://roamjs.com) 每周新扩展，Roam Research 思维导图
+#[[Roam 生态]][roamjs.com](http://roamjs.com) 每周新扩展，Roam Research 思维导图
 
 {% twitter https://twitter.com/dvargas92495/status/1350882265669259266?s=20 %}
 

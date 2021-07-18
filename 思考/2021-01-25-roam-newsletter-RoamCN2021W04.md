@@ -20,7 +20,7 @@ published: True
 
 {% twitter https://twitter.com/KeepProductive/status/1351533378814799872?s=20 %}
 
-#[[Roam 技巧]] 使用 Rectangle 始终悬停Roam Research窗口 `brew install --cask rectangle`
+#[[Roam 技巧]] 使用 Rectangle 始终悬停 Roam Research 窗口 `brew install --cask rectangle`
 
 {% twitter https://twitter.com/patrickc/status/1351650517869465601?s=20 %}
 
@@ -45,19 +45,19 @@ published: True
 
 {% twitter https://twitter.com/shuomi3/status/1219322686079492096 %}
 
-#[[Roam 技巧]] 使用 块引用 快速组装文章和Newsletter
+#[[Roam 技巧]] 使用 块引用 快速组装文章和 Newsletter
 
 {% twitter https://twitter.com/nateliason/status/1219026115857174533?s=20 %}
 
-#[[Roam 教程]] 如何将Roam Research 作为个人 CRM 系统
+#[[Roam 教程]] 如何将 Roam Research 作为个人 CRM 系统
 
 {% twitter https://twitter.com/nateliason/status/1218675340609978369?s=20 %}
 
-#[[Roam 教程]] 长达1小时20分钟的 #SmartBlocks 深入教程
+#[[Roam 教程]] 长达 1 小时 20 分钟的 #SmartBlocks 深入教程
 
 {% twitter https://twitter.com/roamhacker/status/1351617845566836738?s=20 %}
 
-#[[Roam 技巧]] 如何使用 #SmartBlocks 将任意Block 推迟到 X 天之后
+#[[Roam 技巧]] 如何使用 #SmartBlocks 将任意 Block 推迟到 X 天之后
 
 {% twitter https://twitter.com/roamhacker/status/1351609790976438285?s=20 %}
 

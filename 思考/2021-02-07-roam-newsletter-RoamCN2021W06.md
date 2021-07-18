@@ -8,10 +8,7 @@ published: True
 
 [Tweet](https://twitter.com/i/status/1356415974388371457) by [@Jimmy_JingLv](https://twitter.com/Jimmy_JingLv) on [[February 2nd, 2021]]:
 
-📮 Roam Newsletter 漫游研究所周报 #2021W06
-    - #RoamCN2021W06 #RoamCN #WeeklyNewsletter
-    - #roamcult #LearnInPublic #LearnWithJimmy #Zettelkasten
-    - [@cn_roam](https://twitter.com/cn_roam) [@RoamResearch](https://twitter.com/RoamResearch) [roam-cn/roamcult.vip](http://roamcult.vip)
+📮 Roam Newsletter 漫游研究所周报 #2021W06 - #RoamCN2021W06 #RoamCN #WeeklyNewsletter - #roamcult #LearnInPublic #LearnWithJimmy #Zettelkasten - [@cn_roam](https://twitter.com/cn_roam) [@RoamResearch](https://twitter.com/RoamResearch) [roam-cn/roamcult.vip](http://roamcult.vip)
 
 ### #[[Roam 洞见]] 感谢这个时代给我们这么丰富的工具
 
@@ -29,7 +26,7 @@ published: True
 
 {% twitter https://twitter.com/visualizevalue/status/1356967484604248064?s=20 %}
 
-### #[[Roam 周边]] [@logseq](https://twitter.com/logseq) 支持通过 #hashtag 修改 Block 样式
+### #[[Roam 周边]][@logseq](https://twitter.com/logseq) 支持通过 #hashtag 修改 Block 样式
 
 {% twitter https://twitter.com/hrdcrpxxx/status/1358387950451572738?s=20 %}
 
