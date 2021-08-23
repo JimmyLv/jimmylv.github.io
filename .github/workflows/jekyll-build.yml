@@ -12,6 +12,11 @@ jobs:
     runs-on: ubuntu-16.04
 
     steps:
+      - name: Run Backup
+        run: |
+          cd /tmp
+          git clone -q --depth=1 --branch=master https://github.com/JimmyLv/jekyll-blog.git jekyll-blog
+          cd $_
       - name: Checkout repo
         uses: actions/checkout@v2
 
