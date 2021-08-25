@@ -11,9 +11,7 @@ jobs:
   build-deploy:
     runs-on: ubuntu-16.04
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v2
-      - name: Clone Github Repo Action
+      - name: Clone Jekyll Repo
         # You may pin to the exact commit or the version.
         # uses: GuillaumeFalourd/clone-github-repo-action@d667f8c39e6ac1dd5309ad51b0020657c7a1a296
         uses: GuillaumeFalourd/clone-github-repo-action@v1
@@ -22,15 +20,22 @@ jobs:
           owner: JimmyLv
           # Repository name
           repository: jekyll-blog
+      - name: Clone _posts Repo
+        # You may pin to the exact commit or the version.
+        # uses: GuillaumeFalourd/clone-github-repo-action@d667f8c39e6ac1dd5309ad51b0020657c7a1a296
+        uses: GuillaumeFalourd/clone-github-repo-action@v1
+        with:
+          # Repository Owner
+          owner: JimmyLv
+          # Repository name
+          repository: jimmylv.github.io
       - name: Show Files
         run: |
           pwd
           ls
-          ls ..
-          ls ...
       - name: Move Files
         run: |
-          mv ../jimmylv.github.io/** _posts
+          mv jimmylv.github.io/** jekyll-blog/_posts
           
       - name: Get cached gems
         uses: actions/cache@v2
