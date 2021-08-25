@@ -12,13 +12,20 @@ jobs:
     runs-on: ubuntu-16.04
 
     steps:
-      - name: Run Backup
-        run: |
-          cd /tmp
-          git clone -q --depth=1 --branch=master https://github.com/JimmyLv/jekyll-blog.git jekyll-blog
-          cd $_
+      - name: Clone Github Repo Action
+        # You may pin to the exact commit or the version.
+        # uses: GuillaumeFalourd/clone-github-repo-action@d667f8c39e6ac1dd5309ad51b0020657c7a1a296
+        uses: GuillaumeFalourd/clone-github-repo-action@v1
+        with:
+          # Repository Owner
+          owner: JimmyLv
+          # Repository name
+          repository: jekyll-blog
       - name: Checkout repo
         uses: actions/checkout@v2
+        run: |
+          pwd
+          ls ..
 
       - name: Get cached gems
         uses: actions/cache@v2
