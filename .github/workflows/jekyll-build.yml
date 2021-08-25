@@ -28,7 +28,9 @@ jobs:
           repository: jekyll-blog
       - name: Move Files
         run: |
-          mv jimmylv.github.io/** jekyll-blog/_posts
+          pwd
+          ls
+          mv ../jimmylv.github.io/** _posts
           
       - name: Get cached gems
         uses: actions/cache@v2
