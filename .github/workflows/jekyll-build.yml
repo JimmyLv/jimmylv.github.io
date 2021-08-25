@@ -35,7 +35,7 @@ jobs:
           ls
       - name: Move Files
         run: |
-          mv jimmylv.github.io/** jekyll-blog/_posts
+          cp jimmylv.github.io/** jekyll-blog/_posts
           
       - name: Get cached gems
         uses: actions/cache@v2
