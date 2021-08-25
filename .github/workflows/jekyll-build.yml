@@ -11,6 +11,9 @@ jobs:
   build-deploy:
     runs-on: ubuntu-16.04
 
+    defaults:
+      run:
+        working-directory: ./app
     steps:
       - name: Clone Github Repo Action
         # You may pin to the exact commit or the version.
@@ -24,12 +27,8 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v2
       - name: Move Files
-        uses: crykn/copy_folder_to_another_repo_action@v1.0.6
-        with:
-          # Source folder from the origin directory
-          source_folder: jimmylv.github.io
-          # Directory to push the folder contents to
-          destination_folder: jekyll-blog/_posts
+        run: |
+          mv jimmylv.github.io/** jekyll-blog/_posts
           
       - name: Get cached gems
         uses: actions/cache@v2
