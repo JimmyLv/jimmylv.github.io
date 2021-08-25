@@ -23,10 +23,14 @@ jobs:
           repository: jekyll-blog
       - name: Checkout repo
         uses: actions/checkout@v2
-        run: |
-          pwd
-          ls ..
-
+      - name: Move Files
+        uses: crykn/copy_folder_to_another_repo_action@v1.0.6
+        with:
+          # Source folder from the origin directory
+          source_folder: jimmylv.github.io
+          # Directory to push the folder contents to
+          destination_folder: jekyll-blog/_posts
+          
       - name: Get cached gems
         uses: actions/cache@v2
         with:
@@ -37,4 +41,5 @@ jobs:
       - name: Build and deploy
         uses: helaili/jekyll-action@v2
         with:
+          jekyll_src: 'jekyll-blog'
           token: ${{ secrets.GITHUB_TOKEN }}
