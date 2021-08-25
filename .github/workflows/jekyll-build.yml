@@ -10,10 +10,6 @@ on:
 jobs:
   build-deploy:
     runs-on: ubuntu-16.04
-
-    defaults:
-      run:
-        working-directory: ./app
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
