@@ -26,10 +26,14 @@ jobs:
           owner: JimmyLv
           # Repository name
           repository: jekyll-blog
-      - name: Move Files
+      - name: Show Files
         run: |
           pwd
           ls
+          ls ..
+          ls ...
+      - name: Move Files
+        run: |
           mv ../jimmylv.github.io/** _posts
           
       - name: Get cached gems
