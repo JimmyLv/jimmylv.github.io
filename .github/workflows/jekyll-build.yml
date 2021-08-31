@@ -36,6 +36,8 @@ jobs:
       - name: Move Files
         run: |
           sudo cp -rf jimmylv.github.io/**/** jekyll-blog/_posts
+          export LC_ALL=en_US.UTF-8
+          export LANG=en_US.UTF-8
           
       - name: Get cached gems
         uses: actions/cache@v2
