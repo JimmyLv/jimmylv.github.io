@@ -1,4 +1,4 @@
-name: GH Pages CI
+name: GitHub to Vercel
 
 on:
   push:
@@ -9,45 +9,8 @@ on:
 
 jobs:
   build-deploy:
-    runs-on: ubuntu-16.04
+    runs-on: ubuntu-latest
     steps:
-      - name: Clone Jekyll Repo
-        # You may pin to the exact commit or the version.
-        # uses: GuillaumeFalourd/clone-github-repo-action@d667f8c39e6ac1dd5309ad51b0020657c7a1a296
-        uses: GuillaumeFalourd/clone-github-repo-action@v1
-        with:
-          # Repository Owner
-          owner: JimmyLv
-          # Repository name
-          repository: jekyll-blog
-      - name: Clone _posts Repo
-        # You may pin to the exact commit or the version.
-        # uses: GuillaumeFalourd/clone-github-repo-action@d667f8c39e6ac1dd5309ad51b0020657c7a1a296
-        uses: GuillaumeFalourd/clone-github-repo-action@v1
-        with:
-          # Repository Owner
-          owner: JimmyLv
-          # Repository name
-          repository: jimmylv.github.io
-      - name: Show Files
+      - name: Trigger Deployment Hook
         run: |
-          pwd
-          ls
-      - name: Move Files
-        run: |
-          sudo cp -rf jimmylv.github.io/**/** jekyll-blog/_posts
-          export LC_ALL=en_US.UTF-8
-          export LANG=en_US.UTF-8
-          
-      - name: Get cached gems
-        uses: actions/cache@v2
-        with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-gems-
-      - name: Build and deploy
-        uses: helaili/jekyll-action@v2
-        with:
-          jekyll_src: 'jekyll-blog'
-          token: ${{ secrets.GITHUB_TOKEN }}
+          curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_5WIsNe13IMQbqbCPpKZW2DwufCRI/qRo2PAJ9u3
