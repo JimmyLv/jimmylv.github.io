@@ -1054,10 +1054,10 @@ hosted-git-info@^2.1.4:
   resolved "https://registry.npm.taobao.org/hosted-git-info/download/hosted-git-info-2.8.9.tgz?cache=0&sync_timestamp=1617826545071&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fhosted-git-info%2Fdownload%2Fhosted-git-info-2.8.9.tgz#dffc0bf9a21c02209090f2aa69429e1414daf3f9"
   integrity sha1-3/wL+aIcAiCQkPKqaUKeFBTa8/k=
 
-husky@^4.2.3:
+husky@4.3.8:
   version "4.3.8"
-  resolved "https://registry.nlark.com/husky/download/husky-4.3.8.tgz#31144060be963fd6850e5cc8f019a1dfe194296d"
-  integrity sha1-MRRAYL6WP9aFDlzI8Bmh3+GUKW0=
+  resolved "https://registry.yarnpkg.com/husky/-/husky-4.3.8.tgz#31144060be963fd6850e5cc8f019a1dfe194296d"
+  integrity sha512-LCqqsB0PzJQ/AlCgfrfzRe3e3+NvmefAdKQhRYpxS4u6clblBoDdzzvHi8fmxKRzvMxPY/1WZWzomPZww0Anow==
   dependencies:
     chalk "^4.0.0"
     ci-info "^2.0.0"
@@ -1461,10 +1461,10 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.npm.taobao.org/lines-and-columns/download/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
-lint-staged@^7.3.0:
+lint-staged@7.3.0:
   version "7.3.0"
-  resolved "https://registry.nlark.com/lint-staged/download/lint-staged-7.3.0.tgz?cache=0&sync_timestamp=1626166390609&other_urls=https%3A%2F%2Fregistry.nlark.com%2Flint-staged%2Fdownload%2Flint-staged-7.3.0.tgz#90ff33e5ca61ed3dbac35b6f6502dbefdc0db58d"
-  integrity sha1-kP8z5cph7T26w1tvZQLb79wNtY0=
+  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-7.3.0.tgz#90ff33e5ca61ed3dbac35b6f6502dbefdc0db58d"
+  integrity sha512-AXk40M9DAiPi7f4tdJggwuKIViUplYtVj1os1MVEteW7qOkU50EOehayCfO9TsoGK24o/EsWb41yrEgfJDDjCw==
   dependencies:
     chalk "^2.3.1"
     commander "^2.14.1"
@@ -2146,10 +2146,10 @@ pretty-format@^23.6.0:
     ansi-regex "^3.0.0"
     ansi-styles "^3.2.0"
 
-pretty-quick@^2.0.1:
+pretty-quick@2.0.2:
   version "2.0.2"
-  resolved "https://registry.nlark.com/pretty-quick/download/pretty-quick-2.0.2.tgz#4e44d6489ed513ef111bee501f63688d854584e6"
-  integrity sha1-TkTWSJ7VE+8RG+5QH2NojYVFhOY=
+  resolved "https://registry.yarnpkg.com/pretty-quick/-/pretty-quick-2.0.2.tgz#4e44d6489ed513ef111bee501f63688d854584e6"
+  integrity sha512-aLb6vtOTEfJDwi1w+MBTeE20GwPVUYyn6IqNg6TtGpiOB1W3y6vKcsGFjqGeaaEtQgMLSPXTWONqh33UBuwG8A==
   dependencies:
     chalk "^2.4.2"
     execa "^2.1.0"
