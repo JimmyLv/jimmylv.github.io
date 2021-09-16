@@ -28,7 +28,7 @@
   "devDependencies": {
     "husky": "^4.2.3",
     "lint-staged": "^7.3.0",
-    "prettier": "2.0.2",
+    "prettier": "2.4.1",
     "pretty-quick": "^2.0.1",
     "textlint": "11.6.2",
     "textlint-rule-ja-space-between-half-and-full-width": "2.0.1",
