@@ -6,6 +6,7 @@ tags: [Web, FED, Optimization, JavaScript]
 published: True
 ---
 
+
 原文地址: [12 Steps to a Faster Web App -- Auth0](https://auth0.com/blog/2016/02/22/12-steps-to-a-faster-web-app/)
 
 > Web apps are now more interactive than ever. Getting that last drop of performance can do a great deal to improve your end-users' experience. Read the following tips and learn if there is anything more you can do to improve latency, render times and general performance!
