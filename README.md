@@ -65,8 +65,11 @@ nodeppt generate ./演讲 ./slides -a
 
 ### CI/CD
 
-- `default`: GitHub Pages with `jekyll`, so easy and no configuration need and whatever the repo you are in.
-- `travis-ci`: Try whatever you want, I prefer to use Node to do all these stuff in one place, <https://travis-ci.org/JimmyLv/jimmylv.github.io>.
+- [GitHub Action](./.github/workflows/deploy.yml): use Webhook to trigger Vercel build and deploy automatically.
+- `vercel`: build with `jekyll`, so easy and no configuration need and whatever the repo you are in.
+
+1. Hosted on [Vercel](http://blog.jimmylv.info/).
+2. Hosted on [GitHub Pages](http://jimmylv.github.io/).
 
 ## Related Tools
 
@@ -74,12 +77,6 @@ nodeppt generate ./演讲 ./slides -a
 - [Sublime Text](https://www.sublimetext.com/3)
 - [iTerm2](https://www.iterm2.com/)
 - [Dash](https://kapeli.com/dash)
-
-## Deploy
-
-1. Hosted on [Coding Pages](http://blog.jimmylv.info/).
-2. Hosted on [GitHub Pages](http://jimmylv.github.io/).
-3. Hosted on [AWS S3](http://blog.jimmylv.info.s3-website-ap-southeast-1.amazonaws.com/).
 
 ## License
 
