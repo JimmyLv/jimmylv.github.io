@@ -310,7 +310,7 @@ Roam Research 的第一个概念就是页引用，大家接触双向链接之后
 # **参考资料**
 
 - [视频版【双向链接的前世今生】上都计划与 Roam Research 思维工具](https://www.bilibili.com/video/BV1NS4y1Y749/?spm_id_from=333.788)
-- [@少楠 - 🗄 个人知识管理指南 | flomo 101](https://help.flomoapp.com/thinking/pkm.html)
+- [@少楠 - 🗄 个人知识管理指南 flomo 101](https://help.flomoapp.com/thinking/pkm.html)
 - [@离线杂志 - Issue 23 上都计划——失落的超文本 - 知乎](https://zhuanlan.zhihu.com/p/22015922)
 - [@Conor 革命性思维工具：Roam Research 白皮书 - 知乎](https://zhuanlan.zhihu.com/p/142356397)
 - [“万维网之父”年过花甲创业，皆因对互联网现状的震惊和失望 - 知乎](https://zhuanlan.zhihu.com/p/49058762)
