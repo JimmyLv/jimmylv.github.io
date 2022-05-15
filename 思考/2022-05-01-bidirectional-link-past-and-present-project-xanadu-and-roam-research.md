@@ -6,8 +6,8 @@ tags: [认知, 双向链接, 效率, 自我管理, 知识创造, RoamResearch, �
 published: True
 ---
 
-- 修订版（含插图）：[【双向链接的前世今生】上都计划与 Roam Research 思维工具](https://jimmylv.noto.so/xanadu)
-- 少数派：🔗 https://sspai.com/post/72995 🔗
+- （后续）修订版：[https://jimmylv.noto.so/xanadu](https://jimmylv.noto.so/xanadu)
+- 少数派：🔗 [https://sspai.com/post/72995](https://sspai.com/post/72995) 🔗
 
 对我来说，我在很久之前就一直在探索知识管理、任务管理，这方面是我一直以来非常热衷的兴趣点。本文是我**第一次系统性地介绍双向链接是什么**，会先为你讲述 **Roam 的 3 个故事**，然后专注于解释 Roam Research**最核心的 1 个功能**：双向链接（当然，Roam 还有很多其他好玩的地方）。最后，我会介绍**自己的 2 个应用场景**，以及什么是 Tools for Thought 和为什么你需要一款思维工具？
 
