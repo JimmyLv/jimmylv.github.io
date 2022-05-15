@@ -119,7 +119,7 @@ Roam Research 的第一个概念就是页引用，大家接触双向链接之后
 
 文字解释起来非常苍白，我在下方准备了一个视频，从任意的地方打开一个传送门，就可以直接穿越过去，这在一些解密游戏里面是非常常见的。比如说上方的锯齿机关就要压到你，进入传送门就直接从这一端穿越到了另外一端，恭喜通关。
 
-<iframe src="https://player.bilibili.com/player.html?aid=981148661&amp;bvid=BV1W44y1372M&amp;cid=590201730&amp;page=1" title="iframe embed" frameborder="0" allowfullscreen="" loading="lazy"></iframe>
+<iframe src="https://player.bilibili.com/player.html?aid=981148661&amp;bvid=BV1W44y1372M&amp;cid=590201730&amp;page=1" title="iframe embed" height="467px" width="100%" frameborder="0" allowfullscreen="" loading="lazy"></iframe>
 
 这个就很像**奇异博士的超能力，能够直接打开一个时空门或者叫哆啦 A 梦的任意门，你就可以随意地从时间上和空间上进行一个穿梭。**
 
@@ -187,7 +187,7 @@ Roam Research 的第一个概念就是页引用，大家接触双向链接之后
 
 所以，第一部分我会来讲读书记笔记的过程。可能之前大家都已经听说过卡片盒笔记法，甚至还有本书叫《卡片笔记写作法》，书中有一个最核心的观点，就是「不写，就无法思考」。那我们可以以读这本书为例，来简单讲解一下阅读+记笔记的过程。
 
-[https://player.bilibili.com/player.html?aid=726118391&bvid=BV1NS4y1Y749&cid=588113838&page=1&t=1138](https://player.bilibili.com/player.html?aid=726118391&bvid=BV1NS4y1Y749&cid=588113838&page=1&t=1138)
+<iframe src="https://player.bilibili.com/player.html?aid=726118391&bvid=BV1NS4y1Y749&cid=588113838&page=1&t=1138" title="iframe embed" height="467px" width="100%" frameborder="0" allowfullscreen="" loading="lazy"></iframe>
 
 点击跳转时间戳 18:58[https://www.bilibili.com/video/BV1NS4y1Y749?t=1138](https://www.bilibili.com/video/BV1NS4y1Y749?t=1138)
 
@@ -237,7 +237,7 @@ Roam Research 的第一个概念就是页引用，大家接触双向链接之后
 
 那么，当我需要产出或者写文章的时候，我就可以利用「块引用」，非常方便地去创建草稿，再基于草稿内容，我就能非常方便地去修改最终的产出。
 
-[https://player.bilibili.com/player.html?aid=726118391&bvid=BV1NS4y1Y749&cid=588113838&page=1&t=1550](https://player.bilibili.com/player.html?aid=726118391&bvid=BV1NS4y1Y749&cid=588113838&page=1&t=1550)
+<iframe src="https://player.bilibili.com/player.html?aid=726118391&bvid=BV1NS4y1Y749&cid=588113838&page=1&t=1550" title="iframe embed" height="467px" width="100%" frameborder="0" allowfullscreen="" loading="lazy"></iframe>
 
 点击跳转时间戳 25:50[https://www.bilibili.com/video/BV1NS4y1Y749?t=1550](https://www.bilibili.com/video/BV1NS4y1Y749?t=1550)
 
