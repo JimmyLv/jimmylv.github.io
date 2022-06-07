@@ -175,7 +175,7 @@ Tony 老师就在思考，如果我们能够利用这五分钟，去做更有意
 
 让我们一起来搭建一下。首先是 `[[🐓 Morning Journal]]`，在 Roam Research 里面，你可以使用 `roam/templates` 模板，也就是斜杠 `/template` 输入快速新建一个模板。
 
-![间歇日记-🐓 Morning Journal](ch1.assets/间歇日记-🐓 Morning Journal.gif)
+![间歇日记-🐓 Morning Journal](ch1.assets/间歇日记-Morning Journal.gif)
 
 进入到 `roam/templates` 模板页面，第一层级的 Block 内容就是模板的标题，比如说你可以新建一条叫做 `[[🐓 Morning Journal]]`，然后在缩进的子 Blocks 中可以放下一些内容。
 
@@ -274,7 +274,7 @@ Tony 老师就在思考，如果我们能够利用这五分钟，去做更有意
 
 如果更直观一点，我还会使用 `{{kanban}}` 看板来进行，比如说我直接输入 `;;retro` 就可以通过 `roam/templates` 模板来快速插入一个看板视图，来回顾 Well 我今天哪些做得好的，Less Well 哪些可以改进的，以及产生了什么新的 Puzzle 问题。
 
-![回顾看板-🌙 Evening Reflection](ch1.assets/回顾看板-🌙 Evening Reflection.gif)
+![回顾看板-🌙 Evening Reflection](ch1.assets/回顾看板-Evening Reflection.gif)
 
 与此同时，你还可以用「块引用」（block ref）的方式来快速输入内容，比如说前文提到的`((剪辑视频))`。当然这里也可以写一些没有解决的问题，或者是你做得没那么好的，再提出一些改进建议。这里可以加一个 `/tomorrow` 明天的日期，`明天我要用标准的方式来写间歇日记`。诸如此类。
 
