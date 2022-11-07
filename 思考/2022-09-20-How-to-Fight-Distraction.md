@@ -1,3 +1,11 @@
+---
+layout: post
+title: 如何克服精神内耗与对抗分心？
+categories: [思考]
+tags: [大脑, 自我管理, 正念, 精神内耗, 认知科学, RoamResearch, 专注]
+published: False
+---
+
 # 如何克服精神内耗与对抗分心
 
 本文为你介绍一个此前的热门话题 —— 精神内耗。
