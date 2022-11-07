@@ -11,8 +11,12 @@
             "id": "e2dd67e2923b5d34",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "思考/2022-09-20-How-to-Fight-Distraction.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "2ac569763e2bbc53",
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "思考/2022-09-20-How-to-Fight-Distraction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "思考/2022-09-20-How-to-Fight-Distraction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "思考/2022-09-20-How-to-Fight-Distraction.md"
+              }
             }
           }
         ]
@@ -133,8 +141,15 @@
   },
   "active": "e2dd67e2923b5d34",
   "lastOpenFiles": [
-    "Roam 洞见.md",
-    "思考/2021-02-18-roam-newsletter-RoamCN2021W07.md",
-    "演讲/2016-01-01-introduction-of-node-ppt.md"
+    "思考/2022-05-02-protect-your-attention-how-to-stay-focused-with-the-help-of-tools.md",
+    "思考/2022-05-01-bidirectional-link-past-and-present-project-xanadu-and-roam-research.md",
+    "思考/2014-11-01-why-i-am-so-serious.md",
+    "Excalidraw/Drawing 2022-11-07 15.10.18.excalidraw.md",
+    "专栏/ch1.md",
+    "前端/2015-05-31-reactjs_tutorial_part_1.md",
+    "前端/2015-05-14-learning-reactjs.md",
+    "前端/2014-09-26-write-article-use-jekyll-github-markdown.md",
+    "前端/2013-10-02-blog-build-course.md",
+    "Roam 洞见.md"
   ]
 }
