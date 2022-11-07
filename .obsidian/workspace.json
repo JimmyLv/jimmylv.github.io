@@ -1,0 +1,140 @@
+{
+  "main": {
+    "id": "9f44147443eb4654",
+    "type": "split",
+    "children": [
+      {
+        "id": "4473303baa9bf6e9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e2dd67e2923b5d34",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "06a7d44d02e663e5",
+    "type": "split",
+    "children": [
+      {
+        "id": "aac398832bd4aa0c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1e8857434d140b43",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "1f95a1afbc36fd49",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "8d102f658466470c",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "2ac569763e2bbc53",
+    "type": "split",
+    "children": [
+      {
+        "id": "4d3c3bed8a9ad4da",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c0d5b0b51a094886",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "54c920a61d5e5a12",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "73967de32e3797ea",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "30037a6cdc18416d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "ribbon": {
+    "mostRecentAction": ""
+  },
+  "active": "e2dd67e2923b5d34",
+  "lastOpenFiles": [
+    "Roam 洞见.md",
+    "思考/2021-02-18-roam-newsletter-RoamCN2021W07.md",
+    "演讲/2016-01-01-introduction-of-node-ppt.md"
+  ]
+}
