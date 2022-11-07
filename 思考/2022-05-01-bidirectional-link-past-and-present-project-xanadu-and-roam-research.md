@@ -139,7 +139,7 @@ Roam Research 的第一个概念就是页引用，大家接触双向链接之后
 
 ![https://cdn.sspai.com/2022/05/02/article/7463a06f6f9020c5d07b6aa994c9986f?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1](https://cdn.sspai.com/2022/05/02/article/7463a06f6f9020c5d07b6aa994c9986f?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1)
 
-### **3. 动态块 {`{}`}，“乐高马达”**
+### **3. 动态块 `{{``}}`，“乐高马达”**
 
 下一个在 Roam Research 里面的概念是「动态块」，比如说我在视频中最开始的时候有提到过一个计时器，`{{[[POMO]]: 25}}` 就是通过花括号 `{{``}}` 的方式直接创建出来的。
 
