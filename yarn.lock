@@ -42,7 +42,7 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@textlint/ast-node-types@^4.2.5", "@textlint/ast-node-types@^4.4.3":
+"@textlint/ast-node-types@^4.4.3":
   version "4.4.3"
   resolved "https://registry.nlark.com/@textlint/ast-node-types/download/@textlint/ast-node-types-4.4.3.tgz#fdba16e8126cddc50f45433ce7f6c55e7829566c"
   integrity sha1-/boW6BJs3cUPRUM85/bFXngpVmw=
@@ -54,24 +54,24 @@
   dependencies:
     "@textlint/ast-node-types" "^4.4.3"
 
-"@textlint/ast-traverse@^2.1.6", "@textlint/ast-traverse@^2.3.5":
+"@textlint/ast-traverse@^2.3.5":
   version "2.3.5"
   resolved "https://registry.nlark.com/@textlint/ast-traverse/download/@textlint/ast-traverse-2.3.5.tgz#b232b369b245a446abd511ddb0a64bcdc2f88949"
   integrity sha1-sjKzabJFpEar1RHdsKZLzcL4iUk=
   dependencies:
     "@textlint/ast-node-types" "^4.4.3"
 
-"@textlint/feature-flag@^3.1.6", "@textlint/feature-flag@^3.3.5":
+"@textlint/feature-flag@^3.3.5":
   version "3.3.5"
   resolved "https://registry.nlark.com/@textlint/feature-flag/download/@textlint/feature-flag-3.3.5.tgz#81d9c073d4f836377211c68d2194451a63730258"
   integrity sha1-gdnAc9T4NjdyEcaNIZRFGmNzAlg=
   dependencies:
     map-like "^2.0.0"
 
-"@textlint/fixer-formatter@^3.1.12":
+"@textlint/fixer-formatter@^3.3.5":
   version "3.3.5"
-  resolved "https://registry.nlark.com/@textlint/fixer-formatter/download/@textlint/fixer-formatter-3.3.5.tgz#b831d9ad0fff326865265924acf8fe724fcf8321"
-  integrity sha1-uDHZrQ//MmhlJlkkrPj+ck/PgyE=
+  resolved "https://registry.yarnpkg.com/@textlint/fixer-formatter/-/fixer-formatter-3.3.5.tgz#b831d9ad0fff326865265924acf8fe724fcf8321"
+  integrity sha512-FHfOQLvJV88vgAI9wwbAjtffo4ZtAW0bV8xkC3dY2DdVyo+7Tnhz0l2XPw2VFmyzpeHx9Slqw8nEv46YEs4JaQ==
   dependencies:
     "@textlint/module-interop" "^1.2.5"
     "@textlint/types" "^1.5.5"
@@ -84,10 +84,10 @@
     text-table "^0.2.0"
     try-resolve "^1.0.1"
 
-"@textlint/kernel@^3.2.0":
+"@textlint/kernel@^3.4.5":
   version "3.4.5"
-  resolved "https://registry.nlark.com/@textlint/kernel/download/@textlint/kernel-3.4.5.tgz#96b7db302e3fbb43e676fc8baae262388242922c"
-  integrity sha1-lrfbMC4/u0PmdvyLquJiOIJCkiw=
+  resolved "https://registry.yarnpkg.com/@textlint/kernel/-/kernel-3.4.5.tgz#96b7db302e3fbb43e676fc8baae262388242922c"
+  integrity sha512-KGeOq4mbjPe3okDtPw7mbnTX/wP66ndmRKAoOz8gOKDIDRlH8nOG/av6k6xbVhdMk9+ZnomqU8jSSYwTZHzAnA==
   dependencies:
     "@textlint/ast-node-types" "^4.4.3"
     "@textlint/ast-tester" "^2.3.5"
@@ -101,10 +101,10 @@
     map-like "^2.0.0"
     structured-source "^3.0.2"
 
-"@textlint/linter-formatter@^3.1.11":
+"@textlint/linter-formatter@^3.3.5":
   version "3.3.5"
-  resolved "https://registry.nlark.com/@textlint/linter-formatter/download/@textlint/linter-formatter-3.3.5.tgz#51f9cc592acef8b776e182b034379d4dd33854a7"
-  integrity sha1-UfnMWSrO+Ld24YKwNDedTdM4VKc=
+  resolved "https://registry.yarnpkg.com/@textlint/linter-formatter/-/linter-formatter-3.3.5.tgz#51f9cc592acef8b776e182b034379d4dd33854a7"
+  integrity sha512-ujQwgGGK4nVYRuNeW8zDyxax2Z8FTRips5f3VBhWpJaR7hlqdh1iNahul8iJ+1JbfXiHm+51a01myoqGGh1ENA==
   dependencies:
     "@azu/format-text" "^1.0.1"
     "@azu/style-format" "^1.0.0"
@@ -137,7 +137,7 @@
     traverse "^0.6.6"
     unified "^6.2.0"
 
-"@textlint/module-interop@^1.0.2", "@textlint/module-interop@^1.2.5":
+"@textlint/module-interop@^1.2.5":
   version "1.2.5"
   resolved "https://registry.nlark.com/@textlint/module-interop/download/@textlint/module-interop-1.2.5.tgz#f10582e66e0633ac1aea228f30c5b3f5d8463f45"
   integrity sha1-8QWC5m4GM6wa6iKPMMWz9dhGP0U=
@@ -157,36 +157,31 @@
   dependencies:
     "@textlint/ast-node-types" "^4.4.3"
 
-"@textlint/textlint-plugin-markdown@^5.1.11":
+"@textlint/textlint-plugin-markdown@^5.3.5":
   version "5.3.5"
-  resolved "https://registry.nlark.com/@textlint/textlint-plugin-markdown/download/@textlint/textlint-plugin-markdown-5.3.5.tgz#dc54e5a07bb8a4600e22e84f162bd6afc1442e54"
-  integrity sha1-3FTloHu4pGAOIuhPFivWr8FELlQ=
+  resolved "https://registry.yarnpkg.com/@textlint/textlint-plugin-markdown/-/textlint-plugin-markdown-5.3.5.tgz#dc54e5a07bb8a4600e22e84f162bd6afc1442e54"
+  integrity sha512-x1/DJa+6wsR4LwkL+JA5OdEoZ/PhxtkKb20IqHTsLwQIeDL4aNWT6GrAk0HKTOomzsyNrUBuvzYiCy/f75LtBw==
   dependencies:
     "@textlint/markdown-to-ast" "^6.3.5"
 
-"@textlint/textlint-plugin-text@^4.1.12":
+"@textlint/textlint-plugin-text@^4.3.5":
   version "4.3.5"
-  resolved "https://registry.nlark.com/@textlint/textlint-plugin-text/download/@textlint/textlint-plugin-text-4.3.5.tgz#092f53208c0db3d07077007b21af0812b9236170"
-  integrity sha1-CS9TIIwNs9BwdwB7Ia8IErkjYXA=
+  resolved "https://registry.yarnpkg.com/@textlint/textlint-plugin-text/-/textlint-plugin-text-4.3.5.tgz#092f53208c0db3d07077007b21af0812b9236170"
+  integrity sha512-ygjzswWrzlCiNNCy1+WF0oI8tNCk+1fS/nJEtG7DHuTVvE0OTn4MdWJXOD8sd+ZffXr+uFmEqMisHo06+RpQCg==
   dependencies:
     "@textlint/text-to-ast" "^3.3.5"
 
-"@textlint/types@^1.3.0", "@textlint/types@^1.5.5":
+"@textlint/types@^1.5.5":
   version "1.5.5"
   resolved "https://registry.nlark.com/@textlint/types/download/@textlint/types-1.5.5.tgz#9c82dbcbf4e00116573f05c6739c6c8ec3b35304"
   integrity sha1-nILby/TgARZXPwXGc5xsjsOzUwQ=
   dependencies:
     "@textlint/ast-node-types" "^4.4.3"
 
-"@textlint/utils@^1.0.3", "@textlint/utils@^1.2.5":
+"@textlint/utils@^1.2.5":
   version "1.2.5"
   resolved "https://registry.nlark.com/@textlint/utils/download/@textlint/utils-1.2.5.tgz#1406e179d44d130d8e60322f3f873a721c93ba75"
   integrity sha1-FAbhedRNEw2OYDIvP4c6chyTunU=
-
-"@types/bluebird@^3.5.18":
-  version "3.5.36"
-  resolved "https://registry.nlark.com/@types/bluebird/download/@types/bluebird-3.5.36.tgz#00d9301d4dc35c2f6465a8aec634bb533674c652"
-  integrity sha1-ANkwHU3DXC9kZaiuxjS7UzZ0xlI=
 
 "@types/minimatch@^3.0.3":
   version "3.0.5"
@@ -329,11 +324,6 @@ base@^0.11.1:
     isobject "^3.0.1"
     mixin-deep "^1.2.0"
     pascalcase "^0.1.1"
-
-bluebird@^3.7.0:
-  version "3.7.2"
-  resolved "https://registry.nlark.com/bluebird/download/bluebird-3.7.2.tgz#9f229c15be272454ffa973ace0dbee79a1b0c36f"
-  integrity sha1-nyKcFb4nJFT/qXOs4NvueaGww28=
 
 boundary@^1.0.1:
   version "1.0.1"
@@ -661,7 +651,7 @@ dedent@^0.7.0:
   resolved "https://registry.npm.taobao.org/dedent/download/dedent-0.7.0.tgz#2495ddbaf6eb874abb0e1be9df22d2e5a544326c"
   integrity sha1-JJXduvbrh0q7Dhvp3yLS5aVEMmw=
 
-deep-equal@^1.1.0, deep-equal@^1.1.1:
+deep-equal@^1.1.1:
   version "1.1.1"
   resolved "https://registry.npm.taobao.org/deep-equal/download/deep-equal-1.1.1.tgz?cache=0&sync_timestamp=1606860281983&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdeep-equal%2Fdownload%2Fdeep-equal-1.1.1.tgz#b5c98c942ceffaf7cb051e24e1434a25a2e6076a"
   integrity sha1-tcmMlCzv+vfLBR4k4UNKJaLmB2o=
@@ -673,7 +663,7 @@ deep-equal@^1.1.0, deep-equal@^1.1.1:
     object-keys "^1.1.1"
     regexp.prototype.flags "^1.2.0"
 
-deep-is@^0.1.3, deep-is@~0.1.3:
+deep-is@^0.1.3:
   version "0.1.3"
   resolved "https://registry.npm.taobao.org/deep-is/download/deep-is-0.1.3.tgz#b369d6fb5dbc13eecf524f91b070feedc357cf34"
   integrity sha1-s2nW+128E+7PUk+RsHD+7cNXzzQ=
@@ -816,7 +806,7 @@ extglob@^2.0.4:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
-fast-levenshtein@^2.0.6, fast-levenshtein@~2.0.6:
+fast-levenshtein@^2.0.6:
   version "2.0.6"
   resolved "https://registry.npm.taobao.org/fast-levenshtein/download/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
   integrity sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc=
@@ -972,7 +962,7 @@ get-value@^2.0.3, get-value@^2.0.6:
   resolved "https://registry.npm.taobao.org/get-value/download/get-value-2.0.6.tgz#dc15ca1c672387ca76bd37ac0a395ba2042a2c28"
   integrity sha1-3BXKHGcjh8p2vTesCjlbogQqLCg=
 
-glob@^7.1.3:
+glob@^7.1.3, glob@^7.1.7:
   version "7.1.7"
   resolved "https://registry.nlark.com/glob/download/glob-7.1.7.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fglob%2Fdownload%2Fglob-7.1.7.tgz#3b193e9233f01d42d0b3f78294bbeeb418f94a90"
   integrity sha1-Oxk+kjPwHULQs/eClLvutBj5SpA=
@@ -1448,14 +1438,6 @@ levn@^0.4.1:
     prelude-ls "^1.2.1"
     type-check "~0.4.0"
 
-levn@~0.3.0:
-  version "0.3.0"
-  resolved "https://registry.npm.taobao.org/levn/download/levn-0.3.0.tgz#3b09924edf9f083c0490fdd4c0bc4421e04764ee"
-  integrity sha1-OwmSTt+fCDwEkP3UwLxEIeBHZO4=
-  dependencies:
-    prelude-ls "~1.1.2"
-    type-check "~0.3.2"
-
 lines-and-columns@^1.1.6:
   version "1.1.6"
   resolved "https://registry.npm.taobao.org/lines-and-columns/download/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
@@ -1641,10 +1623,10 @@ match-index@^1.0.1:
   dependencies:
     regexp.prototype.flags "^1.1.1"
 
-md5@^2.2.1:
+md5@^2.3.0:
   version "2.3.0"
-  resolved "https://registry.npm.taobao.org/md5/download/md5-2.3.0.tgz#c3da9a6aae3a30b46b7b0c349b87b110dc3bda4f"
-  integrity sha1-w9qaaq46MLRreww0m4exENw72k8=
+  resolved "https://registry.yarnpkg.com/md5/-/md5-2.3.0.tgz#c3da9a6aae3a30b46b7b0c349b87b110dc3bda4f"
+  integrity sha512-T1GITYmFaKuO91vxyoQMFETst+O71VUPEU3ze5GNzDm0OWdP8v1ziTaAEPUr/3kLsY3Sftgz242A1SetQiDL7g==
   dependencies:
     charenc "0.0.2"
     crypt "0.0.2"
@@ -1870,18 +1852,6 @@ opencollective-postinstall@^2.0.2:
   version "2.0.3"
   resolved "https://registry.nlark.com/opencollective-postinstall/download/opencollective-postinstall-2.0.3.tgz#7a0fff978f6dbfa4d006238fbac98ed4198c3259"
   integrity sha1-eg//l49tv6TQBiOPusmO1BmMMlk=
-
-optionator@^0.8.0:
-  version "0.8.3"
-  resolved "https://registry.npm.taobao.org/optionator/download/optionator-0.8.3.tgz#84fa1d036fe9d3c7e21d99884b601167ec8fb495"
-  integrity sha1-hPodA2/p08fiHZmIS2ARZ+yPtJU=
-  dependencies:
-    deep-is "~0.1.3"
-    fast-levenshtein "~2.0.6"
-    levn "~0.3.0"
-    prelude-ls "~1.1.2"
-    type-check "~0.3.2"
-    word-wrap "~1.2.3"
 
 optionator@^0.9.1:
   version "0.9.1"
@@ -2127,11 +2097,6 @@ prelude-ls@^1.2.1:
   version "1.2.1"
   resolved "https://registry.nlark.com/prelude-ls/download/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
   integrity sha1-3rxkidem5rDnYRiIzsiAM30xY5Y=
-
-prelude-ls@~1.1.2:
-  version "1.1.2"
-  resolved "https://registry.nlark.com/prelude-ls/download/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
-  integrity sha1-IZMqVJ9eUv/ZqCf1cOBL5iqX2lQ=
 
 prettier@2.0.2:
   version "2.0.2"
@@ -2677,35 +2642,33 @@ textlint-rule-no-todo@2.0.1:
   dependencies:
     textlint-rule-helper "^2.0.0"
 
-textlint@11.6.2:
-  version "11.6.2"
-  resolved "https://registry.nlark.com/textlint/download/textlint-11.6.2.tgz#28f01f7466b446a3cd3d7daf74987968f006e70c"
-  integrity sha1-KPAfdGa0RqPNPX2vdJh5aPAG5ww=
+textlint@11.9.1:
+  version "11.9.1"
+  resolved "https://registry.yarnpkg.com/textlint/-/textlint-11.9.1.tgz#13f31aa50a5121eb76adced69dcadc1e007d7c9a"
+  integrity sha512-7eC76od8ILhLl3O10h1rd0QxlVaQkR1nqTD7PrszrlGGe8mXS2VNaOXEiAm8PPUMQBdjB5n8/cpeZ+AbDJdNTw==
   dependencies:
-    "@textlint/ast-node-types" "^4.2.5"
-    "@textlint/ast-traverse" "^2.1.6"
-    "@textlint/feature-flag" "^3.1.6"
-    "@textlint/fixer-formatter" "^3.1.12"
-    "@textlint/kernel" "^3.2.0"
-    "@textlint/linter-formatter" "^3.1.11"
-    "@textlint/module-interop" "^1.0.2"
-    "@textlint/textlint-plugin-markdown" "^5.1.11"
-    "@textlint/textlint-plugin-text" "^4.1.12"
-    "@textlint/types" "^1.3.0"
-    "@textlint/utils" "^1.0.3"
-    "@types/bluebird" "^3.5.18"
-    bluebird "^3.7.0"
-    debug "^4.1.1"
-    deep-equal "^1.1.0"
+    "@textlint/ast-node-types" "^4.4.3"
+    "@textlint/ast-traverse" "^2.3.5"
+    "@textlint/feature-flag" "^3.3.5"
+    "@textlint/fixer-formatter" "^3.3.5"
+    "@textlint/kernel" "^3.4.5"
+    "@textlint/linter-formatter" "^3.3.5"
+    "@textlint/module-interop" "^1.2.5"
+    "@textlint/textlint-plugin-markdown" "^5.3.5"
+    "@textlint/textlint-plugin-text" "^4.3.5"
+    "@textlint/types" "^1.5.5"
+    "@textlint/utils" "^1.2.5"
+    debug "^4.3.1"
+    deep-equal "^1.1.1"
     file-entry-cache "^5.0.1"
     get-stdin "^5.0.1"
-    glob "^7.1.3"
+    glob "^7.1.7"
     is-file "^1.0.0"
     log-symbols "^1.0.2"
     map-like "^2.0.0"
-    md5 "^2.2.1"
+    md5 "^2.3.0"
     mkdirp "^0.5.0"
-    optionator "^0.8.0"
+    optionator "^0.9.1"
     path-to-glob-pattern "^1.0.2"
     rc-config-loader "^3.0.0"
     read-pkg "^1.1.0"
@@ -2775,13 +2738,6 @@ type-check@^0.4.0, type-check@~0.4.0:
   integrity sha1-B7ggO/pwVsBlcFDjzNLDdzC6uPE=
   dependencies:
     prelude-ls "^1.2.1"
-
-type-check@~0.3.2:
-  version "0.3.2"
-  resolved "https://registry.npm.taobao.org/type-check/download/type-check-0.3.2.tgz#5884cab512cf1d355e3fb784f30804b2b520db72"
-  integrity sha1-WITKtRLPHTVeP7eE8wgEsrUg23I=
-  dependencies:
-    prelude-ls "~1.1.2"
 
 typedarray@^0.0.6:
   version "0.0.6"
@@ -2926,7 +2882,7 @@ which@^2.0.1:
   dependencies:
     isexe "^2.0.0"
 
-word-wrap@^1.2.3, word-wrap@~1.2.3:
+word-wrap@^1.2.3:
   version "1.2.3"
   resolved "https://registry.npm.taobao.org/word-wrap/download/word-wrap-1.2.3.tgz#610636f6b1f703891bd34771ccb17fb93b47079c"
   integrity sha1-YQY29rH3A4kb00dxzLF/uTtHB5w=
