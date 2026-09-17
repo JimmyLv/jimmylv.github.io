@@ -69,7 +69,7 @@ published: True
 
 ![https://cdn.sspai.com/2022/05/02/article/ce06c1211e789a66476b70208db9ea47?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1](https://cdn.sspai.com/2022/05/02/article/ce06c1211e789a66476b70208db9ea47?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1)
 
-### **故事 3：@JimmyLv 与 RoamCN 社区，“探索未来工作”**
+### **故事 3：@JimmyLv 与 RoamCN 社区，开启自由职业**
 
 第三个故事是我自己的一个故事，我其实是在 2019 年初次知道双向链接，遇见 Roam Research，然后在 2020 年跟另外两个区块链领域的小伙伴（Jessie、Victor）共同创立了 [RoamCN 中文社区](https://github.com/JimmyLv/roam-cn.github.io)。
 
@@ -81,13 +81,9 @@ published: True
 
 ![https://cdn.sspai.com/2022/05/02/0d0f950993efe4007c65d640ace2ad7a.png?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1](https://cdn.sspai.com/2022/05/02/0d0f950993efe4007c65d640ace2ad7a.png?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1)
 
-特别好玩的是，**在 2020 年我也因为对 Roam Research 的探索和学习，积累了一些工作机会**。包括当时我去阿里，跟面试官聊的时候也聊到了 Roam Research，而在 2022 年 2 月 22 号，我加入了一家纯远程办公的公司（[Parabol.co](https://parabol.co/)），开启了新的「完全在家办公」的工作方式。
+特别好玩的是，**在 2020 年我也因为对 Roam Research 的探索和学习，积累了一些工作机会**。包括当时我去阿里，跟面试官聊的时候也聊到了 Roam Research，而在 2022 年，我开始了自由职业，开启了新的「完全在家办公」的工作方式。
 
-![https://cdn.sspai.com/2022/05/07/80552fbdf009246ace297c2f130f1350.gif](https://cdn.sspai.com/2022/05/07/80552fbdf009246ace297c2f130f1350.gif)
-
-[Parabol.co - Build the Future of Work](https://www.parabol.co/)
-
-所以说，Roam Research 这样一款新工具不光是承接了我自己的一个兴趣，也让我有了一个“探索未来工作”的机会。其实我也是非常感激这些机会，特别是我遇到了很多非常好玩有趣的人，特别是像字节跳动、小米、微软、阿里巴巴的高层（我平常不可能接触到的那种）都注意到了双向链接，并且推进了相关产品的研发。
+所以说，Roam Research 这样一款新工具不光是承接了我自己的一个兴趣，也让我有了一个开启自由职业的机会。其实我也是非常感激这些机会，特别是我遇到了很多非常好玩有趣的人，特别是像字节跳动、小米、微软、阿里巴巴的高层（我平常不可能接触到的那种）都注意到了双向链接，并且推进了相关产品的研发。
 
 这三个故事分享完，我们可以对双向链接有了一个基本脉络，**双向链接这个概念它并不新颖**，其实在 1963 年就由 Ted Nelson 发布了「超文本」（hypertext）一词，此时超文本的原本概念就已经包含了相互链接。而**直到 2022 年 Roam Research 推出之后，双向链接的概念才被普通人接触到**，包括印象笔记等等这样的很多知识管理工具都开始跟进设计。
 
@@ -171,7 +167,7 @@ Roam Research 的第一个概念就是页引用，大家接触双向链接之后
 
 首先，我们需要有一种思维的辅助工具，比如说像高速摄像机一样，**当我们拥有了双向链接这样一个思考工具，或者叫新的认知元素，就能辅助我们在思维上有所提升，辅助你去思考，辅助你去推理。**
 
-「时空隧道」我们可以从今天跳到明天，跳到 50 年之后，也可以用它来串联起不同概念之间的一个联系。比如说我在准备这一次分享内容的时候，其实是有关联到到之前的一些页面的，比如说「探索未来工作」这个页面，跟今天要讲的内容就是串联起来的。这样产生的一个局部的知识图谱，就是双向链接的一个可视化效果。
+「时空隧道」我们可以从今天跳到明天，跳到 50 年之后，也可以用它来串联起不同概念之间的一个联系。比如说我在准备这一次分享内容的时候，其实是有关联到到之前的一些页面的，比如说「自由职业」这个页面，跟今天要讲的内容就是串联起来的。这样产生的一个局部的知识图谱，就是双向链接的一个可视化效果。
 
 ![https://cdn.sspai.com/2022/05/02/article/a0940c3c677d9b241f7ac1f75849dbaa?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1](https://cdn.sspai.com/2022/05/02/article/a0940c3c677d9b241f7ac1f75849dbaa?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1)
 
